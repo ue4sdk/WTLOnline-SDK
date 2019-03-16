@@ -221,7 +221,7 @@ enum class EPixelFormat : uint8_t
 	PF_R8G8B8A8_SNORM              = 61,
 	PF_R16G16B16A16_UNORM          = 62,
 	PF_R16G16B16A16_SNORM          = 63,
-	PF_MAX                         = 64
+	PF_MAX1                         = 64
 };
 
 
