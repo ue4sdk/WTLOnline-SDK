@@ -30,7 +30,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_HUD_Minimap.UI_HUD_Minimap_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_HUD_Minimap.UI_HUD_Minimap_C"));
 		return ptr;
 	}
 

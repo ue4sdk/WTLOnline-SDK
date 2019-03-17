@@ -30,7 +30,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraph");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraph"));
 		return ptr;
 	}
 
@@ -49,7 +49,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.BasicReplicationGraph");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.BasicReplicationGraph"));
 		return ptr;
 	}
 
@@ -66,7 +66,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode"));
 		return ptr;
 	}
 
@@ -82,7 +82,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_ActorList");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_ActorList"));
 		return ptr;
 	}
 
@@ -98,7 +98,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_ActorListFrequencyBuckets");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_ActorListFrequencyBuckets"));
 		return ptr;
 	}
 
@@ -114,7 +114,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_ConnectionDormanyNode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_ConnectionDormanyNode"));
 		return ptr;
 	}
 
@@ -130,7 +130,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_DormancyNode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_DormancyNode"));
 		return ptr;
 	}
 
@@ -148,7 +148,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_GridCell");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_GridCell"));
 		return ptr;
 	}
 
@@ -164,7 +164,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_GridSpatialization2D");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_GridSpatialization2D"));
 		return ptr;
 	}
 
@@ -181,7 +181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant"));
 		return ptr;
 	}
 
@@ -199,7 +199,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant_ForConnection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_AlwaysRelevant_ForConnection"));
 		return ptr;
 	}
 
@@ -216,7 +216,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphNode_TearOff_ForConnection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphNode_TearOff_ForConnection"));
 		return ptr;
 	}
 
@@ -238,7 +238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.NetReplicationGraphConnection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.NetReplicationGraphConnection"));
 		return ptr;
 	}
 
@@ -255,7 +255,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ReplicationGraph.ReplicationGraphDebugActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ReplicationGraph.ReplicationGraphDebugActor"));
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Container40Poz1_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Container40Poz1.BP_Container40Poz1_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Container40Poz1.BP_Container40Poz1_C.UserConstructionScript"));
 
 	struct
 	{

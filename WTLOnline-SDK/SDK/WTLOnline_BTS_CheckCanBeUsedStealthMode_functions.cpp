@@ -21,7 +21,7 @@ namespace SDK
 
 void UBTS_CheckCanBeUsedStealthMode_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C.ReceiveTickAI"));
 
 	struct
 	{
@@ -45,7 +45,7 @@ void UBTS_CheckCanBeUsedStealthMode_C::ReceiveTickAI(class AAIController* OwnerC
 
 void UBTS_CheckCanBeUsedStealthMode_C::ExecuteUbergraph_BTS_CheckCanBeUsedStealthMode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C.ExecuteUbergraph_BTS_CheckCanBeUsedStealthMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C.ExecuteUbergraph_BTS_CheckCanBeUsedStealthMode"));
 
 	struct
 	{

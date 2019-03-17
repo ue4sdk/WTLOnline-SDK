@@ -31,7 +31,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("AnimBlueprintGeneratedClass AB_NPC_02.AB_NPC_02_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("AnimBlueprintGeneratedClass AB_NPC_02.AB_NPC_02_C"));
 		return ptr;
 	}
 

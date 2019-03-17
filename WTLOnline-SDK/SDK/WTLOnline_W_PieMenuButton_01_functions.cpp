@@ -19,7 +19,7 @@ namespace SDK
 
 void UW_PieMenuButton_01_C::GetPreviewText(struct FText* PreviewText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetPreviewText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetPreviewText"));
 
 	struct
 	{
@@ -39,7 +39,7 @@ void UW_PieMenuButton_01_C::GetPreviewText(struct FText* PreviewText)
 
 void UW_PieMenuButton_01_C::SetButtonTint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.SetButtonTint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.SetButtonTint"));
 
 	struct
 	{
@@ -57,7 +57,7 @@ void UW_PieMenuButton_01_C::SetButtonTint()
 
 void UW_PieMenuButton_01_C::GetButtonTInt(struct FLinearColor* ButtonTint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetButtonTInt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetButtonTInt"));
 
 	struct
 	{
@@ -79,7 +79,7 @@ void UW_PieMenuButton_01_C::GetButtonTInt(struct FLinearColor* ButtonTint)
 
 void UW_PieMenuButton_01_C::GetButtonID(struct FString* ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetButtonID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.GetButtonID"));
 
 	struct
 	{
@@ -99,7 +99,7 @@ void UW_PieMenuButton_01_C::GetButtonID(struct FString* ButtonID)
 
 void UW_PieMenuButton_01_C::OnButtonHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonHovered"));
 
 	struct
 	{
@@ -115,7 +115,7 @@ void UW_PieMenuButton_01_C::OnButtonHovered()
 
 void UW_PieMenuButton_01_C::OnButtonUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonUnhovered"));
 
 	struct
 	{
@@ -131,7 +131,7 @@ void UW_PieMenuButton_01_C::OnButtonUnhovered()
 
 void UW_PieMenuButton_01_C::OnButtonPressed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonPressed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonPressed"));
 
 	struct
 	{
@@ -147,7 +147,7 @@ void UW_PieMenuButton_01_C::OnButtonPressed()
 
 void UW_PieMenuButton_01_C::OnButtonReleased()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonReleased");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnButtonReleased"));
 
 	struct
 	{
@@ -165,7 +165,7 @@ void UW_PieMenuButton_01_C::OnButtonReleased()
 
 void UW_PieMenuButton_01_C::ExecuteUbergraph_W_PieMenuButton_01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.ExecuteUbergraph_W_PieMenuButton_01");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.ExecuteUbergraph_W_PieMenuButton_01"));
 
 	struct
 	{
@@ -185,7 +185,7 @@ void UW_PieMenuButton_01_C::ExecuteUbergraph_W_PieMenuButton_01(int EntryPoint)
 
 void UW_PieMenuButton_01_C::OnReleased__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnReleased__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnReleased__DelegateSignature"));
 
 	struct
 	{
@@ -205,7 +205,7 @@ void UW_PieMenuButton_01_C::OnReleased__DelegateSignature(const struct FString& 
 
 void UW_PieMenuButton_01_C::OnPressed__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnPressed__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnPressed__DelegateSignature"));
 
 	struct
 	{
@@ -225,7 +225,7 @@ void UW_PieMenuButton_01_C::OnPressed__DelegateSignature(const struct FString& B
 
 void UW_PieMenuButton_01_C::OnUnhovered__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnUnhovered__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnUnhovered__DelegateSignature"));
 
 	struct
 	{
@@ -245,7 +245,7 @@ void UW_PieMenuButton_01_C::OnUnhovered__DelegateSignature(const struct FString&
 
 void UW_PieMenuButton_01_C::OnHovered__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnHovered__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenuButton_01.W_PieMenuButton_01_C.OnHovered__DelegateSignature"));
 
 	struct
 	{

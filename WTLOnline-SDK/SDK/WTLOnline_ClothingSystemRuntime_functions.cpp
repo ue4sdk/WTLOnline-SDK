@@ -19,7 +19,7 @@ namespace SDK
 
 void UClothingSimulationInteractorNv::SetAnimDriveSpringStiffness(float InStiffness)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.SetAnimDriveSpringStiffness");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.SetAnimDriveSpringStiffness"));
 
 	struct
 	{
@@ -39,7 +39,7 @@ void UClothingSimulationInteractorNv::SetAnimDriveSpringStiffness(float InStiffn
 
 void UClothingSimulationInteractorNv::SetAnimDriveDamperStiffness(float InStiffness)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.SetAnimDriveDamperStiffness");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.SetAnimDriveDamperStiffness"));
 
 	struct
 	{
@@ -59,7 +59,7 @@ void UClothingSimulationInteractorNv::SetAnimDriveDamperStiffness(float InStiffn
 
 void UClothingSimulationInteractorNv::EnableGravityOverride(const struct FVector& InVector)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.EnableGravityOverride");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.EnableGravityOverride"));
 
 	struct
 	{
@@ -77,7 +77,7 @@ void UClothingSimulationInteractorNv::EnableGravityOverride(const struct FVector
 
 void UClothingSimulationInteractorNv::DisableGravityOverride()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.DisableGravityOverride");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntime.ClothingSimulationInteractorNv.DisableGravityOverride"));
 
 	struct
 	{

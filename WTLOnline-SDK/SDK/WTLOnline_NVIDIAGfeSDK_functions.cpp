@@ -17,7 +17,7 @@ namespace SDK
 
 void UHighlightsFunctionLibrary::Poll()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsFunctionLibrary.Poll");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsFunctionLibrary.Poll"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UHighlightsFunctionLibrary::Poll()
 
 void UHighlightsFunctionLibrary::ChekIfHighlightsAvailable(const struct FGfeSDKCreateResponse& InitProperties, bool* VideoGranted, bool* ScreenshotsGranted, EGfeSDKPermission* Video, EGfeSDKPermission* Screenshots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsFunctionLibrary.ChekIfHighlightsAvailable");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsFunctionLibrary.ChekIfHighlightsAvailable"));
 
 	struct
 	{
@@ -78,7 +78,7 @@ void UHighlightsFunctionLibrary::ChekIfHighlightsAvailable(const struct FGfeSDKC
 
 class UInitHighlights* UInitHighlights::InitHighlights(class UObject* WorldContextObject, const struct FString& InGameName, bool Video, bool Screenshots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.InitHighlights.InitHighlights");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.InitHighlights.InitHighlights"));
 
 	struct
 	{
@@ -110,7 +110,7 @@ class UInitHighlights* UInitHighlights::InitHighlights(class UObject* WorldConte
 
 class UHighlightsConfigureAsync* UHighlightsConfigureAsync::HighlightsConfigure(class UObject* WorldContextObject, const struct FGfeSDKHighlightConfigParams& ConfigParams)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsConfigureAsync.HighlightsConfigure");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsConfigureAsync.HighlightsConfigure"));
 
 	struct
 	{
@@ -138,7 +138,7 @@ class UHighlightsConfigureAsync* UHighlightsConfigureAsync::HighlightsConfigure(
 
 class UHighlightsOpenGroupAsync* UHighlightsOpenGroupAsync::HighlightsOpenGroup(class UObject* WorldContextObject, const struct FGfeSDKHighlightOpenGroupParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsOpenGroupAsync.HighlightsOpenGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsOpenGroupAsync.HighlightsOpenGroup"));
 
 	struct
 	{
@@ -167,7 +167,7 @@ class UHighlightsOpenGroupAsync* UHighlightsOpenGroupAsync::HighlightsOpenGroup(
 
 class UHighlightsCloseGroupAsync* UHighlightsCloseGroupAsync::HighlightsCloseGroup(class UObject* WorldContextObject, const struct FString& GroupId, bool DestroyHighlights)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsCloseGroupAsync.HighlightsCloseGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsCloseGroupAsync.HighlightsCloseGroup"));
 
 	struct
 	{
@@ -198,7 +198,7 @@ class UHighlightsCloseGroupAsync* UHighlightsCloseGroupAsync::HighlightsCloseGro
 
 class UHighlightsSetScreenshotAsync* UHighlightsSetScreenshotAsync::HighlightsSetScreenshot(class UObject* WorldContextObject, const struct FString& GroupId, const struct FString& HighlightId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsSetScreenshotAsync.HighlightsSetScreenshot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsSetScreenshotAsync.HighlightsSetScreenshot"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ class UHighlightsSetScreenshotAsync* UHighlightsSetScreenshotAsync::HighlightsSe
 
 class UHighlightsSetVideoAsync* UHighlightsSetVideoAsync::HighlightsSetVideo(class UObject* WorldContextObject, const struct FString& GroupId, const struct FString& HighlightId, int StartDelta, int EndDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsSetVideoAsync.HighlightsSetVideo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsSetVideoAsync.HighlightsSetVideo"));
 
 	struct
 	{
@@ -265,7 +265,7 @@ class UHighlightsSetVideoAsync* UHighlightsSetVideoAsync::HighlightsSetVideo(cla
 
 class UHighlightsSummaryAsync* UHighlightsSummaryAsync::HighlightsOpenSummary(class UObject* WorldContextObject, const struct FGfeSDKHighlightSummaryParams& Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsSummaryAsync.HighlightsOpenSummary");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsSummaryAsync.HighlightsOpenSummary"));
 
 	struct
 	{
@@ -295,7 +295,7 @@ class UHighlightsSummaryAsync* UHighlightsSummaryAsync::HighlightsOpenSummary(cl
 
 class UHighlightsGetNumberAsync* UHighlightsGetNumberAsync::HighlightsGetNumberOfHighlights(class UObject* WorldContextObject, const struct FString& GroupId, EGfeSDKHighlightType TagFilter, EGfeSDKHighlightSignificance SignificanceFilter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.HighlightsGetNumberAsync.HighlightsGetNumberOfHighlights");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.HighlightsGetNumberAsync.HighlightsGetNumberOfHighlights"));
 
 	struct
 	{
@@ -328,7 +328,7 @@ class UHighlightsGetNumberAsync* UHighlightsGetNumberAsync::HighlightsGetNumberO
 
 class URequestPermissionsAsync* URequestPermissionsAsync::GFERequestPermissions(class UObject* WorldContextObject, bool Video, bool Screenshots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NVIDIAGfeSDK.RequestPermissionsAsync.GFERequestPermissions");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NVIDIAGfeSDK.RequestPermissionsAsync.GFERequestPermissions"));
 
 	struct
 	{

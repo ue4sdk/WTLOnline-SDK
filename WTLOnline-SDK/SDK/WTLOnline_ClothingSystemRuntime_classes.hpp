@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntime.ClothingAssetCustomData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntime.ClothingAssetCustomData"));
 		return ptr;
 	}
 
@@ -47,7 +47,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntime.ClothingAsset");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntime.ClothingAsset"));
 		return ptr;
 	}
 
@@ -62,7 +62,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntime.ClothingSimulationFactoryNv");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntime.ClothingSimulationFactoryNv"));
 		return ptr;
 	}
 
@@ -78,7 +78,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntime.ClothingSimulationInteractorNv");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntime.ClothingSimulationInteractorNv"));
 		return ptr;
 	}
 

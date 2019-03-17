@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_PDA_Menu_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu.UI_PDA_Menu_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu.UI_PDA_Menu_C.Construct"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UUI_PDA_Menu_C::Construct()
 
 void UUI_PDA_Menu_C::ExecuteUbergraph_UI_PDA_Menu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu.UI_PDA_Menu_C.ExecuteUbergraph_UI_PDA_Menu");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu.UI_PDA_Menu_C.ExecuteUbergraph_UI_PDA_Menu"));
 
 	struct
 	{

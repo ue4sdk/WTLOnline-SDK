@@ -20,7 +20,7 @@ namespace SDK
 
 bool ABP_NPC_Soldier_C::CanDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.CanDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.CanDialog"));
 
 	struct
 	{
@@ -44,7 +44,7 @@ bool ABP_NPC_Soldier_C::CanDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Soldier_C::CheckReplicaTellMe(class AWTLCharacter* Character, int InReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.CheckReplicaTellMe");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.CheckReplicaTellMe"));
 
 	struct
 	{
@@ -66,7 +66,7 @@ void ABP_NPC_Soldier_C::CheckReplicaTellMe(class AWTLCharacter* Character, int I
 
 void ABP_NPC_Soldier_C::ShowDialogTellMe(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowDialogTellMe");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowDialogTellMe"));
 
 	struct
 	{
@@ -86,7 +86,7 @@ void ABP_NPC_Soldier_C::ShowDialogTellMe(class AWTLCharacter* Character)
 
 void ABP_NPC_Soldier_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -108,7 +108,7 @@ void ABP_NPC_Soldier_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character
 
 void ABP_NPC_Soldier_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -137,7 +137,7 @@ void ABP_NPC_Soldier_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character
 
 void ABP_NPC_Soldier_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -166,7 +166,7 @@ void ABP_NPC_Soldier_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Charact
 
 void ABP_NPC_Soldier_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -198,7 +198,7 @@ void ABP_NPC_Soldier_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* 
 
 void ABP_NPC_Soldier_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int InNPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ExecutingAction"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ void ABP_NPC_Soldier_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCR
 
 void ABP_NPC_Soldier_C::ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowDialogQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowDialogQuest"));
 
 	struct
 	{
@@ -254,7 +254,7 @@ void ABP_NPC_Soldier_C::ShowDialogQuest(class AWTLCharacter* Character, const st
 
 void ABP_NPC_Soldier_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -279,7 +279,7 @@ void ABP_NPC_Soldier_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* Rep
 
 void ABP_NPC_Soldier_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ShowStartDialog"));
 
 	struct
 	{
@@ -297,7 +297,7 @@ void ABP_NPC_Soldier_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Soldier_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.UserConstructionScript"));
 
 	struct
 	{
@@ -313,7 +313,7 @@ void ABP_NPC_Soldier_C::UserConstructionScript()
 
 void ABP_NPC_Soldier_C::Timeline_0_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.Timeline_0_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.Timeline_0_0__FinishedFunc"));
 
 	struct
 	{
@@ -329,7 +329,7 @@ void ABP_NPC_Soldier_C::Timeline_0_0__FinishedFunc()
 
 void ABP_NPC_Soldier_C::Timeline_0_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.Timeline_0_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.Timeline_0_0__UpdateFunc"));
 
 	struct
 	{
@@ -347,7 +347,7 @@ void ABP_NPC_Soldier_C::Timeline_0_0__UpdateFunc()
 
 void ABP_NPC_Soldier_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ReceiveTick"));
 
 	struct
 	{
@@ -368,7 +368,7 @@ void ABP_NPC_Soldier_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_Soldier_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -390,7 +390,7 @@ void ABP_NPC_Soldier_C::OnPlayerSelectReplica(class AWTLCharacter* Character, in
 
 void ABP_NPC_Soldier_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -408,7 +408,7 @@ void ABP_NPC_Soldier_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_Soldier_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -426,7 +426,7 @@ void ABP_NPC_Soldier_C::ReceiveBeginPlay()
 
 void ABP_NPC_Soldier_C::ExecuteUbergraph_BP_NPC_Soldier(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ExecuteUbergraph_BP_NPC_Soldier");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Soldier.BP_NPC_Soldier_C.ExecuteUbergraph_BP_NPC_Soldier"));
 
 	struct
 	{

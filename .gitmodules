@@ -1,0 +1,3 @@
+[submodule "WTLOnline-SDK/XorStr"]
+	path = WTLOnline-SDK/XorStr
+	url = git@github.com:igromanru/XorStr.git

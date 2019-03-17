@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_CharacterPreviewRoom_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_CharacterPreviewRoom_C::UserConstructionScript()
 
 void ABP_CharacterPreviewRoom_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.ReceiveTick"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_CharacterPreviewRoom_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_CharacterPreviewRoom_C::ExecuteUbergraph_BP_CharacterPreviewRoom(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.ExecuteUbergraph_BP_CharacterPreviewRoom");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreviewRoom.BP_CharacterPreviewRoom_C.ExecuteUbergraph_BP_CharacterPreviewRoom"));
 
 	struct
 	{

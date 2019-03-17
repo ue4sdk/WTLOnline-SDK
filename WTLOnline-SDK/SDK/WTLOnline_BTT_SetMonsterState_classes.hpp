@@ -27,7 +27,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_SetMonsterState.BTT_SetMonsterState_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_SetMonsterState.BTT_SetMonsterState_C"));
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_CharacterPreview_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreview.BP_CharacterPreview_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreview.BP_CharacterPreview_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_CharacterPreview_C::UserConstructionScript()
 
 void ABP_CharacterPreview_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreview.BP_CharacterPreview_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreview.BP_CharacterPreview_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_CharacterPreview_C::ReceiveBeginPlay()
 
 void ABP_CharacterPreview_C::ExecuteUbergraph_BP_CharacterPreview(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CharacterPreview.BP_CharacterPreview_C.ExecuteUbergraph_BP_CharacterPreview");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CharacterPreview.BP_CharacterPreview_C.ExecuteUbergraph_BP_CharacterPreview"));
 
 	struct
 	{

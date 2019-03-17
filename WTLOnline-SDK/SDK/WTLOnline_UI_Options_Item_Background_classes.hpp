@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Options_Item_Background.UI_Options_Item_Background_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Options_Item_Background.UI_Options_Item_Background_C"));
 		return ptr;
 	}
 

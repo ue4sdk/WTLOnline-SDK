@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_QuestAchievemnts_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_QuestAchievemnts_C::UserConstructionScript()
 
 void ABP_QuestAchievemnts_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_QuestAchievemnts_C::ReceiveBeginPlay()
 
 void ABP_QuestAchievemnts_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ReceiveTick"));
 
 	struct
 	{
@@ -76,7 +76,7 @@ void ABP_QuestAchievemnts_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_QuestAchievemnts_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"));
 
 	struct
 	{
@@ -106,7 +106,7 @@ void ABP_QuestAchievemnts_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_0_Compone
 
 void ABP_QuestAchievemnts_C::ExecuteUbergraph_BP_QuestAchievemnts(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ExecuteUbergraph_BP_QuestAchievemnts");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_QuestAchievemnts.BP_QuestAchievemnts_C.ExecuteUbergraph_BP_QuestAchievemnts"));
 
 	struct
 	{

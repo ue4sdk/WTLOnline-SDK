@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSignedObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSignedObject"));
 		return ptr;
 	}
 
@@ -59,7 +59,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSection"));
 		return ptr;
 	}
 
@@ -76,7 +76,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneTrack"));
 		return ptr;
 	}
 
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneNameableTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneNameableTrack"));
 		return ptr;
 	}
 
@@ -118,7 +118,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieScene");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieScene"));
 		return ptr;
 	}
 
@@ -136,7 +136,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneBindingOverrides");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneBindingOverrides"));
 		return ptr;
 	}
 
@@ -151,7 +151,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneBindingOverridesInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneBindingOverridesInterface"));
 		return ptr;
 	}
 
@@ -166,7 +166,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneBindingOwnerInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneBindingOwnerInterface"));
 		return ptr;
 	}
 
@@ -184,7 +184,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneBuiltInEasingFunction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneBuiltInEasingFunction"));
 		return ptr;
 	}
 
@@ -201,7 +201,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneEasingExternalCurve");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneEasingExternalCurve"));
 		return ptr;
 	}
 
@@ -216,7 +216,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneEasingFunction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneEasingFunction"));
 		return ptr;
 	}
 
@@ -238,7 +238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneFolder");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneFolder"));
 		return ptr;
 	}
 
@@ -253,7 +253,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneKeyProxy");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneKeyProxy"));
 		return ptr;
 	}
 
@@ -272,7 +272,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSequence");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSequence"));
 		return ptr;
 	}
 
@@ -305,7 +305,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSequencePlayer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSequencePlayer"));
 		return ptr;
 	}
 
@@ -370,7 +370,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSubSection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSubSection"));
 		return ptr;
 	}
 
@@ -386,7 +386,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.MovieSceneSubTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.MovieSceneSubTrack"));
 		return ptr;
 	}
 
@@ -404,7 +404,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.TestMovieSceneTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.TestMovieSceneTrack"));
 		return ptr;
 	}
 
@@ -419,7 +419,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.TestMovieSceneSection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.TestMovieSceneSection"));
 		return ptr;
 	}
 
@@ -435,7 +435,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MovieScene.TestMovieSceneSequence");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MovieScene.TestMovieSceneSequence"));
 		return ptr;
 	}
 

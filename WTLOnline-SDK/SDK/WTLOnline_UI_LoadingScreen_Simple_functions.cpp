@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_LoadingScreen_Simple_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.Construct"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void UUI_LoadingScreen_Simple_C::Construct()
 
 void UUI_LoadingScreen_Simple_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.Tick"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void UUI_LoadingScreen_Simple_C::Tick(const struct FGeometry& MyGeometry, float 
 
 void UUI_LoadingScreen_Simple_C::ExecuteUbergraph_UI_LoadingScreen_Simple(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.ExecuteUbergraph_UI_LoadingScreen_Simple");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_LoadingScreen_Simple.UI_LoadingScreen_Simple_C.ExecuteUbergraph_UI_LoadingScreen_Simple"));
 
 	struct
 	{

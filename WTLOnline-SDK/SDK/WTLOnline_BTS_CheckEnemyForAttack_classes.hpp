@@ -33,7 +33,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTS_CheckEnemyForAttack.BTS_CheckEnemyForAttack_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTS_CheckEnemyForAttack.BTS_CheckEnemyForAttack_C"));
 		return ptr;
 	}
 

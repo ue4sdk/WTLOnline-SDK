@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ElectronicBait_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectronicBait.BP_ElectronicBait_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectronicBait.BP_ElectronicBait_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_ElectronicBait_C::UserConstructionScript()
 
 void ABP_ElectronicBait_C::OnConditionChanged(float ConditionValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectronicBait.BP_ElectronicBait_C.OnConditionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectronicBait.BP_ElectronicBait_C.OnConditionChanged"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_ElectronicBait_C::OnConditionChanged(float ConditionValue)
 
 void ABP_ElectronicBait_C::OnEnergyChanged(float EnergyValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectronicBait.BP_ElectronicBait_C.OnEnergyChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectronicBait.BP_ElectronicBait_C.OnEnergyChanged"));
 
 	struct
 	{
@@ -73,7 +73,7 @@ void ABP_ElectronicBait_C::OnEnergyChanged(float EnergyValue)
 
 void ABP_ElectronicBait_C::K2_OnDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectronicBait.BP_ElectronicBait_C.K2_OnDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectronicBait.BP_ElectronicBait_C.K2_OnDestroyed"));
 
 	struct
 	{
@@ -91,7 +91,7 @@ void ABP_ElectronicBait_C::K2_OnDestroyed()
 
 void ABP_ElectronicBait_C::ExecuteUbergraph_BP_ElectronicBait(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectronicBait.BP_ElectronicBait_C.ExecuteUbergraph_BP_ElectronicBait");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectronicBait.BP_ElectronicBait_C.ExecuteUbergraph_BP_ElectronicBait"));
 
 	struct
 	{

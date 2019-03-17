@@ -19,7 +19,7 @@ namespace SDK
 
 void UGameAnalytics::SetGender(EGAGender Gender)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetGender");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetGender"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UGameAnalytics::SetGender(EGAGender Gender)
 
 void UGameAnalytics::SetFacebookId(const struct FString& FacebookId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetFacebookId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetFacebookId"));
 
 	struct
 	{
@@ -61,7 +61,7 @@ void UGameAnalytics::SetFacebookId(const struct FString& FacebookId)
 
 void UGameAnalytics::SetCustomDimension03(const struct FString& CustomDimension)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetCustomDimension03");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetCustomDimension03"));
 
 	struct
 	{
@@ -82,7 +82,7 @@ void UGameAnalytics::SetCustomDimension03(const struct FString& CustomDimension)
 
 void UGameAnalytics::SetCustomDimension02(const struct FString& CustomDimension)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetCustomDimension02");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetCustomDimension02"));
 
 	struct
 	{
@@ -103,7 +103,7 @@ void UGameAnalytics::SetCustomDimension02(const struct FString& CustomDimension)
 
 void UGameAnalytics::SetCustomDimension01(const struct FString& CustomDimension)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetCustomDimension01");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetCustomDimension01"));
 
 	struct
 	{
@@ -124,7 +124,7 @@ void UGameAnalytics::SetCustomDimension01(const struct FString& CustomDimension)
 
 void UGameAnalytics::SetBirthYear(int BirthYear)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.SetBirthYear");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.SetBirthYear"));
 
 	struct
 	{
@@ -145,7 +145,7 @@ void UGameAnalytics::SetBirthYear(int BirthYear)
 
 bool UGameAnalytics::IsCommandCenterReady()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.IsCommandCenterReady");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.IsCommandCenterReady"));
 
 	struct
 	{
@@ -167,7 +167,7 @@ bool UGameAnalytics::IsCommandCenterReady()
 
 struct FString UGameAnalytics::GetConfigurationsContentAsString()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.GetConfigurationsContentAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.GetConfigurationsContentAsString"));
 
 	struct
 	{
@@ -191,7 +191,7 @@ struct FString UGameAnalytics::GetConfigurationsContentAsString()
 
 struct FString UGameAnalytics::GetCommandCenterValueAsStringWithDefaultValue(const struct FString& Key, const struct FString& DefaultValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.GetCommandCenterValueAsStringWithDefaultValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.GetCommandCenterValueAsStringWithDefaultValue"));
 
 	struct
 	{
@@ -218,7 +218,7 @@ struct FString UGameAnalytics::GetCommandCenterValueAsStringWithDefaultValue(con
 
 struct FString UGameAnalytics::GetCommandCenterValueAsString(const struct FString& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.GetCommandCenterValueAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.GetCommandCenterValueAsString"));
 
 	struct
 	{
@@ -246,7 +246,7 @@ struct FString UGameAnalytics::GetCommandCenterValueAsString(const struct FStrin
 
 void UGameAnalytics::AddResourceEvent(EGAResourceFlowType FlowType, const struct FString& Currency, float Amount, const struct FString& ItemType, const struct FString& ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddResourceEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddResourceEvent"));
 
 	struct
 	{
@@ -279,7 +279,7 @@ void UGameAnalytics::AddResourceEvent(EGAResourceFlowType FlowType, const struct
 
 void UGameAnalytics::AddProgressionEvenWithOneTwoThreeAndScore(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01, const struct FString& Progression02, const struct FString& Progression03, int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEvenWithOneTwoThreeAndScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEvenWithOneTwoThreeAndScore"));
 
 	struct
 	{
@@ -311,7 +311,7 @@ void UGameAnalytics::AddProgressionEvenWithOneTwoThreeAndScore(EGAProgressionSta
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndThree(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01, const struct FString& Progression02, const struct FString& Progression03)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneTwoAndThree");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneTwoAndThree"));
 
 	struct
 	{
@@ -341,7 +341,7 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndThree(EGAProgressionStatus 
 
 void UGameAnalytics::AddProgressionEventWithOneTwoAndScore(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01, const struct FString& Progression02, int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneTwoAndScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneTwoAndScore"));
 
 	struct
 	{
@@ -370,7 +370,7 @@ void UGameAnalytics::AddProgressionEventWithOneTwoAndScore(EGAProgressionStatus 
 
 void UGameAnalytics::AddProgressionEventWithOneAndTwo(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01, const struct FString& Progression02)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneAndTwo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneAndTwo"));
 
 	struct
 	{
@@ -397,7 +397,7 @@ void UGameAnalytics::AddProgressionEventWithOneAndTwo(EGAProgressionStatus Progr
 
 void UGameAnalytics::AddProgressionEventWithOneAndScore(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01, int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneAndScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOneAndScore"));
 
 	struct
 	{
@@ -423,7 +423,7 @@ void UGameAnalytics::AddProgressionEventWithOneAndScore(EGAProgressionStatus Pro
 
 void UGameAnalytics::AddProgressionEventWithOne(EGAProgressionStatus ProgressionStatus, const struct FString& Progression01)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOne");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddProgressionEventWithOne"));
 
 	struct
 	{
@@ -447,7 +447,7 @@ void UGameAnalytics::AddProgressionEventWithOne(EGAProgressionStatus Progression
 
 void UGameAnalytics::AddErrorEvent(EGAErrorSeverity Severity, const struct FString& Message)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddErrorEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddErrorEvent"));
 
 	struct
 	{
@@ -471,7 +471,7 @@ void UGameAnalytics::AddErrorEvent(EGAErrorSeverity Severity, const struct FStri
 
 void UGameAnalytics::AddDesignEventWithValue(const struct FString& EventId, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddDesignEventWithValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddDesignEventWithValue"));
 
 	struct
 	{
@@ -494,7 +494,7 @@ void UGameAnalytics::AddDesignEventWithValue(const struct FString& EventId, floa
 
 void UGameAnalytics::AddDesignEvent(const struct FString& EventId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddDesignEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddDesignEvent"));
 
 	struct
 	{
@@ -520,7 +520,7 @@ void UGameAnalytics::AddDesignEvent(const struct FString& EventId)
 
 void UGameAnalytics::AddBusinessEventIOS(const struct FString& Currency, int Amount, const struct FString& ItemType, const struct FString& ItemID, const struct FString& CartType, const struct FString& Receipt)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddBusinessEventIOS");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddBusinessEventIOS"));
 
 	struct
 	{
@@ -557,7 +557,7 @@ void UGameAnalytics::AddBusinessEventIOS(const struct FString& Currency, int Amo
 
 void UGameAnalytics::AddBusinessEventAndroid(const struct FString& Currency, int Amount, const struct FString& ItemType, const struct FString& ItemID, const struct FString& CartType, const struct FString& Receipt, const struct FString& Signature)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddBusinessEventAndroid");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddBusinessEventAndroid"));
 
 	struct
 	{
@@ -594,7 +594,7 @@ void UGameAnalytics::AddBusinessEventAndroid(const struct FString& Currency, int
 
 void UGameAnalytics::AddBusinessEventAndAutoFetchReceipt(const struct FString& Currency, int Amount, const struct FString& ItemType, const struct FString& ItemID, const struct FString& CartType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddBusinessEventAndAutoFetchReceipt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddBusinessEventAndAutoFetchReceipt"));
 
 	struct
 	{
@@ -627,7 +627,7 @@ void UGameAnalytics::AddBusinessEventAndAutoFetchReceipt(const struct FString& C
 
 void UGameAnalytics::AddBusinessEvent(const struct FString& Currency, int Amount, const struct FString& ItemType, const struct FString& ItemID, const struct FString& CartType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameAnalytics.GameAnalytics.AddBusinessEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameAnalytics.GameAnalytics.AddBusinessEvent"));
 
 	struct
 	{

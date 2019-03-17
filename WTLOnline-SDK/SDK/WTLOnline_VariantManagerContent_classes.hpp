@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.LevelVariantSets");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.LevelVariantSets"));
 		return ptr;
 	}
 
@@ -43,7 +43,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.LevelVariantSetsActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.LevelVariantSetsActor"));
 		return ptr;
 	}
 
@@ -74,7 +74,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.PropertyValue");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.PropertyValue"));
 		return ptr;
 	}
 
@@ -89,7 +89,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.PropertyValueMaterial");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.PropertyValueMaterial"));
 		return ptr;
 	}
 
@@ -104,7 +104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.PropertyValueTransform");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.PropertyValueTransform"));
 		return ptr;
 	}
 
@@ -119,7 +119,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.PropertyValueVisibility");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.PropertyValueVisibility"));
 		return ptr;
 	}
 
@@ -136,7 +136,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.Variant");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.Variant"));
 		return ptr;
 	}
 
@@ -161,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.VariantObjectBinding");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.VariantObjectBinding"));
 		return ptr;
 	}
 
@@ -178,7 +178,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class VariantManagerContent.VariantSet");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class VariantManagerContent.VariantSet"));
 		return ptr;
 	}
 

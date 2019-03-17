@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_StreetPost_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_StreetPost.BP_StreetPost_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StreetPost.BP_StreetPost_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_StreetPost_C::UserConstructionScript()
 
 void ABP_StreetPost_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_StreetPost.BP_StreetPost_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StreetPost.BP_StreetPost_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_StreetPost_C::ReceiveBeginPlay()
 
 void ABP_StreetPost_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_StreetPost.BP_StreetPost_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StreetPost.BP_StreetPost_C.ReceiveTick"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_StreetPost_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_StreetPost_C::ExecuteUbergraph_BP_StreetPost(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_StreetPost.BP_StreetPost_C.ExecuteUbergraph_BP_StreetPost");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_StreetPost.BP_StreetPost_C.ExecuteUbergraph_BP_StreetPost"));
 
 	struct
 	{

@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_PDA_FriendsAndEnemies_C::BndEvt__cbsContactType_K2Node_ComponentBoundEvent_8_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_FriendsAndEnemies.UI_PDA_FriendsAndEnemies_C.BndEvt__cbsContactType_K2Node_ComponentBoundEvent_8_OnSelectionChangedEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_FriendsAndEnemies.UI_PDA_FriendsAndEnemies_C.BndEvt__cbsContactType_K2Node_ComponentBoundEvent_8_OnSelectionChangedEvent__DelegateSignature"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UUI_PDA_FriendsAndEnemies_C::BndEvt__cbsContactType_K2Node_ComponentBoundEv
 
 void UUI_PDA_FriendsAndEnemies_C::ExecuteUbergraph_UI_PDA_FriendsAndEnemies(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_FriendsAndEnemies.UI_PDA_FriendsAndEnemies_C.ExecuteUbergraph_UI_PDA_FriendsAndEnemies");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_FriendsAndEnemies.UI_PDA_FriendsAndEnemies_C.ExecuteUbergraph_UI_PDA_FriendsAndEnemies"));
 
 	struct
 	{

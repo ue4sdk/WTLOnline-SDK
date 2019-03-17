@@ -19,7 +19,7 @@ namespace SDK
 
 bool UMediaSource::Validate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSource.Validate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaSource.Validate"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ bool UMediaSource::Validate()
 
 struct FString UMediaSource::GetUrl()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSource.GetUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaSource.GetUrl"));
 
 	struct
 	{
@@ -61,7 +61,7 @@ struct FString UMediaSource::GetUrl()
 
 void UFileMediaSource::SetFilePath(const struct FString& Path)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.FileMediaSource.SetFilePath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.FileMediaSource.SetFilePath"));
 
 	struct
 	{
@@ -82,7 +82,7 @@ void UFileMediaSource::SetFilePath(const struct FString& Path)
 
 void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(int Filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateWebcamCaptureDevices");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateWebcamCaptureDevices"));
 
 	struct
 	{
@@ -108,7 +108,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(int Filter, T
 
 void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(int Filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateVideoCaptureDevices");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateVideoCaptureDevices"));
 
 	struct
 	{
@@ -134,7 +134,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(int Filter, TA
 
 void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(int Filter, TArray<struct FMediaCaptureDevice>* OutDevices)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateAudioCaptureDevices");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateAudioCaptureDevices"));
 
 	struct
 	{
@@ -159,7 +159,7 @@ void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(int Filter, TA
 
 bool UMediaPlayer::SupportsSeeking()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsSeeking");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SupportsSeeking"));
 
 	struct
 	{
@@ -180,7 +180,7 @@ bool UMediaPlayer::SupportsSeeking()
 
 bool UMediaPlayer::SupportsScrubbing()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsScrubbing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SupportsScrubbing"));
 
 	struct
 	{
@@ -203,7 +203,7 @@ bool UMediaPlayer::SupportsScrubbing()
 
 bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SupportsRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SupportsRate"));
 
 	struct
 	{
@@ -230,7 +230,7 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 
 bool UMediaPlayer::SetViewRotation(const struct FRotator& Rotation, bool Absolute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetViewRotation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetViewRotation"));
 
 	struct
 	{
@@ -258,7 +258,7 @@ bool UMediaPlayer::SetViewRotation(const struct FRotator& Rotation, bool Absolut
 
 bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetViewField");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetViewField"));
 
 	struct
 	{
@@ -288,7 +288,7 @@ bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 
 bool UMediaPlayer::SetVideoTrackFrameRate(int TrackIndex, int FormatIndex, float FrameRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate"));
 
 	struct
 	{
@@ -318,7 +318,7 @@ bool UMediaPlayer::SetVideoTrackFrameRate(int TrackIndex, int FormatIndex, float
 
 bool UMediaPlayer::SetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetTrackFormat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetTrackFormat"));
 
 	struct
 	{
@@ -345,7 +345,7 @@ bool UMediaPlayer::SetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex, i
 
 void UMediaPlayer::SetTimeDelay(const struct FTimespan& TimeDelay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetTimeDelay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetTimeDelay"));
 
 	struct
 	{
@@ -366,7 +366,7 @@ void UMediaPlayer::SetTimeDelay(const struct FTimespan& TimeDelay)
 
 bool UMediaPlayer::SetRate(float Rate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetRate"));
 
 	struct
 	{
@@ -390,7 +390,7 @@ bool UMediaPlayer::SetRate(float Rate)
 
 bool UMediaPlayer::SetNativeVolume(float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetNativeVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetNativeVolume"));
 
 	struct
 	{
@@ -414,7 +414,7 @@ bool UMediaPlayer::SetNativeVolume(float Volume)
 
 bool UMediaPlayer::SetLooping(bool Looping)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetLooping");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetLooping"));
 
 	struct
 	{
@@ -437,7 +437,7 @@ bool UMediaPlayer::SetLooping(bool Looping)
 
 void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetDesiredPlayerName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetDesiredPlayerName"));
 
 	struct
 	{
@@ -457,7 +457,7 @@ void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 
 void UMediaPlayer::SetBlockOnTime(const struct FTimespan& Time)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SetBlockOnTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SetBlockOnTime"));
 
 	struct
 	{
@@ -479,7 +479,7 @@ void UMediaPlayer::SetBlockOnTime(const struct FTimespan& Time)
 
 bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.SelectTrack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.SelectTrack"));
 
 	struct
 	{
@@ -505,7 +505,7 @@ bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 
 bool UMediaPlayer::Seek(const struct FTimespan& Time)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Seek");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Seek"));
 
 	struct
 	{
@@ -528,7 +528,7 @@ bool UMediaPlayer::Seek(const struct FTimespan& Time)
 
 bool UMediaPlayer::Rewind()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Rewind");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Rewind"));
 
 	struct
 	{
@@ -549,7 +549,7 @@ bool UMediaPlayer::Rewind()
 
 bool UMediaPlayer::Reopen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Reopen");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Reopen"));
 
 	struct
 	{
@@ -570,7 +570,7 @@ bool UMediaPlayer::Reopen()
 
 bool UMediaPlayer::Previous()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Previous");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Previous"));
 
 	struct
 	{
@@ -591,7 +591,7 @@ bool UMediaPlayer::Previous()
 
 bool UMediaPlayer::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Play");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Play"));
 
 	struct
 	{
@@ -612,7 +612,7 @@ bool UMediaPlayer::Play()
 
 bool UMediaPlayer::Pause()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Pause");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Pause"));
 
 	struct
 	{
@@ -634,7 +634,7 @@ bool UMediaPlayer::Pause()
 
 bool UMediaPlayer::OpenUrl(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenUrl"));
 
 	struct
 	{
@@ -659,7 +659,7 @@ bool UMediaPlayer::OpenUrl(const struct FString& URL)
 
 bool UMediaPlayer::OpenSourceWithOptions(class UMediaSource* MediaSource, const struct FMediaPlayerOptions& Options)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSourceWithOptions");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenSourceWithOptions"));
 
 	struct
 	{
@@ -685,7 +685,7 @@ bool UMediaPlayer::OpenSourceWithOptions(class UMediaSource* MediaSource, const 
 
 bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenSource"));
 
 	struct
 	{
@@ -710,7 +710,7 @@ bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylistIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenPlaylistIndex"));
 
 	struct
 	{
@@ -736,7 +736,7 @@ bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index
 
 bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenPlaylist");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenPlaylist"));
 
 	struct
 	{
@@ -760,7 +760,7 @@ bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 
 bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.OpenFile");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.OpenFile"));
 
 	struct
 	{
@@ -783,7 +783,7 @@ bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 
 bool UMediaPlayer::Next()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Next");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Next"));
 
 	struct
 	{
@@ -804,7 +804,7 @@ bool UMediaPlayer::Next()
 
 bool UMediaPlayer::IsReady()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsReady");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsReady"));
 
 	struct
 	{
@@ -825,7 +825,7 @@ bool UMediaPlayer::IsReady()
 
 bool UMediaPlayer::IsPreparing()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPreparing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsPreparing"));
 
 	struct
 	{
@@ -846,7 +846,7 @@ bool UMediaPlayer::IsPreparing()
 
 bool UMediaPlayer::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPlaying");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsPlaying"));
 
 	struct
 	{
@@ -867,7 +867,7 @@ bool UMediaPlayer::IsPlaying()
 
 bool UMediaPlayer::IsPaused()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsPaused");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsPaused"));
 
 	struct
 	{
@@ -888,7 +888,7 @@ bool UMediaPlayer::IsPaused()
 
 bool UMediaPlayer::IsLooping()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsLooping");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsLooping"));
 
 	struct
 	{
@@ -909,7 +909,7 @@ bool UMediaPlayer::IsLooping()
 
 bool UMediaPlayer::IsConnecting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsConnecting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsConnecting"));
 
 	struct
 	{
@@ -930,7 +930,7 @@ bool UMediaPlayer::IsConnecting()
 
 bool UMediaPlayer::IsBuffering()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.IsBuffering");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.IsBuffering"));
 
 	struct
 	{
@@ -951,7 +951,7 @@ bool UMediaPlayer::IsBuffering()
 
 bool UMediaPlayer::HasError()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.HasError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.HasError"));
 
 	struct
 	{
@@ -972,7 +972,7 @@ bool UMediaPlayer::HasError()
 
 struct FRotator UMediaPlayer::GetViewRotation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetViewRotation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetViewRotation"));
 
 	struct
 	{
@@ -995,7 +995,7 @@ struct FRotator UMediaPlayer::GetViewRotation()
 
 struct FString UMediaPlayer::GetVideoTrackType(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVideoTrackType"));
 
 	struct
 	{
@@ -1022,7 +1022,7 @@ struct FString UMediaPlayer::GetVideoTrackType(int TrackIndex, int FormatIndex)
 
 struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates"));
 
 	struct
 	{
@@ -1049,7 +1049,7 @@ struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int TrackIndex, int For
 
 float UMediaPlayer::GetVideoTrackFrameRate(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate"));
 
 	struct
 	{
@@ -1076,7 +1076,7 @@ float UMediaPlayer::GetVideoTrackFrameRate(int TrackIndex, int FormatIndex)
 
 struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackDimensions");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVideoTrackDimensions"));
 
 	struct
 	{
@@ -1103,7 +1103,7 @@ struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int TrackIndex, int Forma
 
 float UMediaPlayer::GetVideoTrackAspectRatio(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio"));
 
 	struct
 	{
@@ -1128,7 +1128,7 @@ float UMediaPlayer::GetVideoTrackAspectRatio(int TrackIndex, int FormatIndex)
 
 float UMediaPlayer::GetVerticalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetVerticalFieldOfView");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetVerticalFieldOfView"));
 
 	struct
 	{
@@ -1149,7 +1149,7 @@ float UMediaPlayer::GetVerticalFieldOfView()
 
 struct FString UMediaPlayer::GetUrl()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetUrl"));
 
 	struct
 	{
@@ -1172,7 +1172,7 @@ struct FString UMediaPlayer::GetUrl()
 
 struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackLanguage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetTrackLanguage"));
 
 	struct
 	{
@@ -1199,7 +1199,7 @@ struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int T
 
 int UMediaPlayer::GetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackFormat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetTrackFormat"));
 
 	struct
 	{
@@ -1226,7 +1226,7 @@ int UMediaPlayer::GetTrackFormat(EMediaPlayerTrack TrackType, int TrackIndex)
 
 struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTrackDisplayName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetTrackDisplayName"));
 
 	struct
 	{
@@ -1251,7 +1251,7 @@ struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int 
 
 struct FTimespan UMediaPlayer::GetTimeDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTimeDelay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetTimeDelay"));
 
 	struct
 	{
@@ -1272,7 +1272,7 @@ struct FTimespan UMediaPlayer::GetTimeDelay()
 
 struct FTimespan UMediaPlayer::GetTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetTime"));
 
 	struct
 	{
@@ -1294,7 +1294,7 @@ struct FTimespan UMediaPlayer::GetTime()
 
 void UMediaPlayer::GetSupportedRates(bool Unthinned, TArray<struct FFloatRange>* OutRates)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSupportedRates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetSupportedRates"));
 
 	struct
 	{
@@ -1319,7 +1319,7 @@ void UMediaPlayer::GetSupportedRates(bool Unthinned, TArray<struct FFloatRange>*
 
 int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetSelectedTrack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetSelectedTrack"));
 
 	struct
 	{
@@ -1342,7 +1342,7 @@ int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 
 float UMediaPlayer::GetRate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetRate"));
 
 	struct
 	{
@@ -1363,7 +1363,7 @@ float UMediaPlayer::GetRate()
 
 int UMediaPlayer::GetPlaylistIndex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlaylistIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetPlaylistIndex"));
 
 	struct
 	{
@@ -1384,7 +1384,7 @@ int UMediaPlayer::GetPlaylistIndex()
 
 class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlaylist");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetPlaylist"));
 
 	struct
 	{
@@ -1405,7 +1405,7 @@ class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 
 struct FName UMediaPlayer::GetPlayerName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetPlayerName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetPlayerName"));
 
 	struct
 	{
@@ -1427,7 +1427,7 @@ struct FName UMediaPlayer::GetPlayerName()
 
 int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTracks");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetNumTracks"));
 
 	struct
 	{
@@ -1452,7 +1452,7 @@ int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 
 int UMediaPlayer::GetNumTrackFormats(EMediaPlayerTrack TrackType, int TrackIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetNumTrackFormats");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetNumTrackFormats"));
 
 	struct
 	{
@@ -1477,7 +1477,7 @@ int UMediaPlayer::GetNumTrackFormats(EMediaPlayerTrack TrackType, int TrackIndex
 
 struct FText UMediaPlayer::GetMediaName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetMediaName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetMediaName"));
 
 	struct
 	{
@@ -1498,7 +1498,7 @@ struct FText UMediaPlayer::GetMediaName()
 
 float UMediaPlayer::GetHorizontalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView"));
 
 	struct
 	{
@@ -1519,7 +1519,7 @@ float UMediaPlayer::GetHorizontalFieldOfView()
 
 struct FTimespan UMediaPlayer::GetDuration()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDuration");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetDuration"));
 
 	struct
 	{
@@ -1540,7 +1540,7 @@ struct FTimespan UMediaPlayer::GetDuration()
 
 struct FName UMediaPlayer::GetDesiredPlayerName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetDesiredPlayerName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetDesiredPlayerName"));
 
 	struct
 	{
@@ -1563,7 +1563,7 @@ struct FName UMediaPlayer::GetDesiredPlayerName()
 
 struct FString UMediaPlayer::GetAudioTrackType(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetAudioTrackType"));
 
 	struct
 	{
@@ -1590,7 +1590,7 @@ struct FString UMediaPlayer::GetAudioTrackType(int TrackIndex, int FormatIndex)
 
 int UMediaPlayer::GetAudioTrackSampleRate(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate"));
 
 	struct
 	{
@@ -1617,7 +1617,7 @@ int UMediaPlayer::GetAudioTrackSampleRate(int TrackIndex, int FormatIndex)
 
 int UMediaPlayer::GetAudioTrackChannels(int TrackIndex, int FormatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.GetAudioTrackChannels");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.GetAudioTrackChannels"));
 
 	struct
 	{
@@ -1640,7 +1640,7 @@ int UMediaPlayer::GetAudioTrackChannels(int TrackIndex, int FormatIndex)
 
 void UMediaPlayer::Close()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.Close");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.Close"));
 
 	struct
 	{
@@ -1659,7 +1659,7 @@ void UMediaPlayer::Close()
 
 bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlayUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.CanPlayUrl"));
 
 	struct
 	{
@@ -1683,7 +1683,7 @@ bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 
 bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPlaySource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.CanPlaySource"));
 
 	struct
 	{
@@ -1706,7 +1706,7 @@ bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::CanPause()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlayer.CanPause");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlayer.CanPause"));
 
 	struct
 	{
@@ -1729,7 +1729,7 @@ bool UMediaPlayer::CanPause()
 
 bool UMediaPlaylist::Replace(int Index, class UMediaSource* Replacement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Replace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Replace"));
 
 	struct
 	{
@@ -1755,7 +1755,7 @@ bool UMediaPlaylist::Replace(int Index, class UMediaSource* Replacement)
 
 bool UMediaPlaylist::RemoveAt(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.RemoveAt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.RemoveAt"));
 
 	struct
 	{
@@ -1779,7 +1779,7 @@ bool UMediaPlaylist::RemoveAt(int Index)
 
 bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Remove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Remove"));
 
 	struct
 	{
@@ -1802,7 +1802,7 @@ bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 
 int UMediaPlaylist::Num()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Num");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Num"));
 
 	struct
 	{
@@ -1824,7 +1824,7 @@ int UMediaPlaylist::Num()
 
 void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Insert");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Insert"));
 
 	struct
 	{
@@ -1847,7 +1847,7 @@ void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 
 class UMediaSource* UMediaPlaylist::GetRandom(int* OutIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetRandom");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.GetRandom"));
 
 	struct
 	{
@@ -1873,7 +1873,7 @@ class UMediaSource* UMediaPlaylist::GetRandom(int* OutIndex)
 
 class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetPrevious");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.GetPrevious"));
 
 	struct
 	{
@@ -1899,7 +1899,7 @@ class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.GetNext");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.GetNext"));
 
 	struct
 	{
@@ -1925,7 +1925,7 @@ class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::Get(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Get");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Get"));
 
 	struct
 	{
@@ -1949,7 +1949,7 @@ class UMediaSource* UMediaPlaylist::Get(int Index)
 
 bool UMediaPlaylist::AddUrl(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.AddUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.AddUrl"));
 
 	struct
 	{
@@ -1973,7 +1973,7 @@ bool UMediaPlaylist::AddUrl(const struct FString& URL)
 
 bool UMediaPlaylist::AddFile(const struct FString& FilePath)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.AddFile");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.AddFile"));
 
 	struct
 	{
@@ -1997,7 +1997,7 @@ bool UMediaPlaylist::AddFile(const struct FString& FilePath)
 
 bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaPlaylist.Add");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaPlaylist.Add"));
 
 	struct
 	{
@@ -2020,7 +2020,7 @@ bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 
 void UMediaSoundComponent::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.SetMediaPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaSoundComponent.SetMediaPlayer"));
 
 	struct
 	{
@@ -2040,7 +2040,7 @@ void UMediaSoundComponent::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 
 class UMediaPlayer* UMediaSoundComponent::GetMediaPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.GetMediaPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaSoundComponent.GetMediaPlayer"));
 
 	struct
 	{
@@ -2062,7 +2062,7 @@ class UMediaPlayer* UMediaSoundComponent::GetMediaPlayer()
 
 bool UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct FSoundAttenuationSettings* OutAttenuationSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply"));
 
 	struct
 	{
@@ -2087,7 +2087,7 @@ bool UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct FSoundAttenua
 
 void UMediaTexture::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.SetMediaPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaTexture.SetMediaPlayer"));
 
 	struct
 	{
@@ -2107,7 +2107,7 @@ void UMediaTexture::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 
 int UMediaTexture::GetWidth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetWidth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaTexture.GetWidth"));
 
 	struct
 	{
@@ -2128,7 +2128,7 @@ int UMediaTexture::GetWidth()
 
 class UMediaPlayer* UMediaTexture::GetMediaPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetMediaPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaTexture.GetMediaPlayer"));
 
 	struct
 	{
@@ -2149,7 +2149,7 @@ class UMediaPlayer* UMediaTexture::GetMediaPlayer()
 
 int UMediaTexture::GetHeight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetHeight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaTexture.GetHeight"));
 
 	struct
 	{
@@ -2170,7 +2170,7 @@ int UMediaTexture::GetHeight()
 
 float UMediaTexture::GetAspectRatio()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MediaAssets.MediaTexture.GetAspectRatio");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaTexture.GetAspectRatio"));
 
 	struct
 	{

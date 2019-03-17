@@ -2604,6 +2604,69 @@
     <ClInclude Include="SDK\WTLOnline_WTL_structs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_AB_Chicken_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_AB_Chicken_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_Marker_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_Marker_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_classes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr\xorstr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SDK\WTLOnline_AB_CharacterPreview_functions.cpp">
@@ -3834,6 +3897,36 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDK\WTLOnline_WTL_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_AB_Chicken_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Map_Marker_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

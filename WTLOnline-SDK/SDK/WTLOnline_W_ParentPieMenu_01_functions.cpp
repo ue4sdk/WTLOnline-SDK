@@ -21,7 +21,7 @@ namespace SDK
 
 struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonDoubleClick(const struct FGeometry& InMyGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonDoubleClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonDoubleClick"));
 
 	struct
 	{
@@ -46,7 +46,7 @@ struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonDoubleClick(const struct 
 
 void UW_ParentPieMenu_01_C::SetParrentParmetrs(class UW_ParentPieMenu_01_C* ParentWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.SetParrentParmetrs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.SetParrentParmetrs"));
 
 	struct
 	{
@@ -68,7 +68,7 @@ void UW_ParentPieMenu_01_C::SetParrentParmetrs(class UW_ParentPieMenu_01_C* Pare
 
 struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonDown"));
 
 	struct
 	{
@@ -95,7 +95,7 @@ struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonDown(const struct FGeomet
 
 struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonUp");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnMouseButtonUp"));
 
 	struct
 	{
@@ -120,7 +120,7 @@ struct FEventReply UW_ParentPieMenu_01_C::OnMouseButtonUp(const struct FGeometry
 
 bool UW_ParentPieMenu_01_C::IsPressedSimulation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.IsPressedSimulation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.IsPressedSimulation"));
 
 	struct
 	{
@@ -141,7 +141,7 @@ bool UW_ParentPieMenu_01_C::IsPressedSimulation()
 
 float UW_ParentPieMenu_01_C::KeyBoardSimulation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.KeyBoardSimulation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.KeyBoardSimulation"));
 
 	struct
 	{
@@ -162,7 +162,7 @@ float UW_ParentPieMenu_01_C::KeyBoardSimulation()
 
 float UW_ParentPieMenu_01_C::GamePadSimulation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.GamePadSimulation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.GamePadSimulation"));
 
 	struct
 	{
@@ -183,7 +183,7 @@ float UW_ParentPieMenu_01_C::GamePadSimulation()
 
 void UW_ParentPieMenu_01_C::UpdateColor(bool* IsSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.UpdateColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.UpdateColor"));
 
 	struct
 	{
@@ -207,7 +207,7 @@ void UW_ParentPieMenu_01_C::UpdateColor(bool* IsSuccess)
 
 void UW_ParentPieMenu_01_C::SetColor(const struct FLinearColor& RingColor, const struct FLinearColor& HoveredColor, bool* IsSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.SetColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.SetColor"));
 
 	struct
 	{
@@ -233,7 +233,7 @@ void UW_ParentPieMenu_01_C::SetColor(const struct FLinearColor& RingColor, const
 
 void UW_ParentPieMenu_01_C::PreConstruct(bool IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.PreConstruct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.PreConstruct"));
 
 	struct
 	{
@@ -253,7 +253,7 @@ void UW_ParentPieMenu_01_C::PreConstruct(bool IsDesignTime)
 
 void UW_ParentPieMenu_01_C::ExecuteUbergraph_W_ParentPieMenu_01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.ExecuteUbergraph_W_ParentPieMenu_01");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.ExecuteUbergraph_W_ParentPieMenu_01"));
 
 	struct
 	{
@@ -271,7 +271,7 @@ void UW_ParentPieMenu_01_C::ExecuteUbergraph_W_ParentPieMenu_01(int EntryPoint)
 
 void UW_ParentPieMenu_01_C::OnReturnBack__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnReturnBack__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_ParentPieMenu_01.W_ParentPieMenu_01_C.OnReturnBack__DelegateSignature"));
 
 	struct
 	{

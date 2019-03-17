@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C"));
 		return ptr;
 	}
 

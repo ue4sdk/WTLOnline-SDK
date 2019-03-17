@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Pawn_StrayDogChild_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_Pawn_StrayDogChild_C::UserConstructionScript()
 
 void ABP_Pawn_StrayDogChild_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceiveTick"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_Pawn_StrayDogChild_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Pawn_StrayDogChild_C::OnHealthChanged(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnHealthChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnHealthChanged"));
 
 	struct
 	{
@@ -73,7 +73,7 @@ void ABP_Pawn_StrayDogChild_C::OnHealthChanged(float Delta)
 
 void ABP_Pawn_StrayDogChild_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -95,7 +95,7 @@ void ABP_Pawn_StrayDogChild_C::ReceiveBeginPlay()
 
 void ABP_Pawn_StrayDogChild_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"));
 
 	struct
 	{
@@ -123,7 +123,7 @@ void ABP_Pawn_StrayDogChild_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEve
 
 void ABP_Pawn_StrayDogChild_C::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnActionTrigger"));
 
 	struct
 	{
@@ -143,7 +143,7 @@ void ABP_Pawn_StrayDogChild_C::OnActionTrigger(const struct FName& ActionName)
 
 void ABP_Pawn_StrayDogChild_C::ReceivePossessed(class AController* NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceivePossessed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ReceivePossessed"));
 
 	struct
 	{
@@ -163,7 +163,7 @@ void ABP_Pawn_StrayDogChild_C::ReceivePossessed(class AController* NewController
 
 void ABP_Pawn_StrayDogChild_C::OnBurst(const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnBurst");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.OnBurst"));
 
 	struct
 	{
@@ -183,7 +183,7 @@ void ABP_Pawn_StrayDogChild_C::OnBurst(const struct FWTLMonsterDeathData& DeathD
 
 void ABP_Pawn_StrayDogChild_C::ExecuteUbergraph_BP_Pawn_StrayDogChild(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ExecuteUbergraph_BP_Pawn_StrayDogChild");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C.ExecuteUbergraph_BP_Pawn_StrayDogChild"));
 
 	struct
 	{

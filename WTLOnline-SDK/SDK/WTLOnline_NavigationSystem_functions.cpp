@@ -19,7 +19,7 @@ namespace SDK
 
 bool UNavigationPath::IsValid()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsValid");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.IsValid"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ bool UNavigationPath::IsValid()
 
 bool UNavigationPath::IsStringPulled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsStringPulled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.IsStringPulled"));
 
 	struct
 	{
@@ -61,7 +61,7 @@ bool UNavigationPath::IsStringPulled()
 
 bool UNavigationPath::IsPartial()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.IsPartial");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.IsPartial"));
 
 	struct
 	{
@@ -82,7 +82,7 @@ bool UNavigationPath::IsPartial()
 
 float UNavigationPath::GetPathLength()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetPathLength");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.GetPathLength"));
 
 	struct
 	{
@@ -103,7 +103,7 @@ float UNavigationPath::GetPathLength()
 
 float UNavigationPath::GetPathCost()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetPathCost");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.GetPathCost"));
 
 	struct
 	{
@@ -124,7 +124,7 @@ float UNavigationPath::GetPathCost()
 
 struct FString UNavigationPath::GetDebugString()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.GetDebugString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.GetDebugString"));
 
 	struct
 	{
@@ -145,7 +145,7 @@ struct FString UNavigationPath::GetDebugString()
 
 void UNavigationPath::EnableRecalculationOnInvalidation(TEnumAsByte<ENavigationOptionFlag> DoRecalculation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.EnableRecalculationOnInvalidation"));
 
 	struct
 	{
@@ -166,7 +166,7 @@ void UNavigationPath::EnableRecalculationOnInvalidation(TEnumAsByte<ENavigationO
 
 void UNavigationPath::EnableDebugDrawing(bool bShouldDrawDebugData, const struct FLinearColor& PathColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationPath.EnableDebugDrawing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationPath.EnableDebugDrawing"));
 
 	struct
 	{
@@ -188,7 +188,7 @@ void UNavigationPath::EnableDebugDrawing(bool bShouldDrawDebugData, const struct
 
 void UNavigationSystemV1::UnregisterNavigationInvoker(class AActor* Invoker)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.UnregisterNavigationInvoker"));
 
 	struct
 	{
@@ -209,7 +209,7 @@ void UNavigationSystemV1::UnregisterNavigationInvoker(class AActor* Invoker)
 
 void UNavigationSystemV1::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.SimpleMoveToLocation"));
 
 	struct
 	{
@@ -233,7 +233,7 @@ void UNavigationSystemV1::SimpleMoveToLocation(class AController* Controller, co
 
 void UNavigationSystemV1::SimpleMoveToActor(class AController* Controller, class AActor* Goal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.SimpleMoveToActor"));
 
 	struct
 	{
@@ -256,7 +256,7 @@ void UNavigationSystemV1::SimpleMoveToActor(class AController* Controller, class
 
 void UNavigationSystemV1::SetMaxSimultaneousTileGenerationJobsCount(int MaxNumberOfJobs)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.SetMaxSimultaneousTileGenerationJobsCount"));
 
 	struct
 	{
@@ -276,7 +276,7 @@ void UNavigationSystemV1::SetMaxSimultaneousTileGenerationJobsCount(int MaxNumbe
 
 void UNavigationSystemV1::SetGeometryGatheringMode(ENavDataGatheringModeConfig NewMode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.SetGeometryGatheringMode"));
 
 	struct
 	{
@@ -294,7 +294,7 @@ void UNavigationSystemV1::SetGeometryGatheringMode(ENavDataGatheringModeConfig N
 
 void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.ResetMaxSimultaneousTileGenerationJobsCount"));
 
 	struct
 	{
@@ -314,7 +314,7 @@ void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount()
 
 void UNavigationSystemV1::RegisterNavigationInvoker(class AActor* Invoker, float TileGenerationRadius, float TileRemovalRadius)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.RegisterNavigationInvoker"));
 
 	struct
 	{
@@ -343,7 +343,7 @@ void UNavigationSystemV1::RegisterNavigationInvoker(class AActor* Invoker, float
 
 struct FVector UNavigationSystemV1::ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.ProjectPointToNavigation"));
 
 	struct
 	{
@@ -375,7 +375,7 @@ struct FVector UNavigationSystemV1::ProjectPointToNavigation(class UObject* Worl
 
 void UNavigationSystemV1::OnNavigationBoundsUpdated(class ANavMeshBoundsVolume* NavVolume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.OnNavigationBoundsUpdated"));
 
 	struct
 	{
@@ -401,7 +401,7 @@ void UNavigationSystemV1::OnNavigationBoundsUpdated(class ANavMeshBoundsVolume* 
 
 bool UNavigationSystemV1::NavigationRaycast(class UObject* WorldContextObject, const struct FVector& RayStart, const struct FVector& RayEnd, class UClass* FilterClass, class AController* Querier, struct FVector* HitLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.NavigationRaycast");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.NavigationRaycast"));
 
 	struct
 	{
@@ -443,7 +443,7 @@ bool UNavigationSystemV1::NavigationRaycast(class UObject* WorldContextObject, c
 
 bool UNavigationSystemV1::K2_ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, class ANavigationData* NavData, class UClass* FilterClass, const struct FVector& QueryExtent, struct FVector* ProjectedLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.K2_ProjectPointToNavigation"));
 
 	struct
 	{
@@ -485,7 +485,7 @@ bool UNavigationSystemV1::K2_ProjectPointToNavigation(class UObject* WorldContex
 
 bool UNavigationSystemV1::K2_GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass, struct FVector* RandomLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.K2_GetRandomReachablePointInRadius"));
 
 	struct
 	{
@@ -527,7 +527,7 @@ bool UNavigationSystemV1::K2_GetRandomReachablePointInRadius(class UObject* Worl
 
 bool UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass, struct FVector* RandomLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.K2_GetRandomPointInNavigableRadius"));
 
 	struct
 	{
@@ -564,7 +564,7 @@ bool UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(class UObject* Worl
 
 bool UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuiltOrLocked"));
 
 	struct
 	{
@@ -589,7 +589,7 @@ bool UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(class UObject* WorldCon
 
 bool UNavigationSystemV1::IsNavigationBeingBuilt(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.IsNavigationBeingBuilt"));
 
 	struct
 	{
@@ -618,7 +618,7 @@ bool UNavigationSystemV1::IsNavigationBeingBuilt(class UObject* WorldContextObje
 
 struct FVector UNavigationSystemV1::GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.GetRandomReachablePointInRadius"));
 
 	struct
 	{
@@ -655,7 +655,7 @@ struct FVector UNavigationSystemV1::GetRandomReachablePointInRadius(class UObjec
 
 struct FVector UNavigationSystemV1::GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, class UClass* FilterClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavigableRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.GetRandomPointInNavigableRadius"));
 
 	struct
 	{
@@ -693,7 +693,7 @@ struct FVector UNavigationSystemV1::GetRandomPointInNavigableRadius(class UObjec
 
 TEnumAsByte<ENavigationQueryResult> UNavigationSystemV1::GetPathLength(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class ANavigationData* NavData, class UClass* FilterClass, float* PathLength)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetPathLength");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.GetPathLength"));
 
 	struct
 	{
@@ -735,7 +735,7 @@ TEnumAsByte<ENavigationQueryResult> UNavigationSystemV1::GetPathLength(class UOb
 
 TEnumAsByte<ENavigationQueryResult> UNavigationSystemV1::GetPathCost(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class ANavigationData* NavData, class UClass* FilterClass, float* PathCost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetPathCost");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.GetPathCost"));
 
 	struct
 	{
@@ -772,7 +772,7 @@ TEnumAsByte<ENavigationQueryResult> UNavigationSystemV1::GetPathCost(class UObje
 
 class UNavigationSystemV1* UNavigationSystemV1::GetNavigationSystem(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.GetNavigationSystem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.GetNavigationSystem"));
 
 	struct
 	{
@@ -801,7 +801,7 @@ class UNavigationSystemV1* UNavigationSystemV1::GetNavigationSystem(class UObjec
 
 class UNavigationPath* UNavigationSystemV1::FindPathToLocationSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class AActor* PathfindingContext, class UClass* FilterClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.FindPathToLocationSynchronously"));
 
 	struct
 	{
@@ -839,7 +839,7 @@ class UNavigationPath* UNavigationSystemV1::FindPathToLocationSynchronously(clas
 
 class UNavigationPath* UNavigationSystemV1::FindPathToActorSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, class AActor* GoalActor, float TetherDistance, class AActor* PathfindingContext, class UClass* FilterClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavigationSystemV1.FindPathToActorSynchronously"));
 
 	struct
 	{
@@ -873,7 +873,7 @@ class UNavigationPath* UNavigationSystemV1::FindPathToActorSynchronously(class U
 
 void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavRelevantComponent.SetNavigationRelevancy"));
 
 	struct
 	{
@@ -893,7 +893,7 @@ void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
 
 void UNavModifierComponent::SetAreaClass(class UClass* NewAreaClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavModifierComponent.SetAreaClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavModifierComponent.SetAreaClass"));
 
 	struct
 	{
@@ -913,7 +913,7 @@ void UNavModifierComponent::SetAreaClass(class UClass* NewAreaClass)
 
 void ANavModifierVolume::SetAreaClass(class UClass* NewAreaClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NavigationSystem.NavModifierVolume.SetAreaClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function NavigationSystem.NavModifierVolume.SetAreaClass"));
 
 	struct
 	{

@@ -28,7 +28,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BP_GraffityColVar.BP_GraffityColVar_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BP_GraffityColVar.BP_GraffityColVar_C"));
 		return ptr;
 	}
 

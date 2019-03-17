@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_Common_Store_Button_C::BndEvt__btnStore_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_Common_Store_Button.UI_Common_Store_Button_C.BndEvt__btnStore_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Common_Store_Button.UI_Common_Store_Button_C.BndEvt__btnStore_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void UUI_Common_Store_Button_C::BndEvt__btnStore_K2Node_ComponentBoundEvent_0_On
 
 void UUI_Common_Store_Button_C::BndEvt__btnStore_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_Common_Store_Button.UI_Common_Store_Button_C.BndEvt__btnStore_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Common_Store_Button.UI_Common_Store_Button_C.BndEvt__btnStore_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void UUI_Common_Store_Button_C::BndEvt__btnStore_K2Node_ComponentBoundEvent_1_On
 
 void UUI_Common_Store_Button_C::ExecuteUbergraph_UI_Common_Store_Button(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_Common_Store_Button.UI_Common_Store_Button_C.ExecuteUbergraph_UI_Common_Store_Button");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_Common_Store_Button.UI_Common_Store_Button_C.ExecuteUbergraph_UI_Common_Store_Button"));
 
 	struct
 	{

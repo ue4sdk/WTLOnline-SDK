@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTD_CheckVisibleEnemy.BTD_CheckVisibleEnemy_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTD_CheckVisibleEnemy.BTD_CheckVisibleEnemy_C"));
 		return ptr;
 	}
 

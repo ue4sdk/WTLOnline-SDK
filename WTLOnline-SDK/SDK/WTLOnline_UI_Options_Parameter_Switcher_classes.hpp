@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Options_Parameter_Switcher.UI_Options_Parameter_Switcher_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Options_Parameter_Switcher.UI_Options_Parameter_Switcher_C"));
 		return ptr;
 	}
 

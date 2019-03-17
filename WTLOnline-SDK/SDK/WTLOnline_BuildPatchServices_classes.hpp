@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class BuildPatchServices.BuildPatchManifest");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class BuildPatchServices.BuildPatchManifest"));
 		return ptr;
 	}
 

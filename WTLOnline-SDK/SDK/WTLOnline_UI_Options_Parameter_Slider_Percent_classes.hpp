@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Options_Parameter_Slider_Percent.UI_Options_Parameter_Slider_Percent_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Options_Parameter_Slider_Percent.UI_Options_Parameter_Slider_Percent_C"));
 		return ptr;
 	}
 

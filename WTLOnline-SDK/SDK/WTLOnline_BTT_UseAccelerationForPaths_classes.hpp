@@ -25,7 +25,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C"));
 		return ptr;
 	}
 

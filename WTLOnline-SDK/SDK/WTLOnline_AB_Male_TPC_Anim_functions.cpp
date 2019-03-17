@@ -22,7 +22,7 @@ namespace SDK
 
 void UAB_Male_TPC_Anim_C::DotP(const struct FVector& v1, const struct FVector& v2, float Intencity, float* DotP)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.DotP");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.DotP"));
 
 	struct
 	{
@@ -48,7 +48,7 @@ void UAB_Male_TPC_Anim_C::DotP(const struct FVector& v1, const struct FVector& v
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_TwoWayBlend_776CF0D7444B71E59210769606BE9496()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_TwoWayBlend_776CF0D7444B71E59210769606BE9496");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_TwoWayBlend_776CF0D7444B71E59210769606BE9496"));
 
 	struct
 	{
@@ -64,7 +64,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendListByBool_C88385D8458D937D6EB057A083D380DB()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendListByBool_C88385D8458D937D6EB057A083D380DB");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendListByBool_C88385D8458D937D6EB057A083D380DB"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendSpacePlayer_23C6FA1649BC050B9ED52A8ABB4B0168()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendSpacePlayer_23C6FA1649BC050B9ED52A8ABB4B0168");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_BlendSpacePlayer_23C6FA1649BC050B9ED52A8ABB4B0168"));
 
 	struct
 	{
@@ -96,7 +96,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_AB1F63694137E45BCE526CA58CCD98B5()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_AB1F63694137E45BCE526CA58CCD98B5");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_AB1F63694137E45BCE526CA58CCD98B5"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_43746DF74C30DEAC57DDAA9055C4A9DB()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_43746DF74C30DEAC57DDAA9055C4A9DB");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_43746DF74C30DEAC57DDAA9055C4A9DB"));
 
 	struct
 	{
@@ -128,7 +128,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_065A275B4ABA37E21F9878A63D74EA03()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_065A275B4ABA37E21F9878A63D74EA03");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TPC_Anim_AnimGraphNode_ModifyBone_065A275B4ABA37E21F9878A63D74EA03"));
 
 	struct
 	{
@@ -146,7 +146,7 @@ void UAB_Male_TPC_Anim_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Male_TP
 
 void UAB_Male_TPC_Anim_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.BlueprintUpdateAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.BlueprintUpdateAnimation"));
 
 	struct
 	{
@@ -164,7 +164,7 @@ void UAB_Male_TPC_Anim_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UAB_Male_TPC_Anim_C::AnimNotify_Death()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.AnimNotify_Death");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.AnimNotify_Death"));
 
 	struct
 	{
@@ -180,7 +180,7 @@ void UAB_Male_TPC_Anim_C::AnimNotify_Death()
 
 void UAB_Male_TPC_Anim_C::BlueprintBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.BlueprintBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.BlueprintBeginPlay"));
 
 	struct
 	{
@@ -196,7 +196,7 @@ void UAB_Male_TPC_Anim_C::BlueprintBeginPlay()
 
 void UAB_Male_TPC_Anim_C::UpdateComplexity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.UpdateComplexity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.UpdateComplexity"));
 
 	struct
 	{
@@ -214,7 +214,7 @@ void UAB_Male_TPC_Anim_C::UpdateComplexity()
 
 void UAB_Male_TPC_Anim_C::ExecuteUbergraph_AB_Male_TPC_Anim(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.ExecuteUbergraph_AB_Male_TPC_Anim");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Male_TPC_Anim.AB_Male_TPC_Anim_C.ExecuteUbergraph_AB_Male_TPC_Anim"));
 
 	struct
 	{

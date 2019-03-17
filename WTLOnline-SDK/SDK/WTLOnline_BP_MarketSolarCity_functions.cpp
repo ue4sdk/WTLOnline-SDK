@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_MarketSolarCity_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MarketSolarCity.BP_MarketSolarCity_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MarketSolarCity.BP_MarketSolarCity_C.UserConstructionScript"));
 
 	struct
 	{

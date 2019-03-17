@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_PDA_SocialNetworkAuthorization_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.Tick"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UUI_PDA_SocialNetworkAuthorization_C::Tick(const struct FGeometry& MyGeomet
 
 void UUI_PDA_SocialNetworkAuthorization_C::BndEvt__webBrowser_K2Node_ComponentBoundEvent_0_OnUrlChanged__DelegateSignature(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.BndEvt__webBrowser_K2Node_ComponentBoundEvent_0_OnUrlChanged__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.BndEvt__webBrowser_K2Node_ComponentBoundEvent_0_OnUrlChanged__DelegateSignature"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void UUI_PDA_SocialNetworkAuthorization_C::BndEvt__webBrowser_K2Node_ComponentBo
 
 void UUI_PDA_SocialNetworkAuthorization_C::OnLoadURL(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.OnLoadURL");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.OnLoadURL"));
 
 	struct
 	{
@@ -82,7 +82,7 @@ void UUI_PDA_SocialNetworkAuthorization_C::OnLoadURL(const struct FString& URL)
 
 void UUI_PDA_SocialNetworkAuthorization_C::ExecuteUbergraph_UI_PDA_SocialNetworkAuthorization(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.ExecuteUbergraph_UI_PDA_SocialNetworkAuthorization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_SocialNetworkAuthorization.UI_PDA_SocialNetworkAuthorization_C.ExecuteUbergraph_UI_PDA_SocialNetworkAuthorization"));
 
 	struct
 	{

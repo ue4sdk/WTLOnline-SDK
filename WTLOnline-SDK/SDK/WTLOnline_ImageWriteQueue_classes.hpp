@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ImageWriteQueue.ImageWriteBlueprintLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ImageWriteQueue.ImageWriteBlueprintLibrary"));
 		return ptr;
 	}
 

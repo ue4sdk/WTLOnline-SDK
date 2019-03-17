@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class GameAnalytics.GameAnalytics");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class GameAnalytics.GameAnalytics"));
 		return ptr;
 	}
 

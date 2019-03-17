@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Common_Countdown_Slider.UI_Common_Countdown_Slider_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Common_Countdown_Slider.UI_Common_Countdown_Slider_C"));
 		return ptr;
 	}
 

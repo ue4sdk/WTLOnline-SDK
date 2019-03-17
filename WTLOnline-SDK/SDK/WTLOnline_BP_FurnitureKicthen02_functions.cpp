@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_FurnitureKicthen02_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FurnitureKicthen02.BP_FurnitureKicthen02_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_FurnitureKicthen02.BP_FurnitureKicthen02_C.UserConstructionScript"));
 
 	struct
 	{

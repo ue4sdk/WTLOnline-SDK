@@ -21,7 +21,7 @@ namespace SDK
 
 void ULinearTimecodeComponent::SetDropTimecodeFrameNumber(const struct FDropTimecode& Timecode, int FrameNumber, struct FDropTimecode* OutTimecode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LinearTimecode.LinearTimecodeComponent.SetDropTimecodeFrameNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LinearTimecode.LinearTimecodeComponent.SetDropTimecodeFrameNumber"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void ULinearTimecodeComponent::SetDropTimecodeFrameNumber(const struct FDropTime
 
 void ULinearTimecodeComponent::GetDropTimeCodeFrameNumber(const struct FDropTimecode& Timecode, int* FrameNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LinearTimecode.LinearTimecodeComponent.GetDropTimeCodeFrameNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LinearTimecode.LinearTimecodeComponent.GetDropTimeCodeFrameNumber"));
 
 	struct
 	{
@@ -74,7 +74,7 @@ void ULinearTimecodeComponent::GetDropTimeCodeFrameNumber(const struct FDropTime
 
 int ULinearTimecodeComponent::GetDropFrameNumber()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LinearTimecode.LinearTimecodeComponent.GetDropFrameNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LinearTimecode.LinearTimecodeComponent.GetDropFrameNumber"));
 
 	struct
 	{
@@ -96,7 +96,7 @@ int ULinearTimecodeComponent::GetDropFrameNumber()
 
 struct FString UDropTimecodeToStringConversion::Conv_DropTimecodeToString(const struct FDropTimecode& InTimecode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LinearTimecode.DropTimecodeToStringConversion.Conv_DropTimecodeToString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function LinearTimecode.DropTimecodeToStringConversion.Conv_DropTimecodeToString"));
 
 	struct
 	{

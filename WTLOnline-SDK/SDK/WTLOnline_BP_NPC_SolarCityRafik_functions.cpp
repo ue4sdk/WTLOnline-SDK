@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_NPC_SolarCityRafik_C::CheckReplicaForShowMainDialog(class AWTLCharacter* Character, int InReplicaID, TArray<int>* InReplicaArrayForShowMainDialog)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.CheckReplicaForShowMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.CheckReplicaForShowMainDialog"));
 
 	struct
 	{
@@ -48,7 +48,7 @@ void ABP_NPC_SolarCityRafik_C::CheckReplicaForShowMainDialog(class AWTLCharacter
 
 void ABP_NPC_SolarCityRafik_C::ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowDialogQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowDialogQuest"));
 
 	struct
 	{
@@ -72,7 +72,7 @@ void ABP_NPC_SolarCityRafik_C::ShowDialogQuest(class AWTLCharacter* Character, c
 
 void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -101,7 +101,7 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Ch
 
 void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -130,7 +130,7 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* 
 
 void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -162,7 +162,7 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLChar
 
 void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ExecutingAction"));
 
 	struct
 	{
@@ -195,7 +195,7 @@ void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, E
 
 void ABP_NPC_SolarCityRafik_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -220,7 +220,7 @@ void ABP_NPC_SolarCityRafik_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, i
 
 void ABP_NPC_SolarCityRafik_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -240,7 +240,7 @@ void ABP_NPC_SolarCityRafik_C::ShowAvailableQuestsDialog(class AWTLCharacter* Ch
 
 void ABP_NPC_SolarCityRafik_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ShowStartDialog"));
 
 	struct
 	{
@@ -258,7 +258,7 @@ void ABP_NPC_SolarCityRafik_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_SolarCityRafik_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.UserConstructionScript"));
 
 	struct
 	{
@@ -274,7 +274,7 @@ void ABP_NPC_SolarCityRafik_C::UserConstructionScript()
 
 void ABP_NPC_SolarCityRafik_C::Timeline_0_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.Timeline_0_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.Timeline_0_0__FinishedFunc"));
 
 	struct
 	{
@@ -290,7 +290,7 @@ void ABP_NPC_SolarCityRafik_C::Timeline_0_0__FinishedFunc()
 
 void ABP_NPC_SolarCityRafik_C::Timeline_0_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.Timeline_0_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.Timeline_0_0__UpdateFunc"));
 
 	struct
 	{
@@ -308,7 +308,7 @@ void ABP_NPC_SolarCityRafik_C::Timeline_0_0__UpdateFunc()
 
 void ABP_NPC_SolarCityRafik_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ReceiveTick"));
 
 	struct
 	{
@@ -329,7 +329,7 @@ void ABP_NPC_SolarCityRafik_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_SolarCityRafik_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -351,7 +351,7 @@ void ABP_NPC_SolarCityRafik_C::OnPlayerSelectReplica(class AWTLCharacter* Charac
 
 void ABP_NPC_SolarCityRafik_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -369,7 +369,7 @@ void ABP_NPC_SolarCityRafik_C::OnNPCDialogActivated(class AWTLCharacter* Charact
 
 void ABP_NPC_SolarCityRafik_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -387,7 +387,7 @@ void ABP_NPC_SolarCityRafik_C::ReceiveBeginPlay()
 
 void ABP_NPC_SolarCityRafik_C::ExecuteUbergraph_BP_NPC_SolarCityRafik(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ExecuteUbergraph_BP_NPC_SolarCityRafik");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ExecuteUbergraph_BP_NPC_SolarCityRafik"));
 
 	struct
 	{

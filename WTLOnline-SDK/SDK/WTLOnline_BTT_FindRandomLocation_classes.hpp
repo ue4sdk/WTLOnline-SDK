@@ -31,7 +31,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_FindRandomLocation.BTT_FindRandomLocation_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_FindRandomLocation.BTT_FindRandomLocation_C"));
 		return ptr;
 	}
 

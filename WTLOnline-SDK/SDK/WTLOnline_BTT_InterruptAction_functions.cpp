@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_InterruptAction_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_InterruptAction.BTT_InterruptAction_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_InterruptAction.BTT_InterruptAction_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UBTT_InterruptAction_C::ReceiveExecuteAI(class AAIController* OwnerControll
 
 void UBTT_InterruptAction_C::ExecuteUbergraph_BTT_InterruptAction(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_InterruptAction.BTT_InterruptAction_C.ExecuteUbergraph_BTT_InterruptAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_InterruptAction.BTT_InterruptAction_C.ExecuteUbergraph_BTT_InterruptAction"));
 
 	struct
 	{

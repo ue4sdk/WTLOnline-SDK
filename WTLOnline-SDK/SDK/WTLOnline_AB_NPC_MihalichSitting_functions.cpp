@@ -17,7 +17,7 @@ namespace SDK
 
 void UAB_NPC_MihalichSitting_C::BlueprintInitializeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.BlueprintInitializeAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.BlueprintInitializeAnimation"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UAB_NPC_MihalichSitting_C::BlueprintInitializeAnimation()
 
 void UAB_NPC_MihalichSitting_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.BlueprintUpdateAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.BlueprintUpdateAnimation"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void UAB_NPC_MihalichSitting_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UAB_NPC_MihalichSitting_C::ExecuteUbergraph_AB_NPC_MihalichSitting(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.ExecuteUbergraph_AB_NPC_MihalichSitting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_MihalichSitting.AB_NPC_MihalichSitting_C.ExecuteUbergraph_AB_NPC_MihalichSitting"));
 
 	struct
 	{

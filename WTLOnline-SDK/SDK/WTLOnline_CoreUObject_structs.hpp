@@ -44,6 +44,21 @@ struct FGuid
 	int                                                B;                                                        // 0x0004(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	int                                                C;                                                        // 0x0008(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	int                                                D;                                                        // 0x000C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
+
+    FGuid() : A(0), B(0), C(0), D(0) {}
+
+    FGuid(int a, int b, int c, int d) : A(a), B(b), C(c), D(d) {}
+
+    bool operator==(const FGuid& other)
+	{
+	    return A == other.A && B == other.B && C == other.C && D == other.D;
+	}
+
+   bool operator!=(const FGuid& other)
+	{
+	    return A != other.A || B != other.B || C != other.C || D != other.D;
+	}
+
 };
 
 // ScriptStruct CoreUObject.Vector
@@ -53,6 +68,25 @@ struct FVector
 	float                                              X;                                                        // 0x0000(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              Y;                                                        // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              Z;                                                        // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
+
+    inline FVector() : X(0.f), Y(0.f), Z(0.f) {}
+
+    inline FVector(float x, float y, float z) : X(x), Y(y), Z(z) {}
+
+    inline FVector operator + (const FVector& other) const { return FVector(X + other.X, Y + other.Y, Z + other.Z); }
+
+    inline FVector operator - (const FVector& other) const { return FVector(X - other.X, Y - other.Y, Z - other.Z); }
+
+    inline FVector operator * (float scalar) const { return FVector(X * scalar, Y * scalar, Z * scalar); }
+
+    inline FVector& operator=  (const FVector& other) { X  = other.X; Y  = other.Y; Z  = other.Z; return *this; }
+
+    inline FVector& operator+= (const FVector& other) { X += other.X; Y += other.Y; Z += other.Z; return *this; }
+
+    inline FVector& operator-= (const FVector& other) { X -= other.X; Y -= other.Y; Z -= other.Z; return *this; }
+
+    inline FVector& operator*= (const float other)    { X *= other;   Y *= other;   Z *= other;   return *this; }
+
 };
 
 // ScriptStruct CoreUObject.Vector4
@@ -105,6 +139,11 @@ struct FRotator
 	float                                              Pitch;                                                    // 0x0000(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              Yaw;                                                      // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              Roll;                                                     // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
+
+    inline FRotator() {}
+
+    inline FRotator(float pitch, float yaw, float roll) : Pitch(pitch), Yaw(yaw), Roll(roll) {}
+
 };
 
 // ScriptStruct CoreUObject.Quat
@@ -115,6 +154,13 @@ struct alignas(16) FQuat
 	float                                              Y;                                                        // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              Z;                                                        // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	float                                              W;                                                        // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
+
+    inline FQuat() {}
+
+    inline FQuat( float InX, float InY, float InZ, float InW ) : X(InX) , Y(InY) , Z(InZ) , W(InW) {}
+
+    inline FQuat( const FQuat& Q ) : X(Q.X), Y(Q.Y), Z(Q.Z), W(Q.W) {}
+
 };
 
 // ScriptStruct CoreUObject.PackedNormal
@@ -189,23 +235,6 @@ struct FLinearColor
 		  A(a)
 	{ }
 
-	inline FLinearColor(float r, float g, float b)
-		: R(r),
-		  G(g),
-		  B(b),
-		  A(1.f)
-		{ }
-
-	bool operator!=(const FLinearColor& other)
-	{
-	    return R != other.R || G != other.G || B != other.B || A != other.A;
-	}
-
-	bool operator==(const FLinearColor& other)
-	{
-	    return R == other.R && G == other.G && B == other.B && A == other.A;
-	}
-
 };
 
 // ScriptStruct CoreUObject.Box
@@ -226,6 +255,11 @@ struct FBox2D
 	struct FVector2D                                   Max;                                                      // 0x0008(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_SaveGame, CPF_IsPlainOldData)
 	unsigned char                                      bIsValid;                                                 // 0x0010(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
+
+    FBox2D() : Min(FVector2D(0,0)), Max(FVector2D(0,0)), bIsValid(1), UnknownData00{} {}
+
+    FBox2D(FVector2D min, FVector2D max) : Min(min), Max(max), bIsValid(1), UnknownData00{} {}
+
 };
 
 // ScriptStruct CoreUObject.BoxSphereBounds

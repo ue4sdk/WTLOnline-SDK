@@ -20,7 +20,7 @@ namespace SDK
 
 bool UBTD_Chance_C::PerformConditionCheck(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTD_Chance.BTD_Chance_C.PerformConditionCheck");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTD_Chance.BTD_Chance_C.PerformConditionCheck"));
 
 	struct
 	{

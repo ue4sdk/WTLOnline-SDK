@@ -20,7 +20,7 @@ namespace SDK
 
 void ABP_CloseInteractiveObject_Base_C::IsCanOpensFromTheBackSide(class AWTLCharacter* Character, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.IsCanOpensFromTheBackSide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.IsCanOpensFromTheBackSide"));
 
 	struct
 	{
@@ -45,7 +45,7 @@ void ABP_CloseInteractiveObject_Base_C::IsCanOpensFromTheBackSide(class AWTLChar
 
 void ABP_CloseInteractiveObject_Base_C::OpenObject(class AWTLCharacter* CharacterOpenedObject, unsigned char SetState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OpenObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OpenObject"));
 
 	struct
 	{
@@ -65,7 +65,7 @@ void ABP_CloseInteractiveObject_Base_C::OpenObject(class AWTLCharacter* Characte
 
 void ABP_CloseInteractiveObject_Base_C::OpenAdditionalObjects()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OpenAdditionalObjects");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OpenAdditionalObjects"));
 
 	struct
 	{
@@ -83,7 +83,7 @@ void ABP_CloseInteractiveObject_Base_C::OpenAdditionalObjects()
 
 void ABP_CloseInteractiveObject_Base_C::IsOnlyPicklock(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.IsOnlyPicklock");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.IsOnlyPicklock"));
 
 	struct
 	{
@@ -105,7 +105,7 @@ void ABP_CloseInteractiveObject_Base_C::IsOnlyPicklock(bool* Result)
 
 void ABP_CloseInteractiveObject_Base_C::PlayAction(class UFMODEvent* Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.PlayAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.PlayAction"));
 
 	struct
 	{
@@ -123,7 +123,7 @@ void ABP_CloseInteractiveObject_Base_C::PlayAction(class UFMODEvent* Event)
 
 void ABP_CloseInteractiveObject_Base_C::CheckUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.CheckUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.CheckUse"));
 
 	struct
 	{
@@ -142,7 +142,7 @@ void ABP_CloseInteractiveObject_Base_C::CheckUse()
 
 float ABP_CloseInteractiveObject_Base_C::BPGetActivationTime(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPGetActivationTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPGetActivationTime"));
 
 	struct
 	{
@@ -166,7 +166,7 @@ float ABP_CloseInteractiveObject_Base_C::BPGetActivationTime(class AWTLCharacter
 
 struct FString ABP_CloseInteractiveObject_Base_C::BPGetDisplayText(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPGetDisplayText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPGetDisplayText"));
 
 	struct
 	{
@@ -190,7 +190,7 @@ struct FString ABP_CloseInteractiveObject_Base_C::BPGetDisplayText(class AWTLCha
 
 bool ABP_CloseInteractiveObject_Base_C::BPCanBeUsed(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPCanBeUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPCanBeUsed"));
 
 	struct
 	{
@@ -211,7 +211,7 @@ bool ABP_CloseInteractiveObject_Base_C::BPCanBeUsed(class AWTLCharacter* Charact
 
 void ABP_CloseInteractiveObject_Base_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.UserConstructionScript"));
 
 	struct
 	{
@@ -227,7 +227,7 @@ void ABP_CloseInteractiveObject_Base_C::UserConstructionScript()
 
 void ABP_CloseInteractiveObject_Base_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -245,7 +245,7 @@ void ABP_CloseInteractiveObject_Base_C::ReceiveBeginPlay()
 
 void ABP_CloseInteractiveObject_Base_C::OnOpenObject(unsigned char State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OnOpenObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OnOpenObject"));
 
 	struct
 	{
@@ -265,7 +265,7 @@ void ABP_CloseInteractiveObject_Base_C::OnOpenObject(unsigned char State)
 
 void ABP_CloseInteractiveObject_Base_C::BPSetHighlightState(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPSetHighlightState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPSetHighlightState"));
 
 	struct
 	{
@@ -285,7 +285,7 @@ void ABP_CloseInteractiveObject_Base_C::BPSetHighlightState(bool Value)
 
 void ABP_CloseInteractiveObject_Base_C::BPOnStartInteraction(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPOnStartInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPOnStartInteraction"));
 
 	struct
 	{
@@ -305,7 +305,7 @@ void ABP_CloseInteractiveObject_Base_C::BPOnStartInteraction(class AWTLCharacter
 
 void ABP_CloseInteractiveObject_Base_C::BPUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPUse"));
 
 	struct
 	{
@@ -326,7 +326,7 @@ void ABP_CloseInteractiveObject_Base_C::BPUse(class AWTLCharacter* Character)
 
 void ABP_CloseInteractiveObject_Base_C::BPOnFinishInteraction(class AWTLCharacter* Character, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPOnFinishInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.BPOnFinishInteraction"));
 
 	struct
 	{
@@ -348,7 +348,7 @@ void ABP_CloseInteractiveObject_Base_C::BPOnFinishInteraction(class AWTLCharacte
 
 void ABP_CloseInteractiveObject_Base_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ReceiveTick"));
 
 	struct
 	{
@@ -368,7 +368,7 @@ void ABP_CloseInteractiveObject_Base_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_CloseInteractiveObject_Base_C::OnCloseObject(unsigned char State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OnCloseObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.OnCloseObject"));
 
 	struct
 	{
@@ -388,7 +388,7 @@ void ABP_CloseInteractiveObject_Base_C::OnCloseObject(unsigned char State)
 
 void ABP_CloseInteractiveObject_Base_C::ExecuteUbergraph_BP_CloseInteractiveObject_Base(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ExecuteUbergraph_BP_CloseInteractiveObject_Base");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Base.BP_CloseInteractiveObject_Base_C.ExecuteUbergraph_BP_CloseInteractiveObject_Base"));
 
 	struct
 	{

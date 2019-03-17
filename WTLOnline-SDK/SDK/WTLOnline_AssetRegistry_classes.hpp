@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class AssetRegistry.AssetRegistryImpl");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class AssetRegistry.AssetRegistryImpl"));
 		return ptr;
 	}
 
@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class AssetRegistry.AssetRegistryHelpers");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class AssetRegistry.AssetRegistryHelpers"));
 		return ptr;
 	}
 
@@ -67,7 +67,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class AssetRegistry.AssetRegistry");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class AssetRegistry.AssetRegistry"));
 		return ptr;
 	}
 

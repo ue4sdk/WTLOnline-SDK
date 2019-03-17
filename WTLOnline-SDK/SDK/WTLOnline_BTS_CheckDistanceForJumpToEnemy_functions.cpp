@@ -19,7 +19,7 @@ namespace SDK
 
 void UBTS_CheckDistanceForJumpToEnemy_C::GetPawnLocation(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.GetPawnLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.GetPawnLocation"));
 
 	struct
 	{
@@ -41,7 +41,7 @@ void UBTS_CheckDistanceForJumpToEnemy_C::GetPawnLocation(struct FVector* Locatio
 
 void UBTS_CheckDistanceForJumpToEnemy_C::GetEnemyLocation(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.GetEnemyLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.GetEnemyLocation"));
 
 	struct
 	{
@@ -65,7 +65,7 @@ void UBTS_CheckDistanceForJumpToEnemy_C::GetEnemyLocation(struct FVector* Locati
 
 void UBTS_CheckDistanceForJumpToEnemy_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ReceiveTickAI"));
 
 	struct
 	{
@@ -89,7 +89,7 @@ void UBTS_CheckDistanceForJumpToEnemy_C::ReceiveTickAI(class AAIController* Owne
 
 void UBTS_CheckDistanceForJumpToEnemy_C::ExecuteUbergraph_BTS_CheckDistanceForJumpToEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ExecuteUbergraph_BTS_CheckDistanceForJumpToEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ExecuteUbergraph_BTS_CheckDistanceForJumpToEnemy"));
 
 	struct
 	{

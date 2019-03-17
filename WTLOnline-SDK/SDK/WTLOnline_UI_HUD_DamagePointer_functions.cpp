@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_HUD_DamagePointer_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_DamagePointer.UI_HUD_DamagePointer_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_DamagePointer.UI_HUD_DamagePointer_C.Construct"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UUI_HUD_DamagePointer_C::Construct()
 
 void UUI_HUD_DamagePointer_C::ExecuteUbergraph_UI_HUD_DamagePointer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_DamagePointer.UI_HUD_DamagePointer_C.ExecuteUbergraph_UI_HUD_DamagePointer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_DamagePointer.UI_HUD_DamagePointer_C.ExecuteUbergraph_UI_HUD_DamagePointer"));
 
 	struct
 	{

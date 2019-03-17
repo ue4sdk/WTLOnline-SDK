@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_HUD_PlayerStatus_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_PlayerStatus.UI_HUD_PlayerStatus_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_PlayerStatus.UI_HUD_PlayerStatus_C.Construct"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UUI_HUD_PlayerStatus_C::Construct()
 
 void UUI_HUD_PlayerStatus_C::ExecuteUbergraph_UI_HUD_PlayerStatus(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_PlayerStatus.UI_HUD_PlayerStatus_C.ExecuteUbergraph_UI_HUD_PlayerStatus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_PlayerStatus.UI_HUD_PlayerStatus_C.ExecuteUbergraph_UI_HUD_PlayerStatus"));
 
 	struct
 	{

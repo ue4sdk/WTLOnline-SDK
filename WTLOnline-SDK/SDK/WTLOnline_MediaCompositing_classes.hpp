@@ -30,7 +30,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MediaCompositing.MovieSceneMediaSection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MediaCompositing.MovieSceneMediaSection"));
 		return ptr;
 	}
 
@@ -46,7 +46,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class MediaCompositing.MovieSceneMediaTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class MediaCompositing.MovieSceneMediaTrack"));
 		return ptr;
 	}
 

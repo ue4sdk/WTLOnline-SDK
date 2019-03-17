@@ -21,7 +21,7 @@ namespace SDK
 
 void UBTT_MonsterWaitIsNotFloor_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C.ReceiveTickAI"));
 
 	struct
 	{
@@ -45,7 +45,7 @@ void UBTT_MonsterWaitIsNotFloor_C::ReceiveTickAI(class AAIController* OwnerContr
 
 void UBTT_MonsterWaitIsNotFloor_C::ExecuteUbergraph_BTT_MonsterWaitIsNotFloor(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C.ExecuteUbergraph_BTT_MonsterWaitIsNotFloor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C.ExecuteUbergraph_BTT_MonsterWaitIsNotFloor"));
 
 	struct
 	{

@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_PDA_CharacterSkills_Connector.UI_PDA_CharacterSkills_Connector_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_PDA_CharacterSkills_Connector.UI_PDA_CharacterSkills_Connector_C"));
 		return ptr;
 	}
 

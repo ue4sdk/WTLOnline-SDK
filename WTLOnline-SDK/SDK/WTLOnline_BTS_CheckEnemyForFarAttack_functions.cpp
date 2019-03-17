@@ -19,7 +19,7 @@ namespace SDK
 
 void UBTS_CheckEnemyForFarAttack_C::GetPawnLocation(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.GetPawnLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.GetPawnLocation"));
 
 	struct
 	{
@@ -41,7 +41,7 @@ void UBTS_CheckEnemyForFarAttack_C::GetPawnLocation(struct FVector* Location)
 
 void UBTS_CheckEnemyForFarAttack_C::GetEnemyLocation(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.GetEnemyLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.GetEnemyLocation"));
 
 	struct
 	{
@@ -65,7 +65,7 @@ void UBTS_CheckEnemyForFarAttack_C::GetEnemyLocation(struct FVector* Location)
 
 void UBTS_CheckEnemyForFarAttack_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.ReceiveTickAI"));
 
 	struct
 	{
@@ -89,7 +89,7 @@ void UBTS_CheckEnemyForFarAttack_C::ReceiveTickAI(class AAIController* OwnerCont
 
 void UBTS_CheckEnemyForFarAttack_C::ExecuteUbergraph_BTS_CheckEnemyForFarAttack(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.ExecuteUbergraph_BTS_CheckEnemyForFarAttack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemyForFarAttack.BTS_CheckEnemyForFarAttack_C.ExecuteUbergraph_BTS_CheckEnemyForFarAttack"));
 
 	struct
 	{

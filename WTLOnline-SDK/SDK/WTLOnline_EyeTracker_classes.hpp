@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class EyeTracker.EyeTrackerFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class EyeTracker.EyeTrackerFunctionLibrary"));
 		return ptr;
 	}
 

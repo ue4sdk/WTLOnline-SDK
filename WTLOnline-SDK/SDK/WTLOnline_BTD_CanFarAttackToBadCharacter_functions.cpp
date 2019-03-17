@@ -21,7 +21,7 @@ namespace SDK
 
 bool UBTD_CanFarAttackToBadCharacter_C::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTD_CanFarAttackToBadCharacter.BTD_CanFarAttackToBadCharacter_C.PerformConditionCheckAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTD_CanFarAttackToBadCharacter.BTD_CanFarAttackToBadCharacter_C.PerformConditionCheckAI"));
 
 	struct
 	{

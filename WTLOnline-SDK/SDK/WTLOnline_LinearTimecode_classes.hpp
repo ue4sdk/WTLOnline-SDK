@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class LinearTimecode.LinearTimecodeComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class LinearTimecode.LinearTimecodeComponent"));
 		return ptr;
 	}
 
@@ -45,7 +45,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class LinearTimecode.DropTimecodeToStringConversion");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class LinearTimecode.DropTimecodeToStringConversion"));
 		return ptr;
 	}
 

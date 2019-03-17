@@ -22,7 +22,7 @@ namespace SDK
 
 struct FFrameTime UTimeManagementBlueprintLibrary::TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.TransformTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.TransformTime"));
 
 	struct
 	{
@@ -52,7 +52,7 @@ struct FFrameTime UTimeManagementBlueprintLibrary::TransformTime(const struct FF
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberInteger(const struct FFrameNumber& A, int B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Subtract_FrameNumberInteger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Subtract_FrameNumberInteger"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberInteger
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Subtract_FrameNumberFrameNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Subtract_FrameNumberFrameNumber"));
 
 	struct
 	{
@@ -109,7 +109,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberFrameNu
 
 struct FFrameTime UTimeManagementBlueprintLibrary::SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.SnapFrameTimeToRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.SnapFrameTimeToRate"));
 
 	struct
 	{
@@ -139,7 +139,7 @@ struct FFrameTime UTimeManagementBlueprintLibrary::SnapFrameTimeToRate(const str
 
 struct FFrameTime UTimeManagementBlueprintLibrary::Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Multiply_SecondsFrameRate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Multiply_SecondsFrameRate"));
 
 	struct
 	{
@@ -167,7 +167,7 @@ struct FFrameTime UTimeManagementBlueprintLibrary::Multiply_SecondsFrameRate(flo
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Multiply_FrameNumberInteger(const struct FFrameNumber& A, int B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Multiply_FrameNumberInteger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Multiply_FrameNumberInteger"));
 
 	struct
 	{
@@ -195,7 +195,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Multiply_FrameNumberInteger
 
 bool UTimeManagementBlueprintLibrary::IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.IsValid_MultipleOf");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.IsValid_MultipleOf"));
 
 	struct
 	{
@@ -222,7 +222,7 @@ bool UTimeManagementBlueprintLibrary::IsValid_MultipleOf(const struct FFrameRate
 
 bool UTimeManagementBlueprintLibrary::IsValid_Framerate(const struct FFrameRate& InFrameRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.IsValid_Framerate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.IsValid_Framerate"));
 
 	struct
 	{
@@ -246,7 +246,7 @@ bool UTimeManagementBlueprintLibrary::IsValid_Framerate(const struct FFrameRate&
 
 struct FTimecode UTimeManagementBlueprintLibrary::GetTimecode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.GetTimecode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.GetTimecode"));
 
 	struct
 	{
@@ -270,7 +270,7 @@ struct FTimecode UTimeManagementBlueprintLibrary::GetTimecode()
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Divide_FrameNumberInteger(const struct FFrameNumber& A, int B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Divide_FrameNumberInteger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Divide_FrameNumberInteger"));
 
 	struct
 	{
@@ -298,7 +298,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Divide_FrameNumberInteger(c
 
 struct FString UTimeManagementBlueprintLibrary::Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_TimecodeToString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_TimecodeToString"));
 
 	struct
 	{
@@ -325,7 +325,7 @@ struct FString UTimeManagementBlueprintLibrary::Conv_TimecodeToString(const stru
 
 float UTimeManagementBlueprintLibrary::Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_QualifiedFrameTimeToSeconds");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_QualifiedFrameTimeToSeconds"));
 
 	struct
 	{
@@ -350,7 +350,7 @@ float UTimeManagementBlueprintLibrary::Conv_QualifiedFrameTimeToSeconds(const st
 
 float UTimeManagementBlueprintLibrary::Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_FrameRateToSeconds");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_FrameRateToSeconds"));
 
 	struct
 	{
@@ -375,7 +375,7 @@ float UTimeManagementBlueprintLibrary::Conv_FrameRateToSeconds(const struct FFra
 
 int UTimeManagementBlueprintLibrary::Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_FrameNumberToInteger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Conv_FrameNumberToInteger"));
 
 	struct
 	{
@@ -401,7 +401,7 @@ int UTimeManagementBlueprintLibrary::Conv_FrameNumberToInteger(const struct FFra
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberInteger(const struct FFrameNumber& A, int B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Add_FrameNumberInteger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Add_FrameNumberInteger"));
 
 	struct
 	{
@@ -429,7 +429,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberInteger(cons
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TimeManagement.TimeManagementBlueprintLibrary.Add_FrameNumberFrameNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function TimeManagement.TimeManagementBlueprintLibrary.Add_FrameNumberFrameNumber"));
 
 	struct
 	{

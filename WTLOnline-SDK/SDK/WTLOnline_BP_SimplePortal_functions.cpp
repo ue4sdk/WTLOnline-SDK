@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_SimplePortal_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SimplePortal.BP_SimplePortal_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SimplePortal.BP_SimplePortal_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_SimplePortal_C::UserConstructionScript()
 
 void ABP_SimplePortal_C::OnUsePortal(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SimplePortal.BP_SimplePortal_C.OnUsePortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SimplePortal.BP_SimplePortal_C.OnUsePortal"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_SimplePortal_C::OnUsePortal(class AWTLCharacter* Character)
 
 void ABP_SimplePortal_C::ExecuteUbergraph_BP_SimplePortal(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SimplePortal.BP_SimplePortal_C.ExecuteUbergraph_BP_SimplePortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SimplePortal.BP_SimplePortal_C.ExecuteUbergraph_BP_SimplePortal"));
 
 	struct
 	{

@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTS_CheckCanBeUsedStealthMode.BTS_CheckCanBeUsedStealthMode_C"));
 		return ptr;
 	}
 

@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_FindRandomLocationAroundVisibleEnemy_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindRandomLocationAroundVisibleEnemy.BTT_FindRandomLocationAroundVisibleEnemy_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindRandomLocationAroundVisibleEnemy.BTT_FindRandomLocationAroundVisibleEnemy_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UBTT_FindRandomLocationAroundVisibleEnemy_C::ReceiveExecuteAI(class AAICont
 
 void UBTT_FindRandomLocationAroundVisibleEnemy_C::ExecuteUbergraph_BTT_FindRandomLocationAroundVisibleEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindRandomLocationAroundVisibleEnemy.BTT_FindRandomLocationAroundVisibleEnemy_C.ExecuteUbergraph_BTT_FindRandomLocationAroundVisibleEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindRandomLocationAroundVisibleEnemy.BTT_FindRandomLocationAroundVisibleEnemy_C.ExecuteUbergraph_BTT_FindRandomLocationAroundVisibleEnemy"));
 
 	struct
 	{

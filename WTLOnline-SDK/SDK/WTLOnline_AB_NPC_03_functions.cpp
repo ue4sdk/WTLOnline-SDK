@@ -19,7 +19,7 @@ namespace SDK
 
 void UAB_NPC_03_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_03.AB_NPC_03_C.BlueprintUpdateAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_03.AB_NPC_03_C.BlueprintUpdateAnimation"));
 
 	struct
 	{
@@ -37,7 +37,7 @@ void UAB_NPC_03_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UAB_NPC_03_C::BlueprintInitializeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_03.AB_NPC_03_C.BlueprintInitializeAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_03.AB_NPC_03_C.BlueprintInitializeAnimation"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void UAB_NPC_03_C::BlueprintInitializeAnimation()
 
 void UAB_NPC_03_C::ExecuteUbergraph_AB_NPC_03(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_03.AB_NPC_03_C.ExecuteUbergraph_AB_NPC_03");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_03.AB_NPC_03_C.ExecuteUbergraph_AB_NPC_03"));
 
 	struct
 	{

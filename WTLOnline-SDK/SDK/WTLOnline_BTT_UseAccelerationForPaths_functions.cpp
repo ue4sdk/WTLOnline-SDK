@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_UseAccelerationForPaths_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UBTT_UseAccelerationForPaths_C::ReceiveExecuteAI(class AAIController* Owner
 
 void UBTT_UseAccelerationForPaths_C::ExecuteUbergraph_BTT_UseAccelerationForPaths(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C.ExecuteUbergraph_BTT_UseAccelerationForPaths");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_UseAccelerationForPaths.BTT_UseAccelerationForPaths_C.ExecuteUbergraph_BTT_UseAccelerationForPaths"));
 
 	struct
 	{

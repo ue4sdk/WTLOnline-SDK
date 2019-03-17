@@ -7,9 +7,9 @@
 #endif
 
 #include "WTLOnline_Basic.hpp"
+#include "WTLOnline_SButonInformation_classes.hpp"
 #include "WTLOnline_WTL_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
-#include "WTLOnline_SButonInformation_classes.hpp"
 
 namespace SDK
 {

@@ -8,6 +8,7 @@
 
 #include <unordered_set>
 #include <string>
+#include "xorstr.hpp"
 
 namespace SDK
 {

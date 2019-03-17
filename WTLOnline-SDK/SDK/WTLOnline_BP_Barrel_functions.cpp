@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Barrel_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Barrel.BP_Barrel_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Barrel.BP_Barrel_C.UserConstructionScript"));
 
 	struct
 	{

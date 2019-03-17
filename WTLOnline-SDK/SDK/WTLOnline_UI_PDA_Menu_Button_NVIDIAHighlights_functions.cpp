@@ -19,7 +19,7 @@ namespace SDK
 
 void UUI_PDA_Menu_Button_NVIDIAHighlights_C::OnFailure_3914E4A349E992C494539BBBCF570A8C(EGfeSDKReturnCode GfeSdkReturnCode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.OnFailure_3914E4A349E992C494539BBBCF570A8C");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.OnFailure_3914E4A349E992C494539BBBCF570A8C"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UUI_PDA_Menu_Button_NVIDIAHighlights_C::OnFailure_3914E4A349E992C494539BBBC
 
 void UUI_PDA_Menu_Button_NVIDIAHighlights_C::OnSuccess_3914E4A349E992C494539BBBCF570A8C(EGfeSDKReturnCode GfeSdkReturnCode, int NumberOfHighlights)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.OnSuccess_3914E4A349E992C494539BBBCF570A8C");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.OnSuccess_3914E4A349E992C494539BBBCF570A8C"));
 
 	struct
 	{
@@ -60,7 +60,7 @@ void UUI_PDA_Menu_Button_NVIDIAHighlights_C::OnSuccess_3914E4A349E992C494539BBBC
 
 void UUI_PDA_Menu_Button_NVIDIAHighlights_C::BndEvt__btnApp_K2Node_ComponentBoundEvent_14_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.BndEvt__btnApp_K2Node_ComponentBoundEvent_14_OnButtonClickedEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.BndEvt__btnApp_K2Node_ComponentBoundEvent_14_OnButtonClickedEvent__DelegateSignature"));
 
 	struct
 	{
@@ -76,7 +76,7 @@ void UUI_PDA_Menu_Button_NVIDIAHighlights_C::BndEvt__btnApp_K2Node_ComponentBoun
 
 void UUI_PDA_Menu_Button_NVIDIAHighlights_C::K2_OnMenuOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.K2_OnMenuOpened");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.K2_OnMenuOpened"));
 
 	struct
 	{
@@ -94,7 +94,7 @@ void UUI_PDA_Menu_Button_NVIDIAHighlights_C::K2_OnMenuOpened()
 
 void UUI_PDA_Menu_Button_NVIDIAHighlights_C::ExecuteUbergraph_UI_PDA_Menu_Button_NVIDIAHighlights(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.ExecuteUbergraph_UI_PDA_Menu_Button_NVIDIAHighlights");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Menu_Button_NVIDIAHighlights.UI_PDA_Menu_Button_NVIDIAHighlights_C.ExecuteUbergraph_UI_PDA_Menu_Button_NVIDIAHighlights"));
 
 	struct
 	{

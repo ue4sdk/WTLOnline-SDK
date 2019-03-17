@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_FindLocationClosestFromEnemy_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -43,7 +43,7 @@ void UBTT_FindLocationClosestFromEnemy_C::ReceiveExecuteAI(class AAIController* 
 
 void UBTT_FindLocationClosestFromEnemy_C::CustomEvent_1(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus> QueryStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.CustomEvent_1");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.CustomEvent_1"));
 
 	struct
 	{
@@ -65,7 +65,7 @@ void UBTT_FindLocationClosestFromEnemy_C::CustomEvent_1(class UEnvQueryInstanceB
 
 void UBTT_FindLocationClosestFromEnemy_C::ExecuteUbergraph_BTT_FindLocationClosestFromEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.ExecuteUbergraph_BTT_FindLocationClosestFromEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindLocationClosestFromEnemy.BTT_FindLocationClosestFromEnemy_C.ExecuteUbergraph_BTT_FindLocationClosestFromEnemy"));
 
 	struct
 	{

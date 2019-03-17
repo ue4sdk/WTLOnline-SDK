@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_HUD_Minimap_Marker_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.Construct"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void UUI_HUD_Minimap_Marker_C::Construct()
 
 void UUI_HUD_Minimap_Marker_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.Tick"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void UUI_HUD_Minimap_Marker_C::Tick(const struct FGeometry& MyGeometry, float In
 
 void UUI_HUD_Minimap_Marker_C::ExecuteUbergraph_UI_HUD_Minimap_Marker(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.ExecuteUbergraph_UI_HUD_Minimap_Marker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C.ExecuteUbergraph_UI_HUD_Minimap_Marker"));
 
 	struct
 	{

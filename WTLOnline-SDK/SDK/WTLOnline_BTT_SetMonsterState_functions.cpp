@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_SetMonsterState_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_SetMonsterState.BTT_SetMonsterState_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_SetMonsterState.BTT_SetMonsterState_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UBTT_SetMonsterState_C::ReceiveExecuteAI(class AAIController* OwnerControll
 
 void UBTT_SetMonsterState_C::ExecuteUbergraph_BTT_SetMonsterState(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_SetMonsterState.BTT_SetMonsterState_C.ExecuteUbergraph_BTT_SetMonsterState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_SetMonsterState.BTT_SetMonsterState_C.ExecuteUbergraph_BTT_SetMonsterState"));
 
 	struct
 	{

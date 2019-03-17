@@ -22,6 +22,8 @@
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="SDK\WTLOnline_AB_CharacterPreview_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_AB_CharacterPreview_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_AB_Chicken_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_AB_Chicken_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_AB_Male_TPC_Anim_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_AB_Male_TPC_Anim_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_AB_NPC_01_classes.hpp" />
@@ -747,6 +749,8 @@
     <ClInclude Include="SDK\WTLOnline_UI_LoadingScreen_Simple_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_MainMenu_ColorButton_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_MainMenu_ColorButton_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Audio_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Audio_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_ColorWheel_classes.hpp" />
@@ -767,6 +771,8 @@
     <ClInclude Include="SDK\WTLOnline_UI_Options_Item_Background_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_2_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_2_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Slider_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Slider_Percent_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_Options_Parameter_Slider_Percent_structs.hpp" />
@@ -798,6 +804,10 @@
     <ClInclude Include="SDK\WTLOnline_UI_PDA_CharacterSkills_Zone_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_CharacterSkills_Zone_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Clan_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_ColorWheel_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_ColorWheel_structs.hpp" />
@@ -832,7 +842,11 @@
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Main_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Main_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_Marker_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_Marker_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Map_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Marker_SubType_Item_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Marker_SubType_Item_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Menu_Button_classes.hpp" />
@@ -843,9 +857,15 @@
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Menu_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_MessageDialog_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_MessageDialog_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_Item_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_Item_structs.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_classes.hpp" />
+    <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_QuestLog_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Settings_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_UI_PDA_Settings_structs.hpp" />
@@ -882,9 +902,11 @@
     <ClInclude Include="SDK\WTLOnline_W_PieMenu_01_structs.hpp" />
     <ClInclude Include="SDK\WTLOnline_W_PieMeuDescription_01_classes.hpp" />
     <ClInclude Include="SDK\WTLOnline_W_PieMeuDescription_01_structs.hpp" />
+    <ClInclude Include="XorStr\xorstr.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SDK\WTLOnline_AB_CharacterPreview_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_AB_Chicken_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_AB_Male_TPC_Anim_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_AB_NPC_01_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_AB_NPC_02_functions.cpp" />
@@ -1228,6 +1250,7 @@
     <ClCompile Include="SDK\WTLOnline_UI_LoadingScreen_Location_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_LoadingScreen_Simple_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_MainMenu_ColorButton_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_Options_ActionKeyBinder_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Audio_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_ColorWheel_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Control_functions.cpp" />
@@ -1238,6 +1261,7 @@
     <ClCompile Include="SDK\WTLOnline_UI_Options_Interface_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Item_Background_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Item_2_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Item_3_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Slider_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Slider_Percent_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_Options_Parameter_Switcher_functions.cpp" />
@@ -1254,6 +1278,8 @@
     <ClCompile Include="SDK\WTLOnline_UI_PDA_CharacterSkills_TakeConfirm_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_CharacterSkills_Zone_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Clan_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Clan_Member_Item_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Clan_PolicyGroup_Item_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_ColorWheel_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_CraftRecipes_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Fraction_functions.cpp" />
@@ -1271,13 +1297,18 @@
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Mail_Message_Item_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Main_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Map_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_Map_Marker_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_MarkerList_Item_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Marker_SubType_Item_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Menu_Button_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Menu_Button_NVIDIAHighlights_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Menu_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_MessageDialog_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_ModulesList_Item_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_CustomRequirement_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_Item_functions.cpp" />
+    <ClCompile Include="SDK\WTLOnline_UI_PDA_QuestLog_RequiredMonsterKill_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_Settings_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_SocialNetworkAuthorization_functions.cpp" />
     <ClCompile Include="SDK\WTLOnline_UI_PDA_TabButton_functions.cpp" />
@@ -1375,6 +1406,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)XorStr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1389,6 +1421,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)XorStr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1405,6 +1438,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)XorStr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -1423,6 +1457,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)XorStr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

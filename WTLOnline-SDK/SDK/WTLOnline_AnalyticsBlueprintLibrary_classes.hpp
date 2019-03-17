@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary"));
 		return ptr;
 	}
 

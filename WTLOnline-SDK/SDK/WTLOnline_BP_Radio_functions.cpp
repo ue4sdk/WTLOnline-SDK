@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Radio_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Radio.BP_Radio_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Radio.BP_Radio_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_Radio_C::UserConstructionScript()
 
 void ABP_Radio_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Radio.BP_Radio_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Radio.BP_Radio_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_Radio_C::ReceiveBeginPlay()
 
 void ABP_Radio_C::ExecuteUbergraph_BP_Radio(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Radio.BP_Radio_C.ExecuteUbergraph_BP_Radio");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Radio.BP_Radio_C.ExecuteUbergraph_BP_Radio"));
 
 	struct
 	{

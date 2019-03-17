@@ -64,7 +64,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Options_Graphic.UI_Options_Graphic_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Options_Graphic.UI_Options_Graphic_C"));
 		return ptr;
 	}
 

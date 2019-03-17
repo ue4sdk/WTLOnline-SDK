@@ -19,7 +19,7 @@ namespace SDK
 
 void UWebBrowser::OnUrlChanged__DelegateSignature(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UWebBrowser::OnUrlChanged__DelegateSignature(const struct FText& Text)
 
 void UWebBrowser::OnBeforePopup__DelegateSignature(const struct FString& URL, const struct FString& Frame)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction WebBrowserWidget.WebBrowser.OnBeforePopup__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction WebBrowserWidget.WebBrowser.OnBeforePopup__DelegateSignature"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void UWebBrowser::OnBeforePopup__DelegateSignature(const struct FString& URL, co
 
 void UWebBrowser::LoadURL(const struct FString& NewURL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WebBrowserWidget.WebBrowser.LoadURL");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WebBrowserWidget.WebBrowser.LoadURL"));
 
 	struct
 	{
@@ -83,7 +83,7 @@ void UWebBrowser::LoadURL(const struct FString& NewURL)
 
 void UWebBrowser::LoadString(const struct FString& Contents, const struct FString& DummyURL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WebBrowserWidget.WebBrowser.LoadString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WebBrowserWidget.WebBrowser.LoadString"));
 
 	struct
 	{
@@ -105,7 +105,7 @@ void UWebBrowser::LoadString(const struct FString& Contents, const struct FStrin
 
 struct FString UWebBrowser::GetUrl()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WebBrowserWidget.WebBrowser.GetUrl");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WebBrowserWidget.WebBrowser.GetUrl"));
 
 	struct
 	{
@@ -126,7 +126,7 @@ struct FString UWebBrowser::GetUrl()
 
 struct FText UWebBrowser::GetTitleText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WebBrowserWidget.WebBrowser.GetTitleText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WebBrowserWidget.WebBrowser.GetTitleText"));
 
 	struct
 	{
@@ -147,7 +147,7 @@ struct FText UWebBrowser::GetTitleText()
 
 void UWebBrowser::ExecuteJavascript(const struct FString& ScriptText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WebBrowserWidget.WebBrowser.ExecuteJavascript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WebBrowserWidget.WebBrowser.ExecuteJavascript"));
 
 	struct
 	{

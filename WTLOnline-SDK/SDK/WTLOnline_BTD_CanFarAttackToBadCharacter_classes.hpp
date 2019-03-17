@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTD_CanFarAttackToBadCharacter.BTD_CanFarAttackToBadCharacter_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTD_CanFarAttackToBadCharacter.BTD_CanFarAttackToBadCharacter_C"));
 		return ptr;
 	}
 

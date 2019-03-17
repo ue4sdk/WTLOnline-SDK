@@ -20,7 +20,7 @@ namespace SDK
 
 struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath"));
 
 	struct
 	{
@@ -46,7 +46,7 @@ struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAss
 
 struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARFilter& InFilter, TArray<struct FTagAndValue> InTagsAndValues)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.SetFilterTagsAndValues");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.SetFilterTagsAndValues"));
 
 	struct
 	{
@@ -73,7 +73,7 @@ struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARF
 
 bool UAssetRegistryHelpers::IsValid(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.IsValid");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.IsValid"));
 
 	struct
 	{
@@ -98,7 +98,7 @@ bool UAssetRegistryHelpers::IsValid(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsUAsset(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.IsUAsset");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.IsUAsset"));
 
 	struct
 	{
@@ -123,7 +123,7 @@ bool UAssetRegistryHelpers::IsUAsset(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsRedirector(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.IsRedirector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.IsRedirector"));
 
 	struct
 	{
@@ -148,7 +148,7 @@ bool UAssetRegistryHelpers::IsRedirector(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsAssetLoaded(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.IsAssetLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.IsAssetLoaded"));
 
 	struct
 	{
@@ -175,7 +175,7 @@ bool UAssetRegistryHelpers::IsAssetLoaded(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::GetTagValue(const struct FAssetData& InAssetData, const struct FName& InTagName, struct FString* OutTagValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetTagValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetTagValue"));
 
 	struct
 	{
@@ -206,7 +206,7 @@ bool UAssetRegistryHelpers::GetTagValue(const struct FAssetData& InAssetData, co
 
 struct FString UAssetRegistryHelpers::GetFullName(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetFullName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetFullName"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ struct FString UAssetRegistryHelpers::GetFullName(const struct FAssetData& InAss
 
 struct FString UAssetRegistryHelpers::GetExportTextName(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetExportTextName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetExportTextName"));
 
 	struct
 	{
@@ -256,7 +256,7 @@ struct FString UAssetRegistryHelpers::GetExportTextName(const struct FAssetData&
 
 class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetClass"));
 
 	struct
 	{
@@ -280,7 +280,7 @@ class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetDa
 
 TScriptInterface<class UAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetAssetRegistry");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetAssetRegistry"));
 
 	struct
 	{
@@ -303,7 +303,7 @@ TScriptInterface<class UAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 
 class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.GetAsset");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.GetAsset"));
 
 	struct
 	{
@@ -329,7 +329,7 @@ class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetD
 
 struct FAssetData UAssetRegistryHelpers::CreateAssetData(class UObject* InAsset, bool bAllowBlueprintClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistryHelpers.CreateAssetData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistryHelpers.CreateAssetData"));
 
 	struct
 	{
@@ -355,7 +355,7 @@ struct FAssetData UAssetRegistryHelpers::CreateAssetData(class UObject* InAsset,
 
 void UAssetRegistry::SearchAllAssets(bool bSynchronousSearch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.SearchAllAssets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.SearchAllAssets"));
 
 	struct
 	{
@@ -376,7 +376,7 @@ void UAssetRegistry::SearchAllAssets(bool bSynchronousSearch)
 
 void UAssetRegistry::ScanPathsSynchronous(TArray<struct FString> InPaths, bool bForceRescan)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.ScanPathsSynchronous");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.ScanPathsSynchronous"));
 
 	struct
 	{
@@ -398,7 +398,7 @@ void UAssetRegistry::ScanPathsSynchronous(TArray<struct FString> InPaths, bool b
 
 void UAssetRegistry::ScanModifiedAssetFiles(TArray<struct FString> InFilePaths)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles"));
 
 	struct
 	{
@@ -419,7 +419,7 @@ void UAssetRegistry::ScanModifiedAssetFiles(TArray<struct FString> InFilePaths)
 
 void UAssetRegistry::ScanFilesSynchronous(TArray<struct FString> InFilePaths, bool bForceRescan)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.ScanFilesSynchronous");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.ScanFilesSynchronous"));
 
 	struct
 	{
@@ -442,7 +442,7 @@ void UAssetRegistry::ScanFilesSynchronous(TArray<struct FString> InFilePaths, bo
 
 void UAssetRegistry::RunAssetsThroughFilter(const struct FARFilter& Filter, TArray<struct FAssetData>* AssetDataList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.RunAssetsThroughFilter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.RunAssetsThroughFilter"));
 
 	struct
 	{
@@ -466,7 +466,7 @@ void UAssetRegistry::RunAssetsThroughFilter(const struct FARFilter& Filter, TArr
 
 void UAssetRegistry::PrioritizeSearchPath(const struct FString& PathToPrioritize)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.PrioritizeSearchPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.PrioritizeSearchPath"));
 
 	struct
 	{
@@ -486,7 +486,7 @@ void UAssetRegistry::PrioritizeSearchPath(const struct FString& PathToPrioritize
 
 bool UAssetRegistry::IsLoadingAssets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.IsLoadingAssets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.IsLoadingAssets"));
 
 	struct
 	{
@@ -509,7 +509,7 @@ bool UAssetRegistry::IsLoadingAssets()
 
 bool UAssetRegistry::HasAssets(const struct FName& PackagePath, bool bRecursive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.HasAssets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.HasAssets"));
 
 	struct
 	{
@@ -536,7 +536,7 @@ bool UAssetRegistry::HasAssets(const struct FName& PackagePath, bool bRecursive)
 
 void UAssetRegistry::GetSubPaths(const struct FString& InBasePath, bool bInRecurse, TArray<struct FString>* OutPathList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetSubPaths");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetSubPaths"));
 
 	struct
 	{
@@ -566,7 +566,7 @@ void UAssetRegistry::GetSubPaths(const struct FString& InBasePath, bool bInRecur
 
 bool UAssetRegistry::GetAssetsByPath(const struct FName& PackagePath, bool bRecursive, bool bIncludeOnlyOnDiskAssets, TArray<struct FAssetData>* OutAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAssetsByPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAssetsByPath"));
 
 	struct
 	{
@@ -600,7 +600,7 @@ bool UAssetRegistry::GetAssetsByPath(const struct FName& PackagePath, bool bRecu
 
 bool UAssetRegistry::GetAssetsByPackageName(const struct FName& PackageName, bool bIncludeOnlyOnDiskAssets, TArray<struct FAssetData>* OutAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAssetsByPackageName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAssetsByPackageName"));
 
 	struct
 	{
@@ -632,7 +632,7 @@ bool UAssetRegistry::GetAssetsByPackageName(const struct FName& PackageName, boo
 
 bool UAssetRegistry::GetAssetsByClass(const struct FName& ClassName, bool bSearchSubClasses, TArray<struct FAssetData>* OutAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAssetsByClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAssetsByClass"));
 
 	struct
 	{
@@ -663,7 +663,7 @@ bool UAssetRegistry::GetAssetsByClass(const struct FName& ClassName, bool bSearc
 
 bool UAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAssets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAssets"));
 
 	struct
 	{
@@ -692,7 +692,7 @@ bool UAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAs
 
 struct FAssetData UAssetRegistry::GetAssetByObjectPath(const struct FName& ObjectPath, bool bIncludeOnlyOnDiskAssets)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAssetByObjectPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAssetByObjectPath"));
 
 	struct
 	{
@@ -717,7 +717,7 @@ struct FAssetData UAssetRegistry::GetAssetByObjectPath(const struct FName& Objec
 
 void UAssetRegistry::GetAllCachedPaths(TArray<struct FString>* OutPathList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAllCachedPaths");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAllCachedPaths"));
 
 	struct
 	{
@@ -741,7 +741,7 @@ void UAssetRegistry::GetAllCachedPaths(TArray<struct FString>* OutPathList)
 
 bool UAssetRegistry::GetAllAssets(bool bIncludeOnlyOnDiskAssets, TArray<struct FAssetData>* OutAssetData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AssetRegistry.AssetRegistry.GetAllAssets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AssetRegistry.AssetRegistry.GetAllAssets"));
 
 	struct
 	{

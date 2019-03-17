@@ -20,7 +20,7 @@ namespace SDK
 
 bool ABP_PaperQuest_C::OnCharacterCanBeUsed(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PaperQuest.BP_PaperQuest_C.OnCharacterCanBeUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PaperQuest.BP_PaperQuest_C.OnCharacterCanBeUsed"));
 
 	struct
 	{
@@ -41,7 +41,7 @@ bool ABP_PaperQuest_C::OnCharacterCanBeUsed(class AWTLCharacter* Character)
 
 void ABP_PaperQuest_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PaperQuest.BP_PaperQuest_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PaperQuest.BP_PaperQuest_C.UserConstructionScript"));
 
 	struct
 	{
@@ -59,7 +59,7 @@ void ABP_PaperQuest_C::UserConstructionScript()
 
 void ABP_PaperQuest_C::OnEndUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PaperQuest.BP_PaperQuest_C.OnEndUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PaperQuest.BP_PaperQuest_C.OnEndUse"));
 
 	struct
 	{
@@ -79,7 +79,7 @@ void ABP_PaperQuest_C::OnEndUse(class AWTLCharacter* Character)
 
 void ABP_PaperQuest_C::OnCharacterUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PaperQuest.BP_PaperQuest_C.OnCharacterUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PaperQuest.BP_PaperQuest_C.OnCharacterUse"));
 
 	struct
 	{
@@ -99,7 +99,7 @@ void ABP_PaperQuest_C::OnCharacterUse(class AWTLCharacter* Character)
 
 void ABP_PaperQuest_C::ExecuteUbergraph_BP_PaperQuest(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PaperQuest.BP_PaperQuest_C.ExecuteUbergraph_BP_PaperQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_PaperQuest.BP_PaperQuest_C.ExecuteUbergraph_BP_PaperQuest"));
 
 	struct
 	{

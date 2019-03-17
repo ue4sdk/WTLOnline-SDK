@@ -17,7 +17,7 @@ namespace SDK
 
 void ASMI_TireBig_0_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SMI_TireBig_1.SMI_TireBig_0_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SMI_TireBig_1.SMI_TireBig_0_C.UserConstructionScript"));
 
 	struct
 	{

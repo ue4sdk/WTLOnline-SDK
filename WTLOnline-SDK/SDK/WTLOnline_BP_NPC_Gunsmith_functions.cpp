@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_NPC_Gunsmith_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -50,7 +50,7 @@ void ABP_NPC_Gunsmith_C::GetReplicaArrayMainDialog(class AWTLCharacter* Characte
 
 void ABP_NPC_Gunsmith_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -79,7 +79,7 @@ void ABP_NPC_Gunsmith_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Charac
 
 void ABP_NPC_Gunsmith_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -111,7 +111,7 @@ void ABP_NPC_Gunsmith_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter*
 
 void ABP_NPC_Gunsmith_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ExecutingAction"));
 
 	struct
 	{
@@ -143,7 +143,7 @@ void ABP_NPC_Gunsmith_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPC
 
 void ABP_NPC_Gunsmith_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -164,7 +164,7 @@ void ABP_NPC_Gunsmith_C::ShowAvailableQuestsDialog(class AWTLCharacter* Characte
 
 void ABP_NPC_Gunsmith_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -189,7 +189,7 @@ void ABP_NPC_Gunsmith_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* Re
 
 void ABP_NPC_Gunsmith_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ShowStartDialog"));
 
 	struct
 	{
@@ -207,7 +207,7 @@ void ABP_NPC_Gunsmith_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Gunsmith_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.UserConstructionScript"));
 
 	struct
 	{
@@ -223,7 +223,7 @@ void ABP_NPC_Gunsmith_C::UserConstructionScript()
 
 void ABP_NPC_Gunsmith_C::Timeline_1__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.Timeline_1__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.Timeline_1__FinishedFunc"));
 
 	struct
 	{
@@ -239,7 +239,7 @@ void ABP_NPC_Gunsmith_C::Timeline_1__FinishedFunc()
 
 void ABP_NPC_Gunsmith_C::Timeline_1__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.Timeline_1__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.Timeline_1__UpdateFunc"));
 
 	struct
 	{
@@ -257,7 +257,7 @@ void ABP_NPC_Gunsmith_C::Timeline_1__UpdateFunc()
 
 void ABP_NPC_Gunsmith_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ReceiveTick"));
 
 	struct
 	{
@@ -278,7 +278,7 @@ void ABP_NPC_Gunsmith_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_Gunsmith_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -300,7 +300,7 @@ void ABP_NPC_Gunsmith_C::OnPlayerSelectReplica(class AWTLCharacter* Character, i
 
 void ABP_NPC_Gunsmith_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -318,7 +318,7 @@ void ABP_NPC_Gunsmith_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_Gunsmith_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -336,7 +336,7 @@ void ABP_NPC_Gunsmith_C::ReceiveBeginPlay()
 
 void ABP_NPC_Gunsmith_C::ExecuteUbergraph_BP_NPC_Gunsmith(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ExecuteUbergraph_BP_NPC_Gunsmith");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Gunsmith.BP_NPC_Gunsmith_C.ExecuteUbergraph_BP_NPC_Gunsmith"));
 
 	struct
 	{

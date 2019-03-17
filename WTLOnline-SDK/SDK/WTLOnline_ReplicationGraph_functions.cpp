@@ -17,7 +17,7 @@ namespace SDK
 
 void AReplicationGraphDebugActor::ServerStopDebugging()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void AReplicationGraphDebugActor::ServerStopDebugging()
 
 void AReplicationGraphDebugActor::ServerStartDebugging()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging"));
 
 	struct
 	{
@@ -52,7 +52,7 @@ void AReplicationGraphDebugActor::ServerStartDebugging()
 
 void AReplicationGraphDebugActor::ServerSetPeriodFrameForClass(class UClass* Class, int PeriodFrame)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass"));
 
 	struct
 	{
@@ -75,7 +75,7 @@ void AReplicationGraphDebugActor::ServerSetPeriodFrameForClass(class UClass* Cla
 
 void AReplicationGraphDebugActor::ServerSetCullDistanceForClass(class UClass* Class, float CullDistance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass"));
 
 	struct
 	{
@@ -97,7 +97,7 @@ void AReplicationGraphDebugActor::ServerSetCullDistanceForClass(class UClass* Cl
 
 void AReplicationGraphDebugActor::ServerPrintAllActorInfo(const struct FString& Str)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo"));
 
 	struct
 	{
@@ -115,7 +115,7 @@ void AReplicationGraphDebugActor::ServerPrintAllActorInfo(const struct FString& 
 
 void AReplicationGraphDebugActor::ServerCellInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo"));
 
 	struct
 	{
@@ -135,7 +135,7 @@ void AReplicationGraphDebugActor::ServerCellInfo()
 
 void AReplicationGraphDebugActor::ClientCellInfo(const struct FVector& CellLocation, const struct FVector& CellExtent, TArray<class AActor*> Actors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo"));
 
 	struct
 	{

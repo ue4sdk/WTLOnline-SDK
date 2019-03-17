@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ImgMediaFactory.ImgMediaSettings");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ImgMediaFactory.ImgMediaSettings"));
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void UGameplayTask::ReadyForActivation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.ReadyForActivation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask.ReadyForActivation"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void UGameplayTask::ReadyForActivation()
 
 void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 
 void UGameplayTask::EndTask()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask.EndTask");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask.EndTask"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void UGameplayTask::EndTask()
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, TArray<class UClass*> ResourceClasses, unsigned char Priority, const struct FName& TaskInstanceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources"));
 
 	struct
 	{
@@ -105,7 +105,7 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(c
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, class UClass* ResourceClass, unsigned char Priority, const struct FName& TaskInstanceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource"));
 
 	struct
 	{
@@ -140,7 +140,7 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(co
 
 class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor"));
 
 	struct
 	{
@@ -173,7 +173,7 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(const TScri
 
 void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor"));
 
 	struct
 	{
@@ -197,7 +197,7 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 
 bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor"));
 
 	struct
 	{
@@ -227,7 +227,7 @@ bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObj
 
 class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, float Time, unsigned char Priority)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay"));
 
 	struct
 	{
@@ -253,7 +253,7 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(const TScr
 
 void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature"));
 
 	struct
 	{
@@ -269,7 +269,7 @@ void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 
 void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks"));
 
 	struct
 	{
@@ -292,7 +292,7 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 
 EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask"));
 
 	struct
 	{

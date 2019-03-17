@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ControllerRatRegular_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.UserConstructionScript"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void ABP_ControllerRatRegular_C::UserConstructionScript()
 
 void ABP_ControllerRatRegular_C::BndEvt__AIPerception_0_K2Node_ComponentBoundEvent_0_ActorPerceptionUpdatedDelegate__DelegateSignature(class AActor* Actor, const struct FAIStimulus& Stimulus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.BndEvt__AIPerception_0_K2Node_ComponentBoundEvent_0_ActorPerceptionUpdatedDelegate__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.BndEvt__AIPerception_0_K2Node_ComponentBoundEvent_0_ActorPerceptionUpdatedDelegate__DelegateSignature"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void ABP_ControllerRatRegular_C::BndEvt__AIPerception_0_K2Node_ComponentBoundEve
 
 void ABP_ControllerRatRegular_C::ExecuteUbergraph_BP_ControllerRatRegular(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.ExecuteUbergraph_BP_ControllerRatRegular");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ControllerRatRegular.BP_ControllerRatRegular_C.ExecuteUbergraph_BP_ControllerRatRegular"));
 
 	struct
 	{

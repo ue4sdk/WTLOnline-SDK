@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.EQSTest_AwayFromAllPawns");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.EQSTest_AwayFromAllPawns"));
 		return ptr;
 	}
 
@@ -37,7 +37,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.EQSTest_IsAlive");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.EQSTest_IsAlive"));
 		return ptr;
 	}
 
@@ -57,7 +57,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.EQSTest_TraceChannel");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.EQSTest_TraceChannel"));
 		return ptr;
 	}
 
@@ -72,7 +72,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.EQSTest_VisibilityCone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.EQSTest_VisibilityCone"));
 		return ptr;
 	}
 
@@ -91,7 +91,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DActorHealth");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DActorHealth"));
 		return ptr;
 	}
 
@@ -110,7 +110,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DActorName");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DActorName"));
 		return ptr;
 	}
 
@@ -128,7 +128,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DMobileStartPointParameters");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DMobileStartPointParameters"));
 		return ptr;
 	}
 
@@ -146,7 +146,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DMonsterIdentity");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DMonsterIdentity"));
 		return ptr;
 	}
 
@@ -161,7 +161,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DMonsterName");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DMonsterName"));
 		return ptr;
 	}
 
@@ -183,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTL3DPlayerIdentity");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTL3DPlayerIdentity"));
 		return ptr;
 	}
 
@@ -199,7 +199,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAchievementSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAchievementSystem"));
 		return ptr;
 	}
 
@@ -215,7 +215,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActionGameplayActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActionGameplayActor"));
 		return ptr;
 	}
 
@@ -251,7 +251,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationObject"));
 		return ptr;
 	}
 
@@ -292,7 +292,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActionGameplayMachinegun");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActionGameplayMachinegun"));
 		return ptr;
 	}
 
@@ -324,7 +324,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnomaly");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnomaly"));
 		return ptr;
 	}
 
@@ -352,7 +352,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStaticAnomaly");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStaticAnomaly"));
 		return ptr;
 	}
 
@@ -388,7 +388,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActivatableAnomaly");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActivatableAnomaly"));
 		return ptr;
 	}
 
@@ -425,7 +425,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMovingAnomaly");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMovingAnomaly"));
 		return ptr;
 	}
 
@@ -462,7 +462,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActivatableMovingAnomaly");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActivatableMovingAnomaly"));
 		return ptr;
 	}
 
@@ -487,7 +487,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActivatableObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActivatableObject"));
 		return ptr;
 	}
 
@@ -507,7 +507,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActivatableObjectInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActivatableObjectInterface"));
 		return ptr;
 	}
 
@@ -525,7 +525,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActivatorVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActivatorVolume"));
 		return ptr;
 	}
 
@@ -549,7 +549,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAIDestroyObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAIDestroyObject"));
 		return ptr;
 	}
 
@@ -690,7 +690,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterPawn");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterPawn"));
 		return ptr;
 	}
 
@@ -779,7 +779,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAIMonsterPawn");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAIMonsterPawn"));
 		return ptr;
 	}
 
@@ -794,7 +794,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAIPerceptionComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAIPerceptionComponent"));
 		return ptr;
 	}
 
@@ -814,7 +814,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAIPerceptionSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAIPerceptionSystem"));
 		return ptr;
 	}
 
@@ -829,7 +829,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAITargetInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAITargetInterface"));
 		return ptr;
 	}
 
@@ -852,7 +852,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAmbientSound");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAmbientSound"));
 		return ptr;
 	}
 
@@ -872,7 +872,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAmmoCase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAmmoCase"));
 		return ptr;
 	}
 
@@ -889,7 +889,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimalBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimalBase"));
 		return ptr;
 	}
 
@@ -912,7 +912,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyAmmoCaseEject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyAmmoCaseEject"));
 		return ptr;
 	}
 
@@ -935,7 +935,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyParticleEffect");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyParticleEffect"));
 		return ptr;
 	}
 
@@ -954,7 +954,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyGunshot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyGunshot"));
 		return ptr;
 	}
 
@@ -970,7 +970,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyFootstep");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyFootstep"));
 		return ptr;
 	}
 
@@ -986,7 +986,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyCharacterBreath");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyCharacterBreath"));
 		return ptr;
 	}
 
@@ -1001,7 +1001,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimNotifyPlayCharacterSound");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimNotifyPlayCharacterSound"));
 		return ptr;
 	}
 
@@ -1019,7 +1019,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterHandsNotifyState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterHandsNotifyState"));
 		return ptr;
 	}
 
@@ -1036,7 +1036,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterHandsStateChange");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterHandsStateChange"));
 		return ptr;
 	}
 
@@ -1053,7 +1053,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLReloadingStateChange");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLReloadingStateChange"));
 		return ptr;
 	}
 
@@ -1070,7 +1070,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUsableItemStateChange");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUsableItemStateChange"));
 		return ptr;
 	}
 
@@ -1086,7 +1086,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterActionTrigger");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterActionTrigger"));
 		return ptr;
 	}
 
@@ -1102,7 +1102,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNPCActionTrigger");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNPCActionTrigger"));
 		return ptr;
 	}
 
@@ -1118,7 +1118,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterEffect");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterEffect"));
 		return ptr;
 	}
 
@@ -1134,7 +1134,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnomalyWayPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnomalyWayPoint"));
 		return ptr;
 	}
 
@@ -1166,7 +1166,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaCapturePoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaCapturePoint"));
 		return ptr;
 	}
 
@@ -1187,7 +1187,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameMode"));
 		return ptr;
 	}
 
@@ -1206,7 +1206,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameMode"));
 		return ptr;
 	}
 
@@ -1222,7 +1222,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameMode_Domination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameMode_Domination"));
 		return ptr;
 	}
 
@@ -1238,7 +1238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameMode_MonsterHunt");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameMode_MonsterHunt"));
 		return ptr;
 	}
 
@@ -1280,7 +1280,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameState"));
 		return ptr;
 	}
 
@@ -1322,7 +1322,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameState"));
 		return ptr;
 	}
 
@@ -1347,7 +1347,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameState_Domination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameState_Domination"));
 		return ptr;
 	}
 
@@ -1366,7 +1366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaGameState_MonsterHunt");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaGameState_MonsterHunt"));
 		return ptr;
 	}
 
@@ -1517,7 +1517,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUD");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUD"));
 		return ptr;
 	}
 
@@ -1543,7 +1543,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD"));
 		return ptr;
 	}
 
@@ -1558,7 +1558,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUIBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUIBase"));
 		return ptr;
 	}
 
@@ -1576,7 +1576,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBase"));
 		return ptr;
 	}
 
@@ -1591,7 +1591,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDBase"));
 		return ptr;
 	}
 
@@ -1606,7 +1606,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_Base");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_Base"));
 		return ptr;
 	}
 
@@ -1626,7 +1626,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_CapturePoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_CapturePoint"));
 		return ptr;
 	}
 
@@ -1647,7 +1647,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_ChooseEquipment");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_ChooseEquipment"));
 		return ptr;
 	}
 
@@ -1670,7 +1670,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDEndGame");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDEndGame"));
 		return ptr;
 	}
 
@@ -1685,7 +1685,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_EndGame");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_EndGame"));
 		return ptr;
 	}
 
@@ -1722,7 +1722,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_Equipment_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_Equipment_Item"));
 		return ptr;
 	}
 
@@ -1740,7 +1740,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_Equipment_List");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_Equipment_List"));
 		return ptr;
 	}
 
@@ -1779,7 +1779,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_Equipment_Slot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_Equipment_Slot"));
 		return ptr;
 	}
 
@@ -1802,7 +1802,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_FractionsScore");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_FractionsScore"));
 		return ptr;
 	}
 
@@ -1821,7 +1821,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_KillStats");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_KillStats"));
 		return ptr;
 	}
 
@@ -1845,7 +1845,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_KillStats_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_KillStats_Item"));
 		return ptr;
 	}
 
@@ -1865,7 +1865,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDScoreTable");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDScoreTable"));
 		return ptr;
 	}
 
@@ -1889,7 +1889,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_ScoreTable");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_ScoreTable"));
 		return ptr;
 	}
 
@@ -1912,7 +1912,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDScoreTable_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDScoreTable_Item"));
 		return ptr;
 	}
 
@@ -1928,7 +1928,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_ScoreTable_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_ScoreTable_Item"));
 		return ptr;
 	}
 
@@ -1961,7 +1961,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_SelFraction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_SelFraction"));
 		return ptr;
 	}
 
@@ -1989,7 +1989,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_DM_SelFraction_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_DM_SelFraction_Item"));
 		return ptr;
 	}
 
@@ -2014,7 +2014,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUD_Domination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUD_Domination"));
 		return ptr;
 	}
 
@@ -2031,7 +2031,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDKillTitle");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDKillTitle"));
 		return ptr;
 	}
 
@@ -2050,7 +2050,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaHUDTeamLead");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaHUDTeamLead"));
 		return ptr;
 	}
 
@@ -2071,7 +2071,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlayerController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlayerController"));
 		return ptr;
 	}
 
@@ -2211,7 +2211,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerController"));
 		return ptr;
 	}
 
@@ -2233,7 +2233,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerController_Domination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerController_Domination"));
 		return ptr;
 	}
 
@@ -2256,7 +2256,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerController_MonsterHunt");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerController_MonsterHunt"));
 		return ptr;
 	}
 
@@ -2400,7 +2400,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlayerState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlayerState"));
 		return ptr;
 	}
 
@@ -2600,7 +2600,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerState"));
 		return ptr;
 	}
 
@@ -2627,7 +2627,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerState_Domination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerState_Domination"));
 		return ptr;
 	}
 
@@ -2642,7 +2642,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaPlayerState_MonsterHunt");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaPlayerState_MonsterHunt"));
 		return ptr;
 	}
 
@@ -2658,7 +2658,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaSafeHouse");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaSafeHouse"));
 		return ptr;
 	}
 
@@ -2684,7 +2684,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArenaState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArenaState"));
 		return ptr;
 	}
 
@@ -2703,7 +2703,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAuthorizationController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAuthorizationController"));
 		return ptr;
 	}
 
@@ -2719,7 +2719,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBallisticsSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBallisticsSystem"));
 		return ptr;
 	}
 
@@ -2734,7 +2734,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBPLibraryCharacter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBPLibraryCharacter"));
 		return ptr;
 	}
 
@@ -2796,7 +2796,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBPLibraryCommon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBPLibraryCommon"));
 		return ptr;
 	}
 
@@ -2829,7 +2829,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBPLibraryQuestSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBPLibraryQuestSystem"));
 		return ptr;
 	}
 
@@ -2866,7 +2866,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTService_Enemy_Sensing");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTService_Enemy_Sensing"));
 		return ptr;
 	}
 
@@ -2887,7 +2887,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTService_FrightRadius");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTService_FrightRadius"));
 		return ptr;
 	}
 
@@ -2904,7 +2904,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTService_MonsterMovementMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTService_MonsterMovementMode"));
 		return ptr;
 	}
 
@@ -2925,7 +2925,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTService_SightAI");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTService_SightAI"));
 		return ptr;
 	}
 
@@ -2940,7 +2940,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_ActionFromBlackBoard");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_ActionFromBlackBoard"));
 		return ptr;
 	}
 
@@ -2957,7 +2957,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_AvailableAction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_AvailableAction"));
 		return ptr;
 	}
 
@@ -2987,7 +2987,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_EnemyNPC_MoveTo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_EnemyNPC_MoveTo"));
 		return ptr;
 	}
 
@@ -3002,7 +3002,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_Idle");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_Idle"));
 		return ptr;
 	}
 
@@ -3019,7 +3019,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_MonsterAction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_MonsterAction"));
 		return ptr;
 	}
 
@@ -3037,7 +3037,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_MoveDirectlyToward");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_MoveDirectlyToward"));
 		return ptr;
 	}
 
@@ -3053,7 +3053,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_RunBehaviorStealth");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_RunBehaviorStealth"));
 		return ptr;
 	}
 
@@ -3070,7 +3070,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_SetMovementMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_SetMovementMode"));
 		return ptr;
 	}
 
@@ -3087,7 +3087,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_SetStealthMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_SetStealthMode"));
 		return ptr;
 	}
 
@@ -3105,7 +3105,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_WTLMoveTo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_WTLMoveTo"));
 		return ptr;
 	}
 
@@ -3137,7 +3137,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBulletinBoard");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBulletinBoard"));
 		return ptr;
 	}
 
@@ -3164,7 +3164,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLProjectile"));
 		return ptr;
 	}
 
@@ -3202,7 +3202,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBulletProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBulletProjectile"));
 		return ptr;
 	}
 
@@ -3226,7 +3226,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBulletTracer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBulletTracer"));
 		return ptr;
 	}
 
@@ -3257,7 +3257,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlaceableStuff");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlaceableStuff"));
 		return ptr;
 	}
 
@@ -3293,7 +3293,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCampfire");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCampfire"));
 		return ptr;
 	}
 
@@ -3311,7 +3311,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCanvasDrawableInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCanvasDrawableInterface"));
 		return ptr;
 	}
 
@@ -3554,7 +3554,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacter"));
 		return ptr;
 	}
 
@@ -3725,7 +3725,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAnimationMetaData"));
 		return ptr;
 	}
 
@@ -3742,7 +3742,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRootMotionAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRootMotionAnimationMetaData"));
 		return ptr;
 	}
 
@@ -3761,7 +3761,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCameraLimitsAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCameraLimitsAnimationMetaData"));
 		return ptr;
 	}
 
@@ -3777,7 +3777,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCameraStyleAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCameraStyleAnimationMetaData"));
 		return ptr;
 	}
 
@@ -3799,7 +3799,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPawnRotationLockingAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPawnRotationLockingAnimationMetaData"));
 		return ptr;
 	}
 
@@ -3817,7 +3817,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSpecialStatesAnimationMetaData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSpecialStatesAnimationMetaData"));
 		return ptr;
 	}
 
@@ -4013,7 +4013,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterBodyAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterBodyAnimInstance"));
 		return ptr;
 	}
 
@@ -4033,7 +4033,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterCameraComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterCameraComponent"));
 		return ptr;
 	}
 
@@ -4048,7 +4048,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterCustomizationHelper");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterCustomizationHelper"));
 		return ptr;
 	}
 
@@ -4067,7 +4067,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractiveObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractiveObject"));
 		return ptr;
 	}
 
@@ -4098,7 +4098,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterDrop");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterDrop"));
 		return ptr;
 	}
 
@@ -4116,7 +4116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterEffectsSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterEffectsSystem"));
 		return ptr;
 	}
 
@@ -4199,7 +4199,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterIdentityComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterIdentityComponent"));
 		return ptr;
 	}
 
@@ -4223,7 +4223,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterMovementComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterMovementComponent"));
 		return ptr;
 	}
 
@@ -4285,7 +4285,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterPreview");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterPreview"));
 		return ptr;
 	}
 
@@ -4322,7 +4322,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterPreviewAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterPreviewAnimInstance"));
 		return ptr;
 	}
 
@@ -4343,7 +4343,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterPreviewRoom");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterPreviewRoom"));
 		return ptr;
 	}
 
@@ -4364,7 +4364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCharacterWatchAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCharacterWatchAnimInstance"));
 		return ptr;
 	}
 
@@ -4383,7 +4383,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLChargeablePlaceableStuff");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLChargeablePlaceableStuff"));
 		return ptr;
 	}
 
@@ -4402,7 +4402,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRichTextBlock");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRichTextBlock"));
 		return ptr;
 	}
 
@@ -4418,7 +4418,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLChatTextBlock");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLChatTextBlock"));
 		return ptr;
 	}
 
@@ -4438,7 +4438,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCircularProgressBar");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCircularProgressBar"));
 		return ptr;
 	}
 
@@ -4462,7 +4462,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommandCore");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommandCore"));
 		return ptr;
 	}
 
@@ -4482,7 +4482,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommandCoreNode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommandCoreNode"));
 		return ptr;
 	}
 
@@ -4505,7 +4505,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_TurretFindTarget");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_TurretFindTarget"));
 		return ptr;
 	}
 
@@ -4522,7 +4522,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLBTTask_TurretExtermination");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLBTTask_TurretExtermination"));
 		return ptr;
 	}
 
@@ -4553,7 +4553,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommandCoreTurret");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommandCoreTurret"));
 		return ptr;
 	}
 
@@ -4572,7 +4572,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommandSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommandSystem"));
 		return ptr;
 	}
 
@@ -4722,7 +4722,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonActionWaiting");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonActionWaiting"));
 		return ptr;
 	}
 
@@ -4747,7 +4747,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonAlphaSectionProgressBar");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonAlphaSectionProgressBar"));
 		return ptr;
 	}
 
@@ -4763,7 +4763,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonAlphaSectionProgressBarItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonAlphaSectionProgressBarItem"));
 		return ptr;
 	}
 
@@ -4779,7 +4779,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonCharacterRotator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonCharacterRotator"));
 		return ptr;
 	}
 
@@ -4797,7 +4797,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonColorButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonColorButton"));
 		return ptr;
 	}
 
@@ -4814,7 +4814,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonColorPresetItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonColorPresetItem"));
 		return ptr;
 	}
 
@@ -4836,7 +4836,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonColorPresets");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonColorPresets"));
 		return ptr;
 	}
 
@@ -4857,7 +4857,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonColorWheel");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonColorWheel"));
 		return ptr;
 	}
 
@@ -4881,7 +4881,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonCountdownSlider");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonCountdownSlider"));
 		return ptr;
 	}
 
@@ -4908,7 +4908,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonCountdownWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonCountdownWindow"));
 		return ptr;
 	}
 
@@ -4936,7 +4936,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonHotkeyButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonHotkeyButton"));
 		return ptr;
 	}
 
@@ -4956,7 +4956,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonMapMarker");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonMapMarker"));
 		return ptr;
 	}
 
@@ -4977,7 +4977,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonMessageDialog");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonMessageDialog"));
 		return ptr;
 	}
 
@@ -4998,7 +4998,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonMessageDialogButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonMessageDialogButton"));
 		return ptr;
 	}
 
@@ -5017,7 +5017,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonNotificationItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonNotificationItem"));
 		return ptr;
 	}
 
@@ -5038,7 +5038,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonNotificator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonNotificator"));
 		return ptr;
 	}
 
@@ -5077,7 +5077,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonOptions");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonOptions"));
 		return ptr;
 	}
 
@@ -5115,7 +5115,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonParameterName");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonParameterName"));
 		return ptr;
 	}
 
@@ -5134,7 +5134,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonParameterPointSpin");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonParameterPointSpin"));
 		return ptr;
 	}
 
@@ -5154,7 +5154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonPopupMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonPopupMenu"));
 		return ptr;
 	}
 
@@ -5172,7 +5172,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonPopupMenuButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonPopupMenuButton"));
 		return ptr;
 	}
 
@@ -5196,7 +5196,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonSelectedItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonSelectedItem"));
 		return ptr;
 	}
 
@@ -5215,7 +5215,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonStoreButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonStoreButton"));
 		return ptr;
 	}
 
@@ -5240,7 +5240,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCommonTabButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCommonTabButton"));
 		return ptr;
 	}
 
@@ -5262,7 +5262,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCraftObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCraftObject"));
 		return ptr;
 	}
 
@@ -5278,7 +5278,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLCustomizationSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLCustomizationSystem"));
 		return ptr;
 	}
 
@@ -5294,7 +5294,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDamageSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDamageSystem"));
 		return ptr;
 	}
 
@@ -5310,7 +5310,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDatabaseAdapter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDatabaseAdapter"));
 		return ptr;
 	}
 
@@ -5325,7 +5325,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDataTable");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDataTable"));
 		return ptr;
 	}
 
@@ -5341,7 +5341,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDaytimeBasedFMODAmbientSound");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDaytimeBasedFMODAmbientSound"));
 		return ptr;
 	}
 
@@ -5362,7 +5362,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDoor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDoor"));
 		return ptr;
 	}
 
@@ -5410,7 +5410,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLevelScriptActor"));
 		return ptr;
 	}
 
@@ -5435,7 +5435,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLocationLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLocationLevelScriptActor"));
 		return ptr;
 	}
 
@@ -5512,7 +5512,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLDynamicSkyLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLDynamicSkyLevelScriptActor"));
 		return ptr;
 	}
 
@@ -5533,7 +5533,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEconomicsSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEconomicsSystem"));
 		return ptr;
 	}
 
@@ -5557,7 +5557,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEffectVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEffectVolume"));
 		return ptr;
 	}
 
@@ -5587,7 +5587,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLElectronicBait");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLElectronicBait"));
 		return ptr;
 	}
 
@@ -5614,7 +5614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyAIController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyAIController"));
 		return ptr;
 	}
 
@@ -5677,7 +5677,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHumanoidAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHumanoidAnimInstance"));
 		return ptr;
 	}
 
@@ -5696,7 +5696,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyHumanoidAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyHumanoidAnimInstance"));
 		return ptr;
 	}
 
@@ -5750,7 +5750,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyNPC");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyNPC"));
 		return ptr;
 	}
 
@@ -5795,7 +5795,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyNPCDrop");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyNPCDrop"));
 		return ptr;
 	}
 
@@ -5822,7 +5822,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyNPCSpawner");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyNPCSpawner"));
 		return ptr;
 	}
 
@@ -5846,7 +5846,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLEnemyNPCSpawnPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLEnemyNPCSpawnPoint"));
 		return ptr;
 	}
 
@@ -5862,7 +5862,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLExperienceSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLExperienceSystem"));
 		return ptr;
 	}
 
@@ -5878,7 +5878,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSocialNetworkAdapter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSocialNetworkAdapter"));
 		return ptr;
 	}
 
@@ -5893,7 +5893,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFacebookSocialNetworkAdapter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFacebookSocialNetworkAdapter"));
 		return ptr;
 	}
 
@@ -5914,7 +5914,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFlashlightMountComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFlashlightMountComponent"));
 		return ptr;
 	}
 
@@ -5934,7 +5934,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFMODCharacterVoiceComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFMODCharacterVoiceComponent"));
 		return ptr;
 	}
 
@@ -5983,7 +5983,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationCommandCore");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationCommandCore"));
 		return ptr;
 	}
 
@@ -6018,7 +6018,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationEnemyNPCSpawner");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationEnemyNPCSpawner"));
 		return ptr;
 	}
 
@@ -6035,7 +6035,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationSafeZoneAnimScriptInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationSafeZoneAnimScriptInstance"));
 		return ptr;
 	}
 
@@ -6061,7 +6061,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSafeZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSafeZone"));
 		return ptr;
 	}
 
@@ -6089,7 +6089,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationSafeZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationSafeZone"));
 		return ptr;
 	}
 
@@ -6112,7 +6112,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFortificationSafeZoneJammer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFortificationSafeZoneJammer"));
 		return ptr;
 	}
 
@@ -6138,7 +6138,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFractionFlag");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFractionFlag"));
 		return ptr;
 	}
 
@@ -6156,7 +6156,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLFurnace");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLFurnace"));
 		return ptr;
 	}
 
@@ -6276,7 +6276,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameInstance"));
 		return ptr;
 	}
 
@@ -6300,7 +6300,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameModeZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameModeZone"));
 		return ptr;
 	}
 
@@ -6319,7 +6319,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameNetworkManager");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameNetworkManager"));
 		return ptr;
 	}
 
@@ -6334,7 +6334,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameSession");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameSession"));
 		return ptr;
 	}
 
@@ -6350,7 +6350,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameUserSettings");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameUserSettings"));
 		return ptr;
 	}
 
@@ -6366,7 +6366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGameViewportClient");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGameViewportClient"));
 		return ptr;
 	}
 
@@ -6382,7 +6382,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGeoSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGeoSystem"));
 		return ptr;
 	}
 
@@ -6408,7 +6408,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMissileWeaponProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMissileWeaponProjectile"));
 		return ptr;
 	}
 
@@ -6439,7 +6439,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGrenadeLauncherProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGrenadeLauncherProjectile"));
 		return ptr;
 	}
 
@@ -6475,7 +6475,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLGrenadeProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLGrenadeProjectile"));
 		return ptr;
 	}
 
@@ -6502,7 +6502,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDActionTimer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDActionTimer"));
 		return ptr;
 	}
 
@@ -6534,7 +6534,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDActiveQuestInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDActiveQuestInfo"));
 		return ptr;
 	}
 
@@ -6555,7 +6555,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArenaState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArenaState"));
 		return ptr;
 	}
 
@@ -6576,7 +6576,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArenaStateItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArenaStateItem"));
 		return ptr;
 	}
 
@@ -6597,7 +6597,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDWindowBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDWindowBase"));
 		return ptr;
 	}
 
@@ -6626,7 +6626,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArenaStateLeaderboardWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArenaStateLeaderboardWindow"));
 		return ptr;
 	}
 
@@ -6652,7 +6652,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArenaStateLeaderboardWindowItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArenaStateLeaderboardWindowItem"));
 		return ptr;
 	}
 
@@ -6672,7 +6672,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArenaStateLeaderboardWindowItemRecord");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArenaStateLeaderboardWindowItemRecord"));
 		return ptr;
 	}
 
@@ -6705,7 +6705,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemSlot"));
 		return ptr;
 	}
 
@@ -6801,7 +6801,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArmoredPlateSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArmoredPlateSlot"));
 		return ptr;
 	}
 
@@ -6825,7 +6825,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArmoredPlatesWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArmoredPlatesWindow"));
 		return ptr;
 	}
 
@@ -6847,7 +6847,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDArmorSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDArmorSlot"));
 		return ptr;
 	}
 
@@ -6863,7 +6863,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBadConnection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBadConnection"));
 		return ptr;
 	}
 
@@ -6879,7 +6879,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInteractiveWidget");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInteractiveWidget"));
 		return ptr;
 	}
 
@@ -6895,7 +6895,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBarter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBarter"));
 		return ptr;
 	}
 
@@ -6914,7 +6914,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBaseActionStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBaseActionStorage"));
 		return ptr;
 	}
 
@@ -6945,7 +6945,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBarterStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBarterStorage"));
 		return ptr;
 	}
 
@@ -6965,7 +6965,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBarterWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBarterWindow"));
 		return ptr;
 	}
 
@@ -6992,7 +6992,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBaseActionDropArea");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBaseActionDropArea"));
 		return ptr;
 	}
 
@@ -7029,7 +7029,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBulletinBoardItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBulletinBoardItem"));
 		return ptr;
 	}
 
@@ -7084,7 +7084,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBulletinBoardWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBulletinBoardWindow"));
 		return ptr;
 	}
 
@@ -7109,7 +7109,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInventorySlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInventorySlot"));
 		return ptr;
 	}
 
@@ -7126,7 +7126,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDPriceSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDPriceSlot"));
 		return ptr;
 	}
 
@@ -7141,7 +7141,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBuySlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBuySlot"));
 		return ptr;
 	}
 
@@ -7159,7 +7159,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDPriceStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDPriceStorage"));
 		return ptr;
 	}
 
@@ -7180,7 +7180,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDBuyStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDBuyStorage"));
 		return ptr;
 	}
 
@@ -7203,7 +7203,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDChangeParametersWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDChangeParametersWindow"));
 		return ptr;
 	}
 
@@ -7228,7 +7228,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCharacterEffectInfluence");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCharacterEffectInfluence"));
 		return ptr;
 	}
 
@@ -7254,7 +7254,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCharacterEquipment");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCharacterEquipment"));
 		return ptr;
 	}
 
@@ -7313,7 +7313,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCharacterInfoWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCharacterInfoWindow"));
 		return ptr;
 	}
 
@@ -7337,7 +7337,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDChatSmileButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDChatSmileButton"));
 		return ptr;
 	}
 
@@ -7357,7 +7357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDChatTabButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDChatTabButton"));
 		return ptr;
 	}
 
@@ -7389,7 +7389,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanInfoWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanInfoWindow"));
 		return ptr;
 	}
 
@@ -7405,7 +7405,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorage"));
 		return ptr;
 	}
 
@@ -7421,7 +7421,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageLogItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageLogItem"));
 		return ptr;
 	}
 
@@ -7440,7 +7440,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStoragePolicyGroupItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStoragePolicyGroupItem"));
 		return ptr;
 	}
 
@@ -7465,7 +7465,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStoragePolicyWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStoragePolicyWindow"));
 		return ptr;
 	}
 
@@ -7487,7 +7487,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageSlot"));
 		return ptr;
 	}
 
@@ -7504,7 +7504,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageTabButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageTabButton"));
 		return ptr;
 	}
 
@@ -7521,7 +7521,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageTabImageItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageTabImageItem"));
 		return ptr;
 	}
 
@@ -7541,7 +7541,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageTabImageSelectWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageTabImageSelectWindow"));
 		return ptr;
 	}
 
@@ -7565,7 +7565,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageTabSettingsItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageTabSettingsItem"));
 		return ptr;
 	}
 
@@ -7587,7 +7587,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageTabStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageTabStorage"));
 		return ptr;
 	}
 
@@ -7610,7 +7610,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInteractiveSlotsStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInteractiveSlotsStorage"));
 		return ptr;
 	}
 
@@ -7675,7 +7675,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDClanStorageWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDClanStorageWindow"));
 		return ptr;
 	}
 
@@ -7717,7 +7717,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommentaryWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommentaryWindow"));
 		return ptr;
 	}
 
@@ -7759,7 +7759,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommissionAddUpdateWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommissionAddUpdateWindow"));
 		return ptr;
 	}
 
@@ -7789,7 +7789,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommissionDropArea");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommissionDropArea"));
 		return ptr;
 	}
 
@@ -7816,7 +7816,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommissionList");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommissionList"));
 		return ptr;
 	}
 
@@ -7848,7 +7848,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommissionListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommissionListItem"));
 		return ptr;
 	}
 
@@ -7879,7 +7879,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSellStorageBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSellStorageBase"));
 		return ptr;
 	}
 
@@ -7914,7 +7914,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCommissionSellStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCommissionSellStorage"));
 		return ptr;
 	}
 
@@ -7935,7 +7935,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDContentInventory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDContentInventory"));
 		return ptr;
 	}
 
@@ -7974,7 +7974,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDContentInventoryStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDContentInventoryStorage"));
 		return ptr;
 	}
 
@@ -8000,7 +8000,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCraft");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCraft"));
 		return ptr;
 	}
 
@@ -8040,7 +8040,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCraftWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCraftWindow"));
 		return ptr;
 	}
 
@@ -8062,7 +8062,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCraftWindowItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCraftWindowItem"));
 		return ptr;
 	}
 
@@ -8092,7 +8092,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDCrosshair");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDCrosshair"));
 		return ptr;
 	}
 
@@ -8110,7 +8110,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDDamagePointer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDDamagePointer"));
 		return ptr;
 	}
 
@@ -8130,7 +8130,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDDraggedSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDDraggedSlot"));
 		return ptr;
 	}
 
@@ -8147,7 +8147,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDEmotionStateExitHint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDEmotionStateExitHint"));
 		return ptr;
 	}
 
@@ -8166,7 +8166,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDEventNotificationItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDEventNotificationItem"));
 		return ptr;
 	}
 
@@ -8181,7 +8181,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDEventNotificator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDEventNotificator"));
 		return ptr;
 	}
 
@@ -8197,7 +8197,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDExtractor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDExtractor"));
 		return ptr;
 	}
 
@@ -8217,7 +8217,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDExtractorStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDExtractorStorage"));
 		return ptr;
 	}
 
@@ -8236,7 +8236,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDExtractorWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDExtractorWindow"));
 		return ptr;
 	}
 
@@ -8255,7 +8255,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDFastAccessSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDFastAccessSlot"));
 		return ptr;
 	}
 
@@ -8286,7 +8286,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDFastAccessSlots");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDFastAccessSlots"));
 		return ptr;
 	}
 
@@ -8327,7 +8327,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDFeedbackWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDFeedbackWindow"));
 		return ptr;
 	}
 
@@ -8359,7 +8359,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDFPSCounter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDFPSCounter"));
 		return ptr;
 	}
 
@@ -8379,7 +8379,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDGameVersionInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDGameVersionInfo"));
 		return ptr;
 	}
 
@@ -8397,7 +8397,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInformationDialogWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInformationDialogWindow"));
 		return ptr;
 	}
 
@@ -8425,7 +8425,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInGameMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInGameMenu"));
 		return ptr;
 	}
 
@@ -8455,7 +8455,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInteractiveSubstrate");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInteractiveSubstrate"));
 		return ptr;
 	}
 
@@ -8475,7 +8475,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDInventory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDInventory"));
 		return ptr;
 	}
 
@@ -8646,7 +8646,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemInformationBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemInformationBase"));
 		return ptr;
 	}
 
@@ -8689,7 +8689,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemInformation");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemInformation"));
 		return ptr;
 	}
 
@@ -8712,7 +8712,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemInformationEffectInfluence");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemInformationEffectInfluence"));
 		return ptr;
 	}
 
@@ -8730,7 +8730,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemInformationMedicineEffect");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemInformationMedicineEffect"));
 		return ptr;
 	}
 
@@ -8747,7 +8747,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemInformationWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemInformationWindow"));
 		return ptr;
 	}
 
@@ -8765,7 +8765,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemPlacementHint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemPlacementHint"));
 		return ptr;
 	}
 
@@ -8797,7 +8797,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemPreview");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemPreview"));
 		return ptr;
 	}
 
@@ -8827,7 +8827,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemPreviewWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemPreviewWindow"));
 		return ptr;
 	}
 
@@ -8844,7 +8844,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsCustomization");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsCustomization"));
 		return ptr;
 	}
 
@@ -8878,7 +8878,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsCustomizationWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsCustomizationWindow"));
 		return ptr;
 	}
 
@@ -8902,7 +8902,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsModification");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsModification"));
 		return ptr;
 	}
 
@@ -8924,7 +8924,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsModificationBarChart");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsModificationBarChart"));
 		return ptr;
 	}
 
@@ -8943,7 +8943,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsModificationPercentDelta");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsModificationPercentDelta"));
 		return ptr;
 	}
 
@@ -8986,7 +8986,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemsModificationWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemsModificationWindow"));
 		return ptr;
 	}
 
@@ -9021,7 +9021,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemSplitBuyWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemSplitBuyWindow"));
 		return ptr;
 	}
 
@@ -9056,7 +9056,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemSplitWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemSplitWindow"));
 		return ptr;
 	}
 
@@ -9086,7 +9086,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDItemViewWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDItemViewWindow"));
 		return ptr;
 	}
 
@@ -9104,7 +9104,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDLevelBar");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDLevelBar"));
 		return ptr;
 	}
 
@@ -9128,7 +9128,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDLevelUp");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDLevelUp"));
 		return ptr;
 	}
 
@@ -9147,7 +9147,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDLoader");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDLoader"));
 		return ptr;
 	}
 
@@ -9163,7 +9163,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMailBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMailBox"));
 		return ptr;
 	}
 
@@ -9212,7 +9212,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMailBoxInboxListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMailBoxInboxListItem"));
 		return ptr;
 	}
 
@@ -9244,7 +9244,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMailBoxStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMailBoxStorage"));
 		return ptr;
 	}
 
@@ -9284,7 +9284,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMailBoxWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMailBoxWindow"));
 		return ptr;
 	}
 
@@ -9327,7 +9327,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMainMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMainMenu"));
 		return ptr;
 	}
 
@@ -9359,7 +9359,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMinimap");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMinimap"));
 		return ptr;
 	}
 
@@ -9380,7 +9380,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDMoneyTransferWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDMoneyTransferWindow"));
 		return ptr;
 	}
 
@@ -9406,7 +9406,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDNPCDialogButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDNPCDialogButton"));
 		return ptr;
 	}
 
@@ -9427,7 +9427,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDNPCDialogWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDNPCDialogWindow"));
 		return ptr;
 	}
 
@@ -9446,7 +9446,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDObjectCraft");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDObjectCraft"));
 		return ptr;
 	}
 
@@ -9469,7 +9469,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDObjectCraftProcess");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDObjectCraftProcess"));
 		return ptr;
 	}
 
@@ -9493,7 +9493,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDObjectInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDObjectInfo"));
 		return ptr;
 	}
 
@@ -9514,7 +9514,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDPlayerInventory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDPlayerInventory"));
 		return ptr;
 	}
 
@@ -9542,7 +9542,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDPlayerInventoryStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDPlayerInventoryStorage"));
 		return ptr;
 	}
 
@@ -9586,7 +9586,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDPlayerStatus");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDPlayerStatus"));
 		return ptr;
 	}
 
@@ -9614,7 +9614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDQuestSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDQuestSlot"));
 		return ptr;
 	}
 
@@ -9634,7 +9634,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDRadialMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDRadialMenu"));
 		return ptr;
 	}
 
@@ -9655,7 +9655,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDRepair");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDRepair"));
 		return ptr;
 	}
 
@@ -9672,7 +9672,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDRepairStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDRepairStorage"));
 		return ptr;
 	}
 
@@ -9688,7 +9688,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDRepairWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDRepairWindow"));
 		return ptr;
 	}
 
@@ -9708,7 +9708,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDRequestWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDRequestWindow"));
 		return ptr;
 	}
 
@@ -9729,7 +9729,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSellStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSellStorage"));
 		return ptr;
 	}
 
@@ -9800,7 +9800,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSellStorageItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSellStorageItem"));
 		return ptr;
 	}
 
@@ -9821,7 +9821,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSellStorageTabButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSellStorageTabButton"));
 		return ptr;
 	}
 
@@ -9841,7 +9841,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDServerEventInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDServerEventInfo"));
 		return ptr;
 	}
 
@@ -9857,7 +9857,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSteamInventory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSteamInventory"));
 		return ptr;
 	}
 
@@ -9877,7 +9877,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSteamInventoryItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSteamInventoryItem"));
 		return ptr;
 	}
 
@@ -9892,7 +9892,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSteamInventoryStorage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSteamInventoryStorage"));
 		return ptr;
 	}
 
@@ -9926,7 +9926,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDSteamInventoryWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDSteamInventoryWindow"));
 		return ptr;
 	}
 
@@ -9950,7 +9950,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDStuffSlot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDStuffSlot"));
 		return ptr;
 	}
 
@@ -9996,7 +9996,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDTextChatArea");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDTextChatArea"));
 		return ptr;
 	}
 
@@ -10024,7 +10024,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDTextChatItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDTextChatItem"));
 		return ptr;
 	}
 
@@ -10040,7 +10040,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDTrade");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDTrade"));
 		return ptr;
 	}
 
@@ -10065,7 +10065,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDTradeTabsWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDTradeTabsWindow"));
 		return ptr;
 	}
 
@@ -10099,7 +10099,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDTutorialWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDTutorialWindow"));
 		return ptr;
 	}
 
@@ -10124,7 +10124,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDWarningTitle");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDWarningTitle"));
 		return ptr;
 	}
 
@@ -10142,7 +10142,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDWeaponCountdown");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDWeaponCountdown"));
 		return ptr;
 	}
 
@@ -10177,7 +10177,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLHUDWeaponInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLHUDWeaponInfo"));
 		return ptr;
 	}
 
@@ -10192,7 +10192,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInputDataValidator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInputDataValidator"));
 		return ptr;
 	}
 
@@ -10234,7 +10234,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLIntegerSpinBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLIntegerSpinBox"));
 		return ptr;
 	}
 
@@ -10270,7 +10270,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractiveBlockedObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractiveBlockedObject"));
 		return ptr;
 	}
 
@@ -10289,7 +10289,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractiveObjectInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractiveObjectInterface"));
 		return ptr;
 	}
 
@@ -10312,7 +10312,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractivePlant");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractivePlant"));
 		return ptr;
 	}
 
@@ -10334,7 +10334,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlantInstancedStaticMeshComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlantInstancedStaticMeshComponent"));
 		return ptr;
 	}
 
@@ -10366,7 +10366,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractivePlantSpawnField");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractivePlantSpawnField"));
 		return ptr;
 	}
 
@@ -10399,7 +10399,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractivePlantSpawnPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractivePlantSpawnPoint"));
 		return ptr;
 	}
 
@@ -10426,7 +10426,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractiveResource");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractiveResource"));
 		return ptr;
 	}
 
@@ -10455,7 +10455,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLInteractiveResourceSource");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLInteractiveResourceSource"));
 		return ptr;
 	}
 
@@ -10472,7 +10472,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuickTimeEventInstigator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuickTimeEventInstigator"));
 		return ptr;
 	}
 
@@ -10500,7 +10500,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLItemPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLItemPickup"));
 		return ptr;
 	}
 
@@ -10522,7 +10522,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWeaponPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWeaponPickup"));
 		return ptr;
 	}
 
@@ -10542,7 +10542,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLAmmoPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLAmmoPickup"));
 		return ptr;
 	}
 
@@ -10560,7 +10560,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMedicinePickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMedicinePickup"));
 		return ptr;
 	}
 
@@ -10578,7 +10578,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStuffPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStuffPickup"));
 		return ptr;
 	}
 
@@ -10596,7 +10596,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLClothesPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLClothesPickup"));
 		return ptr;
 	}
 
@@ -10614,7 +10614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLResourcePickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLResourcePickup"));
 		return ptr;
 	}
 
@@ -10632,7 +10632,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLArtefactPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLArtefactPickup"));
 		return ptr;
 	}
 
@@ -10649,7 +10649,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLActiveArtefactPickup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLActiveArtefactPickup"));
 		return ptr;
 	}
 
@@ -10678,7 +10678,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLItemPickupSpawnPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLItemPickupSpawnPoint"));
 		return ptr;
 	}
 
@@ -10722,7 +10722,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLItemPreview");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLItemPreview"));
 		return ptr;
 	}
 
@@ -10738,7 +10738,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLItemSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLItemSystem"));
 		return ptr;
 	}
 
@@ -10753,7 +10753,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLKeyNameHelper");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLKeyNameHelper"));
 		return ptr;
 	}
 
@@ -10776,7 +10776,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLadder");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLadder"));
 		return ptr;
 	}
 
@@ -10796,7 +10796,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLevelPickupSpawnPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLevelPickupSpawnPoint"));
 		return ptr;
 	}
 
@@ -10815,7 +10815,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLevelStreamingVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLevelStreamingVolume"));
 		return ptr;
 	}
 
@@ -10840,7 +10840,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLoadingScreenLocation");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLoadingScreenLocation"));
 		return ptr;
 	}
 
@@ -10857,7 +10857,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLoadingScreenSimple");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLoadingScreenSimple"));
 		return ptr;
 	}
 
@@ -10874,7 +10874,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLoadingScreenTestLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLoadingScreenTestLevelScriptActor"));
 		return ptr;
 	}
 
@@ -10892,7 +10892,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLoadingScreenTestMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLoadingScreenTestMenu"));
 		return ptr;
 	}
 
@@ -10910,7 +10910,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLocalizationHelper");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLocalizationHelper"));
 		return ptr;
 	}
 
@@ -10926,7 +10926,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLLocalPlayer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLLocalPlayer"));
 		return ptr;
 	}
 
@@ -10945,7 +10945,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMailBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMailBox"));
 		return ptr;
 	}
 
@@ -10961,7 +10961,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMailSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMailSystem"));
 		return ptr;
 	}
 
@@ -10980,7 +10980,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuActionWaiting");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuActionWaiting"));
 		return ptr;
 	}
 
@@ -11002,7 +11002,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuAnnouncer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuAnnouncer"));
 		return ptr;
 	}
 
@@ -11020,7 +11020,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuBase"));
 		return ptr;
 	}
 
@@ -11047,7 +11047,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuArenaLocationList");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuArenaLocationList"));
 		return ptr;
 	}
 
@@ -11087,7 +11087,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuArenaLocationListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuArenaLocationListItem"));
 		return ptr;
 	}
 
@@ -11115,7 +11115,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCharacter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCharacter"));
 		return ptr;
 	}
 
@@ -11152,7 +11152,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCharacterCreate");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCharacterCreate"));
 		return ptr;
 	}
 
@@ -11233,7 +11233,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCharacterListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCharacterListItem"));
 		return ptr;
 	}
 
@@ -11267,7 +11267,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCharacterName");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCharacterName"));
 		return ptr;
 	}
 
@@ -11307,7 +11307,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCharacterSelect");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCharacterSelect"));
 		return ptr;
 	}
 
@@ -11339,7 +11339,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuChooseAccountType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuChooseAccountType"));
 		return ptr;
 	}
 
@@ -11365,7 +11365,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuChooseLanguage");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuChooseLanguage"));
 		return ptr;
 	}
 
@@ -11395,7 +11395,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCredits");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCredits"));
 		return ptr;
 	}
 
@@ -11448,7 +11448,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCustomization");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCustomization"));
 		return ptr;
 	}
 
@@ -11486,7 +11486,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuCustomizationEdit");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuCustomizationEdit"));
 		return ptr;
 	}
 
@@ -11513,7 +11513,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuErrorNotificationItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuErrorNotificationItem"));
 		return ptr;
 	}
 
@@ -11530,7 +11530,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuGameVersionInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuGameVersionInfo"));
 		return ptr;
 	}
 
@@ -11547,7 +11547,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuLevelScriptActor"));
 		return ptr;
 	}
 
@@ -11592,7 +11592,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuLocalizationListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuLocalizationListItem"));
 		return ptr;
 	}
 
@@ -11610,7 +11610,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuMaterialColorItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuMaterialColorItem"));
 		return ptr;
 	}
 
@@ -11630,7 +11630,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuMaterialScalarItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuMaterialScalarItem"));
 		return ptr;
 	}
 
@@ -11651,7 +11651,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuMoviePlayer");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuMoviePlayer"));
 		return ptr;
 	}
 
@@ -11673,7 +11673,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuOptions");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuOptions"));
 		return ptr;
 	}
 
@@ -11707,7 +11707,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuPlayerClass");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuPlayerClass"));
 		return ptr;
 	}
 
@@ -11728,7 +11728,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuPlayerClassTooltip");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuPlayerClassTooltip"));
 		return ptr;
 	}
 
@@ -11750,7 +11750,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuServerAuthorization");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuServerAuthorization"));
 		return ptr;
 	}
 
@@ -11785,7 +11785,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuServerList");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuServerList"));
 		return ptr;
 	}
 
@@ -11825,7 +11825,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuServerListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuServerListItem"));
 		return ptr;
 	}
 
@@ -11859,7 +11859,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuStart");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuStart"));
 		return ptr;
 	}
 
@@ -11892,7 +11892,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMainMenuTextBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMainMenuTextBox"));
 		return ptr;
 	}
 
@@ -11941,7 +11941,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUsable");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUsable"));
 		return ptr;
 	}
 
@@ -11962,7 +11962,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWeapon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWeapon"));
 		return ptr;
 	}
 
@@ -12003,7 +12003,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMeleeWeapon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMeleeWeapon"));
 		return ptr;
 	}
 
@@ -12030,7 +12030,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTacticalStuff");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTacticalStuff"));
 		return ptr;
 	}
 
@@ -12063,7 +12063,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMine");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMine"));
 		return ptr;
 	}
 
@@ -12092,7 +12092,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStuff");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStuff"));
 		return ptr;
 	}
 
@@ -12115,7 +12115,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMiningItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMiningItem"));
 		return ptr;
 	}
 
@@ -12154,7 +12154,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMiningSpot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMiningSpot"));
 		return ptr;
 	}
 
@@ -12178,7 +12178,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMiningZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMiningZone"));
 		return ptr;
 	}
 
@@ -12214,7 +12214,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMissileWeapon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMissileWeapon"));
 		return ptr;
 	}
 
@@ -12246,7 +12246,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMobileHealPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMobileHealPoint"));
 		return ptr;
 	}
 
@@ -12279,7 +12279,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMobileResurectionPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMobileResurectionPoint"));
 		return ptr;
 	}
 
@@ -12311,7 +12311,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMobileStartPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMobileStartPoint"));
 		return ptr;
 	}
 
@@ -12347,7 +12347,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonocular");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonocular"));
 		return ptr;
 	}
 
@@ -12392,7 +12392,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterPawnAIController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterPawnAIController"));
 		return ptr;
 	}
 
@@ -12429,7 +12429,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterPawnAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterPawnAnimInstance"));
 		return ptr;
 	}
 
@@ -12446,7 +12446,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterPawnMovementComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterPawnMovementComponent"));
 		return ptr;
 	}
 
@@ -12473,7 +12473,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterProjectile");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterProjectile"));
 		return ptr;
 	}
 
@@ -12534,7 +12534,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterSpawner");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterSpawner"));
 		return ptr;
 	}
 
@@ -12570,7 +12570,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMonsterSpawnerAIController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMonsterSpawnerAIController"));
 		return ptr;
 	}
 
@@ -12587,7 +12587,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLMultipleItemPickupSpawnPoint");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLMultipleItemPickupSpawnPoint"));
 		return ptr;
 	}
 
@@ -12609,7 +12609,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNetworkController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNetworkController"));
 		return ptr;
 	}
 
@@ -12778,7 +12778,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNPCActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNPCActor"));
 		return ptr;
 	}
 
@@ -12910,7 +12910,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNPCAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNPCAnimInstance"));
 		return ptr;
 	}
 
@@ -12937,7 +12937,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNPCEnvironmentActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNPCEnvironmentActor"));
 		return ptr;
 	}
 
@@ -12972,7 +12972,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNPCPawnAI");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNPCPawnAI"));
 		return ptr;
 	}
 
@@ -12997,7 +12997,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNut");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNut"));
 		return ptr;
 	}
 
@@ -13016,7 +13016,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary"));
 		return ptr;
 	}
 
@@ -13039,7 +13039,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLNvidiaHighlightsLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLNvidiaHighlightsLibrary"));
 		return ptr;
 	}
 
@@ -13064,7 +13064,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLObjectForActivation");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLObjectForActivation"));
 		return ptr;
 	}
 
@@ -13086,7 +13086,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsActionKeyBinder");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsActionKeyBinder"));
 		return ptr;
 	}
 
@@ -13106,7 +13106,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsBase"));
 		return ptr;
 	}
 
@@ -13132,7 +13132,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsAudio");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsAudio"));
 		return ptr;
 	}
 
@@ -13153,7 +13153,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAColorWheel");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAColorWheel"));
 		return ptr;
 	}
 
@@ -13174,7 +13174,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsColorWheel");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsColorWheel"));
 		return ptr;
 	}
 
@@ -13202,7 +13202,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsControl");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsControl"));
 		return ptr;
 	}
 
@@ -13230,7 +13230,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsGame");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsGame"));
 		return ptr;
 	}
 
@@ -13272,7 +13272,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsGraphic");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsGraphic"));
 		return ptr;
 	}
 
@@ -13301,7 +13301,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsIdentification");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsIdentification"));
 		return ptr;
 	}
 
@@ -13335,7 +13335,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsInterface"));
 		return ptr;
 	}
 
@@ -13354,7 +13354,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsItemBackground");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsItemBackground"));
 		return ptr;
 	}
 
@@ -13370,7 +13370,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsParameterItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsParameterItem"));
 		return ptr;
 	}
 
@@ -13388,7 +13388,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsParameterSliderBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsParameterSliderBase"));
 		return ptr;
 	}
 
@@ -13406,7 +13406,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsParameterSliderPercent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsParameterSliderPercent"));
 		return ptr;
 	}
 
@@ -13427,7 +13427,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsParameterSwitcher");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsParameterSwitcher"));
 		return ptr;
 	}
 
@@ -13451,7 +13451,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLOptionsPostProcess");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLOptionsPostProcess"));
 		return ptr;
 	}
 
@@ -13473,7 +13473,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPawnMovementComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPawnMovementComponent"));
 		return ptr;
 	}
 
@@ -13491,7 +13491,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDA");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDA"));
 		return ptr;
 	}
 
@@ -13508,7 +13508,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDABase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDABase"));
 		return ptr;
 	}
 
@@ -13608,7 +13608,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterInfo"));
 		return ptr;
 	}
 
@@ -13646,7 +13646,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterParameters");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterParameters"));
 		return ptr;
 	}
 
@@ -13677,7 +13677,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterSkills");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterSkills"));
 		return ptr;
 	}
 
@@ -13711,7 +13711,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterSkillsInformation");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterSkillsInformation"));
 		return ptr;
 	}
 
@@ -13742,7 +13742,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterSkillsItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterSkillsItem"));
 		return ptr;
 	}
 
@@ -13767,7 +13767,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterSkillsTakeConfirm");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterSkillsTakeConfirm"));
 		return ptr;
 	}
 
@@ -13792,7 +13792,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACharacterSkillsZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACharacterSkillsZone"));
 		return ptr;
 	}
 
@@ -13844,7 +13844,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAClan");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAClan"));
 		return ptr;
 	}
 
@@ -13890,7 +13890,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAClanMemberItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAClanMemberItem"));
 		return ptr;
 	}
 
@@ -13914,7 +13914,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAClanPolicyGroupItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAClanPolicyGroupItem"));
 		return ptr;
 	}
 
@@ -13949,7 +13949,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDACraftRecipes");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDACraftRecipes"));
 		return ptr;
 	}
 
@@ -14015,7 +14015,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAFraction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAFraction"));
 		return ptr;
 	}
 
@@ -14050,7 +14050,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAFractionLeaderboardItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAFractionLeaderboardItem"));
 		return ptr;
 	}
 
@@ -14069,7 +14069,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAFractionRanksTableItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAFractionRanksTableItem"));
 		return ptr;
 	}
 
@@ -14108,7 +14108,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAFriendsAndEnemies");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAFriendsAndEnemies"));
 		return ptr;
 	}
 
@@ -14144,7 +14144,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAFriendsAndEnemiesListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAFriendsAndEnemiesListItem"));
 		return ptr;
 	}
 
@@ -14189,7 +14189,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAGroup");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAGroup"));
 		return ptr;
 	}
 
@@ -14231,7 +14231,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAGroupInviteItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAGroupInviteItem"));
 		return ptr;
 	}
 
@@ -14257,7 +14257,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAGroupMemberItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAGroupMemberItem"));
 		return ptr;
 	}
 
@@ -14287,7 +14287,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAItemExperience");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAItemExperience"));
 		return ptr;
 	}
 
@@ -14307,7 +14307,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDALegendItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDALegendItem"));
 		return ptr;
 	}
 
@@ -14324,7 +14324,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDALocationsListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDALocationsListItem"));
 		return ptr;
 	}
 
@@ -14370,7 +14370,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMail");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMail"));
 		return ptr;
 	}
 
@@ -14418,7 +14418,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMailMessageItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMailMessageItem"));
 		return ptr;
 	}
 
@@ -14467,7 +14467,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMain");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMain"));
 		return ptr;
 	}
 
@@ -14563,7 +14563,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMap");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMap"));
 		return ptr;
 	}
 
@@ -14610,7 +14610,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMapMarker");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMapMarker"));
 		return ptr;
 	}
 
@@ -14633,7 +14633,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMarkerListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMarkerListItem"));
 		return ptr;
 	}
 
@@ -14655,7 +14655,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMarkerSubTypeItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMarkerSubTypeItem"));
 		return ptr;
 	}
 
@@ -14678,7 +14678,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMenu");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMenu"));
 		return ptr;
 	}
 
@@ -14704,7 +14704,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAMenuButton");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAMenuButton"));
 		return ptr;
 	}
 
@@ -14726,7 +14726,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAModulesListItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAModulesListItem"));
 		return ptr;
 	}
 
@@ -14795,7 +14795,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAQuestLog");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAQuestLog"));
 		return ptr;
 	}
 
@@ -14834,7 +14834,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAQuestLogItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAQuestLogItem"));
 		return ptr;
 	}
 
@@ -14858,7 +14858,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAQuestLogRequirementBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAQuestLogRequirementBase"));
 		return ptr;
 	}
 
@@ -14874,7 +14874,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDAQuestLogRequiredMonsterKill");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDAQuestLogRequiredMonsterKill"));
 		return ptr;
 	}
 
@@ -14900,7 +14900,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDASettings");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDASettings"));
 		return ptr;
 	}
 
@@ -14932,7 +14932,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPDASocialNetworkAuthorization");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPDASocialNetworkAuthorization"));
 		return ptr;
 	}
 
@@ -14977,7 +14977,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlayerCameraManager");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlayerCameraManager"));
 		return ptr;
 	}
 
@@ -14995,7 +14995,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPlayerStart");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPlayerStart"));
 		return ptr;
 	}
 
@@ -15024,7 +15024,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLPortal");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLPortal"));
 		return ptr;
 	}
 
@@ -15049,7 +15049,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLProjectileLauncher");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLProjectileLauncher"));
 		return ptr;
 	}
 
@@ -15071,7 +15071,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLProjectileMovementComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLProjectileMovementComponent"));
 		return ptr;
 	}
 
@@ -15089,7 +15089,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuestObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuestObject"));
 		return ptr;
 	}
 
@@ -15117,7 +15117,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuestObjectAchievement");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuestObjectAchievement"));
 		return ptr;
 	}
 
@@ -15137,7 +15137,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuestObjectForAction");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuestObjectForAction"));
 		return ptr;
 	}
 
@@ -15177,7 +15177,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuestObjectSpawner");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuestObjectSpawner"));
 		return ptr;
 	}
 
@@ -15200,7 +15200,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLQuestSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLQuestSystem"));
 		return ptr;
 	}
 
@@ -15215,7 +15215,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRadialMenuInstigatorInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRadialMenuInstigatorInterface"));
 		return ptr;
 	}
 
@@ -15234,7 +15234,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRadio");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRadio"));
 		return ptr;
 	}
 
@@ -15258,7 +15258,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRandomPointsMiningZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRandomPointsMiningZone"));
 		return ptr;
 	}
 
@@ -15375,7 +15375,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRangedWeapon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRangedWeapon"));
 		return ptr;
 	}
 
@@ -15416,7 +15416,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRankSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRankSystem"));
 		return ptr;
 	}
 
@@ -15431,7 +15431,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRecastNavMeshLarge");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRecastNavMeshLarge"));
 		return ptr;
 	}
 
@@ -15447,7 +15447,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLReputationSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLReputationSystem"));
 		return ptr;
 	}
 
@@ -15462,7 +15462,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRichTextBlockInventoryItemDecorator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRichTextBlockInventoryItemDecorator"));
 		return ptr;
 	}
 
@@ -15477,7 +15477,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRichTextBlockPlayerNameDecorator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRichTextBlockPlayerNameDecorator"));
 		return ptr;
 	}
 
@@ -15492,7 +15492,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRichTextBlockInlineImageDecorator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRichTextBlockInlineImageDecorator"));
 		return ptr;
 	}
 
@@ -15507,7 +15507,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGGameMode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGGameMode"));
 		return ptr;
 	}
 
@@ -15522,7 +15522,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGGameState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGGameState"));
 		return ptr;
 	}
 
@@ -15541,7 +15541,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUD");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUD"));
 		return ptr;
 	}
 
@@ -15556,7 +15556,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDBase"));
 		return ptr;
 	}
 
@@ -15574,7 +15574,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDGroupInfo");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDGroupInfo"));
 		return ptr;
 	}
 
@@ -15601,7 +15601,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDGroupInfo_Item");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDGroupInfo_Item"));
 		return ptr;
 	}
 
@@ -15617,7 +15617,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDPlayersTable");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDPlayersTable"));
 		return ptr;
 	}
 
@@ -15649,7 +15649,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDPlayersTableItem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDPlayersTableItem"));
 		return ptr;
 	}
 
@@ -15677,7 +15677,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGHUDPlayersTableWindow");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGHUDPlayersTableWindow"));
 		return ptr;
 	}
 
@@ -15696,7 +15696,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGPlayerController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGPlayerController"));
 		return ptr;
 	}
 
@@ -15719,7 +15719,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLRPGPlayerState");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLRPGPlayerState"));
 		return ptr;
 	}
 
@@ -15737,7 +15737,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLScriptedEventsSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLScriptedEventsSystem"));
 		return ptr;
 	}
 
@@ -15753,7 +15753,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSecuritySystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSecuritySystem"));
 		return ptr;
 	}
 
@@ -15769,7 +15769,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSharedData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSharedData"));
 		return ptr;
 	}
 
@@ -15785,7 +15785,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSkillSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSkillSystem"));
 		return ptr;
 	}
 
@@ -15804,7 +15804,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSky");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSky"));
 		return ptr;
 	}
 
@@ -15873,7 +15873,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSkyLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSkyLevelScriptActor"));
 		return ptr;
 	}
 
@@ -15893,7 +15893,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSocialSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSocialSystem"));
 		return ptr;
 	}
 
@@ -15909,7 +15909,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSoundSubmixesComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSoundSubmixesComponent"));
 		return ptr;
 	}
 
@@ -15924,7 +15924,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSpectatorCameraViewSpot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSpectatorCameraViewSpot"));
 		return ptr;
 	}
 
@@ -15940,7 +15940,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSpectatorPawn");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSpectatorPawn"));
 		return ptr;
 	}
 
@@ -15960,7 +15960,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStash");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStash"));
 		return ptr;
 	}
 
@@ -15979,7 +15979,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStaticMeshActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStaticMeshActor"));
 		return ptr;
 	}
 
@@ -16000,7 +16000,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStaticMiningZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStaticMiningZone"));
 		return ptr;
 	}
 
@@ -16015,7 +16015,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStaticSkyLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStaticSkyLevelScriptActor"));
 		return ptr;
 	}
 
@@ -16031,7 +16031,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStatisticsSystem");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStatisticsSystem"));
 		return ptr;
 	}
 
@@ -16047,7 +16047,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSteamMainMenuLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSteamMainMenuLevelScriptActor"));
 		return ptr;
 	}
 
@@ -16084,7 +16084,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSteelTarget");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSteelTarget"));
 		return ptr;
 	}
 
@@ -16115,7 +16115,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStorageBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStorageBox"));
 		return ptr;
 	}
 
@@ -16132,7 +16132,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStorageObjectInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStorageObjectInterface"));
 		return ptr;
 	}
 
@@ -16148,7 +16148,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLStuffPlacementZone");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLStuffPlacementZone"));
 		return ptr;
 	}
 
@@ -16163,7 +16163,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLSublevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLSublevelScriptActor"));
 		return ptr;
 	}
 
@@ -16188,7 +16188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTacticalWeapon");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTacticalWeapon"));
 		return ptr;
 	}
 
@@ -16214,7 +16214,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTiltComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTiltComponent"));
 		return ptr;
 	}
 
@@ -16231,7 +16231,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTradingObjectInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTradingObjectInterface"));
 		return ptr;
 	}
 
@@ -16251,7 +16251,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTransitionLevelScriptActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTransitionLevelScriptActor"));
 		return ptr;
 	}
 
@@ -16274,7 +16274,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTriggerObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTriggerObject"));
 		return ptr;
 	}
 
@@ -16308,7 +16308,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTriggerStateObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTriggerStateObject"));
 		return ptr;
 	}
 
@@ -16330,7 +16330,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTriggerVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTriggerVolume"));
 		return ptr;
 	}
 
@@ -16364,7 +16364,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTurretAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTurretAnimInstance"));
 		return ptr;
 	}
 
@@ -16383,7 +16383,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTutorialVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTutorialVolume"));
 		return ptr;
 	}
 
@@ -16400,7 +16400,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.EnvironmentDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.EnvironmentDamageType"));
 		return ptr;
 	}
 
@@ -16415,7 +16415,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.AcidDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.AcidDamageType"));
 		return ptr;
 	}
 
@@ -16430,7 +16430,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.FireDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.FireDamageType"));
 		return ptr;
 	}
 
@@ -16445,7 +16445,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.RadiationDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.RadiationDamageType"));
 		return ptr;
 	}
 
@@ -16460,7 +16460,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WeaponDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WeaponDamageType"));
 		return ptr;
 	}
 
@@ -16475,7 +16475,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.ExplosiveWeaponDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.ExplosiveWeaponDamageType"));
 		return ptr;
 	}
 
@@ -16490,7 +16490,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.MedicineDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.MedicineDamageType"));
 		return ptr;
 	}
 
@@ -16505,7 +16505,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.MonsterDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.MonsterDamageType"));
 		return ptr;
 	}
 
@@ -16520,7 +16520,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.SuffocationDamageType");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.SuffocationDamageType"));
 		return ptr;
 	}
 
@@ -16536,7 +16536,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.CurveLipSync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.CurveLipSync"));
 		return ptr;
 	}
 
@@ -16551,7 +16551,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUndergroundVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUndergroundVolume"));
 		return ptr;
 	}
 
@@ -16572,7 +16572,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUtilityColorWheel");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUtilityColorWheel"));
 		return ptr;
 	}
 
@@ -16596,7 +16596,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLUtilityNumberTextBox");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLUtilityNumberTextBox"));
 		return ptr;
 	}
 
@@ -16614,7 +16614,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.MasterServerBlueprintLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.MasterServerBlueprintLibrary"));
 		return ptr;
 	}
 
@@ -16633,7 +16633,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLTestingBlueprintLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLTestingBlueprintLibrary"));
 		return ptr;
 	}
 
@@ -16650,7 +16650,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLVKSocialNetworkAdapter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLVKSocialNetworkAdapter"));
 		return ptr;
 	}
 
@@ -16666,7 +16666,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLVoiceController");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLVoiceController"));
 		return ptr;
 	}
 
@@ -16682,7 +16682,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLVolumePortal");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLVolumePortal"));
 		return ptr;
 	}
 
@@ -16703,7 +16703,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWaterSource");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWaterSource"));
 		return ptr;
 	}
 
@@ -16729,7 +16729,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWeaponAnimInstance");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWeaponAnimInstance"));
 		return ptr;
 	}
 
@@ -16745,7 +16745,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWeaponAttachment");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWeaponAttachment"));
 		return ptr;
 	}
 
@@ -16771,7 +16771,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWindTurbine");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWindTurbine"));
 		return ptr;
 	}
 
@@ -16786,7 +16786,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WTL.WTLWorldSettings");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WTL.WTLWorldSettings"));
 		return ptr;
 	}
 

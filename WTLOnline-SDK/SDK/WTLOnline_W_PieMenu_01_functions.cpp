@@ -19,7 +19,7 @@ namespace SDK
 
 void UW_PieMenu_01_C::SetDescriptionVisibility(bool IsVIsibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.SetDescriptionVisibility");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.SetDescriptionVisibility"));
 
 	struct
 	{
@@ -39,7 +39,7 @@ void UW_PieMenu_01_C::SetDescriptionVisibility(bool IsVIsibility)
 
 void UW_PieMenu_01_C::SetHoveredRingAngle(bool* IsHovered)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.SetHoveredRingAngle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.SetHoveredRingAngle"));
 
 	struct
 	{
@@ -61,7 +61,7 @@ void UW_PieMenu_01_C::SetHoveredRingAngle(bool* IsHovered)
 
 void UW_PieMenu_01_C::GetMousePressedState(bool* IsMousePressed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.GetMousePressedState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.GetMousePressedState"));
 
 	struct
 	{
@@ -81,7 +81,7 @@ void UW_PieMenu_01_C::GetMousePressedState(bool* IsMousePressed)
 
 void UW_PieMenu_01_C::Hovered_UnhoveredSimulate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.Hovered&UnhoveredSimulate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.Hovered&UnhoveredSimulate"));
 
 	struct
 	{
@@ -97,7 +97,7 @@ void UW_PieMenu_01_C::Hovered_UnhoveredSimulate()
 
 void UW_PieMenu_01_C::GetGlobalLeftMousePressed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.GetGlobalLeftMousePressed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.GetGlobalLeftMousePressed"));
 
 	struct
 	{
@@ -115,7 +115,7 @@ void UW_PieMenu_01_C::GetGlobalLeftMousePressed()
 
 void UW_PieMenu_01_C::SetDiametr(int Diametr)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.SetDiametr");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.SetDiametr"));
 
 	struct
 	{
@@ -135,7 +135,7 @@ void UW_PieMenu_01_C::SetDiametr(int Diametr)
 
 void UW_PieMenu_01_C::UpdateColor(bool* IsSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.UpdateColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.UpdateColor"));
 
 	struct
 	{
@@ -159,7 +159,7 @@ void UW_PieMenu_01_C::UpdateColor(bool* IsSuccess)
 
 void UW_PieMenu_01_C::CalculateButtonSIze_Position(int ButtonID, struct FVector2D* Position, struct FVector2D* Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.CalculateButtonSIze&Position");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.CalculateButtonSIze&Position"));
 
 	struct
 	{
@@ -186,7 +186,7 @@ void UW_PieMenu_01_C::CalculateButtonSIze_Position(int ButtonID, struct FVector2
 
 void UW_PieMenu_01_C::BindButtonEnents(class UW_PieMenuButton_01_C* ButtonWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.BindButtonEnents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.BindButtonEnents"));
 
 	struct
 	{
@@ -207,7 +207,7 @@ void UW_PieMenu_01_C::BindButtonEnents(class UW_PieMenuButton_01_C* ButtonWidget
 
 void UW_PieMenu_01_C::CreateButton(int ButtonID, class UW_PieMenuButton_01_C** ButtonWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.CreateButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.CreateButton"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ void UW_PieMenu_01_C::CreateButton(int ButtonID, class UW_PieMenuButton_01_C** B
 
 int UW_PieMenu_01_C::GetHoveredButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.GetHoveredButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.GetHoveredButton"));
 
 	struct
 	{
@@ -254,7 +254,7 @@ int UW_PieMenu_01_C::GetHoveredButton()
 
 float UW_PieMenu_01_C::Atan2DegreesVector2d(const struct FVector2D& A, const struct FVector2D& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.Atan2DegreesVector2d");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.Atan2DegreesVector2d"));
 
 	struct
 	{
@@ -279,7 +279,7 @@ float UW_PieMenu_01_C::Atan2DegreesVector2d(const struct FVector2D& A, const str
 
 struct FVector2D UW_PieMenu_01_C::GetMousePositionAbsoluteMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.GetMousePositionAbsoluteMenu");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.GetMousePositionAbsoluteMenu"));
 
 	struct
 	{
@@ -303,7 +303,7 @@ struct FVector2D UW_PieMenu_01_C::GetMousePositionAbsoluteMenu()
 
 float UW_PieMenu_01_C::AngleInterpTo(float Current, float Target, float InterpSpeed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.AngleInterpTo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.AngleInterpTo"));
 
 	struct
 	{
@@ -328,7 +328,7 @@ float UW_PieMenu_01_C::AngleInterpTo(float Current, float Target, float InterpSp
 
 void UW_PieMenu_01_C::CreateHighlight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.CreateHighlight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.CreateHighlight"));
 
 	struct
 	{
@@ -346,7 +346,7 @@ void UW_PieMenu_01_C::CreateHighlight()
 
 struct FVector2D UW_PieMenu_01_C::GetMenuRadius()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.GetMenuRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.GetMenuRadius"));
 
 	struct
 	{
@@ -368,7 +368,7 @@ struct FVector2D UW_PieMenu_01_C::GetMenuRadius()
 
 void UW_PieMenu_01_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.Tick"));
 
 	struct
 	{
@@ -391,7 +391,7 @@ void UW_PieMenu_01_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime
 
 void UW_PieMenu_01_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnMouseEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnMouseEnter"));
 
 	struct
 	{
@@ -413,7 +413,7 @@ void UW_PieMenu_01_C::OnMouseEnter(const struct FGeometry& MyGeometry, const str
 
 void UW_PieMenu_01_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnMouseLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnMouseLeave"));
 
 	struct
 	{
@@ -433,7 +433,7 @@ void UW_PieMenu_01_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 
 void UW_PieMenu_01_C::OnButtonHovered(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonHovered"));
 
 	struct
 	{
@@ -453,7 +453,7 @@ void UW_PieMenu_01_C::OnButtonHovered(const struct FString& ButtonID)
 
 void UW_PieMenu_01_C::OnButtonUnhovered(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonUnhovered"));
 
 	struct
 	{
@@ -473,7 +473,7 @@ void UW_PieMenu_01_C::OnButtonUnhovered(const struct FString& ButtonID)
 
 void UW_PieMenu_01_C::OnButtonPressed(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonPressed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonPressed"));
 
 	struct
 	{
@@ -493,7 +493,7 @@ void UW_PieMenu_01_C::OnButtonPressed(const struct FString& ButtonID)
 
 void UW_PieMenu_01_C::OnButtonReleased(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonReleased");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnButtonReleased"));
 
 	struct
 	{
@@ -513,7 +513,7 @@ void UW_PieMenu_01_C::OnButtonReleased(const struct FString& ButtonID)
 
 void UW_PieMenu_01_C::SetParrentParmetrs(class UW_ParentPieMenu_01_C* ParentWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.SetParrentParmetrs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.SetParrentParmetrs"));
 
 	struct
 	{
@@ -533,7 +533,7 @@ void UW_PieMenu_01_C::SetParrentParmetrs(class UW_ParentPieMenu_01_C* ParentWidg
 
 void UW_PieMenu_01_C::ExecuteUbergraph_W_PieMenu_01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.ExecuteUbergraph_W_PieMenu_01");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.ExecuteUbergraph_W_PieMenu_01"));
 
 	struct
 	{
@@ -553,7 +553,7 @@ void UW_PieMenu_01_C::ExecuteUbergraph_W_PieMenu_01(int EntryPoint)
 
 void UW_PieMenu_01_C::OnBtnReleased__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnReleased__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnReleased__DelegateSignature"));
 
 	struct
 	{
@@ -573,7 +573,7 @@ void UW_PieMenu_01_C::OnBtnReleased__DelegateSignature(const struct FString& But
 
 void UW_PieMenu_01_C::OnBtnPressed__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnPressed__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnPressed__DelegateSignature"));
 
 	struct
 	{
@@ -593,7 +593,7 @@ void UW_PieMenu_01_C::OnBtnPressed__DelegateSignature(const struct FString& Butt
 
 void UW_PieMenu_01_C::OnBtnUnhovered__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnUnhovered__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnUnhovered__DelegateSignature"));
 
 	struct
 	{
@@ -613,7 +613,7 @@ void UW_PieMenu_01_C::OnBtnUnhovered__DelegateSignature(const struct FString& Bu
 
 void UW_PieMenu_01_C::OnBtnHovered__DelegateSignature(const struct FString& ButtonID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnHovered__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMenu_01.W_PieMenu_01_C.OnBtnHovered__DelegateSignature"));
 
 	struct
 	{

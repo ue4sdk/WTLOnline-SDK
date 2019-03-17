@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BP_CloseInteractiveObject_Door.BP_CloseInteractiveObject_Door_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BP_CloseInteractiveObject_Door.BP_CloseInteractiveObject_Door_C"));
 		return ptr;
 	}
 

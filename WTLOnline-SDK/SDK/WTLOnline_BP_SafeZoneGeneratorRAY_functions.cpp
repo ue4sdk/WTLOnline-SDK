@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_SafeZoneGeneratorRAY_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_SafeZoneGeneratorRAY_C::UserConstructionScript()
 
 void ABP_SafeZoneGeneratorRAY_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.ReceiveTick"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_SafeZoneGeneratorRAY_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_SafeZoneGeneratorRAY_C::ExecuteUbergraph_BP_SafeZoneGeneratorRAY(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.ExecuteUbergraph_BP_SafeZoneGeneratorRAY");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_SafeZoneGeneratorRAY.BP_SafeZoneGeneratorRAY_C.ExecuteUbergraph_BP_SafeZoneGeneratorRAY"));
 
 	struct
 	{

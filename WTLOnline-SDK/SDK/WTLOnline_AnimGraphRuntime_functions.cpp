@@ -28,7 +28,7 @@ namespace SDK
 
 void UKismetAnimationLibrary::K2_TwoBoneIK(const struct FVector& RootPos, const struct FVector& JointPos, const struct FVector& EndPos, const struct FVector& JointTarget, const struct FVector& Effector, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale, struct FVector* OutJointPos, struct FVector* OutEndPos)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK"));
 
 	struct
 	{
@@ -79,7 +79,7 @@ void UKismetAnimationLibrary::K2_TwoBoneIK(const struct FVector& RootPos, const 
 
 struct FVector UKismetAnimationLibrary::K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap"));
 
 	struct
 	{
@@ -122,7 +122,7 @@ struct FVector UKismetAnimationLibrary::K2_MakePerlinNoiseVectorAndRemap(float X
 
 float UKismetAnimationLibrary::K2_MakePerlinNoiseAndRemap(float Value, float RangeOutMin, float RangeOutMax)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap"));
 
 	struct
 	{
@@ -156,7 +156,7 @@ float UKismetAnimationLibrary::K2_MakePerlinNoiseAndRemap(float Value, float Ran
 
 struct FTransform UKismetAnimationLibrary::K2_LookAt(const struct FTransform& CurrentTransform, const struct FVector& TargetPosition, const struct FVector& LookAtVector, bool bUseUpVector, const struct FVector& UpVector, float ClampConeInDegree)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt"));
 
 	struct
 	{
@@ -200,7 +200,7 @@ struct FTransform UKismetAnimationLibrary::K2_LookAt(const struct FTransform& Cu
 
 float UKismetAnimationLibrary::K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, const struct FName& SocketOrBoneNameA, TEnumAsByte<ERelativeTransformSpace> SocketSpaceA, const struct FName& SocketOrBoneNameB, TEnumAsByte<ERelativeTransformSpace> SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange"));
 
 	struct
 	{
@@ -245,7 +245,7 @@ float UKismetAnimationLibrary::K2_DistanceBetweenTwoSocketsAndMapRange(class USk
 
 struct FVector UKismetAnimationLibrary::K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, const struct FName& SocketOrBoneNameFrom, const struct FName& SocketOrBoneNameTo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets"));
 
 	struct
 	{
@@ -274,7 +274,7 @@ struct FVector UKismetAnimationLibrary::K2_DirectionBetweenSockets(class USkelet
 
 void UPlayMontageCallbackProxy::OnNotifyEndReceived(const struct FName& NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived"));
 
 	struct
 	{
@@ -297,7 +297,7 @@ void UPlayMontageCallbackProxy::OnNotifyEndReceived(const struct FName& NotifyNa
 
 void UPlayMontageCallbackProxy::OnNotifyBeginReceived(const struct FName& NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived"));
 
 	struct
 	{
@@ -320,7 +320,7 @@ void UPlayMontageCallbackProxy::OnNotifyBeginReceived(const struct FName& Notify
 
 void UPlayMontageCallbackProxy::OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded"));
 
 	struct
 	{
@@ -343,7 +343,7 @@ void UPlayMontageCallbackProxy::OnMontageEnded(class UAnimMontage* Montage, bool
 
 void UPlayMontageCallbackProxy::OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut"));
 
 	struct
 	{
@@ -370,7 +370,7 @@ void UPlayMontageCallbackProxy::OnMontageBlendingOut(class UAnimMontage* Montage
 
 class UPlayMontageCallbackProxy* UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, const struct FName& StartingSection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage"));
 
 	struct
 	{

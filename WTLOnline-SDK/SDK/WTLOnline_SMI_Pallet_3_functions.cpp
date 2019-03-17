@@ -17,7 +17,7 @@ namespace SDK
 
 void ASMI_Pallet_2_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SMI_Pallet_3.SMI_Pallet_2_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SMI_Pallet_3.SMI_Pallet_2_C.UserConstructionScript"));
 
 	struct
 	{

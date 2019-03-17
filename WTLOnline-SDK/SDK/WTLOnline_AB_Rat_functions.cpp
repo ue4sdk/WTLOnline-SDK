@@ -17,7 +17,7 @@ namespace SDK
 
 void UAB_Rat_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Rat_AnimGraphNode_TransitionResult_DCC642654A06788FBA915FB7CE3CBC3D()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Rat.AB_Rat_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Rat_AnimGraphNode_TransitionResult_DCC642654A06788FBA915FB7CE3CBC3D");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Rat.AB_Rat_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Rat_AnimGraphNode_TransitionResult_DCC642654A06788FBA915FB7CE3CBC3D"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UAB_Rat_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_Rat_AnimGraphNode
 
 void UAB_Rat_C::ExecuteUbergraph_AB_Rat(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_Rat.AB_Rat_C.ExecuteUbergraph_AB_Rat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_Rat.AB_Rat_C.ExecuteUbergraph_AB_Rat"));
 
 	struct
 	{

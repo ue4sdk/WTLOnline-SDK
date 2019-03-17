@@ -19,7 +19,7 @@ namespace SDK
 
 void UImgMediaSource::SetSequencePath(const struct FString& Path)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.SetSequencePath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ImgMedia.ImgMediaSource.SetSequencePath"));
 
 	struct
 	{
@@ -39,7 +39,7 @@ void UImgMediaSource::SetSequencePath(const struct FString& Path)
 
 struct FString UImgMediaSource::GetSequencePath()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.GetSequencePath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ImgMedia.ImgMediaSource.GetSequencePath"));
 
 	struct
 	{
@@ -60,7 +60,7 @@ struct FString UImgMediaSource::GetSequencePath()
 
 void UImgMediaSource::GetProxies(TArray<struct FString>* OutProxies)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImgMedia.ImgMediaSource.GetProxies");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ImgMedia.ImgMediaSource.GetProxies"));
 
 	struct
 	{

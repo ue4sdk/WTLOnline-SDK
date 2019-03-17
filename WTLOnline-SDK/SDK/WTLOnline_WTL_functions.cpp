@@ -20,7 +20,7 @@ namespace SDK
 
 void UWTL3DActorHealth::SetActorHealth(float CurrentHealth, float MaxHealth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTL3DActorHealth.SetActorHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTL3DActorHealth.SetActorHealth"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UWTL3DActorHealth::SetActorHealth(float CurrentHealth, float MaxHealth)
 
 void UWTL3DActorName::SetActorNameText(const struct FString& ActorName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTL3DActorName.SetActorNameText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTL3DActorName.SetActorNameText"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void UWTL3DActorName::SetActorNameText(const struct FString& ActorName)
 
 void UWTL3DMonsterName::SetMonsterLevelText(int MonsterLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTL3DMonsterName.SetMonsterLevelText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTL3DMonsterName.SetMonsterLevelText"));
 
 	struct
 	{
@@ -82,7 +82,7 @@ void UWTL3DMonsterName::SetMonsterLevelText(int MonsterLevel)
 
 void AWTLActionGameplayActor::OnCharacterStartActionWithGameplayActor(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayActor.OnCharacterStartActionWithGameplayActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayActor.OnCharacterStartActionWithGameplayActor"));
 
 	struct
 	{
@@ -102,7 +102,7 @@ void AWTLActionGameplayActor::OnCharacterStartActionWithGameplayActor(class AWTL
 
 void AWTLActionGameplayActor::OnCharacterFinishActionWithGameplayActor(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayActor.OnCharacterFinishActionWithGameplayActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayActor.OnCharacterFinishActionWithGameplayActor"));
 
 	struct
 	{
@@ -122,7 +122,7 @@ void AWTLActionGameplayActor::OnCharacterFinishActionWithGameplayActor(class AWT
 
 bool AWTLActionGameplayActor::CanTakeItemInArmsWhenInteractingWith()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayActor.CanTakeItemInArmsWhenInteractingWith");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayActor.CanTakeItemInArmsWhenInteractingWith"));
 
 	struct
 	{
@@ -143,7 +143,7 @@ bool AWTLActionGameplayActor::CanTakeItemInArmsWhenInteractingWith()
 
 bool AWTLActionGameplayActor::CanStopInteraction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayActor.CanStopInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayActor.CanStopInteraction"));
 
 	struct
 	{
@@ -164,7 +164,7 @@ bool AWTLActionGameplayActor::CanStopInteraction()
 
 bool AWTLActionGameplayActor::CanBeInteractedRightNow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayActor.CanBeInteractedRightNow");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayActor.CanBeInteractedRightNow"));
 
 	struct
 	{
@@ -183,7 +183,7 @@ bool AWTLActionGameplayActor::CanBeInteractedRightNow()
 
 void AWTLActionGameplayMachinegun::OnUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnUse"));
 
 	struct
 	{
@@ -199,7 +199,7 @@ void AWTLActionGameplayMachinegun::OnUse()
 
 void AWTLActionGameplayMachinegun::OnStorageCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnStorageCheck");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnStorageCheck"));
 
 	struct
 	{
@@ -215,7 +215,7 @@ void AWTLActionGameplayMachinegun::OnStorageCheck()
 
 void AWTLActionGameplayMachinegun::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnRep_StorageContent"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ void AWTLActionGameplayMachinegun::OnRep_StorageContent()
 
 void AWTLActionGameplayMachinegun::OnRep_MachinegunRortation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnRep_MachinegunRortation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnRep_MachinegunRortation"));
 
 	struct
 	{
@@ -247,7 +247,7 @@ void AWTLActionGameplayMachinegun::OnRep_MachinegunRortation()
 
 void AWTLActionGameplayMachinegun::OnRep_IsInUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnRep_IsInUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnRep_IsInUse"));
 
 	struct
 	{
@@ -263,7 +263,7 @@ void AWTLActionGameplayMachinegun::OnRep_IsInUse()
 
 void AWTLActionGameplayMachinegun::OnRep_bIsAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnRep_bIsAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnRep_bIsAction"));
 
 	struct
 	{
@@ -279,7 +279,7 @@ void AWTLActionGameplayMachinegun::OnRep_bIsAction()
 
 void AWTLActionGameplayMachinegun::OnLocalClientAcion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnLocalClientAcion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnLocalClientAcion"));
 
 	struct
 	{
@@ -295,7 +295,7 @@ void AWTLActionGameplayMachinegun::OnLocalClientAcion()
 
 void AWTLActionGameplayMachinegun::OnClientUsageStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnClientUsageStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnClientUsageStop"));
 
 	struct
 	{
@@ -311,7 +311,7 @@ void AWTLActionGameplayMachinegun::OnClientUsageStop()
 
 void AWTLActionGameplayMachinegun::OnClientUsageStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.OnClientUsageStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.OnClientUsageStart"));
 
 	struct
 	{
@@ -329,7 +329,7 @@ void AWTLActionGameplayMachinegun::OnClientUsageStart()
 
 float AWTLActionGameplayMachinegun::GetPauseBetweenShots()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetPauseBetweenShots");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetPauseBetweenShots"));
 
 	struct
 	{
@@ -350,7 +350,7 @@ float AWTLActionGameplayMachinegun::GetPauseBetweenShots()
 
 float AWTLActionGameplayMachinegun::GetOverheatSafeTemperature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetOverheatSafeTemperature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetOverheatSafeTemperature"));
 
 	struct
 	{
@@ -371,7 +371,7 @@ float AWTLActionGameplayMachinegun::GetOverheatSafeTemperature()
 
 float AWTLActionGameplayMachinegun::GetOverheatPercent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetOverheatPercent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetOverheatPercent"));
 
 	struct
 	{
@@ -392,7 +392,7 @@ float AWTLActionGameplayMachinegun::GetOverheatPercent()
 
 class USkeletalMeshComponent* AWTLActionGameplayMachinegun::GetMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetMesh"));
 
 	struct
 	{
@@ -413,7 +413,7 @@ class USkeletalMeshComponent* AWTLActionGameplayMachinegun::GetMesh()
 
 bool AWTLActionGameplayMachinegun::GetIsInAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetIsInAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetIsInAction"));
 
 	struct
 	{
@@ -434,7 +434,7 @@ bool AWTLActionGameplayMachinegun::GetIsInAction()
 
 bool AWTLActionGameplayMachinegun::GetIsCoolingDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActionGameplayMachinegun.GetIsCoolingDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.GetIsCoolingDown"));
 
 	struct
 	{
@@ -458,7 +458,7 @@ bool AWTLActionGameplayMachinegun::GetIsCoolingDown()
 
 void AWTLAnomaly::TeleportCharacterToRandomPointInRange(class AWTLCharacter* Character, float MinRange, float MaxRange, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.TeleportCharacterToRandomPointInRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.TeleportCharacterToRandomPointInRange"));
 
 	struct
 	{
@@ -488,7 +488,7 @@ void AWTLAnomaly::TeleportCharacterToRandomPointInRange(class AWTLCharacter* Cha
 
 void AWTLAnomaly::TeleportCharacterToRandomPointArray(class AWTLCharacter* Character, TArray<struct FVector> Locations, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.TeleportCharacterToRandomPointArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.TeleportCharacterToRandomPointArray"));
 
 	struct
 	{
@@ -516,7 +516,7 @@ void AWTLAnomaly::TeleportCharacterToRandomPointArray(class AWTLCharacter* Chara
 
 void AWTLAnomaly::TeleportCharacterToPoint(class AWTLCharacter* Character, const struct FVector& Location, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.TeleportCharacterToPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.TeleportCharacterToPoint"));
 
 	struct
 	{
@@ -543,7 +543,7 @@ void AWTLAnomaly::TeleportCharacterToPoint(class AWTLCharacter* Character, const
 
 void AWTLAnomaly::IsCharacterHoldingBreath(class AWTLCharacter* Character, EWTLAnomalyCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.IsCharacterHoldingBreath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.IsCharacterHoldingBreath"));
 
 	struct
 	{
@@ -571,7 +571,7 @@ void AWTLAnomaly::IsCharacterHoldingBreath(class AWTLCharacter* Character, EWTLA
 
 void AWTLAnomaly::ApplyRadialDamage(float DamageValue, const struct FVector& DamageOrigin, float DamageRadius, class UClass* DamageTypeClass, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.ApplyRadialDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.ApplyRadialDamage"));
 
 	struct
 	{
@@ -607,7 +607,7 @@ void AWTLAnomaly::ApplyRadialDamage(float DamageValue, const struct FVector& Dam
 
 void AWTLAnomaly::AddEffectToCharacterWithFalloff(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float EffectValue, const struct FVector& Origin, float FalloffRadius, float MinEffectValue, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.AddEffectToCharacterWithFalloff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.AddEffectToCharacterWithFalloff"));
 
 	struct
 	{
@@ -647,7 +647,7 @@ void AWTLAnomaly::AddEffectToCharacterWithFalloff(class AWTLCharacter* Character
 
 void AWTLAnomaly::AddEffectToCharactersWithFalloff(TArray<class AWTLCharacter*> Characters, EWTLCharacterEffectType EffectType, float EffectValue, const struct FVector& Origin, float FalloffRadius, float MinEffectValue, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.AddEffectToCharactersWithFalloff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.AddEffectToCharactersWithFalloff"));
 
 	struct
 	{
@@ -684,7 +684,7 @@ void AWTLAnomaly::AddEffectToCharactersWithFalloff(TArray<class AWTLCharacter*> 
 
 void AWTLAnomaly::AddEffectToCharacters(TArray<class AWTLCharacter*> Characters, EWTLCharacterEffectType EffectType, float EffectValue, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.AddEffectToCharacters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.AddEffectToCharacters"));
 
 	struct
 	{
@@ -715,7 +715,7 @@ void AWTLAnomaly::AddEffectToCharacters(TArray<class AWTLCharacter*> Characters,
 
 void AWTLAnomaly::AddEffectToCharacter(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float EffectValue, EWTLAnomalyActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnomaly.AddEffectToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnomaly.AddEffectToCharacter"));
 
 	struct
 	{
@@ -743,7 +743,7 @@ void AWTLAnomaly::AddEffectToCharacter(class AWTLCharacter* Character, EWTLChara
 
 void AWTLStaticAnomaly::OnNutLeave(class AWTLNut* Nut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnNutLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnNutLeave"));
 
 	struct
 	{
@@ -763,7 +763,7 @@ void AWTLStaticAnomaly::OnNutLeave(class AWTLNut* Nut)
 
 void AWTLStaticAnomaly::OnNutEnter(class AWTLNut* Nut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnNutEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnNutEnter"));
 
 	struct
 	{
@@ -783,7 +783,7 @@ void AWTLStaticAnomaly::OnNutEnter(class AWTLNut* Nut)
 
 void AWTLStaticAnomaly::OnMonsterLeave(class AWTLMonsterPawn* Monster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnMonsterLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnMonsterLeave"));
 
 	struct
 	{
@@ -803,7 +803,7 @@ void AWTLStaticAnomaly::OnMonsterLeave(class AWTLMonsterPawn* Monster)
 
 void AWTLStaticAnomaly::OnMonsterEnter(class AWTLMonsterPawn* Monster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnMonsterEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnMonsterEnter"));
 
 	struct
 	{
@@ -826,7 +826,7 @@ void AWTLStaticAnomaly::OnMonsterEnter(class AWTLMonsterPawn* Monster)
 
 void AWTLStaticAnomaly::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnEndOverlap"));
 
 	struct
 	{
@@ -852,7 +852,7 @@ void AWTLStaticAnomaly::OnEndOverlap(class UPrimitiveComponent* OverlappedCompon
 
 void AWTLStaticAnomaly::OnCharacterLeave(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnCharacterLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnCharacterLeave"));
 
 	struct
 	{
@@ -872,7 +872,7 @@ void AWTLStaticAnomaly::OnCharacterLeave(class AWTLCharacter* Character)
 
 void AWTLStaticAnomaly::OnCharacterEnter(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnCharacterEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnCharacterEnter"));
 
 	struct
 	{
@@ -897,7 +897,7 @@ void AWTLStaticAnomaly::OnCharacterEnter(class AWTLCharacter* Character)
 
 void AWTLStaticAnomaly::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStaticAnomaly.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStaticAnomaly.OnBeginOverlap"));
 
 	struct
 	{
@@ -925,7 +925,7 @@ void AWTLStaticAnomaly::OnBeginOverlap(class UPrimitiveComponent* OverlappedComp
 
 void AWTLActivatableAnomaly::ServerOnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.ServerOnActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.ServerOnActivated"));
 
 	struct
 	{
@@ -941,7 +941,7 @@ void AWTLActivatableAnomaly::ServerOnActivated()
 
 void AWTLActivatableAnomaly::OnRep_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.OnRep_State");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.OnRep_State"));
 
 	struct
 	{
@@ -957,7 +957,7 @@ void AWTLActivatableAnomaly::OnRep_State()
 
 void AWTLActivatableAnomaly::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.OnRep_Energy"));
 
 	struct
 	{
@@ -975,7 +975,7 @@ void AWTLActivatableAnomaly::OnRep_Energy()
 
 void AWTLActivatableAnomaly::OnEnergyChanged(float EnergyValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.OnEnergyChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.OnEnergyChanged"));
 
 	struct
 	{
@@ -993,7 +993,7 @@ void AWTLActivatableAnomaly::OnEnergyChanged(float EnergyValue)
 
 void AWTLActivatableAnomaly::ClientOnBeginActivate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.ClientOnBeginActivate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.ClientOnBeginActivate"));
 
 	struct
 	{
@@ -1009,7 +1009,7 @@ void AWTLActivatableAnomaly::ClientOnBeginActivate()
 
 void AWTLActivatableAnomaly::ClientOnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableAnomaly.ClientOnActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableAnomaly.ClientOnActivated"));
 
 	struct
 	{
@@ -1025,7 +1025,7 @@ void AWTLActivatableAnomaly::ClientOnActivated()
 
 void AWTLMovingAnomaly::OnRep_SynchronizationPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnRep_SynchronizationPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnRep_SynchronizationPosition"));
 
 	struct
 	{
@@ -1043,7 +1043,7 @@ void AWTLMovingAnomaly::OnRep_SynchronizationPosition()
 
 void AWTLMovingAnomaly::OnNutLeave(class AWTLNut* Nut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnNutLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnNutLeave"));
 
 	struct
 	{
@@ -1063,7 +1063,7 @@ void AWTLMovingAnomaly::OnNutLeave(class AWTLNut* Nut)
 
 void AWTLMovingAnomaly::OnNutEnter(class AWTLNut* Nut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnNutEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnNutEnter"));
 
 	struct
 	{
@@ -1083,7 +1083,7 @@ void AWTLMovingAnomaly::OnNutEnter(class AWTLNut* Nut)
 
 void AWTLMovingAnomaly::OnMonsterLeave(class AWTLMonsterPawn* Monster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnMonsterLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnMonsterLeave"));
 
 	struct
 	{
@@ -1103,7 +1103,7 @@ void AWTLMovingAnomaly::OnMonsterLeave(class AWTLMonsterPawn* Monster)
 
 void AWTLMovingAnomaly::OnMonsterEnter(class AWTLMonsterPawn* Monster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnMonsterEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnMonsterEnter"));
 
 	struct
 	{
@@ -1126,7 +1126,7 @@ void AWTLMovingAnomaly::OnMonsterEnter(class AWTLMonsterPawn* Monster)
 
 void AWTLMovingAnomaly::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnEndOverlap"));
 
 	struct
 	{
@@ -1152,7 +1152,7 @@ void AWTLMovingAnomaly::OnEndOverlap(class UPrimitiveComponent* OverlappedCompon
 
 void AWTLMovingAnomaly::OnCharacterLeave(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnCharacterLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnCharacterLeave"));
 
 	struct
 	{
@@ -1172,7 +1172,7 @@ void AWTLMovingAnomaly::OnCharacterLeave(class AWTLCharacter* Character)
 
 void AWTLMovingAnomaly::OnCharacterEnter(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnCharacterEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnCharacterEnter"));
 
 	struct
 	{
@@ -1197,7 +1197,7 @@ void AWTLMovingAnomaly::OnCharacterEnter(class AWTLCharacter* Character)
 
 void AWTLMovingAnomaly::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMovingAnomaly.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMovingAnomaly.OnBeginOverlap"));
 
 	struct
 	{
@@ -1225,7 +1225,7 @@ void AWTLMovingAnomaly::OnBeginOverlap(class UPrimitiveComponent* OverlappedComp
 
 void AWTLActivatableMovingAnomaly::ServerOnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.ServerOnActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.ServerOnActivated"));
 
 	struct
 	{
@@ -1241,7 +1241,7 @@ void AWTLActivatableMovingAnomaly::ServerOnActivated()
 
 void AWTLActivatableMovingAnomaly::OnRep_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.OnRep_State");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.OnRep_State"));
 
 	struct
 	{
@@ -1257,7 +1257,7 @@ void AWTLActivatableMovingAnomaly::OnRep_State()
 
 void AWTLActivatableMovingAnomaly::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.OnRep_Energy"));
 
 	struct
 	{
@@ -1275,7 +1275,7 @@ void AWTLActivatableMovingAnomaly::OnRep_Energy()
 
 void AWTLActivatableMovingAnomaly::OnEnergyChanged(float EnergyValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.OnEnergyChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.OnEnergyChanged"));
 
 	struct
 	{
@@ -1293,7 +1293,7 @@ void AWTLActivatableMovingAnomaly::OnEnergyChanged(float EnergyValue)
 
 void AWTLActivatableMovingAnomaly::ClientOnBeginActivate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.ClientOnBeginActivate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.ClientOnBeginActivate"));
 
 	struct
 	{
@@ -1309,7 +1309,7 @@ void AWTLActivatableMovingAnomaly::ClientOnBeginActivate()
 
 void AWTLActivatableMovingAnomaly::ClientOnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableMovingAnomaly.ClientOnActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableMovingAnomaly.ClientOnActivated"));
 
 	struct
 	{
@@ -1327,7 +1327,7 @@ void AWTLActivatableMovingAnomaly::ClientOnActivated()
 
 void AWTLActivatableObject::BP_NotifyActivationStarted(class AWTLCharacter* Activator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableObject.BP_NotifyActivationStarted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableObject.BP_NotifyActivationStarted"));
 
 	struct
 	{
@@ -1347,7 +1347,7 @@ void AWTLActivatableObject::BP_NotifyActivationStarted(class AWTLCharacter* Acti
 
 void AWTLActivatableObject::BP_DeactivateObject(class AWTLCharacter* Activator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableObject.BP_DeactivateObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableObject.BP_DeactivateObject"));
 
 	struct
 	{
@@ -1367,7 +1367,7 @@ void AWTLActivatableObject::BP_DeactivateObject(class AWTLCharacter* Activator)
 
 bool AWTLActivatableObject::BP_CanBeActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableObject.BP_CanBeActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableObject.BP_CanBeActivated"));
 
 	struct
 	{
@@ -1388,7 +1388,7 @@ bool AWTLActivatableObject::BP_CanBeActivated()
 
 void AWTLActivatableObject::BP_ActivateObject(class AWTLCharacter* Activator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatableObject.BP_ActivateObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatableObject.BP_ActivateObject"));
 
 	struct
 	{
@@ -1411,7 +1411,7 @@ void AWTLActivatableObject::BP_ActivateObject(class AWTLCharacter* Activator)
 
 void AWTLActivatorVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatorVolume.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatorVolume.OnEndOverlap"));
 
 	struct
 	{
@@ -1442,7 +1442,7 @@ void AWTLActivatorVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedComp
 
 void AWTLActivatorVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLActivatorVolume.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActivatorVolume.OnBeginOverlap"));
 
 	struct
 	{
@@ -1472,7 +1472,7 @@ void AWTLActivatorVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedCo
 
 void AWTLAIDestroyObject::OnChangeCondition(float DeltaCondition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.OnChangeCondition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.OnChangeCondition"));
 
 	struct
 	{
@@ -1492,7 +1492,7 @@ void AWTLAIDestroyObject::OnChangeCondition(float DeltaCondition)
 
 void AWTLAIDestroyObject::BPUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.BPUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.BPUse"));
 
 	struct
 	{
@@ -1512,7 +1512,7 @@ void AWTLAIDestroyObject::BPUse(class AWTLCharacter* Character)
 
 void AWTLAIDestroyObject::BPSetHighlightState(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.BPSetHighlightState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.BPSetHighlightState"));
 
 	struct
 	{
@@ -1533,7 +1533,7 @@ void AWTLAIDestroyObject::BPSetHighlightState(bool Value)
 
 struct FString AWTLAIDestroyObject::BPGetDisplayText(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.BPGetDisplayText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.BPGetDisplayText"));
 
 	struct
 	{
@@ -1557,7 +1557,7 @@ struct FString AWTLAIDestroyObject::BPGetDisplayText(class AWTLCharacter* Charac
 
 bool AWTLAIDestroyObject::BPCanBeUsed(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.BPCanBeUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.BPCanBeUsed"));
 
 	struct
 	{
@@ -1580,7 +1580,7 @@ bool AWTLAIDestroyObject::BPCanBeUsed(class AWTLCharacter* Character)
 
 bool AWTLAIDestroyObject::AIInterface_IsAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.AIInterface_IsAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.AIInterface_IsAlive"));
 
 	struct
 	{
@@ -1601,7 +1601,7 @@ bool AWTLAIDestroyObject::AIInterface_IsAlive()
 
 struct FVector AWTLAIDestroyObject::AIInterface_GetVelocity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.AIInterface_GetVelocity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.AIInterface_GetVelocity"));
 
 	struct
 	{
@@ -1622,7 +1622,7 @@ struct FVector AWTLAIDestroyObject::AIInterface_GetVelocity()
 
 int AWTLAIDestroyObject::AIInterface_GetGroupID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIDestroyObject.AIInterface_GetGroupID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIDestroyObject.AIInterface_GetGroupID"));
 
 	struct
 	{
@@ -1643,7 +1643,7 @@ int AWTLAIDestroyObject::AIInterface_GetGroupID()
 
 void AWTLMonsterPawn::TargetEntersSafeZone(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.TargetEntersSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.TargetEntersSafeZone"));
 
 	struct
 	{
@@ -1665,7 +1665,7 @@ void AWTLMonsterPawn::TargetEntersSafeZone(class AWTLCharacter* Target)
 
 class AWTLMonsterProjectile* AWTLMonsterPawn::SpawnProjectile(const struct FTransform& SpawnTransform, class UClass* ProjectileClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SpawnProjectile");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SpawnProjectile"));
 
 	struct
 	{
@@ -1691,7 +1691,7 @@ class AWTLMonsterProjectile* AWTLMonsterPawn::SpawnProjectile(const struct FTran
 
 void AWTLMonsterPawn::SetUseAccelerationForPaths(bool Value, EWTLMonsterAcceleration eAcceleration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetUseAccelerationForPaths");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetUseAccelerationForPaths"));
 
 	struct
 	{
@@ -1713,7 +1713,7 @@ void AWTLMonsterPawn::SetUseAccelerationForPaths(bool Value, EWTLMonsterAccelera
 
 void AWTLMonsterPawn::SetStealthMode(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetStealthMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetStealthMode"));
 
 	struct
 	{
@@ -1733,7 +1733,7 @@ void AWTLMonsterPawn::SetStealthMode(bool Value)
 
 void AWTLMonsterPawn::SetReactionOnElectronicBait(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetReactionOnElectronicBait");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetReactionOnElectronicBait"));
 
 	struct
 	{
@@ -1753,7 +1753,7 @@ void AWTLMonsterPawn::SetReactionOnElectronicBait(bool Value)
 
 void AWTLMonsterPawn::SetMovementMode(EWTLMonsterMovementMode Mode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetMovementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetMovementMode"));
 
 	struct
 	{
@@ -1773,7 +1773,7 @@ void AWTLMonsterPawn::SetMovementMode(EWTLMonsterMovementMode Mode)
 
 void AWTLMonsterPawn::SetLootAbility(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetLootAbility");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetLootAbility"));
 
 	struct
 	{
@@ -1793,7 +1793,7 @@ void AWTLMonsterPawn::SetLootAbility(bool Value)
 
 void AWTLMonsterPawn::SetLifetime(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetLifetime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetLifetime"));
 
 	struct
 	{
@@ -1813,7 +1813,7 @@ void AWTLMonsterPawn::SetLifetime(float Delta)
 
 void AWTLMonsterPawn::SetLifespanAfterDeath(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetLifespanAfterDeath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetLifespanAfterDeath"));
 
 	struct
 	{
@@ -1833,7 +1833,7 @@ void AWTLMonsterPawn::SetLifespanAfterDeath(float Value)
 
 void AWTLMonsterPawn::SetCurrentRotation(const struct FRotator& Rotation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetCurrentRotation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetCurrentRotation"));
 
 	struct
 	{
@@ -1853,7 +1853,7 @@ void AWTLMonsterPawn::SetCurrentRotation(const struct FRotator& Rotation)
 
 void AWTLMonsterPawn::SetApplyWeaponTypeDamageMultipliers(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.SetApplyWeaponTypeDamageMultipliers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.SetApplyWeaponTypeDamageMultipliers"));
 
 	struct
 	{
@@ -1873,7 +1873,7 @@ void AWTLMonsterPawn::SetApplyWeaponTypeDamageMultipliers(bool Value)
 
 void AWTLMonsterPawn::Server_SetMovementMode(EWTLMonsterMovementMode Mode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.Server_SetMovementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.Server_SetMovementMode"));
 
 	struct
 	{
@@ -1891,7 +1891,7 @@ void AWTLMonsterPawn::Server_SetMovementMode(EWTLMonsterMovementMode Mode)
 
 void AWTLMonsterPawn::Server_PossesBackToCharacter_PlayerInput()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.Server_PossesBackToCharacter_PlayerInput");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.Server_PossesBackToCharacter_PlayerInput"));
 
 	struct
 	{
@@ -1911,7 +1911,7 @@ void AWTLMonsterPawn::Server_PossesBackToCharacter_PlayerInput()
 
 void AWTLMonsterPawn::Server_OnClientMove(const struct FVector_NetQuantize& Location, float Yaw, float Pitch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.Server_OnClientMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.Server_OnClientMove"));
 
 	struct
 	{
@@ -1935,7 +1935,7 @@ void AWTLMonsterPawn::Server_OnClientMove(const struct FVector_NetQuantize& Loca
 
 void AWTLMonsterPawn::RunIdle(float* Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RunIdle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RunIdle"));
 
 	struct
 	{
@@ -1957,7 +1957,7 @@ void AWTLMonsterPawn::RunIdle(float* Duration)
 
 void AWTLMonsterPawn::RunAvailableAdditiveFarAttack(float* Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RunAvailableAdditiveFarAttack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RunAvailableAdditiveFarAttack"));
 
 	struct
 	{
@@ -1979,7 +1979,7 @@ void AWTLMonsterPawn::RunAvailableAdditiveFarAttack(float* Duration)
 
 void AWTLMonsterPawn::RunAvailableAdditiveAction(float* Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RunAvailableAdditiveAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RunAvailableAdditiveAction"));
 
 	struct
 	{
@@ -2002,7 +2002,7 @@ void AWTLMonsterPawn::RunAvailableAdditiveAction(float* Duration)
 
 void AWTLMonsterPawn::RunAdditiveAction(EWTLMonsterActionType ActionType, float* Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RunAdditiveAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RunAdditiveAction"));
 
 	struct
 	{
@@ -2027,7 +2027,7 @@ void AWTLMonsterPawn::RunAdditiveAction(EWTLMonsterActionType ActionType, float*
 
 void AWTLMonsterPawn::RunAction(EWTLMonsterActionType ActionType, float* Duration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RunAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RunAction"));
 
 	struct
 	{
@@ -2051,7 +2051,7 @@ void AWTLMonsterPawn::RunAction(EWTLMonsterActionType ActionType, float* Duratio
 
 void AWTLMonsterPawn::RemoveCharacterFromListTargets(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.RemoveCharacterFromListTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.RemoveCharacterFromListTargets"));
 
 	struct
 	{
@@ -2071,7 +2071,7 @@ void AWTLMonsterPawn::RemoveCharacterFromListTargets(class AWTLCharacter* Charac
 
 void AWTLMonsterPawn::OnStealthModeChanged(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnStealthModeChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnStealthModeChanged"));
 
 	struct
 	{
@@ -2091,7 +2091,7 @@ void AWTLMonsterPawn::OnStealthModeChanged(bool Value)
 
 void AWTLMonsterPawn::OnReplicatedMovement(float DeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnReplicatedMovement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnReplicatedMovement"));
 
 	struct
 	{
@@ -2109,7 +2109,7 @@ void AWTLMonsterPawn::OnReplicatedMovement(float DeltaTime)
 
 void AWTLMonsterPawn::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnRep_StorageContent"));
 
 	struct
 	{
@@ -2125,7 +2125,7 @@ void AWTLMonsterPawn::OnRep_StorageContent()
 
 void AWTLMonsterPawn::OnRep_ShortMovementInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnRep_ShortMovementInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnRep_ShortMovementInfo"));
 
 	struct
 	{
@@ -2141,7 +2141,7 @@ void AWTLMonsterPawn::OnRep_ShortMovementInfo()
 
 void AWTLMonsterPawn::OnRep_MovementMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnRep_MovementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnRep_MovementMode"));
 
 	struct
 	{
@@ -2157,7 +2157,7 @@ void AWTLMonsterPawn::OnRep_MovementMode()
 
 void AWTLMonsterPawn::OnRep_IsInStealthMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnRep_IsInStealthMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnRep_IsInStealthMode"));
 
 	struct
 	{
@@ -2173,7 +2173,7 @@ void AWTLMonsterPawn::OnRep_IsInStealthMode()
 
 void AWTLMonsterPawn::OnRep_Health()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnRep_Health");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnRep_Health"));
 
 	struct
 	{
@@ -2189,7 +2189,7 @@ void AWTLMonsterPawn::OnRep_Health()
 
 void AWTLMonsterPawn::OnMonsterKillOnClient()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnMonsterKillOnClient");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnMonsterKillOnClient"));
 
 	struct
 	{
@@ -2207,7 +2207,7 @@ void AWTLMonsterPawn::OnMonsterKillOnClient()
 
 void AWTLMonsterPawn::OnHealthChanged(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnHealthChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnHealthChanged"));
 
 	struct
 	{
@@ -2227,7 +2227,7 @@ void AWTLMonsterPawn::OnHealthChanged(float Delta)
 
 void AWTLMonsterPawn::OnDeathEvent(class APawn* Killer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnDeathEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnDeathEvent"));
 
 	struct
 	{
@@ -2247,7 +2247,7 @@ void AWTLMonsterPawn::OnDeathEvent(class APawn* Killer)
 
 void AWTLMonsterPawn::OnDeathBpEvent(const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnDeathBpEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnDeathBpEvent"));
 
 	struct
 	{
@@ -2268,7 +2268,7 @@ void AWTLMonsterPawn::OnDeathBpEvent(const struct FWTLMonsterDeathData& DeathDat
 
 void AWTLMonsterPawn::OnCurrentActionChanged(EWTLMonsterActionType NewAction, EWTLMonsterActionType PreviousAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnCurrentActionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnCurrentActionChanged"));
 
 	struct
 	{
@@ -2290,7 +2290,7 @@ void AWTLMonsterPawn::OnCurrentActionChanged(EWTLMonsterActionType NewAction, EW
 
 void AWTLMonsterPawn::OnBurst(const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnBurst");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnBurst"));
 
 	struct
 	{
@@ -2310,7 +2310,7 @@ void AWTLMonsterPawn::OnBurst(const struct FWTLMonsterDeathData& DeathData)
 
 void AWTLMonsterPawn::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.OnActionTrigger"));
 
 	struct
 	{
@@ -2330,7 +2330,7 @@ void AWTLMonsterPawn::OnActionTrigger(const struct FName& ActionName)
 
 void AWTLMonsterPawn::NetMulticast_SetBlackboardState(EWTLMonsterState BlackboardState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.NetMulticast_SetBlackboardState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.NetMulticast_SetBlackboardState"));
 
 	struct
 	{
@@ -2350,7 +2350,7 @@ void AWTLMonsterPawn::NetMulticast_SetBlackboardState(EWTLMonsterState Blackboar
 
 void AWTLMonsterPawn::NetMulticast_PlayAdditiveAction(EWTLMonsterActionType ActionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.NetMulticast_PlayAdditiveAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.NetMulticast_PlayAdditiveAction"));
 
 	struct
 	{
@@ -2371,7 +2371,7 @@ void AWTLMonsterPawn::NetMulticast_PlayAdditiveAction(EWTLMonsterActionType Acti
 
 void AWTLMonsterPawn::NetMulticast_PlayAction(EWTLMonsterActionType ActionType, unsigned char IdleAnimIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.NetMulticast_PlayAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.NetMulticast_PlayAction"));
 
 	struct
 	{
@@ -2396,7 +2396,7 @@ void AWTLMonsterPawn::NetMulticast_PlayAction(EWTLMonsterActionType ActionType, 
 
 void AWTLMonsterPawn::NetMulticast_OnDeath(const struct FVector& DeathPosition, const struct FVector_NetQuantize& ActorRotation, const struct FVector_NetQuantize& MeshRotation, const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.NetMulticast_OnDeath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.NetMulticast_OnDeath"));
 
 	struct
 	{
@@ -2420,7 +2420,7 @@ void AWTLMonsterPawn::NetMulticast_OnDeath(const struct FVector& DeathPosition, 
 
 void AWTLMonsterPawn::KillMonster()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.KillMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.KillMonster"));
 
 	struct
 	{
@@ -2438,7 +2438,7 @@ void AWTLMonsterPawn::KillMonster()
 
 bool AWTLMonsterPawn::IsVisible()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IsVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsVisible"));
 
 	struct
 	{
@@ -2460,7 +2460,7 @@ bool AWTLMonsterPawn::IsVisible()
 
 bool AWTLMonsterPawn::IsEnoughStaminaForAction(EWTLMonsterActionType ActionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IsEnoughStaminaForAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsEnoughStaminaForAction"));
 
 	struct
 	{
@@ -2484,7 +2484,7 @@ bool AWTLMonsterPawn::IsEnoughStaminaForAction(EWTLMonsterActionType ActionType)
 
 bool AWTLMonsterPawn::IsCharacterInBlackList(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IsCharacterInBlackList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsCharacterInBlackList"));
 
 	struct
 	{
@@ -2507,7 +2507,7 @@ bool AWTLMonsterPawn::IsCharacterInBlackList(class AWTLCharacter* Character)
 
 bool AWTLMonsterPawn::IsApplyWeaponTypeDamageMultipliers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IsApplyWeaponTypeDamageMultipliers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsApplyWeaponTypeDamageMultipliers"));
 
 	struct
 	{
@@ -2528,7 +2528,7 @@ bool AWTLMonsterPawn::IsApplyWeaponTypeDamageMultipliers()
 
 bool AWTLMonsterPawn::IsAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IsAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsAlive"));
 
 	struct
 	{
@@ -2547,7 +2547,7 @@ bool AWTLMonsterPawn::IsAlive()
 
 void AWTLMonsterPawn::InterruptIdleState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.InterruptIdleState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.InterruptIdleState"));
 
 	struct
 	{
@@ -2563,7 +2563,7 @@ void AWTLMonsterPawn::InterruptIdleState()
 
 void AWTLMonsterPawn::InterruptCurrentAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.InterruptCurrentAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.InterruptCurrentAction"));
 
 	struct
 	{
@@ -2581,7 +2581,7 @@ void AWTLMonsterPawn::InterruptCurrentAction()
 
 void AWTLMonsterPawn::IncrementHealth(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.IncrementHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IncrementHealth"));
 
 	struct
 	{
@@ -2601,7 +2601,7 @@ void AWTLMonsterPawn::IncrementHealth(float Value)
 
 float AWTLMonsterPawn::GetRemotePitch()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetRemotePitch");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetRemotePitch"));
 
 	struct
 	{
@@ -2622,7 +2622,7 @@ float AWTLMonsterPawn::GetRemotePitch()
 
 bool AWTLMonsterPawn::GetReactionOnElectronicBait()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetReactionOnElectronicBait");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetReactionOnElectronicBait"));
 
 	struct
 	{
@@ -2643,7 +2643,7 @@ bool AWTLMonsterPawn::GetReactionOnElectronicBait()
 
 float AWTLMonsterPawn::GetOldHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetOldHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetOldHealth"));
 
 	struct
 	{
@@ -2664,7 +2664,7 @@ float AWTLMonsterPawn::GetOldHealth()
 
 EWTLMonsterMovementMode AWTLMonsterPawn::GetMovementMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetMovementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetMovementMode"));
 
 	struct
 	{
@@ -2685,7 +2685,7 @@ EWTLMonsterMovementMode AWTLMonsterPawn::GetMovementMode()
 
 int AWTLMonsterPawn::GetMonsterID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetMonsterID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetMonsterID"));
 
 	struct
 	{
@@ -2706,7 +2706,7 @@ int AWTLMonsterPawn::GetMonsterID()
 
 float AWTLMonsterPawn::GetMaxHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetMaxHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetMaxHealth"));
 
 	struct
 	{
@@ -2727,7 +2727,7 @@ float AWTLMonsterPawn::GetMaxHealth()
 
 struct FString AWTLMonsterPawn::GetHumanReadableName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetHumanReadableName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetHumanReadableName"));
 
 	struct
 	{
@@ -2748,7 +2748,7 @@ struct FString AWTLMonsterPawn::GetHumanReadableName()
 
 float AWTLMonsterPawn::GetHealthLost()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetHealthLost");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetHealthLost"));
 
 	struct
 	{
@@ -2769,7 +2769,7 @@ float AWTLMonsterPawn::GetHealthLost()
 
 float AWTLMonsterPawn::GetHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetHealth"));
 
 	struct
 	{
@@ -2790,7 +2790,7 @@ float AWTLMonsterPawn::GetHealth()
 
 float AWTLMonsterPawn::GetDangerLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetDangerLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetDangerLevel"));
 
 	struct
 	{
@@ -2811,7 +2811,7 @@ float AWTLMonsterPawn::GetDangerLevel()
 
 EWTLMonsterActionType AWTLMonsterPawn::GetCurrentAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetCurrentAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetCurrentAction"));
 
 	struct
 	{
@@ -2834,7 +2834,7 @@ EWTLMonsterActionType AWTLMonsterPawn::GetCurrentAction()
 
 class AWTLCharacter* AWTLMonsterPawn::GetCharacterFromListVisibleTargets(class AWTLCharacter* Character, EWTLMonsterFindingVisibleCharacterType Type)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetCharacterFromListVisibleTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetCharacterFromListVisibleTargets"));
 
 	struct
 	{
@@ -2862,7 +2862,7 @@ class AWTLCharacter* AWTLMonsterPawn::GetCharacterFromListVisibleTargets(class A
 
 class AWTLCharacter* AWTLMonsterPawn::GetCharacterFromListTargets(class AWTLCharacter* Character, EWTLMonsterFindingCharacterType Type, float InRadius)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetCharacterFromListTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetCharacterFromListTargets"));
 
 	struct
 	{
@@ -2890,7 +2890,7 @@ class AWTLCharacter* AWTLMonsterPawn::GetCharacterFromListTargets(class AWTLChar
 
 TArray<EWTLMonsterActionType> AWTLMonsterPawn::GetAvailableActions(bool bExceptMainAttack)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.GetAvailableActions");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.GetAvailableActions"));
 
 	struct
 	{
@@ -2911,7 +2911,7 @@ TArray<EWTLMonsterActionType> AWTLMonsterPawn::GetAvailableActions(bool bExceptM
 
 void AWTLMonsterPawn::ClearListTargets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.ClearListTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.ClearListTargets"));
 
 	struct
 	{
@@ -2927,7 +2927,7 @@ void AWTLMonsterPawn::ClearListTargets()
 
 void AWTLMonsterPawn::CheckListVisibleTargets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.CheckListVisibleTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.CheckListVisibleTargets"));
 
 	struct
 	{
@@ -2943,7 +2943,7 @@ void AWTLMonsterPawn::CheckListVisibleTargets()
 
 void AWTLMonsterPawn::CheckListTargets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.CheckListTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.CheckListTargets"));
 
 	struct
 	{
@@ -2961,7 +2961,7 @@ void AWTLMonsterPawn::CheckListTargets()
 
 bool AWTLMonsterPawn::CanUseAdditiveAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.CanUseAdditiveAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.CanUseAdditiveAction"));
 
 	struct
 	{
@@ -2982,7 +2982,7 @@ bool AWTLMonsterPawn::CanUseAdditiveAction()
 
 void AWTLMonsterPawn::C2S_SpecialAbility(unsigned char Number)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.C2S_SpecialAbility");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.C2S_SpecialAbility"));
 
 	struct
 	{
@@ -3000,7 +3000,7 @@ void AWTLMonsterPawn::C2S_SpecialAbility(unsigned char Number)
 
 void AWTLMonsterPawn::C2S_SecondaryAttack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.C2S_SecondaryAttack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.C2S_SecondaryAttack"));
 
 	struct
 	{
@@ -3016,7 +3016,7 @@ void AWTLMonsterPawn::C2S_SecondaryAttack()
 
 void AWTLMonsterPawn::C2S_MainAttack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.C2S_MainAttack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.C2S_MainAttack"));
 
 	struct
 	{
@@ -3036,7 +3036,7 @@ void AWTLMonsterPawn::C2S_MainAttack()
 
 void AWTLMonsterPawn::ApplyEffectToCharacter(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float Amount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.ApplyEffectToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.ApplyEffectToCharacter"));
 
 	struct
 	{
@@ -3068,7 +3068,7 @@ void AWTLMonsterPawn::ApplyEffectToCharacter(class AWTLCharacter* Character, EWT
 
 float AWTLMonsterPawn::ApplyDamageToCharacter(class AWTLCharacter* Character, const struct FName& BoneName, class UClass* DamageType, EWTLMonsterAttackModificator DamageModificator, float DamageMultiplier, bool ApplyExpectedEffects, EWTLColliderType ColliderType, bool UseArmor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.ApplyDamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.ApplyDamageToCharacter"));
 
 	struct
 	{
@@ -3112,7 +3112,7 @@ float AWTLMonsterPawn::ApplyDamageToCharacter(class AWTLCharacter* Character, co
 
 class AWTLCharacter* AWTLMonsterPawn::ApplyDamageToAIInterface(class AActor* TargetActor, class UClass* DamageType, EWTLMonsterAttackModificator DamageModificator, float DamageMultiplier, bool ApplyExpectedEffects, EWTLColliderType ColliderType, bool UseArmor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.ApplyDamageToAIInterface");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.ApplyDamageToAIInterface"));
 
 	struct
 	{
@@ -3149,7 +3149,7 @@ class AWTLCharacter* AWTLMonsterPawn::ApplyDamageToAIInterface(class AActor* Tar
 
 void AWTLMonsterPawn::AddTargetToBlacklist(class AWTLCharacter* Target, float Delay, float DamageMultiplier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.AddTargetToBlacklist");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.AddTargetToBlacklist"));
 
 	struct
 	{
@@ -3174,7 +3174,7 @@ void AWTLMonsterPawn::AddTargetToBlacklist(class AWTLCharacter* Target, float De
 
 void AWTLMonsterPawn::AddCharacterToListTargets(class AWTLCharacter* Character, float Damage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawn.AddCharacterToListTargets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.AddCharacterToListTargets"));
 
 	struct
 	{
@@ -3196,7 +3196,7 @@ void AWTLMonsterPawn::AddCharacterToListTargets(class AWTLCharacter* Character, 
 
 float UWTLAIPerceptionComponent::GetSenseHearingRange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIPerceptionComponent.GetSenseHearingRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIPerceptionComponent.GetSenseHearingRange"));
 
 	struct
 	{
@@ -3218,7 +3218,7 @@ float UWTLAIPerceptionComponent::GetSenseHearingRange()
 
 struct FVector UWTLAIPerceptionComponent::GetSeenLocation(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIPerceptionComponent.GetSeenLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIPerceptionComponent.GetSeenLocation"));
 
 	struct
 	{
@@ -3243,7 +3243,7 @@ struct FVector UWTLAIPerceptionComponent::GetSeenLocation(class AActor* Actor)
 
 struct FVector UWTLAIPerceptionComponent::GetPredictionLocation(class AActor* Actor, float TimeSec)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIPerceptionComponent.GetPredictionLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIPerceptionComponent.GetPredictionLocation"));
 
 	struct
 	{
@@ -3269,7 +3269,7 @@ struct FVector UWTLAIPerceptionComponent::GetPredictionLocation(class AActor* Ac
 
 bool UWTLAIPerceptionComponent::GetIsSenseEnabled(class UClass* SenseClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAIPerceptionComponent.GetIsSenseEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAIPerceptionComponent.GetIsSenseEnabled"));
 
 	struct
 	{
@@ -3292,7 +3292,7 @@ bool UWTLAIPerceptionComponent::GetIsSenseEnabled(class UClass* SenseClass)
 
 bool UWTLAITargetInterface::AIInterface_IsAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAITargetInterface.AIInterface_IsAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAITargetInterface.AIInterface_IsAlive"));
 
 	struct
 	{
@@ -3313,7 +3313,7 @@ bool UWTLAITargetInterface::AIInterface_IsAlive()
 
 struct FVector UWTLAITargetInterface::AIInterface_GetVelocity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAITargetInterface.AIInterface_GetVelocity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAITargetInterface.AIInterface_GetVelocity"));
 
 	struct
 	{
@@ -3334,7 +3334,7 @@ struct FVector UWTLAITargetInterface::AIInterface_GetVelocity()
 
 int UWTLAITargetInterface::AIInterface_GetGroupID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAITargetInterface.AIInterface_GetGroupID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAITargetInterface.AIInterface_GetGroupID"));
 
 	struct
 	{
@@ -3359,7 +3359,7 @@ int UWTLAITargetInterface::AIInterface_GetGroupID()
 
 void AWTLAmmoCase::OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAmmoCase.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAmmoCase.OnHit"));
 
 	struct
 	{
@@ -3388,7 +3388,7 @@ void AWTLAmmoCase::OnHit(class UPrimitiveComponent* HitComponent, class AActor* 
 
 void AWTLAnimalBase::OnRepReplicatedMovement(const struct FVector& Location, const struct FRotator& Rotation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAnimalBase.OnRepReplicatedMovement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAnimalBase.OnRepReplicatedMovement"));
 
 	struct
 	{
@@ -3410,7 +3410,7 @@ void AWTLAnimalBase::OnRepReplicatedMovement(const struct FVector& Location, con
 
 void AWTLArenaCapturePoint::SetActive(bool Active)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaCapturePoint.SetActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaCapturePoint.SetActive"));
 
 	struct
 	{
@@ -3428,7 +3428,7 @@ void AWTLArenaCapturePoint::SetActive(bool Active)
 
 void AWTLArenaCapturePoint::OnRep_IsActive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaCapturePoint.OnRep_IsActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaCapturePoint.OnRep_IsActive"));
 
 	struct
 	{
@@ -3446,7 +3446,7 @@ void AWTLArenaCapturePoint::OnRep_IsActive()
 
 void AWTLArenaCapturePoint::OnRep_InvaderFaction(EWTLFaction Previous)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaCapturePoint.OnRep_InvaderFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaCapturePoint.OnRep_InvaderFaction"));
 
 	struct
 	{
@@ -3464,7 +3464,7 @@ void AWTLArenaCapturePoint::OnRep_InvaderFaction(EWTLFaction Previous)
 
 void AWTLArenaCapturePoint::OnRep_Influence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaCapturePoint.OnRep_Influence");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaCapturePoint.OnRep_Influence"));
 
 	struct
 	{
@@ -3482,7 +3482,7 @@ void AWTLArenaCapturePoint::OnRep_Influence()
 
 void AWTLGameMode::Server_MarkCharacterAsMovedThroughPortal(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameMode.Server_MarkCharacterAsMovedThroughPortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameMode.Server_MarkCharacterAsMovedThroughPortal"));
 
 	struct
 	{
@@ -3502,7 +3502,7 @@ void AWTLGameMode::Server_MarkCharacterAsMovedThroughPortal(uint64_t CharacterID
 
 void AWTLGameMode::OnCharacterGotMoney(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameMode.OnCharacterGotMoney");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameMode.OnCharacterGotMoney"));
 
 	struct
 	{
@@ -3522,7 +3522,7 @@ void AWTLGameMode::OnCharacterGotMoney(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnWorldConfigChanged(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnWorldConfigChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnWorldConfigChanged"));
 
 	struct
 	{
@@ -3542,7 +3542,7 @@ void AWTLGameState::OnWorldConfigChanged(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnUpdateGroup(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnUpdateGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnUpdateGroup"));
 
 	struct
 	{
@@ -3562,7 +3562,7 @@ void AWTLGameState::OnUpdateGroup(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnUnMuteCharacter(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnUnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnUnMuteCharacter"));
 
 	struct
 	{
@@ -3582,7 +3582,7 @@ void AWTLGameState::OnUnMuteCharacter(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnServerEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnServerEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnServerEvent"));
 
 	struct
 	{
@@ -3600,7 +3600,7 @@ void AWTLGameState::OnServerEvent(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnRep_ServerKeepAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_ServerKeepAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_ServerKeepAlive"));
 
 	struct
 	{
@@ -3616,7 +3616,7 @@ void AWTLGameState::OnRep_ServerKeepAlive()
 
 void AWTLGameState::OnRep_ServerEventInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_ServerEventInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_ServerEventInfo"));
 
 	struct
 	{
@@ -3632,7 +3632,7 @@ void AWTLGameState::OnRep_ServerEventInfo()
 
 void AWTLGameState::OnRep_PlayersInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_PlayersInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_PlayersInfo"));
 
 	struct
 	{
@@ -3648,7 +3648,7 @@ void AWTLGameState::OnRep_PlayersInfo()
 
 void AWTLGameState::OnRep_KillsStatsInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_KillsStatsInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_KillsStatsInfo"));
 
 	struct
 	{
@@ -3664,7 +3664,7 @@ void AWTLGameState::OnRep_KillsStatsInfo()
 
 void AWTLGameState::OnRep_CurrentRadioTrack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_CurrentRadioTrack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_CurrentRadioTrack"));
 
 	struct
 	{
@@ -3680,7 +3680,7 @@ void AWTLGameState::OnRep_CurrentRadioTrack()
 
 void AWTLGameState::OnRep_Clans()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRep_Clans");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRep_Clans"));
 
 	struct
 	{
@@ -3698,7 +3698,7 @@ void AWTLGameState::OnRep_Clans()
 
 void AWTLGameState::OnRemoveMailPackage(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnRemoveMailPackage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnRemoveMailPackage"));
 
 	struct
 	{
@@ -3718,7 +3718,7 @@ void AWTLGameState::OnRemoveMailPackage(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnMuteCharacter(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnMuteCharacter"));
 
 	struct
 	{
@@ -3738,7 +3738,7 @@ void AWTLGameState::OnMuteCharacter(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnMasterServerConsoleCommand(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnMasterServerConsoleCommand");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnMasterServerConsoleCommand"));
 
 	struct
 	{
@@ -3758,7 +3758,7 @@ void AWTLGameState::OnMasterServerConsoleCommand(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnDeleteGroup(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnDeleteGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnDeleteGroup"));
 
 	struct
 	{
@@ -3778,7 +3778,7 @@ void AWTLGameState::OnDeleteGroup(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnAddMailPackage(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnAddMailPackage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnAddMailPackage"));
 
 	struct
 	{
@@ -3798,7 +3798,7 @@ void AWTLGameState::OnAddMailPackage(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnAddGroup(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnAddGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnAddGroup"));
 
 	struct
 	{
@@ -3818,7 +3818,7 @@ void AWTLGameState::OnAddGroup(const struct FWTLEvent& Event)
 
 void AWTLGameState::OnAddClan(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.OnAddClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.OnAddClan"));
 
 	struct
 	{
@@ -3840,7 +3840,7 @@ void AWTLGameState::OnAddClan(const struct FWTLEvent& Event)
 
 TArray<class AWTLCharacter*> AWTLGameState::GetPlayerArrayInRadius(const struct FVector& Location, float Radius)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.GetPlayerArrayInRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.GetPlayerArrayInRadius"));
 
 	struct
 	{
@@ -3865,7 +3865,7 @@ TArray<class AWTLCharacter*> AWTLGameState::GetPlayerArrayInRadius(const struct 
 
 TArray<class AWTLMonsterPawn*> AWTLGameState::GetMonsterArray()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameState.GetMonsterArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameState.GetMonsterArray"));
 
 	struct
 	{
@@ -3884,7 +3884,7 @@ TArray<class AWTLMonsterPawn*> AWTLGameState::GetMonsterArray()
 
 void AWTLArenaGameState::OnRep_CurrentPointToCapture()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState.OnRep_CurrentPointToCapture");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState.OnRep_CurrentPointToCapture"));
 
 	struct
 	{
@@ -3900,7 +3900,7 @@ void AWTLArenaGameState::OnRep_CurrentPointToCapture()
 
 void AWTLArenaGameState::OnRep_ConfederationScore()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState.OnRep_ConfederationScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState.OnRep_ConfederationScore"));
 
 	struct
 	{
@@ -3916,7 +3916,7 @@ void AWTLArenaGameState::OnRep_ConfederationScore()
 
 void AWTLArenaGameState::OnRep_BlackSunsetScore()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState.OnRep_BlackSunsetScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState.OnRep_BlackSunsetScore"));
 
 	struct
 	{
@@ -3932,7 +3932,7 @@ void AWTLArenaGameState::OnRep_BlackSunsetScore()
 
 void AWTLArenaGameState_Domination::OnRep_ConfederationLead()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState_Domination.OnRep_ConfederationLead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState_Domination.OnRep_ConfederationLead"));
 
 	struct
 	{
@@ -3948,7 +3948,7 @@ void AWTLArenaGameState_Domination::OnRep_ConfederationLead()
 
 void AWTLArenaGameState_Domination::OnRep_BlackSunsetLead()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState_Domination.OnRep_BlackSunsetLead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState_Domination.OnRep_BlackSunsetLead"));
 
 	struct
 	{
@@ -3964,7 +3964,7 @@ void AWTLArenaGameState_Domination::OnRep_BlackSunsetLead()
 
 void AWTLArenaGameState_MonsterHunt::OnRep_Objectives()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaGameState_MonsterHunt.OnRep_Objectives");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaGameState_MonsterHunt.OnRep_Objectives"));
 
 	struct
 	{
@@ -3980,7 +3980,7 @@ void AWTLArenaGameState_MonsterHunt::OnRep_Objectives()
 
 void AWTLHUD::OnArenaMatchStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUD.OnArenaMatchStarted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUD.OnArenaMatchStarted"));
 
 	struct
 	{
@@ -3999,7 +3999,7 @@ void AWTLHUD::OnArenaMatchStarted()
 
 void AWTLHUD::OnArenaMatchEnded(EWTLFaction WinningFaction, TArray<struct FWTLArenaLeaderboardRecord> Leaderboard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUD.OnArenaMatchEnded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUD.OnArenaMatchEnded"));
 
 	struct
 	{
@@ -4019,7 +4019,7 @@ void AWTLHUD::OnArenaMatchEnded(EWTLFaction WinningFaction, TArray<struct FWTLAr
 
 void UWTLUIBase::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUIBase.Update");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUIBase.Update"));
 
 	struct
 	{
@@ -4035,7 +4035,7 @@ void UWTLUIBase::Update()
 
 void UWTLArenaHUD_DM_ChooseEquipment::OnSelectedEquipmentChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnSelectedEquipmentChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnSelectedEquipmentChanged"));
 
 	struct
 	{
@@ -4051,7 +4051,7 @@ void UWTLArenaHUD_DM_ChooseEquipment::OnSelectedEquipmentChanged()
 
 void UWTLArenaHUD_DM_ChooseEquipment::OnOKBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnOKBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnOKBtnClick"));
 
 	struct
 	{
@@ -4067,7 +4067,7 @@ void UWTLArenaHUD_DM_ChooseEquipment::OnOKBtnClick()
 
 void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotUnhovered"));
 
 	struct
 	{
@@ -4085,7 +4085,7 @@ void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotUnhovered()
 
 void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotHovered(class UWTLArenaHUD_DM_Equipment_Slot* HoveredEquipmentSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotHovered"));
 
 	struct
 	{
@@ -4106,7 +4106,7 @@ void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotHovered(class UWTLArenaHUD_
 
 void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotChangedState(class UWTLArenaHUD_DM_Equipment_Slot* ChangedEquipmentSlot, bool bIsInit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotChangedState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_ChooseEquipment.OnEquipmentSlotChangedState"));
 
 	struct
 	{
@@ -4128,7 +4128,7 @@ void UWTLArenaHUD_DM_ChooseEquipment::OnEquipmentSlotChangedState(class UWTLAren
 
 void UWTLArenaHUD_DM_Equipment_List::OnEquipmentItemClicked(class UWTLArenaHUD_DM_Equipment_Item* EquipmentItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_Equipment_List.OnEquipmentItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_Equipment_List.OnEquipmentItemClicked"));
 
 	struct
 	{
@@ -4146,7 +4146,7 @@ void UWTLArenaHUD_DM_Equipment_List::OnEquipmentItemClicked(class UWTLArenaHUD_D
 
 void UWTLArenaHUD_DM_Equipment_Slot::OnMainBorderMouseButtonDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnMainBorderMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnMainBorderMouseButtonDown"));
 
 	struct
 	{
@@ -4164,7 +4164,7 @@ void UWTLArenaHUD_DM_Equipment_Slot::OnMainBorderMouseButtonDown()
 
 class UWidget* UWTLArenaHUD_DM_Equipment_Slot::OnGetEquipmentMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnGetEquipmentMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnGetEquipmentMenuContent"));
 
 	struct
 	{
@@ -4185,7 +4185,7 @@ class UWidget* UWTLArenaHUD_DM_Equipment_Slot::OnGetEquipmentMenuContent()
 
 void UWTLArenaHUD_DM_Equipment_Slot::OnEquipmentItemSelected(class UWTLArenaHUD_DM_Equipment_Item* EquipmentItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnEquipmentItemSelected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnEquipmentItemSelected"));
 
 	struct
 	{
@@ -4203,7 +4203,7 @@ void UWTLArenaHUD_DM_Equipment_Slot::OnEquipmentItemSelected(class UWTLArenaHUD_
 
 void UWTLArenaHUD_DM_Equipment_Slot::OnClearBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnClearBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_Equipment_Slot.OnClearBtnClicked"));
 
 	struct
 	{
@@ -4222,7 +4222,7 @@ void UWTLArenaHUD_DM_Equipment_Slot::OnClearBtnClicked()
 
 void UWTLArenaHUD_DM_FractionsScore::UpdateFractionsScore(EWTLFaction Faction, int Scores)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_FractionsScore.UpdateFractionsScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_FractionsScore.UpdateFractionsScore"));
 
 	struct
 	{
@@ -4242,7 +4242,7 @@ void UWTLArenaHUD_DM_FractionsScore::UpdateFractionsScore(EWTLFaction Faction, i
 
 void UWTLArenaHUD_DM_SelFraction::OnSpectatingBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnSpectatingBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnSpectatingBtnClick"));
 
 	struct
 	{
@@ -4258,7 +4258,7 @@ void UWTLArenaHUD_DM_SelFraction::OnSpectatingBtnClick()
 
 void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnUnhover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnUnhover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnUnhover"));
 
 	struct
 	{
@@ -4274,7 +4274,7 @@ void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnUnhover()
 
 void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnHover"));
 
 	struct
 	{
@@ -4290,7 +4290,7 @@ void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnHover()
 
 void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnConfederationSelectBtnClick"));
 
 	struct
 	{
@@ -4306,7 +4306,7 @@ void UWTLArenaHUD_DM_SelFraction::OnConfederationSelectBtnClick()
 
 void UWTLArenaHUD_DM_SelFraction::OnCloseBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnCloseBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnCloseBtnClick"));
 
 	struct
 	{
@@ -4322,7 +4322,7 @@ void UWTLArenaHUD_DM_SelFraction::OnCloseBtnClick()
 
 void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnUnhover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnUnhover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnUnhover"));
 
 	struct
 	{
@@ -4338,7 +4338,7 @@ void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnUnhover()
 
 void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnHover"));
 
 	struct
 	{
@@ -4354,7 +4354,7 @@ void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnHover()
 
 void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnBlackSunsetSelectBtnClick"));
 
 	struct
 	{
@@ -4370,7 +4370,7 @@ void UWTLArenaHUD_DM_SelFraction::OnBlackSunsetSelectBtnClick()
 
 void UWTLArenaHUD_DM_SelFraction::OnAutoSelectBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUD_DM_SelFraction.OnAutoSelectBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUD_DM_SelFraction.OnAutoSelectBtnClick"));
 
 	struct
 	{
@@ -4386,7 +4386,7 @@ void UWTLArenaHUD_DM_SelFraction::OnAutoSelectBtnClick()
 
 void UWTLArenaHUDKillTitle::OnDissapearAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaHUDKillTitle.OnDissapearAnimationFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaHUDKillTitle.OnDissapearAnimationFinished"));
 
 	struct
 	{
@@ -4402,7 +4402,7 @@ void UWTLArenaHUDKillTitle::OnDissapearAnimationFinished()
 
 void AWTLPlayerController::TriggerPlayerKillNotification()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.TriggerPlayerKillNotification");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.TriggerPlayerKillNotification"));
 
 	struct
 	{
@@ -4420,7 +4420,7 @@ void AWTLPlayerController::TriggerPlayerKillNotification()
 
 void AWTLPlayerController::Server_UpdatePlayerName(const struct FString& PlayerName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_UpdatePlayerName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_UpdatePlayerName"));
 
 	struct
 	{
@@ -4440,7 +4440,7 @@ void AWTLPlayerController::Server_UpdatePlayerName(const struct FString& PlayerN
 
 void AWTLPlayerController::Server_SetMinEventLogPriority(unsigned char Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_SetMinEventLogPriority");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_SetMinEventLogPriority"));
 
 	struct
 	{
@@ -4460,7 +4460,7 @@ void AWTLPlayerController::Server_SetMinEventLogPriority(unsigned char Value)
 
 void AWTLPlayerController::Server_SendConsoleCommand(const struct FString& ConsoleCommand)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_SendConsoleCommand");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_SendConsoleCommand"));
 
 	struct
 	{
@@ -4483,7 +4483,7 @@ void AWTLPlayerController::Server_SendConsoleCommand(const struct FString& Conso
 
 void AWTLPlayerController::Server_SendChatMessage(EWTLFiltersChat FilterChat, EWTLFaction Faction, const struct FString& ChatMessage, const struct FString& SenderPlayerName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_SendChatMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_SendChatMessage"));
 
 	struct
 	{
@@ -4510,7 +4510,7 @@ void AWTLPlayerController::Server_SendChatMessage(EWTLFiltersChat FilterChat, EW
 
 void AWTLPlayerController::Server_SelectReplica(class AWTLNPCActor* DialogInstigator, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_SelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_SelectReplica"));
 
 	struct
 	{
@@ -4532,7 +4532,7 @@ void AWTLPlayerController::Server_SelectReplica(class AWTLNPCActor* DialogInstig
 
 void AWTLPlayerController::Server_RemoveStash(class AWTLStash* Stash)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_RemoveStash");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_RemoveStash"));
 
 	struct
 	{
@@ -4553,7 +4553,7 @@ void AWTLPlayerController::Server_RemoveStash(class AWTLStash* Stash)
 
 void AWTLPlayerController::Server_PutGiftInStash(class AWTLStash* Stash, uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_PutGiftInStash");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_PutGiftInStash"));
 
 	struct
 	{
@@ -4575,7 +4575,7 @@ void AWTLPlayerController::Server_PutGiftInStash(class AWTLStash* Stash, uint64_
 
 void AWTLPlayerController::Server_PickupPlaceableStuff(class AWTLPlaceableStuff* PlaceableStuff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_PickupPlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_PickupPlaceableStuff"));
 
 	struct
 	{
@@ -4596,7 +4596,7 @@ void AWTLPlayerController::Server_PickupPlaceableStuff(class AWTLPlaceableStuff*
 
 void AWTLPlayerController::Server_OnClanNameSelected(class AWTLNPCActor* NPC, const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_OnClanNameSelected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_OnClanNameSelected"));
 
 	struct
 	{
@@ -4616,7 +4616,7 @@ void AWTLPlayerController::Server_OnClanNameSelected(class AWTLNPCActor* NPC, co
 
 void AWTLPlayerController::Server_GetExperienceForFirstMailMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_GetExperienceForFirstMailMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_GetExperienceForFirstMailMessage"));
 
 	struct
 	{
@@ -4634,7 +4634,7 @@ void AWTLPlayerController::Server_GetExperienceForFirstMailMessage()
 
 void AWTLPlayerController::Server_ExtinguishCampfire(class AWTLCampfire* Campfire)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_ExtinguishCampfire");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_ExtinguishCampfire"));
 
 	struct
 	{
@@ -4654,7 +4654,7 @@ void AWTLPlayerController::Server_ExtinguishCampfire(class AWTLCampfire* Campfir
 
 void AWTLPlayerController::Server_EndInformationDialog(class AWTLTriggerObject* TriggerObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_EndInformationDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_EndInformationDialog"));
 
 	struct
 	{
@@ -4674,7 +4674,7 @@ void AWTLPlayerController::Server_EndInformationDialog(class AWTLTriggerObject* 
 
 void AWTLPlayerController::Server_ChargePlaceableStuff(class AWTLPlaceableStuff* PlaceableStuff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_ChargePlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_ChargePlaceableStuff"));
 
 	struct
 	{
@@ -4692,7 +4692,7 @@ void AWTLPlayerController::Server_ChargePlaceableStuff(class AWTLPlaceableStuff*
 
 void AWTLPlayerController::Server_CancelSuicide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_CancelSuicide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_CancelSuicide"));
 
 	struct
 	{
@@ -4708,7 +4708,7 @@ void AWTLPlayerController::Server_CancelSuicide()
 
 void AWTLPlayerController::Server_CancelExit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_CancelExit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_CancelExit"));
 
 	struct
 	{
@@ -4724,7 +4724,7 @@ void AWTLPlayerController::Server_CancelExit()
 
 void AWTLPlayerController::Server_BeginSuicide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_BeginSuicide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_BeginSuicide"));
 
 	struct
 	{
@@ -4740,7 +4740,7 @@ void AWTLPlayerController::Server_BeginSuicide()
 
 void AWTLPlayerController::Server_BeginExit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Server_BeginExit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Server_BeginExit"));
 
 	struct
 	{
@@ -4758,7 +4758,7 @@ void AWTLPlayerController::Server_BeginExit()
 
 void AWTLPlayerController::RemoveStash(class AWTLStash* Stash)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.RemoveStash");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.RemoveStash"));
 
 	struct
 	{
@@ -4779,7 +4779,7 @@ void AWTLPlayerController::RemoveStash(class AWTLStash* Stash)
 
 void AWTLPlayerController::PutGiftInStash(class AWTLStash* Stash, uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.PutGiftInStash");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.PutGiftInStash"));
 
 	struct
 	{
@@ -4801,7 +4801,7 @@ void AWTLPlayerController::PutGiftInStash(class AWTLStash* Stash, uint64_t Chara
 
 void AWTLPlayerController::PickupPlaceableStuff(class AWTLPlaceableStuff* PlaceableStuff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.PickupPlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.PickupPlaceableStuff"));
 
 	struct
 	{
@@ -4819,7 +4819,7 @@ void AWTLPlayerController::PickupPlaceableStuff(class AWTLPlaceableStuff* Placea
 
 void AWTLPlayerController::OpenCharacterMail()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OpenCharacterMail");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OpenCharacterMail"));
 
 	struct
 	{
@@ -4837,7 +4837,7 @@ void AWTLPlayerController::OpenCharacterMail()
 
 bool AWTLPlayerController::OnWindowCloseRequested()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnWindowCloseRequested");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnWindowCloseRequested"));
 
 	struct
 	{
@@ -4856,7 +4856,7 @@ bool AWTLPlayerController::OnWindowCloseRequested()
 
 void AWTLPlayerController::OnVOIPTimerTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnVOIPTimerTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnVOIPTimerTick"));
 
 	struct
 	{
@@ -4872,7 +4872,7 @@ void AWTLPlayerController::OnVOIPTimerTick()
 
 void AWTLPlayerController::OnVOIPStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnVOIPStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnVOIPStop"));
 
 	struct
 	{
@@ -4888,7 +4888,7 @@ void AWTLPlayerController::OnVOIPStop()
 
 void AWTLPlayerController::OnVOIPStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnVOIPStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnVOIPStart"));
 
 	struct
 	{
@@ -4904,7 +4904,7 @@ void AWTLPlayerController::OnVOIPStart()
 
 void AWTLPlayerController::OnRep_SuicideState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnRep_SuicideState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnRep_SuicideState"));
 
 	struct
 	{
@@ -4920,7 +4920,7 @@ void AWTLPlayerController::OnRep_SuicideState()
 
 void AWTLPlayerController::OnModuleScanTimerTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnModuleScanTimerTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnModuleScanTimerTick"));
 
 	struct
 	{
@@ -4936,7 +4936,7 @@ void AWTLPlayerController::OnModuleScanTimerTick()
 
 void AWTLPlayerController::OnExitTimerOnClient()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnExitTimerOnClient");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnExitTimerOnClient"));
 
 	struct
 	{
@@ -4954,7 +4954,7 @@ void AWTLPlayerController::OnExitTimerOnClient()
 
 void AWTLPlayerController::OnConsoleCommandResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnConsoleCommandResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnConsoleCommandResponse"));
 
 	struct
 	{
@@ -4974,7 +4974,7 @@ void AWTLPlayerController::OnConsoleCommandResponse(const struct FWTLResponse& R
 
 void AWTLPlayerController::OnClanNameSelected(const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnClanNameSelected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnClanNameSelected"));
 
 	struct
 	{
@@ -4994,7 +4994,7 @@ void AWTLPlayerController::OnClanNameSelected(const struct FString& ClanName)
 
 void AWTLPlayerController::OnChatMessage(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnChatMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnChatMessage"));
 
 	struct
 	{
@@ -5012,7 +5012,7 @@ void AWTLPlayerController::OnChatMessage(const struct FWTLEvent& Event)
 
 void AWTLPlayerController::OnCancelBarterOffer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnCancelBarterOffer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnCancelBarterOffer"));
 
 	struct
 	{
@@ -5030,7 +5030,7 @@ void AWTLPlayerController::OnCancelBarterOffer()
 
 void AWTLPlayerController::OnAnticheatRequested(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.OnAnticheatRequested");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.OnAnticheatRequested"));
 
 	struct
 	{
@@ -5050,7 +5050,7 @@ void AWTLPlayerController::OnAnticheatRequested(const struct FWTLEvent& Event)
 
 void AWTLPlayerController::ExtinguishCampfire(class AWTLCampfire* Campfire)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ExtinguishCampfire");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ExtinguishCampfire"));
 
 	struct
 	{
@@ -5076,7 +5076,7 @@ void AWTLPlayerController::ExtinguishCampfire(class AWTLCampfire* Campfire)
 
 void AWTLPlayerController::ClientUnreliable_OnSpawnTracer(bool OwnCharacter, uint16_t AmmoID, const struct FVector_NetQuantize& Position, const struct FVector_NetQuantizeNormal& Rotation, float Velocity, uint16_t TracerID, float LifeSpan)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientUnreliable_OnSpawnTracer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientUnreliable_OnSpawnTracer"));
 
 	struct
 	{
@@ -5108,7 +5108,7 @@ void AWTLPlayerController::ClientUnreliable_OnSpawnTracer(bool OwnCharacter, uin
 
 void AWTLPlayerController::ClientUnreliable_OnDestroyTracer(uint16_t TracerID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientUnreliable_OnDestroyTracer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientUnreliable_OnDestroyTracer"));
 
 	struct
 	{
@@ -5133,7 +5133,7 @@ void AWTLPlayerController::ClientUnreliable_OnDestroyTracer(uint16_t TracerID)
 
 void AWTLPlayerController::ClientUnreliable_OnBulletRicochet(class UPrimitiveComponent* HitComponent, const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, TEnumAsByte<EPhysicalSurface> HitSurface, EWTLCaliber Caliber, float ServerTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientUnreliable_OnBulletRicochet");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientUnreliable_OnBulletRicochet"));
 
 	struct
 	{
@@ -5168,7 +5168,7 @@ void AWTLPlayerController::ClientUnreliable_OnBulletRicochet(class UPrimitiveCom
 
 void AWTLPlayerController::ClientUnreliable_OnBulletHit(class UPrimitiveComponent* HitComponent, const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, TEnumAsByte<EPhysicalSurface> HitSurface, EWTLCaliber Caliber, float ServerTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientUnreliable_OnBulletHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientUnreliable_OnBulletHit"));
 
 	struct
 	{
@@ -5198,7 +5198,7 @@ void AWTLPlayerController::ClientUnreliable_OnBulletHit(class UPrimitiveComponen
 
 void AWTLPlayerController::ClientSetCurrentCulture(const struct FString& CultureName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientSetCurrentCulture");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientSetCurrentCulture"));
 
 	struct
 	{
@@ -5223,7 +5223,7 @@ void AWTLPlayerController::ClientSetCurrentCulture(const struct FString& Culture
 
 void AWTLPlayerController::ClientReliable_OnBulletRicochet(class UPrimitiveComponent* HitComponent, const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, TEnumAsByte<EPhysicalSurface> HitSurface, EWTLCaliber Caliber, float ServerTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientReliable_OnBulletRicochet");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientReliable_OnBulletRicochet"));
 
 	struct
 	{
@@ -5258,7 +5258,7 @@ void AWTLPlayerController::ClientReliable_OnBulletRicochet(class UPrimitiveCompo
 
 void AWTLPlayerController::ClientReliable_OnBulletHit(class UPrimitiveComponent* HitComponent, const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, TEnumAsByte<EPhysicalSurface> HitSurface, EWTLCaliber Caliber, float ServerTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClientReliable_OnBulletHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClientReliable_OnBulletHit"));
 
 	struct
 	{
@@ -5289,7 +5289,7 @@ void AWTLPlayerController::ClientReliable_OnBulletHit(class UPrimitiveComponent*
 
 void AWTLPlayerController::Client_StartBarterDeal(uint64_t CharacterID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_StartBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_StartBarterDeal"));
 
 	struct
 	{
@@ -5311,7 +5311,7 @@ void AWTLPlayerController::Client_StartBarterDeal(uint64_t CharacterID, const st
 
 void AWTLPlayerController::Client_ShowSteamInventoryWidget(class AWTLNPCActor* NPCActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowSteamInventoryWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowSteamInventoryWidget"));
 
 	struct
 	{
@@ -5331,7 +5331,7 @@ void AWTLPlayerController::Client_ShowSteamInventoryWidget(class AWTLNPCActor* N
 
 void AWTLPlayerController::Client_ShowPrivateStorage(class AActor* PrivateStorageActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowPrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowPrivateStorage"));
 
 	struct
 	{
@@ -5352,7 +5352,7 @@ void AWTLPlayerController::Client_ShowPrivateStorage(class AActor* PrivateStorag
 
 void AWTLPlayerController::Client_ShowObjectCraftWidget(class AActor* Actor, EWTLCraftType CraftType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowObjectCraftWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowObjectCraftWidget"));
 
 	struct
 	{
@@ -5375,7 +5375,7 @@ void AWTLPlayerController::Client_ShowObjectCraftWidget(class AActor* Actor, EWT
 
 void AWTLPlayerController::Client_ShowMessageDialog(EWTLDialogMessageType DialogMessageType, const struct FText& Message)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowMessageDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowMessageDialog"));
 
 	struct
 	{
@@ -5397,7 +5397,7 @@ void AWTLPlayerController::Client_ShowMessageDialog(EWTLDialogMessageType Dialog
 
 void AWTLPlayerController::Client_ShowMailBox(class AWTLMailBox* MailBox)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowMailBox");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowMailBox"));
 
 	struct
 	{
@@ -5419,7 +5419,7 @@ void AWTLPlayerController::Client_ShowMailBox(class AWTLMailBox* MailBox)
 
 void AWTLPlayerController::Client_ShowDialog(class AWTLNPCActor* DialogInstigator, int NPCReplicaID, TArray<int> CharacterReplicaIDArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowDialog"));
 
 	struct
 	{
@@ -5443,7 +5443,7 @@ void AWTLPlayerController::Client_ShowDialog(class AWTLNPCActor* DialogInstigato
 
 void AWTLPlayerController::Client_ShowClanStorage(class AActor* ClanStorageActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowClanStorage"));
 
 	struct
 	{
@@ -5463,7 +5463,7 @@ void AWTLPlayerController::Client_ShowClanStorage(class AActor* ClanStorageActor
 
 void AWTLPlayerController::Client_ShowClanNameRequest(class AWTLNPCActor* NPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowClanNameRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowClanNameRequest"));
 
 	struct
 	{
@@ -5481,7 +5481,7 @@ void AWTLPlayerController::Client_ShowClanNameRequest(class AWTLNPCActor* NPC)
 
 void AWTLPlayerController::Client_ShowChangeParametersWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowChangeParametersWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowChangeParametersWidget"));
 
 	struct
 	{
@@ -5499,7 +5499,7 @@ void AWTLPlayerController::Client_ShowChangeParametersWidget()
 
 void AWTLPlayerController::Client_ShowBulletinBoard(class AWTLBulletinBoard* Board)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_ShowBulletinBoard");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowBulletinBoard"));
 
 	struct
 	{
@@ -5520,7 +5520,7 @@ void AWTLPlayerController::Client_ShowBulletinBoard(class AWTLBulletinBoard* Boa
 
 void AWTLPlayerController::Client_SendMessage(EWTLClientMessageType ClientMessageType, const struct FString& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_SendMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_SendMessage"));
 
 	struct
 	{
@@ -5542,7 +5542,7 @@ void AWTLPlayerController::Client_SendMessage(EWTLClientMessageType ClientMessag
 
 void AWTLPlayerController::Client_OnSystemQuest(const struct FString& QuestInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnSystemQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnSystemQuest"));
 
 	struct
 	{
@@ -5562,7 +5562,7 @@ void AWTLPlayerController::Client_OnSystemQuest(const struct FString& QuestInfo)
 
 void AWTLPlayerController::Client_OnSystemEvent(const struct FString& EventInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnSystemEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnSystemEvent"));
 
 	struct
 	{
@@ -5583,7 +5583,7 @@ void AWTLPlayerController::Client_OnSystemEvent(const struct FString& EventInfo)
 
 void AWTLPlayerController::Client_OnStuffItemAttachedToWeapon(uint64_t WeaponItemID, uint64_t AttachmentItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnStuffItemAttachedToWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnStuffItemAttachedToWeapon"));
 
 	struct
 	{
@@ -5603,7 +5603,7 @@ void AWTLPlayerController::Client_OnStuffItemAttachedToWeapon(uint64_t WeaponIte
 
 void AWTLPlayerController::Client_OnSafeZoneLeave()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnSafeZoneLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnSafeZoneLeave"));
 
 	struct
 	{
@@ -5619,7 +5619,7 @@ void AWTLPlayerController::Client_OnSafeZoneLeave()
 
 void AWTLPlayerController::Client_OnSafeZoneEnter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnSafeZoneEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnSafeZoneEnter"));
 
 	struct
 	{
@@ -5637,7 +5637,7 @@ void AWTLPlayerController::Client_OnSafeZoneEnter()
 
 void AWTLPlayerController::Client_OnReputationIncrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnReputationIncrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnReputationIncrease"));
 
 	struct
 	{
@@ -5657,7 +5657,7 @@ void AWTLPlayerController::Client_OnReputationIncrease(unsigned char Delta)
 
 void AWTLPlayerController::Client_OnReputationDecrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnReputationDecrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnReputationDecrease"));
 
 	struct
 	{
@@ -5679,7 +5679,7 @@ void AWTLPlayerController::Client_OnReputationDecrease(unsigned char Delta)
 
 void AWTLPlayerController::Client_OnRemoveInventoryItem(EWTLItemType ItemType, uint16_t ItemTypeID, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnRemoveInventoryItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnRemoveInventoryItem"));
 
 	struct
 	{
@@ -5706,7 +5706,7 @@ void AWTLPlayerController::Client_OnRemoveInventoryItem(EWTLItemType ItemType, u
 
 void AWTLPlayerController::Client_OnReceiveChatMessage(EWTLFiltersChat FilterChat, const struct FString& ChatMessage, const struct FString& SenderPlayerName, const struct FString& ToPlayersName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnReceiveChatMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnReceiveChatMessage"));
 
 	struct
 	{
@@ -5732,7 +5732,7 @@ void AWTLPlayerController::Client_OnReceiveChatMessage(EWTLFiltersChat FilterCha
 
 void AWTLPlayerController::Client_OnQuestFailed(uint32_t QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnQuestFailed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnQuestFailed"));
 
 	struct
 	{
@@ -5752,7 +5752,7 @@ void AWTLPlayerController::Client_OnQuestFailed(uint32_t QuestID)
 
 void AWTLPlayerController::Client_OnQuestCompleted(uint32_t QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnQuestCompleted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnQuestCompleted"));
 
 	struct
 	{
@@ -5770,7 +5770,7 @@ void AWTLPlayerController::Client_OnQuestCompleted(uint32_t QuestID)
 
 void AWTLPlayerController::Client_OnPlayerSuicide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPlayerSuicide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerSuicide"));
 
 	struct
 	{
@@ -5788,7 +5788,7 @@ void AWTLPlayerController::Client_OnPlayerSuicide()
 
 void AWTLPlayerController::Client_OnPlayerKilledByPlayer(const struct FText& KillerName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPlayerKilledByPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerKilledByPlayer"));
 
 	struct
 	{
@@ -5808,7 +5808,7 @@ void AWTLPlayerController::Client_OnPlayerKilledByPlayer(const struct FText& Kil
 
 void AWTLPlayerController::Client_OnPlayerKilledByMonster(int MonsterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPlayerKilledByMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerKilledByMonster"));
 
 	struct
 	{
@@ -5830,7 +5830,7 @@ void AWTLPlayerController::Client_OnPlayerKilledByMonster(int MonsterID)
 
 void AWTLPlayerController::Client_OnPlayerKilledByEnemyNPC(uint16_t EnemyNPCType, uint16_t FirstNameIndex, uint16_t LastNameIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPlayerKilledByEnemyNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerKilledByEnemyNPC"));
 
 	struct
 	{
@@ -5852,7 +5852,7 @@ void AWTLPlayerController::Client_OnPlayerKilledByEnemyNPC(uint16_t EnemyNPCType
 
 void AWTLPlayerController::Client_OnPlayerDied()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPlayerDied");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerDied"));
 
 	struct
 	{
@@ -5870,7 +5870,7 @@ void AWTLPlayerController::Client_OnPlayerDied()
 
 void AWTLPlayerController::Client_OnPDAModuleInstalled(uint16_t ModuleID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnPDAModuleInstalled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPDAModuleInstalled"));
 
 	struct
 	{
@@ -5890,7 +5890,7 @@ void AWTLPlayerController::Client_OnPDAModuleInstalled(uint16_t ModuleID)
 
 void AWTLPlayerController::Client_OnNPCKilledWithBroadcastToKillers(class AWTLEnemyNPC* NPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnNPCKilledWithBroadcastToKillers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnNPCKilledWithBroadcastToKillers"));
 
 	struct
 	{
@@ -5910,7 +5910,7 @@ void AWTLPlayerController::Client_OnNPCKilledWithBroadcastToKillers(class AWTLEn
 
 void AWTLPlayerController::Client_OnMonsterKilledWithBroadcastToKillers(class AWTLMonsterPawn* Monster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnMonsterKilledWithBroadcastToKillers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnMonsterKilledWithBroadcastToKillers"));
 
 	struct
 	{
@@ -5930,7 +5930,7 @@ void AWTLPlayerController::Client_OnMonsterKilledWithBroadcastToKillers(class AW
 
 void AWTLPlayerController::Client_OnMailMessageReceived(const struct FString& Subject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnMailMessageReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnMailMessageReceived"));
 
 	struct
 	{
@@ -5952,7 +5952,7 @@ void AWTLPlayerController::Client_OnMailMessageReceived(const struct FString& Su
 
 void AWTLPlayerController::Client_OnLongDistanceHit(int Distance, EWTLColliderType ColliderType, bool Kill)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnLongDistanceHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnLongDistanceHit"));
 
 	struct
 	{
@@ -5976,7 +5976,7 @@ void AWTLPlayerController::Client_OnLongDistanceHit(int Distance, EWTLColliderTy
 
 void AWTLPlayerController::Client_OnLevelUp(unsigned char NewLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnLevelUp");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnLevelUp"));
 
 	struct
 	{
@@ -5996,7 +5996,7 @@ void AWTLPlayerController::Client_OnLevelUp(unsigned char NewLevel)
 
 void AWTLPlayerController::Client_OnLeftClan(const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnLeftClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnLeftClan"));
 
 	struct
 	{
@@ -6016,7 +6016,7 @@ void AWTLPlayerController::Client_OnLeftClan(const struct FString& ClanName)
 
 void AWTLPlayerController::Client_OnJoinedClan(const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnJoinedClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnJoinedClan"));
 
 	struct
 	{
@@ -6037,7 +6037,7 @@ void AWTLPlayerController::Client_OnJoinedClan(const struct FString& ClanName)
 
 void AWTLPlayerController::Client_OnItemUnequipped(EWTLItemType ItemType, uint16_t ItemTypeID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnItemUnequipped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnItemUnequipped"));
 
 	struct
 	{
@@ -6057,7 +6057,7 @@ void AWTLPlayerController::Client_OnItemUnequipped(EWTLItemType ItemType, uint16
 
 void AWTLPlayerController::Client_OnItemsRepaired()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnItemsRepaired");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnItemsRepaired"));
 
 	struct
 	{
@@ -6076,7 +6076,7 @@ void AWTLPlayerController::Client_OnItemsRepaired()
 
 void AWTLPlayerController::Client_OnItemRepaired(EWTLItemType ItemType, uint16_t ItemTypeID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnItemRepaired");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnItemRepaired"));
 
 	struct
 	{
@@ -6099,7 +6099,7 @@ void AWTLPlayerController::Client_OnItemRepaired(EWTLItemType ItemType, uint16_t
 
 void AWTLPlayerController::Client_OnItemEquipped(EWTLItemType ItemType, uint16_t ItemTypeID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnItemEquipped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnItemEquipped"));
 
 	struct
 	{
@@ -6122,7 +6122,7 @@ void AWTLPlayerController::Client_OnItemEquipped(EWTLItemType ItemType, uint16_t
 
 void AWTLPlayerController::Client_OnGetCommissionSellItemsTypesCountResponse(class AWTLNPCActor* NPC, TArray<struct FWTLCommissionItemTypeCount> TypesCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnGetCommissionSellItemsTypesCountResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnGetCommissionSellItemsTypesCountResponse"));
 
 	struct
 	{
@@ -6149,7 +6149,7 @@ void AWTLPlayerController::Client_OnGetCommissionSellItemsTypesCountResponse(cla
 
 void AWTLPlayerController::Client_OnGetCommissionSellItemsPageResponse(class AWTLNPCActor* NPC, int ItemsCount, int PageCount, int ItemPerPage, int PageIndex, const struct FWTLSellItems& ItemsPage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnGetCommissionSellItemsPageResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnGetCommissionSellItemsPageResponse"));
 
 	struct
 	{
@@ -6184,7 +6184,7 @@ void AWTLPlayerController::Client_OnGetCommissionSellItemsPageResponse(class AWT
 
 void AWTLPlayerController::Client_OnGetClanStorageMoneyLogPageResponse(class AWTLNPCActor* NPC, int RecordCount, int PageCount, int RecordsPerPage, int PageIndex, TArray<struct FWTLClanStorageMoneyLogRecord> RecordsPage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnGetClanStorageMoneyLogPageResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnGetClanStorageMoneyLogPageResponse"));
 
 	struct
 	{
@@ -6219,7 +6219,7 @@ void AWTLPlayerController::Client_OnGetClanStorageMoneyLogPageResponse(class AWT
 
 void AWTLPlayerController::Client_OnGetClanStorageItemsLogPageResponse(class AWTLNPCActor* NPC, int RecordCount, int PageCount, int RecordsPerPage, int PageIndex, TArray<struct FWTLClanStorageItemLogRecord> RecordsPage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnGetClanStorageItemsLogPageResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnGetClanStorageItemsLogPageResponse"));
 
 	struct
 	{
@@ -6249,7 +6249,7 @@ void AWTLPlayerController::Client_OnGetClanStorageItemsLogPageResponse(class AWT
 
 void AWTLPlayerController::Client_OnFortificationStateChanged(EWTLFortificationNotificationState State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnFortificationStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnFortificationStateChanged"));
 
 	struct
 	{
@@ -6269,7 +6269,7 @@ void AWTLPlayerController::Client_OnFortificationStateChanged(EWTLFortificationN
 
 void AWTLPlayerController::Client_OnFactionScoreIncrease(int Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnFactionScoreIncrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnFactionScoreIncrease"));
 
 	struct
 	{
@@ -6289,7 +6289,7 @@ void AWTLPlayerController::Client_OnFactionScoreIncrease(int Delta)
 
 void AWTLPlayerController::Client_OnFactionScoreDecrease(int Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnFactionScoreDecrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnFactionScoreDecrease"));
 
 	struct
 	{
@@ -6309,7 +6309,7 @@ void AWTLPlayerController::Client_OnFactionScoreDecrease(int Delta)
 
 void AWTLPlayerController::Client_OnFactionRankIncrease(unsigned char Rank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnFactionRankIncrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnFactionRankIncrease"));
 
 	struct
 	{
@@ -6329,7 +6329,7 @@ void AWTLPlayerController::Client_OnFactionRankIncrease(unsigned char Rank)
 
 void AWTLPlayerController::Client_OnFactionRankDecrease(unsigned char Rank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnFactionRankDecrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnFactionRankDecrease"));
 
 	struct
 	{
@@ -6347,7 +6347,7 @@ void AWTLPlayerController::Client_OnFactionRankDecrease(unsigned char Rank)
 
 void AWTLPlayerController::Client_OnExitFromGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnExitFromGame");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnExitFromGame"));
 
 	struct
 	{
@@ -6365,7 +6365,7 @@ void AWTLPlayerController::Client_OnExitFromGame()
 
 void AWTLPlayerController::Client_OnExcludedFromClan(const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnExcludedFromClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnExcludedFromClan"));
 
 	struct
 	{
@@ -6392,7 +6392,7 @@ void AWTLPlayerController::Client_OnExcludedFromClan(const struct FString& ClanN
 
 void AWTLPlayerController::Client_OnEventLogRecord(EWTLEventLogRecordType RecordType, unsigned char Priority, const struct FString& InstigatorName, const struct FString& VictimName, const struct FString& Param1, const struct FString& Param2, const struct FString& Param3, const struct FString& Param4)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnEventLogRecord");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnEventLogRecord"));
 
 	struct
 	{
@@ -6426,7 +6426,7 @@ void AWTLPlayerController::Client_OnEventLogRecord(EWTLEventLogRecordType Record
 
 void AWTLPlayerController::Client_OnEarnExperience(uint32_t ExperienceValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnEarnExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnEarnExperience"));
 
 	struct
 	{
@@ -6446,7 +6446,7 @@ void AWTLPlayerController::Client_OnEarnExperience(uint32_t ExperienceValue)
 
 void AWTLPlayerController::Client_OnDamageToActor(TArray<struct FWTLDamageToActorInfo> DamageInfoArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnDamageToActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnDamageToActor"));
 
 	struct
 	{
@@ -6468,7 +6468,7 @@ void AWTLPlayerController::Client_OnDamageToActor(TArray<struct FWTLDamageToActo
 
 void AWTLPlayerController::Client_OnCraftObjectProcessStarted(int CraftObjectID, int CraftItemID, float ProcessTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnCraftObjectProcessStarted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnCraftObjectProcessStarted"));
 
 	struct
 	{
@@ -6493,7 +6493,7 @@ void AWTLPlayerController::Client_OnCraftObjectProcessStarted(int CraftObjectID,
 
 void AWTLPlayerController::Client_OnCraftObjectProcessFinished(int CraftObjectID, int CraftItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnCraftObjectProcessFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnCraftObjectProcessFinished"));
 
 	struct
 	{
@@ -6516,7 +6516,7 @@ void AWTLPlayerController::Client_OnCraftObjectProcessFinished(int CraftObjectID
 
 void AWTLPlayerController::Client_OnConsumeItemResult(bool bIsSuccessfull, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnConsumeItemResult");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnConsumeItemResult"));
 
 	struct
 	{
@@ -6538,7 +6538,7 @@ void AWTLPlayerController::Client_OnConsumeItemResult(bool bIsSuccessfull, const
 
 void AWTLPlayerController::Client_OnConfederationReputationIncrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnConfederationReputationIncrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnConfederationReputationIncrease"));
 
 	struct
 	{
@@ -6558,7 +6558,7 @@ void AWTLPlayerController::Client_OnConfederationReputationIncrease(unsigned cha
 
 void AWTLPlayerController::Client_OnConfederationReputationDecrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnConfederationReputationDecrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnConfederationReputationDecrease"));
 
 	struct
 	{
@@ -6578,7 +6578,7 @@ void AWTLPlayerController::Client_OnConfederationReputationDecrease(unsigned cha
 
 void AWTLPlayerController::Client_OnBlackSunsetReputationIncrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBlackSunsetReputationIncrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBlackSunsetReputationIncrease"));
 
 	struct
 	{
@@ -6598,7 +6598,7 @@ void AWTLPlayerController::Client_OnBlackSunsetReputationIncrease(unsigned char 
 
 void AWTLPlayerController::Client_OnBlackSunsetReputationDecrease(unsigned char Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBlackSunsetReputationDecrease");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBlackSunsetReputationDecrease"));
 
 	struct
 	{
@@ -6619,7 +6619,7 @@ void AWTLPlayerController::Client_OnBlackSunsetReputationDecrease(unsigned char 
 
 void AWTLPlayerController::Client_OnBarterDealRequestRejected(uint64_t CharacterID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBarterDealRequestRejected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBarterDealRequestRejected"));
 
 	struct
 	{
@@ -6641,7 +6641,7 @@ void AWTLPlayerController::Client_OnBarterDealRequestRejected(uint64_t Character
 
 void AWTLPlayerController::Client_OnBarterDealRequestReceived(const struct FWTLBarterDealRequest& Request)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBarterDealRequestReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBarterDealRequestReceived"));
 
 	struct
 	{
@@ -6661,7 +6661,7 @@ void AWTLPlayerController::Client_OnBarterDealRequestReceived(const struct FWTLB
 
 void AWTLPlayerController::Client_OnBarterDealRequestCreated(const struct FWTLBarterDealRequest& Request)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBarterDealRequestCreated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBarterDealRequestCreated"));
 
 	struct
 	{
@@ -6682,7 +6682,7 @@ void AWTLPlayerController::Client_OnBarterDealRequestCreated(const struct FWTLBa
 
 void AWTLPlayerController::Client_OnBarterDealRequestCanceled(uint64_t FromCharacterID, uint64_t ToCharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBarterDealRequestCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBarterDealRequestCanceled"));
 
 	struct
 	{
@@ -6705,7 +6705,7 @@ void AWTLPlayerController::Client_OnBarterDealRequestCanceled(uint64_t FromChara
 
 void AWTLPlayerController::Client_OnBarterDealRequestAccepted(uint64_t CharacterID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBarterDealRequestAccepted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBarterDealRequestAccepted"));
 
 	struct
 	{
@@ -6729,7 +6729,7 @@ void AWTLPlayerController::Client_OnBarterDealRequestAccepted(uint64_t Character
 
 void AWTLPlayerController::Client_OnBalanceReceivedFromCharacter(const struct FString& SenderName, const struct FString& Description, int Amount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBalanceReceivedFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBalanceReceivedFromCharacter"));
 
 	struct
 	{
@@ -6753,7 +6753,7 @@ void AWTLPlayerController::Client_OnBalanceReceivedFromCharacter(const struct FS
 
 void AWTLPlayerController::Client_OnBalanceChange(int Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBalanceChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBalanceChange"));
 
 	struct
 	{
@@ -6771,7 +6771,7 @@ void AWTLPlayerController::Client_OnBalanceChange(int Delta)
 
 void AWTLPlayerController::Client_OnBadConnectionState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnBadConnectionState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnBadConnectionState"));
 
 	struct
 	{
@@ -6791,7 +6791,7 @@ void AWTLPlayerController::Client_OnBadConnectionState()
 
 void AWTLPlayerController::Client_OnAddInventoryItem(EWTLItemType ItemType, uint16_t ItemTypeID, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_OnAddInventoryItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnAddInventoryItem"));
 
 	struct
 	{
@@ -6816,7 +6816,7 @@ void AWTLPlayerController::Client_OnAddInventoryItem(EWTLItemType ItemType, uint
 
 void AWTLPlayerController::Client_LogQuestDescription(class AWTLNPCActor* DialogInstigator, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_LogQuestDescription");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_LogQuestDescription"));
 
 	struct
 	{
@@ -6838,7 +6838,7 @@ void AWTLPlayerController::Client_LogQuestDescription(class AWTLNPCActor* Dialog
 
 void AWTLPlayerController::Client_EndDialog(class AWTLNPCActor* DialogInstigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_EndDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_EndDialog"));
 
 	struct
 	{
@@ -6858,7 +6858,7 @@ void AWTLPlayerController::Client_EndDialog(class AWTLNPCActor* DialogInstigator
 
 void AWTLPlayerController::Client_EndBarterDeal(bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_EndBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_EndBarterDeal"));
 
 	struct
 	{
@@ -6878,7 +6878,7 @@ void AWTLPlayerController::Client_EndBarterDeal(bool Success)
 
 void AWTLPlayerController::Client_BeginTrade(class AActor* TradingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_BeginTrade");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_BeginTrade"));
 
 	struct
 	{
@@ -6898,7 +6898,7 @@ void AWTLPlayerController::Client_BeginTrade(class AActor* TradingActor)
 
 void AWTLPlayerController::Client_BeginRepair(class AWTLNPCActor* RepairingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_BeginRepair");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_BeginRepair"));
 
 	struct
 	{
@@ -6918,7 +6918,7 @@ void AWTLPlayerController::Client_BeginRepair(class AWTLNPCActor* RepairingActor
 
 void AWTLPlayerController::Client_BeginItemsCustomization(class AWTLNPCActor* NPCActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_BeginItemsCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_BeginItemsCustomization"));
 
 	struct
 	{
@@ -6939,7 +6939,7 @@ void AWTLPlayerController::Client_BeginItemsCustomization(class AWTLNPCActor* NP
 
 void AWTLPlayerController::Client_BeginInformationDialog(class AWTLTriggerObject* TriggerObject, int InformationDialogID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.Client_BeginInformationDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_BeginInformationDialog"));
 
 	struct
 	{
@@ -6959,7 +6959,7 @@ void AWTLPlayerController::Client_BeginInformationDialog(class AWTLTriggerObject
 
 void AWTLPlayerController::ClearHUDWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ClearHUDWidgets");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ClearHUDWidgets"));
 
 	struct
 	{
@@ -6977,7 +6977,7 @@ void AWTLPlayerController::ClearHUDWidgets()
 
 void AWTLPlayerController::ChargePlaceableStuff(class AWTLPlaceableStuff* PlaceableStuff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.ChargePlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.ChargePlaceableStuff"));
 
 	struct
 	{
@@ -6995,7 +6995,7 @@ void AWTLPlayerController::ChargePlaceableStuff(class AWTLPlaceableStuff* Placea
 
 void AWTLPlayerController::CancelSuicide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.CancelSuicide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.CancelSuicide"));
 
 	struct
 	{
@@ -7011,7 +7011,7 @@ void AWTLPlayerController::CancelSuicide()
 
 void AWTLPlayerController::CancelExitGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerController.CancelExitGame");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.CancelExitGame"));
 
 	struct
 	{
@@ -7029,7 +7029,7 @@ void AWTLPlayerController::CancelExitGame()
 
 void AWTLArenaPlayerController::Client_SetSpectatorCameraSpot(class AActor* Spot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController.Client_SetSpectatorCameraSpot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController.Client_SetSpectatorCameraSpot"));
 
 	struct
 	{
@@ -7050,7 +7050,7 @@ void AWTLArenaPlayerController::Client_SetSpectatorCameraSpot(class AActor* Spot
 
 void AWTLArenaPlayerController::Client_SetSpectatorCamera(const struct FVector& Location, const struct FRotator& Rotation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController.Client_SetSpectatorCamera");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController.Client_SetSpectatorCamera"));
 
 	struct
 	{
@@ -7070,7 +7070,7 @@ void AWTLArenaPlayerController::Client_SetSpectatorCamera(const struct FVector& 
 
 void AWTLArenaPlayerController::Client_OnPointCaptureFailed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController.Client_OnPointCaptureFailed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController.Client_OnPointCaptureFailed"));
 
 	struct
 	{
@@ -7088,7 +7088,7 @@ void AWTLArenaPlayerController::Client_OnPointCaptureFailed()
 
 void AWTLArenaPlayerController::Client_OnPointCaptured(class AWTLArenaCapturePoint* Point)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController.Client_OnPointCaptured");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController.Client_OnPointCaptured"));
 
 	struct
 	{
@@ -7108,7 +7108,7 @@ void AWTLArenaPlayerController::Client_OnPointCaptured(class AWTLArenaCapturePoi
 
 void AWTLArenaPlayerController::Client_OnMatchFinished(bool bIsWinner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController.Client_OnMatchFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController.Client_OnMatchFinished"));
 
 	struct
 	{
@@ -7128,7 +7128,7 @@ void AWTLArenaPlayerController::Client_OnMatchFinished(bool bIsWinner)
 
 void AWTLArenaPlayerController_Domination::Server_SelectFaction(EWTLFaction Faction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Server_SelectFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Server_SelectFaction"));
 
 	struct
 	{
@@ -7149,7 +7149,7 @@ void AWTLArenaPlayerController_Domination::Server_SelectFaction(EWTLFaction Fact
 
 void AWTLArenaPlayerController_Domination::Server_PointOverlap(bool IsOverlap, class AWTLArenaCapturePoint* CapturePoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Server_PointOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Server_PointOverlap"));
 
 	struct
 	{
@@ -7169,7 +7169,7 @@ void AWTLArenaPlayerController_Domination::Server_PointOverlap(bool IsOverlap, c
 
 void AWTLArenaPlayerController_Domination::Server_PlaceMobilePlayerStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Server_PlaceMobilePlayerStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Server_PlaceMobilePlayerStart"));
 
 	struct
 	{
@@ -7185,7 +7185,7 @@ void AWTLArenaPlayerController_Domination::Server_PlaceMobilePlayerStart()
 
 void AWTLArenaPlayerController_Domination::Server_OnLoadoutConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Server_OnLoadoutConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Server_OnLoadoutConfirmed"));
 
 	struct
 	{
@@ -7201,7 +7201,7 @@ void AWTLArenaPlayerController_Domination::Server_OnLoadoutConfirmed()
 
 void AWTLArenaPlayerController_Domination::Client_ShowLoadoutSelection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Client_ShowLoadoutSelection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Client_ShowLoadoutSelection"));
 
 	struct
 	{
@@ -7220,7 +7220,7 @@ void AWTLArenaPlayerController_Domination::Client_ShowLoadoutSelection()
 
 void AWTLArenaPlayerController_Domination::Client_OnPointOverlap(bool IsOverlap, class AWTLArenaCapturePoint* CapturePoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Client_OnPointOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Client_OnPointOverlap"));
 
 	struct
 	{
@@ -7246,7 +7246,7 @@ void AWTLArenaPlayerController_Domination::Client_OnPointOverlap(bool IsOverlap,
 
 void AWTLArenaPlayerController_Domination::Client_OnPlayerKilled(class APlayerState* KillerState, class APlayerState* VictimState, class UClass* DamageType, uint16_t WeaponID, EWTLColliderType ColliderType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerController_Domination.Client_OnPlayerKilled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerController_Domination.Client_OnPlayerKilled"));
 
 	struct
 	{
@@ -7276,7 +7276,7 @@ void AWTLArenaPlayerController_Domination::Client_OnPlayerKilled(class APlayerSt
 
 void AWTLPlayerState::Server_UseRepairKit(uint64_t RepaitKitItemID, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UseRepairKit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UseRepairKit"));
 
 	struct
 	{
@@ -7300,7 +7300,7 @@ void AWTLPlayerState::Server_UseRepairKit(uint64_t RepaitKitItemID, EWTLItemType
 
 void AWTLPlayerState::Server_UseNewPassport(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UseNewPassport");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UseNewPassport"));
 
 	struct
 	{
@@ -7322,7 +7322,7 @@ void AWTLPlayerState::Server_UseNewPassport(uint64_t ItemID)
 
 void AWTLPlayerState::Server_UseModificationKit(uint64_t RepaitKitItemID, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UseModificationKit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UseModificationKit"));
 
 	struct
 	{
@@ -7348,7 +7348,7 @@ void AWTLPlayerState::Server_UseModificationKit(uint64_t RepaitKitItemID, EWTLIt
 
 void AWTLPlayerState::Server_UseItemFromStorage(class AActor* StorageContentActor, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UseItemFromStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UseItemFromStorage"));
 
 	struct
 	{
@@ -7373,7 +7373,7 @@ void AWTLPlayerState::Server_UseItemFromStorage(class AActor* StorageContentActo
 
 void AWTLPlayerState::Server_UseItem(EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UseItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UseItem"));
 
 	struct
 	{
@@ -7397,7 +7397,7 @@ void AWTLPlayerState::Server_UseItem(EWTLItemType ItemType, uint64_t ItemID)
 
 void AWTLPlayerState::Server_UpdateItemCustomizationWithSprayCan(EWTLItemType ItemType, uint64_t ItemID, uint64_t SprayCanItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateItemCustomizationWithSprayCan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateItemCustomizationWithSprayCan"));
 
 	struct
 	{
@@ -7425,7 +7425,7 @@ void AWTLPlayerState::Server_UpdateItemCustomizationWithSprayCan(EWTLItemType It
 
 void AWTLPlayerState::Server_UpdateItemCustomization(class AWTLNPCActor* NPC, EWTLItemType ItemType, uint64_t ItemID, unsigned char CustomizationScalar, unsigned char CustomizationColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateItemCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateItemCustomization"));
 
 	struct
 	{
@@ -7458,7 +7458,7 @@ void AWTLPlayerState::Server_UpdateItemCustomization(class AWTLNPCActor* NPC, EW
 
 void AWTLPlayerState::Server_UpdateCommissionItem(class AWTLNPCActor* NPC, EWTLItemType ItemType, uint64_t ItemID, float Price, int MinBuyCount, uint32_t CommissionDaysDelta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateCommissionItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateCommissionItem"));
 
 	struct
 	{
@@ -7493,7 +7493,7 @@ void AWTLPlayerState::Server_UpdateCommissionItem(class AWTLNPCActor* NPC, EWTLI
 
 void AWTLPlayerState::Server_UpdateClanStorageTab(class AWTLNPCActor* NPC, unsigned char TabIndex, unsigned char ImageIndex, const struct FString& TabName, TArray<uint64_t> CanPutClanPolicyGroups, TArray<uint64_t> CanTakeClanPolicyGroups)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateClanStorageTab");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateClanStorageTab"));
 
 	struct
 	{
@@ -7524,7 +7524,7 @@ void AWTLPlayerState::Server_UpdateClanStorageTab(class AWTLNPCActor* NPC, unsig
 
 void AWTLPlayerState::Server_UpdateClanPolicyGroup(uint64_t ClanPolicyGroupID, const struct FString& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateClanPolicyGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateClanPolicyGroup"));
 
 	struct
 	{
@@ -7551,7 +7551,7 @@ void AWTLPlayerState::Server_UpdateClanPolicyGroup(uint64_t ClanPolicyGroupID, c
 
 void AWTLPlayerState::Server_UpdateCharacterParameters(unsigned char Strength, unsigned char Dexterity, unsigned char Stamina, unsigned char Accuracy, unsigned char Intelligence, unsigned char Fortune)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UpdateCharacterParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UpdateCharacterParameters"));
 
 	struct
 	{
@@ -7581,7 +7581,7 @@ void AWTLPlayerState::Server_UpdateCharacterParameters(unsigned char Strength, u
 
 void AWTLPlayerState::Server_UnloadWeapon(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UnloadWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UnloadWeapon"));
 
 	struct
 	{
@@ -7601,7 +7601,7 @@ void AWTLPlayerState::Server_UnloadWeapon(uint64_t ItemID)
 
 void AWTLPlayerState::Server_UniteAllStorageItems(class AActor* StorageContentActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UniteAllStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UniteAllStorageItems"));
 
 	struct
 	{
@@ -7621,7 +7621,7 @@ void AWTLPlayerState::Server_UniteAllStorageItems(class AActor* StorageContentAc
 
 void AWTLPlayerState::Server_UniteAllItemsOfType(EWTLItemType ItemType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UniteAllItemsOfType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UniteAllItemsOfType"));
 
 	struct
 	{
@@ -7639,7 +7639,7 @@ void AWTLPlayerState::Server_UniteAllItemsOfType(EWTLItemType ItemType)
 
 void AWTLPlayerState::Server_UniteAllItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UniteAllItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UniteAllItems"));
 
 	struct
 	{
@@ -7658,7 +7658,7 @@ void AWTLPlayerState::Server_UniteAllItems()
 
 void AWTLPlayerState::Server_UniteAllClanStorageItems(class AWTLNPCActor* NPC, unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UniteAllClanStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UniteAllClanStorageItems"));
 
 	struct
 	{
@@ -7683,7 +7683,7 @@ void AWTLPlayerState::Server_UniteAllClanStorageItems(class AWTLNPCActor* NPC, u
 
 void AWTLPlayerState::Server_Unite2StorageItems(class AActor* StorageContentActor, EWTLItemType ItemType, uint64_t ItemID1, uint64_t ItemID2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_Unite2StorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_Unite2StorageItems"));
 
 	struct
 	{
@@ -7711,7 +7711,7 @@ void AWTLPlayerState::Server_Unite2StorageItems(class AActor* StorageContentActo
 
 void AWTLPlayerState::Server_Unite2InventoryItems(EWTLItemType ItemType, uint64_t ItemID1, uint64_t ItemID2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_Unite2InventoryItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_Unite2InventoryItems"));
 
 	struct
 	{
@@ -7739,7 +7739,7 @@ void AWTLPlayerState::Server_Unite2InventoryItems(EWTLItemType ItemType, uint64_
 
 void AWTLPlayerState::Server_Unite2ClanStorageItems(class AWTLNPCActor* NPC, unsigned char TabIndex, EWTLItemType ItemType, uint64_t ItemID1, uint64_t ItemID2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_Unite2ClanStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_Unite2ClanStorageItems"));
 
 	struct
 	{
@@ -7769,7 +7769,7 @@ void AWTLPlayerState::Server_Unite2ClanStorageItems(class AWTLNPCActor* NPC, uns
 
 void AWTLPlayerState::Server_UnequipStuffItem(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UnequipStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UnequipStuffItem"));
 
 	struct
 	{
@@ -7795,7 +7795,7 @@ void AWTLPlayerState::Server_UnequipStuffItem(EWTLItemType ItemType, uint64_t It
 
 void AWTLPlayerState::Server_UnequipItem(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_UnequipItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_UnequipItem"));
 
 	struct
 	{
@@ -7822,7 +7822,7 @@ void AWTLPlayerState::Server_UnequipItem(EWTLItemType ItemType, uint64_t ItemID,
 
 void AWTLPlayerState::Server_TakeMoneyFromClanStorage(class AWTLNPCActor* NPC, unsigned char TabIndex, int MoneyAmount, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_TakeMoneyFromClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_TakeMoneyFromClanStorage"));
 
 	struct
 	{
@@ -7848,7 +7848,7 @@ void AWTLPlayerState::Server_TakeMoneyFromClanStorage(class AWTLNPCActor* NPC, u
 
 void AWTLPlayerState::Server_TakeMoneyFromCharacterBalance(class AWTLNPCActor* NPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_TakeMoneyFromCharacterBalance");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_TakeMoneyFromCharacterBalance"));
 
 	struct
 	{
@@ -7869,7 +7869,7 @@ void AWTLPlayerState::Server_TakeMoneyFromCharacterBalance(class AWTLNPCActor* N
 
 void AWTLPlayerState::Server_TakeBulletinBoarQuest(class AWTLBulletinBoard* BulletinBoard, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_TakeBulletinBoarQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_TakeBulletinBoarQuest"));
 
 	struct
 	{
@@ -7891,7 +7891,7 @@ void AWTLPlayerState::Server_TakeBulletinBoarQuest(class AWTLBulletinBoard* Bull
 
 void AWTLPlayerState::Server_SynchronizeQuestStates(uint64_t ControlSum)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SynchronizeQuestStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SynchronizeQuestStates"));
 
 	struct
 	{
@@ -7913,7 +7913,7 @@ void AWTLPlayerState::Server_SynchronizeQuestStates(uint64_t ControlSum)
 
 void AWTLPlayerState::Server_SwapStorageItems(class AActor* StorageContentActor, unsigned char FromSlotNumber, unsigned char ToSlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SwapStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SwapStorageItems"));
 
 	struct
 	{
@@ -7938,7 +7938,7 @@ void AWTLPlayerState::Server_SwapStorageItems(class AActor* StorageContentActor,
 
 void AWTLPlayerState::Server_SwapInventoryItems(unsigned char FromSlotNumber, unsigned char ToSlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SwapInventoryItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SwapInventoryItems"));
 
 	struct
 	{
@@ -7963,7 +7963,7 @@ void AWTLPlayerState::Server_SwapInventoryItems(unsigned char FromSlotNumber, un
 
 void AWTLPlayerState::Server_SwapClanStorageItems(class AWTLNPCActor* NPC, unsigned char TabIndex, unsigned char FromSlotNumber, unsigned char ToSlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SwapClanStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SwapClanStorageItems"));
 
 	struct
 	{
@@ -7989,7 +7989,7 @@ void AWTLPlayerState::Server_SwapClanStorageItems(class AWTLNPCActor* NPC, unsig
 
 void AWTLPlayerState::Server_SwapArmorPlates(uint64_t ArmorItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SwapArmorPlates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SwapArmorPlates"));
 
 	struct
 	{
@@ -8011,7 +8011,7 @@ void AWTLPlayerState::Server_SwapArmorPlates(uint64_t ArmorItemID)
 
 void AWTLPlayerState::Server_SplitItem(EWTLItemType ItemType, uint64_t ItemID, int NewItemCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SplitItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SplitItem"));
 
 	struct
 	{
@@ -8035,7 +8035,7 @@ void AWTLPlayerState::Server_SplitItem(EWTLItemType ItemType, uint64_t ItemID, i
 
 void AWTLPlayerState::Server_SetPVPMode(bool PVPEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetPVPMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetPVPMode"));
 
 	struct
 	{
@@ -8055,7 +8055,7 @@ void AWTLPlayerState::Server_SetPVPMode(bool PVPEnabled)
 
 void AWTLPlayerState::Server_SetMoneyToBarterDeal(int MoneyAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetMoneyToBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetMoneyToBarterDeal"));
 
 	struct
 	{
@@ -8075,7 +8075,7 @@ void AWTLPlayerState::Server_SetMoneyToBarterDeal(int MoneyAmount)
 
 void AWTLPlayerState::Server_SetMailMessageRead(uint64_t MessageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetMailMessageRead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetMailMessageRead"));
 
 	struct
 	{
@@ -8098,7 +8098,7 @@ void AWTLPlayerState::Server_SetMailMessageRead(uint64_t MessageID)
 
 void AWTLPlayerState::Server_SetItemCustomizationName(EWTLItemType ItemType, uint64_t ItemID, uint64_t CustomizationItemID, const struct FString& CustomizationName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetItemCustomizationName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetItemCustomizationName"));
 
 	struct
 	{
@@ -8124,7 +8124,7 @@ void AWTLPlayerState::Server_SetItemCustomizationName(EWTLItemType ItemType, uin
 
 void AWTLPlayerState::Server_SetClanDeputyLeader(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetClanDeputyLeader");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetClanDeputyLeader"));
 
 	struct
 	{
@@ -8145,7 +8145,7 @@ void AWTLPlayerState::Server_SetClanDeputyLeader(uint64_t CharacterID)
 
 void AWTLPlayerState::Server_SetBarterDealAgreement(class AWTLCharacter* Character, bool AcceptState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetBarterDealAgreement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetBarterDealAgreement"));
 
 	struct
 	{
@@ -8167,7 +8167,7 @@ void AWTLPlayerState::Server_SetBarterDealAgreement(class AWTLCharacter* Charact
 
 void AWTLPlayerState::Server_SetActiveQuest(int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SetActiveQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SetActiveQuest"));
 
 	struct
 	{
@@ -8189,7 +8189,7 @@ void AWTLPlayerState::Server_SetActiveQuest(int QuestID)
 
 void AWTLPlayerState::Server_SendMoneyToCharacter(uint64_t CharacterID, int MoneyAmount, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SendMoneyToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SendMoneyToCharacter"));
 
 	struct
 	{
@@ -8218,7 +8218,7 @@ void AWTLPlayerState::Server_SendMoneyToCharacter(uint64_t CharacterID, int Mone
 
 void AWTLPlayerState::Server_SendMailPackage(class AWTLMailBox* MailBox, EWTLMailPackageDeliveryType DeliveryType, const struct FString& RecipientName, TArray<struct FWTLSellingItemInfo> Items, int MoneyAmount, const struct FString& MessageText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SendMailPackage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SendMailPackage"));
 
 	struct
 	{
@@ -8251,7 +8251,7 @@ void AWTLPlayerState::Server_SendMailPackage(class AWTLMailBox* MailBox, EWTLMai
 
 void AWTLPlayerState::Server_SendMailMessage(const struct FString& RecipientName, unsigned char Priority, const struct FString& Subject, const struct FString& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SendMailMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SendMailMessage"));
 
 	struct
 	{
@@ -8277,7 +8277,7 @@ void AWTLPlayerState::Server_SendMailMessage(const struct FString& RecipientName
 
 void AWTLPlayerState::Server_SendClanInviteToCharacter(const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SendClanInviteToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SendClanInviteToCharacter"));
 
 	struct
 	{
@@ -8298,7 +8298,7 @@ void AWTLPlayerState::Server_SendClanInviteToCharacter(const struct FString& Cha
 
 void AWTLPlayerState::Server_SendBarterDealRequest(uint64_t CharacterID, const struct FString& MessageText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SendBarterDealRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SendBarterDealRequest"));
 
 	struct
 	{
@@ -8321,7 +8321,7 @@ void AWTLPlayerState::Server_SendBarterDealRequest(uint64_t CharacterID, const s
 
 void AWTLPlayerState::Server_SellItems(class AActor* TradingActor, TArray<struct FWTLSellingItemInfo> SellingItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_SellItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_SellItems"));
 
 	struct
 	{
@@ -8343,7 +8343,7 @@ void AWTLPlayerState::Server_SellItems(class AActor* TradingActor, TArray<struct
 
 void AWTLPlayerState::Server_ReplicateBarterDeals(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ReplicateBarterDeals");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ReplicateBarterDeals"));
 
 	struct
 	{
@@ -8364,7 +8364,7 @@ void AWTLPlayerState::Server_ReplicateBarterDeals(class AWTLCharacter* Character
 
 void AWTLPlayerState::Server_RepairItems(class AWTLNPCActor* GunsmithNPC, TArray<struct FWTLIdentityItem> RepairItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RepairItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RepairItems"));
 
 	struct
 	{
@@ -8387,7 +8387,7 @@ void AWTLPlayerState::Server_RepairItems(class AWTLNPCActor* GunsmithNPC, TArray
 
 void AWTLPlayerState::Server_RemoveWeaponAttachmentFromSlot(uint64_t WeaponItemID, EWTLWeaponAttachmentSlotType SlotType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveWeaponAttachmentFromSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveWeaponAttachmentFromSlot"));
 
 	struct
 	{
@@ -8410,7 +8410,7 @@ void AWTLPlayerState::Server_RemoveWeaponAttachmentFromSlot(uint64_t WeaponItemI
 
 void AWTLPlayerState::Server_RemoveWeaponAttachment(uint64_t WeaponItemID, uint16_t ItemTypeID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveWeaponAttachment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveWeaponAttachment"));
 
 	struct
 	{
@@ -8432,7 +8432,7 @@ void AWTLPlayerState::Server_RemoveWeaponAttachment(uint64_t WeaponItemID, uint1
 
 void AWTLPlayerState::Server_RemoveSkillFromCharacter(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveSkillFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveSkillFromCharacter"));
 
 	struct
 	{
@@ -8452,7 +8452,7 @@ void AWTLPlayerState::Server_RemoveSkillFromCharacter(uint16_t SkillID)
 
 void AWTLPlayerState::Server_RemovePDAModule(uint16_t ModuleID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemovePDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemovePDAModule"));
 
 	struct
 	{
@@ -8472,7 +8472,7 @@ void AWTLPlayerState::Server_RemovePDAModule(uint16_t ModuleID)
 
 void AWTLPlayerState::Server_RemoveItemFromContainer(uint64_t ContainerItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveItemFromContainer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveItemFromContainer"));
 
 	struct
 	{
@@ -8494,7 +8494,7 @@ void AWTLPlayerState::Server_RemoveItemFromContainer(uint64_t ContainerItemID)
 
 void AWTLPlayerState::Server_RemoveItemFromCommission(class AWTLNPCActor* NPC, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveItemFromCommission");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveItemFromCommission"));
 
 	struct
 	{
@@ -8519,7 +8519,7 @@ void AWTLPlayerState::Server_RemoveItemFromCommission(class AWTLNPCActor* NPC, E
 
 void AWTLPlayerState::Server_RemoveItemFromBarterDeal(EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveItemFromBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveItemFromBarterDeal"));
 
 	struct
 	{
@@ -8541,7 +8541,7 @@ void AWTLPlayerState::Server_RemoveItemFromBarterDeal(EWTLItemType ItemType, uin
 
 void AWTLPlayerState::Server_RemoveContact(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveContact");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveContact"));
 
 	struct
 	{
@@ -8561,7 +8561,7 @@ void AWTLPlayerState::Server_RemoveContact(uint64_t CharacterID)
 
 void AWTLPlayerState::Server_RemoveClanDeputyLeader(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveClanDeputyLeader");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveClanDeputyLeader"));
 
 	struct
 	{
@@ -8583,7 +8583,7 @@ void AWTLPlayerState::Server_RemoveClanDeputyLeader(uint64_t CharacterID)
 
 void AWTLPlayerState::Server_RemoveArmorPlate(uint64_t ArmorItemID, EWTLArmorPlateType ArmorPlateType, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveArmorPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveArmorPlate"));
 
 	struct
 	{
@@ -8607,7 +8607,7 @@ void AWTLPlayerState::Server_RemoveArmorPlate(uint64_t ArmorItemID, EWTLArmorPla
 
 void AWTLPlayerState::Server_RemoveAllWeaponAttachments(uint64_t WeaponItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveAllWeaponAttachments");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveAllWeaponAttachments"));
 
 	struct
 	{
@@ -8627,7 +8627,7 @@ void AWTLPlayerState::Server_RemoveAllWeaponAttachments(uint64_t WeaponItemID)
 
 void AWTLPlayerState::Server_RemoveAllArmorPlates(uint64_t ArmorItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RemoveAllArmorPlates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RemoveAllArmorPlates"));
 
 	struct
 	{
@@ -8647,7 +8647,7 @@ void AWTLPlayerState::Server_RemoveAllArmorPlates(uint64_t ArmorItemID)
 
 void AWTLPlayerState::Server_RejectBarterDealRequest(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_RejectBarterDealRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RejectBarterDealRequest"));
 
 	struct
 	{
@@ -8668,7 +8668,7 @@ void AWTLPlayerState::Server_RejectBarterDealRequest(uint64_t CharacterID)
 
 void AWTLPlayerState::Server_ReceiveMailPackage(class AWTLMailBox* MailBox, uint64_t MailPackageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ReceiveMailPackage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ReceiveMailPackage"));
 
 	struct
 	{
@@ -8693,7 +8693,7 @@ void AWTLPlayerState::Server_ReceiveMailPackage(class AWTLMailBox* MailBox, uint
 
 void AWTLPlayerState::Server_PutMoneyToClanStorage(class AWTLNPCActor* NPC, unsigned char TabIndex, int MoneyAmount, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PutMoneyToClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PutMoneyToClanStorage"));
 
 	struct
 	{
@@ -8724,7 +8724,7 @@ void AWTLPlayerState::Server_PutMoneyToClanStorage(class AWTLNPCActor* NPC, unsi
 
 void AWTLPlayerState::Server_PutItemOnCommission(class AWTLNPCActor* NPC, EWTLItemType ItemType, uint64_t ItemID, float Price, int MinBuyCount, int CommissionDays)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PutItemOnCommission");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PutItemOnCommission"));
 
 	struct
 	{
@@ -8758,7 +8758,7 @@ void AWTLPlayerState::Server_PutItemOnCommission(class AWTLNPCActor* NPC, EWTLIt
 
 void AWTLPlayerState::Server_PlaceItemToStorageContentActor(class AActor* StorageContentActor, EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PlaceItemToStorageContentActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PlaceItemToStorageContentActor"));
 
 	struct
 	{
@@ -8792,7 +8792,7 @@ void AWTLPlayerState::Server_PlaceItemToStorageContentActor(class AActor* Storag
 
 void AWTLPlayerState::Server_PlaceItemToClanStorage(class AWTLNPCActor* NPC, unsigned char TabIndex, EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber, int Count, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PlaceItemToClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PlaceItemToClanStorage"));
 
 	struct
 	{
@@ -8826,7 +8826,7 @@ void AWTLPlayerState::Server_PlaceItemToClanStorage(class AWTLNPCActor* NPC, uns
 
 void AWTLPlayerState::Server_PlaceItemInContainer(uint64_t ContainerItemID, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PlaceItemInContainer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PlaceItemInContainer"));
 
 	struct
 	{
@@ -8854,7 +8854,7 @@ void AWTLPlayerState::Server_PlaceItemInContainer(uint64_t ContainerItemID, EWTL
 
 void AWTLPlayerState::Server_PickupItemFromStorageContentActor(class AActor* StorageContentActor, EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PickupItemFromStorageContentActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PickupItemFromStorageContentActor"));
 
 	struct
 	{
@@ -8888,7 +8888,7 @@ void AWTLPlayerState::Server_PickupItemFromStorageContentActor(class AActor* Sto
 
 void AWTLPlayerState::Server_PickupItemFromClanStorage(class AWTLNPCActor* NPC, unsigned char TabIndex, EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber, int Count, const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PickupItemFromClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PickupItemFromClanStorage"));
 
 	struct
 	{
@@ -8920,7 +8920,7 @@ void AWTLPlayerState::Server_PickupItemFromClanStorage(class AWTLNPCActor* NPC, 
 
 void AWTLPlayerState::Server_PickupAllItemsFromStorageContentActor(class AActor* StorageContentActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_PickupAllItemsFromStorageContentActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_PickupAllItemsFromStorageContentActor"));
 
 	struct
 	{
@@ -8940,7 +8940,7 @@ void AWTLPlayerState::Server_PickupAllItemsFromStorageContentActor(class AActor*
 
 void AWTLPlayerState::Server_OptimizeStorageItems(class AActor* StorageContentActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_OptimizeStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_OptimizeStorageItems"));
 
 	struct
 	{
@@ -8958,7 +8958,7 @@ void AWTLPlayerState::Server_OptimizeStorageItems(class AActor* StorageContentAc
 
 void AWTLPlayerState::Server_OptimizeItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_OptimizeItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_OptimizeItems"));
 
 	struct
 	{
@@ -8977,7 +8977,7 @@ void AWTLPlayerState::Server_OptimizeItems()
 
 void AWTLPlayerState::Server_OptimizeClanStorageItems(class AWTLNPCActor* NPC, unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_OptimizeClanStorageItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_OptimizeClanStorageItems"));
 
 	struct
 	{
@@ -9001,7 +9001,7 @@ void AWTLPlayerState::Server_OptimizeClanStorageItems(class AWTLNPCActor* NPC, u
 
 void AWTLPlayerState::Server_MoveStuffItem(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_MoveStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_MoveStuffItem"));
 
 	struct
 	{
@@ -9028,7 +9028,7 @@ void AWTLPlayerState::Server_MoveStuffItem(EWTLItemType ItemType, uint64_t ItemI
 
 void AWTLPlayerState::Server_MoveStorageItemToSlot(class AActor* StorageContentActor, EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_MoveStorageItemToSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_MoveStorageItemToSlot"));
 
 	struct
 	{
@@ -9056,7 +9056,7 @@ void AWTLPlayerState::Server_MoveStorageItemToSlot(class AActor* StorageContentA
 
 void AWTLPlayerState::Server_MoveInventoryItemToSlot(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_MoveInventoryItemToSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_MoveInventoryItemToSlot"));
 
 	struct
 	{
@@ -9085,7 +9085,7 @@ void AWTLPlayerState::Server_MoveInventoryItemToSlot(EWTLItemType ItemType, uint
 
 void AWTLPlayerState::Server_MoveClanStorageItemToSlot(class AWTLNPCActor* NPC, unsigned char TabIndex, EWTLItemType ItemType, uint64_t ItemID, unsigned char NewTabIndex, unsigned char NewSlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_MoveClanStorageItemToSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_MoveClanStorageItemToSlot"));
 
 	struct
 	{
@@ -9117,7 +9117,7 @@ void AWTLPlayerState::Server_MoveClanStorageItemToSlot(class AWTLNPCActor* NPC, 
 
 void AWTLPlayerState::Server_MakeExtractFromItems(uint64_t ExtractorItemID, uint64_t ContainerItemID, TArray<struct FWTLExtractItemInfo> ExtractItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_MakeExtractFromItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_MakeExtractFromItems"));
 
 	struct
 	{
@@ -9142,7 +9142,7 @@ void AWTLPlayerState::Server_MakeExtractFromItems(uint64_t ExtractorItemID, uint
 
 void AWTLPlayerState::Server_LoadWeapon(uint64_t WeaponItemID, uint64_t AmmoItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_LoadWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_LoadWeapon"));
 
 	struct
 	{
@@ -9164,7 +9164,7 @@ void AWTLPlayerState::Server_LoadWeapon(uint64_t WeaponItemID, uint64_t AmmoItem
 
 void AWTLPlayerState::Server_LoadMailMessageText(uint64_t MessageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_LoadMailMessageText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_LoadMailMessageText"));
 
 	struct
 	{
@@ -9184,7 +9184,7 @@ void AWTLPlayerState::Server_LoadMailMessageText(uint64_t MessageID)
 
 void AWTLPlayerState::Server_LeaveFaction(bool ForceExclude)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_LeaveFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_LeaveFaction"));
 
 	struct
 	{
@@ -9202,7 +9202,7 @@ void AWTLPlayerState::Server_LeaveFaction(bool ForceExclude)
 
 void AWTLPlayerState::Server_LeaveClan()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_LeaveClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_LeaveClan"));
 
 	struct
 	{
@@ -9220,7 +9220,7 @@ void AWTLPlayerState::Server_LeaveClan()
 
 void AWTLPlayerState::Server_InstallPDAModule(uint64_t ModuleItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_InstallPDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_InstallPDAModule"));
 
 	struct
 	{
@@ -9242,7 +9242,7 @@ void AWTLPlayerState::Server_InstallPDAModule(uint64_t ModuleItemID)
 
 void AWTLPlayerState::Server_InstallArmorPlate(uint64_t ArmorItemID, EWTLArmorPlateType ArmorPlateType, uint64_t ArmorPlateItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_InstallArmorPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_InstallArmorPlate"));
 
 	struct
 	{
@@ -9266,7 +9266,7 @@ void AWTLPlayerState::Server_InstallArmorPlate(uint64_t ArmorItemID, EWTLArmorPl
 
 void AWTLPlayerState::Server_GiveSkillToCharacter(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GiveSkillToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GiveSkillToCharacter"));
 
 	struct
 	{
@@ -9286,7 +9286,7 @@ void AWTLPlayerState::Server_GiveSkillToCharacter(uint16_t SkillID)
 
 void AWTLPlayerState::Server_GetSkill(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetSkill");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetSkill"));
 
 	struct
 	{
@@ -9306,7 +9306,7 @@ void AWTLPlayerState::Server_GetSkill(uint16_t SkillID)
 
 void AWTLPlayerState::Server_GetMailPackageList(class AWTLMailBox* MailBox)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetMailPackageList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetMailPackageList"));
 
 	struct
 	{
@@ -9326,7 +9326,7 @@ void AWTLPlayerState::Server_GetMailPackageList(class AWTLMailBox* MailBox)
 
 void AWTLPlayerState::Server_GetFactionLeaders(EWTLFaction Faction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetFactionLeaders");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetFactionLeaders"));
 
 	struct
 	{
@@ -9346,7 +9346,7 @@ void AWTLPlayerState::Server_GetFactionLeaders(EWTLFaction Faction)
 
 void AWTLPlayerState::Server_GetCommissionSellItemsTypesCount(class AActor* TradingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetCommissionSellItemsTypesCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetCommissionSellItemsTypesCount"));
 
 	struct
 	{
@@ -9372,7 +9372,7 @@ void AWTLPlayerState::Server_GetCommissionSellItemsTypesCount(class AActor* Trad
 
 void AWTLPlayerState::Server_GetCommissionSellItemsPage(class AActor* TradingActor, EWTLItemType ItemType, int PageIndex, int ItemsPerPage, int SortType, int FilterValue1, int FilterValue2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetCommissionSellItemsPage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetCommissionSellItemsPage"));
 
 	struct
 	{
@@ -9410,7 +9410,7 @@ void AWTLPlayerState::Server_GetCommissionSellItemsPage(class AActor* TradingAct
 
 void AWTLPlayerState::Server_GetClanStorageMoneyLogPage(class AActor* ClanStorageActor, int PageIndex, int RecordsPerPage, int SortType, EWTLClanStorageMoneyOperationType OperationTypeFilter, const struct FString& CharacterNameFilter, int TabIndexFilter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetClanStorageMoneyLogPage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetClanStorageMoneyLogPage"));
 
 	struct
 	{
@@ -9448,7 +9448,7 @@ void AWTLPlayerState::Server_GetClanStorageMoneyLogPage(class AActor* ClanStorag
 
 void AWTLPlayerState::Server_GetClanStorageItemsLogPage(class AActor* ClanStorageActor, int PageIndex, int RecordsPerPage, int SortType, EWTLClanStorageItemOperationType OperationTypeFilter, const struct FString& CharacterNameFilter, int TabIndexFilter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_GetClanStorageItemsLogPage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_GetClanStorageItemsLogPage"));
 
 	struct
 	{
@@ -9482,7 +9482,7 @@ void AWTLPlayerState::Server_GetClanStorageItemsLogPage(class AActor* ClanStorag
 
 void AWTLPlayerState::Server_EquipStuffItem(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_EquipStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_EquipStuffItem"));
 
 	struct
 	{
@@ -9508,7 +9508,7 @@ void AWTLPlayerState::Server_EquipStuffItem(EWTLItemType ItemType, uint64_t Item
 
 void AWTLPlayerState::Server_EquipItem(EWTLItemType ItemType, uint64_t ItemID, EWTLBodyPart BodyPart)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_EquipItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_EquipItem"));
 
 	struct
 	{
@@ -9533,7 +9533,7 @@ void AWTLPlayerState::Server_EquipItem(EWTLItemType ItemType, uint64_t ItemID, E
 
 void AWTLPlayerState::Server_DropItem(EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DropItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DropItem"));
 
 	struct
 	{
@@ -9555,7 +9555,7 @@ void AWTLPlayerState::Server_DropItem(EWTLItemType ItemType, uint64_t ItemID)
 
 void AWTLPlayerState::Server_DismissCharacterFromClan(const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DismissCharacterFromClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DismissCharacterFromClan"));
 
 	struct
 	{
@@ -9573,7 +9573,7 @@ void AWTLPlayerState::Server_DismissCharacterFromClan(const struct FString& Char
 
 void AWTLPlayerState::Server_DestroyStash()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DestroyStash");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DestroyStash"));
 
 	struct
 	{
@@ -9592,7 +9592,7 @@ void AWTLPlayerState::Server_DestroyStash()
 
 void AWTLPlayerState::Server_DestroyItem(EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DestroyItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DestroyItem"));
 
 	struct
 	{
@@ -9614,7 +9614,7 @@ void AWTLPlayerState::Server_DestroyItem(EWTLItemType ItemType, uint64_t ItemID)
 
 void AWTLPlayerState::Server_DeleteMailMessages(TArray<uint64_t> MessageIDs)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DeleteMailMessages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DeleteMailMessages"));
 
 	struct
 	{
@@ -9634,7 +9634,7 @@ void AWTLPlayerState::Server_DeleteMailMessages(TArray<uint64_t> MessageIDs)
 
 void AWTLPlayerState::Server_DeleteMailMessage(uint64_t MessageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DeleteMailMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DeleteMailMessage"));
 
 	struct
 	{
@@ -9654,7 +9654,7 @@ void AWTLPlayerState::Server_DeleteMailMessage(uint64_t MessageID)
 
 void AWTLPlayerState::Server_DeleteClanPolicyGroup(uint64_t ClanPolicyGroupID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DeleteClanPolicyGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DeleteClanPolicyGroup"));
 
 	struct
 	{
@@ -9672,7 +9672,7 @@ void AWTLPlayerState::Server_DeleteClanPolicyGroup(uint64_t ClanPolicyGroupID)
 
 void AWTLPlayerState::Server_DeleteAllMailMessages()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_DeleteAllMailMessages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_DeleteAllMailMessages"));
 
 	struct
 	{
@@ -9691,7 +9691,7 @@ void AWTLPlayerState::Server_DeleteAllMailMessages()
 
 void AWTLPlayerState::Server_CreateCraftObjectItem(class AWTLCraftObject* CraftObject, int CraftItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CreateCraftObjectItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CreateCraftObjectItem"));
 
 	struct
 	{
@@ -9713,7 +9713,7 @@ void AWTLPlayerState::Server_CreateCraftObjectItem(class AWTLCraftObject* CraftO
 
 void AWTLPlayerState::Server_CreateCraftItem(int CraftItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CreateCraftItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CreateCraftItem"));
 
 	struct
 	{
@@ -9733,7 +9733,7 @@ void AWTLPlayerState::Server_CreateCraftItem(int CraftItemID)
 
 void AWTLPlayerState::Server_CreateClanPolicyGroup(const struct FString& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CreateClanPolicyGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CreateClanPolicyGroup"));
 
 	struct
 	{
@@ -9755,7 +9755,7 @@ void AWTLPlayerState::Server_CreateClanPolicyGroup(const struct FString& Name)
 
 void AWTLPlayerState::Server_ConsumeSteamInventoryItem(class AWTLNPCActor* NPCActor, uint64_t UserSteamID, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ConsumeSteamInventoryItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ConsumeSteamInventoryItem"));
 
 	struct
 	{
@@ -9779,7 +9779,7 @@ void AWTLPlayerState::Server_ConsumeSteamInventoryItem(class AWTLNPCActor* NPCAc
 
 void AWTLPlayerState::Server_CombineInventoryItems(TArray<struct FWTLIdentityItem> Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CombineInventoryItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CombineInventoryItems"));
 
 	struct
 	{
@@ -9799,7 +9799,7 @@ void AWTLPlayerState::Server_CombineInventoryItems(TArray<struct FWTLIdentityIte
 
 void AWTLPlayerState::Server_ClearFastAccessSlot(unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ClearFastAccessSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ClearFastAccessSlot"));
 
 	struct
 	{
@@ -9817,7 +9817,7 @@ void AWTLPlayerState::Server_ClearFastAccessSlot(unsigned char SlotNumber)
 
 void AWTLPlayerState::Server_ClearCharacterMapMarkers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ClearCharacterMapMarkers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ClearCharacterMapMarkers"));
 
 	struct
 	{
@@ -9836,7 +9836,7 @@ void AWTLPlayerState::Server_ClearCharacterMapMarkers()
 
 void AWTLPlayerState::Server_ChargeStuffItem(uint64_t StuffItemID, uint64_t EnergySourceItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ChargeStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ChargeStuffItem"));
 
 	struct
 	{
@@ -9858,7 +9858,7 @@ void AWTLPlayerState::Server_ChargeStuffItem(uint64_t StuffItemID, uint64_t Ener
 
 void AWTLPlayerState::Server_ChangeCharacterSex(EWTLSex NewSex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ChangeCharacterSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ChangeCharacterSex"));
 
 	struct
 	{
@@ -9876,7 +9876,7 @@ void AWTLPlayerState::Server_ChangeCharacterSex(EWTLSex NewSex)
 
 void AWTLPlayerState::Server_CancelBarterDealRequest()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CancelBarterDealRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CancelBarterDealRequest"));
 
 	struct
 	{
@@ -9892,7 +9892,7 @@ void AWTLPlayerState::Server_CancelBarterDealRequest()
 
 void AWTLPlayerState::Server_CancelBarterDeal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_CancelBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_CancelBarterDeal"));
 
 	struct
 	{
@@ -9913,7 +9913,7 @@ void AWTLPlayerState::Server_CancelBarterDeal()
 
 void AWTLPlayerState::Server_BuyItem(class AActor* TradingActor, EWTLItemType ItemType, uint64_t ItemID, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_BuyItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_BuyItem"));
 
 	struct
 	{
@@ -9939,7 +9939,7 @@ void AWTLPlayerState::Server_BuyItem(class AActor* TradingActor, EWTLItemType It
 
 void AWTLPlayerState::Server_BreakWeaponItemToParts(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_BreakWeaponItemToParts");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_BreakWeaponItemToParts"));
 
 	struct
 	{
@@ -9961,7 +9961,7 @@ void AWTLPlayerState::Server_BreakWeaponItemToParts(uint64_t ItemID)
 
 void AWTLPlayerState::Server_AssignItemToFastAccessSlot(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AssignItemToFastAccessSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AssignItemToFastAccessSlot"));
 
 	struct
 	{
@@ -9986,7 +9986,7 @@ void AWTLPlayerState::Server_AssignItemToFastAccessSlot(EWTLItemType ItemType, u
 
 void AWTLPlayerState::Server_AssignClanPolicyGroupToClanMember(uint64_t ClanMemberID, uint64_t ClanPolicyGroupID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AssignClanPolicyGroupToClanMember");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AssignClanPolicyGroupToClanMember"));
 
 	struct
 	{
@@ -10009,7 +10009,7 @@ void AWTLPlayerState::Server_AssignClanPolicyGroupToClanMember(uint64_t ClanMemb
 
 void AWTLPlayerState::Server_ApplyWeaponAttachment(uint64_t WeaponItemID, uint64_t AttachmentItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_ApplyWeaponAttachment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ApplyWeaponAttachment"));
 
 	struct
 	{
@@ -10034,7 +10034,7 @@ void AWTLPlayerState::Server_ApplyWeaponAttachment(uint64_t WeaponItemID, uint64
 
 void AWTLPlayerState::Server_AddItemToCommissionItem(class AWTLNPCActor* NPC, EWTLItemType CommissionItemType, uint64_t CommissionItemID, uint64_t NewItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AddItemToCommissionItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AddItemToCommissionItem"));
 
 	struct
 	{
@@ -10062,7 +10062,7 @@ void AWTLPlayerState::Server_AddItemToCommissionItem(class AWTLNPCActor* NPC, EW
 
 void AWTLPlayerState::Server_AddItemToBarterDeal(EWTLItemType ItemType, uint64_t ItemID, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AddItemToBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AddItemToBarterDeal"));
 
 	struct
 	{
@@ -10088,7 +10088,7 @@ void AWTLPlayerState::Server_AddItemToBarterDeal(EWTLItemType ItemType, uint64_t
 
 void AWTLPlayerState::Server_AddItemsToSteamInventory(class AWTLNPCActor* NPCActor, uint64_t UserSteamID, TArray<struct FWTLIdentityItem> ItemsToAdd)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AddItemsToSteamInventory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AddItemsToSteamInventory"));
 
 	struct
 	{
@@ -10113,7 +10113,7 @@ void AWTLPlayerState::Server_AddItemsToSteamInventory(class AWTLNPCActor* NPCAct
 
 void AWTLPlayerState::Server_AddContact(uint64_t CharacterID, const struct FString& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AddContact");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AddContact"));
 
 	struct
 	{
@@ -10135,7 +10135,7 @@ void AWTLPlayerState::Server_AddContact(uint64_t CharacterID, const struct FStri
 
 void AWTLPlayerState::Server_AcceptClanInvite(uint16_t ClanID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AcceptClanInvite");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AcceptClanInvite"));
 
 	struct
 	{
@@ -10155,7 +10155,7 @@ void AWTLPlayerState::Server_AcceptClanInvite(uint16_t ClanID)
 
 void AWTLPlayerState::Server_AcceptBarterRequest(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AcceptBarterRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AcceptBarterRequest"));
 
 	struct
 	{
@@ -10173,7 +10173,7 @@ void AWTLPlayerState::Server_AcceptBarterRequest(uint64_t CharacterID)
 
 void AWTLPlayerState::Server_AcceptBarterDeal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AcceptBarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AcceptBarterDeal"));
 
 	struct
 	{
@@ -10191,7 +10191,7 @@ void AWTLPlayerState::Server_AcceptBarterDeal()
 
 void AWTLPlayerState::Server_AbandonQuest(int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Server_AbandonQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_AbandonQuest"));
 
 	struct
 	{
@@ -10209,7 +10209,7 @@ void AWTLPlayerState::Server_AbandonQuest(int QuestID)
 
 void AWTLPlayerState::OnRep_ShortCharacterInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_ShortCharacterInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_ShortCharacterInfo"));
 
 	struct
 	{
@@ -10225,7 +10225,7 @@ void AWTLPlayerState::OnRep_ShortCharacterInfo()
 
 void AWTLPlayerState::OnRep_PrivateStorages()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_PrivateStorages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_PrivateStorages"));
 
 	struct
 	{
@@ -10241,7 +10241,7 @@ void AWTLPlayerState::OnRep_PrivateStorages()
 
 void AWTLPlayerState::OnRep_MaxInventoryWeight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_MaxInventoryWeight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_MaxInventoryWeight"));
 
 	struct
 	{
@@ -10257,7 +10257,7 @@ void AWTLPlayerState::OnRep_MaxInventoryWeight()
 
 void AWTLPlayerState::OnRep_MailStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_MailStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_MailStorage"));
 
 	struct
 	{
@@ -10273,7 +10273,7 @@ void AWTLPlayerState::OnRep_MailStorage()
 
 void AWTLPlayerState::OnRep_LastStashLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_LastStashLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_LastStashLocation"));
 
 	struct
 	{
@@ -10289,7 +10289,7 @@ void AWTLPlayerState::OnRep_LastStashLocation()
 
 void AWTLPlayerState::OnRep_LastOperationResult()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_LastOperationResult");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_LastOperationResult"));
 
 	struct
 	{
@@ -10305,7 +10305,7 @@ void AWTLPlayerState::OnRep_LastOperationResult()
 
 void AWTLPlayerState::OnRep_LastDeathLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_LastDeathLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_LastDeathLocation"));
 
 	struct
 	{
@@ -10321,7 +10321,7 @@ void AWTLPlayerState::OnRep_LastDeathLocation()
 
 void AWTLPlayerState::OnRep_LastCampfireLocation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_LastCampfireLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_LastCampfireLocation"));
 
 	struct
 	{
@@ -10337,7 +10337,7 @@ void AWTLPlayerState::OnRep_LastCampfireLocation()
 
 void AWTLPlayerState::OnRep_InventoryWeight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_InventoryWeight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_InventoryWeight"));
 
 	struct
 	{
@@ -10353,7 +10353,7 @@ void AWTLPlayerState::OnRep_InventoryWeight()
 
 void AWTLPlayerState::OnRep_CraftObjectStates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_CraftObjectStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_CraftObjectStates"));
 
 	struct
 	{
@@ -10369,7 +10369,7 @@ void AWTLPlayerState::OnRep_CraftObjectStates()
 
 void AWTLPlayerState::OnRep_CommissionStorages()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_CommissionStorages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_CommissionStorages"));
 
 	struct
 	{
@@ -10385,7 +10385,7 @@ void AWTLPlayerState::OnRep_CommissionStorages()
 
 void AWTLPlayerState::OnRep_ClanStorages()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_ClanStorages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_ClanStorages"));
 
 	struct
 	{
@@ -10401,7 +10401,7 @@ void AWTLPlayerState::OnRep_ClanStorages()
 
 void AWTLPlayerState::OnRep_ClanPolicyGroups()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_ClanPolicyGroups");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_ClanPolicyGroups"));
 
 	struct
 	{
@@ -10417,7 +10417,7 @@ void AWTLPlayerState::OnRep_ClanPolicyGroups()
 
 void AWTLPlayerState::OnRep_ClanMembers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_ClanMembers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_ClanMembers"));
 
 	struct
 	{
@@ -10433,7 +10433,7 @@ void AWTLPlayerState::OnRep_ClanMembers()
 
 void AWTLPlayerState::OnRep_CharacterInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_CharacterInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_CharacterInfo"));
 
 	struct
 	{
@@ -10449,7 +10449,7 @@ void AWTLPlayerState::OnRep_CharacterInfo()
 
 void AWTLPlayerState::OnRep_CharacterCurrentState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_CharacterCurrentState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_CharacterCurrentState"));
 
 	struct
 	{
@@ -10465,7 +10465,7 @@ void AWTLPlayerState::OnRep_CharacterCurrentState()
 
 void AWTLPlayerState::OnRep_BarterDeal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.OnRep_BarterDeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.OnRep_BarterDeal"));
 
 	struct
 	{
@@ -10483,7 +10483,7 @@ void AWTLPlayerState::OnRep_BarterDeal()
 
 void AWTLPlayerState::Client_UseModificationKitResult(bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UseModificationKitResult");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UseModificationKitResult"));
 
 	struct
 	{
@@ -10506,7 +10506,7 @@ void AWTLPlayerState::Client_UseModificationKitResult(bool Success)
 
 void AWTLPlayerState::Client_UpdatePrivateStorageItem(uint32_t NPCID, uint64_t StorageID, EWTLItemType ItemType, TArray<unsigned char> ItemData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdatePrivateStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdatePrivateStorageItem"));
 
 	struct
 	{
@@ -10534,7 +10534,7 @@ void AWTLPlayerState::Client_UpdatePrivateStorageItem(uint32_t NPCID, uint64_t S
 
 void AWTLPlayerState::Client_UpdatePrivateStorage(uint32_t NPCID, uint64_t StorageID, unsigned char SlotCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdatePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdatePrivateStorage"));
 
 	struct
 	{
@@ -10556,7 +10556,7 @@ void AWTLPlayerState::Client_UpdatePrivateStorage(uint32_t NPCID, uint64_t Stora
 
 void AWTLPlayerState::Client_UpdateInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdateInventory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdateInventory"));
 
 	struct
 	{
@@ -10574,7 +10574,7 @@ void AWTLPlayerState::Client_UpdateInventory()
 
 void AWTLPlayerState::Client_UpdateFactionLeaders(TArray<struct FWTLFactionLeaderRecord> Leaders)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdateFactionLeaders");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdateFactionLeaders"));
 
 	struct
 	{
@@ -10599,7 +10599,7 @@ void AWTLPlayerState::Client_UpdateFactionLeaders(TArray<struct FWTLFactionLeade
 
 void AWTLPlayerState::Client_UpdateClanStorageTab(int NPCID, unsigned char TabIndex, unsigned char ImageIndex, const struct FString& TabName, TArray<uint64_t> CanPutClanPolicyGroups, TArray<uint64_t> CanTakeClanPolicyGroups)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdateClanStorageTab");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdateClanStorageTab"));
 
 	struct
 	{
@@ -10631,7 +10631,7 @@ void AWTLPlayerState::Client_UpdateClanStorageTab(int NPCID, unsigned char TabIn
 
 void AWTLPlayerState::Client_UpdateClanStorageMoney(int NPCID, unsigned char TabIndex, uint32_t MoneyAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdateClanStorageMoney");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdateClanStorageMoney"));
 
 	struct
 	{
@@ -10658,7 +10658,7 @@ void AWTLPlayerState::Client_UpdateClanStorageMoney(int NPCID, unsigned char Tab
 
 void AWTLPlayerState::Client_UpdateClanStorageItem(int NPCID, unsigned char TabIndex, EWTLItemType ItemType, TArray<unsigned char> ItemData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_UpdateClanStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdateClanStorageItem"));
 
 	struct
 	{
@@ -10684,7 +10684,7 @@ void AWTLPlayerState::Client_UpdateClanStorageItem(int NPCID, unsigned char TabI
 
 void AWTLPlayerState::Client_ShowWarningText(const struct FText& WarningText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowWarningText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowWarningText"));
 
 	struct
 	{
@@ -10704,7 +10704,7 @@ void AWTLPlayerState::Client_ShowWarningText(const struct FText& WarningText)
 
 void AWTLPlayerState::Client_ShowWarning(EWTLWarningTitleWidgetType WarningTitleWidgetType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowWarning");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowWarning"));
 
 	struct
 	{
@@ -10725,7 +10725,7 @@ void AWTLPlayerState::Client_ShowWarning(EWTLWarningTitleWidgetType WarningTitle
 
 void AWTLPlayerState::Client_ShowTutorialMessagesByIDs(TArray<uint16_t> TutorialMessagesIDs, bool IsIgnoreTutorialEnabling)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowTutorialMessagesByIDs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowTutorialMessagesByIDs"));
 
 	struct
 	{
@@ -10748,7 +10748,7 @@ void AWTLPlayerState::Client_ShowTutorialMessagesByIDs(TArray<uint16_t> Tutorial
 
 void AWTLPlayerState::Client_ShowTutorialMessages(TArray<EWTLTutorialMessage> TutorialMessages, bool IsIgnoreTutorialEnabling)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowTutorialMessages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowTutorialMessages"));
 
 	struct
 	{
@@ -10771,7 +10771,7 @@ void AWTLPlayerState::Client_ShowTutorialMessages(TArray<EWTLTutorialMessage> Tu
 
 void AWTLPlayerState::Client_ShowTutorialMessageByID(uint16_t TutorialMessageID, bool IsIgnoreTutorialEnabling)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowTutorialMessageByID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowTutorialMessageByID"));
 
 	struct
 	{
@@ -10794,7 +10794,7 @@ void AWTLPlayerState::Client_ShowTutorialMessageByID(uint16_t TutorialMessageID,
 
 void AWTLPlayerState::Client_ShowTutorialMessage(EWTLTutorialMessage TutorialMessage, bool IsIgnoreTutorialEnabling)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ShowTutorialMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ShowTutorialMessage"));
 
 	struct
 	{
@@ -10816,7 +10816,7 @@ void AWTLPlayerState::Client_ShowTutorialMessage(EWTLTutorialMessage TutorialMes
 
 void AWTLPlayerState::Client_SetQuestStates(TArray<struct FWTLCharacterQuestState> QuestStates)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_SetQuestStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_SetQuestStates"));
 
 	struct
 	{
@@ -10836,7 +10836,7 @@ void AWTLPlayerState::Client_SetQuestStates(TArray<struct FWTLCharacterQuestStat
 
 void AWTLPlayerState::Client_SetQuestState(const struct FWTLCharacterQuestState& QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_SetQuestState"));
 
 	struct
 	{
@@ -10857,7 +10857,7 @@ void AWTLPlayerState::Client_SetQuestState(const struct FWTLCharacterQuestState&
 
 void AWTLPlayerState::Client_SetQuestActive(int QuestID, bool Active)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_SetQuestActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_SetQuestActive"));
 
 	struct
 	{
@@ -10882,7 +10882,7 @@ void AWTLPlayerState::Client_SetQuestActive(int QuestID, bool Active)
 
 void AWTLPlayerState::Client_RemovePrivateStorageItem(uint32_t NPCID, uint64_t StorageID, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_RemovePrivateStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemovePrivateStorageItem"));
 
 	struct
 	{
@@ -10909,7 +10909,7 @@ void AWTLPlayerState::Client_RemovePrivateStorageItem(uint32_t NPCID, uint64_t S
 
 void AWTLPlayerState::Client_RemovePrivateStorage(uint32_t NPCID, uint64_t StorageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_RemovePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemovePrivateStorage"));
 
 	struct
 	{
@@ -10931,7 +10931,7 @@ void AWTLPlayerState::Client_RemovePrivateStorage(uint32_t NPCID, uint64_t Stora
 
 void AWTLPlayerState::Client_RemoveInventoryItems(TArray<struct FWTLIdentityItem> Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_RemoveInventoryItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemoveInventoryItems"));
 
 	struct
 	{
@@ -10954,7 +10954,7 @@ void AWTLPlayerState::Client_RemoveInventoryItems(TArray<struct FWTLIdentityItem
 
 void AWTLPlayerState::Client_RemoveClanStorageItem(int NPCID, unsigned char TabIndex, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_RemoveClanStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemoveClanStorageItem"));
 
 	struct
 	{
@@ -10980,7 +10980,7 @@ void AWTLPlayerState::Client_RemoveClanStorageItem(int NPCID, unsigned char TabI
 
 void AWTLPlayerState::Client_RemoveClanStorage(int NPCID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_RemoveClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemoveClanStorage"));
 
 	struct
 	{
@@ -10998,7 +10998,7 @@ void AWTLPlayerState::Client_RemoveClanStorage(int NPCID)
 
 void AWTLPlayerState::Client_OnMailPackageSent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_OnMailPackageSent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_OnMailPackageSent"));
 
 	struct
 	{
@@ -11016,7 +11016,7 @@ void AWTLPlayerState::Client_OnMailPackageSent()
 
 void AWTLPlayerState::Client_OnMailPackageReceived(uint64_t MailPackageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_OnMailPackageReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_OnMailPackageReceived"));
 
 	struct
 	{
@@ -11037,7 +11037,7 @@ void AWTLPlayerState::Client_OnMailPackageReceived(uint64_t MailPackageID)
 
 void AWTLPlayerState::Client_OnClanInviteReceived(uint16_t ClanID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_OnClanInviteReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_OnClanInviteReceived"));
 
 	struct
 	{
@@ -11061,7 +11061,7 @@ void AWTLPlayerState::Client_OnClanInviteReceived(uint16_t ClanID, const struct 
 
 void AWTLPlayerState::Client_OnAssignedItemToFastAccessSlot(EWTLItemType ItemType, uint64_t ItemID, unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_OnAssignedItemToFastAccessSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_OnAssignedItemToFastAccessSlot"));
 
 	struct
 	{
@@ -11085,7 +11085,7 @@ void AWTLPlayerState::Client_OnAssignedItemToFastAccessSlot(EWTLItemType ItemTyp
 
 void AWTLPlayerState::Client_MailPackageListResult(TArray<struct FWTLMailPackageRecord> MailPackages)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_MailPackageListResult");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_MailPackageListResult"));
 
 	struct
 	{
@@ -11103,7 +11103,7 @@ void AWTLPlayerState::Client_MailPackageListResult(TArray<struct FWTLMailPackage
 
 void AWTLPlayerState::Client_ClearQuests()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ClearQuests");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ClearQuests"));
 
 	struct
 	{
@@ -11123,7 +11123,7 @@ void AWTLPlayerState::Client_ClearQuests()
 
 void AWTLPlayerState::Client_ApplyPrivateStorageDelta(uint32_t NPCID, uint64_t StorageID, TArray<struct FWTLCharacterInventoryDeltaRecord> Records)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ApplyPrivateStorageDelta");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ApplyPrivateStorageDelta"));
 
 	struct
 	{
@@ -11147,7 +11147,7 @@ void AWTLPlayerState::Client_ApplyPrivateStorageDelta(uint32_t NPCID, uint64_t S
 
 void AWTLPlayerState::Client_ApplyInventoryDelta(TArray<struct FWTLCharacterInventoryDeltaRecord> Records)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_ApplyInventoryDelta");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_ApplyInventoryDelta"));
 
 	struct
 	{
@@ -11167,7 +11167,7 @@ void AWTLPlayerState::Client_ApplyInventoryDelta(TArray<struct FWTLCharacterInve
 
 void AWTLPlayerState::Client_AfterQuestObjectSpawnerUse(class AWTLQuestObjectSpawner* QuestObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AfterQuestObjectSpawnerUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AfterQuestObjectSpawnerUse"));
 
 	struct
 	{
@@ -11190,7 +11190,7 @@ void AWTLPlayerState::Client_AfterQuestObjectSpawnerUse(class AWTLQuestObjectSpa
 
 void AWTLPlayerState::Client_AddPrivateStorageItem(uint32_t NPCID, uint64_t StorageID, EWTLItemType ItemType, TArray<unsigned char> ItemData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AddPrivateStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AddPrivateStorageItem"));
 
 	struct
 	{
@@ -11216,7 +11216,7 @@ void AWTLPlayerState::Client_AddPrivateStorageItem(uint32_t NPCID, uint64_t Stor
 
 void AWTLPlayerState::Client_AddPrivateStorage(const struct FWTLPrivateStorage& PrivateStorage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AddPrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AddPrivateStorage"));
 
 	struct
 	{
@@ -11240,7 +11240,7 @@ void AWTLPlayerState::Client_AddPrivateStorage(const struct FWTLPrivateStorage& 
 
 void AWTLPlayerState::Client_AddMapMarker(int LocationID, unsigned char Type, const struct FVector& Position, const struct FString& Name, bool ShowOnMinimap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AddMapMarker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AddMapMarker"));
 
 	struct
 	{
@@ -11271,7 +11271,7 @@ void AWTLPlayerState::Client_AddMapMarker(int LocationID, unsigned char Type, co
 
 void AWTLPlayerState::Client_AddClanStorageItem(int NPCID, unsigned char TabIndex, EWTLItemType ItemType, TArray<unsigned char> ItemData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AddClanStorageItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AddClanStorageItem"));
 
 	struct
 	{
@@ -11297,7 +11297,7 @@ void AWTLPlayerState::Client_AddClanStorageItem(int NPCID, unsigned char TabInde
 
 void AWTLPlayerState::Client_AddClanStorage(const struct FWTLClanStorage& ClanStorage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlayerState.Client_AddClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_AddClanStorage"));
 
 	struct
 	{
@@ -11317,7 +11317,7 @@ void AWTLPlayerState::Client_AddClanStorage(const struct FWTLClanStorage& ClanSt
 
 void AWTLArenaPlayerState::Server_RemoveSelectedEquipmentSlot(unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.Server_RemoveSelectedEquipmentSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.Server_RemoveSelectedEquipmentSlot"));
 
 	struct
 	{
@@ -11337,7 +11337,7 @@ void AWTLArenaPlayerState::Server_RemoveSelectedEquipmentSlot(unsigned char Slot
 
 void AWTLArenaPlayerState::Server_RemoveSelectedEquipmentAt(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.Server_RemoveSelectedEquipmentAt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.Server_RemoveSelectedEquipmentAt"));
 
 	struct
 	{
@@ -11355,7 +11355,7 @@ void AWTLArenaPlayerState::Server_RemoveSelectedEquipmentAt(int Index)
 
 void AWTLArenaPlayerState::Server_ClearSelectedEquipment()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.Server_ClearSelectedEquipment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.Server_ClearSelectedEquipment"));
 
 	struct
 	{
@@ -11373,7 +11373,7 @@ void AWTLArenaPlayerState::Server_ClearSelectedEquipment()
 
 void AWTLArenaPlayerState::Server_AddSelectedEquipment(const struct FWTLArenaSelectedEquipmentItem& Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.Server_AddSelectedEquipment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.Server_AddSelectedEquipment"));
 
 	struct
 	{
@@ -11391,7 +11391,7 @@ void AWTLArenaPlayerState::Server_AddSelectedEquipment(const struct FWTLArenaSel
 
 void AWTLArenaPlayerState::OnRep_SelectedEquipment()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.OnRep_SelectedEquipment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.OnRep_SelectedEquipment"));
 
 	struct
 	{
@@ -11407,7 +11407,7 @@ void AWTLArenaPlayerState::OnRep_SelectedEquipment()
 
 void AWTLArenaPlayerState::OnRep_KillsCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.OnRep_KillsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.OnRep_KillsCount"));
 
 	struct
 	{
@@ -11425,7 +11425,7 @@ void AWTLArenaPlayerState::OnRep_KillsCount()
 
 void AWTLArenaPlayerState::OnRep_Faction(EWTLFaction Previous)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.OnRep_Faction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.OnRep_Faction"));
 
 	struct
 	{
@@ -11443,7 +11443,7 @@ void AWTLArenaPlayerState::OnRep_Faction(EWTLFaction Previous)
 
 void AWTLArenaPlayerState::OnRep_Experience()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.OnRep_Experience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.OnRep_Experience"));
 
 	struct
 	{
@@ -11459,7 +11459,7 @@ void AWTLArenaPlayerState::OnRep_Experience()
 
 void AWTLArenaPlayerState::OnRep_DeathsCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.OnRep_DeathsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.OnRep_DeathsCount"));
 
 	struct
 	{
@@ -11477,7 +11477,7 @@ void AWTLArenaPlayerState::OnRep_DeathsCount()
 
 bool AWTLArenaPlayerState::GetIsTeamLead()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.GetIsTeamLead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.GetIsTeamLead"));
 
 	struct
 	{
@@ -11498,7 +11498,7 @@ bool AWTLArenaPlayerState::GetIsTeamLead()
 
 EWTLFaction AWTLArenaPlayerState::GetFaction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaPlayerState.GetFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaPlayerState.GetFaction"));
 
 	struct
 	{
@@ -11517,7 +11517,7 @@ EWTLFaction AWTLArenaPlayerState::GetFaction()
 
 void AWTLArenaState::OnRep_MatchState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArenaState.OnRep_MatchState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArenaState.OnRep_MatchState"));
 
 	struct
 	{
@@ -11539,7 +11539,7 @@ void AWTLArenaState::OnRep_MatchState()
 
 void UWTLBPLibraryCharacter::TeleportCharacterToRandomPointInRange(class AWTLCharacter* Character, const struct FVector& OriginLocation, float MinRange, float MaxRange, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToRandomPointInRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToRandomPointInRange"));
 
 	struct
 	{
@@ -11572,7 +11572,7 @@ void UWTLBPLibraryCharacter::TeleportCharacterToRandomPointInRange(class AWTLCha
 
 void UWTLBPLibraryCharacter::TeleportCharacterToRandomPointArray(class AWTLCharacter* Character, TArray<struct FVector> Locations, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToRandomPointArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToRandomPointArray"));
 
 	struct
 	{
@@ -11601,7 +11601,7 @@ void UWTLBPLibraryCharacter::TeleportCharacterToRandomPointArray(class AWTLChara
 
 void UWTLBPLibraryCharacter::TeleportCharacterToPoint(class AWTLCharacter* Character, const struct FVector& Location, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TeleportCharacterToPoint"));
 
 	struct
 	{
@@ -11632,7 +11632,7 @@ void UWTLBPLibraryCharacter::TeleportCharacterToPoint(class AWTLCharacter* Chara
 
 void UWTLBPLibraryCharacter::TakeItemInContainerFromCharacter(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Count, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TakeItemInContainerFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TakeItemInContainerFromCharacter"));
 
 	struct
 	{
@@ -11666,7 +11666,7 @@ void UWTLBPLibraryCharacter::TakeItemInContainerFromCharacter(class AWTLCharacte
 
 void UWTLBPLibraryCharacter::TakeItemFromCharacter(class AWTLCharacter* Character, TArray<struct FWTLBPIdentityItemType> Items, bool CheckInContainers, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TakeItemFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TakeItemFromCharacter"));
 
 	struct
 	{
@@ -11698,7 +11698,7 @@ void UWTLBPLibraryCharacter::TakeItemFromCharacter(class AWTLCharacter* Characte
 
 void UWTLBPLibraryCharacter::TakeArtefactWithInteactiveObjectIDFromCharacter(class AWTLCharacter* Character, int ArtefactID, int InteractiveObjectID, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.TakeArtefactWithInteactiveObjectIDFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TakeArtefactWithInteactiveObjectIDFromCharacter"));
 
 	struct
 	{
@@ -11730,7 +11730,7 @@ void UWTLBPLibraryCharacter::TakeArtefactWithInteactiveObjectIDFromCharacter(cla
 
 void UWTLBPLibraryCharacter::SwitchCharacterSex(class AWTLCharacter* Character, int ArtefactID, int InteractiveObjectID, EWTLSex* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.SwitchCharacterSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.SwitchCharacterSex"));
 
 	struct
 	{
@@ -11761,7 +11761,7 @@ void UWTLBPLibraryCharacter::SwitchCharacterSex(class AWTLCharacter* Character, 
 
 void UWTLBPLibraryCharacter::SetCharacterReputation(class AWTLCharacter* Character, unsigned char Reputation, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.SetCharacterReputation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.SetCharacterReputation"));
 
 	struct
 	{
@@ -11789,7 +11789,7 @@ void UWTLBPLibraryCharacter::SetCharacterReputation(class AWTLCharacter* Charact
 
 void UWTLBPLibraryCharacter::KillCharacter(class AWTLCharacter* Character, class UClass* DamageTypeClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.KillCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.KillCharacter"));
 
 	struct
 	{
@@ -11813,7 +11813,7 @@ void UWTLBPLibraryCharacter::KillCharacter(class AWTLCharacter* Character, class
 
 void UWTLBPLibraryCharacter::IsCharacterHoldingBreath(class AWTLCharacter* Character, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.IsCharacterHoldingBreath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.IsCharacterHoldingBreath"));
 
 	struct
 	{
@@ -11840,7 +11840,7 @@ void UWTLBPLibraryCharacter::IsCharacterHoldingBreath(class AWTLCharacter* Chara
 
 void UWTLBPLibraryCharacter::InstallPDAModule(class AWTLCharacter* Character, int ModuleID, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.InstallPDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.InstallPDAModule"));
 
 	struct
 	{
@@ -11868,7 +11868,7 @@ void UWTLBPLibraryCharacter::InstallPDAModule(class AWTLCharacter* Character, in
 
 void UWTLBPLibraryCharacter::GiveExperienceToCharacter(class AWTLCharacter* Character, int ExperienceAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GiveExperienceToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GiveExperienceToCharacter"));
 
 	struct
 	{
@@ -11892,7 +11892,7 @@ void UWTLBPLibraryCharacter::GiveExperienceToCharacter(class AWTLCharacter* Char
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterStrength(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterStrength");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterStrength"));
 
 	struct
 	{
@@ -11917,7 +11917,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterStrength(class AWTLCharacter* 
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterStamina(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterStamina");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterStamina"));
 
 	struct
 	{
@@ -11944,7 +11944,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterStamina(class AWTLCharacter* C
 
 TArray<class AWTLCharacter*> UWTLBPLibraryCharacter::GetCharactersInRange(class UObject* WorldContextObject, const struct FVector& Origin, float Range)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharactersInRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharactersInRange"));
 
 	struct
 	{
@@ -11973,7 +11973,7 @@ TArray<class AWTLCharacter*> UWTLBPLibraryCharacter::GetCharactersInRange(class 
 
 EWTLSex UWTLBPLibraryCharacter::GetCharacterSex(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterSex"));
 
 	struct
 	{
@@ -11998,7 +11998,7 @@ EWTLSex UWTLBPLibraryCharacter::GetCharacterSex(class AWTLCharacter* Character)
 
 float UWTLBPLibraryCharacter::GetCharacterRepurtationPercent(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterRepurtationPercent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterRepurtationPercent"));
 
 	struct
 	{
@@ -12023,7 +12023,7 @@ float UWTLBPLibraryCharacter::GetCharacterRepurtationPercent(class AWTLCharacter
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterRepurtation(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterRepurtation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterRepurtation"));
 
 	struct
 	{
@@ -12048,7 +12048,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterRepurtation(class AWTLCharacte
 
 struct FString UWTLBPLibraryCharacter::GetCharacterName(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterName"));
 
 	struct
 	{
@@ -12073,7 +12073,7 @@ struct FString UWTLBPLibraryCharacter::GetCharacterName(class AWTLCharacter* Cha
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterLevel(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterLevel"));
 
 	struct
 	{
@@ -12098,7 +12098,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterLevel(class AWTLCharacter* Cha
 
 int UWTLBPLibraryCharacter::GetCharacterInventoryWeight(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterInventoryWeight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterInventoryWeight"));
 
 	struct
 	{
@@ -12123,7 +12123,7 @@ int UWTLBPLibraryCharacter::GetCharacterInventoryWeight(class AWTLCharacter* Cha
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterIntelligence(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterIntelligence");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterIntelligence"));
 
 	struct
 	{
@@ -12148,7 +12148,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterIntelligence(class AWTLCharact
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterFortune(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterFortune");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterFortune"));
 
 	struct
 	{
@@ -12173,7 +12173,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterFortune(class AWTLCharacter* C
 
 EWTLFaction UWTLBPLibraryCharacter::GetCharacterFaction(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterFaction"));
 
 	struct
 	{
@@ -12198,7 +12198,7 @@ EWTLFaction UWTLBPLibraryCharacter::GetCharacterFaction(class AWTLCharacter* Cha
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterDexterity(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterDexterity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterDexterity"));
 
 	struct
 	{
@@ -12223,7 +12223,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterDexterity(class AWTLCharacter*
 
 void UWTLBPLibraryCharacter::GetCharacterClanMemberType(class AWTLCharacter* Character, EWTLClanMemberType* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterClanMemberType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterClanMemberType"));
 
 	struct
 	{
@@ -12249,7 +12249,7 @@ void UWTLBPLibraryCharacter::GetCharacterClanMemberType(class AWTLCharacter* Cha
 
 unsigned char UWTLBPLibraryCharacter::GetCharacterAccuracy(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.GetCharacterAccuracy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.GetCharacterAccuracy"));
 
 	struct
 	{
@@ -12276,7 +12276,7 @@ unsigned char UWTLBPLibraryCharacter::GetCharacterAccuracy(class AWTLCharacter* 
 
 void UWTLBPLibraryCharacter::CheckCharacterHaveArtefactWithInteactiveObjectID(class AWTLCharacter* Character, int ArtefactID, int InteractiveObjectID, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CheckCharacterHaveArtefactWithInteactiveObjectID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CheckCharacterHaveArtefactWithInteactiveObjectID"));
 
 	struct
 	{
@@ -12307,7 +12307,7 @@ void UWTLBPLibraryCharacter::CheckCharacterHaveArtefactWithInteactiveObjectID(cl
 
 unsigned char UWTLBPLibraryCharacter::CharacterRandomDropItem(class AWTLCharacter* Character, const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterRandomDropItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterRandomDropItem"));
 
 	struct
 	{
@@ -12334,7 +12334,7 @@ unsigned char UWTLBPLibraryCharacter::CharacterRandomDropItem(class AWTLCharacte
 
 void UWTLBPLibraryCharacter::CharacterLeaveClan(class AWTLCharacter* Character, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterLeaveClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterLeaveClan"));
 
 	struct
 	{
@@ -12361,7 +12361,7 @@ void UWTLBPLibraryCharacter::CharacterLeaveClan(class AWTLCharacter* Character, 
 
 bool UWTLBPLibraryCharacter::CharacterHaveEquipedDevice(class AWTLCharacter* Character, int StuffID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveEquipedDevice");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveEquipedDevice"));
 
 	struct
 	{
@@ -12388,7 +12388,7 @@ bool UWTLBPLibraryCharacter::CharacterHaveEquipedDevice(class AWTLCharacter* Cha
 
 void UWTLBPLibraryCharacter::CharacterHaveAnyItemsExcept(class AWTLCharacter* Character, TArray<struct FWTLBPIdentityItemType> AllowedItems, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemsExcept");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemsExcept"));
 
 	struct
 	{
@@ -12419,7 +12419,7 @@ void UWTLBPLibraryCharacter::CharacterHaveAnyItemsExcept(class AWTLCharacter* Ch
 
 void UWTLBPLibraryCharacter::CharacterHaveAnyItemOfTypeExcept(class AWTLCharacter* Character, EWTLItemType ItemType, TArray<int> ExceptIDList, bool CheckInContainers, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemOfTypeExcept");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemOfTypeExcept"));
 
 	struct
 	{
@@ -12453,7 +12453,7 @@ void UWTLBPLibraryCharacter::CharacterHaveAnyItemOfTypeExcept(class AWTLCharacte
 
 void UWTLBPLibraryCharacter::CharacterHaveAnyItemFromList(class AWTLCharacter* Character, TArray<struct FWTLBPIdentityItemType> Items, bool CheckInContainers, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemFromList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveAnyItemFromList"));
 
 	struct
 	{
@@ -12485,7 +12485,7 @@ void UWTLBPLibraryCharacter::CharacterHaveAnyItemFromList(class AWTLCharacter* C
 
 void UWTLBPLibraryCharacter::CharacterHaveAllItemsFromList(class AWTLCharacter* Character, TArray<struct FWTLBPIdentityItemType> Items, bool CheckInContainers, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveAllItemsFromList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveAllItemsFromList"));
 
 	struct
 	{
@@ -12515,7 +12515,7 @@ void UWTLBPLibraryCharacter::CharacterHaveAllItemsFromList(class AWTLCharacter* 
 
 bool UWTLBPLibraryCharacter::CharacterHaveActiveNDPDetector(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveNDPDetector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveNDPDetector"));
 
 	struct
 	{
@@ -12539,7 +12539,7 @@ bool UWTLBPLibraryCharacter::CharacterHaveActiveNDPDetector(class AWTLCharacter*
 
 bool UWTLBPLibraryCharacter::CharacterHaveActiveMetalDetector(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveMetalDetector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveMetalDetector"));
 
 	struct
 	{
@@ -12564,7 +12564,7 @@ bool UWTLBPLibraryCharacter::CharacterHaveActiveMetalDetector(class AWTLCharacte
 
 bool UWTLBPLibraryCharacter::CharacterHaveActiveEquipment(class AWTLCharacter* Character, int StuffID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveEquipment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.CharacterHaveActiveEquipment"));
 
 	struct
 	{
@@ -12594,7 +12594,7 @@ bool UWTLBPLibraryCharacter::CharacterHaveActiveEquipment(class AWTLCharacter* C
 
 void UWTLBPLibraryCharacter::ApplyRandomPercentDamage(class AWTLCharacter* Character, float MinPercent, float MaxPercent, class UClass* DamageTypeClass, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.ApplyRandomPercentDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.ApplyRandomPercentDamage"));
 
 	struct
 	{
@@ -12631,7 +12631,7 @@ void UWTLBPLibraryCharacter::ApplyRandomPercentDamage(class AWTLCharacter* Chara
 
 void UWTLBPLibraryCharacter::ApplyRadialDamage(class UObject* WorldContextObject, float DamageValue, const struct FVector& DamageOrigin, float DamageRadius, class UClass* DamageTypeClass, TArray<class AActor*> IgnoreActors, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.ApplyRadialDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.ApplyRadialDamage"));
 
 	struct
 	{
@@ -12667,7 +12667,7 @@ void UWTLBPLibraryCharacter::ApplyRadialDamage(class UObject* WorldContextObject
 
 void UWTLBPLibraryCharacter::ApplyHearingDamageToCharacter(class AWTLCharacter* Character, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.ApplyHearingDamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.ApplyHearingDamageToCharacter"));
 
 	struct
 	{
@@ -12698,7 +12698,7 @@ void UWTLBPLibraryCharacter::ApplyHearingDamageToCharacter(class AWTLCharacter* 
 
 void UWTLBPLibraryCharacter::AddEffectToCharacterWithFalloff(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float EffectValue, const struct FVector& Origin, float FalloffRadius, float MinEffectValue, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacterWithFalloff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacterWithFalloff"));
 
 	struct
 	{
@@ -12739,7 +12739,7 @@ void UWTLBPLibraryCharacter::AddEffectToCharacterWithFalloff(class AWTLCharacter
 
 void UWTLBPLibraryCharacter::AddEffectToCharactersWithFalloff(TArray<class AWTLCharacter*> Characters, EWTLCharacterEffectType EffectType, float EffectValue, const struct FVector& Origin, float FalloffRadius, float MinEffectValue, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.AddEffectToCharactersWithFalloff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.AddEffectToCharactersWithFalloff"));
 
 	struct
 	{
@@ -12777,7 +12777,7 @@ void UWTLBPLibraryCharacter::AddEffectToCharactersWithFalloff(TArray<class AWTLC
 
 void UWTLBPLibraryCharacter::AddEffectToCharacters(TArray<class AWTLCharacter*> Characters, EWTLCharacterEffectType EffectType, float EffectValue, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacters"));
 
 	struct
 	{
@@ -12809,7 +12809,7 @@ void UWTLBPLibraryCharacter::AddEffectToCharacters(TArray<class AWTLCharacter*> 
 
 void UWTLBPLibraryCharacter::AddEffectToCharacterOnNextSpawn(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float EffectValue, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacterOnNextSpawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacterOnNextSpawn"));
 
 	struct
 	{
@@ -12841,7 +12841,7 @@ void UWTLBPLibraryCharacter::AddEffectToCharacterOnNextSpawn(class AWTLCharacter
 
 void UWTLBPLibraryCharacter::AddEffectToCharacter(class AWTLCharacter* Character, EWTLCharacterEffectType EffectType, float EffectValue, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.AddEffectToCharacter"));
 
 	struct
 	{
@@ -12871,7 +12871,7 @@ void UWTLBPLibraryCharacter::AddEffectToCharacter(class AWTLCharacter* Character
 
 void UWTLBPLibraryCommon::WTLSwitchHasAuthority(class UObject* WorldContextObject, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.WTLSwitchHasAuthority");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.WTLSwitchHasAuthority"));
 
 	struct
 	{
@@ -12899,7 +12899,7 @@ void UWTLBPLibraryCommon::WTLSwitchHasAuthority(class UObject* WorldContextObjec
 
 void UWTLBPLibraryCommon::WriteLog(class UObject* WorldContextObject, EWTLBPLogVerbosity Verbosity, const struct FString& Text, const struct FString& MethodName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.WriteLog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.WriteLog"));
 
 	struct
 	{
@@ -12927,7 +12927,7 @@ void UWTLBPLibraryCommon::WriteLog(class UObject* WorldContextObject, EWTLBPLogV
 
 void UWTLBPLibraryCommon::UpdateReflectionSphere(class UObject* WorldContextObject, class UReflectionCaptureComponent* CaptureComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.UpdateReflectionSphere");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.UpdateReflectionSphere"));
 
 	struct
 	{
@@ -12951,7 +12951,7 @@ void UWTLBPLibraryCommon::UpdateReflectionSphere(class UObject* WorldContextObje
 
 void UWTLBPLibraryCommon::SwitchIsValidActor(class AActor* Actor, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.SwitchIsValidActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.SwitchIsValidActor"));
 
 	struct
 	{
@@ -12985,7 +12985,7 @@ void UWTLBPLibraryCommon::SwitchIsValidActor(class AActor* Actor, EWTLBPCheckRes
 
 class AWTLMonsterPawn* UWTLBPLibraryCommon::SpawnMonster(class UObject* WorldContextObject, class UClass* MonsterClass, class AActor* Owner, int MinLevel, int MaxLevel, const struct FTransform& Transform, const struct FWTLMonsterBurst& Burst, bool ReactionOnElectronicBait, float LifespanAfterDeath)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.SpawnMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.SpawnMonster"));
 
 	struct
 	{
@@ -13025,7 +13025,7 @@ class AWTLMonsterPawn* UWTLBPLibraryCommon::SpawnMonster(class UObject* WorldCon
 
 void UWTLBPLibraryCommon::ShowItemStoreOverlay(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ShowItemStoreOverlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ShowItemStoreOverlay"));
 
 	struct
 	{
@@ -13049,7 +13049,7 @@ void UWTLBPLibraryCommon::ShowItemStoreOverlay(class UObject* WorldContextObject
 
 void UWTLBPLibraryCommon::ReportCrime(class UObject* WorldContextObject, class APawn* Instigator, class APawn* Victim, bool bIsLethal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ReportCrime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ReportCrime"));
 
 	struct
 	{
@@ -13077,7 +13077,7 @@ void UWTLBPLibraryCommon::ReportCrime(class UObject* WorldContextObject, class A
 
 bool UWTLBPLibraryCommon::IsValidActor(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.IsValidActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.IsValidActor"));
 
 	struct
 	{
@@ -13102,7 +13102,7 @@ bool UWTLBPLibraryCommon::IsValidActor(class AActor* Actor)
 
 void UWTLBPLibraryCommon::IsDay(class UObject* WorldContextObject, EWTLBPCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.IsDay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.IsDay"));
 
 	struct
 	{
@@ -13129,7 +13129,7 @@ void UWTLBPLibraryCommon::IsDay(class UObject* WorldContextObject, EWTLBPCheckRe
 
 float UWTLBPLibraryCommon::DistanceSSE2D(const struct FVector& From, const struct FVector& To)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.DistanceSSE2D");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.DistanceSSE2D"));
 
 	struct
 	{
@@ -13157,7 +13157,7 @@ float UWTLBPLibraryCommon::DistanceSSE2D(const struct FVector& From, const struc
 
 float UWTLBPLibraryCommon::DistanceSSE(const struct FVector& From, const struct FVector& To)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.DistanceSSE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.DistanceSSE"));
 
 	struct
 	{
@@ -13184,7 +13184,7 @@ float UWTLBPLibraryCommon::DistanceSSE(const struct FVector& From, const struct 
 
 void UWTLBPLibraryCommon::ClientShowWarningText(class AWTLCharacter* Character, const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientShowWarningText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientShowWarningText"));
 
 	struct
 	{
@@ -13208,7 +13208,7 @@ void UWTLBPLibraryCommon::ClientShowWarningText(class AWTLCharacter* Character, 
 
 void UWTLBPLibraryCommon::ClientShowTutorialMessagesByIDs(class AWTLCharacter* Character, TArray<int> TutorialMessagesIDs)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessagesByIDs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessagesByIDs"));
 
 	struct
 	{
@@ -13232,7 +13232,7 @@ void UWTLBPLibraryCommon::ClientShowTutorialMessagesByIDs(class AWTLCharacter* C
 
 void UWTLBPLibraryCommon::ClientShowTutorialMessages(class AWTLCharacter* Character, TArray<EWTLTutorialMessage> TutorialMessages)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessages");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessages"));
 
 	struct
 	{
@@ -13256,7 +13256,7 @@ void UWTLBPLibraryCommon::ClientShowTutorialMessages(class AWTLCharacter* Charac
 
 void UWTLBPLibraryCommon::ClientShowTutorialMessageByID(class AWTLCharacter* Character, int TutorialMessageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessageByID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessageByID"));
 
 	struct
 	{
@@ -13280,7 +13280,7 @@ void UWTLBPLibraryCommon::ClientShowTutorialMessageByID(class AWTLCharacter* Cha
 
 void UWTLBPLibraryCommon::ClientShowTutorialMessage(class AWTLCharacter* Character, EWTLTutorialMessage TutorialMessage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientShowTutorialMessage"));
 
 	struct
 	{
@@ -13303,7 +13303,7 @@ void UWTLBPLibraryCommon::ClientShowTutorialMessage(class AWTLCharacter* Charact
 
 void UWTLBPLibraryCommon::ClientDestoryActor(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryCommon.ClientDestoryActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCommon.ClientDestoryActor"));
 
 	struct
 	{
@@ -13327,7 +13327,7 @@ void UWTLBPLibraryCommon::ClientDestoryActor(class AActor* Actor)
 
 void UWTLBPLibraryQuestSystem::SetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.SetQuestState"));
 
 	struct
 	{
@@ -13359,7 +13359,7 @@ void UWTLBPLibraryQuestSystem::SetQuestState(class AWTLCharacter* Character, int
 
 void UWTLBPLibraryQuestSystem::SetCharacterQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestState"));
 
 	struct
 	{
@@ -13394,7 +13394,7 @@ void UWTLBPLibraryQuestSystem::SetCharacterQuestState(class AWTLCharacter* Chara
 
 void UWTLBPLibraryQuestSystem::SetCharacterQuestProgress(class AWTLCharacter* Character, int QuestID, unsigned char Progress1, unsigned char Progress2, unsigned char Progress3, unsigned char Progress4, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestProgress");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestProgress"));
 
 	struct
 	{
@@ -13435,7 +13435,7 @@ void UWTLBPLibraryQuestSystem::SetCharacterQuestProgress(class AWTLCharacter* Ch
 
 void UWTLBPLibraryQuestSystem::IncrementCharacterQuestProgress(class AWTLCharacter* Character, int QuestID, unsigned char Progress1Delta, unsigned char Progress2Delta, unsigned char Progress3Delta, unsigned char Progress4Delta, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.IncrementCharacterQuestProgress");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.IncrementCharacterQuestProgress"));
 
 	struct
 	{
@@ -13472,7 +13472,7 @@ void UWTLBPLibraryQuestSystem::IncrementCharacterQuestProgress(class AWTLCharact
 
 void UWTLBPLibraryQuestSystem::GetCharacterQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.GetCharacterQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.GetCharacterQuestState"));
 
 	struct
 	{
@@ -13504,7 +13504,7 @@ void UWTLBPLibraryQuestSystem::GetCharacterQuestState(class AWTLCharacter* Chara
 
 void UWTLBPLibraryQuestSystem::GetCharacterQuestProgressDescription(class AWTLCharacter* Character, int QuestID, TArray<struct FWTLMonsterKillRequirementState>* MonsterKills, TArray<struct FWTLEnemyNPCKillRequirementState>* EnemyNPCKills, TArray<struct FWTLCustomQuestRequirementState>* CustomRequirements, EWTLBPActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.GetCharacterQuestProgressDescription");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.GetCharacterQuestProgressDescription"));
 
 	struct
 	{
@@ -13542,7 +13542,7 @@ void UWTLBPLibraryQuestSystem::GetCharacterQuestProgressDescription(class AWTLCh
 
 void UWTLBPLibraryQuestSystem::CharacterCanTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.CharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.CharacterCanTakeQuest"));
 
 	struct
 	{
@@ -13571,7 +13571,7 @@ void UWTLBPLibraryQuestSystem::CharacterCanTakeQuest(class AWTLCharacter* Charac
 
 void UWTLBPLibraryQuestSystem::CharacterCanCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBPLibraryQuestSystem.CharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.CharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -13599,7 +13599,7 @@ void UWTLBPLibraryQuestSystem::CharacterCanCompleteQuest(class AWTLCharacter* Ch
 
 void AWTLBulletProjectile::OnProjectileBounce(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBulletProjectile.OnProjectileBounce");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBulletProjectile.OnProjectileBounce"));
 
 	struct
 	{
@@ -13625,7 +13625,7 @@ void AWTLBulletProjectile::OnProjectileBounce(const struct FHitResult& ImpactRes
 
 void AWTLBulletProjectile::OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBulletProjectile.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBulletProjectile.OnHit"));
 
 	struct
 	{
@@ -13653,7 +13653,7 @@ void AWTLBulletProjectile::OnHit(class UPrimitiveComponent* HitComponent, class 
 
 void AWTLBulletTracer::OnTracerDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLBulletTracer.OnTracerDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBulletTracer.OnTracerDestroyed"));
 
 	struct
 	{
@@ -13673,7 +13673,7 @@ void AWTLBulletTracer::OnTracerDestroyed(class AActor* DestroyedActor)
 
 void AWTLPlaceableStuff::OnTakedBack(class AWTLCharacter* EventInstigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.OnTakedBack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.OnTakedBack"));
 
 	struct
 	{
@@ -13691,7 +13691,7 @@ void AWTLPlaceableStuff::OnTakedBack(class AWTLCharacter* EventInstigator)
 
 void AWTLPlaceableStuff::OnRep_Condition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.OnRep_Condition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.OnRep_Condition"));
 
 	struct
 	{
@@ -13709,7 +13709,7 @@ void AWTLPlaceableStuff::OnRep_Condition()
 
 void AWTLPlaceableStuff::OnPlaced(class AWTLCharacter* EventInstigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.OnPlaced");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.OnPlaced"));
 
 	struct
 	{
@@ -13729,7 +13729,7 @@ void AWTLPlaceableStuff::OnPlaced(class AWTLCharacter* EventInstigator)
 
 void AWTLPlaceableStuff::OnEnergyChanged(float EnergyValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.OnEnergyChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.OnEnergyChanged"));
 
 	struct
 	{
@@ -13749,7 +13749,7 @@ void AWTLPlaceableStuff::OnEnergyChanged(float EnergyValue)
 
 void AWTLPlaceableStuff::OnConditionChanged(float ConditionValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.OnConditionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.OnConditionChanged"));
 
 	struct
 	{
@@ -13767,7 +13767,7 @@ void AWTLPlaceableStuff::OnConditionChanged(float ConditionValue)
 
 void AWTLPlaceableStuff::NetMulticast_OnDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.NetMulticast_OnDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.NetMulticast_OnDestroyed"));
 
 	struct
 	{
@@ -13783,7 +13783,7 @@ void AWTLPlaceableStuff::NetMulticast_OnDestroyed()
 
 void AWTLPlaceableStuff::K2_OnDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPlaceableStuff.K2_OnDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlaceableStuff.K2_OnDestroyed"));
 
 	struct
 	{
@@ -13799,7 +13799,7 @@ void AWTLPlaceableStuff::K2_OnDestroyed()
 
 void AWTLCampfire::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCampfire.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCampfire.OnRep_StorageContent"));
 
 	struct
 	{
@@ -13815,7 +13815,7 @@ void AWTLCampfire::OnRep_StorageContent()
 
 void AWTLCampfire::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCampfire.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCampfire.OnRep_Energy"));
 
 	struct
 	{
@@ -13831,7 +13831,7 @@ void AWTLCampfire::OnRep_Energy()
 
 void AWTLCharacter::UpdateEquipmentItemStates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.UpdateEquipmentItemStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.UpdateEquipmentItemStates"));
 
 	struct
 	{
@@ -13849,7 +13849,7 @@ void AWTLCharacter::UpdateEquipmentItemStates()
 
 void AWTLCharacter::StartQTE(class AActor* QTEInstigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.StartQTE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.StartQTE"));
 
 	struct
 	{
@@ -13869,7 +13869,7 @@ void AWTLCharacter::StartQTE(class AActor* QTEInstigator)
 
 void AWTLCharacter::StartInteractionWithActionGameplayObject(class AWTLActionGameplayActor* Action)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.StartInteractionWithActionGameplayObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.StartInteractionWithActionGameplayObject"));
 
 	struct
 	{
@@ -13887,7 +13887,7 @@ void AWTLCharacter::StartInteractionWithActionGameplayObject(class AWTLActionGam
 
 void AWTLCharacter::ShowSteamStoreInterface()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.ShowSteamStoreInterface");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.ShowSteamStoreInterface"));
 
 	struct
 	{
@@ -13903,7 +13903,7 @@ void AWTLCharacter::ShowSteamStoreInterface()
 
 void AWTLCharacter::ShowDeathScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.ShowDeathScreen");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.ShowDeathScreen"));
 
 	struct
 	{
@@ -13921,7 +13921,7 @@ void AWTLCharacter::ShowDeathScreen()
 
 void AWTLCharacter::ShowAllMessageVisibleOnClient(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.ShowAllMessageVisibleOnClient");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.ShowAllMessageVisibleOnClient"));
 
 	struct
 	{
@@ -13941,7 +13941,7 @@ void AWTLCharacter::ShowAllMessageVisibleOnClient(bool bVisible)
 
 void AWTLCharacter::SetAllMeshesVisible(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.SetAllMeshesVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.SetAllMeshesVisible"));
 
 	struct
 	{
@@ -13961,7 +13961,7 @@ void AWTLCharacter::SetAllMeshesVisible(bool bVisible)
 
 void AWTLCharacter::Server_UseEquipmentSlot(unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_UseEquipmentSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_UseEquipmentSlot"));
 
 	struct
 	{
@@ -13981,7 +13981,7 @@ void AWTLCharacter::Server_UseEquipmentSlot(unsigned char SlotNumber)
 
 void AWTLCharacter::Server_Use(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_Use");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_Use"));
 
 	struct
 	{
@@ -13999,7 +13999,7 @@ void AWTLCharacter::Server_Use(class AActor* Actor)
 
 void AWTLCharacter::Server_ThrowNut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_ThrowNut");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_ThrowNut"));
 
 	struct
 	{
@@ -14015,7 +14015,7 @@ void AWTLCharacter::Server_ThrowNut()
 
 void AWTLCharacter::Server_SwitchFireMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SwitchFireMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SwitchFireMode"));
 
 	struct
 	{
@@ -14031,7 +14031,7 @@ void AWTLCharacter::Server_SwitchFireMode()
 
 void AWTLCharacter::Server_Suicide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_Suicide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_Suicide"));
 
 	struct
 	{
@@ -14047,7 +14047,7 @@ void AWTLCharacter::Server_Suicide()
 
 void AWTLCharacter::Server_StopItemPlacement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_StopItemPlacement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_StopItemPlacement"));
 
 	struct
 	{
@@ -14063,7 +14063,7 @@ void AWTLCharacter::Server_StopItemPlacement()
 
 void AWTLCharacter::Server_StopEmotion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_StopEmotion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_StopEmotion"));
 
 	struct
 	{
@@ -14079,7 +14079,7 @@ void AWTLCharacter::Server_StopEmotion()
 
 void AWTLCharacter::Server_StartItemPlacement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_StartItemPlacement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_StartItemPlacement"));
 
 	struct
 	{
@@ -14097,7 +14097,7 @@ void AWTLCharacter::Server_StartItemPlacement()
 
 void AWTLCharacter::Server_SetSprintMode(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SetSprintMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SetSprintMode"));
 
 	struct
 	{
@@ -14117,7 +14117,7 @@ void AWTLCharacter::Server_SetSprintMode(bool Value)
 
 void AWTLCharacter::Server_SetHoldingBreath(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SetHoldingBreath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SetHoldingBreath"));
 
 	struct
 	{
@@ -14137,7 +14137,7 @@ void AWTLCharacter::Server_SetHoldingBreath(bool Value)
 
 void AWTLCharacter::Server_SetCurrentPose(EWTLCharacterPose Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SetCurrentPose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SetCurrentPose"));
 
 	struct
 	{
@@ -14157,7 +14157,7 @@ void AWTLCharacter::Server_SetCurrentPose(EWTLCharacterPose Value)
 
 void AWTLCharacter::Server_SetAimMode(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SetAimMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SetAimMode"));
 
 	struct
 	{
@@ -14177,7 +14177,7 @@ void AWTLCharacter::Server_SetAimMode(bool Value)
 
 void AWTLCharacter::Server_SendQTEAction(unsigned char ActionID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SendQTEAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SendQTEAction"));
 
 	struct
 	{
@@ -14198,7 +14198,7 @@ void AWTLCharacter::Server_SendQTEAction(unsigned char ActionID)
 
 void AWTLCharacter::Server_SelectSlot(unsigned char SlotNumber, bool AllowReselect)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_SelectSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_SelectSlot"));
 
 	struct
 	{
@@ -14220,7 +14220,7 @@ void AWTLCharacter::Server_SelectSlot(unsigned char SlotNumber, bool AllowResele
 
 void AWTLCharacter::Server_RequestStuffPlacement(uint64_t StuffItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_RequestStuffPlacement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_RequestStuffPlacement"));
 
 	struct
 	{
@@ -14240,7 +14240,7 @@ void AWTLCharacter::Server_RequestStuffPlacement(uint64_t StuffItemID)
 
 void AWTLCharacter::Server_RequestSpecialStuffPlacement(uint16_t StuffID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_RequestSpecialStuffPlacement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_RequestSpecialStuffPlacement"));
 
 	struct
 	{
@@ -14260,7 +14260,7 @@ void AWTLCharacter::Server_RequestSpecialStuffPlacement(uint16_t StuffID)
 
 void AWTLCharacter::Server_RequestActionGameplayActorToUse(class AWTLActionGameplayActor* ActionGameplayActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_RequestActionGameplayActorToUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_RequestActionGameplayActorToUse"));
 
 	struct
 	{
@@ -14278,7 +14278,7 @@ void AWTLCharacter::Server_RequestActionGameplayActorToUse(class AWTLActionGamep
 
 void AWTLCharacter::Server_RequestActionGameplayActorToStopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_RequestActionGameplayActorToStopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_RequestActionGameplayActorToStopUse"));
 
 	struct
 	{
@@ -14294,7 +14294,7 @@ void AWTLCharacter::Server_RequestActionGameplayActorToStopUse()
 
 void AWTLCharacter::Server_QuickMeleeHit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_QuickMeleeHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_QuickMeleeHit"));
 
 	struct
 	{
@@ -14313,7 +14313,7 @@ void AWTLCharacter::Server_QuickMeleeHit()
 
 void AWTLCharacter::Server_PlayEmotion(int EmotionTypeID, int EmotionID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_PlayEmotion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_PlayEmotion"));
 
 	struct
 	{
@@ -14333,7 +14333,7 @@ void AWTLCharacter::Server_PlayEmotion(int EmotionTypeID, int EmotionID)
 
 void AWTLCharacter::Server_PlaceStuff()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_PlaceStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_PlaceStuff"));
 
 	struct
 	{
@@ -14349,7 +14349,7 @@ void AWTLCharacter::Server_PlaceStuff()
 
 void AWTLCharacter::Server_OnUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnUse"));
 
 	struct
 	{
@@ -14365,7 +14365,7 @@ void AWTLCharacter::Server_OnUse()
 
 void AWTLCharacter::Server_OnTiltRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnTiltRight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnTiltRight"));
 
 	struct
 	{
@@ -14381,7 +14381,7 @@ void AWTLCharacter::Server_OnTiltRight()
 
 void AWTLCharacter::Server_OnTiltLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnTiltLeft");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnTiltLeft"));
 
 	struct
 	{
@@ -14397,7 +14397,7 @@ void AWTLCharacter::Server_OnTiltLeft()
 
 void AWTLCharacter::Server_OnStopTilt()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnStopTilt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnStopTilt"));
 
 	struct
 	{
@@ -14413,7 +14413,7 @@ void AWTLCharacter::Server_OnStopTilt()
 
 void AWTLCharacter::Server_OnStartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnStartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnStartUse"));
 
 	struct
 	{
@@ -14432,7 +14432,7 @@ void AWTLCharacter::Server_OnStartUse()
 
 void AWTLCharacter::Server_OnFinishUse(class AActor* InteractiveObject, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_OnFinishUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_OnFinishUse"));
 
 	struct
 	{
@@ -14452,7 +14452,7 @@ void AWTLCharacter::Server_OnFinishUse(class AActor* InteractiveObject, bool Suc
 
 void AWTLCharacter::Server_MainUseStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_MainUseStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_MainUseStop"));
 
 	struct
 	{
@@ -14470,7 +14470,7 @@ void AWTLCharacter::Server_MainUseStop()
 
 void AWTLCharacter::Server_MainUseStart(const struct FVector2D& AimOffset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_MainUseStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_MainUseStart"));
 
 	struct
 	{
@@ -14488,7 +14488,7 @@ void AWTLCharacter::Server_MainUseStart(const struct FVector2D& AimOffset)
 
 void AWTLCharacter::Server_HideItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_HideItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_HideItem"));
 
 	struct
 	{
@@ -14504,7 +14504,7 @@ void AWTLCharacter::Server_HideItem()
 
 void AWTLCharacter::Server_ClearCurrentSlot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_ClearCurrentSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_ClearCurrentSlot"));
 
 	struct
 	{
@@ -14520,7 +14520,7 @@ void AWTLCharacter::Server_ClearCurrentSlot()
 
 void AWTLCharacter::Server_CancelStuffPlacementMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_CancelStuffPlacementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_CancelStuffPlacementMode"));
 
 	struct
 	{
@@ -14536,7 +14536,7 @@ void AWTLCharacter::Server_CancelStuffPlacementMode()
 
 void AWTLCharacter::Server_CancelQTE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_CancelQTE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_CancelQTE"));
 
 	struct
 	{
@@ -14556,7 +14556,7 @@ void AWTLCharacter::Server_CancelQTE()
 
 void AWTLCharacter::Server_AssignItemToFastAccessSlot(unsigned char SlotNumber, EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_AssignItemToFastAccessSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_AssignItemToFastAccessSlot"));
 
 	struct
 	{
@@ -14578,7 +14578,7 @@ void AWTLCharacter::Server_AssignItemToFastAccessSlot(unsigned char SlotNumber, 
 
 void AWTLCharacter::Server_AlternativeUseStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_AlternativeUseStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_AlternativeUseStop"));
 
 	struct
 	{
@@ -14594,7 +14594,7 @@ void AWTLCharacter::Server_AlternativeUseStop()
 
 void AWTLCharacter::Server_AlternativeUseStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Server_AlternativeUseStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Server_AlternativeUseStart"));
 
 	struct
 	{
@@ -14610,7 +14610,7 @@ void AWTLCharacter::Server_AlternativeUseStart()
 
 void AWTLCharacter::PostDeath()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PostDeath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PostDeath"));
 
 	struct
 	{
@@ -14628,7 +14628,7 @@ void AWTLCharacter::PostDeath()
 
 void AWTLCharacter::PlayStunhit(EWTLCharacterStunhitDirection StunhitDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PlayStunhit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PlayStunhit"));
 
 	struct
 	{
@@ -14648,7 +14648,7 @@ void AWTLCharacter::PlayStunhit(EWTLCharacterStunhitDirection StunhitDirection)
 
 void AWTLCharacter::PlaySoundEventAttached(class UFMODEvent* Sound)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PlaySoundEventAttached");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PlaySoundEventAttached"));
 
 	struct
 	{
@@ -14668,7 +14668,7 @@ void AWTLCharacter::PlaySoundEventAttached(class UFMODEvent* Sound)
 
 void AWTLCharacter::PlaySoundEvent2D(class UFMODEvent* Sound)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PlaySoundEvent2D");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PlaySoundEvent2D"));
 
 	struct
 	{
@@ -14689,7 +14689,7 @@ void AWTLCharacter::PlaySoundEvent2D(class UFMODEvent* Sound)
 
 void AWTLCharacter::PlayMontage(class UAnimMontage* MontageToPlay, bool BlockInput)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PlayMontage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PlayMontage"));
 
 	struct
 	{
@@ -14714,7 +14714,7 @@ void AWTLCharacter::PlayMontage(class UAnimMontage* MontageToPlay, bool BlockInp
 
 void AWTLCharacter::PlayCameraShake(class UClass* CameraShake, float Value, bool IsHideUsableItem, bool RemoveAiming)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.PlayCameraShake");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.PlayCameraShake"));
 
 	struct
 	{
@@ -14738,7 +14738,7 @@ void AWTLCharacter::PlayCameraShake(class UClass* CameraShake, float Value, bool
 
 void AWTLCharacter::OnUnMuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnUnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnUnMuteCharacter"));
 
 	struct
 	{
@@ -14754,7 +14754,7 @@ void AWTLCharacter::OnUnMuteCharacter()
 
 void AWTLCharacter::OnTextChatUnmuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnTextChatUnmuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnTextChatUnmuteCharacter"));
 
 	struct
 	{
@@ -14770,7 +14770,7 @@ void AWTLCharacter::OnTextChatUnmuteCharacter()
 
 void AWTLCharacter::OnTextChatMuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnTextChatMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnTextChatMuteCharacter"));
 
 	struct
 	{
@@ -14786,7 +14786,7 @@ void AWTLCharacter::OnTextChatMuteCharacter()
 
 void AWTLCharacter::OnShowInformationAboutCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnShowInformationAboutCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnShowInformationAboutCharacter"));
 
 	struct
 	{
@@ -14802,7 +14802,7 @@ void AWTLCharacter::OnShowInformationAboutCharacter()
 
 void AWTLCharacter::OnShortCharacterInfoChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnShortCharacterInfoChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnShortCharacterInfoChanged"));
 
 	struct
 	{
@@ -14818,7 +14818,7 @@ void AWTLCharacter::OnShortCharacterInfoChanged()
 
 void AWTLCharacter::OnSendTextChatMessageToCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnSendTextChatMessageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnSendTextChatMessageToCharacter"));
 
 	struct
 	{
@@ -14834,7 +14834,7 @@ void AWTLCharacter::OnSendTextChatMessageToCharacter()
 
 void AWTLCharacter::OnReportCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnReportCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnReportCharacter"));
 
 	struct
 	{
@@ -14850,7 +14850,7 @@ void AWTLCharacter::OnReportCharacter()
 
 void AWTLCharacter::OnRep_UsableItemInHands()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_UsableItemInHands");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_UsableItemInHands"));
 
 	struct
 	{
@@ -14866,7 +14866,7 @@ void AWTLCharacter::OnRep_UsableItemInHands()
 
 void AWTLCharacter::OnRep_Stamina()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_Stamina");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_Stamina"));
 
 	struct
 	{
@@ -14882,7 +14882,7 @@ void AWTLCharacter::OnRep_Stamina()
 
 void AWTLCharacter::OnRep_QTEState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_QTEState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_QTEState"));
 
 	struct
 	{
@@ -14898,7 +14898,7 @@ void AWTLCharacter::OnRep_QTEState()
 
 void AWTLCharacter::OnRep_Oxygen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_Oxygen");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_Oxygen"));
 
 	struct
 	{
@@ -14914,7 +14914,7 @@ void AWTLCharacter::OnRep_Oxygen()
 
 void AWTLCharacter::OnRep_LastTakeHitInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_LastTakeHitInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_LastTakeHitInfo"));
 
 	struct
 	{
@@ -14930,7 +14930,7 @@ void AWTLCharacter::OnRep_LastTakeHitInfo()
 
 void AWTLCharacter::OnRep_IsTraveling()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsTraveling");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsTraveling"));
 
 	struct
 	{
@@ -14946,7 +14946,7 @@ void AWTLCharacter::OnRep_IsTraveling()
 
 void AWTLCharacter::OnRep_IsProned()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsProned");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsProned"));
 
 	struct
 	{
@@ -14962,7 +14962,7 @@ void AWTLCharacter::OnRep_IsProned()
 
 void AWTLCharacter::OnRep_IsPlacingItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsPlacingItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsPlacingItem"));
 
 	struct
 	{
@@ -14978,7 +14978,7 @@ void AWTLCharacter::OnRep_IsPlacingItem()
 
 void AWTLCharacter::OnRep_IsInvulnerable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsInvulnerable");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsInvulnerable"));
 
 	struct
 	{
@@ -14994,7 +14994,7 @@ void AWTLCharacter::OnRep_IsInvulnerable()
 
 void AWTLCharacter::OnRep_IsInSafeZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsInSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsInSafeZone"));
 
 	struct
 	{
@@ -15010,7 +15010,7 @@ void AWTLCharacter::OnRep_IsInSafeZone()
 
 void AWTLCharacter::OnRep_IsInPVPZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsInPVPZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsInPVPZone"));
 
 	struct
 	{
@@ -15026,7 +15026,7 @@ void AWTLCharacter::OnRep_IsInPVPZone()
 
 void AWTLCharacter::OnRep_IsInMobileResurectionPointWorkZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsInMobileResurectionPointWorkZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsInMobileResurectionPointWorkZone"));
 
 	struct
 	{
@@ -15042,7 +15042,7 @@ void AWTLCharacter::OnRep_IsInMobileResurectionPointWorkZone()
 
 void AWTLCharacter::OnRep_IsHoldingBreath()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsHoldingBreath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsHoldingBreath"));
 
 	struct
 	{
@@ -15058,7 +15058,7 @@ void AWTLCharacter::OnRep_IsHoldingBreath()
 
 void AWTLCharacter::OnRep_IsClimbingLadder()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_IsClimbingLadder");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_IsClimbingLadder"));
 
 	struct
 	{
@@ -15076,7 +15076,7 @@ void AWTLCharacter::OnRep_IsClimbingLadder()
 
 void AWTLCharacter::OnRep_HandsState(EWTLHandsState PreviousHandsState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_HandsState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_HandsState"));
 
 	struct
 	{
@@ -15096,7 +15096,7 @@ void AWTLCharacter::OnRep_HandsState(EWTLHandsState PreviousHandsState)
 
 void AWTLCharacter::OnRep_CurrentPose(EWTLCharacterPose PrevValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_CurrentPose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_CurrentPose"));
 
 	struct
 	{
@@ -15114,7 +15114,7 @@ void AWTLCharacter::OnRep_CurrentPose(EWTLCharacterPose PrevValue)
 
 void AWTLCharacter::OnRep_CurrentEmotionKey()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_CurrentEmotionKey");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_CurrentEmotionKey"));
 
 	struct
 	{
@@ -15130,7 +15130,7 @@ void AWTLCharacter::OnRep_CurrentEmotionKey()
 
 void AWTLCharacter::OnRep_CurrentActionGameplayActor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_CurrentActionGameplayActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_CurrentActionGameplayActor"));
 
 	struct
 	{
@@ -15146,7 +15146,7 @@ void AWTLCharacter::OnRep_CurrentActionGameplayActor()
 
 void AWTLCharacter::OnRep_bIsSprinting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_bIsSprinting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_bIsSprinting"));
 
 	struct
 	{
@@ -15162,7 +15162,7 @@ void AWTLCharacter::OnRep_bIsSprinting()
 
 void AWTLCharacter::OnRep_bIsJumping()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_bIsJumping");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_bIsJumping"));
 
 	struct
 	{
@@ -15178,7 +15178,7 @@ void AWTLCharacter::OnRep_bIsJumping()
 
 void AWTLCharacter::OnRep_bIsAiming()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnRep_bIsAiming");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_bIsAiming"));
 
 	struct
 	{
@@ -15194,7 +15194,7 @@ void AWTLCharacter::OnRep_bIsAiming()
 
 void AWTLCharacter::OnPickupPlaceableStuffConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnPickupPlaceableStuffConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnPickupPlaceableStuffConfirmed"));
 
 	struct
 	{
@@ -15210,7 +15210,7 @@ void AWTLCharacter::OnPickupPlaceableStuffConfirmed()
 
 void AWTLCharacter::OnPickupPlaceableStuff()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnPickupPlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnPickupPlaceableStuff"));
 
 	struct
 	{
@@ -15226,7 +15226,7 @@ void AWTLCharacter::OnPickupPlaceableStuff()
 
 void AWTLCharacter::OnOfferBarterToCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnOfferBarterToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnOfferBarterToCharacter"));
 
 	struct
 	{
@@ -15244,7 +15244,7 @@ void AWTLCharacter::OnOfferBarterToCharacter()
 
 void AWTLCharacter::OnOfferBarter(const struct FString& Message)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnOfferBarter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnOfferBarter"));
 
 	struct
 	{
@@ -15262,7 +15262,7 @@ void AWTLCharacter::OnOfferBarter(const struct FString& Message)
 
 void AWTLCharacter::OnMuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnMuteCharacter"));
 
 	struct
 	{
@@ -15280,7 +15280,7 @@ void AWTLCharacter::OnMuteCharacter()
 
 void AWTLCharacter::OnMontageStarted(class UAnimMontage* Montage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnMontageStarted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnMontageStarted"));
 
 	struct
 	{
@@ -15301,7 +15301,7 @@ void AWTLCharacter::OnMontageStarted(class UAnimMontage* Montage)
 
 void AWTLCharacter::OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnMontageEnded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnMontageEnded"));
 
 	struct
 	{
@@ -15321,7 +15321,7 @@ void AWTLCharacter::OnMontageEnded(class UAnimMontage* Montage, bool bInterrupte
 
 void AWTLCharacter::OnInviteCharacterToGroup()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnInviteCharacterToGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnInviteCharacterToGroup"));
 
 	struct
 	{
@@ -15337,7 +15337,7 @@ void AWTLCharacter::OnInviteCharacterToGroup()
 
 void AWTLCharacter::OnGiveTokensToCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnGiveTokensToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnGiveTokensToCharacter"));
 
 	struct
 	{
@@ -15353,7 +15353,7 @@ void AWTLCharacter::OnGiveTokensToCharacter()
 
 void AWTLCharacter::OnCommendCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnCommendCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnCommendCharacter"));
 
 	struct
 	{
@@ -15369,7 +15369,7 @@ void AWTLCharacter::OnCommendCharacter()
 
 void AWTLCharacter::OnChargePlaceableStuff()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnChargePlaceableStuff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnChargePlaceableStuff"));
 
 	struct
 	{
@@ -15385,7 +15385,7 @@ void AWTLCharacter::OnChargePlaceableStuff()
 
 void AWTLCharacter::OnCharacterInfoChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnCharacterInfoChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnCharacterInfoChanged"));
 
 	struct
 	{
@@ -15406,7 +15406,7 @@ void AWTLCharacter::OnCharacterInfoChanged()
 
 void AWTLCharacter::OnCapsuleEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnCapsuleEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnCapsuleEndOverlap"));
 
 	struct
 	{
@@ -15437,7 +15437,7 @@ void AWTLCharacter::OnCapsuleEndOverlap(class UPrimitiveComponent* OverlappedCom
 
 void AWTLCharacter::OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnCapsuleBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnCapsuleBeginOverlap"));
 
 	struct
 	{
@@ -15472,7 +15472,7 @@ void AWTLCharacter::OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedC
 
 void AWTLCharacter::OnBulletFlyNearVolumeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.OnBulletFlyNearVolumeBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnBulletFlyNearVolumeBeginOverlap"));
 
 	struct
 	{
@@ -15502,7 +15502,7 @@ void AWTLCharacter::OnBulletFlyNearVolumeBeginOverlap(class UPrimitiveComponent*
 
 void AWTLCharacter::NetworkControllerOnCreateGroup(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.NetworkControllerOnCreateGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.NetworkControllerOnCreateGroup"));
 
 	struct
 	{
@@ -15520,7 +15520,7 @@ void AWTLCharacter::NetworkControllerOnCreateGroup(const struct FWTLResponse& Re
 
 void AWTLCharacter::NetMulticast_ThrowNut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.NetMulticast_ThrowNut");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.NetMulticast_ThrowNut"));
 
 	struct
 	{
@@ -15538,7 +15538,7 @@ void AWTLCharacter::NetMulticast_ThrowNut()
 
 void AWTLCharacter::NetMulticast_PlayPickupAnimation(float Rate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.NetMulticast_PlayPickupAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.NetMulticast_PlayPickupAnimation"));
 
 	struct
 	{
@@ -15560,7 +15560,7 @@ void AWTLCharacter::NetMulticast_PlayPickupAnimation(float Rate)
 
 void AWTLCharacter::NetMulticast_OnStuffEquipmentStateChanged(uint64_t CharacterID, uint16_t StuffID, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.NetMulticast_OnStuffEquipmentStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.NetMulticast_OnStuffEquipmentStateChanged"));
 
 	struct
 	{
@@ -15582,7 +15582,7 @@ void AWTLCharacter::NetMulticast_OnStuffEquipmentStateChanged(uint64_t Character
 
 void AWTLCharacter::LevelLoadedAtStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.LevelLoadedAtStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.LevelLoadedAtStart"));
 
 	struct
 	{
@@ -15601,7 +15601,7 @@ void AWTLCharacter::LevelLoadedAtStart()
 
 void AWTLCharacter::K2_OnStartProne(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.K2_OnStartProne");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.K2_OnStartProne"));
 
 	struct
 	{
@@ -15624,7 +15624,7 @@ void AWTLCharacter::K2_OnStartProne(float HalfHeightAdjust, float ScaledHalfHeig
 
 void AWTLCharacter::K2_OnEndProne(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.K2_OnEndProne");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.K2_OnEndProne"));
 
 	struct
 	{
@@ -15646,7 +15646,7 @@ void AWTLCharacter::K2_OnEndProne(float HalfHeightAdjust, float ScaledHalfHeight
 
 void AWTLCharacter::K2_OnEffectRemoved(EWTLCharacterEffectType EffectType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.K2_OnEffectRemoved");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.K2_OnEffectRemoved"));
 
 	struct
 	{
@@ -15666,7 +15666,7 @@ void AWTLCharacter::K2_OnEffectRemoved(EWTLCharacterEffectType EffectType)
 
 void AWTLCharacter::K2_OnEffectAdded(EWTLCharacterEffectType EffectType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.K2_OnEffectAdded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.K2_OnEffectAdded"));
 
 	struct
 	{
@@ -15686,7 +15686,7 @@ void AWTLCharacter::K2_OnEffectAdded(EWTLCharacterEffectType EffectType)
 
 struct FGenericTeamId AWTLCharacter::K2_GetGenericTeamID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.K2_GetGenericTeamID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.K2_GetGenericTeamID"));
 
 	struct
 	{
@@ -15707,7 +15707,7 @@ struct FGenericTeamId AWTLCharacter::K2_GetGenericTeamID()
 
 bool AWTLCharacter::IsPVPEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.IsPVPEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.IsPVPEnabled"));
 
 	struct
 	{
@@ -15728,7 +15728,7 @@ bool AWTLCharacter::IsPVPEnabled()
 
 bool AWTLCharacter::IsInSafeZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.IsInSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.IsInSafeZone"));
 
 	struct
 	{
@@ -15749,7 +15749,7 @@ bool AWTLCharacter::IsInSafeZone()
 
 bool AWTLCharacter::IsInPVPZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.IsInPVPZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.IsInPVPZone"));
 
 	struct
 	{
@@ -15770,7 +15770,7 @@ bool AWTLCharacter::IsInPVPZone()
 
 bool AWTLCharacter::IsInMobileResurectionPointWorkZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.IsInMobileResurectionPointWorkZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.IsInMobileResurectionPointWorkZone"));
 
 	struct
 	{
@@ -15792,7 +15792,7 @@ bool AWTLCharacter::IsInMobileResurectionPointWorkZone()
 
 bool AWTLCharacter::IsInExactSafeZone(class AWTLSafeZone* SafeZone)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.IsInExactSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.IsInExactSafeZone"));
 
 	struct
 	{
@@ -15815,7 +15815,7 @@ bool AWTLCharacter::IsInExactSafeZone(class AWTLSafeZone* SafeZone)
 
 bool AWTLCharacter::GetIsInQTE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetIsInQTE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetIsInQTE"));
 
 	struct
 	{
@@ -15836,7 +15836,7 @@ bool AWTLCharacter::GetIsInQTE()
 
 class AWTLActionGameplayActor* AWTLCharacter::GetCurrentActionGameplayObject()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetCurrentActionGameplayObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetCurrentActionGameplayObject"));
 
 	struct
 	{
@@ -15857,7 +15857,7 @@ class AWTLActionGameplayActor* AWTLCharacter::GetCurrentActionGameplayObject()
 
 unsigned char AWTLCharacter::GetComplexion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetComplexion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetComplexion"));
 
 	struct
 	{
@@ -15878,7 +15878,7 @@ unsigned char AWTLCharacter::GetComplexion()
 
 struct FString AWTLCharacter::GetCharacterRankName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetCharacterRankName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetCharacterRankName"));
 
 	struct
 	{
@@ -15899,7 +15899,7 @@ struct FString AWTLCharacter::GetCharacterRankName()
 
 unsigned char AWTLCharacter::GetCharacterRank()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetCharacterRank");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetCharacterRank"));
 
 	struct
 	{
@@ -15920,7 +15920,7 @@ unsigned char AWTLCharacter::GetCharacterRank()
 
 unsigned char AWTLCharacter::GetCharacterLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetCharacterLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetCharacterLevel"));
 
 	struct
 	{
@@ -15941,7 +15941,7 @@ unsigned char AWTLCharacter::GetCharacterLevel()
 
 EWTLAITeam AWTLCharacter::GetAITeam()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.GetAITeam");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetAITeam"));
 
 	struct
 	{
@@ -15960,7 +15960,7 @@ EWTLAITeam AWTLCharacter::GetAITeam()
 
 void AWTLCharacter::FinishInteractionWithActionGameplayObject()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.FinishInteractionWithActionGameplayObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.FinishInteractionWithActionGameplayObject"));
 
 	struct
 	{
@@ -15976,7 +15976,7 @@ void AWTLCharacter::FinishInteractionWithActionGameplayObject()
 
 void AWTLCharacter::Client_WrongPlacementSpotMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_WrongPlacementSpotMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_WrongPlacementSpotMessage"));
 
 	struct
 	{
@@ -15992,7 +15992,7 @@ void AWTLCharacter::Client_WrongPlacementSpotMessage()
 
 void AWTLCharacter::Client_ShowSteamStoreInterface()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ShowSteamStoreInterface");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ShowSteamStoreInterface"));
 
 	struct
 	{
@@ -16010,7 +16010,7 @@ void AWTLCharacter::Client_ShowSteamStoreInterface()
 
 void AWTLCharacter::Client_ShowContentInventory(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ShowContentInventory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ShowContentInventory"));
 
 	struct
 	{
@@ -16032,7 +16032,7 @@ void AWTLCharacter::Client_ShowContentInventory(class AActor* Actor)
 
 void AWTLCharacter::Client_ShowActionTimerWidget(float Timeout, EWTLActionTimerWidgetType Type, EWTLCountdownSliderWidgetFillingType FillingType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ShowActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ShowActionTimerWidget"));
 
 	struct
 	{
@@ -16056,7 +16056,7 @@ void AWTLCharacter::Client_ShowActionTimerWidget(float Timeout, EWTLActionTimerW
 
 void AWTLCharacter::Client_SetAllMeshesVisible(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_SetAllMeshesVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_SetAllMeshesVisible"));
 
 	struct
 	{
@@ -16074,7 +16074,7 @@ void AWTLCharacter::Client_SetAllMeshesVisible(bool bVisible)
 
 void AWTLCharacter::Client_ResetCurrentInteractiveObjetHighlight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ResetCurrentInteractiveObjetHighlight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ResetCurrentInteractiveObjetHighlight"));
 
 	struct
 	{
@@ -16090,7 +16090,7 @@ void AWTLCharacter::Client_ResetCurrentInteractiveObjetHighlight()
 
 void AWTLCharacter::Client_ResetAimMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ResetAimMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ResetAimMode"));
 
 	struct
 	{
@@ -16106,7 +16106,7 @@ void AWTLCharacter::Client_ResetAimMode()
 
 void AWTLCharacter::Client_OnUsePortalError()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnUsePortalError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnUsePortalError"));
 
 	struct
 	{
@@ -16122,7 +16122,7 @@ void AWTLCharacter::Client_OnUsePortalError()
 
 void AWTLCharacter::Client_OnUsePortal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnUsePortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnUsePortal"));
 
 	struct
 	{
@@ -16140,7 +16140,7 @@ void AWTLCharacter::Client_OnUsePortal()
 
 void AWTLCharacter::Client_OnStuffPlacementMode(uint16_t StuffID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnStuffPlacementMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnStuffPlacementMode"));
 
 	struct
 	{
@@ -16160,7 +16160,7 @@ void AWTLCharacter::Client_OnStuffPlacementMode(uint16_t StuffID)
 
 void AWTLCharacter::Client_OnPostSelectSlot(unsigned char SlotNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnPostSelectSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnPostSelectSlot"));
 
 	struct
 	{
@@ -16180,7 +16180,7 @@ void AWTLCharacter::Client_OnPostSelectSlot(unsigned char SlotNumber)
 
 void AWTLCharacter::Client_OnPosses(uint64_t PossesedCharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnPosses");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnPosses"));
 
 	struct
 	{
@@ -16200,7 +16200,7 @@ void AWTLCharacter::Client_OnPosses(uint64_t PossesedCharacterID)
 
 void AWTLCharacter::Client_OnPlaceableStuffUsed(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnPlaceableStuffUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnPlaceableStuffUsed"));
 
 	struct
 	{
@@ -16220,7 +16220,7 @@ void AWTLCharacter::Client_OnPlaceableStuffUsed(class AActor* Actor)
 
 void AWTLCharacter::Client_OnMedicineApplied(uint16_t MedicineID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnMedicineApplied");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnMedicineApplied"));
 
 	struct
 	{
@@ -16238,7 +16238,7 @@ void AWTLCharacter::Client_OnMedicineApplied(uint16_t MedicineID)
 
 void AWTLCharacter::Client_OnItemUnequipped()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnItemUnequipped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnItemUnequipped"));
 
 	struct
 	{
@@ -16254,7 +16254,7 @@ void AWTLCharacter::Client_OnItemUnequipped()
 
 void AWTLCharacter::Client_OnItemEquipped()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnItemEquipped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnItemEquipped"));
 
 	struct
 	{
@@ -16272,7 +16272,7 @@ void AWTLCharacter::Client_OnItemEquipped()
 
 void AWTLCharacter::Client_OnEffectRemoved(EWTLCharacterEffectType EffectType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnEffectRemoved");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnEffectRemoved"));
 
 	struct
 	{
@@ -16292,7 +16292,7 @@ void AWTLCharacter::Client_OnEffectRemoved(EWTLCharacterEffectType EffectType)
 
 void AWTLCharacter::Client_OnEffectAdded(EWTLCharacterEffectType EffectType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnEffectAdded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnEffectAdded"));
 
 	struct
 	{
@@ -16310,7 +16310,7 @@ void AWTLCharacter::Client_OnEffectAdded(EWTLCharacterEffectType EffectType)
 
 void AWTLCharacter::Client_OnCharacterUsed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnCharacterUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnCharacterUsed"));
 
 	struct
 	{
@@ -16329,7 +16329,7 @@ void AWTLCharacter::Client_OnCharacterUsed()
 
 void AWTLCharacter::Client_OnBulletFlyNear(const struct FVector_NetQuantize& Position, EWTLCaliber Caliber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_OnBulletFlyNear");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnBulletFlyNear"));
 
 	struct
 	{
@@ -16351,7 +16351,7 @@ void AWTLCharacter::Client_OnBulletFlyNear(const struct FVector_NetQuantize& Pos
 
 void AWTLCharacter::Client_NDPDetectorSignal(float Power)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_NDPDetectorSignal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_NDPDetectorSignal"));
 
 	struct
 	{
@@ -16369,7 +16369,7 @@ void AWTLCharacter::Client_NDPDetectorSignal(float Power)
 
 void AWTLCharacter::Client_LockInputUnequipUsableItemAndUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_LockInputUnequipUsableItemAndUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_LockInputUnequipUsableItemAndUse"));
 
 	struct
 	{
@@ -16387,7 +16387,7 @@ void AWTLCharacter::Client_LockInputUnequipUsableItemAndUse()
 
 void AWTLCharacter::Client_HideActionTimerWidget(bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_HideActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_HideActionTimerWidget"));
 
 	struct
 	{
@@ -16410,7 +16410,7 @@ void AWTLCharacter::Client_HideActionTimerWidget(bool Success)
 
 void AWTLCharacter::Client_EffectCameraManager(float AddVingette, float AddFringe, bool IsHideUsableItem, bool RemoveAiming)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_EffectCameraManager");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_EffectCameraManager"));
 
 	struct
 	{
@@ -16437,7 +16437,7 @@ void AWTLCharacter::Client_EffectCameraManager(float AddVingette, float AddFring
 
 void AWTLCharacter::Client_ApplyHearingDamage(float Duration, float Falloff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Client_ApplyHearingDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_ApplyHearingDamage"));
 
 	struct
 	{
@@ -16457,7 +16457,7 @@ void AWTLCharacter::Client_ApplyHearingDamage(float Duration, float Falloff)
 
 void AWTLCharacter::CleanMotionVector()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.CleanMotionVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.CleanMotionVector"));
 
 	struct
 	{
@@ -16475,7 +16475,7 @@ void AWTLCharacter::CleanMotionVector()
 
 bool AWTLCharacter::CanSpawnOnSafeZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.CanSpawnOnSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.CanSpawnOnSafeZone"));
 
 	struct
 	{
@@ -16496,7 +16496,7 @@ bool AWTLCharacter::CanSpawnOnSafeZone()
 
 void AWTLCharacter::CancelQTE(bool bIsFromClientside)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.CancelQTE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.CancelQTE"));
 
 	struct
 	{
@@ -16516,7 +16516,7 @@ void AWTLCharacter::CancelQTE(bool bIsFromClientside)
 
 void AWTLCharacter::Broadcast_SetAllMeshesVisible(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Broadcast_SetAllMeshesVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Broadcast_SetAllMeshesVisible"));
 
 	struct
 	{
@@ -16537,7 +16537,7 @@ void AWTLCharacter::Broadcast_SetAllMeshesVisible(bool bVisible)
 
 void AWTLCharacter::Broadcast_PlayMontage(class UAnimMontage* MontageToPlay, bool BlockInput)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Broadcast_PlayMontage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Broadcast_PlayMontage"));
 
 	struct
 	{
@@ -16559,7 +16559,7 @@ void AWTLCharacter::Broadcast_PlayMontage(class UAnimMontage* MontageToPlay, boo
 
 void AWTLCharacter::Broadcast_OnStunhit(EWTLCharacterStunhitDirection StunhitDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.Broadcast_OnStunhit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Broadcast_OnStunhit"));
 
 	struct
 	{
@@ -16580,7 +16580,7 @@ void AWTLCharacter::Broadcast_OnStunhit(EWTLCharacterStunhitDirection StunhitDir
 
 void AWTLCharacter::ApplyHearingDamage(float Duration, float Falloff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.ApplyHearingDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.ApplyHearingDamage"));
 
 	struct
 	{
@@ -16603,7 +16603,7 @@ void AWTLCharacter::ApplyHearingDamage(float Duration, float Falloff)
 
 void AWTLCharacter::ApplyEffectToCharacter(EWTLCharacterEffectType EffectType, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.ApplyEffectToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.ApplyEffectToCharacter"));
 
 	struct
 	{
@@ -16623,7 +16623,7 @@ void AWTLCharacter::ApplyEffectToCharacter(EWTLCharacterEffectType EffectType, f
 
 void AWTLCharacter::AllLevelsLoadedAtStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.AllLevelsLoadedAtStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.AllLevelsLoadedAtStart"));
 
 	struct
 	{
@@ -16641,7 +16641,7 @@ void AWTLCharacter::AllLevelsLoadedAtStart()
 
 bool AWTLCharacter::AIInterface_IsAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.AIInterface_IsAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.AIInterface_IsAlive"));
 
 	struct
 	{
@@ -16662,7 +16662,7 @@ bool AWTLCharacter::AIInterface_IsAlive()
 
 struct FVector AWTLCharacter::AIInterface_GetVelocity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.AIInterface_GetVelocity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.AIInterface_GetVelocity"));
 
 	struct
 	{
@@ -16683,7 +16683,7 @@ struct FVector AWTLCharacter::AIInterface_GetVelocity()
 
 int AWTLCharacter::AIInterface_GetGroupID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacter.AIInterface_GetGroupID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.AIInterface_GetGroupID"));
 
 	struct
 	{
@@ -16702,7 +16702,7 @@ int AWTLCharacter::AIInterface_GetGroupID()
 
 void UWTLCharacterBodyAnimInstance::UpdateComplexity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterBodyAnimInstance.UpdateComplexity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterBodyAnimInstance.UpdateComplexity"));
 
 	struct
 	{
@@ -16721,7 +16721,7 @@ void UWTLCharacterBodyAnimInstance::UpdateComplexity()
 
 struct FVector UWTLCharacterBodyAnimInstance::GetUsableItemAnimationVectorParameter(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterBodyAnimInstance.GetUsableItemAnimationVectorParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterBodyAnimInstance.GetUsableItemAnimationVectorParameter"));
 
 	struct
 	{
@@ -16745,7 +16745,7 @@ struct FVector UWTLCharacterBodyAnimInstance::GetUsableItemAnimationVectorParame
 
 float UWTLCharacterBodyAnimInstance::GetUsableItemAnimationFloatParameter(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterBodyAnimInstance.GetUsableItemAnimationFloatParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterBodyAnimInstance.GetUsableItemAnimationFloatParameter"));
 
 	struct
 	{
@@ -16768,7 +16768,7 @@ float UWTLCharacterBodyAnimInstance::GetUsableItemAnimationFloatParameter(int In
 
 void AWTLInteractiveObject::BPUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveObject.BPUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveObject.BPUse"));
 
 	struct
 	{
@@ -16788,7 +16788,7 @@ void AWTLInteractiveObject::BPUse(class AWTLCharacter* Character)
 
 void AWTLInteractiveObject::BPSetHighlightState(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveObject.BPSetHighlightState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveObject.BPSetHighlightState"));
 
 	struct
 	{
@@ -16809,7 +16809,7 @@ void AWTLInteractiveObject::BPSetHighlightState(bool Value)
 
 struct FString AWTLInteractiveObject::BPGetDisplayText(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveObject.BPGetDisplayText");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveObject.BPGetDisplayText"));
 
 	struct
 	{
@@ -16833,7 +16833,7 @@ struct FString AWTLInteractiveObject::BPGetDisplayText(class AWTLCharacter* Char
 
 bool AWTLInteractiveObject::BPCanBeUsed(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveObject.BPCanBeUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveObject.BPCanBeUsed"));
 
 	struct
 	{
@@ -16854,7 +16854,7 @@ bool AWTLInteractiveObject::BPCanBeUsed(class AWTLCharacter* Character)
 
 void AWTLCharacterDrop::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterDrop.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterDrop.OnRep_StorageContent"));
 
 	struct
 	{
@@ -16872,7 +16872,7 @@ void AWTLCharacterDrop::OnRep_StorageContent()
 
 void UWTLCharacterMovementComponent::Server_SetLadderClimbing(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterMovementComponent.Server_SetLadderClimbing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterMovementComponent.Server_SetLadderClimbing"));
 
 	struct
 	{
@@ -16893,7 +16893,7 @@ void UWTLCharacterMovementComponent::Server_SetLadderClimbing(bool Value)
 
 void UWTLCharacterMovementComponent::NetMulticast_PlayLadderMontage(class AWTLLadder* Ladder, EWTLLadderMontageType LadderMontageType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterMovementComponent.NetMulticast_PlayLadderMontage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterMovementComponent.NetMulticast_PlayLadderMontage"));
 
 	struct
 	{
@@ -16915,7 +16915,7 @@ void UWTLCharacterMovementComponent::NetMulticast_PlayLadderMontage(class AWTLLa
 
 void AWTLCharacterPreview::UpdateFromShortCharacterInfo(const struct FWTLShortCharacterInfo& ShortCharacterInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterPreview.UpdateFromShortCharacterInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterPreview.UpdateFromShortCharacterInfo"));
 
 	struct
 	{
@@ -16935,7 +16935,7 @@ void AWTLCharacterPreview::UpdateFromShortCharacterInfo(const struct FWTLShortCh
 
 void AWTLCharacterPreview::UpdateFromCharacter(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterPreview.UpdateFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterPreview.UpdateFromCharacter"));
 
 	struct
 	{
@@ -16955,7 +16955,7 @@ void AWTLCharacterPreview::UpdateFromCharacter(class AWTLCharacter* Character)
 
 void AWTLCharacterPreview::SetCharacterPreviewType(EWTLCharacterPreviewType PreviewType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterPreview.SetCharacterPreviewType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterPreview.SetCharacterPreviewType"));
 
 	struct
 	{
@@ -16975,7 +16975,7 @@ void AWTLCharacterPreview::SetCharacterPreviewType(EWTLCharacterPreviewType Prev
 
 void UWTLCharacterPreviewAnimInstance::UpdateComplexity(unsigned char BodyType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterPreviewAnimInstance.UpdateComplexity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterPreviewAnimInstance.UpdateComplexity"));
 
 	struct
 	{
@@ -16995,7 +16995,7 @@ void UWTLCharacterPreviewAnimInstance::UpdateComplexity(unsigned char BodyType)
 
 class AWTLCharacterPreview* AWTLCharacterPreviewRoom::GetCharacterPreview()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCharacterPreviewRoom.GetCharacterPreview");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacterPreviewRoom.GetCharacterPreview"));
 
 	struct
 	{
@@ -17014,7 +17014,7 @@ class AWTLCharacterPreview* AWTLCharacterPreviewRoom::GetCharacterPreview()
 
 void AWTLChargeablePlaceableStuff::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLChargeablePlaceableStuff.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLChargeablePlaceableStuff.OnRep_Energy"));
 
 	struct
 	{
@@ -17032,7 +17032,7 @@ void AWTLChargeablePlaceableStuff::OnRep_Energy()
 
 void UWTLCircularProgressBar::SetPercent(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCircularProgressBar.SetPercent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCircularProgressBar.SetPercent"));
 
 	struct
 	{
@@ -17052,7 +17052,7 @@ void UWTLCircularProgressBar::SetPercent(float Value)
 
 void UWTLCircularProgressBar::SetColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCircularProgressBar.SetColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCircularProgressBar.SetColor"));
 
 	struct
 	{
@@ -17072,7 +17072,7 @@ void UWTLCircularProgressBar::SetColor(const struct FLinearColor& NewColor)
 
 void AWTLCommandCore::OnIntruderKilled(class APawn* Victim)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCore.OnIntruderKilled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCore.OnIntruderKilled"));
 
 	struct
 	{
@@ -17093,7 +17093,7 @@ void AWTLCommandCore::OnIntruderKilled(class APawn* Victim)
 
 void AWTLCommandCore::OnIntruderDetected(class APawn* Intruder, bool bIsLethal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCore.OnIntruderDetected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCore.OnIntruderDetected"));
 
 	struct
 	{
@@ -17115,7 +17115,7 @@ void AWTLCommandCore::OnIntruderDetected(class APawn* Intruder, bool bIsLethal)
 
 void AWTLCommandCore::K2_OnIntruderKilled(class APawn* Victim)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCore.K2_OnIntruderKilled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCore.K2_OnIntruderKilled"));
 
 	struct
 	{
@@ -17136,7 +17136,7 @@ void AWTLCommandCore::K2_OnIntruderKilled(class APawn* Victim)
 
 bool AWTLCommandCore::IsIntruder(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCore.IsIntruder");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCore.IsIntruder"));
 
 	struct
 	{
@@ -17159,7 +17159,7 @@ bool AWTLCommandCore::IsIntruder(class AWTLCharacter* Character)
 
 void UWTLCommandCoreNode::OnIntruderRemovedFromList(class APawn* Intruder)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreNode.OnIntruderRemovedFromList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreNode.OnIntruderRemovedFromList"));
 
 	struct
 	{
@@ -17179,7 +17179,7 @@ void UWTLCommandCoreNode::OnIntruderRemovedFromList(class APawn* Intruder)
 
 void UWTLCommandCoreNode::OnIntruderDetected(class APawn* Intruder)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreNode.OnIntruderDetected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreNode.OnIntruderDetected"));
 
 	struct
 	{
@@ -17199,7 +17199,7 @@ void UWTLCommandCoreNode::OnIntruderDetected(class APawn* Intruder)
 
 float UWTLCommandCoreNode::GetWatchingRange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreNode.GetWatchingRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreNode.GetWatchingRange"));
 
 	struct
 	{
@@ -17220,7 +17220,7 @@ float UWTLCommandCoreNode::GetWatchingRange()
 
 class AWTLCommandCore* UWTLCommandCoreNode::GetCommandCore()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreNode.GetCommandCore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreNode.GetCommandCore"));
 
 	struct
 	{
@@ -17241,7 +17241,7 @@ class AWTLCommandCore* UWTLCommandCoreNode::GetCommandCore()
 
 void UWTLCommandCoreNode::CommandCoreLink(class AWTLCommandCore* CommandCore)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreNode.CommandCoreLink");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreNode.CommandCoreLink"));
 
 	struct
 	{
@@ -17261,7 +17261,7 @@ void UWTLCommandCoreNode::CommandCoreLink(class AWTLCommandCore* CommandCore)
 
 void AWTLCommandCoreTurret::OnRep_TargetToFollow(class APawn* Previous)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreTurret.OnRep_TargetToFollow");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreTurret.OnRep_TargetToFollow"));
 
 	struct
 	{
@@ -17281,7 +17281,7 @@ void AWTLCommandCoreTurret::OnRep_TargetToFollow(class APawn* Previous)
 
 void AWTLCommandCoreTurret::K2_OnPawnKilled(class APawn* TargetPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandCoreTurret.K2_OnPawnKilled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandCoreTurret.K2_OnPawnKilled"));
 
 	struct
 	{
@@ -17301,7 +17301,7 @@ void AWTLCommandCoreTurret::K2_OnPawnKilled(class APawn* TargetPawn)
 
 void UWTLCommandSystem::CC_Weather_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Weather_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Weather_Help"));
 
 	struct
 	{
@@ -17323,7 +17323,7 @@ void UWTLCommandSystem::CC_Weather_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Weather(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Weather");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Weather"));
 
 	struct
 	{
@@ -17348,7 +17348,7 @@ bool UWTLCommandSystem::CC_Weather(class AWTLPlayerController* Player, TArray<st
 
 void UWTLCommandSystem::CC_VisitPortal_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_VisitPortal_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_VisitPortal_Help"));
 
 	struct
 	{
@@ -17371,7 +17371,7 @@ void UWTLCommandSystem::CC_VisitPortal_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_VisitPortal(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_VisitPortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_VisitPortal"));
 
 	struct
 	{
@@ -17398,7 +17398,7 @@ bool UWTLCommandSystem::CC_VisitPortal(class AWTLPlayerController* Player, class
 
 void UWTLCommandSystem::CC_VisitLocation_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_VisitLocation_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_VisitLocation_Help"));
 
 	struct
 	{
@@ -17421,7 +17421,7 @@ void UWTLCommandSystem::CC_VisitLocation_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_VisitLocation(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_VisitLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_VisitLocation"));
 
 	struct
 	{
@@ -17448,7 +17448,7 @@ bool UWTLCommandSystem::CC_VisitLocation(class AWTLPlayerController* Player, cla
 
 void UWTLCommandSystem::CC_UnvisitLocation_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_UnvisitLocation_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_UnvisitLocation_Help"));
 
 	struct
 	{
@@ -17471,7 +17471,7 @@ void UWTLCommandSystem::CC_UnvisitLocation_Help(class AWTLPlayerController* Play
 
 bool UWTLCommandSystem::CC_UnvisitLocation(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_UnvisitLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_UnvisitLocation"));
 
 	struct
 	{
@@ -17501,7 +17501,7 @@ bool UWTLCommandSystem::CC_UnvisitLocation(class AWTLPlayerController* Player, c
 
 bool UWTLCommandSystem::CC_Test(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Test");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Test"));
 
 	struct
 	{
@@ -17528,7 +17528,7 @@ bool UWTLCommandSystem::CC_Test(class AWTLPlayerController* Player, class AWTLPl
 
 void UWTLCommandSystem::CC_TeleportCharacter_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_TeleportCharacter_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_TeleportCharacter_Help"));
 
 	struct
 	{
@@ -17550,7 +17550,7 @@ void UWTLCommandSystem::CC_TeleportCharacter_Help(class AWTLPlayerController* Pl
 
 bool UWTLCommandSystem::CC_TeleportCharacter(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_TeleportCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_TeleportCharacter"));
 
 	struct
 	{
@@ -17575,7 +17575,7 @@ bool UWTLCommandSystem::CC_TeleportCharacter(class AWTLPlayerController* Player,
 
 void UWTLCommandSystem::CC_Teleport_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Teleport_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Teleport_Help"));
 
 	struct
 	{
@@ -17598,7 +17598,7 @@ void UWTLCommandSystem::CC_Teleport_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Teleport(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Teleport");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Teleport"));
 
 	struct
 	{
@@ -17625,7 +17625,7 @@ bool UWTLCommandSystem::CC_Teleport(class AWTLPlayerController* Player, class AW
 
 void UWTLCommandSystem::CC_SystemMessage_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SystemMessage_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SystemMessage_Help"));
 
 	struct
 	{
@@ -17647,7 +17647,7 @@ void UWTLCommandSystem::CC_SystemMessage_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_SystemMessage(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SystemMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SystemMessage"));
 
 	struct
 	{
@@ -17672,7 +17672,7 @@ bool UWTLCommandSystem::CC_SystemMessage(class AWTLPlayerController* Player, TAr
 
 void UWTLCommandSystem::CC_SystemEvent_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SystemEvent_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SystemEvent_Help"));
 
 	struct
 	{
@@ -17694,7 +17694,7 @@ void UWTLCommandSystem::CC_SystemEvent_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SystemEvent(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SystemEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SystemEvent"));
 
 	struct
 	{
@@ -17719,7 +17719,7 @@ bool UWTLCommandSystem::CC_SystemEvent(class AWTLPlayerController* Player, TArra
 
 void UWTLCommandSystem::CC_SteamIntStatValue_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SteamIntStatValue_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SteamIntStatValue_Help"));
 
 	struct
 	{
@@ -17742,7 +17742,7 @@ void UWTLCommandSystem::CC_SteamIntStatValue_Help(class AWTLPlayerController* Pl
 
 bool UWTLCommandSystem::CC_SteamIntStatValue(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SteamIntStatValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SteamIntStatValue"));
 
 	struct
 	{
@@ -17769,7 +17769,7 @@ bool UWTLCommandSystem::CC_SteamIntStatValue(class AWTLPlayerController* Player,
 
 void UWTLCommandSystem::CC_SteamIntStatDelta_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SteamIntStatDelta_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SteamIntStatDelta_Help"));
 
 	struct
 	{
@@ -17792,7 +17792,7 @@ void UWTLCommandSystem::CC_SteamIntStatDelta_Help(class AWTLPlayerController* Pl
 
 bool UWTLCommandSystem::CC_SteamIntStatDelta(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SteamIntStatDelta");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SteamIntStatDelta"));
 
 	struct
 	{
@@ -17819,7 +17819,7 @@ bool UWTLCommandSystem::CC_SteamIntStatDelta(class AWTLPlayerController* Player,
 
 void UWTLCommandSystem::CC_Sprint_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Sprint_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Sprint_Help"));
 
 	struct
 	{
@@ -17842,7 +17842,7 @@ void UWTLCommandSystem::CC_Sprint_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Sprint(class AWTLPlayerController* Player, TArray<struct FString> Params, class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Sprint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Sprint"));
 
 	struct
 	{
@@ -17867,7 +17867,7 @@ bool UWTLCommandSystem::CC_Sprint(class AWTLPlayerController* Player, TArray<str
 
 void UWTLCommandSystem::CC_Spectate_Help()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Spectate_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Spectate_Help"));
 
 	struct
 	{
@@ -17887,7 +17887,7 @@ void UWTLCommandSystem::CC_Spectate_Help()
 
 bool UWTLCommandSystem::CC_Spectate(class AWTLPlayerController* Player, TArray<struct FString>* Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Spectate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Spectate"));
 
 	struct
 	{
@@ -17914,7 +17914,7 @@ bool UWTLCommandSystem::CC_Spectate(class AWTLPlayerController* Player, TArray<s
 
 void UWTLCommandSystem::CC_SetWeaponExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetWeaponExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetWeaponExperience_Help"));
 
 	struct
 	{
@@ -17938,7 +17938,7 @@ void UWTLCommandSystem::CC_SetWeaponExperience_Help(class AWTLPlayerController* 
 
 bool UWTLCommandSystem::CC_SetWeaponExperience(class AWTLPlayerController* Player, class AWTLCharacter* Character, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetWeaponExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetWeaponExperience"));
 
 	struct
 	{
@@ -17967,7 +17967,7 @@ bool UWTLCommandSystem::CC_SetWeaponExperience(class AWTLPlayerController* Playe
 
 void UWTLCommandSystem::CC_SetThirst_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetThirst_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetThirst_Help"));
 
 	struct
 	{
@@ -17990,7 +17990,7 @@ void UWTLCommandSystem::CC_SetThirst_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetThirst(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetThirst");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetThirst"));
 
 	struct
 	{
@@ -18017,7 +18017,7 @@ bool UWTLCommandSystem::CC_SetThirst(class AWTLPlayerController* Player, class A
 
 void UWTLCommandSystem::CC_SetSurvivalExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetSurvivalExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetSurvivalExperience_Help"));
 
 	struct
 	{
@@ -18040,7 +18040,7 @@ void UWTLCommandSystem::CC_SetSurvivalExperience_Help(class AWTLPlayerController
 
 bool UWTLCommandSystem::CC_SetSurvivalExperience(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetSurvivalExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetSurvivalExperience"));
 
 	struct
 	{
@@ -18067,7 +18067,7 @@ bool UWTLCommandSystem::CC_SetSurvivalExperience(class AWTLPlayerController* Pla
 
 void UWTLCommandSystem::CC_SetSpectatorMode_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetSpectatorMode_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetSpectatorMode_Help"));
 
 	struct
 	{
@@ -18089,7 +18089,7 @@ void UWTLCommandSystem::CC_SetSpectatorMode_Help(class AWTLPlayerController* Pla
 
 bool UWTLCommandSystem::CC_SetSpectatorMode(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetSpectatorMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetSpectatorMode"));
 
 	struct
 	{
@@ -18114,7 +18114,7 @@ bool UWTLCommandSystem::CC_SetSpectatorMode(class AWTLPlayerController* Player, 
 
 void UWTLCommandSystem::CC_SetReputation_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetReputation_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetReputation_Help"));
 
 	struct
 	{
@@ -18136,7 +18136,7 @@ void UWTLCommandSystem::CC_SetReputation_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_SetReputation(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetReputation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetReputation"));
 
 	struct
 	{
@@ -18161,7 +18161,7 @@ bool UWTLCommandSystem::CC_SetReputation(class AWTLPlayerController* Player, TAr
 
 void UWTLCommandSystem::CC_SetRepairExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetRepairExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetRepairExperience_Help"));
 
 	struct
 	{
@@ -18184,7 +18184,7 @@ void UWTLCommandSystem::CC_SetRepairExperience_Help(class AWTLPlayerController* 
 
 bool UWTLCommandSystem::CC_SetRepairExperience(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetRepairExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetRepairExperience"));
 
 	struct
 	{
@@ -18211,7 +18211,7 @@ bool UWTLCommandSystem::CC_SetRepairExperience(class AWTLPlayerController* Playe
 
 void UWTLCommandSystem::CC_SetMiningExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetMiningExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetMiningExperience_Help"));
 
 	struct
 	{
@@ -18234,7 +18234,7 @@ void UWTLCommandSystem::CC_SetMiningExperience_Help(class AWTLPlayerController* 
 
 bool UWTLCommandSystem::CC_SetMiningExperience(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetMiningExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetMiningExperience"));
 
 	struct
 	{
@@ -18261,7 +18261,7 @@ bool UWTLCommandSystem::CC_SetMiningExperience(class AWTLPlayerController* Playe
 
 void UWTLCommandSystem::CC_SetMedicExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetMedicExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetMedicExperience_Help"));
 
 	struct
 	{
@@ -18284,7 +18284,7 @@ void UWTLCommandSystem::CC_SetMedicExperience_Help(class AWTLPlayerController* P
 
 bool UWTLCommandSystem::CC_SetMedicExperience(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetMedicExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetMedicExperience"));
 
 	struct
 	{
@@ -18311,7 +18311,7 @@ bool UWTLCommandSystem::CC_SetMedicExperience(class AWTLPlayerController* Player
 
 void UWTLCommandSystem::CC_SetHunger_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetHunger_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetHunger_Help"));
 
 	struct
 	{
@@ -18334,7 +18334,7 @@ void UWTLCommandSystem::CC_SetHunger_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetHunger(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetHunger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetHunger"));
 
 	struct
 	{
@@ -18361,7 +18361,7 @@ bool UWTLCommandSystem::CC_SetHunger(class AWTLPlayerController* Player, class A
 
 void UWTLCommandSystem::CC_SetGroup_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetGroup_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetGroup_Help"));
 
 	struct
 	{
@@ -18384,7 +18384,7 @@ void UWTLCommandSystem::CC_SetGroup_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetGroup(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetGroup"));
 
 	struct
 	{
@@ -18411,7 +18411,7 @@ bool UWTLCommandSystem::CC_SetGroup(class AWTLPlayerController* Player, class AW
 
 void UWTLCommandSystem::CC_SetFaction_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetFaction_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetFaction_Help"));
 
 	struct
 	{
@@ -18433,7 +18433,7 @@ void UWTLCommandSystem::CC_SetFaction_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetFaction(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetFaction"));
 
 	struct
 	{
@@ -18458,7 +18458,7 @@ bool UWTLCommandSystem::CC_SetFaction(class AWTLPlayerController* Player, TArray
 
 void UWTLCommandSystem::CC_SetCustomizationPart_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetCustomizationPart_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetCustomizationPart_Help"));
 
 	struct
 	{
@@ -18481,7 +18481,7 @@ void UWTLCommandSystem::CC_SetCustomizationPart_Help(class AWTLPlayerController*
 
 bool UWTLCommandSystem::CC_SetCustomizationPart(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetCustomizationPart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetCustomizationPart"));
 
 	struct
 	{
@@ -18508,7 +18508,7 @@ bool UWTLCommandSystem::CC_SetCustomizationPart(class AWTLPlayerController* Play
 
 void UWTLCommandSystem::CC_SetCraftExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetCraftExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetCraftExperience_Help"));
 
 	struct
 	{
@@ -18531,7 +18531,7 @@ void UWTLCommandSystem::CC_SetCraftExperience_Help(class AWTLPlayerController* P
 
 bool UWTLCommandSystem::CC_SetCraftExperience(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetCraftExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetCraftExperience"));
 
 	struct
 	{
@@ -18558,7 +18558,7 @@ bool UWTLCommandSystem::CC_SetCraftExperience(class AWTLPlayerController* Player
 
 void UWTLCommandSystem::CC_SetClass_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetClass_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetClass_Help"));
 
 	struct
 	{
@@ -18581,7 +18581,7 @@ void UWTLCommandSystem::CC_SetClass_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetClass(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetClass"));
 
 	struct
 	{
@@ -18608,7 +18608,7 @@ bool UWTLCommandSystem::CC_SetClass(class AWTLPlayerController* Player, class AW
 
 void UWTLCommandSystem::CC_SetClan_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetClan_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetClan_Help"));
 
 	struct
 	{
@@ -18630,7 +18630,7 @@ void UWTLCommandSystem::CC_SetClan_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SetClan(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SetClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SetClan"));
 
 	struct
 	{
@@ -18655,7 +18655,7 @@ bool UWTLCommandSystem::CC_SetClan(class AWTLPlayerController* Player, TArray<st
 
 void UWTLCommandSystem::CC_SafeZone_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SafeZone_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SafeZone_Help"));
 
 	struct
 	{
@@ -18677,7 +18677,7 @@ void UWTLCommandSystem::CC_SafeZone_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_SafeZone(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_SafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_SafeZone"));
 
 	struct
 	{
@@ -18702,7 +18702,7 @@ bool UWTLCommandSystem::CC_SafeZone(class AWTLPlayerController* Player, TArray<s
 
 void UWTLCommandSystem::CC_Revoke_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Revoke_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Revoke_Help"));
 
 	struct
 	{
@@ -18724,7 +18724,7 @@ void UWTLCommandSystem::CC_Revoke_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Revoke(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Revoke");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Revoke"));
 
 	struct
 	{
@@ -18749,7 +18749,7 @@ bool UWTLCommandSystem::CC_Revoke(class AWTLPlayerController* Player, TArray<str
 
 void UWTLCommandSystem::CC_Reputation_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Reputation_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Reputation_Help"));
 
 	struct
 	{
@@ -18771,7 +18771,7 @@ void UWTLCommandSystem::CC_Reputation_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Reputation(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Reputation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Reputation"));
 
 	struct
 	{
@@ -18796,7 +18796,7 @@ bool UWTLCommandSystem::CC_Reputation(class AWTLPlayerController* Player, TArray
 
 void UWTLCommandSystem::CC_RepairAll_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RepairAll_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RepairAll_Help"));
 
 	struct
 	{
@@ -18819,7 +18819,7 @@ void UWTLCommandSystem::CC_RepairAll_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_RepairAll(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RepairAll");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RepairAll"));
 
 	struct
 	{
@@ -18846,7 +18846,7 @@ bool UWTLCommandSystem::CC_RepairAll(class AWTLPlayerController* Player, class A
 
 void UWTLCommandSystem::CC_RemovePDAModule_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RemovePDAModule_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RemovePDAModule_Help"));
 
 	struct
 	{
@@ -18869,7 +18869,7 @@ void UWTLCommandSystem::CC_RemovePDAModule_Help(class AWTLPlayerController* Play
 
 bool UWTLCommandSystem::CC_RemovePDAModule(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RemovePDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RemovePDAModule"));
 
 	struct
 	{
@@ -18896,7 +18896,7 @@ bool UWTLCommandSystem::CC_RemovePDAModule(class AWTLPlayerController* Player, c
 
 void UWTLCommandSystem::CC_RecoverStamina_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverStamina_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverStamina_Help"));
 
 	struct
 	{
@@ -18919,7 +18919,7 @@ void UWTLCommandSystem::CC_RecoverStamina_Help(class AWTLPlayerController* Playe
 
 bool UWTLCommandSystem::CC_RecoverStamina(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverStamina");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverStamina"));
 
 	struct
 	{
@@ -18946,7 +18946,7 @@ bool UWTLCommandSystem::CC_RecoverStamina(class AWTLPlayerController* Player, cl
 
 void UWTLCommandSystem::CC_RecoverHP_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverHP_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverHP_Help"));
 
 	struct
 	{
@@ -18969,7 +18969,7 @@ void UWTLCommandSystem::CC_RecoverHP_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_RecoverHP(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverHP");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverHP"));
 
 	struct
 	{
@@ -18996,7 +18996,7 @@ bool UWTLCommandSystem::CC_RecoverHP(class AWTLPlayerController* Player, class A
 
 void UWTLCommandSystem::CC_RecoverHealth_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverHealth_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverHealth_Help"));
 
 	struct
 	{
@@ -19019,7 +19019,7 @@ void UWTLCommandSystem::CC_RecoverHealth_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_RecoverHealth(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverHealth"));
 
 	struct
 	{
@@ -19046,7 +19046,7 @@ bool UWTLCommandSystem::CC_RecoverHealth(class AWTLPlayerController* Player, cla
 
 void UWTLCommandSystem::CC_RecoverAll_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverAll_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverAll_Help"));
 
 	struct
 	{
@@ -19070,7 +19070,7 @@ void UWTLCommandSystem::CC_RecoverAll_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_RecoverAll(class AWTLPlayerController* Player, class AWTLCharacter* Character, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_RecoverAll");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_RecoverAll"));
 
 	struct
 	{
@@ -19099,7 +19099,7 @@ bool UWTLCommandSystem::CC_RecoverAll(class AWTLPlayerController* Player, class 
 
 void UWTLCommandSystem::CC_Quest_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Quest_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Quest_Help"));
 
 	struct
 	{
@@ -19122,7 +19122,7 @@ void UWTLCommandSystem::CC_Quest_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Quest(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Quest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Quest"));
 
 	struct
 	{
@@ -19149,7 +19149,7 @@ bool UWTLCommandSystem::CC_Quest(class AWTLPlayerController* Player, class AWTLC
 
 void UWTLCommandSystem::CC_PVP_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_PVP_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_PVP_Help"));
 
 	struct
 	{
@@ -19171,7 +19171,7 @@ void UWTLCommandSystem::CC_PVP_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_PVP(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_PVP");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_PVP"));
 
 	struct
 	{
@@ -19196,7 +19196,7 @@ bool UWTLCommandSystem::CC_PVP(class AWTLPlayerController* Player, TArray<struct
 
 void UWTLCommandSystem::CC_MoveToLocation_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_MoveToLocation_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_MoveToLocation_Help"));
 
 	struct
 	{
@@ -19219,7 +19219,7 @@ void UWTLCommandSystem::CC_MoveToLocation_Help(class AWTLPlayerController* Playe
 
 bool UWTLCommandSystem::CC_MoveToLocation(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_MoveToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_MoveToLocation"));
 
 	struct
 	{
@@ -19246,7 +19246,7 @@ bool UWTLCommandSystem::CC_MoveToLocation(class AWTLPlayerController* Player, cl
 
 void UWTLCommandSystem::CC_Monster_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Monster_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Monster_Help"));
 
 	struct
 	{
@@ -19268,7 +19268,7 @@ void UWTLCommandSystem::CC_Monster_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Monster(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Monster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Monster"));
 
 	struct
 	{
@@ -19293,7 +19293,7 @@ bool UWTLCommandSystem::CC_Monster(class AWTLPlayerController* Player, TArray<st
 
 void UWTLCommandSystem::CC_ListPlayers_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ListPlayers_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ListPlayers_Help"));
 
 	struct
 	{
@@ -19315,7 +19315,7 @@ void UWTLCommandSystem::CC_ListPlayers_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_ListPlayers(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ListPlayers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ListPlayers"));
 
 	struct
 	{
@@ -19340,7 +19340,7 @@ bool UWTLCommandSystem::CC_ListPlayers(class AWTLPlayerController* Player, TArra
 
 void UWTLCommandSystem::CC_Kit_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kit_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kit_Help"));
 
 	struct
 	{
@@ -19363,7 +19363,7 @@ void UWTLCommandSystem::CC_Kit_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Kit(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kit"));
 
 	struct
 	{
@@ -19391,7 +19391,7 @@ bool UWTLCommandSystem::CC_Kit(class AWTLPlayerController* Player, class AWTLCha
 
 bool UWTLCommandSystem::CC_KillAllNPC(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_KillAllNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_KillAllNPC"));
 
 	struct
 	{
@@ -19414,7 +19414,7 @@ bool UWTLCommandSystem::CC_KillAllNPC(class AWTLPlayerController* Player)
 
 void UWTLCommandSystem::CC_Kill_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kill_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kill_Help"));
 
 	struct
 	{
@@ -19436,7 +19436,7 @@ void UWTLCommandSystem::CC_Kill_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Kill(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kill");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kill"));
 
 	struct
 	{
@@ -19461,7 +19461,7 @@ bool UWTLCommandSystem::CC_Kill(class AWTLPlayerController* Player, TArray<struc
 
 void UWTLCommandSystem::CC_Kick_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kick_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kick_Help"));
 
 	struct
 	{
@@ -19483,7 +19483,7 @@ void UWTLCommandSystem::CC_Kick_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Kick(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Kick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Kick"));
 
 	struct
 	{
@@ -19508,7 +19508,7 @@ bool UWTLCommandSystem::CC_Kick(class AWTLPlayerController* Player, TArray<struc
 
 void UWTLCommandSystem::CC_Grant_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Grant_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Grant_Help"));
 
 	struct
 	{
@@ -19530,7 +19530,7 @@ void UWTLCommandSystem::CC_Grant_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Grant(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Grant");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Grant"));
 
 	struct
 	{
@@ -19555,7 +19555,7 @@ bool UWTLCommandSystem::CC_Grant(class AWTLPlayerController* Player, TArray<stru
 
 void UWTLCommandSystem::CC_GodMode_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GodMode_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GodMode_Help"));
 
 	struct
 	{
@@ -19578,7 +19578,7 @@ void UWTLCommandSystem::CC_GodMode_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_GodMode(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GodMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GodMode"));
 
 	struct
 	{
@@ -19605,7 +19605,7 @@ bool UWTLCommandSystem::CC_GodMode(class AWTLPlayerController* Player, class AWT
 
 void UWTLCommandSystem::CC_GiveScore_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveScore_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveScore_Help"));
 
 	struct
 	{
@@ -19627,7 +19627,7 @@ void UWTLCommandSystem::CC_GiveScore_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_GiveScore(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveScore"));
 
 	struct
 	{
@@ -19652,7 +19652,7 @@ bool UWTLCommandSystem::CC_GiveScore(class AWTLPlayerController* Player, TArray<
 
 void UWTLCommandSystem::CC_GiveMoney_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveMoney_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveMoney_Help"));
 
 	struct
 	{
@@ -19674,7 +19674,7 @@ void UWTLCommandSystem::CC_GiveMoney_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_GiveMoney(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveMoney");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveMoney"));
 
 	struct
 	{
@@ -19699,7 +19699,7 @@ bool UWTLCommandSystem::CC_GiveMoney(class AWTLPlayerController* Player, TArray<
 
 void UWTLCommandSystem::CC_GiveLevel_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveLevel_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveLevel_Help"));
 
 	struct
 	{
@@ -19721,7 +19721,7 @@ void UWTLCommandSystem::CC_GiveLevel_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_GiveLevel(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveLevel"));
 
 	struct
 	{
@@ -19746,7 +19746,7 @@ bool UWTLCommandSystem::CC_GiveLevel(class AWTLPlayerController* Player, TArray<
 
 void UWTLCommandSystem::CC_GiveItem_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveItem_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveItem_Help"));
 
 	struct
 	{
@@ -19769,7 +19769,7 @@ void UWTLCommandSystem::CC_GiveItem_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_GiveItem(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveItem"));
 
 	struct
 	{
@@ -19796,7 +19796,7 @@ bool UWTLCommandSystem::CC_GiveItem(class AWTLPlayerController* Player, class AW
 
 void UWTLCommandSystem::CC_GiveExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveExperience_Help"));
 
 	struct
 	{
@@ -19818,7 +19818,7 @@ void UWTLCommandSystem::CC_GiveExperience_Help(class AWTLPlayerController* Playe
 
 bool UWTLCommandSystem::CC_GiveExperience(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_GiveExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_GiveExperience"));
 
 	struct
 	{
@@ -19843,7 +19843,7 @@ bool UWTLCommandSystem::CC_GiveExperience(class AWTLPlayerController* Player, TA
 
 void UWTLCommandSystem::CC_ForceInformer_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ForceInformer_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ForceInformer_Help"));
 
 	struct
 	{
@@ -19865,7 +19865,7 @@ void UWTLCommandSystem::CC_ForceInformer_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_ForceInformer(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ForceInformer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ForceInformer"));
 
 	struct
 	{
@@ -19890,7 +19890,7 @@ bool UWTLCommandSystem::CC_ForceInformer(class AWTLPlayerController* Player, TAr
 
 void UWTLCommandSystem::CC_ExecList_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ExecList_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ExecList_Help"));
 
 	struct
 	{
@@ -19912,7 +19912,7 @@ void UWTLCommandSystem::CC_ExecList_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_ExecList(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ExecList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ExecList"));
 
 	struct
 	{
@@ -19937,7 +19937,7 @@ bool UWTLCommandSystem::CC_ExecList(class AWTLPlayerController* Player, TArray<s
 
 void UWTLCommandSystem::CC_Exec_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Exec_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Exec_Help"));
 
 	struct
 	{
@@ -19959,7 +19959,7 @@ void UWTLCommandSystem::CC_Exec_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_Exec(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_Exec");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Exec"));
 
 	struct
 	{
@@ -19984,7 +19984,7 @@ bool UWTLCommandSystem::CC_Exec(class AWTLPlayerController* Player, TArray<struc
 
 void UWTLCommandSystem::CC_EnemyNPC_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_EnemyNPC_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_EnemyNPC_Help"));
 
 	struct
 	{
@@ -20006,7 +20006,7 @@ void UWTLCommandSystem::CC_EnemyNPC_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_EnemyNPC(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_EnemyNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_EnemyNPC"));
 
 	struct
 	{
@@ -20031,7 +20031,7 @@ bool UWTLCommandSystem::CC_EnemyNPC(class AWTLPlayerController* Player, TArray<s
 
 void UWTLCommandSystem::CC_DrainPointEnergy_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_DrainPointEnergy_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_DrainPointEnergy_Help"));
 
 	struct
 	{
@@ -20053,7 +20053,7 @@ void UWTLCommandSystem::CC_DrainPointEnergy_Help(class AWTLPlayerController* Pla
 
 bool UWTLCommandSystem::CC_DrainPointEnergy(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_DrainPointEnergy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_DrainPointEnergy"));
 
 	struct
 	{
@@ -20078,7 +20078,7 @@ bool UWTLCommandSystem::CC_DrainPointEnergy(class AWTLPlayerController* Player, 
 
 void UWTLCommandSystem::CC_CurrentWeather_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_CurrentWeather_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_CurrentWeather_Help"));
 
 	struct
 	{
@@ -20100,7 +20100,7 @@ void UWTLCommandSystem::CC_CurrentWeather_Help(class AWTLPlayerController* Playe
 
 bool UWTLCommandSystem::CC_CurrentWeather(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_CurrentWeather");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_CurrentWeather"));
 
 	struct
 	{
@@ -20125,7 +20125,7 @@ bool UWTLCommandSystem::CC_CurrentWeather(class AWTLPlayerController* Player, TA
 
 void UWTLCommandSystem::CC_ClearExperience_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ClearExperience_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ClearExperience_Help"));
 
 	struct
 	{
@@ -20147,7 +20147,7 @@ void UWTLCommandSystem::CC_ClearExperience_Help(class AWTLPlayerController* Play
 
 bool UWTLCommandSystem::CC_ClearExperience(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ClearExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ClearExperience"));
 
 	struct
 	{
@@ -20172,7 +20172,7 @@ bool UWTLCommandSystem::CC_ClearExperience(class AWTLPlayerController* Player, T
 
 void UWTLCommandSystem::CC_ChangeWeather_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeWeather_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeWeather_Help"));
 
 	struct
 	{
@@ -20194,7 +20194,7 @@ void UWTLCommandSystem::CC_ChangeWeather_Help(class AWTLPlayerController* Player
 
 bool UWTLCommandSystem::CC_ChangeWeather(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeWeather");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeWeather"));
 
 	struct
 	{
@@ -20219,7 +20219,7 @@ bool UWTLCommandSystem::CC_ChangeWeather(class AWTLPlayerController* Player, TAr
 
 void UWTLCommandSystem::CC_ChangeSex_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeSex_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeSex_Help"));
 
 	struct
 	{
@@ -20242,7 +20242,7 @@ void UWTLCommandSystem::CC_ChangeSex_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_ChangeSex(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeSex"));
 
 	struct
 	{
@@ -20269,7 +20269,7 @@ bool UWTLCommandSystem::CC_ChangeSex(class AWTLPlayerController* Player, class A
 
 void UWTLCommandSystem::CC_ChangeParameters_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeParameters_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeParameters_Help"));
 
 	struct
 	{
@@ -20291,7 +20291,7 @@ void UWTLCommandSystem::CC_ChangeParameters_Help(class AWTLPlayerController* Pla
 
 bool UWTLCommandSystem::CC_ChangeParameters(class AWTLPlayerController* Player, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeParameters"));
 
 	struct
 	{
@@ -20316,7 +20316,7 @@ bool UWTLCommandSystem::CC_ChangeParameters(class AWTLPlayerController* Player, 
 
 void UWTLCommandSystem::CC_ChangeClass_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeClass_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeClass_Help"));
 
 	struct
 	{
@@ -20339,7 +20339,7 @@ void UWTLCommandSystem::CC_ChangeClass_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_ChangeClass(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_ChangeClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeClass"));
 
 	struct
 	{
@@ -20366,7 +20366,7 @@ bool UWTLCommandSystem::CC_ChangeClass(class AWTLPlayerController* Player, class
 
 void UWTLCommandSystem::CC_AimBot_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AimBot_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AimBot_Help"));
 
 	struct
 	{
@@ -20389,7 +20389,7 @@ void UWTLCommandSystem::CC_AimBot_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_AimBot(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AimBot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AimBot"));
 
 	struct
 	{
@@ -20416,7 +20416,7 @@ bool UWTLCommandSystem::CC_AimBot(class AWTLPlayerController* Player, class AWTL
 
 void UWTLCommandSystem::CC_AddPDAModule_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AddPDAModule_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AddPDAModule_Help"));
 
 	struct
 	{
@@ -20439,7 +20439,7 @@ void UWTLCommandSystem::CC_AddPDAModule_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_AddPDAModule(class AWTLPlayerController* Player, class AWTLPlayerState* PlayerState, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AddPDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AddPDAModule"));
 
 	struct
 	{
@@ -20466,7 +20466,7 @@ bool UWTLCommandSystem::CC_AddPDAModule(class AWTLPlayerController* Player, clas
 
 void UWTLCommandSystem::CC_AddEffect_Help(class AWTLPlayerController* Player)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AddEffect_Help");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AddEffect_Help"));
 
 	struct
 	{
@@ -20489,7 +20489,7 @@ void UWTLCommandSystem::CC_AddEffect_Help(class AWTLPlayerController* Player)
 
 bool UWTLCommandSystem::CC_AddEffect(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommandSystem.CC_AddEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_AddEffect"));
 
 	struct
 	{
@@ -20514,7 +20514,7 @@ bool UWTLCommandSystem::CC_AddEffect(class AWTLPlayerController* Player, class A
 
 void UWTLCommonColorPresetItem::OnColorPresetBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonColorPresetItem.OnColorPresetBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonColorPresetItem.OnColorPresetBtnClicked"));
 
 	struct
 	{
@@ -20534,7 +20534,7 @@ void UWTLCommonColorPresetItem::OnColorPresetBtnClicked()
 
 void UWTLCommonColorPresets::OnColorPresetItemClicked(int Number, const struct FLinearColor& PresetColor, const struct FLinearColor& PreviewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonColorPresets.OnColorPresetItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonColorPresets.OnColorPresetItemClicked"));
 
 	struct
 	{
@@ -20556,7 +20556,7 @@ void UWTLCommonColorPresets::OnColorPresetItemClicked(int Number, const struct F
 
 void UWTLCommonColorWheel::OnOKBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonColorWheel.OnOKBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonColorWheel.OnOKBtnClick"));
 
 	struct
 	{
@@ -20572,7 +20572,7 @@ void UWTLCommonColorWheel::OnOKBtnClick()
 
 void UWTLCommonColorWheel::OnCancelBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonColorWheel.OnCancelBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonColorWheel.OnCancelBtnClick"));
 
 	struct
 	{
@@ -20590,7 +20590,7 @@ void UWTLCommonColorWheel::OnCancelBtnClick()
 
 void UWTLCommonColorWheel::ColorChanged(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonColorWheel.ColorChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonColorWheel.ColorChanged"));
 
 	struct
 	{
@@ -20608,7 +20608,7 @@ void UWTLCommonColorWheel::ColorChanged(const struct FLinearColor& NewColor)
 
 void UWTLCommonCountdownWindow::UpdateCountdown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonCountdownWindow.UpdateCountdown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonCountdownWindow.UpdateCountdown"));
 
 	struct
 	{
@@ -20624,7 +20624,7 @@ void UWTLCommonCountdownWindow::UpdateCountdown()
 
 void UWTLCommonCountdownWindow::UpdateBlockCancelButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonCountdownWindow.UpdateBlockCancelButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonCountdownWindow.UpdateBlockCancelButton"));
 
 	struct
 	{
@@ -20640,7 +20640,7 @@ void UWTLCommonCountdownWindow::UpdateBlockCancelButton()
 
 void UWTLCommonCountdownWindow::OnCancelBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonCountdownWindow.OnCancelBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonCountdownWindow.OnCancelBtnClick"));
 
 	struct
 	{
@@ -20656,7 +20656,7 @@ void UWTLCommonCountdownWindow::OnCancelBtnClick()
 
 void UWTLCommonHotkeyButton::OnButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonHotkeyButton.OnButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonHotkeyButton.OnButtonClicked"));
 
 	struct
 	{
@@ -20674,7 +20674,7 @@ void UWTLCommonHotkeyButton::OnButtonClicked()
 
 void UWTLCommonMessageDialog::OnDialogBtnClick(class UWTLCommonMessageDialogButton* DialogButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonMessageDialog.OnDialogBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonMessageDialog.OnDialogBtnClick"));
 
 	struct
 	{
@@ -20692,7 +20692,7 @@ void UWTLCommonMessageDialog::OnDialogBtnClick(class UWTLCommonMessageDialogButt
 
 void UWTLCommonMessageDialog::Hide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonMessageDialog.Hide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonMessageDialog.Hide"));
 
 	struct
 	{
@@ -20708,7 +20708,7 @@ void UWTLCommonMessageDialog::Hide()
 
 void UWTLCommonMessageDialogButton::OnButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonMessageDialogButton.OnButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonMessageDialogButton.OnButtonClick"));
 
 	struct
 	{
@@ -20724,7 +20724,7 @@ void UWTLCommonMessageDialogButton::OnButtonClick()
 
 void UWTLCommonNotificator::OnChildsCountChange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonNotificator.OnChildsCountChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonNotificator.OnChildsCountChange"));
 
 	struct
 	{
@@ -20740,7 +20740,7 @@ void UWTLCommonNotificator::OnChildsCountChange()
 
 void UWTLCommonOptions::ShowNextApplySettingsMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.ShowNextApplySettingsMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.ShowNextApplySettingsMessage"));
 
 	struct
 	{
@@ -20756,7 +20756,7 @@ void UWTLCommonOptions::ShowNextApplySettingsMessage()
 
 void UWTLCommonOptions::ResetCurrentSetting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.ResetCurrentSetting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.ResetCurrentSetting"));
 
 	struct
 	{
@@ -20772,7 +20772,7 @@ void UWTLCommonOptions::ResetCurrentSetting()
 
 void UWTLCommonOptions::ResetAllSettings()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.ResetAllSettings");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.ResetAllSettings"));
 
 	struct
 	{
@@ -20790,7 +20790,7 @@ void UWTLCommonOptions::ResetAllSettings()
 
 void UWTLCommonOptions::OnTabBtnClick(unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnTabBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnTabBtnClick"));
 
 	struct
 	{
@@ -20808,7 +20808,7 @@ void UWTLCommonOptions::OnTabBtnClick(unsigned char TabIndex)
 
 void UWTLCommonOptions::OnResetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnResetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnResetBtnClick"));
 
 	struct
 	{
@@ -20824,7 +20824,7 @@ void UWTLCommonOptions::OnResetBtnClick()
 
 void UWTLCommonOptions::OnResetAllBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnResetAllBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnResetAllBtnClick"));
 
 	struct
 	{
@@ -20840,7 +20840,7 @@ void UWTLCommonOptions::OnResetAllBtnClick()
 
 void UWTLCommonOptions::OnOKBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnOKBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnOKBtnClick"));
 
 	struct
 	{
@@ -20860,7 +20860,7 @@ void UWTLCommonOptions::OnOKBtnClick()
 
 void UWTLCommonOptions::OnColorSelection(const struct FLinearColor& CurrentColor, const struct FGeometry& Geometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnColorSelection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnColorSelection"));
 
 	struct
 	{
@@ -20882,7 +20882,7 @@ void UWTLCommonOptions::OnColorSelection(const struct FLinearColor& CurrentColor
 
 void UWTLCommonOptions::OnColorPickedCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnColorPickedCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnColorPickedCanceled"));
 
 	struct
 	{
@@ -20900,7 +20900,7 @@ void UWTLCommonOptions::OnColorPickedCanceled()
 
 void UWTLCommonOptions::OnColorPicked(const struct FLinearColor& PickedColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnColorPicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnColorPicked"));
 
 	struct
 	{
@@ -20920,7 +20920,7 @@ void UWTLCommonOptions::OnColorPicked(const struct FLinearColor& PickedColor)
 
 void UWTLCommonOptions::OnColorChanged(const struct FLinearColor& ChangedColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnColorChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnColorChanged"));
 
 	struct
 	{
@@ -20938,7 +20938,7 @@ void UWTLCommonOptions::OnColorChanged(const struct FLinearColor& ChangedColor)
 
 void UWTLCommonOptions::OnCancelBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnCancelBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnCancelBtnClick"));
 
 	struct
 	{
@@ -20954,7 +20954,7 @@ void UWTLCommonOptions::OnCancelBtnClick()
 
 void UWTLCommonOptions::OnApplyBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.OnApplyBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.OnApplyBtnClick"));
 
 	struct
 	{
@@ -20972,7 +20972,7 @@ void UWTLCommonOptions::OnApplyBtnClick()
 
 bool UWTLCommonOptions::ApplyAllSettings()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonOptions.ApplyAllSettings");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonOptions.ApplyAllSettings"));
 
 	struct
 	{
@@ -20991,7 +20991,7 @@ bool UWTLCommonOptions::ApplyAllSettings()
 
 void UWTLCommonParameterPointSpin::OnRightBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonParameterPointSpin.OnRightBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonParameterPointSpin.OnRightBtnClick"));
 
 	struct
 	{
@@ -21007,7 +21007,7 @@ void UWTLCommonParameterPointSpin::OnRightBtnClick()
 
 void UWTLCommonParameterPointSpin::OnLeftBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonParameterPointSpin.OnLeftBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonParameterPointSpin.OnLeftBtnClick"));
 
 	struct
 	{
@@ -21023,7 +21023,7 @@ void UWTLCommonParameterPointSpin::OnLeftBtnClick()
 
 void UWTLCommonPopupMenuButton::OnButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonPopupMenuButton.OnButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonPopupMenuButton.OnButtonClick"));
 
 	struct
 	{
@@ -21039,7 +21039,7 @@ void UWTLCommonPopupMenuButton::OnButtonClick()
 
 void UWTLCommonSelectedItem::OnBackgroundBorderMouseButtonDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonSelectedItem.OnBackgroundBorderMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonSelectedItem.OnBackgroundBorderMouseButtonDown"));
 
 	struct
 	{
@@ -21055,7 +21055,7 @@ void UWTLCommonSelectedItem::OnBackgroundBorderMouseButtonDown()
 
 void UWTLCommonStoreButton::OnStoreButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonStoreButton.OnStoreButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonStoreButton.OnStoreButtonClicked"));
 
 	struct
 	{
@@ -21071,7 +21071,7 @@ void UWTLCommonStoreButton::OnStoreButtonClicked()
 
 void UWTLCommonTabButton::OnTabBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLCommonTabButton.OnTabBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonTabButton.OnTabBtnClick"));
 
 	struct
 	{
@@ -21087,7 +21087,7 @@ void UWTLCommonTabButton::OnTabBtnClick()
 
 void AWTLDoor::OnRep_bIsOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLDoor.OnRep_bIsOpened");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLDoor.OnRep_bIsOpened"));
 
 	struct
 	{
@@ -21109,7 +21109,7 @@ void AWTLDoor::OnRep_bIsOpened()
 
 void AWTLLevelScriptActor::NetMulticastReliable_OnMeleeHit(class UPrimitiveComponent* HitComponent, const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, TEnumAsByte<EPhysicalSurface> HitSurface, float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLevelScriptActor.NetMulticastReliable_OnMeleeHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelScriptActor.NetMulticastReliable_OnMeleeHit"));
 
 	struct
 	{
@@ -21137,7 +21137,7 @@ void AWTLLevelScriptActor::NetMulticastReliable_OnMeleeHit(class UPrimitiveCompo
 
 bool AWTLLevelScriptActor::IsNight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLevelScriptActor.IsNight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelScriptActor.IsNight"));
 
 	struct
 	{
@@ -21158,7 +21158,7 @@ bool AWTLLevelScriptActor::IsNight()
 
 bool AWTLLevelScriptActor::IsDay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLevelScriptActor.IsDay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelScriptActor.IsDay"));
 
 	struct
 	{
@@ -21177,7 +21177,7 @@ bool AWTLLevelScriptActor::IsDay()
 
 void AWTLLocationLevelScriptActor::OnStreamingLevelsLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.OnStreamingLevelsLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.OnStreamingLevelsLoaded"));
 
 	struct
 	{
@@ -21193,7 +21193,7 @@ void AWTLLocationLevelScriptActor::OnStreamingLevelsLoaded()
 
 void AWTLLocationLevelScriptActor::OnLevelLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.OnLevelLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.OnLevelLoaded"));
 
 	struct
 	{
@@ -21211,7 +21211,7 @@ void AWTLLocationLevelScriptActor::OnLevelLoaded()
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnScriptedEventReceivedEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnScriptedEventReceivedEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnScriptedEventReceivedEvent"));
 
 	struct
 	{
@@ -21231,7 +21231,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnScriptedEventReceivedEvent
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnGetWorldTimeResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnGetWorldTimeResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnGetWorldTimeResponse"));
 
 	struct
 	{
@@ -21249,7 +21249,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnGetWorldTimeResponse(const
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnDisconnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnDisconnected"));
 
 	struct
 	{
@@ -21267,7 +21267,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnDisconnected()
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnDedicatedServerAuthorizationResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnDedicatedServerAuthorizationResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnDedicatedServerAuthorizationResponse"));
 
 	struct
 	{
@@ -21287,7 +21287,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnDedicatedServerAuthorizati
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnConnectError(const struct FString& ErrorInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnConnectError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnConnectError"));
 
 	struct
 	{
@@ -21305,7 +21305,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnConnectError(const struct 
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnConnected"));
 
 	struct
 	{
@@ -21323,7 +21323,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnConnected()
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnCharacterLeaveLocationEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnCharacterLeaveLocationEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnCharacterLeaveLocationEvent"));
 
 	struct
 	{
@@ -21343,7 +21343,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnCharacterLeaveLocationEven
 
 void AWTLLocationLevelScriptActor::NetworkControllerOnCharacterEntersLocationEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnCharacterEntersLocationEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.NetworkControllerOnCharacterEntersLocationEvent"));
 
 	struct
 	{
@@ -21363,7 +21363,7 @@ void AWTLLocationLevelScriptActor::NetworkControllerOnCharacterEntersLocationEve
 
 bool AWTLLocationLevelScriptActor::IsAllLevelsLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLocationLevelScriptActor.IsAllLevelsLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLocationLevelScriptActor.IsAllLevelsLoaded"));
 
 	struct
 	{
@@ -21382,7 +21382,7 @@ bool AWTLLocationLevelScriptActor::IsAllLevelsLoaded()
 
 void AWTLDynamicSkyLevelScriptActor::OnRep_DesiredWindActiveTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLDynamicSkyLevelScriptActor.OnRep_DesiredWindActiveTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLDynamicSkyLevelScriptActor.OnRep_DesiredWindActiveTime"));
 
 	struct
 	{
@@ -21400,7 +21400,7 @@ void AWTLDynamicSkyLevelScriptActor::OnRep_DesiredWindActiveTime()
 
 void AWTLDynamicSkyLevelScriptActor::NetworkControllerOnWeatherChangeEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLDynamicSkyLevelScriptActor.NetworkControllerOnWeatherChangeEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLDynamicSkyLevelScriptActor.NetworkControllerOnWeatherChangeEvent"));
 
 	struct
 	{
@@ -21420,7 +21420,7 @@ void AWTLDynamicSkyLevelScriptActor::NetworkControllerOnWeatherChangeEvent(const
 
 bool AWTLDynamicSkyLevelScriptActor::GetUndergroundMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLDynamicSkyLevelScriptActor.GetUndergroundMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLDynamicSkyLevelScriptActor.GetUndergroundMode"));
 
 	struct
 	{
@@ -21442,7 +21442,7 @@ bool AWTLDynamicSkyLevelScriptActor::GetUndergroundMode()
 
 bool AWTLDynamicSkyLevelScriptActor::ChangeWeather(EWTLWeatherType WeatherType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLDynamicSkyLevelScriptActor.ChangeWeather");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLDynamicSkyLevelScriptActor.ChangeWeather"));
 
 	struct
 	{
@@ -21463,7 +21463,7 @@ bool AWTLDynamicSkyLevelScriptActor::ChangeWeather(EWTLWeatherType WeatherType)
 
 void AWTLElectronicBait::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.OnRep_Energy"));
 
 	struct
 	{
@@ -21484,7 +21484,7 @@ void AWTLElectronicBait::OnRep_Energy()
 
 void AWTLElectronicBait::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.OnEndOverlap"));
 
 	struct
 	{
@@ -21515,7 +21515,7 @@ void AWTLElectronicBait::OnEndOverlap(class UPrimitiveComponent* OverlappedCompo
 
 void AWTLElectronicBait::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.OnBeginOverlap"));
 
 	struct
 	{
@@ -21545,7 +21545,7 @@ void AWTLElectronicBait::OnBeginOverlap(class UPrimitiveComponent* OverlappedCom
 
 bool AWTLElectronicBait::AIInterface_IsAlive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.AIInterface_IsAlive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.AIInterface_IsAlive"));
 
 	struct
 	{
@@ -21566,7 +21566,7 @@ bool AWTLElectronicBait::AIInterface_IsAlive()
 
 struct FVector AWTLElectronicBait::AIInterface_GetVelocity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.AIInterface_GetVelocity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.AIInterface_GetVelocity"));
 
 	struct
 	{
@@ -21587,7 +21587,7 @@ struct FVector AWTLElectronicBait::AIInterface_GetVelocity()
 
 int AWTLElectronicBait::AIInterface_GetGroupID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLElectronicBait.AIInterface_GetGroupID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLElectronicBait.AIInterface_GetGroupID"));
 
 	struct
 	{
@@ -21606,7 +21606,7 @@ int AWTLElectronicBait::AIInterface_GetGroupID()
 
 void AWTLEnemyAIController::RestartBehaviour()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.RestartBehaviour");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.RestartBehaviour"));
 
 	struct
 	{
@@ -21626,7 +21626,7 @@ void AWTLEnemyAIController::RestartBehaviour()
 
 void AWTLEnemyAIController::OnTouchSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnTouchSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnTouchSenseUpdated"));
 
 	struct
 	{
@@ -21652,7 +21652,7 @@ void AWTLEnemyAIController::OnTouchSenseUpdated(class AActor* StimulusInstigator
 
 void AWTLEnemyAIController::OnTeamSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnTeamSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnTeamSenseUpdated"));
 
 	struct
 	{
@@ -21678,7 +21678,7 @@ void AWTLEnemyAIController::OnTeamSenseUpdated(class AActor* StimulusInstigator,
 
 void AWTLEnemyAIController::OnSightSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnSightSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnSightSenseUpdated"));
 
 	struct
 	{
@@ -21700,7 +21700,7 @@ void AWTLEnemyAIController::OnSightSenseUpdated(class AActor* StimulusInstigator
 
 void AWTLEnemyAIController::OnPredictionUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnPredictionUpdate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnPredictionUpdate"));
 
 	struct
 	{
@@ -21720,7 +21720,7 @@ void AWTLEnemyAIController::OnPredictionUpdate()
 
 void AWTLEnemyAIController::OnPredictionSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnPredictionSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnPredictionSenseUpdated"));
 
 	struct
 	{
@@ -21744,7 +21744,7 @@ void AWTLEnemyAIController::OnPredictionSenseUpdated(class AActor* StimulusInsti
 
 void AWTLEnemyAIController::OnPawnKilled(class APawn* VictimPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnPawnKilled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnPawnKilled"));
 
 	struct
 	{
@@ -21766,7 +21766,7 @@ void AWTLEnemyAIController::OnPawnKilled(class APawn* VictimPawn)
 
 void AWTLEnemyAIController::OnHearingSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnHearingSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnHearingSenseUpdated"));
 
 	struct
 	{
@@ -21791,7 +21791,7 @@ void AWTLEnemyAIController::OnHearingSenseUpdated(class AActor* StimulusInstigat
 
 void AWTLEnemyAIController::OnDealedDamageToPawn(class APawn* VictimPawn, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnDealedDamageToPawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnDealedDamageToPawn"));
 
 	struct
 	{
@@ -21816,7 +21816,7 @@ void AWTLEnemyAIController::OnDealedDamageToPawn(class APawn* VictimPawn, float 
 
 void AWTLEnemyAIController::OnDamageSenseUpdated(class AActor* StimulusInstigator, const struct FVector& StimulusLocation, bool State, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnDamageSenseUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnDamageSenseUpdated"));
 
 	struct
 	{
@@ -21843,7 +21843,7 @@ void AWTLEnemyAIController::OnDamageSenseUpdated(class AActor* StimulusInstigato
 
 void AWTLEnemyAIController::OnActorPerceptionUpdated(class AActor* Actor, const struct FAIStimulus& Stimulus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.OnActorPerceptionUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.OnActorPerceptionUpdated"));
 
 	struct
 	{
@@ -21865,7 +21865,7 @@ void AWTLEnemyAIController::OnActorPerceptionUpdated(class AActor* Actor, const 
 
 struct FGenericTeamId AWTLEnemyAIController::K2_GetGenericTeamID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.K2_GetGenericTeamID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.K2_GetGenericTeamID"));
 
 	struct
 	{
@@ -21887,7 +21887,7 @@ struct FGenericTeamId AWTLEnemyAIController::K2_GetGenericTeamID()
 
 bool AWTLEnemyAIController::IsEnemy(class APawn* InPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.IsEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.IsEnemy"));
 
 	struct
 	{
@@ -21911,7 +21911,7 @@ bool AWTLEnemyAIController::IsEnemy(class APawn* InPawn)
 
 bool AWTLEnemyAIController::IsActorInSight(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.IsActorInSight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.IsActorInSight"));
 
 	struct
 	{
@@ -21937,7 +21937,7 @@ bool AWTLEnemyAIController::IsActorInSight(class AActor* Actor)
 
 bool AWTLEnemyAIController::GetRelevantInterestPointForTarget(class AActor* Actor, struct FVector* InterestPoint, class UClass** SenseClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetRelevantInterestPointForTarget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetRelevantInterestPointForTarget"));
 
 	struct
 	{
@@ -21967,7 +21967,7 @@ bool AWTLEnemyAIController::GetRelevantInterestPointForTarget(class AActor* Acto
 
 TArray<struct FWTLSenseEventInfo> AWTLEnemyAIController::GetPredictionEvetns()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetPredictionEvetns");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetPredictionEvetns"));
 
 	struct
 	{
@@ -21988,7 +21988,7 @@ TArray<struct FWTLSenseEventInfo> AWTLEnemyAIController::GetPredictionEvetns()
 
 TArray<struct FWTLTaggedSenseEventInfo> AWTLEnemyAIController::GetNoiseEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetNoiseEvents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetNoiseEvents"));
 
 	struct
 	{
@@ -22011,7 +22011,7 @@ TArray<struct FWTLTaggedSenseEventInfo> AWTLEnemyAIController::GetNoiseEvents()
 
 bool AWTLEnemyAIController::GetNearestTargetInSight(bool bGetEnemy, class AActor** Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetNearestTargetInSight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetNearestTargetInSight"));
 
 	struct
 	{
@@ -22040,7 +22040,7 @@ bool AWTLEnemyAIController::GetNearestTargetInSight(bool bGetEnemy, class AActor
 
 bool AWTLEnemyAIController::GetLatestInterestPoint(struct FVector* InterestPoint, class UClass** SenseClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetLatestInterestPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetLatestInterestPoint"));
 
 	struct
 	{
@@ -22069,7 +22069,7 @@ bool AWTLEnemyAIController::GetLatestInterestPoint(struct FVector* InterestPoint
 
 bool AWTLEnemyAIController::GetLatestFireNoiseLocation(struct FVector* FireLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetLatestFireNoiseLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetLatestFireNoiseLocation"));
 
 	struct
 	{
@@ -22094,7 +22094,7 @@ bool AWTLEnemyAIController::GetLatestFireNoiseLocation(struct FVector* FireLocat
 
 TArray<struct FWTLSenseEventInfo> AWTLEnemyAIController::GetDamageEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetDamageEvents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetDamageEvents"));
 
 	struct
 	{
@@ -22115,7 +22115,7 @@ TArray<struct FWTLSenseEventInfo> AWTLEnemyAIController::GetDamageEvents()
 
 TArray<class AActor*> AWTLEnemyAIController::GetActorsInSight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyAIController.GetActorsInSight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyAIController.GetActorsInSight"));
 
 	struct
 	{
@@ -22137,7 +22137,7 @@ TArray<class AActor*> AWTLEnemyAIController::GetActorsInSight()
 
 float AWTLEnemyNPC::UnequipWeapon(bool bFullReload)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.UnequipWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.UnequipWeapon"));
 
 	struct
 	{
@@ -22158,7 +22158,7 @@ float AWTLEnemyNPC::UnequipWeapon(bool bFullReload)
 
 void AWTLEnemyNPC::StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.StopUse"));
 
 	struct
 	{
@@ -22174,7 +22174,7 @@ void AWTLEnemyNPC::StopUse()
 
 void AWTLEnemyNPC::StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.StartUse"));
 
 	struct
 	{
@@ -22190,7 +22190,7 @@ void AWTLEnemyNPC::StartUse()
 
 void AWTLEnemyNPC::Reload()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.Reload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.Reload"));
 
 	struct
 	{
@@ -22210,7 +22210,7 @@ void AWTLEnemyNPC::Reload()
 
 void AWTLEnemyNPC::PlayVoiceEvent(EWTLEnemyNPCExclamationType VoiceEventType, float Chance, bool bInterruptCurrent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.PlayVoiceEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.PlayVoiceEvent"));
 
 	struct
 	{
@@ -22232,7 +22232,7 @@ void AWTLEnemyNPC::PlayVoiceEvent(EWTLEnemyNPCExclamationType VoiceEventType, fl
 
 void AWTLEnemyNPC::OnRep_UsableItemInHands()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.OnRep_UsableItemInHands");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.OnRep_UsableItemInHands"));
 
 	struct
 	{
@@ -22248,7 +22248,7 @@ void AWTLEnemyNPC::OnRep_UsableItemInHands()
 
 void AWTLEnemyNPC::OnRep_LastTakeHitInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.OnRep_LastTakeHitInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.OnRep_LastTakeHitInfo"));
 
 	struct
 	{
@@ -22264,7 +22264,7 @@ void AWTLEnemyNPC::OnRep_LastTakeHitInfo()
 
 void AWTLEnemyNPC::OnRep_IsWeaponEmpty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.OnRep_IsWeaponEmpty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.OnRep_IsWeaponEmpty"));
 
 	struct
 	{
@@ -22280,7 +22280,7 @@ void AWTLEnemyNPC::OnRep_IsWeaponEmpty()
 
 void AWTLEnemyNPC::OnRep_CurrentState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.OnRep_CurrentState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.OnRep_CurrentState"));
 
 	struct
 	{
@@ -22296,7 +22296,7 @@ void AWTLEnemyNPC::OnRep_CurrentState()
 
 void AWTLEnemyNPC::OnNPCKillOnClient()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.OnNPCKillOnClient");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.OnNPCKillOnClient"));
 
 	struct
 	{
@@ -22315,7 +22315,7 @@ void AWTLEnemyNPC::OnNPCKillOnClient()
 
 void AWTLEnemyNPC::NetMulticast_PlayVoiceEvent(EWTLEnemyNPCExclamationType ExclamationType, bool bInterruptCurrent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.NetMulticast_PlayVoiceEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.NetMulticast_PlayVoiceEvent"));
 
 	struct
 	{
@@ -22337,7 +22337,7 @@ void AWTLEnemyNPC::NetMulticast_PlayVoiceEvent(EWTLEnemyNPCExclamationType Excla
 
 bool AWTLEnemyNPC::IsDead()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.IsDead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.IsDead"));
 
 	struct
 	{
@@ -22358,7 +22358,7 @@ bool AWTLEnemyNPC::IsDead()
 
 bool AWTLEnemyNPC::IsActionInProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.IsActionInProgress");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.IsActionInProgress"));
 
 	struct
 	{
@@ -22379,7 +22379,7 @@ bool AWTLEnemyNPC::IsActionInProgress()
 
 float AWTLEnemyNPC::GetWeaponRecoilSafeTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetWeaponRecoilSafeTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetWeaponRecoilSafeTime"));
 
 	struct
 	{
@@ -22400,7 +22400,7 @@ float AWTLEnemyNPC::GetWeaponRecoilSafeTime()
 
 float AWTLEnemyNPC::GetWeaponPauseBetweenUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetWeaponPauseBetweenUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetWeaponPauseBetweenUse"));
 
 	struct
 	{
@@ -22421,7 +22421,7 @@ float AWTLEnemyNPC::GetWeaponPauseBetweenUse()
 
 float AWTLEnemyNPC::GetWeaponEffectiveDistance()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetWeaponEffectiveDistance");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetWeaponEffectiveDistance"));
 
 	struct
 	{
@@ -22442,7 +22442,7 @@ float AWTLEnemyNPC::GetWeaponEffectiveDistance()
 
 float AWTLEnemyNPC::GetMaxHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetMaxHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetMaxHealth"));
 
 	struct
 	{
@@ -22463,7 +22463,7 @@ float AWTLEnemyNPC::GetMaxHealth()
 
 bool AWTLEnemyNPC::GetIsWeaponWithAutomaticFireMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetIsWeaponWithAutomaticFireMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetIsWeaponWithAutomaticFireMode"));
 
 	struct
 	{
@@ -22484,7 +22484,7 @@ bool AWTLEnemyNPC::GetIsWeaponWithAutomaticFireMode()
 
 bool AWTLEnemyNPC::GetIsWeaponFull()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetIsWeaponFull");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetIsWeaponFull"));
 
 	struct
 	{
@@ -22505,7 +22505,7 @@ bool AWTLEnemyNPC::GetIsWeaponFull()
 
 bool AWTLEnemyNPC::GetIsWeaponEmpty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetIsWeaponEmpty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetIsWeaponEmpty"));
 
 	struct
 	{
@@ -22526,7 +22526,7 @@ bool AWTLEnemyNPC::GetIsWeaponEmpty()
 
 bool AWTLEnemyNPC::GetIsItemEquipped()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetIsItemEquipped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetIsItemEquipped"));
 
 	struct
 	{
@@ -22547,7 +22547,7 @@ bool AWTLEnemyNPC::GetIsItemEquipped()
 
 float AWTLEnemyNPC::GetHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetHealth"));
 
 	struct
 	{
@@ -22568,7 +22568,7 @@ float AWTLEnemyNPC::GetHealth()
 
 EWTLHandsState AWTLEnemyNPC::GetHandsState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.GetHandsState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.GetHandsState"));
 
 	struct
 	{
@@ -22589,7 +22589,7 @@ EWTLHandsState AWTLEnemyNPC::GetHandsState()
 
 float AWTLEnemyNPC::EquipWeapon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.EquipWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.EquipWeapon"));
 
 	struct
 	{
@@ -22611,7 +22611,7 @@ float AWTLEnemyNPC::EquipWeapon()
 
 bool AWTLEnemyNPC::EnemyHasEffect(EWTLCharacterEffectType EffectType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.EnemyHasEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.EnemyHasEffect"));
 
 	struct
 	{
@@ -22634,7 +22634,7 @@ bool AWTLEnemyNPC::EnemyHasEffect(EWTLCharacterEffectType EffectType)
 
 void AWTLEnemyNPC::ApplyMedicine(int MedicineID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.ApplyMedicine");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.ApplyMedicine"));
 
 	struct
 	{
@@ -22655,7 +22655,7 @@ void AWTLEnemyNPC::ApplyMedicine(int MedicineID)
 
 void AWTLEnemyNPC::AddCharacterEffect(EWTLCharacterEffectType EffectType, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPC.AddCharacterEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPC.AddCharacterEffect"));
 
 	struct
 	{
@@ -22678,7 +22678,7 @@ void AWTLEnemyNPC::AddCharacterEffect(EWTLCharacterEffectType EffectType, float 
 
 void AWTLEnemyNPCSpawner::OnEnemyNPCDied(class AWTLEnemyNPC* EnemyNPC, class APawn* Killer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPCSpawner.OnEnemyNPCDied");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPCSpawner.OnEnemyNPCDied"));
 
 	struct
 	{
@@ -22698,7 +22698,7 @@ void AWTLEnemyNPCSpawner::OnEnemyNPCDied(class AWTLEnemyNPC* EnemyNPC, class APa
 
 void AWTLEnemyNPCSpawner::OnBeforeSpawnWave()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPCSpawner.OnBeforeSpawnWave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPCSpawner.OnBeforeSpawnWave"));
 
 	struct
 	{
@@ -22714,7 +22714,7 @@ void AWTLEnemyNPCSpawner::OnBeforeSpawnWave()
 
 void AWTLEnemyNPCSpawner::OnAllEnemyNPCDied()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPCSpawner.OnAllEnemyNPCDied");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPCSpawner.OnAllEnemyNPCDied"));
 
 	struct
 	{
@@ -22730,7 +22730,7 @@ void AWTLEnemyNPCSpawner::OnAllEnemyNPCDied()
 
 void AWTLEnemyNPCSpawner::OnAfterSpawnWave()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPCSpawner.OnAfterSpawnWave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPCSpawner.OnAfterSpawnWave"));
 
 	struct
 	{
@@ -22748,7 +22748,7 @@ void AWTLEnemyNPCSpawner::OnAfterSpawnWave()
 
 void AWTLEnemyNPCSpawner::K2_OnEnemyNPCSpawned(class AWTLEnemyNPC* EnemyNPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLEnemyNPCSpawner.K2_OnEnemyNPCSpawned");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEnemyNPCSpawner.K2_OnEnemyNPCSpawned"));
 
 	struct
 	{
@@ -22766,7 +22766,7 @@ void AWTLEnemyNPCSpawner::K2_OnEnemyNPCSpawned(class AWTLEnemyNPC* EnemyNPC)
 
 void UWTLFlashlightMountComponent::Server_Toggle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFlashlightMountComponent.Server_Toggle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFlashlightMountComponent.Server_Toggle"));
 
 	struct
 	{
@@ -22784,7 +22784,7 @@ void UWTLFlashlightMountComponent::Server_Toggle()
 
 void UWTLFlashlightMountComponent::Server_SetEnabled(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFlashlightMountComponent.Server_SetEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFlashlightMountComponent.Server_SetEnabled"));
 
 	struct
 	{
@@ -22802,7 +22802,7 @@ void UWTLFlashlightMountComponent::Server_SetEnabled(bool Value)
 
 void UWTLFlashlightMountComponent::OnRep_bIsFlashlightEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFlashlightMountComponent.OnRep_bIsFlashlightEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFlashlightMountComponent.OnRep_bIsFlashlightEnabled"));
 
 	struct
 	{
@@ -22818,7 +22818,7 @@ void UWTLFlashlightMountComponent::OnRep_bIsFlashlightEnabled()
 
 void AWTLFortificationCommandCore::OnRep_IsAnyEngineerConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.OnRep_IsAnyEngineerConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.OnRep_IsAnyEngineerConnected"));
 
 	struct
 	{
@@ -22834,7 +22834,7 @@ void AWTLFortificationCommandCore::OnRep_IsAnyEngineerConnected()
 
 void AWTLFortificationCommandCore::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.OnRep_Energy"));
 
 	struct
 	{
@@ -22850,7 +22850,7 @@ void AWTLFortificationCommandCore::OnRep_Energy()
 
 void AWTLFortificationCommandCore::OnRep_ControlFaction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.OnRep_ControlFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.OnRep_ControlFaction"));
 
 	struct
 	{
@@ -22868,7 +22868,7 @@ void AWTLFortificationCommandCore::OnRep_ControlFaction()
 
 void AWTLFortificationCommandCore::OnControlFactionChanged(EWTLFaction Faction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.OnControlFactionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.OnControlFactionChanged"));
 
 	struct
 	{
@@ -22888,7 +22888,7 @@ void AWTLFortificationCommandCore::OnControlFactionChanged(EWTLFaction Faction)
 
 bool AWTLFortificationCommandCore::IsVulnerable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.IsVulnerable");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.IsVulnerable"));
 
 	struct
 	{
@@ -22909,7 +22909,7 @@ bool AWTLFortificationCommandCore::IsVulnerable()
 
 bool AWTLFortificationCommandCore::IsJammed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.IsJammed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.IsJammed"));
 
 	struct
 	{
@@ -22930,7 +22930,7 @@ bool AWTLFortificationCommandCore::IsJammed()
 
 bool AWTLFortificationCommandCore::IsCaptureInProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.IsCaptureInProgress");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.IsCaptureInProgress"));
 
 	struct
 	{
@@ -22951,7 +22951,7 @@ bool AWTLFortificationCommandCore::IsCaptureInProgress()
 
 struct FWTLDateTime AWTLFortificationCommandCore::GetTimeTillNextHack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetTimeTillNextHack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetTimeTillNextHack"));
 
 	struct
 	{
@@ -22972,7 +22972,7 @@ struct FWTLDateTime AWTLFortificationCommandCore::GetTimeTillNextHack()
 
 float AWTLFortificationCommandCore::GetSignalRange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetSignalRange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetSignalRange"));
 
 	struct
 	{
@@ -22993,7 +22993,7 @@ float AWTLFortificationCommandCore::GetSignalRange()
 
 float AWTLFortificationCommandCore::GetNormalizedEnergy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetNormalizedEnergy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetNormalizedEnergy"));
 
 	struct
 	{
@@ -23014,7 +23014,7 @@ float AWTLFortificationCommandCore::GetNormalizedEnergy()
 
 float AWTLFortificationCommandCore::GetMaxEnergy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetMaxEnergy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetMaxEnergy"));
 
 	struct
 	{
@@ -23035,7 +23035,7 @@ float AWTLFortificationCommandCore::GetMaxEnergy()
 
 struct FWTLDateTime AWTLFortificationCommandCore::GetLastHackTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetLastHackTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetLastHackTime"));
 
 	struct
 	{
@@ -23056,7 +23056,7 @@ struct FWTLDateTime AWTLFortificationCommandCore::GetLastHackTime()
 
 struct FWTLDateTime AWTLFortificationCommandCore::GetHackEndTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetHackEndTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetHackEndTime"));
 
 	struct
 	{
@@ -23077,7 +23077,7 @@ struct FWTLDateTime AWTLFortificationCommandCore::GetHackEndTime()
 
 float AWTLFortificationCommandCore::GetEnergyPercent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetEnergyPercent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetEnergyPercent"));
 
 	struct
 	{
@@ -23098,7 +23098,7 @@ float AWTLFortificationCommandCore::GetEnergyPercent()
 
 float AWTLFortificationCommandCore::GetEnergy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetEnergy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetEnergy"));
 
 	struct
 	{
@@ -23119,7 +23119,7 @@ float AWTLFortificationCommandCore::GetEnergy()
 
 EWTLFaction AWTLFortificationCommandCore::GetControlFaction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationCommandCore.GetControlFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationCommandCore.GetControlFaction"));
 
 	struct
 	{
@@ -23140,7 +23140,7 @@ EWTLFaction AWTLFortificationCommandCore::GetControlFaction()
 
 void AWTLFortificationEnemyNPCSpawner::UpdateOwnerFaction(EWTLFaction Faction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationEnemyNPCSpawner.UpdateOwnerFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationEnemyNPCSpawner.UpdateOwnerFaction"));
 
 	struct
 	{
@@ -23163,7 +23163,7 @@ void AWTLFortificationEnemyNPCSpawner::UpdateOwnerFaction(EWTLFaction Faction)
 
 void AWTLSafeZone::OnTriggerVolumeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.OnTriggerVolumeEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.OnTriggerVolumeEndOverlap"));
 
 	struct
 	{
@@ -23194,7 +23194,7 @@ void AWTLSafeZone::OnTriggerVolumeEndOverlap(class UPrimitiveComponent* Overlapp
 
 void AWTLSafeZone::OnTriggerVolumeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.OnTriggerVolumeBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.OnTriggerVolumeBeginOverlap"));
 
 	struct
 	{
@@ -23222,7 +23222,7 @@ void AWTLSafeZone::OnTriggerVolumeBeginOverlap(class UPrimitiveComponent* Overla
 
 void AWTLSafeZone::OnRep_Active()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.OnRep_Active");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.OnRep_Active"));
 
 	struct
 	{
@@ -23238,7 +23238,7 @@ void AWTLSafeZone::OnRep_Active()
 
 void AWTLSafeZone::EnabledSafeZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.EnabledSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.EnabledSafeZone"));
 
 	struct
 	{
@@ -23254,7 +23254,7 @@ void AWTLSafeZone::EnabledSafeZone()
 
 void AWTLSafeZone::DisableSafeZone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.DisableSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.DisableSafeZone"));
 
 	struct
 	{
@@ -23273,7 +23273,7 @@ void AWTLSafeZone::DisableSafeZone()
 
 bool AWTLSafeZone::CheckCharacterInZone(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSafeZone.CheckCharacterInZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSafeZone.CheckCharacterInZone"));
 
 	struct
 	{
@@ -23296,7 +23296,7 @@ bool AWTLSafeZone::CheckCharacterInZone(class AWTLCharacter* Character)
 
 void AWTLFortificationSafeZoneJammer::OnStateChanged(EWTLFortificationJammerState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationSafeZoneJammer.OnStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationSafeZoneJammer.OnStateChanged"));
 
 	struct
 	{
@@ -23314,7 +23314,7 @@ void AWTLFortificationSafeZoneJammer::OnStateChanged(EWTLFortificationJammerStat
 
 void AWTLFortificationSafeZoneJammer::OnRep_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationSafeZoneJammer.OnRep_State");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationSafeZoneJammer.OnRep_State"));
 
 	struct
 	{
@@ -23332,7 +23332,7 @@ void AWTLFortificationSafeZoneJammer::OnRep_State()
 
 EWTLFortificationJammerState AWTLFortificationSafeZoneJammer::GetState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationSafeZoneJammer.GetState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationSafeZoneJammer.GetState"));
 
 	struct
 	{
@@ -23353,7 +23353,7 @@ EWTLFortificationJammerState AWTLFortificationSafeZoneJammer::GetState()
 
 class AWTLFortificationCommandCore* AWTLFortificationSafeZoneJammer::GetNearestCommandCore()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFortificationSafeZoneJammer.GetNearestCommandCore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFortificationSafeZoneJammer.GetNearestCommandCore"));
 
 	struct
 	{
@@ -23375,7 +23375,7 @@ class AWTLFortificationCommandCore* AWTLFortificationSafeZoneJammer::GetNearestC
 
 void AWTLFractionFlag::UpdateFactionInfluence(float FactionValue, float InfluenceValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFractionFlag.UpdateFactionInfluence");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFractionFlag.UpdateFactionInfluence"));
 
 	struct
 	{
@@ -23398,7 +23398,7 @@ void AWTLFractionFlag::UpdateFactionInfluence(float FactionValue, float Influenc
 
 void AWTLFractionFlag::Client_SetFactionInfluence(EWTLFaction Faction, float Influence)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLFractionFlag.Client_SetFactionInfluence");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLFractionFlag.Client_SetFactionInfluence"));
 
 	struct
 	{
@@ -23421,7 +23421,7 @@ void AWTLFractionFlag::Client_SetFactionInfluence(EWTLFaction Faction, float Inf
 
 bool UWTLGameInstance::Tick(float DeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameInstance.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.Tick"));
 
 	struct
 	{
@@ -23442,7 +23442,7 @@ bool UWTLGameInstance::Tick(float DeltaTime)
 
 void UWTLGameInstance::OnLoadTransitionMap()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameInstance.OnLoadTransitionMap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnLoadTransitionMap"));
 
 	struct
 	{
@@ -23458,7 +23458,7 @@ void UWTLGameInstance::OnLoadTransitionMap()
 
 void UWTLGameInstance::OnDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameInstance.OnDisconnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnDisconnected"));
 
 	struct
 	{
@@ -23474,7 +23474,7 @@ void UWTLGameInstance::OnDisconnected()
 
 void UWTLGameInstance::OnConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameInstance.OnConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnConnected"));
 
 	struct
 	{
@@ -23492,7 +23492,7 @@ void UWTLGameInstance::OnConnected()
 
 void UWTLGameInstance::OnCharacterMoveToLocationEvent(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameInstance.OnCharacterMoveToLocationEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnCharacterMoveToLocationEvent"));
 
 	struct
 	{
@@ -23515,7 +23515,7 @@ void UWTLGameInstance::OnCharacterMoveToLocationEvent(const struct FWTLEvent& Ev
 
 void AWTLGameModeZone::OnVolumeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameModeZone.OnVolumeEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameModeZone.OnVolumeEndOverlap"));
 
 	struct
 	{
@@ -23546,7 +23546,7 @@ void AWTLGameModeZone::OnVolumeEndOverlap(class UPrimitiveComponent* OverlappedC
 
 void AWTLGameModeZone::OnVolumeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGameModeZone.OnVolumeBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameModeZone.OnVolumeBeginOverlap"));
 
 	struct
 	{
@@ -23574,7 +23574,7 @@ void AWTLGameModeZone::OnVolumeBeginOverlap(class UPrimitiveComponent* Overlappe
 
 void AWTLMissileWeaponProjectile::OnRep_ReplicatedInitialSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed"));
 
 	struct
 	{
@@ -23595,7 +23595,7 @@ void AWTLMissileWeaponProjectile::OnRep_ReplicatedInitialSpeed()
 
 void AWTLMissileWeaponProjectile::OnHit(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeaponProjectile.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnHit"));
 
 	struct
 	{
@@ -23622,7 +23622,7 @@ void AWTLMissileWeaponProjectile::OnHit(class AActor* OtherActor, class UPrimiti
 
 void AWTLGrenadeLauncherProjectile::NetMulticast_OnExplosion(const struct FVector_NetQuantize& ExplosionPosition, float ExplosionDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeLauncherProjectile.NetMulticast_OnExplosion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.NetMulticast_OnExplosion"));
 
 	struct
 	{
@@ -23642,7 +23642,7 @@ void AWTLGrenadeLauncherProjectile::NetMulticast_OnExplosion(const struct FVecto
 
 void AWTLGrenadeLauncherProjectile::BPOnExplode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeLauncherProjectile.BPOnExplode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.BPOnExplode"));
 
 	struct
 	{
@@ -23661,7 +23661,7 @@ void AWTLGrenadeLauncherProjectile::BPOnExplode()
 
 void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToMonster(class AWTLMonsterPawn* Monster, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToMonster"));
 
 	struct
 	{
@@ -23684,7 +23684,7 @@ void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToMonster(class AWTLM
 
 void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToEnemyNPC(class AWTLEnemyNPC* EnemyNPC, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToEnemyNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToEnemyNPC"));
 
 	struct
 	{
@@ -23707,7 +23707,7 @@ void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToEnemyNPC(class AWTL
 
 void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToCharacter(class AWTLCharacter* Character, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.BPOnApplyShrapnelDamageToCharacter"));
 
 	struct
 	{
@@ -23730,7 +23730,7 @@ void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToCharacter(class AWT
 
 void AWTLGrenadeProjectile::NetMulticast_OnExplosion(const struct FVector_NetQuantize& ExplosionPosition, float ExplosionDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeProjectile.NetMulticast_OnExplosion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeProjectile.NetMulticast_OnExplosion"));
 
 	struct
 	{
@@ -23750,7 +23750,7 @@ void AWTLGrenadeProjectile::NetMulticast_OnExplosion(const struct FVector_NetQua
 
 void AWTLGrenadeProjectile::BPOnExplode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeProjectile.BPOnExplode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeProjectile.BPOnExplode"));
 
 	struct
 	{
@@ -23769,7 +23769,7 @@ void AWTLGrenadeProjectile::BPOnExplode()
 
 void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToMonster(class AWTLMonsterPawn* Monster, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToMonster"));
 
 	struct
 	{
@@ -23792,7 +23792,7 @@ void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToMonster(class AWTLMonsterPa
 
 void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToEnemyNPC(class AWTLEnemyNPC* EnemyNPC, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToEnemyNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToEnemyNPC"));
 
 	struct
 	{
@@ -23815,7 +23815,7 @@ void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToEnemyNPC(class AWTLEnemyNPC
 
 void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToCharacter(class AWTLCharacter* Character, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeProjectile.BPOnApplyShrapnelDamageToCharacter"));
 
 	struct
 	{
@@ -23835,7 +23835,7 @@ void AWTLGrenadeProjectile::BPOnApplyShrapnelDamageToCharacter(class AWTLCharact
 
 void UWTLHUDActionTimer::OnReadyAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDActionTimer.OnReadyAnimationFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDActionTimer.OnReadyAnimationFinished"));
 
 	struct
 	{
@@ -23851,7 +23851,7 @@ void UWTLHUDActionTimer::OnReadyAnimationFinished()
 
 void UWTLHUDActionTimer::OnCountdownSliderFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDActionTimer.OnCountdownSliderFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDActionTimer.OnCountdownSliderFinished"));
 
 	struct
 	{
@@ -23870,7 +23870,7 @@ void UWTLHUDActionTimer::OnCountdownSliderFinished()
 
 void UWTLHUDArenaState::OnArenaMatchEnded(EWTLFaction WinningFaction, TArray<struct FWTLArenaLeaderboardRecord> Leaderboard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArenaState.OnArenaMatchEnded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArenaState.OnArenaMatchEnded"));
 
 	struct
 	{
@@ -23890,7 +23890,7 @@ void UWTLHUDArenaState::OnArenaMatchEnded(EWTLFaction WinningFaction, TArray<str
 
 void UWTLHUDWindowBase::OnCloseBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDWindowBase.OnCloseBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDWindowBase.OnCloseBtnClicked"));
 
 	struct
 	{
@@ -23906,7 +23906,7 @@ void UWTLHUDWindowBase::OnCloseBtnClicked()
 
 void UWTLHUDWindowBase::Close()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDWindowBase.Close");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDWindowBase.Close"));
 
 	struct
 	{
@@ -23924,7 +23924,7 @@ void UWTLHUDWindowBase::Close()
 
 void UWTLHUDArenaStateLeaderboardWindow::OnFactionsLeaderboardsListScrolled(float CurrentOffset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArenaStateLeaderboardWindow.OnFactionsLeaderboardsListScrolled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArenaStateLeaderboardWindow.OnFactionsLeaderboardsListScrolled"));
 
 	struct
 	{
@@ -23942,7 +23942,7 @@ void UWTLHUDArenaStateLeaderboardWindow::OnFactionsLeaderboardsListScrolled(floa
 
 void UWTLHUDItemSlot::ViewItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ViewItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ViewItem"));
 
 	struct
 	{
@@ -23958,7 +23958,7 @@ void UWTLHUDItemSlot::ViewItem()
 
 void UWTLHUDItemSlot::UseNewPassport()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UseNewPassport");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UseNewPassport"));
 
 	struct
 	{
@@ -23974,7 +23974,7 @@ void UWTLHUDItemSlot::UseNewPassport()
 
 void UWTLHUDItemSlot::UseItemFromStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UseItemFromStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UseItemFromStorage"));
 
 	struct
 	{
@@ -23990,7 +23990,7 @@ void UWTLHUDItemSlot::UseItemFromStorage()
 
 void UWTLHUDItemSlot::UseItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UseItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UseItem"));
 
 	struct
 	{
@@ -24006,7 +24006,7 @@ void UWTLHUDItemSlot::UseItem()
 
 void UWTLHUDItemSlot::UnloadWeaponItemWithDropAmmoConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UnloadWeaponItemWithDropAmmoConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UnloadWeaponItemWithDropAmmoConfirm"));
 
 	struct
 	{
@@ -24022,7 +24022,7 @@ void UWTLHUDItemSlot::UnloadWeaponItemWithDropAmmoConfirm()
 
 void UWTLHUDItemSlot::UnloadWeaponItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UnloadWeaponItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UnloadWeaponItem"));
 
 	struct
 	{
@@ -24038,7 +24038,7 @@ void UWTLHUDItemSlot::UnloadWeaponItem()
 
 void UWTLHUDItemSlot::UnequipStuffItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UnequipStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UnequipStuffItem"));
 
 	struct
 	{
@@ -24054,7 +24054,7 @@ void UWTLHUDItemSlot::UnequipStuffItem()
 
 void UWTLHUDItemSlot::UnequipClothesItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.UnequipClothesItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.UnequipClothesItem"));
 
 	struct
 	{
@@ -24072,7 +24072,7 @@ void UWTLHUDItemSlot::UnequipClothesItem()
 
 void UWTLHUDItemSlot::TakeFromStorage(bool IsTakeAll)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.TakeFromStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.TakeFromStorage"));
 
 	struct
 	{
@@ -24092,7 +24092,7 @@ void UWTLHUDItemSlot::TakeFromStorage(bool IsTakeAll)
 
 void UWTLHUDItemSlot::TakeFromClanStorage(bool IsTakeAll)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.TakeFromClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.TakeFromClanStorage"));
 
 	struct
 	{
@@ -24110,7 +24110,7 @@ void UWTLHUDItemSlot::TakeFromClanStorage(bool IsTakeAll)
 
 void UWTLHUDItemSlot::SplitItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.SplitItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.SplitItem"));
 
 	struct
 	{
@@ -24126,7 +24126,7 @@ void UWTLHUDItemSlot::SplitItem()
 
 void UWTLHUDItemSlot::ShowItemShortInformation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ShowItemShortInformation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ShowItemShortInformation"));
 
 	struct
 	{
@@ -24142,7 +24142,7 @@ void UWTLHUDItemSlot::ShowItemShortInformation()
 
 void UWTLHUDItemSlot::ShowItemInformation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ShowItemInformation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ShowItemInformation"));
 
 	struct
 	{
@@ -24158,7 +24158,7 @@ void UWTLHUDItemSlot::ShowItemInformation()
 
 void UWTLHUDItemSlot::ShowDropItemConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ShowDropItemConfirmation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ShowDropItemConfirmation"));
 
 	struct
 	{
@@ -24174,7 +24174,7 @@ void UWTLHUDItemSlot::ShowDropItemConfirmation()
 
 void UWTLHUDItemSlot::ShowDestroyItemConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ShowDestroyItemConfirmation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ShowDestroyItemConfirmation"));
 
 	struct
 	{
@@ -24192,7 +24192,7 @@ void UWTLHUDItemSlot::ShowDestroyItemConfirmation()
 
 void UWTLHUDItemSlot::RepairWeaponByKitByWeaponID(uint64_t WeaponID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RepairWeaponByKitByWeaponID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RepairWeaponByKitByWeaponID"));
 
 	struct
 	{
@@ -24210,7 +24210,7 @@ void UWTLHUDItemSlot::RepairWeaponByKitByWeaponID(uint64_t WeaponID)
 
 void UWTLHUDItemSlot::RepairWeaponByKit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RepairWeaponByKit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RepairWeaponByKit"));
 
 	struct
 	{
@@ -24228,7 +24228,7 @@ void UWTLHUDItemSlot::RepairWeaponByKit()
 
 void UWTLHUDItemSlot::RepairClothesByKitByClothesID(uint64_t ClothesID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RepairClothesByKitByClothesID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RepairClothesByKitByClothesID"));
 
 	struct
 	{
@@ -24246,7 +24246,7 @@ void UWTLHUDItemSlot::RepairClothesByKitByClothesID(uint64_t ClothesID)
 
 void UWTLHUDItemSlot::RepairClothesByKit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RepairClothesByKit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RepairClothesByKit"));
 
 	struct
 	{
@@ -24264,7 +24264,7 @@ void UWTLHUDItemSlot::RepairClothesByKit()
 
 void UWTLHUDItemSlot::RemoveWeaponAttachmentByTypeID(uint64_t AttachmentTypeID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentByTypeID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentByTypeID"));
 
 	struct
 	{
@@ -24284,7 +24284,7 @@ void UWTLHUDItemSlot::RemoveWeaponAttachmentByTypeID(uint64_t AttachmentTypeID)
 
 void UWTLHUDItemSlot::RemoveWeaponAttachmentBySlotTypeNumber(uint64_t WeaponAttachmentSlotTypeEnumNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentBySlotTypeNumber");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentBySlotTypeNumber"));
 
 	struct
 	{
@@ -24302,7 +24302,7 @@ void UWTLHUDItemSlot::RemoveWeaponAttachmentBySlotTypeNumber(uint64_t WeaponAtta
 
 void UWTLHUDItemSlot::RemoveWeaponAttachmentBySlotType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentBySlotType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachmentBySlotType"));
 
 	struct
 	{
@@ -24318,7 +24318,7 @@ void UWTLHUDItemSlot::RemoveWeaponAttachmentBySlotType()
 
 void UWTLHUDItemSlot::RemoveWeaponAttachment()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachment");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveWeaponAttachment"));
 
 	struct
 	{
@@ -24334,7 +24334,7 @@ void UWTLHUDItemSlot::RemoveWeaponAttachment()
 
 void UWTLHUDItemSlot::RemoveSelfFromBaseActionStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveSelfFromBaseActionStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveSelfFromBaseActionStorage"));
 
 	struct
 	{
@@ -24350,7 +24350,7 @@ void UWTLHUDItemSlot::RemoveSelfFromBaseActionStorage()
 
 void UWTLHUDItemSlot::RemoveFromStimulatorContainerSlot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveFromStimulatorContainerSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveFromStimulatorContainerSlot"));
 
 	struct
 	{
@@ -24366,7 +24366,7 @@ void UWTLHUDItemSlot::RemoveFromStimulatorContainerSlot()
 
 void UWTLHUDItemSlot::RemoveFromModification()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveFromModification");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveFromModification"));
 
 	struct
 	{
@@ -24382,7 +24382,7 @@ void UWTLHUDItemSlot::RemoveFromModification()
 
 void UWTLHUDItemSlot::RemoveFromFastAccess()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveFromFastAccess");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveFromFastAccess"));
 
 	struct
 	{
@@ -24398,7 +24398,7 @@ void UWTLHUDItemSlot::RemoveFromFastAccess()
 
 void UWTLHUDItemSlot::RemoveFromCustomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveFromCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveFromCustomization"));
 
 	struct
 	{
@@ -24416,7 +24416,7 @@ void UWTLHUDItemSlot::RemoveFromCustomization()
 
 void UWTLHUDItemSlot::RemoveFromBaseActionStorage(class UWTLHUDItemSlot* ItemSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveFromBaseActionStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveFromBaseActionStorage"));
 
 	struct
 	{
@@ -24434,7 +24434,7 @@ void UWTLHUDItemSlot::RemoveFromBaseActionStorage(class UWTLHUDItemSlot* ItemSlo
 
 void UWTLHUDItemSlot::RemoveArtefactItemFromContainer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveArtefactItemFromContainer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveArtefactItemFromContainer"));
 
 	struct
 	{
@@ -24450,7 +24450,7 @@ void UWTLHUDItemSlot::RemoveArtefactItemFromContainer()
 
 void UWTLHUDItemSlot::RemoveAllWeaponAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveAllWeaponAttachments");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveAllWeaponAttachments"));
 
 	struct
 	{
@@ -24466,7 +24466,7 @@ void UWTLHUDItemSlot::RemoveAllWeaponAttachments()
 
 void UWTLHUDItemSlot::RemoveAllArmoredPlates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.RemoveAllArmoredPlates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.RemoveAllArmoredPlates"));
 
 	struct
 	{
@@ -24482,7 +24482,7 @@ void UWTLHUDItemSlot::RemoveAllArmoredPlates()
 
 void UWTLHUDItemSlot::PutInStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PutInStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PutInStorage"));
 
 	struct
 	{
@@ -24498,7 +24498,7 @@ void UWTLHUDItemSlot::PutInStorage()
 
 void UWTLHUDItemSlot::PutInClanStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PutInClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PutInClanStorage"));
 
 	struct
 	{
@@ -24514,7 +24514,7 @@ void UWTLHUDItemSlot::PutInClanStorage()
 
 void UWTLHUDItemSlot::PlaceStuffItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PlaceStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PlaceStuffItem"));
 
 	struct
 	{
@@ -24535,7 +24535,7 @@ void UWTLHUDItemSlot::PlaceStuffItem()
 
 bool UWTLHUDItemSlot::PlaceItemToStorageContent(bool IsClanStorage, bool IsCheckCount, class UWTLHUDItemSlot* ItemSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PlaceItemToStorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PlaceItemToStorageContent"));
 
 	struct
 	{
@@ -24562,7 +24562,7 @@ bool UWTLHUDItemSlot::PlaceItemToStorageContent(bool IsClanStorage, bool IsCheck
 
 void UWTLHUDItemSlot::PlaceItemToClanStorage(const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PlaceItemToClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PlaceItemToClanStorage"));
 
 	struct
 	{
@@ -24582,7 +24582,7 @@ void UWTLHUDItemSlot::PlaceItemToClanStorage(const struct FString& Description)
 
 void UWTLHUDItemSlot::PlaceArtefactItemInContainerByContainerID(uint64_t ContainerID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PlaceArtefactItemInContainerByContainerID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PlaceArtefactItemInContainerByContainerID"));
 
 	struct
 	{
@@ -24600,7 +24600,7 @@ void UWTLHUDItemSlot::PlaceArtefactItemInContainerByContainerID(uint64_t Contain
 
 void UWTLHUDItemSlot::PlaceArtefactItemInContainer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PlaceArtefactItemInContainer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PlaceArtefactItemInContainer"));
 
 	struct
 	{
@@ -24618,7 +24618,7 @@ void UWTLHUDItemSlot::PlaceArtefactItemInContainer()
 
 void UWTLHUDItemSlot::PickupItemFromClanStorage(const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PickupItemFromClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PickupItemFromClanStorage"));
 
 	struct
 	{
@@ -24638,7 +24638,7 @@ void UWTLHUDItemSlot::PickupItemFromClanStorage(const struct FString& Descriptio
 
 void UWTLHUDItemSlot::PaintWeaponBySprayCanByWeaponID(uint64_t WeaponID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PaintWeaponBySprayCanByWeaponID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PaintWeaponBySprayCanByWeaponID"));
 
 	struct
 	{
@@ -24656,7 +24656,7 @@ void UWTLHUDItemSlot::PaintWeaponBySprayCanByWeaponID(uint64_t WeaponID)
 
 void UWTLHUDItemSlot::PaintWeaponBySprayCan()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PaintWeaponBySprayCan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PaintWeaponBySprayCan"));
 
 	struct
 	{
@@ -24672,7 +24672,7 @@ void UWTLHUDItemSlot::PaintWeaponBySprayCan()
 
 void UWTLHUDItemSlot::PaintItemWithSprayCanConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PaintItemWithSprayCanConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PaintItemWithSprayCanConfirm"));
 
 	struct
 	{
@@ -24690,7 +24690,7 @@ void UWTLHUDItemSlot::PaintItemWithSprayCanConfirm()
 
 void UWTLHUDItemSlot::PaintClothesBySprayCanByClothesID(uint64_t ClothesID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PaintClothesBySprayCanByClothesID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PaintClothesBySprayCanByClothesID"));
 
 	struct
 	{
@@ -24708,7 +24708,7 @@ void UWTLHUDItemSlot::PaintClothesBySprayCanByClothesID(uint64_t ClothesID)
 
 void UWTLHUDItemSlot::PaintClothesBySprayCan()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.PaintClothesBySprayCan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.PaintClothesBySprayCan"));
 
 	struct
 	{
@@ -24724,7 +24724,7 @@ void UWTLHUDItemSlot::PaintClothesBySprayCan()
 
 void UWTLHUDItemSlot::OpenExtractor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.OpenExtractor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.OpenExtractor"));
 
 	struct
 	{
@@ -24740,7 +24740,7 @@ void UWTLHUDItemSlot::OpenExtractor()
 
 void UWTLHUDItemSlot::OpenArmoredPlatesWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.OpenArmoredPlatesWindow");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.OpenArmoredPlatesWindow"));
 
 	struct
 	{
@@ -24758,7 +24758,7 @@ void UWTLHUDItemSlot::OpenArmoredPlatesWindow()
 
 class UWidget* UWTLHUDItemSlot::OnGetItemMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.OnGetItemMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.OnGetItemMenuContent"));
 
 	struct
 	{
@@ -24777,7 +24777,7 @@ class UWidget* UWTLHUDItemSlot::OnGetItemMenuContent()
 
 void UWTLHUDItemSlot::ModifyItemByKit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ModifyItemByKit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ModifyItemByKit"));
 
 	struct
 	{
@@ -24795,7 +24795,7 @@ void UWTLHUDItemSlot::ModifyItemByKit()
 
 void UWTLHUDItemSlot::LoadWeaponItemByAmmoID(uint64_t ID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.LoadWeaponItemByAmmoID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.LoadWeaponItemByAmmoID"));
 
 	struct
 	{
@@ -24813,7 +24813,7 @@ void UWTLHUDItemSlot::LoadWeaponItemByAmmoID(uint64_t ID)
 
 void UWTLHUDItemSlot::LoadWeaponItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.LoadWeaponItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.LoadWeaponItem"));
 
 	struct
 	{
@@ -24829,7 +24829,7 @@ void UWTLHUDItemSlot::LoadWeaponItem()
 
 void UWTLHUDItemSlot::LoadAmmoToWeaponItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.LoadAmmoToWeaponItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.LoadAmmoToWeaponItem"));
 
 	struct
 	{
@@ -24847,7 +24847,7 @@ void UWTLHUDItemSlot::LoadAmmoToWeaponItem()
 
 void UWTLHUDItemSlot::LoadAmmoToWeaponByWeaponID(uint64_t ID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.LoadAmmoToWeaponByWeaponID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.LoadAmmoToWeaponByWeaponID"));
 
 	struct
 	{
@@ -24865,7 +24865,7 @@ void UWTLHUDItemSlot::LoadAmmoToWeaponByWeaponID(uint64_t ID)
 
 void UWTLHUDItemSlot::InstallPDAModule()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.InstallPDAModule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.InstallPDAModule"));
 
 	struct
 	{
@@ -24881,7 +24881,7 @@ void UWTLHUDItemSlot::InstallPDAModule()
 
 void UWTLHUDItemSlot::EquipStuffItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.EquipStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.EquipStuffItem"));
 
 	struct
 	{
@@ -24897,7 +24897,7 @@ void UWTLHUDItemSlot::EquipStuffItem()
 
 void UWTLHUDItemSlot::EquipClothesItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.EquipClothesItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.EquipClothesItem"));
 
 	struct
 	{
@@ -24915,7 +24915,7 @@ void UWTLHUDItemSlot::EquipClothesItem()
 
 void UWTLHUDItemSlot::EngraveItem(const struct FString& CustomizationName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.EngraveItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.EngraveItem"));
 
 	struct
 	{
@@ -24933,7 +24933,7 @@ void UWTLHUDItemSlot::EngraveItem(const struct FString& CustomizationName)
 
 void UWTLHUDItemSlot::DropItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.DropItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.DropItem"));
 
 	struct
 	{
@@ -24949,7 +24949,7 @@ void UWTLHUDItemSlot::DropItem()
 
 void UWTLHUDItemSlot::DestroyItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.DestroyItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.DestroyItem"));
 
 	struct
 	{
@@ -24967,7 +24967,7 @@ void UWTLHUDItemSlot::DestroyItem()
 
 void UWTLHUDItemSlot::CombineItemWithItemID(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.CombineItemWithItemID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.CombineItemWithItemID"));
 
 	struct
 	{
@@ -24985,7 +24985,7 @@ void UWTLHUDItemSlot::CombineItemWithItemID(uint64_t ItemID)
 
 void UWTLHUDItemSlot::CombineItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.CombineItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.CombineItem"));
 
 	struct
 	{
@@ -25001,7 +25001,7 @@ void UWTLHUDItemSlot::CombineItem()
 
 void UWTLHUDItemSlot::CloseExtractor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.CloseExtractor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.CloseExtractor"));
 
 	struct
 	{
@@ -25019,7 +25019,7 @@ void UWTLHUDItemSlot::CloseExtractor()
 
 void UWTLHUDItemSlot::ChargeStuffItemByEnergySourceItemByEnergySourceItemID(uint64_t EnergySourceItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ChargeStuffItemByEnergySourceItemByEnergySourceItemID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ChargeStuffItemByEnergySourceItemByEnergySourceItemID"));
 
 	struct
 	{
@@ -25037,7 +25037,7 @@ void UWTLHUDItemSlot::ChargeStuffItemByEnergySourceItemByEnergySourceItemID(uint
 
 void UWTLHUDItemSlot::ChargeStuffItemByEnergySourceItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ChargeStuffItemByEnergySourceItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ChargeStuffItemByEnergySourceItem"));
 
 	struct
 	{
@@ -25055,7 +25055,7 @@ void UWTLHUDItemSlot::ChargeStuffItemByEnergySourceItem()
 
 void UWTLHUDItemSlot::ChargeEnergySourceItemToStuffItemByStuffItemID(uint64_t StuffItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ChargeEnergySourceItemToStuffItemByStuffItemID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ChargeEnergySourceItemToStuffItemByStuffItemID"));
 
 	struct
 	{
@@ -25073,7 +25073,7 @@ void UWTLHUDItemSlot::ChargeEnergySourceItemToStuffItemByStuffItemID(uint64_t St
 
 void UWTLHUDItemSlot::ChargeEnergySourceItemToStuffItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.ChargeEnergySourceItemToStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.ChargeEnergySourceItemToStuffItem"));
 
 	struct
 	{
@@ -25089,7 +25089,7 @@ void UWTLHUDItemSlot::ChargeEnergySourceItemToStuffItem()
 
 void UWTLHUDItemSlot::BreakWeaponItemConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.BreakWeaponItemConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.BreakWeaponItemConfirmed"));
 
 	struct
 	{
@@ -25105,7 +25105,7 @@ void UWTLHUDItemSlot::BreakWeaponItemConfirmed()
 
 void UWTLHUDItemSlot::BreakWeaponItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.BreakWeaponItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.BreakWeaponItem"));
 
 	struct
 	{
@@ -25123,7 +25123,7 @@ void UWTLHUDItemSlot::BreakWeaponItem()
 
 void UWTLHUDItemSlot::AttachToWeaponByStuffItemID(uint64_t AttachmentID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AttachToWeaponByStuffItemID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AttachToWeaponByStuffItemID"));
 
 	struct
 	{
@@ -25141,7 +25141,7 @@ void UWTLHUDItemSlot::AttachToWeaponByStuffItemID(uint64_t AttachmentID)
 
 void UWTLHUDItemSlot::AttachToWeaponByStuffItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AttachToWeaponByStuffItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AttachToWeaponByStuffItem"));
 
 	struct
 	{
@@ -25159,7 +25159,7 @@ void UWTLHUDItemSlot::AttachToWeaponByStuffItem()
 
 void UWTLHUDItemSlot::AttachStuffItemToWeaponByWeaponID(uint64_t WeaponID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AttachStuffItemToWeaponByWeaponID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AttachStuffItemToWeaponByWeaponID"));
 
 	struct
 	{
@@ -25177,7 +25177,7 @@ void UWTLHUDItemSlot::AttachStuffItemToWeaponByWeaponID(uint64_t WeaponID)
 
 void UWTLHUDItemSlot::AttachStuffItemToWeapon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AttachStuffItemToWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AttachStuffItemToWeapon"));
 
 	struct
 	{
@@ -25193,7 +25193,7 @@ void UWTLHUDItemSlot::AttachStuffItemToWeapon()
 
 void UWTLHUDItemSlot::AssignToFastAccess()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AssignToFastAccess");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AssignToFastAccess"));
 
 	struct
 	{
@@ -25209,7 +25209,7 @@ void UWTLHUDItemSlot::AssignToFastAccess()
 
 void UWTLHUDItemSlot::AddToStimulatorContainerSlot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AddToStimulatorContainerSlot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AddToStimulatorContainerSlot"));
 
 	struct
 	{
@@ -25225,7 +25225,7 @@ void UWTLHUDItemSlot::AddToStimulatorContainerSlot()
 
 void UWTLHUDItemSlot::AddToCommission()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AddToCommission");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AddToCommission"));
 
 	struct
 	{
@@ -25241,7 +25241,7 @@ void UWTLHUDItemSlot::AddToCommission()
 
 void UWTLHUDItemSlot::AddToActionStorage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AddToActionStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AddToActionStorage"));
 
 	struct
 	{
@@ -25257,7 +25257,7 @@ void UWTLHUDItemSlot::AddToActionStorage()
 
 void UWTLHUDItemSlot::AddOnCustomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AddOnCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AddOnCustomization"));
 
 	struct
 	{
@@ -25273,7 +25273,7 @@ void UWTLHUDItemSlot::AddOnCustomization()
 
 void UWTLHUDItemSlot::AddForModification()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSlot.AddForModification");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSlot.AddForModification"));
 
 	struct
 	{
@@ -25289,7 +25289,7 @@ void UWTLHUDItemSlot::AddForModification()
 
 void UWTLHUDArmoredPlateSlot::RemoveArmoredPlate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArmoredPlateSlot.RemoveArmoredPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArmoredPlateSlot.RemoveArmoredPlate"));
 
 	struct
 	{
@@ -25307,7 +25307,7 @@ void UWTLHUDArmoredPlateSlot::RemoveArmoredPlate()
 
 void UWTLHUDArmoredPlateSlot::InstallArmoredPlateByArmorPlateID(uint64_t ArmorPlateItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArmoredPlateSlot.InstallArmoredPlateByArmorPlateID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArmoredPlateSlot.InstallArmoredPlateByArmorPlateID"));
 
 	struct
 	{
@@ -25325,7 +25325,7 @@ void UWTLHUDArmoredPlateSlot::InstallArmoredPlateByArmorPlateID(uint64_t ArmorPl
 
 void UWTLHUDArmoredPlateSlot::InstallArmoredPlate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArmoredPlateSlot.InstallArmoredPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArmoredPlateSlot.InstallArmoredPlate"));
 
 	struct
 	{
@@ -25343,7 +25343,7 @@ void UWTLHUDArmoredPlateSlot::InstallArmoredPlate()
 
 void UWTLHUDArmoredPlatesWindow::OnRemoveArmoredPlate(EWTLArmorPlateType ArmoredPlateType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArmoredPlatesWindow.OnRemoveArmoredPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArmoredPlatesWindow.OnRemoveArmoredPlate"));
 
 	struct
 	{
@@ -25364,7 +25364,7 @@ void UWTLHUDArmoredPlatesWindow::OnRemoveArmoredPlate(EWTLArmorPlateType Armored
 
 void UWTLHUDArmoredPlatesWindow::OnInstallArmoredPlate(EWTLArmorPlateType ArmoredPlateType, uint64_t ArmorPlateItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDArmoredPlatesWindow.OnInstallArmoredPlate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDArmoredPlatesWindow.OnInstallArmoredPlate"));
 
 	struct
 	{
@@ -25388,7 +25388,7 @@ void UWTLHUDArmoredPlatesWindow::OnInstallArmoredPlate(EWTLArmorPlateType Armore
 
 void UWTLHUDBaseActionStorage::OnSlotRemove(EWTLItemType ItemType, uint64_t ItemID, bool IsHasAnyItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionStorage.OnSlotRemove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionStorage.OnSlotRemove"));
 
 	struct
 	{
@@ -25412,7 +25412,7 @@ void UWTLHUDBaseActionStorage::OnSlotRemove(EWTLItemType ItemType, uint64_t Item
 
 void UWTLHUDBaseActionStorage::OnSlotAdd(class UWTLHUDInventorySlot* InventorySlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionStorage.OnSlotAdd");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionStorage.OnSlotAdd"));
 
 	struct
 	{
@@ -25430,7 +25430,7 @@ void UWTLHUDBaseActionStorage::OnSlotAdd(class UWTLHUDInventorySlot* InventorySl
 
 void UWTLHUDBaseActionStorage::OnActionBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionStorage.OnActionBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionStorage.OnActionBtnClick"));
 
 	struct
 	{
@@ -25446,7 +25446,7 @@ void UWTLHUDBaseActionStorage::OnActionBtnClick()
 
 void UWTLHUDBaseActionStorage::ActionConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionStorage.ActionConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionStorage.ActionConfirmed"));
 
 	struct
 	{
@@ -25464,7 +25464,7 @@ void UWTLHUDBaseActionStorage::ActionConfirmed()
 
 void UWTLHUDBarterStorage::OnMyTokensAmountTextBoxValueChange(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBarterStorage.OnMyTokensAmountTextBoxValueChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBarterStorage.OnMyTokensAmountTextBoxValueChange"));
 
 	struct
 	{
@@ -25485,7 +25485,7 @@ void UWTLHUDBarterStorage::OnMyTokensAmountTextBoxValueChange(int Value)
 
 void UWTLHUDBarterStorage::OnMyTokensAmountTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBarterStorage.OnMyTokensAmountTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBarterStorage.OnMyTokensAmountTextBoxTextCommitted"));
 
 	struct
 	{
@@ -25505,7 +25505,7 @@ void UWTLHUDBarterStorage::OnMyTokensAmountTextBoxTextCommitted(const struct FTe
 
 void UWTLHUDBarterStorage::OnBarterDealChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBarterStorage.OnBarterDealChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBarterStorage.OnBarterDealChanged"));
 
 	struct
 	{
@@ -25523,7 +25523,7 @@ void UWTLHUDBarterStorage::OnBarterDealChanged()
 
 void UWTLHUDBaseActionDropArea::RemoveItemFromStorage(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionDropArea.RemoveItemFromStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionDropArea.RemoveItemFromStorage"));
 
 	struct
 	{
@@ -25541,7 +25541,7 @@ void UWTLHUDBaseActionDropArea::RemoveItemFromStorage(uint64_t ItemID)
 
 void UWTLHUDBaseActionDropArea::DropItemToBuyStorageConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionDropArea.DropItemToBuyStorageConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionDropArea.DropItemToBuyStorageConfirmed"));
 
 	struct
 	{
@@ -25557,7 +25557,7 @@ void UWTLHUDBaseActionDropArea::DropItemToBuyStorageConfirmed()
 
 void UWTLHUDBaseActionDropArea::DropItemToBuyStorageCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionDropArea.DropItemToBuyStorageCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionDropArea.DropItemToBuyStorageCanceled"));
 
 	struct
 	{
@@ -25575,7 +25575,7 @@ void UWTLHUDBaseActionDropArea::DropItemToBuyStorageCanceled()
 
 void UWTLHUDBaseActionDropArea::AddItemToStorage(class UWTLHUDInventorySlot* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBaseActionDropArea.AddItemToStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBaseActionDropArea.AddItemToStorage"));
 
 	struct
 	{
@@ -25593,7 +25593,7 @@ void UWTLHUDBaseActionDropArea::AddItemToStorage(class UWTLHUDInventorySlot* Ite
 
 void UWTLHUDBulletinBoardItem::OnTakeQuestBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardItem.OnTakeQuestBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardItem.OnTakeQuestBtnClicked"));
 
 	struct
 	{
@@ -25609,7 +25609,7 @@ void UWTLHUDBulletinBoardItem::OnTakeQuestBtnClicked()
 
 void UWTLHUDBulletinBoardItem::OnDetailsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardItem.OnDetailsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardItem.OnDetailsBtnClicked"));
 
 	struct
 	{
@@ -25625,7 +25625,7 @@ void UWTLHUDBulletinBoardItem::OnDetailsBtnClicked()
 
 void UWTLHUDBulletinBoardWindow::OnUpdateAllowingTimerOut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardWindow.OnUpdateAllowingTimerOut");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardWindow.OnUpdateAllowingTimerOut"));
 
 	struct
 	{
@@ -25643,7 +25643,7 @@ void UWTLHUDBulletinBoardWindow::OnUpdateAllowingTimerOut()
 
 void UWTLHUDBulletinBoardWindow::OnBulletinBoardItemTakeQuestClicked(int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardWindow.OnBulletinBoardItemTakeQuestClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardWindow.OnBulletinBoardItemTakeQuestClicked"));
 
 	struct
 	{
@@ -25663,7 +25663,7 @@ void UWTLHUDBulletinBoardWindow::OnBulletinBoardItemTakeQuestClicked(int QuestID
 
 void UWTLHUDBulletinBoardWindow::OnBulletinBoardItemDetailsClicked(int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardWindow.OnBulletinBoardItemDetailsClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardWindow.OnBulletinBoardItemDetailsClicked"));
 
 	struct
 	{
@@ -25681,7 +25681,7 @@ void UWTLHUDBulletinBoardWindow::OnBulletinBoardItemDetailsClicked(int QuestID)
 
 void UWTLHUDBulletinBoardWindow::OnBackBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDBulletinBoardWindow.OnBackBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDBulletinBoardWindow.OnBackBtnClicked"));
 
 	struct
 	{
@@ -25697,7 +25697,7 @@ void UWTLHUDBulletinBoardWindow::OnBackBtnClicked()
 
 void UWTLHUDChangeParametersWindow::SetConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDChangeParametersWindow.SetConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.SetConfirmed"));
 
 	struct
 	{
@@ -25713,7 +25713,7 @@ void UWTLHUDChangeParametersWindow::SetConfirmed()
 
 void UWTLHUDChangeParametersWindow::OnSetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDChangeParametersWindow.OnSetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnSetBtnClick"));
 
 	struct
 	{
@@ -25729,7 +25729,7 @@ void UWTLHUDChangeParametersWindow::OnSetBtnClick()
 
 void UWTLHUDChangeParametersWindow::OnResetToDefaultBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDChangeParametersWindow.OnResetToDefaultBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnResetToDefaultBtnClick"));
 
 	struct
 	{
@@ -25745,7 +25745,7 @@ void UWTLHUDChangeParametersWindow::OnResetToDefaultBtnClick()
 
 void UWTLHUDChangeParametersWindow::OnResetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDChangeParametersWindow.OnResetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnResetBtnClick"));
 
 	struct
 	{
@@ -25761,7 +25761,7 @@ void UWTLHUDChangeParametersWindow::OnResetBtnClick()
 
 void UWTLHUDCharacterEquipment::OnCharacterRotatorRotateStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterEquipment.OnCharacterRotatorRotateStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterEquipment.OnCharacterRotatorRotateStop"));
 
 	struct
 	{
@@ -25777,7 +25777,7 @@ void UWTLHUDCharacterEquipment::OnCharacterRotatorRotateStop()
 
 void UWTLHUDCharacterEquipment::OnCharacterRotatorRotateStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterEquipment.OnCharacterRotatorRotateStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterEquipment.OnCharacterRotatorRotateStart"));
 
 	struct
 	{
@@ -25795,7 +25795,7 @@ void UWTLHUDCharacterEquipment::OnCharacterRotatorRotateStart()
 
 void UWTLHUDCharacterEquipment::OnCharacterPreviewCheckBoxCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterEquipment.OnCharacterPreviewCheckBoxCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterEquipment.OnCharacterPreviewCheckBoxCheckStateChanged"));
 
 	struct
 	{
@@ -25813,7 +25813,7 @@ void UWTLHUDCharacterEquipment::OnCharacterPreviewCheckBoxCheckStateChanged(bool
 
 void UWTLHUDCharacterInfoWindow::OnSendMessageBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterInfoWindow.OnSendMessageBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterInfoWindow.OnSendMessageBtnClick"));
 
 	struct
 	{
@@ -25829,7 +25829,7 @@ void UWTLHUDCharacterInfoWindow::OnSendMessageBtnClick()
 
 void UWTLHUDCharacterInfoWindow::OnSendInviteToGroupBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterInfoWindow.OnSendInviteToGroupBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterInfoWindow.OnSendInviteToGroupBtnClick"));
 
 	struct
 	{
@@ -25845,7 +25845,7 @@ void UWTLHUDCharacterInfoWindow::OnSendInviteToGroupBtnClick()
 
 void UWTLHUDCharacterInfoWindow::OnClanImageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCharacterInfoWindow.OnClanImageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCharacterInfoWindow.OnClanImageBtnClicked"));
 
 	struct
 	{
@@ -25861,7 +25861,7 @@ void UWTLHUDCharacterInfoWindow::OnClanImageBtnClicked()
 
 void UWTLHUDChatSmileButton::SmileButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDChatSmileButton.SmileButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChatSmileButton.SmileButtonClick"));
 
 	struct
 	{
@@ -25879,7 +25879,7 @@ void UWTLHUDChatSmileButton::SmileButtonClick()
 
 void UWTLHUDClanStoragePolicyGroupItem::OnCanTakeCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyGroupItem.OnCanTakeCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyGroupItem.OnCanTakeCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25899,7 +25899,7 @@ void UWTLHUDClanStoragePolicyGroupItem::OnCanTakeCheckBoxStateChanged(bool bIsCh
 
 void UWTLHUDClanStoragePolicyGroupItem::OnCanPutCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyGroupItem.OnCanPutCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyGroupItem.OnCanPutCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25919,7 +25919,7 @@ void UWTLHUDClanStoragePolicyGroupItem::OnCanPutCheckBoxStateChanged(bool bIsChe
 
 void UWTLHUDClanStoragePolicyWindow::OnPolicyGroupItemCanTakeCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyWindow.OnPolicyGroupItemCanTakeCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyWindow.OnPolicyGroupItemCanTakeCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25939,7 +25939,7 @@ void UWTLHUDClanStoragePolicyWindow::OnPolicyGroupItemCanTakeCheckBoxStateChange
 
 void UWTLHUDClanStoragePolicyWindow::OnPolicyGroupItemCanPutCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyWindow.OnPolicyGroupItemCanPutCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyWindow.OnPolicyGroupItemCanPutCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25959,7 +25959,7 @@ void UWTLHUDClanStoragePolicyWindow::OnPolicyGroupItemCanPutCheckBoxStateChanged
 
 void UWTLHUDClanStoragePolicyWindow::OnCanTakeAllCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyWindow.OnCanTakeAllCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyWindow.OnCanTakeAllCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25979,7 +25979,7 @@ void UWTLHUDClanStoragePolicyWindow::OnCanTakeAllCheckBoxStateChanged(bool bIsCh
 
 void UWTLHUDClanStoragePolicyWindow::OnCanPutAllCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyWindow.OnCanPutAllCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyWindow.OnCanPutAllCheckBoxStateChanged"));
 
 	struct
 	{
@@ -25997,7 +25997,7 @@ void UWTLHUDClanStoragePolicyWindow::OnCanPutAllCheckBoxStateChanged(bool bIsChe
 
 void UWTLHUDClanStoragePolicyWindow::OnApplyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStoragePolicyWindow.OnApplyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStoragePolicyWindow.OnApplyBtnClicked"));
 
 	struct
 	{
@@ -26015,7 +26015,7 @@ void UWTLHUDClanStoragePolicyWindow::OnApplyBtnClicked()
 
 void UWTLHUDClanStorageTabImageSelectWindow::OnTabImageItemClicked(unsigned char ImageIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabImageSelectWindow.OnTabImageItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabImageSelectWindow.OnTabImageItemClicked"));
 
 	struct
 	{
@@ -26033,7 +26033,7 @@ void UWTLHUDClanStorageTabImageSelectWindow::OnTabImageItemClicked(unsigned char
 
 void UWTLHUDClanStorageTabImageSelectWindow::OnApplyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabImageSelectWindow.OnApplyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabImageSelectWindow.OnApplyBtnClicked"));
 
 	struct
 	{
@@ -26051,7 +26051,7 @@ void UWTLHUDClanStorageTabImageSelectWindow::OnApplyBtnClicked()
 
 void UWTLHUDClanStorageTabSettingsItem::OnTabNameTextBoxTextChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabSettingsItem.OnTabNameTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabSettingsItem.OnTabNameTextBoxTextChanged"));
 
 	struct
 	{
@@ -26073,7 +26073,7 @@ void UWTLHUDClanStorageTabSettingsItem::OnTabNameTextBoxTextChanged(const struct
 
 struct FEventReply UWTLHUDClanStorageTabSettingsItem::OnTabImageMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabSettingsItem.OnTabImageMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabSettingsItem.OnTabImageMouseButtonDown"));
 
 	struct
 	{
@@ -26096,7 +26096,7 @@ struct FEventReply UWTLHUDClanStorageTabSettingsItem::OnTabImageMouseButtonDown(
 
 void UWTLHUDClanStorageTabSettingsItem::OnPreviousImageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabSettingsItem.OnPreviousImageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabSettingsItem.OnPreviousImageBtnClicked"));
 
 	struct
 	{
@@ -26112,7 +26112,7 @@ void UWTLHUDClanStorageTabSettingsItem::OnPreviousImageBtnClicked()
 
 void UWTLHUDClanStorageTabSettingsItem::OnNextImageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabSettingsItem.OnNextImageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabSettingsItem.OnNextImageBtnClicked"));
 
 	struct
 	{
@@ -26128,7 +26128,7 @@ void UWTLHUDClanStorageTabSettingsItem::OnNextImageBtnClicked()
 
 void UWTLHUDClanStorageTabSettingsItem::OnConfigureAccessPolicyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageTabSettingsItem.OnConfigureAccessPolicyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageTabSettingsItem.OnConfigureAccessPolicyBtnClicked"));
 
 	struct
 	{
@@ -26144,7 +26144,7 @@ void UWTLHUDClanStorageTabSettingsItem::OnConfigureAccessPolicyBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnWithdrawTokensBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnWithdrawTokensBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnWithdrawTokensBtnClicked"));
 
 	struct
 	{
@@ -26160,7 +26160,7 @@ void UWTLHUDClanStorageWindow::OnWithdrawTokensBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnUniteAllItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnUniteAllItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnUniteAllItemsBtnClick"));
 
 	struct
 	{
@@ -26176,7 +26176,7 @@ void UWTLHUDClanStorageWindow::OnUniteAllItemsBtnClick()
 
 void UWTLHUDClanStorageWindow::OnTabSettingsInfoChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnTabSettingsInfoChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnTabSettingsInfoChanged"));
 
 	struct
 	{
@@ -26194,7 +26194,7 @@ void UWTLHUDClanStorageWindow::OnTabSettingsInfoChanged()
 
 void UWTLHUDClanStorageWindow::OnTabBtnClicked(unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnTabBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnTabBtnClicked"));
 
 	struct
 	{
@@ -26212,7 +26212,7 @@ void UWTLHUDClanStorageWindow::OnTabBtnClicked(unsigned char TabIndex)
 
 void UWTLHUDClanStorageWindow::OnSettingsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnSettingsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnSettingsBtnClicked"));
 
 	struct
 	{
@@ -26228,7 +26228,7 @@ void UWTLHUDClanStorageWindow::OnSettingsBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnPreviousLogPageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnPreviousLogPageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnPreviousLogPageBtnClicked"));
 
 	struct
 	{
@@ -26244,7 +26244,7 @@ void UWTLHUDClanStorageWindow::OnPreviousLogPageBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnOptimizeItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnOptimizeItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnOptimizeItemsBtnClick"));
 
 	struct
 	{
@@ -26260,7 +26260,7 @@ void UWTLHUDClanStorageWindow::OnOptimizeItemsBtnClick()
 
 void UWTLHUDClanStorageWindow::OnNextLogPageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnNextLogPageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnNextLogPageBtnClicked"));
 
 	struct
 	{
@@ -26278,7 +26278,7 @@ void UWTLHUDClanStorageWindow::OnNextLogPageBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnLogTypeTabButtonClicked(unsigned char LogTypeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogTypeTabButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogTypeTabButtonClicked"));
 
 	struct
 	{
@@ -26299,7 +26299,7 @@ void UWTLHUDClanStorageWindow::OnLogTypeTabButtonClicked(unsigned char LogTypeIn
 
 void UWTLHUDClanStorageWindow::OnLogTabSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogTabSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogTabSelectionChanged"));
 
 	struct
 	{
@@ -26322,7 +26322,7 @@ void UWTLHUDClanStorageWindow::OnLogTabSelectionChanged(const struct FString& Se
 
 void UWTLHUDClanStorageWindow::OnLogOperationTypeSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogOperationTypeSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogOperationTypeSelectionChanged"));
 
 	struct
 	{
@@ -26345,7 +26345,7 @@ void UWTLHUDClanStorageWindow::OnLogOperationTypeSelectionChanged(const struct F
 
 void UWTLHUDClanStorageWindow::OnLogItemsPerPageSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogItemsPerPageSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogItemsPerPageSelectionChanged"));
 
 	struct
 	{
@@ -26365,7 +26365,7 @@ void UWTLHUDClanStorageWindow::OnLogItemsPerPageSelectionChanged(const struct FS
 
 void UWTLHUDClanStorageWindow::OnLogDataChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogDataChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogDataChanged"));
 
 	struct
 	{
@@ -26384,7 +26384,7 @@ void UWTLHUDClanStorageWindow::OnLogDataChanged()
 
 void UWTLHUDClanStorageWindow::OnLogCharacterNameTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogCharacterNameTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogCharacterNameTextCommitted"));
 
 	struct
 	{
@@ -26404,7 +26404,7 @@ void UWTLHUDClanStorageWindow::OnLogCharacterNameTextCommitted(const struct FTex
 
 void UWTLHUDClanStorageWindow::OnLogBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnLogBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnLogBtnClicked"));
 
 	struct
 	{
@@ -26420,7 +26420,7 @@ void UWTLHUDClanStorageWindow::OnLogBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnDepositTokensBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnDepositTokensBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnDepositTokensBtnClicked"));
 
 	struct
 	{
@@ -26436,7 +26436,7 @@ void UWTLHUDClanStorageWindow::OnDepositTokensBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnContentChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnContentChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnContentChanged"));
 
 	struct
 	{
@@ -26452,7 +26452,7 @@ void UWTLHUDClanStorageWindow::OnContentChanged()
 
 void UWTLHUDClanStorageWindow::OnClanStorageSlotDragDetected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnClanStorageSlotDragDetected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnClanStorageSlotDragDetected"));
 
 	struct
 	{
@@ -26468,7 +26468,7 @@ void UWTLHUDClanStorageWindow::OnClanStorageSlotDragDetected()
 
 void UWTLHUDClanStorageWindow::OnClanStorageSlotDragCancelled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnClanStorageSlotDragCancelled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnClanStorageSlotDragCancelled"));
 
 	struct
 	{
@@ -26484,7 +26484,7 @@ void UWTLHUDClanStorageWindow::OnClanStorageSlotDragCancelled()
 
 void UWTLHUDClanStorageWindow::OnBuyStorageTabConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnBuyStorageTabConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnBuyStorageTabConfirm"));
 
 	struct
 	{
@@ -26500,7 +26500,7 @@ void UWTLHUDClanStorageWindow::OnBuyStorageTabConfirm()
 
 void UWTLHUDClanStorageWindow::OnBackBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnBackBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnBackBtnClicked"));
 
 	struct
 	{
@@ -26516,7 +26516,7 @@ void UWTLHUDClanStorageWindow::OnBackBtnClicked()
 
 void UWTLHUDClanStorageWindow::OnApplySettingsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDClanStorageWindow.OnApplySettingsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDClanStorageWindow.OnApplySettingsBtnClicked"));
 
 	struct
 	{
@@ -26532,7 +26532,7 @@ void UWTLHUDClanStorageWindow::OnApplySettingsBtnClicked()
 
 void UWTLHUDCommentaryWindow::OnOKBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommentaryWindow.OnOKBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommentaryWindow.OnOKBtnClicked"));
 
 	struct
 	{
@@ -26551,7 +26551,7 @@ void UWTLHUDCommentaryWindow::OnOKBtnClicked()
 
 void UWTLHUDCommentaryWindow::OnCommentaryTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommentaryWindow.OnCommentaryTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommentaryWindow.OnCommentaryTextBoxCommitted"));
 
 	struct
 	{
@@ -26573,7 +26573,7 @@ void UWTLHUDCommentaryWindow::OnCommentaryTextBoxCommitted(const struct FText& T
 
 void UWTLHUDCommentaryWindow::OnCommentaryTextBoxChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommentaryWindow.OnCommentaryTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommentaryWindow.OnCommentaryTextBoxChanged"));
 
 	struct
 	{
@@ -26594,7 +26594,7 @@ void UWTLHUDCommentaryWindow::OnCommentaryTextBoxChanged(const struct FText& InT
 
 void UWTLHUDCommissionAddUpdateWindow::OnPriceTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnPriceTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnPriceTextBoxTextCommitted"));
 
 	struct
 	{
@@ -26616,7 +26616,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnPriceTextBoxTextCommitted(const struct 
 
 void UWTLHUDCommissionAddUpdateWindow::OnPriceTextBoxTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnPriceTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnPriceTextBoxTextChanged"));
 
 	struct
 	{
@@ -26637,7 +26637,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnPriceTextBoxTextChanged(const struct FT
 
 void UWTLHUDCommissionAddUpdateWindow::OnMinBuyCountTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnMinBuyCountTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnMinBuyCountTextBoxTextCommitted"));
 
 	struct
 	{
@@ -26657,7 +26657,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnMinBuyCountTextBoxTextCommitted(const s
 
 void UWTLHUDCommissionAddUpdateWindow::OnBtnMaxDaysUpClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnMaxDaysUpClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnMaxDaysUpClicked"));
 
 	struct
 	{
@@ -26673,7 +26673,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnBtnMaxDaysUpClicked()
 
 void UWTLHUDCommissionAddUpdateWindow::OnBtnMaxDaysDownClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnMaxDaysDownClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnMaxDaysDownClicked"));
 
 	struct
 	{
@@ -26689,7 +26689,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnBtnMaxDaysDownClicked()
 
 void UWTLHUDCommissionAddUpdateWindow::OnBtnDaysUpClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnDaysUpClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnDaysUpClicked"));
 
 	struct
 	{
@@ -26705,7 +26705,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnBtnDaysUpClicked()
 
 void UWTLHUDCommissionAddUpdateWindow::OnBtnDaysDownClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnDaysDownClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnBtnDaysDownClicked"));
 
 	struct
 	{
@@ -26721,7 +26721,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnBtnDaysDownClicked()
 
 void UWTLHUDCommissionAddUpdateWindow::OnActionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionAddUpdateWindow.OnActionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionAddUpdateWindow.OnActionBtnClicked"));
 
 	struct
 	{
@@ -26737,7 +26737,7 @@ void UWTLHUDCommissionAddUpdateWindow::OnActionBtnClicked()
 
 void UWTLHUDCommissionList::OnWarningBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnWarningBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnWarningBtnClicked"));
 
 	struct
 	{
@@ -26753,7 +26753,7 @@ void UWTLHUDCommissionList::OnWarningBtnClicked()
 
 void UWTLHUDCommissionList::OnUpdateCommissionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnUpdateCommissionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnUpdateCommissionBtnClicked"));
 
 	struct
 	{
@@ -26769,7 +26769,7 @@ void UWTLHUDCommissionList::OnUpdateCommissionBtnClicked()
 
 void UWTLHUDCommissionList::OnTakeCommissionMoneyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnTakeCommissionMoneyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnTakeCommissionMoneyBtnClicked"));
 
 	struct
 	{
@@ -26785,7 +26785,7 @@ void UWTLHUDCommissionList::OnTakeCommissionMoneyBtnClicked()
 
 void UWTLHUDCommissionList::OnRemoveItemFromCommissionConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnRemoveItemFromCommissionConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnRemoveItemFromCommissionConfirm"));
 
 	struct
 	{
@@ -26801,7 +26801,7 @@ void UWTLHUDCommissionList::OnRemoveItemFromCommissionConfirm()
 
 void UWTLHUDCommissionList::OnRemoveItemFromCommissionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnRemoveItemFromCommissionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnRemoveItemFromCommissionBtnClicked"));
 
 	struct
 	{
@@ -26817,7 +26817,7 @@ void UWTLHUDCommissionList::OnRemoveItemFromCommissionBtnClicked()
 
 void UWTLHUDCommissionList::OnMessageDialogHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnMessageDialogHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnMessageDialogHide"));
 
 	struct
 	{
@@ -26836,7 +26836,7 @@ void UWTLHUDCommissionList::OnMessageDialogHide()
 
 void UWTLHUDCommissionList::OnCommissionListItemClicked(EWTLItemType ItemType, uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnCommissionListItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnCommissionListItemClicked"));
 
 	struct
 	{
@@ -26860,7 +26860,7 @@ void UWTLHUDCommissionList::OnCommissionListItemClicked(EWTLItemType ItemType, u
 
 void UWTLHUDCommissionList::OnAddItemDropped(EWTLItemType ListItemType, uint64_t ListItemID, uint64_t DroppedItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnAddItemDropped");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnAddItemDropped"));
 
 	struct
 	{
@@ -26882,7 +26882,7 @@ void UWTLHUDCommissionList::OnAddItemDropped(EWTLItemType ListItemType, uint64_t
 
 void UWTLHUDCommissionList::OnAddItemConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionList.OnAddItemConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionList.OnAddItemConfirm"));
 
 	struct
 	{
@@ -26900,7 +26900,7 @@ void UWTLHUDCommissionList::OnAddItemConfirm()
 
 void UWTLHUDSellStorageBase::SelectItemTypeCategory(EWTLItemType ItemType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.SelectItemTypeCategory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.SelectItemTypeCategory"));
 
 	struct
 	{
@@ -26921,7 +26921,7 @@ void UWTLHUDSellStorageBase::SelectItemTypeCategory(EWTLItemType ItemType)
 
 void UWTLHUDSellStorageBase::OnWeaponCaliberSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnWeaponCaliberSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnWeaponCaliberSelectionChanged"));
 
 	struct
 	{
@@ -26943,7 +26943,7 @@ void UWTLHUDSellStorageBase::OnWeaponCaliberSelectionChanged(const struct FStrin
 
 void UWTLHUDSellStorageBase::OnTabBtnClicked(EWTLItemType ItemType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnTabBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnTabBtnClicked"));
 
 	struct
 	{
@@ -26961,7 +26961,7 @@ void UWTLHUDSellStorageBase::OnTabBtnClicked(EWTLItemType ItemType)
 
 void UWTLHUDSellStorageBase::OnSellItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnSellItemsChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnSellItemsChanged"));
 
 	struct
 	{
@@ -26980,7 +26980,7 @@ void UWTLHUDSellStorageBase::OnSellItemsChanged()
 
 void UWTLHUDSellStorageBase::OnItemSubTypeSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnItemSubTypeSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnItemSubTypeSelectionChanged"));
 
 	struct
 	{
@@ -27003,7 +27003,7 @@ void UWTLHUDSellStorageBase::OnItemSubTypeSelectionChanged(const struct FString&
 
 void UWTLHUDSellStorageBase::OnItemSortSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnItemSortSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnItemSortSelectionChanged"));
 
 	struct
 	{
@@ -27023,7 +27023,7 @@ void UWTLHUDSellStorageBase::OnItemSortSelectionChanged(const struct FString& Se
 
 void UWTLHUDSellStorageBase::OnBuyItemConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnBuyItemConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnBuyItemConfirmed"));
 
 	struct
 	{
@@ -27039,7 +27039,7 @@ void UWTLHUDSellStorageBase::OnBuyItemConfirmed()
 
 void UWTLHUDSellStorageBase::OnBuyItemCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnBuyItemCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnBuyItemCanceled"));
 
 	struct
 	{
@@ -27058,7 +27058,7 @@ void UWTLHUDSellStorageBase::OnBuyItemCanceled()
 
 void UWTLHUDSellStorageBase::OnBuyItem(const struct FWTLSellItemInfo& SellItemInfo, bool bIsCannotUseItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.OnBuyItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.OnBuyItem"));
 
 	struct
 	{
@@ -27078,7 +27078,7 @@ void UWTLHUDSellStorageBase::OnBuyItem(const struct FWTLSellItemInfo& SellItemIn
 
 void UWTLHUDSellStorageBase::BuyItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageBase.BuyItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageBase.BuyItem"));
 
 	struct
 	{
@@ -27094,7 +27094,7 @@ void UWTLHUDSellStorageBase::BuyItem()
 
 void UWTLHUDCommissionSellStorage::OnUpdateDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionSellStorage.OnUpdateDelay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionSellStorage.OnUpdateDelay"));
 
 	struct
 	{
@@ -27110,7 +27110,7 @@ void UWTLHUDCommissionSellStorage::OnUpdateDelay()
 
 void UWTLHUDCommissionSellStorage::OnPreviousPageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionSellStorage.OnPreviousPageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionSellStorage.OnPreviousPageBtnClicked"));
 
 	struct
 	{
@@ -27126,7 +27126,7 @@ void UWTLHUDCommissionSellStorage::OnPreviousPageBtnClicked()
 
 void UWTLHUDCommissionSellStorage::OnNextPageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionSellStorage.OnNextPageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionSellStorage.OnNextPageBtnClicked"));
 
 	struct
 	{
@@ -27145,7 +27145,7 @@ void UWTLHUDCommissionSellStorage::OnNextPageBtnClicked()
 
 void UWTLHUDCommissionSellStorage::OnItemsPerPageSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCommissionSellStorage.OnItemsPerPageSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCommissionSellStorage.OnItemsPerPageSelectionChanged"));
 
 	struct
 	{
@@ -27165,7 +27165,7 @@ void UWTLHUDCommissionSellStorage::OnItemsPerPageSelectionChanged(const struct F
 
 void UWTLHUDContentInventoryStorage::OnUniteAllItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnUniteAllItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnUniteAllItemsBtnClick"));
 
 	struct
 	{
@@ -27181,7 +27181,7 @@ void UWTLHUDContentInventoryStorage::OnUniteAllItemsBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnTakeAllBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnTakeAllBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnTakeAllBtnClick"));
 
 	struct
 	{
@@ -27197,7 +27197,7 @@ void UWTLHUDContentInventoryStorage::OnTakeAllBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnRemoveStashBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnRemoveStashBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnRemoveStashBtnClick"));
 
 	struct
 	{
@@ -27213,7 +27213,7 @@ void UWTLHUDContentInventoryStorage::OnRemoveStashBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnPutGiftBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnPutGiftBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnPutGiftBtnClick"));
 
 	struct
 	{
@@ -27229,7 +27229,7 @@ void UWTLHUDContentInventoryStorage::OnPutGiftBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnOptimizeItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnOptimizeItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnOptimizeItemsBtnClick"));
 
 	struct
 	{
@@ -27245,7 +27245,7 @@ void UWTLHUDContentInventoryStorage::OnOptimizeItemsBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnObjectDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnObjectDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnObjectDestroyed"));
 
 	struct
 	{
@@ -27261,7 +27261,7 @@ void UWTLHUDContentInventoryStorage::OnObjectDestroyed()
 
 void UWTLHUDContentInventoryStorage::OnExtinguishCampfireBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnExtinguishCampfireBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnExtinguishCampfireBtnClick"));
 
 	struct
 	{
@@ -27277,7 +27277,7 @@ void UWTLHUDContentInventoryStorage::OnExtinguishCampfireBtnClick()
 
 void UWTLHUDContentInventoryStorage::OnContentChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnContentChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnContentChanged"));
 
 	struct
 	{
@@ -27293,7 +27293,7 @@ void UWTLHUDContentInventoryStorage::OnContentChanged()
 
 void UWTLHUDContentInventoryStorage::OnCampfireWasExtinguish()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDContentInventoryStorage.OnCampfireWasExtinguish");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnCampfireWasExtinguish"));
 
 	struct
 	{
@@ -27311,7 +27311,7 @@ void UWTLHUDContentInventoryStorage::OnCampfireWasExtinguish()
 
 void UWTLHUDCraftWindow::OnCraftWindowItemClicked(int CraftItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCraftWindow.OnCraftWindowItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCraftWindow.OnCraftWindowItemClicked"));
 
 	struct
 	{
@@ -27329,7 +27329,7 @@ void UWTLHUDCraftWindow::OnCraftWindowItemClicked(int CraftItemID)
 
 void UWTLHUDCraftWindow::OnBtnCreateClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDCraftWindow.OnBtnCreateClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDCraftWindow.OnBtnCreateClicked"));
 
 	struct
 	{
@@ -27345,7 +27345,7 @@ void UWTLHUDCraftWindow::OnBtnCreateClicked()
 
 void UWTLHUDDamagePointer::OnDissapearAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDDamagePointer.OnDissapearAnimationFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDDamagePointer.OnDissapearAnimationFinished"));
 
 	struct
 	{
@@ -27363,7 +27363,7 @@ void UWTLHUDDamagePointer::OnDissapearAnimationFinished()
 
 void UWTLHUDExtractorStorage::OnContainerSlotInit(class UWTLHUDInventorySlot* InventorySlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDExtractorStorage.OnContainerSlotInit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDExtractorStorage.OnContainerSlotInit"));
 
 	struct
 	{
@@ -27383,7 +27383,7 @@ void UWTLHUDExtractorStorage::OnContainerSlotInit(class UWTLHUDInventorySlot* In
 
 void UWTLHUDExtractorStorage::OnContainerSlotClear(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDExtractorStorage.OnContainerSlotClear");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDExtractorStorage.OnContainerSlotClear"));
 
 	struct
 	{
@@ -27401,7 +27401,7 @@ void UWTLHUDExtractorStorage::OnContainerSlotClear(uint64_t ItemID)
 
 void UWTLHUDFastAccessSlots::OnPDAItemBtnUnhover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnUnhover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnUnhover"));
 
 	struct
 	{
@@ -27417,7 +27417,7 @@ void UWTLHUDFastAccessSlots::OnPDAItemBtnUnhover()
 
 void UWTLHUDFastAccessSlots::OnPDAItemBtnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnHover"));
 
 	struct
 	{
@@ -27433,7 +27433,7 @@ void UWTLHUDFastAccessSlots::OnPDAItemBtnHover()
 
 void UWTLHUDFastAccessSlots::OnPDAItemBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnPDAItemBtnClick"));
 
 	struct
 	{
@@ -27449,7 +27449,7 @@ void UWTLHUDFastAccessSlots::OnPDAItemBtnClick()
 
 void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnUnhover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnUnhover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnUnhover"));
 
 	struct
 	{
@@ -27465,7 +27465,7 @@ void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnUnhover()
 
 void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnHover"));
 
 	struct
 	{
@@ -27481,7 +27481,7 @@ void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnHover()
 
 void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFastAccessSlots.OnFeedbackWindowBtnClick"));
 
 	struct
 	{
@@ -27500,7 +27500,7 @@ void UWTLHUDFastAccessSlots::OnFeedbackWindowBtnClick()
 
 void UWTLHUDFeedbackWindow::OnSuspectPlayerNameTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnSuspectPlayerNameTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnSuspectPlayerNameTextBoxCommitted"));
 
 	struct
 	{
@@ -27520,7 +27520,7 @@ void UWTLHUDFeedbackWindow::OnSuspectPlayerNameTextBoxCommitted(const struct FTe
 
 void UWTLHUDFeedbackWindow::OnSendReportButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnSendReportButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnSendReportButtonClick"));
 
 	struct
 	{
@@ -27536,7 +27536,7 @@ void UWTLHUDFeedbackWindow::OnSendReportButtonClick()
 
 void UWTLHUDFeedbackWindow::OnResultOKButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnResultOKButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnResultOKButtonClick"));
 
 	struct
 	{
@@ -27555,7 +27555,7 @@ void UWTLHUDFeedbackWindow::OnResultOKButtonClick()
 
 void UWTLHUDFeedbackWindow::OnReportTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnReportTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnReportTextBoxCommitted"));
 
 	struct
 	{
@@ -27577,7 +27577,7 @@ void UWTLHUDFeedbackWindow::OnReportTextBoxCommitted(const struct FText& Text, T
 
 void UWTLHUDFeedbackWindow::OnReportTextBoxChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnReportTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnReportTextBoxChanged"));
 
 	struct
 	{
@@ -27598,7 +27598,7 @@ void UWTLHUDFeedbackWindow::OnReportTextBoxChanged(const struct FText& Text)
 
 void UWTLHUDFeedbackWindow::OnFeedbackTypeSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnFeedbackTypeSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnFeedbackTypeSelectionChanged"));
 
 	struct
 	{
@@ -27621,7 +27621,7 @@ void UWTLHUDFeedbackWindow::OnFeedbackTypeSelectionChanged(const struct FString&
 
 void UWTLHUDFeedbackWindow::OnEmailTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnEmailTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnEmailTextBoxCommitted"));
 
 	struct
 	{
@@ -27643,7 +27643,7 @@ void UWTLHUDFeedbackWindow::OnEmailTextBoxCommitted(const struct FText& Text, TE
 
 void UWTLHUDFeedbackWindow::OnEmailTextBoxChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDFeedbackWindow.OnEmailTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDFeedbackWindow.OnEmailTextBoxChanged"));
 
 	struct
 	{
@@ -27661,7 +27661,7 @@ void UWTLHUDFeedbackWindow::OnEmailTextBoxChanged(const struct FText& Text)
 
 void UWTLHUDInGameMenu::ShowMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.ShowMenu");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.ShowMenu"));
 
 	struct
 	{
@@ -27677,7 +27677,7 @@ void UWTLHUDInGameMenu::ShowMenu()
 
 void UWTLHUDInGameMenu::QuitToMainMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.QuitToMainMenu");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.QuitToMainMenu"));
 
 	struct
 	{
@@ -27693,7 +27693,7 @@ void UWTLHUDInGameMenu::QuitToMainMenu()
 
 void UWTLHUDInGameMenu::OnSuicideConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnSuicideConfirmation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnSuicideConfirmation"));
 
 	struct
 	{
@@ -27709,7 +27709,7 @@ void UWTLHUDInGameMenu::OnSuicideConfirmation()
 
 void UWTLHUDInGameMenu::OnSuicideBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnSuicideBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnSuicideBtnClick"));
 
 	struct
 	{
@@ -27725,7 +27725,7 @@ void UWTLHUDInGameMenu::OnSuicideBtnClick()
 
 void UWTLHUDInGameMenu::OnReturnToGameBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnReturnToGameBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnReturnToGameBtnClick"));
 
 	struct
 	{
@@ -27741,7 +27741,7 @@ void UWTLHUDInGameMenu::OnReturnToGameBtnClick()
 
 void UWTLHUDInGameMenu::OnQuitToMainMenuBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnQuitToMainMenuBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnQuitToMainMenuBtnClick"));
 
 	struct
 	{
@@ -27757,7 +27757,7 @@ void UWTLHUDInGameMenu::OnQuitToMainMenuBtnClick()
 
 void UWTLHUDInGameMenu::OnOptionsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnOptionsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnOptionsBtnClick"));
 
 	struct
 	{
@@ -27773,7 +27773,7 @@ void UWTLHUDInGameMenu::OnOptionsBtnClick()
 
 void UWTLHUDInGameMenu::OnHighlightsButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnHighlightsButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnHighlightsButtonClicked"));
 
 	struct
 	{
@@ -27789,7 +27789,7 @@ void UWTLHUDInGameMenu::OnHighlightsButtonClicked()
 
 void UWTLHUDInGameMenu::OnExitGameBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.OnExitGameBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnExitGameBtnClick"));
 
 	struct
 	{
@@ -27805,7 +27805,7 @@ void UWTLHUDInGameMenu::OnExitGameBtnClick()
 
 void UWTLHUDInGameMenu::ExitGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInGameMenu.ExitGame");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.ExitGame"));
 
 	struct
 	{
@@ -27825,7 +27825,7 @@ void UWTLHUDInGameMenu::ExitGame()
 
 struct FEventReply UWTLHUDInteractiveSubstrate::OnUnlockedMouseCursorHintMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInteractiveSubstrate.OnUnlockedMouseCursorHintMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInteractiveSubstrate.OnUnlockedMouseCursorHintMouseButtonDown"));
 
 	struct
 	{
@@ -27848,7 +27848,7 @@ struct FEventReply UWTLHUDInteractiveSubstrate::OnUnlockedMouseCursorHintMouseBu
 
 void UWTLHUDInteractiveSubstrate::OnInteractiveTraceShot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDInteractiveSubstrate.OnInteractiveTraceShot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInteractiveSubstrate.OnInteractiveTraceShot"));
 
 	struct
 	{
@@ -27864,7 +27864,7 @@ void UWTLHUDInteractiveSubstrate::OnInteractiveTraceShot()
 
 void UWTLHUDItemInformation::OnPreviewBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemInformation.OnPreviewBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemInformation.OnPreviewBtnClick"));
 
 	struct
 	{
@@ -27880,7 +27880,7 @@ void UWTLHUDItemInformation::OnPreviewBtnClick()
 
 void UWTLHUDItemPreview::UpdateAutoRotate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.UpdateAutoRotate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.UpdateAutoRotate"));
 
 	struct
 	{
@@ -27896,7 +27896,7 @@ void UWTLHUDItemPreview::UpdateAutoRotate()
 
 void UWTLHUDItemPreview::OnZoomOutBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnZoomOutBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnZoomOutBtnClicked"));
 
 	struct
 	{
@@ -27912,7 +27912,7 @@ void UWTLHUDItemPreview::OnZoomOutBtnClicked()
 
 void UWTLHUDItemPreview::OnZoomInBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnZoomInBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnZoomInBtnClicked"));
 
 	struct
 	{
@@ -27928,7 +27928,7 @@ void UWTLHUDItemPreview::OnZoomInBtnClicked()
 
 void UWTLHUDItemPreview::OnRotateTopBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnRotateTopBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnRotateTopBtnClicked"));
 
 	struct
 	{
@@ -27944,7 +27944,7 @@ void UWTLHUDItemPreview::OnRotateTopBtnClicked()
 
 void UWTLHUDItemPreview::OnRotateRightBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnRotateRightBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnRotateRightBtnClicked"));
 
 	struct
 	{
@@ -27960,7 +27960,7 @@ void UWTLHUDItemPreview::OnRotateRightBtnClicked()
 
 void UWTLHUDItemPreview::OnRotateLeftBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnRotateLeftBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnRotateLeftBtnClicked"));
 
 	struct
 	{
@@ -27976,7 +27976,7 @@ void UWTLHUDItemPreview::OnRotateLeftBtnClicked()
 
 void UWTLHUDItemPreview::OnRotateDownBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnRotateDownBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnRotateDownBtnClicked"));
 
 	struct
 	{
@@ -27992,7 +27992,7 @@ void UWTLHUDItemPreview::OnRotateDownBtnClicked()
 
 void UWTLHUDItemPreview::OnResetBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnResetBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnResetBtnClicked"));
 
 	struct
 	{
@@ -28011,7 +28011,7 @@ void UWTLHUDItemPreview::OnResetBtnClicked()
 
 void UWTLHUDItemPreview::OnPreviewMeshSwitcherValueChanged(int CurrentIndex, const struct FString& Prefix)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnPreviewMeshSwitcherValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnPreviewMeshSwitcherValueChanged"));
 
 	struct
 	{
@@ -28035,7 +28035,7 @@ void UWTLHUDItemPreview::OnPreviewMeshSwitcherValueChanged(int CurrentIndex, con
 
 struct FEventReply UWTLHUDItemPreview::OnItemPreviewBorderMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnItemPreviewBorderMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnItemPreviewBorderMouseButtonDown"));
 
 	struct
 	{
@@ -28058,7 +28058,7 @@ struct FEventReply UWTLHUDItemPreview::OnItemPreviewBorderMouseButtonDown(const 
 
 void UWTLHUDItemPreview::OnAutoRotateRightBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnAutoRotateRightBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnAutoRotateRightBtnClicked"));
 
 	struct
 	{
@@ -28074,7 +28074,7 @@ void UWTLHUDItemPreview::OnAutoRotateRightBtnClicked()
 
 void UWTLHUDItemPreview::OnAutoRotateLeftBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemPreview.OnAutoRotateLeftBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemPreview.OnAutoRotateLeftBtnClicked"));
 
 	struct
 	{
@@ -28090,7 +28090,7 @@ void UWTLHUDItemPreview::OnAutoRotateLeftBtnClicked()
 
 void UWTLHUDItemsCustomizationWindow::OnResetColorBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnResetColorBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnResetColorBtnClicked"));
 
 	struct
 	{
@@ -28108,7 +28108,7 @@ void UWTLHUDItemsCustomizationWindow::OnResetColorBtnClicked()
 
 void UWTLHUDItemsCustomizationWindow::OnPatternSwitcherValueChanged(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnPatternSwitcherValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnPatternSwitcherValueChanged"));
 
 	struct
 	{
@@ -28131,7 +28131,7 @@ void UWTLHUDItemsCustomizationWindow::OnPatternSwitcherValueChanged(int CurrentI
 
 void UWTLHUDItemsCustomizationWindow::OnItemColorPicked(EWTLCustomizationColorPresetType ColorPresetType, int Number, const struct FLinearColor& Color, const struct FLinearColor& PreviewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnItemColorPicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnItemColorPicked"));
 
 	struct
 	{
@@ -28157,7 +28157,7 @@ void UWTLHUDItemsCustomizationWindow::OnItemColorPicked(EWTLCustomizationColorPr
 
 void UWTLHUDItemsCustomizationWindow::OnCustomizationSlotInit(class UWTLHUDInventorySlot* InventorySlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnCustomizationSlotInit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnCustomizationSlotInit"));
 
 	struct
 	{
@@ -28177,7 +28177,7 @@ void UWTLHUDItemsCustomizationWindow::OnCustomizationSlotInit(class UWTLHUDInven
 
 void UWTLHUDItemsCustomizationWindow::OnCustomizationSlotClear(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnCustomizationSlotClear");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnCustomizationSlotClear"));
 
 	struct
 	{
@@ -28195,7 +28195,7 @@ void UWTLHUDItemsCustomizationWindow::OnCustomizationSlotClear(uint64_t ItemID)
 
 void UWTLHUDItemsCustomizationWindow::OnColorBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnColorBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnColorBtnClicked"));
 
 	struct
 	{
@@ -28211,7 +28211,7 @@ void UWTLHUDItemsCustomizationWindow::OnColorBtnClicked()
 
 void UWTLHUDItemsCustomizationWindow::OnApplyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsCustomizationWindow.OnApplyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsCustomizationWindow.OnApplyBtnClicked"));
 
 	struct
 	{
@@ -28229,7 +28229,7 @@ void UWTLHUDItemsCustomizationWindow::OnApplyBtnClicked()
 
 void UWTLHUDItemsModificationWindow::OnUseModificationKitResult(bool IsSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsModificationWindow.OnUseModificationKitResult");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsModificationWindow.OnUseModificationKitResult"));
 
 	struct
 	{
@@ -28249,7 +28249,7 @@ void UWTLHUDItemsModificationWindow::OnUseModificationKitResult(bool IsSuccess)
 
 void UWTLHUDItemsModificationWindow::OnItemForModificationSlotInit(class UWTLHUDInventorySlot* InventorySlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsModificationWindow.OnItemForModificationSlotInit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsModificationWindow.OnItemForModificationSlotInit"));
 
 	struct
 	{
@@ -28269,7 +28269,7 @@ void UWTLHUDItemsModificationWindow::OnItemForModificationSlotInit(class UWTLHUD
 
 void UWTLHUDItemsModificationWindow::OnItemForModificationSlotClear(uint64_t ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsModificationWindow.OnItemForModificationSlotClear");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsModificationWindow.OnItemForModificationSlotClear"));
 
 	struct
 	{
@@ -28287,7 +28287,7 @@ void UWTLHUDItemsModificationWindow::OnItemForModificationSlotClear(uint64_t Ite
 
 void UWTLHUDItemsModificationWindow::OnApplyModificationKitConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsModificationWindow.OnApplyModificationKitConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsModificationWindow.OnApplyModificationKitConfirm"));
 
 	struct
 	{
@@ -28303,7 +28303,7 @@ void UWTLHUDItemsModificationWindow::OnApplyModificationKitConfirm()
 
 void UWTLHUDItemsModificationWindow::OnApplyBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemsModificationWindow.OnApplyBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemsModificationWindow.OnApplyBtnClicked"));
 
 	struct
 	{
@@ -28319,7 +28319,7 @@ void UWTLHUDItemsModificationWindow::OnApplyBtnClicked()
 
 void UWTLHUDItemSplitBuyWindow::OnOKBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnOKBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnOKBtnClick"));
 
 	struct
 	{
@@ -28335,7 +28335,7 @@ void UWTLHUDItemSplitBuyWindow::OnOKBtnClick()
 
 void UWTLHUDItemSplitBuyWindow::OnCountUpBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountUpBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountUpBtnClick"));
 
 	struct
 	{
@@ -28353,7 +28353,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountUpBtnClick()
 
 void UWTLHUDItemSplitBuyWindow::OnCountToBuyValueChange(int NewCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountToBuyValueChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountToBuyValueChange"));
 
 	struct
 	{
@@ -28374,7 +28374,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountToBuyValueChange(int NewCount)
 
 void UWTLHUDItemSplitBuyWindow::OnCountToBuyTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountToBuyTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountToBuyTextBoxCommitted"));
 
 	struct
 	{
@@ -28394,7 +28394,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountToBuyTextBoxCommitted(const struct FText&
 
 void UWTLHUDItemSplitBuyWindow::OnCountMoneyAllBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountMoneyAllBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountMoneyAllBtnClick"));
 
 	struct
 	{
@@ -28410,7 +28410,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountMoneyAllBtnClick()
 
 void UWTLHUDItemSplitBuyWindow::OnCountDownBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountDownBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountDownBtnClick"));
 
 	struct
 	{
@@ -28426,7 +28426,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountDownBtnClick()
 
 void UWTLHUDItemSplitBuyWindow::OnCountAllBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnCountAllBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnCountAllBtnClick"));
 
 	struct
 	{
@@ -28442,7 +28442,7 @@ void UWTLHUDItemSplitBuyWindow::OnCountAllBtnClick()
 
 void UWTLHUDItemSplitBuyWindow::OnBuyItemConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitBuyWindow.OnBuyItemConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitBuyWindow.OnBuyItemConfirm"));
 
 	struct
 	{
@@ -28461,7 +28461,7 @@ void UWTLHUDItemSplitBuyWindow::OnBuyItemConfirm()
 
 void UWTLHUDItemSplitWindow::OnToValueCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnToValueCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnToValueCommitted"));
 
 	struct
 	{
@@ -28483,7 +28483,7 @@ void UWTLHUDItemSplitWindow::OnToValueCommitted(const struct FText& Text, TEnumA
 
 void UWTLHUDItemSplitWindow::OnToValueChanged(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnToValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnToValueChanged"));
 
 	struct
 	{
@@ -28503,7 +28503,7 @@ void UWTLHUDItemSplitWindow::OnToValueChanged(int Value)
 
 void UWTLHUDItemSplitWindow::OnTakeFromClanStorage(const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnTakeFromClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnTakeFromClanStorage"));
 
 	struct
 	{
@@ -28523,7 +28523,7 @@ void UWTLHUDItemSplitWindow::OnTakeFromClanStorage(const struct FString& Descrip
 
 void UWTLHUDItemSplitWindow::OnSplitSliderValueChanged(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnSplitSliderValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnSplitSliderValueChanged"));
 
 	struct
 	{
@@ -28543,7 +28543,7 @@ void UWTLHUDItemSplitWindow::OnSplitSliderValueChanged(float Value)
 
 void UWTLHUDItemSplitWindow::OnPutToClanStorage(const struct FString& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnPutToClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnPutToClanStorage"));
 
 	struct
 	{
@@ -28561,7 +28561,7 @@ void UWTLHUDItemSplitWindow::OnPutToClanStorage(const struct FString& Descriptio
 
 void UWTLHUDItemSplitWindow::OnOKBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnOKBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnOKBtnClick"));
 
 	struct
 	{
@@ -28580,7 +28580,7 @@ void UWTLHUDItemSplitWindow::OnOKBtnClick()
 
 void UWTLHUDItemSplitWindow::OnFromValueCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnFromValueCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnFromValueCommitted"));
 
 	struct
 	{
@@ -28602,7 +28602,7 @@ void UWTLHUDItemSplitWindow::OnFromValueCommitted(const struct FText& Text, TEnu
 
 void UWTLHUDItemSplitWindow::OnFromValueChanged(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemSplitWindow.OnFromValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemSplitWindow.OnFromValueChanged"));
 
 	struct
 	{
@@ -28622,7 +28622,7 @@ void UWTLHUDItemSplitWindow::OnFromValueChanged(int Value)
 
 void UWTLHUDItemViewWindow::OnViewPagesValueChanged(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDItemViewWindow.OnViewPagesValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDItemViewWindow.OnViewPagesValueChanged"));
 
 	struct
 	{
@@ -28640,7 +28640,7 @@ void UWTLHUDItemViewWindow::OnViewPagesValueChanged(int CurrentIndex)
 
 void UWTLHUDLevelUp::OnShowAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDLevelUp.OnShowAnimationFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDLevelUp.OnShowAnimationFinished"));
 
 	struct
 	{
@@ -28656,7 +28656,7 @@ void UWTLHUDLevelUp::OnShowAnimationFinished()
 
 void UWTLHUDLevelUp::OnHideAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDLevelUp.OnHideAnimationFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDLevelUp.OnHideAnimationFinished"));
 
 	struct
 	{
@@ -28672,7 +28672,7 @@ void UWTLHUDLevelUp::OnHideAnimationFinished()
 
 void UWTLHUDMailBoxInboxListItem::OnReceiveBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxInboxListItem.OnReceiveBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxInboxListItem.OnReceiveBtnClicked"));
 
 	struct
 	{
@@ -28688,7 +28688,7 @@ void UWTLHUDMailBoxInboxListItem::OnReceiveBtnClicked()
 
 void UWTLHUDMailBoxInboxListItem::OnActionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxInboxListItem.OnActionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxInboxListItem.OnActionBtnClicked"));
 
 	struct
 	{
@@ -28706,7 +28706,7 @@ void UWTLHUDMailBoxInboxListItem::OnActionBtnClicked()
 
 void UWTLHUDMailBoxStorage::OnTokensAmountToSendValueChange(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnTokensAmountToSendValueChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnTokensAmountToSendValueChange"));
 
 	struct
 	{
@@ -28727,7 +28727,7 @@ void UWTLHUDMailBoxStorage::OnTokensAmountToSendValueChange(int Value)
 
 void UWTLHUDMailBoxStorage::OnTokensAmountToSendCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnTokensAmountToSendCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnTokensAmountToSendCommitted"));
 
 	struct
 	{
@@ -28747,7 +28747,7 @@ void UWTLHUDMailBoxStorage::OnTokensAmountToSendCommitted(const struct FText& Te
 
 void UWTLHUDMailBoxStorage::OnSendMailSuccessResultDialogHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnSendMailSuccessResultDialogHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnSendMailSuccessResultDialogHide"));
 
 	struct
 	{
@@ -28763,7 +28763,7 @@ void UWTLHUDMailBoxStorage::OnSendMailSuccessResultDialogHide()
 
 void UWTLHUDMailBoxStorage::OnSendCheckRecipientNameRequest()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnSendCheckRecipientNameRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnSendCheckRecipientNameRequest"));
 
 	struct
 	{
@@ -28782,7 +28782,7 @@ void UWTLHUDMailBoxStorage::OnSendCheckRecipientNameRequest()
 
 void UWTLHUDMailBoxStorage::OnRecipientNameCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnRecipientNameCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnRecipientNameCommitted"));
 
 	struct
 	{
@@ -28804,7 +28804,7 @@ void UWTLHUDMailBoxStorage::OnRecipientNameCommitted(const struct FText& Text, T
 
 void UWTLHUDMailBoxStorage::OnRecipientNameChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnRecipientNameChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnRecipientNameChanged"));
 
 	struct
 	{
@@ -28825,7 +28825,7 @@ void UWTLHUDMailBoxStorage::OnRecipientNameChanged(const struct FText& Text)
 
 void UWTLHUDMailBoxStorage::OnMessageTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnMessageTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnMessageTextCommitted"));
 
 	struct
 	{
@@ -28847,7 +28847,7 @@ void UWTLHUDMailBoxStorage::OnMessageTextCommitted(const struct FText& Text, TEn
 
 void UWTLHUDMailBoxStorage::OnMessageTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnMessageTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnMessageTextChanged"));
 
 	struct
 	{
@@ -28865,7 +28865,7 @@ void UWTLHUDMailBoxStorage::OnMessageTextChanged(const struct FText& Text)
 
 void UWTLHUDMailBoxStorage::OnMailPackageSent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnMailPackageSent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnMailPackageSent"));
 
 	struct
 	{
@@ -28881,7 +28881,7 @@ void UWTLHUDMailBoxStorage::OnMailPackageSent()
 
 void UWTLHUDMailBoxStorage::OnMailPackageSendTimeout()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnMailPackageSendTimeout");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnMailPackageSendTimeout"));
 
 	struct
 	{
@@ -28900,7 +28900,7 @@ void UWTLHUDMailBoxStorage::OnMailPackageSendTimeout()
 
 void UWTLHUDMailBoxStorage::OnDeliveryTypeSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnDeliveryTypeSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnDeliveryTypeSelectionChanged"));
 
 	struct
 	{
@@ -28922,7 +28922,7 @@ void UWTLHUDMailBoxStorage::OnDeliveryTypeSelectionChanged(const struct FString&
 
 void UWTLHUDMailBoxStorage::OnCheckRecipientNameAvailableResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxStorage.OnCheckRecipientNameAvailableResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxStorage.OnCheckRecipientNameAvailableResponse"));
 
 	struct
 	{
@@ -28940,7 +28940,7 @@ void UWTLHUDMailBoxStorage::OnCheckRecipientNameAvailableResponse(const struct F
 
 void UWTLHUDMailBoxWindow::UpdateInbox()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.UpdateInbox");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.UpdateInbox"));
 
 	struct
 	{
@@ -28958,7 +28958,7 @@ void UWTLHUDMailBoxWindow::UpdateInbox()
 
 void UWTLHUDMailBoxWindow::OnTabBtnClick(unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnTabBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnTabBtnClick"));
 
 	struct
 	{
@@ -28978,7 +28978,7 @@ void UWTLHUDMailBoxWindow::OnTabBtnClick(unsigned char TabIndex)
 
 void UWTLHUDMailBoxWindow::OnMailPackageReceived(uint64_t MailPackageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnMailPackageReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnMailPackageReceived"));
 
 	struct
 	{
@@ -28998,7 +28998,7 @@ void UWTLHUDMailBoxWindow::OnMailPackageReceived(uint64_t MailPackageID)
 
 void UWTLHUDMailBoxWindow::OnMailPackageReceiveClicked(const struct FWTLMailPackageRecord& MailPackage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnMailPackageReceiveClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnMailPackageReceiveClicked"));
 
 	struct
 	{
@@ -29019,7 +29019,7 @@ void UWTLHUDMailBoxWindow::OnMailPackageReceiveClicked(const struct FWTLMailPack
 
 void UWTLHUDMailBoxWindow::OnMailPackageOpenClicked(class UWTLHUDMailBoxInboxListItem* OpenedInboxListItem, const struct FWTLMailPackageRecord& MailPackage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnMailPackageOpenClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnMailPackageOpenClicked"));
 
 	struct
 	{
@@ -29041,7 +29041,7 @@ void UWTLHUDMailBoxWindow::OnMailPackageOpenClicked(class UWTLHUDMailBoxInboxLis
 
 void UWTLHUDMailBoxWindow::OnMailPackageListReceived(TArray<struct FWTLMailPackageRecord> MailPackages)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnMailPackageListReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnMailPackageListReceived"));
 
 	struct
 	{
@@ -29059,7 +29059,7 @@ void UWTLHUDMailBoxWindow::OnMailPackageListReceived(TArray<struct FWTLMailPacka
 
 void UWTLHUDMailBoxWindow::OnMailPackageCloseClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnMailPackageCloseClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnMailPackageCloseClicked"));
 
 	struct
 	{
@@ -29077,7 +29077,7 @@ void UWTLHUDMailBoxWindow::OnMailPackageCloseClicked()
 
 void UWTLHUDMailBoxWindow::OnInboxListScrolled(float CurrentOffset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMailBoxWindow.OnInboxListScrolled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMailBoxWindow.OnInboxListScrolled"));
 
 	struct
 	{
@@ -29095,7 +29095,7 @@ void UWTLHUDMailBoxWindow::OnInboxListScrolled(float CurrentOffset)
 
 void AWTLHUDMainMenu::OnWindowHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMainMenu.OnWindowHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMainMenu.OnWindowHide"));
 
 	struct
 	{
@@ -29111,7 +29111,7 @@ void AWTLHUDMainMenu::OnWindowHide()
 
 void AWTLHUDMainMenu::OnOptionsHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMainMenu.OnOptionsHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMainMenu.OnOptionsHide"));
 
 	struct
 	{
@@ -29127,7 +29127,7 @@ void AWTLHUDMainMenu::OnOptionsHide()
 
 void AWTLHUDMainMenu::OnMoviePlayerHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMainMenu.OnMoviePlayerHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMainMenu.OnMoviePlayerHide"));
 
 	struct
 	{
@@ -29143,7 +29143,7 @@ void AWTLHUDMainMenu::OnMoviePlayerHide()
 
 void AWTLHUDMainMenu::OnAuthorizeCancel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMainMenu.OnAuthorizeCancel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMainMenu.OnAuthorizeCancel"));
 
 	struct
 	{
@@ -29159,7 +29159,7 @@ void AWTLHUDMainMenu::OnAuthorizeCancel()
 
 void UWTLHUDMoneyTransferWindow::OnMoneyTransferConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnMoneyTransferConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnMoneyTransferConfirm"));
 
 	struct
 	{
@@ -29175,7 +29175,7 @@ void UWTLHUDMoneyTransferWindow::OnMoneyTransferConfirm()
 
 void UWTLHUDMoneyTransferWindow::OnConfirmBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnConfirmBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnConfirmBtnClick"));
 
 	struct
 	{
@@ -29194,7 +29194,7 @@ void UWTLHUDMoneyTransferWindow::OnConfirmBtnClick()
 
 void UWTLHUDMoneyTransferWindow::OnCommentaryTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnCommentaryTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnCommentaryTextBoxCommitted"));
 
 	struct
 	{
@@ -29216,7 +29216,7 @@ void UWTLHUDMoneyTransferWindow::OnCommentaryTextBoxCommitted(const struct FText
 
 void UWTLHUDMoneyTransferWindow::OnCommentaryTextBoxChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnCommentaryTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnCommentaryTextBoxChanged"));
 
 	struct
 	{
@@ -29237,7 +29237,7 @@ void UWTLHUDMoneyTransferWindow::OnCommentaryTextBoxChanged(const struct FText& 
 
 void UWTLHUDMoneyTransferWindow::OnAmountTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnAmountTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnAmountTextBoxCommitted"));
 
 	struct
 	{
@@ -29259,7 +29259,7 @@ void UWTLHUDMoneyTransferWindow::OnAmountTextBoxCommitted(const struct FText& Te
 
 void UWTLHUDMoneyTransferWindow::OnAmountTextBoxChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.OnAmountTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.OnAmountTextBoxChanged"));
 
 	struct
 	{
@@ -29277,7 +29277,7 @@ void UWTLHUDMoneyTransferWindow::OnAmountTextBoxChanged(const struct FText& InTe
 
 void UWTLHUDMoneyTransferWindow::CheckCharacterActorOnTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDMoneyTransferWindow.CheckCharacterActorOnTimer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDMoneyTransferWindow.CheckCharacterActorOnTimer"));
 
 	struct
 	{
@@ -29293,7 +29293,7 @@ void UWTLHUDMoneyTransferWindow::CheckCharacterActorOnTimer()
 
 void UWTLHUDNPCDialogButton::OnReplicaButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDNPCDialogButton.OnReplicaButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDNPCDialogButton.OnReplicaButtonClicked"));
 
 	struct
 	{
@@ -29311,7 +29311,7 @@ void UWTLHUDNPCDialogButton::OnReplicaButtonClicked()
 
 void UWTLHUDNPCDialogWindow::OnReplicaSelected(const struct FWTLReplica& SelectedReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDNPCDialogWindow.OnReplicaSelected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDNPCDialogWindow.OnReplicaSelected"));
 
 	struct
 	{
@@ -29329,7 +29329,7 @@ void UWTLHUDNPCDialogWindow::OnReplicaSelected(const struct FWTLReplica& Selecte
 
 void UWTLHUDPlayerInventoryStorage::UniteAllItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.UniteAllItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.UniteAllItemsBtnClick"));
 
 	struct
 	{
@@ -29345,7 +29345,7 @@ void UWTLHUDPlayerInventoryStorage::UniteAllItemsBtnClick()
 
 void UWTLHUDPlayerInventoryStorage::OptimizeItemsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.OptimizeItemsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.OptimizeItemsBtnClick"));
 
 	struct
 	{
@@ -29361,7 +29361,7 @@ void UWTLHUDPlayerInventoryStorage::OptimizeItemsBtnClick()
 
 void UWTLHUDPlayerInventoryStorage::OnRemoveStashConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.OnRemoveStashConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.OnRemoveStashConfirmed"));
 
 	struct
 	{
@@ -29377,7 +29377,7 @@ void UWTLHUDPlayerInventoryStorage::OnRemoveStashConfirmed()
 
 void UWTLHUDPlayerInventoryStorage::OnRemoveStashBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.OnRemoveStashBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.OnRemoveStashBtnClick"));
 
 	struct
 	{
@@ -29393,7 +29393,7 @@ void UWTLHUDPlayerInventoryStorage::OnRemoveStashBtnClick()
 
 void UWTLHUDPlayerInventoryStorage::OnPlaceStashBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.OnPlaceStashBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.OnPlaceStashBtnClick"));
 
 	struct
 	{
@@ -29409,7 +29409,7 @@ void UWTLHUDPlayerInventoryStorage::OnPlaceStashBtnClick()
 
 void UWTLHUDPlayerInventoryStorage::OnCraftBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDPlayerInventoryStorage.OnCraftBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.OnCraftBtnClick"));
 
 	struct
 	{
@@ -29427,7 +29427,7 @@ void UWTLHUDPlayerInventoryStorage::OnCraftBtnClick()
 
 int UWTLHUDRadialMenu::GetHoveredButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRadialMenu.GetHoveredButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRadialMenu.GetHoveredButton"));
 
 	struct
 	{
@@ -29446,7 +29446,7 @@ int UWTLHUDRadialMenu::GetHoveredButton()
 
 void UWTLHUDRadialMenu::CreateRadialMenuWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRadialMenu.CreateRadialMenuWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRadialMenu.CreateRadialMenuWidget"));
 
 	struct
 	{
@@ -29462,7 +29462,7 @@ void UWTLHUDRadialMenu::CreateRadialMenuWidget()
 
 void UWTLHUDRadialMenu::AddRadialMenuWidgetAsChild()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRadialMenu.AddRadialMenuWidgetAsChild");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRadialMenu.AddRadialMenuWidgetAsChild"));
 
 	struct
 	{
@@ -29482,7 +29482,7 @@ void UWTLHUDRadialMenu::AddRadialMenuWidgetAsChild()
 
 void UWTLHUDRadialMenu::AddRadialButton(class UTexture2D* Icon, const struct FText& Description, const struct FString& DebugPreviewText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRadialMenu.AddRadialButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRadialMenu.AddRadialButton"));
 
 	struct
 	{
@@ -29504,7 +29504,7 @@ void UWTLHUDRadialMenu::AddRadialButton(class UTexture2D* Icon, const struct FTe
 
 void UWTLHUDRequestWindow::OnDeclineRequestBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRequestWindow.OnDeclineRequestBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRequestWindow.OnDeclineRequestBtnClicked"));
 
 	struct
 	{
@@ -29520,7 +29520,7 @@ void UWTLHUDRequestWindow::OnDeclineRequestBtnClicked()
 
 void UWTLHUDRequestWindow::OnAcceptRequestBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDRequestWindow.OnAcceptRequestBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDRequestWindow.OnAcceptRequestBtnClicked"));
 
 	struct
 	{
@@ -29536,7 +29536,7 @@ void UWTLHUDRequestWindow::OnAcceptRequestBtnClicked()
 
 void UWTLHUDSellStorageItem::OnPreviewBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageItem.OnPreviewBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageItem.OnPreviewBtnClick"));
 
 	struct
 	{
@@ -29552,7 +29552,7 @@ void UWTLHUDSellStorageItem::OnPreviewBtnClick()
 
 void UWTLHUDSellStorageItem::OnItemInfoBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageItem.OnItemInfoBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageItem.OnItemInfoBtnClick"));
 
 	struct
 	{
@@ -29568,7 +29568,7 @@ void UWTLHUDSellStorageItem::OnItemInfoBtnClick()
 
 void UWTLHUDSellStorageItem::OnBuyBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSellStorageItem.OnBuyBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSellStorageItem.OnBuyBtnClick"));
 
 	struct
 	{
@@ -29586,7 +29586,7 @@ void UWTLHUDSellStorageItem::OnBuyBtnClick()
 
 void UWTLHUDSteamInventoryWindow::OnUpdateInventory(int UpdateHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSteamInventoryWindow.OnUpdateInventory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSteamInventoryWindow.OnUpdateInventory"));
 
 	struct
 	{
@@ -29604,7 +29604,7 @@ void UWTLHUDSteamInventoryWindow::OnUpdateInventory(int UpdateHandle)
 
 void UWTLHUDSteamInventoryWindow::OnTakeBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSteamInventoryWindow.OnTakeBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSteamInventoryWindow.OnTakeBtnClicked"));
 
 	struct
 	{
@@ -29624,7 +29624,7 @@ void UWTLHUDSteamInventoryWindow::OnTakeBtnClicked()
 
 void UWTLHUDSteamInventoryWindow::OnInventoryItemSelected(class UWTLHUDSteamInventoryItem* ItemWidget, uint64_t ItemID, int ItemDefID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSteamInventoryWindow.OnInventoryItemSelected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSteamInventoryWindow.OnInventoryItemSelected"));
 
 	struct
 	{
@@ -29648,7 +29648,7 @@ void UWTLHUDSteamInventoryWindow::OnInventoryItemSelected(class UWTLHUDSteamInve
 
 void UWTLHUDSteamInventoryWindow::OnInventoryItemImageUpdated(class UWTLHUDSteamInventoryItem* ItemWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSteamInventoryWindow.OnInventoryItemImageUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSteamInventoryWindow.OnInventoryItemImageUpdated"));
 
 	struct
 	{
@@ -29666,7 +29666,7 @@ void UWTLHUDSteamInventoryWindow::OnInventoryItemImageUpdated(class UWTLHUDSteam
 
 void UWTLHUDSteamInventoryWindow::OnConsumeItemTimeout()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDSteamInventoryWindow.OnConsumeItemTimeout");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDSteamInventoryWindow.OnConsumeItemTimeout"));
 
 	struct
 	{
@@ -29682,7 +29682,7 @@ void UWTLHUDSteamInventoryWindow::OnConsumeItemTimeout()
 
 void UWTLHUDTextChatArea::OnUnMuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnUnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnUnMuteCharacter"));
 
 	struct
 	{
@@ -29700,7 +29700,7 @@ void UWTLHUDTextChatArea::OnUnMuteCharacter()
 
 void UWTLHUDTextChatArea::OnSmileButtonClick(const struct FString& TextAliases)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnSmileButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnSmileButtonClick"));
 
 	struct
 	{
@@ -29718,7 +29718,7 @@ void UWTLHUDTextChatArea::OnSmileButtonClick(const struct FString& TextAliases)
 
 void UWTLHUDTextChatArea::OnSendMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnSendMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnSendMessage"));
 
 	struct
 	{
@@ -29734,7 +29734,7 @@ void UWTLHUDTextChatArea::OnSendMessage()
 
 void UWTLHUDTextChatArea::OnRemoveCharacterFromContactList()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnRemoveCharacterFromContactList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnRemoveCharacterFromContactList"));
 
 	struct
 	{
@@ -29750,7 +29750,7 @@ void UWTLHUDTextChatArea::OnRemoveCharacterFromContactList()
 
 void UWTLHUDTextChatArea::OnMuteCharacter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnMuteCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnMuteCharacter"));
 
 	struct
 	{
@@ -29768,7 +29768,7 @@ void UWTLHUDTextChatArea::OnMuteCharacter()
 
 class UWidget* UWTLHUDTextChatArea::OnGetPopupMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnGetPopupMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnGetPopupMenuContent"));
 
 	struct
 	{
@@ -29789,7 +29789,7 @@ class UWidget* UWTLHUDTextChatArea::OnGetPopupMenuContent()
 
 void UWTLHUDTextChatArea::OnChatTabBtnClick(EWTLFiltersChat FiltersChat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnChatTabBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnChatTabBtnClick"));
 
 	struct
 	{
@@ -29810,7 +29810,7 @@ void UWTLHUDTextChatArea::OnChatTabBtnClick(EWTLFiltersChat FiltersChat)
 
 void UWTLHUDTextChatArea::OnChatMessageTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnChatMessageTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnChatMessageTextBoxCommitted"));
 
 	struct
 	{
@@ -29830,7 +29830,7 @@ void UWTLHUDTextChatArea::OnChatMessageTextBoxCommitted(const struct FText& Text
 
 void UWTLHUDTextChatArea::OnAddCharacterToContactListAsFriend()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnAddCharacterToContactListAsFriend");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnAddCharacterToContactListAsFriend"));
 
 	struct
 	{
@@ -29846,7 +29846,7 @@ void UWTLHUDTextChatArea::OnAddCharacterToContactListAsFriend()
 
 void UWTLHUDTextChatArea::OnAddCharacterToContactListAsEnemy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTextChatArea.OnAddCharacterToContactListAsEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnAddCharacterToContactListAsEnemy"));
 
 	struct
 	{
@@ -29864,7 +29864,7 @@ void UWTLHUDTextChatArea::OnAddCharacterToContactListAsEnemy()
 
 void UWTLHUDTradeTabsWindow::OnTabBtnClick(unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTradeTabsWindow.OnTabBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTradeTabsWindow.OnTabBtnClick"));
 
 	struct
 	{
@@ -29882,7 +29882,7 @@ void UWTLHUDTradeTabsWindow::OnTabBtnClick(unsigned char TabIndex)
 
 void UWTLHUDTutorialWindow::OnPreviousBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTutorialWindow.OnPreviousBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTutorialWindow.OnPreviousBtnClicked"));
 
 	struct
 	{
@@ -29898,7 +29898,7 @@ void UWTLHUDTutorialWindow::OnPreviousBtnClicked()
 
 void UWTLHUDTutorialWindow::OnNextBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTutorialWindow.OnNextBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTutorialWindow.OnNextBtnClicked"));
 
 	struct
 	{
@@ -29916,7 +29916,7 @@ void UWTLHUDTutorialWindow::OnNextBtnClicked()
 
 void UWTLHUDTutorialWindow::OnDoNotShowAgainCheckBoxCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDTutorialWindow.OnDoNotShowAgainCheckBoxCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTutorialWindow.OnDoNotShowAgainCheckBoxCheckStateChanged"));
 
 	struct
 	{
@@ -29934,7 +29934,7 @@ void UWTLHUDTutorialWindow::OnDoNotShowAgainCheckBoxCheckStateChanged(bool bIsCh
 
 void UWTLHUDWeaponCountdown::OnCountdownSliderFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLHUDWeaponCountdown.OnCountdownSliderFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDWeaponCountdown.OnCountdownSliderFinished"));
 
 	struct
 	{
@@ -29952,7 +29952,7 @@ void UWTLHUDWeaponCountdown::OnCountdownSliderFinished()
 
 void UWTLIntegerSpinBox::SetValue(int NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetValue"));
 
 	struct
 	{
@@ -29972,7 +29972,7 @@ void UWTLIntegerSpinBox::SetValue(int NewValue)
 
 void UWTLIntegerSpinBox::SetMinValue(int NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetMinValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetMinValue"));
 
 	struct
 	{
@@ -29992,7 +29992,7 @@ void UWTLIntegerSpinBox::SetMinValue(int NewValue)
 
 void UWTLIntegerSpinBox::SetMinSliderValue(int NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetMinSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetMinSliderValue"));
 
 	struct
 	{
@@ -30012,7 +30012,7 @@ void UWTLIntegerSpinBox::SetMinSliderValue(int NewValue)
 
 void UWTLIntegerSpinBox::SetMaxValue(int NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetMaxValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetMaxValue"));
 
 	struct
 	{
@@ -30032,7 +30032,7 @@ void UWTLIntegerSpinBox::SetMaxValue(int NewValue)
 
 void UWTLIntegerSpinBox::SetMaxSliderValue(int NewValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetMaxSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetMaxSliderValue"));
 
 	struct
 	{
@@ -30052,7 +30052,7 @@ void UWTLIntegerSpinBox::SetMaxSliderValue(int NewValue)
 
 void UWTLIntegerSpinBox::SetForegroundColor(const struct FSlateColor& InForegroundColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.SetForegroundColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.SetForegroundColor"));
 
 	struct
 	{
@@ -30073,7 +30073,7 @@ void UWTLIntegerSpinBox::SetForegroundColor(const struct FSlateColor& InForegrou
 
 void UWTLIntegerSpinBox::OnIntegerSpinBoxValueCommittedEvent__DelegateSignature(int InValue, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxValueCommittedEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxValueCommittedEvent__DelegateSignature"));
 
 	struct
 	{
@@ -30095,7 +30095,7 @@ void UWTLIntegerSpinBox::OnIntegerSpinBoxValueCommittedEvent__DelegateSignature(
 
 void UWTLIntegerSpinBox::OnIntegerSpinBoxValueChangedEvent__DelegateSignature(int InValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxValueChangedEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxValueChangedEvent__DelegateSignature"));
 
 	struct
 	{
@@ -30113,7 +30113,7 @@ void UWTLIntegerSpinBox::OnIntegerSpinBoxValueChangedEvent__DelegateSignature(in
 
 void UWTLIntegerSpinBox::OnIntegerSpinBoxBeginSliderMovement__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxBeginSliderMovement__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction WTL.WTLIntegerSpinBox.OnIntegerSpinBoxBeginSliderMovement__DelegateSignature"));
 
 	struct
 	{
@@ -30131,7 +30131,7 @@ void UWTLIntegerSpinBox::OnIntegerSpinBoxBeginSliderMovement__DelegateSignature(
 
 int UWTLIntegerSpinBox::GetValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.GetValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.GetValue"));
 
 	struct
 	{
@@ -30152,7 +30152,7 @@ int UWTLIntegerSpinBox::GetValue()
 
 int UWTLIntegerSpinBox::GetMinValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.GetMinValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.GetMinValue"));
 
 	struct
 	{
@@ -30173,7 +30173,7 @@ int UWTLIntegerSpinBox::GetMinValue()
 
 int UWTLIntegerSpinBox::GetMinSliderValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.GetMinSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.GetMinSliderValue"));
 
 	struct
 	{
@@ -30194,7 +30194,7 @@ int UWTLIntegerSpinBox::GetMinSliderValue()
 
 int UWTLIntegerSpinBox::GetMaxValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.GetMaxValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.GetMaxValue"));
 
 	struct
 	{
@@ -30215,7 +30215,7 @@ int UWTLIntegerSpinBox::GetMaxValue()
 
 int UWTLIntegerSpinBox::GetMaxSliderValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.GetMaxSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.GetMaxSliderValue"));
 
 	struct
 	{
@@ -30234,7 +30234,7 @@ int UWTLIntegerSpinBox::GetMaxSliderValue()
 
 void UWTLIntegerSpinBox::ClearMinValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.ClearMinValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.ClearMinValue"));
 
 	struct
 	{
@@ -30250,7 +30250,7 @@ void UWTLIntegerSpinBox::ClearMinValue()
 
 void UWTLIntegerSpinBox::ClearMinSliderValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.ClearMinSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.ClearMinSliderValue"));
 
 	struct
 	{
@@ -30266,7 +30266,7 @@ void UWTLIntegerSpinBox::ClearMinSliderValue()
 
 void UWTLIntegerSpinBox::ClearMaxValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.ClearMaxValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.ClearMaxValue"));
 
 	struct
 	{
@@ -30282,7 +30282,7 @@ void UWTLIntegerSpinBox::ClearMaxValue()
 
 void UWTLIntegerSpinBox::ClearMaxSliderValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLIntegerSpinBox.ClearMaxSliderValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLIntegerSpinBox.ClearMaxSliderValue"));
 
 	struct
 	{
@@ -30300,7 +30300,7 @@ void UWTLIntegerSpinBox::ClearMaxSliderValue()
 
 void AWTLInteractiveBlockedObject::BPOnStartInteraction(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveBlockedObject.BPOnStartInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveBlockedObject.BPOnStartInteraction"));
 
 	struct
 	{
@@ -30321,7 +30321,7 @@ void AWTLInteractiveBlockedObject::BPOnStartInteraction(class AWTLCharacter* Cha
 
 void AWTLInteractiveBlockedObject::BPOnFinishInteraction(class AWTLCharacter* Character, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveBlockedObject.BPOnFinishInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveBlockedObject.BPOnFinishInteraction"));
 
 	struct
 	{
@@ -30344,7 +30344,7 @@ void AWTLInteractiveBlockedObject::BPOnFinishInteraction(class AWTLCharacter* Ch
 
 float AWTLInteractiveBlockedObject::BPGetActivationTime(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveBlockedObject.BPGetActivationTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveBlockedObject.BPGetActivationTime"));
 
 	struct
 	{
@@ -30367,7 +30367,7 @@ float AWTLInteractiveBlockedObject::BPGetActivationTime(class AWTLCharacter* Cha
 
 void AWTLInteractivePlant::OnItemDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractivePlant.OnItemDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractivePlant.OnItemDestroyed"));
 
 	struct
 	{
@@ -30385,7 +30385,7 @@ void AWTLInteractivePlant::OnItemDestroyed(class AActor* DestroyedActor)
 
 void AWTLInteractivePlantSpawnField::OnRep_SpawnedItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractivePlantSpawnField.OnRep_SpawnedItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractivePlantSpawnField.OnRep_SpawnedItems"));
 
 	struct
 	{
@@ -30401,7 +30401,7 @@ void AWTLInteractivePlantSpawnField::OnRep_SpawnedItems()
 
 void AWTLInteractiveResource::OnRep_Count()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveResource.OnRep_Count");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveResource.OnRep_Count"));
 
 	struct
 	{
@@ -30417,7 +30417,7 @@ void AWTLInteractiveResource::OnRep_Count()
 
 void AWTLInteractiveResourceSource::OnRep_CurrentValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLInteractiveResourceSource.OnRep_CurrentValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLInteractiveResourceSource.OnRep_CurrentValue"));
 
 	struct
 	{
@@ -30435,7 +30435,7 @@ void AWTLInteractiveResourceSource::OnRep_CurrentValue()
 
 void UWTLQuickTimeEventInstigator::OnQTESuccessed(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.OnQTESuccessed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.OnQTESuccessed"));
 
 	struct
 	{
@@ -30455,7 +30455,7 @@ void UWTLQuickTimeEventInstigator::OnQTESuccessed(class AWTLCharacter* Target)
 
 void UWTLQuickTimeEventInstigator::OnQTEStarted(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.OnQTEStarted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.OnQTEStarted"));
 
 	struct
 	{
@@ -30475,7 +30475,7 @@ void UWTLQuickTimeEventInstigator::OnQTEStarted(class AWTLCharacter* Target)
 
 void UWTLQuickTimeEventInstigator::OnQTEFailed(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.OnQTEFailed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.OnQTEFailed"));
 
 	struct
 	{
@@ -30495,7 +30495,7 @@ void UWTLQuickTimeEventInstigator::OnQTEFailed(class AWTLCharacter* Target)
 
 void UWTLQuickTimeEventInstigator::OnQTEChainError(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.OnQTEChainError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.OnQTEChainError"));
 
 	struct
 	{
@@ -30515,7 +30515,7 @@ void UWTLQuickTimeEventInstigator::OnQTEChainError(class AWTLCharacter* Target)
 
 void UWTLQuickTimeEventInstigator::OnQTECanceled(class AWTLCharacter* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.OnQTECanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.OnQTECanceled"));
 
 	struct
 	{
@@ -30535,7 +30535,7 @@ void UWTLQuickTimeEventInstigator::OnQTECanceled(class AWTLCharacter* Target)
 
 bool UWTLQuickTimeEventInstigator::IsNeedToHideUsableItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.IsNeedToHideUsableItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.IsNeedToHideUsableItem"));
 
 	struct
 	{
@@ -30556,7 +30556,7 @@ bool UWTLQuickTimeEventInstigator::IsNeedToHideUsableItem()
 
 EWTLQTEType UWTLQuickTimeEventInstigator::GetQTEType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.GetQTEType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.GetQTEType"));
 
 	struct
 	{
@@ -30577,7 +30577,7 @@ EWTLQTEType UWTLQuickTimeEventInstigator::GetQTEType()
 
 unsigned char UWTLQuickTimeEventInstigator::GetQTEDificulty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.GetQTEDificulty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.GetQTEDificulty"));
 
 	struct
 	{
@@ -30598,7 +30598,7 @@ unsigned char UWTLQuickTimeEventInstigator::GetQTEDificulty()
 
 bool UWTLQuickTimeEventInstigator::CanCancelQTE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuickTimeEventInstigator.CanCancelQTE");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuickTimeEventInstigator.CanCancelQTE"));
 
 	struct
 	{
@@ -30619,7 +30619,7 @@ bool UWTLQuickTimeEventInstigator::CanCancelQTE()
 
 void AWTLItemPickup::OnItemDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickup.OnItemDestroyed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickup.OnItemDestroyed"));
 
 	struct
 	{
@@ -30642,7 +30642,7 @@ void AWTLItemPickup::OnItemDestroyed(class AActor* DestroyedActor)
 
 void AWTLItemPickup::OnHit(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickup.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickup.OnHit"));
 
 	struct
 	{
@@ -30668,7 +30668,7 @@ void AWTLItemPickup::OnHit(class AActor* SelfActor, class AActor* OtherActor, co
 
 void AWTLItemPickup::NetMulticast_OnStopFreeFall(const struct FTransform& StopFreeFallTransform)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickup.NetMulticast_OnStopFreeFall");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickup.NetMulticast_OnStopFreeFall"));
 
 	struct
 	{
@@ -30688,7 +30688,7 @@ void AWTLItemPickup::NetMulticast_OnStopFreeFall(const struct FTransform& StopFr
 
 void AWTLItemPickup::MakeFreeFall(TArray<class AActor*>* IgnoredActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickup.MakeFreeFall");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickup.MakeFreeFall"));
 
 	struct
 	{
@@ -30710,7 +30710,7 @@ void AWTLItemPickup::MakeFreeFall(TArray<class AActor*>* IgnoredActors)
 
 void AWTLItemPickup::BPOnTakeItem(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickup.BPOnTakeItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickup.BPOnTakeItem"));
 
 	struct
 	{
@@ -30728,7 +30728,7 @@ void AWTLItemPickup::BPOnTakeItem(class AWTLCharacter* Character)
 
 void AWTLWeaponPickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLWeaponPickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLWeaponPickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30744,7 +30744,7 @@ void AWTLWeaponPickup::OnRep_ItemInfo()
 
 void AWTLAmmoPickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLAmmoPickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLAmmoPickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30760,7 +30760,7 @@ void AWTLAmmoPickup::OnRep_ItemInfo()
 
 void AWTLMedicinePickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMedicinePickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMedicinePickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30776,7 +30776,7 @@ void AWTLMedicinePickup::OnRep_ItemInfo()
 
 void AWTLStuffPickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStuffPickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStuffPickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30792,7 +30792,7 @@ void AWTLStuffPickup::OnRep_ItemInfo()
 
 void AWTLClothesPickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLClothesPickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLClothesPickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30808,7 +30808,7 @@ void AWTLClothesPickup::OnRep_ItemInfo()
 
 void AWTLResourcePickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLResourcePickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLResourcePickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30824,7 +30824,7 @@ void AWTLResourcePickup::OnRep_ItemInfo()
 
 void AWTLArtefactPickup::OnRep_ItemInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLArtefactPickup.OnRep_ItemInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLArtefactPickup.OnRep_ItemInfo"));
 
 	struct
 	{
@@ -30840,7 +30840,7 @@ void AWTLArtefactPickup::OnRep_ItemInfo()
 
 void AWTLItemPickupSpawnPoint::ResetSpawnTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickupSpawnPoint.ResetSpawnTimer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickupSpawnPoint.ResetSpawnTimer"));
 
 	struct
 	{
@@ -30856,7 +30856,7 @@ void AWTLItemPickupSpawnPoint::ResetSpawnTimer()
 
 void AWTLItemPickupSpawnPoint::EnableSpawn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickupSpawnPoint.EnableSpawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickupSpawnPoint.EnableSpawn"));
 
 	struct
 	{
@@ -30872,7 +30872,7 @@ void AWTLItemPickupSpawnPoint::EnableSpawn()
 
 void AWTLItemPickupSpawnPoint::DisableSpawn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLItemPickupSpawnPoint.DisableSpawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLItemPickupSpawnPoint.DisableSpawn"));
 
 	struct
 	{
@@ -30890,7 +30890,7 @@ void AWTLItemPickupSpawnPoint::DisableSpawn()
 
 void AWTLLadder::Server_Use(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLadder.Server_Use");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLadder.Server_Use"));
 
 	struct
 	{
@@ -30913,7 +30913,7 @@ void AWTLLadder::Server_Use(class AWTLCharacter* Character)
 
 void AWTLLevelStreamingVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLevelStreamingVolume.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelStreamingVolume.OnEndOverlap"));
 
 	struct
 	{
@@ -30944,7 +30944,7 @@ void AWTLLevelStreamingVolume::OnEndOverlap(class UPrimitiveComponent* Overlappe
 
 void AWTLLevelStreamingVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLevelStreamingVolume.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelStreamingVolume.OnBeginOverlap"));
 
 	struct
 	{
@@ -30972,7 +30972,7 @@ void AWTLLevelStreamingVolume::OnBeginOverlap(class UPrimitiveComponent* Overlap
 
 void UWTLLoadingScreenTestMenu::MainMenuBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLoadingScreenTestMenu.MainMenuBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLoadingScreenTestMenu.MainMenuBtnClick"));
 
 	struct
 	{
@@ -30988,7 +30988,7 @@ void UWTLLoadingScreenTestMenu::MainMenuBtnClick()
 
 void UWTLLoadingScreenTestMenu::LocationBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLLoadingScreenTestMenu.LocationBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLoadingScreenTestMenu.LocationBtnClick"));
 
 	struct
 	{
@@ -31004,7 +31004,7 @@ void UWTLLoadingScreenTestMenu::LocationBtnClick()
 
 void UWTLMainMenuActionWaiting::OnCancelBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuActionWaiting.OnCancelBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuActionWaiting.OnCancelBtnClicked"));
 
 	struct
 	{
@@ -31020,7 +31020,7 @@ void UWTLMainMenuActionWaiting::OnCancelBtnClicked()
 
 void UWTLMainMenuAnnouncer::AnnouncerHttpCall()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuAnnouncer.AnnouncerHttpCall");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuAnnouncer.AnnouncerHttpCall"));
 
 	struct
 	{
@@ -31036,7 +31036,7 @@ void UWTLMainMenuAnnouncer::AnnouncerHttpCall()
 
 void UWTLMainMenuBase::OnWindowHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuBase.OnWindowHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuBase.OnWindowHide"));
 
 	struct
 	{
@@ -31052,7 +31052,7 @@ void UWTLMainMenuBase::OnWindowHide()
 
 void UWTLMainMenuArenaLocationList::OnSelectBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnSelectBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnSelectBtnClick"));
 
 	struct
 	{
@@ -31068,7 +31068,7 @@ void UWTLMainMenuArenaLocationList::OnSelectBtnClick()
 
 void UWTLMainMenuArenaLocationList::OnPreviousListItemBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnPreviousListItemBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnPreviousListItemBtnClick"));
 
 	struct
 	{
@@ -31084,7 +31084,7 @@ void UWTLMainMenuArenaLocationList::OnPreviousListItemBtnClick()
 
 void UWTLMainMenuArenaLocationList::OnNextListItemBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnNextListItemBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnNextListItemBtnClick"));
 
 	struct
 	{
@@ -31100,7 +31100,7 @@ void UWTLMainMenuArenaLocationList::OnNextListItemBtnClick()
 
 void UWTLMainMenuArenaLocationList::OnCurrentArenaLocationListItemUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnCurrentArenaLocationListItemUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnCurrentArenaLocationListItemUnhovered"));
 
 	struct
 	{
@@ -31118,7 +31118,7 @@ void UWTLMainMenuArenaLocationList::OnCurrentArenaLocationListItemUnhovered()
 
 void UWTLMainMenuArenaLocationList::OnCurrentArenaLocationListItemHovered(const struct FString& ItemDescription)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnCurrentArenaLocationListItemHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnCurrentArenaLocationListItemHovered"));
 
 	struct
 	{
@@ -31136,7 +31136,7 @@ void UWTLMainMenuArenaLocationList::OnCurrentArenaLocationListItemHovered(const 
 
 void UWTLMainMenuArenaLocationList::OnBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnBackBtnClick"));
 
 	struct
 	{
@@ -31154,7 +31154,7 @@ void UWTLMainMenuArenaLocationList::OnBackBtnClick()
 
 void UWTLMainMenuArenaLocationList::OnArenaLocationItemClick(class UWTLMainMenuArenaLocationListItem* ArenaLocationItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuArenaLocationList.OnArenaLocationItemClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuArenaLocationList.OnArenaLocationItemClick"));
 
 	struct
 	{
@@ -31172,7 +31172,7 @@ void UWTLMainMenuArenaLocationList::OnArenaLocationItemClick(class UWTLMainMenuA
 
 void UWTLMainMenuCharacterCreate::OnYesBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnYesBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnYesBackBtnClick"));
 
 	struct
 	{
@@ -31188,7 +31188,7 @@ void UWTLMainMenuCharacterCreate::OnYesBackBtnClick()
 
 void UWTLMainMenuCharacterCreate::OnResetPointsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnResetPointsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnResetPointsBtnClick"));
 
 	struct
 	{
@@ -31204,7 +31204,7 @@ void UWTLMainMenuCharacterCreate::OnResetPointsBtnClick()
 
 void UWTLMainMenuCharacterCreate::OnCustomizationDataChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCustomizationDataChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCustomizationDataChanged"));
 
 	struct
 	{
@@ -31220,7 +31220,7 @@ void UWTLMainMenuCharacterCreate::OnCustomizationDataChanged()
 
 void UWTLMainMenuCharacterCreate::OnCreateCharacterBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCreateCharacterBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCreateCharacterBtnClick"));
 
 	struct
 	{
@@ -31236,7 +31236,7 @@ void UWTLMainMenuCharacterCreate::OnCreateCharacterBtnClick()
 
 void UWTLMainMenuCharacterCreate::OnCharacterRotatorMouseButtonDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCharacterRotatorMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCharacterRotatorMouseButtonDown"));
 
 	struct
 	{
@@ -31255,7 +31255,7 @@ void UWTLMainMenuCharacterCreate::OnCharacterRotatorMouseButtonDown()
 
 void UWTLMainMenuCharacterCreate::OnCharacterNameCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameCommitted"));
 
 	struct
 	{
@@ -31277,7 +31277,7 @@ void UWTLMainMenuCharacterCreate::OnCharacterNameCommitted(const struct FText& T
 
 void UWTLMainMenuCharacterCreate::OnCharacterNameCheckResponseReceived(bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameCheckResponseReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameCheckResponseReceived"));
 
 	struct
 	{
@@ -31297,7 +31297,7 @@ void UWTLMainMenuCharacterCreate::OnCharacterNameCheckResponseReceived(bool Succ
 
 void UWTLMainMenuCharacterCreate::OnCharacterNameChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnCharacterNameChanged"));
 
 	struct
 	{
@@ -31315,7 +31315,7 @@ void UWTLMainMenuCharacterCreate::OnCharacterNameChanged(const struct FText& Tex
 
 void UWTLMainMenuCharacterCreate::OnBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterCreate.OnBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnBackBtnClick"));
 
 	struct
 	{
@@ -31331,7 +31331,7 @@ void UWTLMainMenuCharacterCreate::OnBackBtnClick()
 
 void UWTLMainMenuCharacterListItem::OnPlayerNotSetBorderClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnPlayerNotSetBorderClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnPlayerNotSetBorderClick"));
 
 	struct
 	{
@@ -31347,7 +31347,7 @@ void UWTLMainMenuCharacterListItem::OnPlayerNotSetBorderClick()
 
 void UWTLMainMenuCharacterListItem::OnPlayerBorderDoubleClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnPlayerBorderDoubleClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnPlayerBorderDoubleClick"));
 
 	struct
 	{
@@ -31365,7 +31365,7 @@ void UWTLMainMenuCharacterListItem::OnPlayerBorderDoubleClick()
 
 bool UWTLMainMenuCharacterListItem::OnPlayerBorderClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnPlayerBorderClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnPlayerBorderClick"));
 
 	struct
 	{
@@ -31384,7 +31384,7 @@ bool UWTLMainMenuCharacterListItem::OnPlayerBorderClick()
 
 void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnUnhovered"));
 
 	struct
 	{
@@ -31400,7 +31400,7 @@ void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnUnhovered()
 
 void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnHovered"));
 
 	struct
 	{
@@ -31416,7 +31416,7 @@ void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnHovered()
 
 void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnExchangeCreditsBtnClick"));
 
 	struct
 	{
@@ -31432,7 +31432,7 @@ void UWTLMainMenuCharacterListItem::OnExchangeCreditsBtnClick()
 
 void UWTLMainMenuCharacterListItem::OnEditBtnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnUnhovered"));
 
 	struct
 	{
@@ -31448,7 +31448,7 @@ void UWTLMainMenuCharacterListItem::OnEditBtnUnhovered()
 
 void UWTLMainMenuCharacterListItem::OnEditBtnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnHovered"));
 
 	struct
 	{
@@ -31464,7 +31464,7 @@ void UWTLMainMenuCharacterListItem::OnEditBtnHovered()
 
 void UWTLMainMenuCharacterListItem::OnEditBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnEditBtnClick"));
 
 	struct
 	{
@@ -31480,7 +31480,7 @@ void UWTLMainMenuCharacterListItem::OnEditBtnClick()
 
 void UWTLMainMenuCharacterListItem::OnDeleteBtnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnUnhovered"));
 
 	struct
 	{
@@ -31496,7 +31496,7 @@ void UWTLMainMenuCharacterListItem::OnDeleteBtnUnhovered()
 
 void UWTLMainMenuCharacterListItem::OnDeleteBtnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnHovered"));
 
 	struct
 	{
@@ -31512,7 +31512,7 @@ void UWTLMainMenuCharacterListItem::OnDeleteBtnHovered()
 
 void UWTLMainMenuCharacterListItem::OnDeleteBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnDeleteBtnClick"));
 
 	struct
 	{
@@ -31528,7 +31528,7 @@ void UWTLMainMenuCharacterListItem::OnDeleteBtnClick()
 
 void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnUnhovered"));
 
 	struct
 	{
@@ -31544,7 +31544,7 @@ void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnUnhovered()
 
 void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnHovered"));
 
 	struct
 	{
@@ -31560,7 +31560,7 @@ void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnHovered()
 
 void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterListItem.OnCancelDeleteBtnClick"));
 
 	struct
 	{
@@ -31579,7 +31579,7 @@ void UWTLMainMenuCharacterListItem::OnCancelDeleteBtnClick()
 
 void UWTLMainMenuCharacterName::OnTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterName.OnTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterName.OnTextBoxTextCommitted"));
 
 	struct
 	{
@@ -31601,7 +31601,7 @@ void UWTLMainMenuCharacterName::OnTextBoxTextCommitted(const struct FText& Text,
 
 void UWTLMainMenuCharacterName::OnTextBoxTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterName.OnTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterName.OnTextBoxTextChanged"));
 
 	struct
 	{
@@ -31619,7 +31619,7 @@ void UWTLMainMenuCharacterName::OnTextBoxTextChanged(const struct FText& Text)
 
 void UWTLMainMenuCharacterName::OnSendCheckCharacterNameRequest()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterName.OnSendCheckCharacterNameRequest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterName.OnSendCheckCharacterNameRequest"));
 
 	struct
 	{
@@ -31637,7 +31637,7 @@ void UWTLMainMenuCharacterName::OnSendCheckCharacterNameRequest()
 
 void UWTLMainMenuCharacterName::OnCheckCharacterNameAvailableResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterName.OnCheckCharacterNameAvailableResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterName.OnCheckCharacterNameAvailableResponse"));
 
 	struct
 	{
@@ -31655,7 +31655,7 @@ void UWTLMainMenuCharacterName::OnCheckCharacterNameAvailableResponse(const stru
 
 void UWTLMainMenuCharacterSelect::OnYesDeleteBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnYesDeleteBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnYesDeleteBtnClick"));
 
 	struct
 	{
@@ -31671,7 +31671,7 @@ void UWTLMainMenuCharacterSelect::OnYesDeleteBtnClick()
 
 void UWTLMainMenuCharacterSelect::OnYesCancelDeleteBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnYesCancelDeleteBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnYesCancelDeleteBtnClick"));
 
 	struct
 	{
@@ -31687,7 +31687,7 @@ void UWTLMainMenuCharacterSelect::OnYesCancelDeleteBtnClick()
 
 void UWTLMainMenuCharacterSelect::OnStoreBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnStoreBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnStoreBtnClick"));
 
 	struct
 	{
@@ -31703,7 +31703,7 @@ void UWTLMainMenuCharacterSelect::OnStoreBtnClick()
 
 void UWTLMainMenuCharacterSelect::OnPlayBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnPlayBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnPlayBtnClick"));
 
 	struct
 	{
@@ -31719,7 +31719,7 @@ void UWTLMainMenuCharacterSelect::OnPlayBtnClick()
 
 void UWTLMainMenuCharacterSelect::OnExchangeCreditsCancelBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnExchangeCreditsCancelBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnExchangeCreditsCancelBtnClicked"));
 
 	struct
 	{
@@ -31735,7 +31735,7 @@ void UWTLMainMenuCharacterSelect::OnExchangeCreditsCancelBtnClicked()
 
 void UWTLMainMenuCharacterSelect::OnExchangeCreditsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnExchangeCreditsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnExchangeCreditsBtnClicked"));
 
 	struct
 	{
@@ -31751,7 +31751,7 @@ void UWTLMainMenuCharacterSelect::OnExchangeCreditsBtnClicked()
 
 void UWTLMainMenuCharacterSelect::OnDeleteCharacterCountdown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnDeleteCharacterCountdown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnDeleteCharacterCountdown"));
 
 	struct
 	{
@@ -31770,7 +31770,7 @@ void UWTLMainMenuCharacterSelect::OnDeleteCharacterCountdown()
 
 void UWTLMainMenuCharacterSelect::OnCreditsToExchangeTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnCreditsToExchangeTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnCreditsToExchangeTextBoxCommitted"));
 
 	struct
 	{
@@ -31792,7 +31792,7 @@ void UWTLMainMenuCharacterSelect::OnCreditsToExchangeTextBoxCommitted(const stru
 
 void UWTLMainMenuCharacterSelect::OnCreditsToExchangeTextBoxChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnCreditsToExchangeTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnCreditsToExchangeTextBoxChanged"));
 
 	struct
 	{
@@ -31810,7 +31810,7 @@ void UWTLMainMenuCharacterSelect::OnCreditsToExchangeTextBoxChanged(const struct
 
 void UWTLMainMenuCharacterSelect::OnConfirmationWindowHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnConfirmationWindowHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnConfirmationWindowHide"));
 
 	struct
 	{
@@ -31826,7 +31826,7 @@ void UWTLMainMenuCharacterSelect::OnConfirmationWindowHide()
 
 void UWTLMainMenuCharacterSelect::OnCancelWaitingSetActiveCharacterResponse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnCancelWaitingSetActiveCharacterResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnCancelWaitingSetActiveCharacterResponse"));
 
 	struct
 	{
@@ -31842,7 +31842,7 @@ void UWTLMainMenuCharacterSelect::OnCancelWaitingSetActiveCharacterResponse()
 
 void UWTLMainMenuCharacterSelect::OnBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCharacterSelect.OnBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterSelect.OnBackBtnClick"));
 
 	struct
 	{
@@ -31858,7 +31858,7 @@ void UWTLMainMenuCharacterSelect::OnBackBtnClick()
 
 void UWTLMainMenuChooseAccountType::OnLinkExistingBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseAccountType.OnLinkExistingBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseAccountType.OnLinkExistingBtnClicked"));
 
 	struct
 	{
@@ -31874,7 +31874,7 @@ void UWTLMainMenuChooseAccountType::OnLinkExistingBtnClicked()
 
 void UWTLMainMenuChooseAccountType::OnCreateNewBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseAccountType.OnCreateNewBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseAccountType.OnCreateNewBtnClicked"));
 
 	struct
 	{
@@ -31890,7 +31890,7 @@ void UWTLMainMenuChooseAccountType::OnCreateNewBtnClicked()
 
 void UWTLMainMenuChooseAccountType::OnCreateNewAccountConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseAccountType.OnCreateNewAccountConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseAccountType.OnCreateNewAccountConfirmed"));
 
 	struct
 	{
@@ -31906,7 +31906,7 @@ void UWTLMainMenuChooseAccountType::OnCreateNewAccountConfirmed()
 
 void UWTLMainMenuChooseAccountType::OnConnectedToServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseAccountType.OnConnectedToServer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseAccountType.OnConnectedToServer"));
 
 	struct
 	{
@@ -31922,7 +31922,7 @@ void UWTLMainMenuChooseAccountType::OnConnectedToServer()
 
 void UWTLMainMenuChooseAccountType::OnCloseBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseAccountType.OnCloseBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseAccountType.OnCloseBtnClicked"));
 
 	struct
 	{
@@ -31938,7 +31938,7 @@ void UWTLMainMenuChooseAccountType::OnCloseBtnClicked()
 
 void UWTLMainMenuChooseLanguage::OnOKBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseLanguage.OnOKBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseLanguage.OnOKBtnClicked"));
 
 	struct
 	{
@@ -31957,7 +31957,7 @@ void UWTLMainMenuChooseLanguage::OnOKBtnClicked()
 
 void UWTLMainMenuChooseLanguage::OnLanguageChange(int CurrentIndex, const struct FString& Prefix)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseLanguage.OnLanguageChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseLanguage.OnLanguageChange"));
 
 	struct
 	{
@@ -31977,7 +31977,7 @@ void UWTLMainMenuChooseLanguage::OnLanguageChange(int CurrentIndex, const struct
 
 void UWTLMainMenuChooseLanguage::ChooseLanguageConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuChooseLanguage.ChooseLanguageConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuChooseLanguage.ChooseLanguageConfirm"));
 
 	struct
 	{
@@ -31993,7 +31993,7 @@ void UWTLMainMenuChooseLanguage::ChooseLanguageConfirm()
 
 void UWTLMainMenuCredits::OnCreditsPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCredits.OnCreditsPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCredits.OnCreditsPlay"));
 
 	struct
 	{
@@ -32009,7 +32009,7 @@ void UWTLMainMenuCredits::OnCreditsPlay()
 
 void UWTLMainMenuCredits::OnCreditsPause()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCredits.OnCreditsPause");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCredits.OnCreditsPause"));
 
 	struct
 	{
@@ -32025,7 +32025,7 @@ void UWTLMainMenuCredits::OnCreditsPause()
 
 void UWTLMainMenuCredits::OnCreditsClose()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCredits.OnCreditsClose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCredits.OnCreditsClose"));
 
 	struct
 	{
@@ -32041,7 +32041,7 @@ void UWTLMainMenuCredits::OnCreditsClose()
 
 void UWTLMainMenuCustomization::OnZoomOutBtnReleased()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnZoomOutBtnReleased");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnZoomOutBtnReleased"));
 
 	struct
 	{
@@ -32057,7 +32057,7 @@ void UWTLMainMenuCustomization::OnZoomOutBtnReleased()
 
 void UWTLMainMenuCustomization::OnZoomOutBtnPressed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnZoomOutBtnPressed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnZoomOutBtnPressed"));
 
 	struct
 	{
@@ -32076,7 +32076,7 @@ void UWTLMainMenuCustomization::OnZoomOutBtnPressed()
 
 void UWTLMainMenuCustomization::OnSkinColorBtnClick(const struct FGeometry& BtnGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnSkinColorBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnSkinColorBtnClick"));
 
 	struct
 	{
@@ -32096,7 +32096,7 @@ void UWTLMainMenuCustomization::OnSkinColorBtnClick(const struct FGeometry& BtnG
 
 void UWTLMainMenuCustomization::OnMaterialScalarItemValueChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnMaterialScalarItemValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnMaterialScalarItemValueChanged"));
 
 	struct
 	{
@@ -32114,7 +32114,7 @@ void UWTLMainMenuCustomization::OnMaterialScalarItemValueChanged()
 
 void UWTLMainMenuCustomization::OnMaterialsBtnClick(unsigned char TabIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnMaterialsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnMaterialsBtnClick"));
 
 	struct
 	{
@@ -32136,7 +32136,7 @@ void UWTLMainMenuCustomization::OnMaterialsBtnClick(unsigned char TabIndex)
 
 void UWTLMainMenuCustomization::OnMaterialColorItemClicked(class UWTLMainMenuMaterialColorItem* MaterialColorItem, const struct FGeometry& BtnGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnMaterialColorItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnMaterialColorItemClicked"));
 
 	struct
 	{
@@ -32158,7 +32158,7 @@ void UWTLMainMenuCustomization::OnMaterialColorItemClicked(class UWTLMainMenuMat
 
 void UWTLMainMenuCustomization::OnMaleBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnMaleBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnMaleBtnClick"));
 
 	struct
 	{
@@ -32177,7 +32177,7 @@ void UWTLMainMenuCustomization::OnMaleBtnClick()
 
 void UWTLMainMenuCustomization::OnItemValueChanged(int CurrentIndex, const struct FString& Prefix)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnItemValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnItemValueChanged"));
 
 	struct
 	{
@@ -32200,7 +32200,7 @@ void UWTLMainMenuCustomization::OnItemValueChanged(int CurrentIndex, const struc
 
 void UWTLMainMenuCustomization::OnHairColorBtnClick(const struct FGeometry& BtnGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnHairColorBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnHairColorBtnClick"));
 
 	struct
 	{
@@ -32222,7 +32222,7 @@ void UWTLMainMenuCustomization::OnHairColorBtnClick(const struct FGeometry& BtnG
 
 void UWTLMainMenuCustomization::OnGlassesOpacitySliderValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnGlassesOpacitySliderValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnGlassesOpacitySliderValueChanged"));
 
 	struct
 	{
@@ -32240,7 +32240,7 @@ void UWTLMainMenuCustomization::OnGlassesOpacitySliderValueChanged(float Current
 
 void UWTLMainMenuCustomization::OnFemaleBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnFemaleBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnFemaleBtnClick"));
 
 	struct
 	{
@@ -32261,7 +32261,7 @@ void UWTLMainMenuCustomization::OnFemaleBtnClick()
 
 void UWTLMainMenuCustomization::OnColorPicked(EWTLCustomizationColorPresetType ColorPresetType, int Number, const struct FLinearColor& Color, const struct FLinearColor& PreviewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnColorPicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnColorPicked"));
 
 	struct
 	{
@@ -32287,7 +32287,7 @@ void UWTLMainMenuCustomization::OnColorPicked(EWTLCustomizationColorPresetType C
 
 void UWTLMainMenuCustomization::OnBodyTypeValueChanged(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnBodyTypeValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnBodyTypeValueChanged"));
 
 	struct
 	{
@@ -32308,7 +32308,7 @@ void UWTLMainMenuCustomization::OnBodyTypeValueChanged(int CurrentIndex)
 
 void UWTLMainMenuCustomization::OnBodyPartValueChanged(int CurrentIndex, const struct FString& Prefix)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomization.OnBodyPartValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomization.OnBodyPartValueChanged"));
 
 	struct
 	{
@@ -32328,7 +32328,7 @@ void UWTLMainMenuCustomization::OnBodyPartValueChanged(int CurrentIndex, const s
 
 void UWTLMainMenuCustomizationEdit::OnYesBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnYesBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnYesBackBtnClick"));
 
 	struct
 	{
@@ -32346,7 +32346,7 @@ void UWTLMainMenuCustomizationEdit::OnYesBackBtnClick()
 
 void UWTLMainMenuCustomizationEdit::OnUpdateCharacterCustomizationResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnUpdateCharacterCustomizationResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnUpdateCharacterCustomizationResponse"));
 
 	struct
 	{
@@ -32364,7 +32364,7 @@ void UWTLMainMenuCustomizationEdit::OnUpdateCharacterCustomizationResponse(const
 
 void UWTLMainMenuCustomizationEdit::OnCustomizationDataChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnCustomizationDataChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnCustomizationDataChanged"));
 
 	struct
 	{
@@ -32380,7 +32380,7 @@ void UWTLMainMenuCustomizationEdit::OnCustomizationDataChanged()
 
 void UWTLMainMenuCustomizationEdit::OnCharacterRotatorMouseButtonDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterRotatorMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterRotatorMouseButtonDown"));
 
 	struct
 	{
@@ -32399,7 +32399,7 @@ void UWTLMainMenuCustomizationEdit::OnCharacterRotatorMouseButtonDown()
 
 void UWTLMainMenuCustomizationEdit::OnCharacterNameCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameCommitted"));
 
 	struct
 	{
@@ -32421,7 +32421,7 @@ void UWTLMainMenuCustomizationEdit::OnCharacterNameCommitted(const struct FText&
 
 void UWTLMainMenuCustomizationEdit::OnCharacterNameCheckResponseReceived(bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameCheckResponseReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameCheckResponseReceived"));
 
 	struct
 	{
@@ -32441,7 +32441,7 @@ void UWTLMainMenuCustomizationEdit::OnCharacterNameCheckResponseReceived(bool Su
 
 void UWTLMainMenuCustomizationEdit::OnCharacterNameChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnCharacterNameChanged"));
 
 	struct
 	{
@@ -32459,7 +32459,7 @@ void UWTLMainMenuCustomizationEdit::OnCharacterNameChanged(const struct FText& T
 
 void UWTLMainMenuCustomizationEdit::OnBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnBackBtnClick"));
 
 	struct
 	{
@@ -32475,7 +32475,7 @@ void UWTLMainMenuCustomizationEdit::OnBackBtnClick()
 
 void UWTLMainMenuCustomizationEdit::OnApplyCustomizationConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnApplyCustomizationConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnApplyCustomizationConfirm"));
 
 	struct
 	{
@@ -32491,7 +32491,7 @@ void UWTLMainMenuCustomizationEdit::OnApplyCustomizationConfirm()
 
 void UWTLMainMenuCustomizationEdit::OnApplyCustomizationBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuCustomizationEdit.OnApplyCustomizationBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCustomizationEdit.OnApplyCustomizationBtnClick"));
 
 	struct
 	{
@@ -32509,7 +32509,7 @@ void UWTLMainMenuCustomizationEdit::OnApplyCustomizationBtnClick()
 
 void AWTLMainMenuLevelScriptActor::SetMainCharacterHiddenInGame(bool bNewHidden)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.SetMainCharacterHiddenInGame");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.SetMainCharacterHiddenInGame"));
 
 	struct
 	{
@@ -32527,7 +32527,7 @@ void AWTLMainMenuLevelScriptActor::SetMainCharacterHiddenInGame(bool bNewHidden)
 
 void AWTLMainMenuLevelScriptActor::ResetCharacterRotation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.ResetCharacterRotation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.ResetCharacterRotation"));
 
 	struct
 	{
@@ -32543,7 +32543,7 @@ void AWTLMainMenuLevelScriptActor::ResetCharacterRotation()
 
 void AWTLMainMenuLevelScriptActor::OnSteamShutdown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.OnSteamShutdown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.OnSteamShutdown"));
 
 	struct
 	{
@@ -32559,7 +32559,7 @@ void AWTLMainMenuLevelScriptActor::OnSteamShutdown()
 
 void AWTLMainMenuLevelScriptActor::OnMasterServerConnectionError()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.OnMasterServerConnectionError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.OnMasterServerConnectionError"));
 
 	struct
 	{
@@ -32577,7 +32577,7 @@ void AWTLMainMenuLevelScriptActor::OnMasterServerConnectionError()
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnUpdateCharacterCustomizationResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnUpdateCharacterCustomizationResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnUpdateCharacterCustomizationResponse"));
 
 	struct
 	{
@@ -32597,7 +32597,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnUpdateCharacterCustomizati
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnSteamAuthorizationResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnSteamAuthorizationResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnSteamAuthorizationResponse"));
 
 	struct
 	{
@@ -32617,7 +32617,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnSteamAuthorizationResponse
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnSetActiveCharacterResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnSetActiveCharacterResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnSetActiveCharacterResponse"));
 
 	struct
 	{
@@ -32637,7 +32637,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnSetActiveCharacterResponse
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnGetCharacterListResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnGetCharacterListResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnGetCharacterListResponse"));
 
 	struct
 	{
@@ -32657,7 +32657,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnGetCharacterListResponse(c
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnGetArenaLocationListResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnGetArenaLocationListResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnGetArenaLocationListResponse"));
 
 	struct
 	{
@@ -32675,7 +32675,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnGetArenaLocationListRespon
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnDisconnectOnConnectCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDisconnectOnConnectCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDisconnectOnConnectCanceled"));
 
 	struct
 	{
@@ -32691,7 +32691,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnDisconnectOnConnectCancele
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDisconnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDisconnected"));
 
 	struct
 	{
@@ -32709,7 +32709,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnDisconnected()
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnDeleteCharacterResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDeleteCharacterResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnDeleteCharacterResponse"));
 
 	struct
 	{
@@ -32729,7 +32729,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnDeleteCharacterResponse(co
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnCreateCharacterResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnCreateCharacterResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnCreateCharacterResponse"));
 
 	struct
 	{
@@ -32749,7 +32749,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnCreateCharacterResponse(co
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnConnectError(const struct FString& ErrorInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnConnectError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnConnectError"));
 
 	struct
 	{
@@ -32767,7 +32767,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnConnectError(const struct 
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnConnected"));
 
 	struct
 	{
@@ -32785,7 +32785,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnConnected()
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnClientInfoResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnClientInfoResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnClientInfoResponse"));
 
 	struct
 	{
@@ -32805,7 +32805,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnClientInfoResponse(const s
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnChangeCreditsToMoneyResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnChangeCreditsToMoneyResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnChangeCreditsToMoneyResponse"));
 
 	struct
 	{
@@ -32825,7 +32825,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnChangeCreditsToMoneyRespon
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnChangeCharacterNameResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnChangeCharacterNameResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnChangeCharacterNameResponse"));
 
 	struct
 	{
@@ -32845,7 +32845,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnChangeCharacterNameRespons
 
 void AWTLMainMenuLevelScriptActor::NetworkControllerOnCancelDeleteCharacterResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnCancelDeleteCharacterResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.NetworkControllerOnCancelDeleteCharacterResponse"));
 
 	struct
 	{
@@ -32863,7 +32863,7 @@ void AWTLMainMenuLevelScriptActor::NetworkControllerOnCancelDeleteCharacterRespo
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToOriginalPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToOriginalPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToOriginalPoint"));
 
 	struct
 	{
@@ -32879,7 +32879,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToOriginalPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterWatchesPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterWatchesPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterWatchesPoint"));
 
 	struct
 	{
@@ -32895,7 +32895,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterWatchesPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterTorsoPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterTorsoPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterTorsoPoint"));
 
 	struct
 	{
@@ -32911,7 +32911,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterTorsoPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterPoint"));
 
 	struct
 	{
@@ -32927,7 +32927,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterLegsPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterLegsPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterLegsPoint"));
 
 	struct
 	{
@@ -32943,7 +32943,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterLegsPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterHeadPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterHeadPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterHeadPoint"));
 
 	struct
 	{
@@ -32959,7 +32959,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterHeadPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterFeetPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterFeetPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterFeetPoint"));
 
 	struct
 	{
@@ -32975,7 +32975,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterFeetPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterCommonPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterCommonPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterCommonPoint"));
 
 	struct
 	{
@@ -32991,7 +32991,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterCommonPoint()
 
 void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterBackpackPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterBackpackPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuLevelScriptActor.MoveCameraToCharacterBackpackPoint"));
 
 	struct
 	{
@@ -33010,7 +33010,7 @@ void AWTLMainMenuLevelScriptActor::MoveCameraToCharacterBackpackPoint()
 
 void UWTLMainMenuMaterialColorItem::OnColorPickerBtnClick(const struct FGeometry& BtnGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMaterialColorItem.OnColorPickerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMaterialColorItem.OnColorPickerBtnClick"));
 
 	struct
 	{
@@ -33030,7 +33030,7 @@ void UWTLMainMenuMaterialColorItem::OnColorPickerBtnClick(const struct FGeometry
 
 void UWTLMainMenuMaterialScalarItem::OnIncreaseBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMaterialScalarItem.OnIncreaseBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMaterialScalarItem.OnIncreaseBtnClick"));
 
 	struct
 	{
@@ -33046,7 +33046,7 @@ void UWTLMainMenuMaterialScalarItem::OnIncreaseBtnClick()
 
 void UWTLMainMenuMaterialScalarItem::OnDecreaseBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMaterialScalarItem.OnDecreaseBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMaterialScalarItem.OnDecreaseBtnClick"));
 
 	struct
 	{
@@ -33062,7 +33062,7 @@ void UWTLMainMenuMaterialScalarItem::OnDecreaseBtnClick()
 
 void UWTLMainMenuMoviePlayer::OnStopMovie()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMoviePlayer.OnStopMovie");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMoviePlayer.OnStopMovie"));
 
 	struct
 	{
@@ -33078,7 +33078,7 @@ void UWTLMainMenuMoviePlayer::OnStopMovie()
 
 void UWTLMainMenuMoviePlayer::OnPlayMovie()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMoviePlayer.OnPlayMovie");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMoviePlayer.OnPlayMovie"));
 
 	struct
 	{
@@ -33094,7 +33094,7 @@ void UWTLMainMenuMoviePlayer::OnPlayMovie()
 
 void UWTLMainMenuMoviePlayer::Hide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMoviePlayer.Hide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMoviePlayer.Hide"));
 
 	struct
 	{
@@ -33112,7 +33112,7 @@ void UWTLMainMenuMoviePlayer::Hide()
 
 struct FString UWTLMainMenuMoviePlayer::GetCurrentCulture()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuMoviePlayer.GetCurrentCulture");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuMoviePlayer.GetCurrentCulture"));
 
 	struct
 	{
@@ -33131,7 +33131,7 @@ struct FString UWTLMainMenuMoviePlayer::GetCurrentCulture()
 
 void UWTLMainMenuOptions::OnOptionsClose()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuOptions.OnOptionsClose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuOptions.OnOptionsClose"));
 
 	struct
 	{
@@ -33147,7 +33147,7 @@ void UWTLMainMenuOptions::OnOptionsClose()
 
 void UWTLMainMenuOptions::OnOptionsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuOptions.OnOptionsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuOptions.OnOptionsBtnClicked"));
 
 	struct
 	{
@@ -33163,7 +33163,7 @@ void UWTLMainMenuOptions::OnOptionsBtnClicked()
 
 void UWTLMainMenuPlayerClass::OnPlayerClassBtnUnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnUnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnUnHover"));
 
 	struct
 	{
@@ -33179,7 +33179,7 @@ void UWTLMainMenuPlayerClass::OnPlayerClassBtnUnHover()
 
 void UWTLMainMenuPlayerClass::OnPlayerClassBtnHover()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnHover");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnHover"));
 
 	struct
 	{
@@ -33195,7 +33195,7 @@ void UWTLMainMenuPlayerClass::OnPlayerClassBtnHover()
 
 void UWTLMainMenuPlayerClass::OnPlayerClassBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuPlayerClass.OnPlayerClassBtnClick"));
 
 	struct
 	{
@@ -33211,7 +33211,7 @@ void UWTLMainMenuPlayerClass::OnPlayerClassBtnClick()
 
 void UWTLMainMenuServerAuthorization::OnShowPasswordBtnReleased()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnShowPasswordBtnReleased");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnShowPasswordBtnReleased"));
 
 	struct
 	{
@@ -33227,7 +33227,7 @@ void UWTLMainMenuServerAuthorization::OnShowPasswordBtnReleased()
 
 void UWTLMainMenuServerAuthorization::OnShowPasswordBtnPressed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnShowPasswordBtnPressed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnShowPasswordBtnPressed"));
 
 	struct
 	{
@@ -33243,7 +33243,7 @@ void UWTLMainMenuServerAuthorization::OnShowPasswordBtnPressed()
 
 void UWTLMainMenuServerAuthorization::OnSavePasswordConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordConfirmed"));
 
 	struct
 	{
@@ -33261,7 +33261,7 @@ void UWTLMainMenuServerAuthorization::OnSavePasswordConfirmed()
 
 void UWTLMainMenuServerAuthorization::OnSavePasswordCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordCheckStateChanged"));
 
 	struct
 	{
@@ -33279,7 +33279,7 @@ void UWTLMainMenuServerAuthorization::OnSavePasswordCheckStateChanged(bool bIsCh
 
 void UWTLMainMenuServerAuthorization::OnSavePasswordCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnSavePasswordCanceled"));
 
 	struct
 	{
@@ -33298,7 +33298,7 @@ void UWTLMainMenuServerAuthorization::OnSavePasswordCanceled()
 
 void UWTLMainMenuServerAuthorization::OnPasswordTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnPasswordTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnPasswordTextBoxCommitted"));
 
 	struct
 	{
@@ -33320,7 +33320,7 @@ void UWTLMainMenuServerAuthorization::OnPasswordTextBoxCommitted(const struct FT
 
 void UWTLMainMenuServerAuthorization::OnPasswordTextBoxChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnPasswordTextBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnPasswordTextBoxChanged"));
 
 	struct
 	{
@@ -33341,7 +33341,7 @@ void UWTLMainMenuServerAuthorization::OnPasswordTextBoxChanged(const struct FTex
 
 void UWTLMainMenuServerAuthorization::OnLoginTextBoxCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnLoginTextBoxCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnLoginTextBoxCommitted"));
 
 	struct
 	{
@@ -33361,7 +33361,7 @@ void UWTLMainMenuServerAuthorization::OnLoginTextBoxCommitted(const struct FText
 
 void UWTLMainMenuServerAuthorization::OnConnectedToServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnConnectedToServer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnConnectedToServer"));
 
 	struct
 	{
@@ -33377,7 +33377,7 @@ void UWTLMainMenuServerAuthorization::OnConnectedToServer()
 
 void UWTLMainMenuServerAuthorization::OnCloseBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnCloseBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnCloseBtnClicked"));
 
 	struct
 	{
@@ -33393,7 +33393,7 @@ void UWTLMainMenuServerAuthorization::OnCloseBtnClicked()
 
 void UWTLMainMenuServerAuthorization::OnAuthorizeBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerAuthorization.OnAuthorizeBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerAuthorization.OnAuthorizeBtnClicked"));
 
 	struct
 	{
@@ -33411,7 +33411,7 @@ void UWTLMainMenuServerAuthorization::OnAuthorizeBtnClicked()
 
 void UWTLMainMenuServerList::OnServerResponded(const struct FWTLSteamServerInfo& GameServerItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnServerResponded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnServerResponded"));
 
 	struct
 	{
@@ -33429,7 +33429,7 @@ void UWTLMainMenuServerList::OnServerResponded(const struct FWTLSteamServerInfo&
 
 void UWTLMainMenuServerList::OnServerRequestFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnServerRequestFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnServerRequestFinished"));
 
 	struct
 	{
@@ -33445,7 +33445,7 @@ void UWTLMainMenuServerList::OnServerRequestFinished()
 
 void UWTLMainMenuServerList::OnRefreshBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnRefreshBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnRefreshBtnClick"));
 
 	struct
 	{
@@ -33461,7 +33461,7 @@ void UWTLMainMenuServerList::OnRefreshBtnClick()
 
 void UWTLMainMenuServerList::OnConnectedToServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnConnectedToServer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnConnectedToServer"));
 
 	struct
 	{
@@ -33477,7 +33477,7 @@ void UWTLMainMenuServerList::OnConnectedToServer()
 
 void UWTLMainMenuServerList::OnConnectBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnConnectBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnConnectBtnClick"));
 
 	struct
 	{
@@ -33493,7 +33493,7 @@ void UWTLMainMenuServerList::OnConnectBtnClick()
 
 void UWTLMainMenuServerList::OnCancelCheckAccountStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnCancelCheckAccountStatus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnCancelCheckAccountStatus"));
 
 	struct
 	{
@@ -33509,7 +33509,7 @@ void UWTLMainMenuServerList::OnCancelCheckAccountStatus()
 
 void UWTLMainMenuServerList::OnBackBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerList.OnBackBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerList.OnBackBtnClick"));
 
 	struct
 	{
@@ -33525,7 +33525,7 @@ void UWTLMainMenuServerList::OnBackBtnClick()
 
 void UWTLMainMenuServerListItem::OnBackgroundBorderMouseDoubleClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuServerListItem.OnBackgroundBorderMouseDoubleClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuServerListItem.OnBackgroundBorderMouseDoubleClick"));
 
 	struct
 	{
@@ -33541,7 +33541,7 @@ void UWTLMainMenuServerListItem::OnBackgroundBorderMouseDoubleClick()
 
 void UWTLMainMenuStart::OnStoryBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnStoryBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnStoryBtnClick"));
 
 	struct
 	{
@@ -33557,7 +33557,7 @@ void UWTLMainMenuStart::OnStoryBtnClick()
 
 void UWTLMainMenuStart::OnSocialNetworkYouTubeBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnSocialNetworkYouTubeBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnSocialNetworkYouTubeBtnClicked"));
 
 	struct
 	{
@@ -33573,7 +33573,7 @@ void UWTLMainMenuStart::OnSocialNetworkYouTubeBtnClicked()
 
 void UWTLMainMenuStart::OnSocialNetworkVKBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnSocialNetworkVKBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnSocialNetworkVKBtnClicked"));
 
 	struct
 	{
@@ -33589,7 +33589,7 @@ void UWTLMainMenuStart::OnSocialNetworkVKBtnClicked()
 
 void UWTLMainMenuStart::OnSocialNetworkTwitterBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnSocialNetworkTwitterBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnSocialNetworkTwitterBtnClicked"));
 
 	struct
 	{
@@ -33605,7 +33605,7 @@ void UWTLMainMenuStart::OnSocialNetworkTwitterBtnClicked()
 
 void UWTLMainMenuStart::OnSocialNetworkFacebookBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnSocialNetworkFacebookBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnSocialNetworkFacebookBtnClicked"));
 
 	struct
 	{
@@ -33621,7 +33621,7 @@ void UWTLMainMenuStart::OnSocialNetworkFacebookBtnClicked()
 
 void UWTLMainMenuStart::OnSocialNetworkDiscordBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnSocialNetworkDiscordBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnSocialNetworkDiscordBtnClicked"));
 
 	struct
 	{
@@ -33637,7 +33637,7 @@ void UWTLMainMenuStart::OnSocialNetworkDiscordBtnClicked()
 
 void UWTLMainMenuStart::OnPlayBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnPlayBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnPlayBtnClick"));
 
 	struct
 	{
@@ -33653,7 +33653,7 @@ void UWTLMainMenuStart::OnPlayBtnClick()
 
 void UWTLMainMenuStart::OnGetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnGetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnGetBtnClick"));
 
 	struct
 	{
@@ -33669,7 +33669,7 @@ void UWTLMainMenuStart::OnGetBtnClick()
 
 void UWTLMainMenuStart::OnExitBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnExitBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnExitBtnClick"));
 
 	struct
 	{
@@ -33685,7 +33685,7 @@ void UWTLMainMenuStart::OnExitBtnClick()
 
 void UWTLMainMenuStart::OnCloseBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnCloseBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnCloseBtnClick"));
 
 	struct
 	{
@@ -33701,7 +33701,7 @@ void UWTLMainMenuStart::OnCloseBtnClick()
 
 void UWTLMainMenuStart::OnAuthorsBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.OnAuthorsBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.OnAuthorsBtnClick"));
 
 	struct
 	{
@@ -33717,7 +33717,7 @@ void UWTLMainMenuStart::OnAuthorsBtnClick()
 
 void UWTLMainMenuStart::ExitGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuStart.ExitGame");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuStart.ExitGame"));
 
 	struct
 	{
@@ -33736,7 +33736,7 @@ void UWTLMainMenuStart::ExitGame()
 
 void UWTLMainMenuTextBox::OnTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuTextBox.OnTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuTextBox.OnTextBoxTextCommitted"));
 
 	struct
 	{
@@ -33758,7 +33758,7 @@ void UWTLMainMenuTextBox::OnTextBoxTextCommitted(const struct FText& Text, TEnum
 
 void UWTLMainMenuTextBox::OnTextBoxTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMainMenuTextBox.OnTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuTextBox.OnTextBoxTextChanged"));
 
 	struct
 	{
@@ -33776,7 +33776,7 @@ void UWTLMainMenuTextBox::OnTextBoxTextChanged(const struct FText& Text)
 
 void AWTLUsable::NetMulticast_PutToInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUsable.NetMulticast_PutToInventory");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUsable.NetMulticast_PutToInventory"));
 
 	struct
 	{
@@ -33794,7 +33794,7 @@ void AWTLUsable::NetMulticast_PutToInventory()
 
 class USkeletalMeshComponent* AWTLUsable::GetMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUsable.GetMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUsable.GetMesh"));
 
 	struct
 	{
@@ -33813,7 +33813,7 @@ class USkeletalMeshComponent* AWTLUsable::GetMesh()
 
 void AWTLMeleeWeapon::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMeleeWeapon.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMeleeWeapon.Server_StopUse"));
 
 	struct
 	{
@@ -33829,7 +33829,7 @@ void AWTLMeleeWeapon::Server_StopUse()
 
 void AWTLMeleeWeapon::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMeleeWeapon.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMeleeWeapon.Server_StartUse"));
 
 	struct
 	{
@@ -33845,7 +33845,7 @@ void AWTLMeleeWeapon::Server_StartUse()
 
 void AWTLMeleeWeapon::Server_SingleUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMeleeWeapon.Server_SingleUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMeleeWeapon.Server_SingleUse"));
 
 	struct
 	{
@@ -33863,7 +33863,7 @@ void AWTLMeleeWeapon::Server_SingleUse()
 
 void AWTLMeleeWeapon::NetMulticast_OnUse(EWTLUsableItemUseType UseType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMeleeWeapon.NetMulticast_OnUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMeleeWeapon.NetMulticast_OnUse"));
 
 	struct
 	{
@@ -33881,7 +33881,7 @@ void AWTLMeleeWeapon::NetMulticast_OnUse(EWTLUsableItemUseType UseType)
 
 void AWTLMine::OnRep_Activated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.OnRep_Activated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.OnRep_Activated"));
 
 	struct
 	{
@@ -33902,7 +33902,7 @@ void AWTLMine::OnRep_Activated()
 
 void AWTLMine::OnOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.OnOverlapEnd");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.OnOverlapEnd"));
 
 	struct
 	{
@@ -33933,7 +33933,7 @@ void AWTLMine::OnOverlapEnd(class UPrimitiveComponent* OverlappedComponent, clas
 
 void AWTLMine::OnOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.OnOverlapBegin");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.OnOverlapBegin"));
 
 	struct
 	{
@@ -33963,7 +33963,7 @@ void AWTLMine::OnOverlapBegin(class UPrimitiveComponent* OverlappedComponent, cl
 
 void AWTLMine::NetMulticast_OnExplosion(float ExplosionDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.NetMulticast_OnExplosion");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.NetMulticast_OnExplosion"));
 
 	struct
 	{
@@ -33981,7 +33981,7 @@ void AWTLMine::NetMulticast_OnExplosion(float ExplosionDamage)
 
 void AWTLMine::BPOnExplode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.BPOnExplode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.BPOnExplode"));
 
 	struct
 	{
@@ -34000,7 +34000,7 @@ void AWTLMine::BPOnExplode()
 
 void AWTLMine::BPOnApplyDamageToMonster(class AWTLMonsterPawn* Monster, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.BPOnApplyDamageToMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.BPOnApplyDamageToMonster"));
 
 	struct
 	{
@@ -34023,7 +34023,7 @@ void AWTLMine::BPOnApplyDamageToMonster(class AWTLMonsterPawn* Monster, float Ac
 
 void AWTLMine::BPOnApplyDamageToEnemyNPC(class AWTLEnemyNPC* EnemyNPC, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.BPOnApplyDamageToEnemyNPC");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.BPOnApplyDamageToEnemyNPC"));
 
 	struct
 	{
@@ -34046,7 +34046,7 @@ void AWTLMine::BPOnApplyDamageToEnemyNPC(class AWTLEnemyNPC* EnemyNPC, float Act
 
 void AWTLMine::BPOnApplyDamageToCharacter(class AWTLCharacter* Character, float ActualDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMine.BPOnApplyDamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMine.BPOnApplyDamageToCharacter"));
 
 	struct
 	{
@@ -34066,7 +34066,7 @@ void AWTLMine::BPOnApplyDamageToCharacter(class AWTLCharacter* Character, float 
 
 void AWTLMiningItem::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningItem.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningItem.Server_StopUse"));
 
 	struct
 	{
@@ -34082,7 +34082,7 @@ void AWTLMiningItem::Server_StopUse()
 
 void AWTLMiningItem::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningItem.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningItem.Server_StartUse"));
 
 	struct
 	{
@@ -34100,7 +34100,7 @@ void AWTLMiningItem::Server_StartUse()
 
 void AWTLMiningItem::NetMulticast_OnUse(EWTLUsableItemUseType UseType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningItem.NetMulticast_OnUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningItem.NetMulticast_OnUse"));
 
 	struct
 	{
@@ -34120,7 +34120,7 @@ void AWTLMiningItem::NetMulticast_OnUse(EWTLUsableItemUseType UseType)
 
 void AWTLMiningSpot::OnRep_Capacity(float PreviousCapacity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningSpot.OnRep_Capacity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningSpot.OnRep_Capacity"));
 
 	struct
 	{
@@ -34143,7 +34143,7 @@ void AWTLMiningSpot::OnRep_Capacity(float PreviousCapacity)
 
 void AWTLMiningSpot::NetMulticast_OnHit(const struct FVector_NetQuantize& HitLocation, const struct FVector_NetQuantizeNormal& ImpactNormal, bool Success, float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningSpot.NetMulticast_OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningSpot.NetMulticast_OnHit"));
 
 	struct
 	{
@@ -34172,7 +34172,7 @@ void AWTLMiningSpot::NetMulticast_OnHit(const struct FVector_NetQuantize& HitLoc
 
 void AWTLMiningZone::OnVolumeEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningZone.OnVolumeEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningZone.OnVolumeEndOverlap"));
 
 	struct
 	{
@@ -34203,7 +34203,7 @@ void AWTLMiningZone::OnVolumeEndOverlap(class UPrimitiveComponent* OverlappedCom
 
 void AWTLMiningZone::OnVolumeBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMiningZone.OnVolumeBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningZone.OnVolumeBeginOverlap"));
 
 	struct
 	{
@@ -34231,7 +34231,7 @@ void AWTLMiningZone::OnVolumeBeginOverlap(class UPrimitiveComponent* OverlappedC
 
 void AWTLMissileWeapon::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.Server_StopUse"));
 
 	struct
 	{
@@ -34247,7 +34247,7 @@ void AWTLMissileWeapon::Server_StopUse()
 
 void AWTLMissileWeapon::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.Server_StartUse"));
 
 	struct
 	{
@@ -34265,7 +34265,7 @@ void AWTLMissileWeapon::Server_StartUse()
 
 void AWTLMissileWeapon::NetMulticast_OnStopUse(EWTLUsableItemUseType UseType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.NetMulticast_OnStopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.NetMulticast_OnStopUse"));
 
 	struct
 	{
@@ -34285,7 +34285,7 @@ void AWTLMissileWeapon::NetMulticast_OnStopUse(EWTLUsableItemUseType UseType)
 
 void AWTLMissileWeapon::NetMulticast_OnStartUse(EWTLUsableItemUseType UseType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.NetMulticast_OnStartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.NetMulticast_OnStartUse"));
 
 	struct
 	{
@@ -34308,7 +34308,7 @@ void AWTLMissileWeapon::NetMulticast_OnStartUse(EWTLUsableItemUseType UseType)
 
 void AWTLMissileWeapon::Client_ShowCountdownWidget(uint16_t WeaponID, float TimeValue, EWTLUsableItemUseType UseType, float ThrowSpeed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.Client_ShowCountdownWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.Client_ShowCountdownWidget"));
 
 	struct
 	{
@@ -34332,7 +34332,7 @@ void AWTLMissileWeapon::Client_ShowCountdownWidget(uint16_t WeaponID, float Time
 
 void AWTLMissileWeapon::Client_HideCountdownWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMissileWeapon.Client_HideCountdownWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeapon.Client_HideCountdownWidget"));
 
 	struct
 	{
@@ -34348,7 +34348,7 @@ void AWTLMissileWeapon::Client_HideCountdownWidget()
 
 void AWTLMobileHealPoint::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileHealPoint.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileHealPoint.OnRep_Energy"));
 
 	struct
 	{
@@ -34369,7 +34369,7 @@ void AWTLMobileHealPoint::OnRep_Energy()
 
 void AWTLMobileHealPoint::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileHealPoint.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileHealPoint.OnEndOverlap"));
 
 	struct
 	{
@@ -34400,7 +34400,7 @@ void AWTLMobileHealPoint::OnEndOverlap(class UPrimitiveComponent* OverlappedComp
 
 void AWTLMobileHealPoint::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileHealPoint.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileHealPoint.OnBeginOverlap"));
 
 	struct
 	{
@@ -34428,7 +34428,7 @@ void AWTLMobileHealPoint::OnBeginOverlap(class UPrimitiveComponent* OverlappedCo
 
 void AWTLMobileResurectionPoint::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileResurectionPoint.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileResurectionPoint.OnRep_Energy"));
 
 	struct
 	{
@@ -34449,7 +34449,7 @@ void AWTLMobileResurectionPoint::OnRep_Energy()
 
 void AWTLMobileResurectionPoint::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileResurectionPoint.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileResurectionPoint.OnEndOverlap"));
 
 	struct
 	{
@@ -34480,7 +34480,7 @@ void AWTLMobileResurectionPoint::OnEndOverlap(class UPrimitiveComponent* Overlap
 
 void AWTLMobileResurectionPoint::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileResurectionPoint.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileResurectionPoint.OnBeginOverlap"));
 
 	struct
 	{
@@ -34508,7 +34508,7 @@ void AWTLMobileResurectionPoint::OnBeginOverlap(class UPrimitiveComponent* Overl
 
 void AWTLMobileStartPoint::OnRep_Health()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.OnRep_Health");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.OnRep_Health"));
 
 	struct
 	{
@@ -34524,7 +34524,7 @@ void AWTLMobileStartPoint::OnRep_Health()
 
 void AWTLMobileStartPoint::OnRep_Energy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.OnRep_Energy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.OnRep_Energy"));
 
 	struct
 	{
@@ -34540,7 +34540,7 @@ void AWTLMobileStartPoint::OnRep_Energy()
 
 void AWTLMobileStartPoint::NetMulticast_MobilePointExploded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.NetMulticast_MobilePointExploded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.NetMulticast_MobilePointExploded"));
 
 	struct
 	{
@@ -34558,7 +34558,7 @@ void AWTLMobileStartPoint::NetMulticast_MobilePointExploded()
 
 float AWTLMobileStartPoint::GetHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.GetHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.GetHealth"));
 
 	struct
 	{
@@ -34579,7 +34579,7 @@ float AWTLMobileStartPoint::GetHealth()
 
 float AWTLMobileStartPoint::GetEnergy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.GetEnergy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.GetEnergy"));
 
 	struct
 	{
@@ -34598,7 +34598,7 @@ float AWTLMobileStartPoint::GetEnergy()
 
 void AWTLMobileStartPoint::Client_OnMobilePointCharged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.Client_OnMobilePointCharged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.Client_OnMobilePointCharged"));
 
 	struct
 	{
@@ -34619,7 +34619,7 @@ void AWTLMobileStartPoint::Client_OnMobilePointCharged()
 
 void AWTLMobileStartPoint::Client_DebugPlayerStartPosition(const struct FVector& Location, float HalfHeight, float Radius, const struct FQuat& Quat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMobileStartPoint.Client_DebugPlayerStartPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMobileStartPoint.Client_DebugPlayerStartPosition"));
 
 	struct
 	{
@@ -34643,7 +34643,7 @@ void AWTLMobileStartPoint::Client_DebugPlayerStartPosition(const struct FVector&
 
 void AWTLMonocular::OnRep_bIsUsingMonocular()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonocular.OnRep_bIsUsingMonocular");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonocular.OnRep_bIsUsingMonocular"));
 
 	struct
 	{
@@ -34663,7 +34663,7 @@ void AWTLMonocular::OnRep_bIsUsingMonocular()
 
 void AWTLMonsterPawnAIController::OnReceiveDamage(class AController* DamageInstigator, float Damage, bool bIsFromSleep)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.OnReceiveDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.OnReceiveDamage"));
 
 	struct
 	{
@@ -34688,7 +34688,7 @@ void AWTLMonsterPawnAIController::OnReceiveDamage(class AController* DamageInsti
 
 void AWTLMonsterPawnAIController::OnHearing(class AActor* EventInstigator, const struct FName& Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.OnHearing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.OnHearing"));
 
 	struct
 	{
@@ -34711,7 +34711,7 @@ void AWTLMonsterPawnAIController::OnHearing(class AActor* EventInstigator, const
 
 void AWTLMonsterPawnAIController::OnActivityStateChanged(EWTLMonsterActivityState CurrentActivityState, EWTLMonsterActivityState PreviousActivityState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.OnActivityStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.OnActivityStateChanged"));
 
 	struct
 	{
@@ -34731,7 +34731,7 @@ void AWTLMonsterPawnAIController::OnActivityStateChanged(EWTLMonsterActivityStat
 
 void AWTLMonsterPawnAIController::NoSleep()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.NoSleep");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.NoSleep"));
 
 	struct
 	{
@@ -34749,7 +34749,7 @@ void AWTLMonsterPawnAIController::NoSleep()
 
 struct FVector AWTLMonsterPawnAIController::GetLocationOwner()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.GetLocationOwner");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.GetLocationOwner"));
 
 	struct
 	{
@@ -34771,7 +34771,7 @@ struct FVector AWTLMonsterPawnAIController::GetLocationOwner()
 
 float AWTLMonsterPawnAIController::GetDangerLevel(class AWTLCharacter* WTLCharacter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.GetDangerLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.GetDangerLevel"));
 
 	struct
 	{
@@ -34794,7 +34794,7 @@ float AWTLMonsterPawnAIController::GetDangerLevel(class AWTLCharacter* WTLCharac
 
 void AWTLMonsterPawnAIController::BPSetGenericTeamId(EWTLAITeam pTeamID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.BPSetGenericTeamId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.BPSetGenericTeamId"));
 
 	struct
 	{
@@ -34814,7 +34814,7 @@ void AWTLMonsterPawnAIController::BPSetGenericTeamId(EWTLAITeam pTeamID)
 
 EWTLAITeam AWTLMonsterPawnAIController::BPGetGenericTeamId()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.BPGetGenericTeamId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.BPGetGenericTeamId"));
 
 	struct
 	{
@@ -34836,7 +34836,7 @@ EWTLAITeam AWTLMonsterPawnAIController::BPGetGenericTeamId()
 
 void AWTLMonsterPawnAIController::BP_OnHearing(class AActor* EventInstigator, const struct FName& Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAIController.BP_OnHearing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAIController.BP_OnHearing"));
 
 	struct
 	{
@@ -34858,7 +34858,7 @@ void AWTLMonsterPawnAIController::BP_OnHearing(class AActor* EventInstigator, co
 
 void UWTLMonsterPawnAnimInstance::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterPawnAnimInstance.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAnimInstance.OnActionTrigger"));
 
 	struct
 	{
@@ -34882,7 +34882,7 @@ void UWTLMonsterPawnAnimInstance::OnActionTrigger(const struct FName& ActionName
 
 void AWTLMonsterProjectile::OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterProjectile.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterProjectile.OnHit"));
 
 	struct
 	{
@@ -34912,7 +34912,7 @@ void AWTLMonsterProjectile::OnHit(class UPrimitiveComponent* HitComponent, class
 
 class AWTLMonsterPawn* AWTLMonsterSpawner::SpawnLevel(const struct FVector& Location, unsigned char LevelMonster)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SpawnLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SpawnLevel"));
 
 	struct
 	{
@@ -34935,7 +34935,7 @@ class AWTLMonsterPawn* AWTLMonsterSpawner::SpawnLevel(const struct FVector& Loca
 
 void AWTLMonsterSpawner::SpawnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SpawnDeactivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SpawnDeactivated"));
 
 	struct
 	{
@@ -34951,7 +34951,7 @@ void AWTLMonsterSpawner::SpawnDeactivated()
 
 void AWTLMonsterSpawner::SpawnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SpawnActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SpawnActivated"));
 
 	struct
 	{
@@ -34970,7 +34970,7 @@ void AWTLMonsterSpawner::SpawnActivated()
 
 class AWTLMonsterPawn* AWTLMonsterSpawner::Spawn(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.Spawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.Spawn"));
 
 	struct
 	{
@@ -34993,7 +34993,7 @@ class AWTLMonsterPawn* AWTLMonsterSpawner::Spawn(const struct FVector& Location)
 
 void AWTLMonsterSpawner::SetSpawnClass(class UClass* SpawnClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SetSpawnClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SetSpawnClass"));
 
 	struct
 	{
@@ -35013,7 +35013,7 @@ void AWTLMonsterSpawner::SetSpawnClass(class UClass* SpawnClass)
 
 void AWTLMonsterSpawner::SetMinLevel(unsigned char Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SetMinLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SetMinLevel"));
 
 	struct
 	{
@@ -35033,7 +35033,7 @@ void AWTLMonsterSpawner::SetMinLevel(unsigned char Value)
 
 void AWTLMonsterSpawner::SetMaxLevel(unsigned char Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.SetMaxLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.SetMaxLevel"));
 
 	struct
 	{
@@ -35051,7 +35051,7 @@ void AWTLMonsterSpawner::SetMaxLevel(unsigned char Value)
 
 void AWTLMonsterSpawner::OnSpawnMonster()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.OnSpawnMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.OnSpawnMonster"));
 
 	struct
 	{
@@ -35069,7 +35069,7 @@ void AWTLMonsterSpawner::OnSpawnMonster()
 
 void AWTLMonsterSpawner::OnDeadMonster(class AWTLMonsterPawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.OnDeadMonster");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.OnDeadMonster"));
 
 	struct
 	{
@@ -35089,7 +35089,7 @@ void AWTLMonsterSpawner::OnDeadMonster(class AWTLMonsterPawn* Pawn)
 
 bool AWTLMonsterSpawner::IsAllMonsterDead()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.IsAllMonsterDead");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.IsAllMonsterDead"));
 
 	struct
 	{
@@ -35110,7 +35110,7 @@ bool AWTLMonsterSpawner::IsAllMonsterDead()
 
 float AWTLMonsterSpawner::GetStartDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetStartDelay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetStartDelay"));
 
 	struct
 	{
@@ -35131,7 +35131,7 @@ float AWTLMonsterSpawner::GetStartDelay()
 
 float AWTLMonsterSpawner::GetSpawnRadius()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetSpawnRadius");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetSpawnRadius"));
 
 	struct
 	{
@@ -35152,7 +35152,7 @@ float AWTLMonsterSpawner::GetSpawnRadius()
 
 float AWTLMonsterSpawner::GetSpawnInterval()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetSpawnInterval");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetSpawnInterval"));
 
 	struct
 	{
@@ -35173,7 +35173,7 @@ float AWTLMonsterSpawner::GetSpawnInterval()
 
 int AWTLMonsterSpawner::GetSpawnedMonstersCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetSpawnedMonstersCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetSpawnedMonstersCount"));
 
 	struct
 	{
@@ -35194,7 +35194,7 @@ int AWTLMonsterSpawner::GetSpawnedMonstersCount()
 
 int AWTLMonsterSpawner::GetMonstersLimit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetMonstersLimit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetMonstersLimit"));
 
 	struct
 	{
@@ -35215,7 +35215,7 @@ int AWTLMonsterSpawner::GetMonstersLimit()
 
 class UClass* AWTLMonsterSpawner::GetMonsterClass()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetMonsterClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetMonsterClass"));
 
 	struct
 	{
@@ -35236,7 +35236,7 @@ class UClass* AWTLMonsterSpawner::GetMonsterClass()
 
 float AWTLMonsterSpawner::GetMinimumLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetMinimumLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetMinimumLevel"));
 
 	struct
 	{
@@ -35257,7 +35257,7 @@ float AWTLMonsterSpawner::GetMinimumLevel()
 
 float AWTLMonsterSpawner::GetMaximumLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetMaximumLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetMaximumLevel"));
 
 	struct
 	{
@@ -35278,7 +35278,7 @@ float AWTLMonsterSpawner::GetMaximumLevel()
 
 struct FVector AWTLMonsterSpawner::GetAcnchorPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.GetAcnchorPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.GetAcnchorPoint"));
 
 	struct
 	{
@@ -35299,7 +35299,7 @@ struct FVector AWTLMonsterSpawner::GetAcnchorPoint()
 
 bool AWTLMonsterSpawner::CanSpawn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawner.CanSpawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.CanSpawn"));
 
 	struct
 	{
@@ -35318,7 +35318,7 @@ bool AWTLMonsterSpawner::CanSpawn()
 
 void AWTLMonsterSpawnerAIController::OnStreamingLevelsLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLMonsterSpawnerAIController.OnStreamingLevelsLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerAIController.OnStreamingLevelsLoaded"));
 
 	struct
 	{
@@ -35336,7 +35336,7 @@ void AWTLMonsterSpawnerAIController::OnStreamingLevelsLoaded()
 
 bool UWTLNetworkController::IsConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNetworkController.IsConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNetworkController.IsConnected"));
 
 	struct
 	{
@@ -35355,7 +35355,7 @@ bool UWTLNetworkController::IsConnected()
 
 void UWTLNetworkController::Disconnect()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNetworkController.Disconnect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNetworkController.Disconnect"));
 
 	struct
 	{
@@ -35374,7 +35374,7 @@ void UWTLNetworkController::Disconnect()
 
 void UWTLNetworkController::Connect(const struct FString& Host, int Port)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNetworkController.Connect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNetworkController.Connect"));
 
 	struct
 	{
@@ -35400,7 +35400,7 @@ void UWTLNetworkController::Connect(const struct FString& Host, int Port)
 
 void AWTLNPCActor::TravelCharacterToSafeZone(class AWTLCharacter* Character, int SafeZoneID, float TravelTime, int Price, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.TravelCharacterToSafeZone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.TravelCharacterToSafeZone"));
 
 	struct
 	{
@@ -35434,7 +35434,7 @@ void AWTLNPCActor::TravelCharacterToSafeZone(class AWTLCharacter* Character, int
 
 void AWTLNPCActor::TravelCharacterToPoint(class AWTLCharacter* Character, const struct FVector& DestLocation, float TravelTime, int Price, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.TravelCharacterToPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.TravelCharacterToPoint"));
 
 	struct
 	{
@@ -35469,7 +35469,7 @@ void AWTLNPCActor::TravelCharacterToPoint(class AWTLCharacter* Character, const 
 
 void AWTLNPCActor::TravelCharacterToLocation(class AWTLCharacter* Character, int LocationID, int PortalID, float TravelTime, int Price, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.TravelCharacterToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.TravelCharacterToLocation"));
 
 	struct
 	{
@@ -35505,7 +35505,7 @@ void AWTLNPCActor::TravelCharacterToLocation(class AWTLCharacter* Character, int
 
 void AWTLNPCActor::TravelCharacterThroughPortal(class AWTLCharacter* Character, int PortalID, float TravelTime, int Price, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.TravelCharacterThroughPortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.TravelCharacterThroughPortal"));
 
 	struct
 	{
@@ -35537,7 +35537,7 @@ void AWTLNPCActor::TravelCharacterThroughPortal(class AWTLCharacter* Character, 
 
 void AWTLNPCActor::TakeMoneyFromCharacter(class AWTLCharacter* Character, int MoneyAmount, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.TakeMoneyFromCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.TakeMoneyFromCharacter"));
 
 	struct
 	{
@@ -35563,7 +35563,7 @@ void AWTLNPCActor::TakeMoneyFromCharacter(class AWTLCharacter* Character, int Mo
 
 void AWTLNPCActor::ShowSupplyItemsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowSupplyItemsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowSupplyItemsDialog"));
 
 	struct
 	{
@@ -35583,7 +35583,7 @@ void AWTLNPCActor::ShowSupplyItemsDialog(class AWTLCharacter* Character)
 
 void AWTLNPCActor::ShowSteamInventoryWidget(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowSteamInventoryWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowSteamInventoryWidget"));
 
 	struct
 	{
@@ -35605,7 +35605,7 @@ void AWTLNPCActor::ShowSteamInventoryWidget(class AWTLCharacter* Character)
 
 void AWTLNPCActor::ShowRandomReplicaDialog(class AWTLCharacter* Character, TArray<int> NPCReplicaIDs, TArray<int> CharacterReplicaIDArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowRandomReplicaDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowRandomReplicaDialog"));
 
 	struct
 	{
@@ -35630,7 +35630,7 @@ void AWTLNPCActor::ShowRandomReplicaDialog(class AWTLCharacter* Character, TArra
 
 void AWTLNPCActor::ShowQuestDialog(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowQuestDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowQuestDialog"));
 
 	struct
 	{
@@ -35653,7 +35653,7 @@ void AWTLNPCActor::ShowQuestDialog(class AWTLCharacter* Character, const struct 
 
 void AWTLNPCActor::ShowQuestDecription(class AWTLCharacter* Character, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowQuestDecription");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowQuestDecription"));
 
 	struct
 	{
@@ -35675,7 +35675,7 @@ void AWTLNPCActor::ShowQuestDecription(class AWTLCharacter* Character, int Quest
 
 void AWTLNPCActor::ShowPrivateStorage(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowPrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowPrivateStorage"));
 
 	struct
 	{
@@ -35697,7 +35697,7 @@ void AWTLNPCActor::ShowPrivateStorage(class AWTLCharacter* Character)
 
 void AWTLNPCActor::ShowDialogNPCTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowDialogNPCTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowDialogNPCTakeQuest"));
 
 	struct
 	{
@@ -35725,7 +35725,7 @@ void AWTLNPCActor::ShowDialogNPCTakeQuest(class AWTLCharacter* Character, int Qu
 
 void AWTLNPCActor::ShowDialogNPCCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowDialogNPCCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowDialogNPCCompleteQuest"));
 
 	struct
 	{
@@ -35755,7 +35755,7 @@ void AWTLNPCActor::ShowDialogNPCCompleteQuest(class AWTLCharacter* Character, in
 
 void AWTLNPCActor::ShowDialogIfQuestNotInState(class AWTLCharacter* Character, int QuestID, EWTLQuestState QuestState, int NPCReplicaID, TArray<int> CharacterReplicaIDArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowDialogIfQuestNotInState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowDialogIfQuestNotInState"));
 
 	struct
 	{
@@ -35787,7 +35787,7 @@ void AWTLNPCActor::ShowDialogIfQuestNotInState(class AWTLCharacter* Character, i
 
 void AWTLNPCActor::ShowDialogIfQuestInState(class AWTLCharacter* Character, int QuestID, EWTLQuestState QuestState, int NPCReplicaID, TArray<int> CharacterReplicaIDArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowDialogIfQuestInState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowDialogIfQuestInState"));
 
 	struct
 	{
@@ -35817,7 +35817,7 @@ void AWTLNPCActor::ShowDialogIfQuestInState(class AWTLCharacter* Character, int 
 
 void AWTLNPCActor::ShowDialog(class AWTLCharacter* Character, int NPCReplicaID, TArray<int> CharacterReplicaIDArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowDialog"));
 
 	struct
 	{
@@ -35841,7 +35841,7 @@ void AWTLNPCActor::ShowDialog(class AWTLCharacter* Character, int NPCReplicaID, 
 
 void AWTLNPCActor::ShowClanStorage(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowClanStorage"));
 
 	struct
 	{
@@ -35861,7 +35861,7 @@ void AWTLNPCActor::ShowClanStorage(class AWTLCharacter* Character)
 
 void AWTLNPCActor::ShowClanNameRequestWidget(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowClanNameRequestWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowClanNameRequestWidget"));
 
 	struct
 	{
@@ -35881,7 +35881,7 @@ void AWTLNPCActor::ShowClanNameRequestWidget(class AWTLCharacter* Character)
 
 void AWTLNPCActor::ShowChangeParametersWidget(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ShowChangeParametersWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowChangeParametersWidget"));
 
 	struct
 	{
@@ -35904,7 +35904,7 @@ void AWTLNPCActor::ShowChangeParametersWidget(class AWTLCharacter* Character)
 
 void AWTLNPCActor::SetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.SetQuestState"));
 
 	struct
 	{
@@ -35934,7 +35934,7 @@ void AWTLNPCActor::SetQuestState(class AWTLCharacter* Character, int QuestID, EW
 
 void AWTLNPCActor::SetCharacterFaction(class AWTLCharacter* Character, EWTLFaction Faction, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.SetCharacterFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.SetCharacterFaction"));
 
 	struct
 	{
@@ -35961,7 +35961,7 @@ void AWTLNPCActor::SetCharacterFaction(class AWTLCharacter* Character, EWTLFacti
 
 void AWTLNPCActor::RemovePrivateStorage(class AWTLCharacter* Character, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.RemovePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.RemovePrivateStorage"));
 
 	struct
 	{
@@ -35986,7 +35986,7 @@ void AWTLNPCActor::RemovePrivateStorage(class AWTLCharacter* Character, EWTLNPCA
 
 void AWTLNPCActor::RemoveClanStorage(class AWTLCharacter* Character, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.RemoveClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.RemoveClanStorage"));
 
 	struct
 	{
@@ -36011,7 +36011,7 @@ void AWTLNPCActor::RemoveClanStorage(class AWTLCharacter* Character, EWTLNPCActi
 
 void AWTLNPCActor::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -36034,7 +36034,7 @@ void AWTLNPCActor::OnPlayerSelectReplica(class AWTLCharacter* Character, int Rep
 
 void AWTLNPCActor::OnPlayerSelectClanName(class AWTLCharacter* Character, const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnPlayerSelectClanName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnPlayerSelectClanName"));
 
 	struct
 	{
@@ -36056,7 +36056,7 @@ void AWTLNPCActor::OnPlayerSelectClanName(class AWTLCharacter* Character, const 
 
 void AWTLNPCActor::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -36081,7 +36081,7 @@ void AWTLNPCActor::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void AWTLNPCActor::OnFrightBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnFrightBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnFrightBeginOverlap"));
 
 	struct
 	{
@@ -36112,7 +36112,7 @@ void AWTLNPCActor::OnFrightBeginOverlap(class UPrimitiveComponent* OverlappedCom
 
 void AWTLNPCActor::OnCharacterTakeQuest(class AWTLCharacter* Character, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnCharacterTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnCharacterTakeQuest"));
 
 	struct
 	{
@@ -36135,7 +36135,7 @@ void AWTLNPCActor::OnCharacterTakeQuest(class AWTLCharacter* Character, int Ques
 
 void AWTLNPCActor::OnCharacterCompleteQuest(class AWTLCharacter* Character, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnCharacterCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnCharacterCompleteQuest"));
 
 	struct
 	{
@@ -36157,7 +36157,7 @@ void AWTLNPCActor::OnCharacterCompleteQuest(class AWTLCharacter* Character, int 
 
 void AWTLNPCActor::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnActionTrigger"));
 
 	struct
 	{
@@ -36181,7 +36181,7 @@ void AWTLNPCActor::OnActionTrigger(const struct FName& ActionName)
 
 void AWTLNPCActor::HealCharacter(class AWTLCharacter* Character, float MinValue, float MaxValue, int Price, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.HealCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.HealCharacter"));
 
 	struct
 	{
@@ -36212,7 +36212,7 @@ void AWTLNPCActor::HealCharacter(class AWTLCharacter* Character, float MinValue,
 
 bool AWTLNPCActor::HaveSupplyItems(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.HaveSupplyItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.HaveSupplyItems"));
 
 	struct
 	{
@@ -36237,7 +36237,7 @@ bool AWTLNPCActor::HaveSupplyItems(class AWTLCharacter* Character)
 
 void AWTLNPCActor::GiveMoneyToCharacter(class AWTLCharacter* Character, int MoneyAmount, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GiveMoneyToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GiveMoneyToCharacter"));
 
 	struct
 	{
@@ -36268,7 +36268,7 @@ void AWTLNPCActor::GiveMoneyToCharacter(class AWTLCharacter* Character, int Mone
 
 void AWTLNPCActor::GiveItemToCharacter(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Count, int Condition, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GiveItemToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GiveItemToCharacter"));
 
 	struct
 	{
@@ -36302,7 +36302,7 @@ void AWTLNPCActor::GiveItemToCharacter(class AWTLCharacter* Character, EWTLItemT
 
 void AWTLNPCActor::GiveItemsToCharacter(class AWTLCharacter* Character, TArray<struct FWTLGiveItemInfo> ItemsToGive, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GiveItemsToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GiveItemsToCharacter"));
 
 	struct
 	{
@@ -36333,7 +36333,7 @@ void AWTLNPCActor::GiveItemsToCharacter(class AWTLCharacter* Character, TArray<s
 
 void AWTLNPCActor::GetReplicaDialogGreeting(class AWTLCharacter* Character, EWTLNPCCheckResult* Result, int* QuestID, EWTLNPCReplicaAction* OutAction, int* NPCReplicaID, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetReplicaDialogGreeting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetReplicaDialogGreeting"));
 
 	struct
 	{
@@ -36371,7 +36371,7 @@ void AWTLNPCActor::GetReplicaDialogGreeting(class AWTLCharacter* Character, EWTL
 
 void AWTLNPCActor::GetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetQuestState"));
 
 	struct
 	{
@@ -36399,7 +36399,7 @@ void AWTLNPCActor::GetQuestState(class AWTLCharacter* Character, int QuestID, EW
 
 void AWTLNPCActor::GetQuestReplicas(class AWTLCharacter* Character, int InQuestID, struct FWTLQuestReplicas* OutQuestReplicas)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetQuestReplicas");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetQuestReplicas"));
 
 	struct
 	{
@@ -36429,7 +36429,7 @@ void AWTLNPCActor::GetQuestReplicas(class AWTLCharacter* Character, int InQuestI
 
 int AWTLNPCActor::GetItemRepairPrice(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Condition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetItemRepairPrice");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetItemRepairPrice"));
 
 	struct
 	{
@@ -36459,7 +36459,7 @@ int AWTLNPCActor::GetItemRepairPrice(class AWTLCharacter* Character, EWTLItemTyp
 
 EWTLSex AWTLNPCActor::GetCharacterSex(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterSex"));
 
 	struct
 	{
@@ -36483,7 +36483,7 @@ EWTLSex AWTLNPCActor::GetCharacterSex(class AWTLCharacter* Character)
 
 unsigned char AWTLNPCActor::GetCharacterPrivateStorageSlotCount(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterPrivateStorageSlotCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterPrivateStorageSlotCount"));
 
 	struct
 	{
@@ -36507,7 +36507,7 @@ unsigned char AWTLNPCActor::GetCharacterPrivateStorageSlotCount(class AWTLCharac
 
 float AWTLNPCActor::GetCharacterMaxHealth(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterMaxHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterMaxHealth"));
 
 	struct
 	{
@@ -36531,7 +36531,7 @@ float AWTLNPCActor::GetCharacterMaxHealth(class AWTLCharacter* Character)
 
 unsigned char AWTLNPCActor::GetCharacterLevel(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterLevel"));
 
 	struct
 	{
@@ -36555,7 +36555,7 @@ unsigned char AWTLNPCActor::GetCharacterLevel(class AWTLCharacter* Character)
 
 int AWTLNPCActor::GetCharacterInventoryAvailableSlotCount(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterInventoryAvailableSlotCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterInventoryAvailableSlotCount"));
 
 	struct
 	{
@@ -36579,7 +36579,7 @@ int AWTLNPCActor::GetCharacterInventoryAvailableSlotCount(class AWTLCharacter* C
 
 float AWTLNPCActor::GetCharacterHealthPercent(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterHealthPercent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterHealthPercent"));
 
 	struct
 	{
@@ -36603,7 +36603,7 @@ float AWTLNPCActor::GetCharacterHealthPercent(class AWTLCharacter* Character)
 
 float AWTLNPCActor::GetCharacterHealth(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterHealth");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterHealth"));
 
 	struct
 	{
@@ -36627,7 +36627,7 @@ float AWTLNPCActor::GetCharacterHealth(class AWTLCharacter* Character)
 
 void AWTLNPCActor::GetCharacterFaction(class AWTLCharacter* Character, EWTLFaction* Faction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterFaction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterFaction"));
 
 	struct
 	{
@@ -36652,7 +36652,7 @@ void AWTLNPCActor::GetCharacterFaction(class AWTLCharacter* Character, EWTLFacti
 
 EWTLCharacterClass AWTLNPCActor::GetCharacterClass(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterClass"));
 
 	struct
 	{
@@ -36676,7 +36676,7 @@ EWTLCharacterClass AWTLNPCActor::GetCharacterClass(class AWTLCharacter* Characte
 
 unsigned char AWTLNPCActor::GetCharacterClanStorageTabCount(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.GetCharacterClanStorageTabCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.GetCharacterClanStorageTabCount"));
 
 	struct
 	{
@@ -36697,7 +36697,7 @@ unsigned char AWTLNPCActor::GetCharacterClanStorageTabCount(class AWTLCharacter*
 
 void AWTLNPCActor::FillDataToQuestArray()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.FillDataToQuestArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.FillDataToQuestArray"));
 
 	struct
 	{
@@ -36715,7 +36715,7 @@ void AWTLNPCActor::FillDataToQuestArray()
 
 void AWTLNPCActor::EndDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.EndDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.EndDialog"));
 
 	struct
 	{
@@ -36736,7 +36736,7 @@ void AWTLNPCActor::EndDialog(class AWTLCharacter* Character)
 
 void AWTLNPCActor::CreatePrivateStorage(class AWTLCharacter* Character, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CreatePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CreatePrivateStorage"));
 
 	struct
 	{
@@ -36764,7 +36764,7 @@ void AWTLNPCActor::CreatePrivateStorage(class AWTLCharacter* Character, EWTLNPCA
 
 void AWTLNPCActor::CreateMapMarker(class AWTLCharacter* Character, const struct FVector& MarkerPosition, const struct FString& MarkerName, bool ShowOnMinimap, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CreateMapMarker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CreateMapMarker"));
 
 	struct
 	{
@@ -36795,7 +36795,7 @@ void AWTLNPCActor::CreateMapMarker(class AWTLCharacter* Character, const struct 
 
 void AWTLNPCActor::CreateClanStorage(class AWTLCharacter* Character, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CreateClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CreateClanStorage"));
 
 	struct
 	{
@@ -36821,7 +36821,7 @@ void AWTLNPCActor::CreateClanStorage(class AWTLCharacter* Character, EWTLNPCActi
 
 void AWTLNPCActor::CreateClan(class AWTLCharacter* Character, const struct FString& ClanName, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CreateClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CreateClan"));
 
 	struct
 	{
@@ -36851,7 +36851,7 @@ void AWTLNPCActor::CreateClan(class AWTLCharacter* Character, const struct FStri
 
 void AWTLNPCActor::CheckReplicaForTakeQuestWithDialog(class AWTLCharacter* Character, int ReplicaID, int DialogReplicaID, TArray<int> DialogReplicaArray, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForTakeQuestWithDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForTakeQuestWithDialog"));
 
 	struct
 	{
@@ -36886,7 +36886,7 @@ void AWTLNPCActor::CheckReplicaForTakeQuestWithDialog(class AWTLCharacter* Chara
 
 void AWTLNPCActor::CheckReplicaForTakeQuest(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result, int* QuestID, EWTLNPCReplicaAction* OutAction, EWTLNPCReason* Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForTakeQuest"));
 
 	struct
 	{
@@ -36923,7 +36923,7 @@ void AWTLNPCActor::CheckReplicaForTakeQuest(class AWTLCharacter* Character, int 
 
 void AWTLNPCActor::CheckReplicaForSupply(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForSupply");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForSupply"));
 
 	struct
 	{
@@ -36950,7 +36950,7 @@ void AWTLNPCActor::CheckReplicaForSupply(class AWTLCharacter* Character, int Rep
 
 void AWTLNPCActor::CheckReplicaForReMainDialog(int ReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForReMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForReMainDialog"));
 
 	struct
 	{
@@ -36978,7 +36978,7 @@ void AWTLNPCActor::CheckReplicaForReMainDialog(int ReplicaID, EWTLNPCCheckResult
 
 void AWTLNPCActor::CheckReplicaForRejectQuest(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result, int* QuestID, EWTLNPCReplicaAction* OutAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForRejectQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForRejectQuest"));
 
 	struct
 	{
@@ -37012,7 +37012,7 @@ void AWTLNPCActor::CheckReplicaForRejectQuest(class AWTLCharacter* Character, in
 
 void AWTLNPCActor::CheckReplicaForQuestDialog(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForQuestDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForQuestDialog"));
 
 	struct
 	{
@@ -37042,7 +37042,7 @@ void AWTLNPCActor::CheckReplicaForQuestDialog(class AWTLCharacter* Character, in
 
 void AWTLNPCActor::CheckReplicaForQuestDescription(class AWTLCharacter* Character, int ReplicaID, int DescriptionReplicaID, int ReturnReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForQuestDescription");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForQuestDescription"));
 
 	struct
 	{
@@ -37075,7 +37075,7 @@ void AWTLNPCActor::CheckReplicaForQuestDescription(class AWTLCharacter* Characte
 
 void AWTLNPCActor::CheckReplicaForInfoQuest(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result, struct FWTLQuestReplicas* OutQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForInfoQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForInfoQuest"));
 
 	struct
 	{
@@ -37105,7 +37105,7 @@ void AWTLNPCActor::CheckReplicaForInfoQuest(class AWTLCharacter* Character, int 
 
 void AWTLNPCActor::CheckReplicaForHaveJob(int ReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForHaveJob");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForHaveJob"));
 
 	struct
 	{
@@ -37130,7 +37130,7 @@ void AWTLNPCActor::CheckReplicaForHaveJob(int ReplicaID, EWTLNPCCheckResult* Res
 
 void AWTLNPCActor::CheckReplicaForEndDialog(int ReplicaID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForEndDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForEndDialog"));
 
 	struct
 	{
@@ -37158,7 +37158,7 @@ void AWTLNPCActor::CheckReplicaForEndDialog(int ReplicaID, EWTLNPCCheckResult* R
 
 void AWTLNPCActor::CheckReplicaForCompleteQuestWithDialog(class AWTLCharacter* Character, int ReplicaID, int DialogReplicaID, TArray<int> DialogReplicaArray, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForCompleteQuestWithDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForCompleteQuestWithDialog"));
 
 	struct
 	{
@@ -37193,7 +37193,7 @@ void AWTLNPCActor::CheckReplicaForCompleteQuestWithDialog(class AWTLCharacter* C
 
 void AWTLNPCActor::CheckReplicaForCompleteQuest(class AWTLCharacter* Character, int ReplicaID, EWTLNPCCheckResult* Result, int* QuestID, EWTLNPCReplicaAction* OutAction, EWTLNPCReason* Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckReplicaForCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckReplicaForCompleteQuest"));
 
 	struct
 	{
@@ -37229,7 +37229,7 @@ void AWTLNPCActor::CheckReplicaForCompleteQuest(class AWTLCharacter* Character, 
 
 void AWTLNPCActor::CheckCharacterHavePrivateStorage(class AWTLCharacter* Character, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterHavePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterHavePrivateStorage"));
 
 	struct
 	{
@@ -37255,7 +37255,7 @@ void AWTLNPCActor::CheckCharacterHavePrivateStorage(class AWTLCharacter* Charact
 
 void AWTLNPCActor::CheckCharacterHaveEnoughMoney(class AWTLCharacter* Character, int MoneyAmount, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterHaveEnoughMoney");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterHaveEnoughMoney"));
 
 	struct
 	{
@@ -37283,7 +37283,7 @@ void AWTLNPCActor::CheckCharacterHaveEnoughMoney(class AWTLCharacter* Character,
 
 bool AWTLNPCActor::CheckCharacterHaveEnoughAvailableInventorySlots(class AWTLCharacter* Character, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterHaveEnoughAvailableInventorySlots");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterHaveEnoughAvailableInventorySlots"));
 
 	struct
 	{
@@ -37309,7 +37309,7 @@ bool AWTLNPCActor::CheckCharacterHaveEnoughAvailableInventorySlots(class AWTLCha
 
 void AWTLNPCActor::CheckCharacterHaveClanStorage(class AWTLCharacter* Character, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterHaveClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterHaveClanStorage"));
 
 	struct
 	{
@@ -37334,7 +37334,7 @@ void AWTLNPCActor::CheckCharacterHaveClanStorage(class AWTLCharacter* Character,
 
 bool AWTLNPCActor::CheckCharacterHaveAvailableInventorySlots(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterHaveAvailableInventorySlots");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterHaveAvailableInventorySlots"));
 
 	struct
 	{
@@ -37358,7 +37358,7 @@ bool AWTLNPCActor::CheckCharacterHaveAvailableInventorySlots(class AWTLCharacter
 
 void AWTLNPCActor::CheckCharacterCanCreateClanStorage(class AWTLCharacter* Character, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CheckCharacterCanCreateClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CheckCharacterCanCreateClanStorage"));
 
 	struct
 	{
@@ -37383,7 +37383,7 @@ void AWTLNPCActor::CheckCharacterCanCreateClanStorage(class AWTLCharacter* Chara
 
 bool AWTLNPCActor::CharacterHavePrivateStorage(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterHavePrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterHavePrivateStorage"));
 
 	struct
 	{
@@ -37408,7 +37408,7 @@ bool AWTLNPCActor::CharacterHavePrivateStorage(class AWTLCharacter* Character)
 
 bool AWTLNPCActor::CharacterHaveItems(class AWTLCharacter* Character, TArray<struct FWTLTakeItemInfo> Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterHaveItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterHaveItems"));
 
 	struct
 	{
@@ -37437,7 +37437,7 @@ bool AWTLNPCActor::CharacterHaveItems(class AWTLCharacter* Character, TArray<str
 
 bool AWTLNPCActor::CharacterHaveItem(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterHaveItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterHaveItem"));
 
 	struct
 	{
@@ -37468,7 +37468,7 @@ bool AWTLNPCActor::CharacterHaveItem(class AWTLCharacter* Character, EWTLItemTyp
 
 bool AWTLNPCActor::CharacterHaveEnoughMoney(class AWTLCharacter* Character, int MoneyAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterHaveEnoughMoney");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterHaveEnoughMoney"));
 
 	struct
 	{
@@ -37494,7 +37494,7 @@ bool AWTLNPCActor::CharacterHaveEnoughMoney(class AWTLCharacter* Character, int 
 
 bool AWTLNPCActor::CharacterHaveClanStorage(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterHaveClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterHaveClanStorage"));
 
 	struct
 	{
@@ -37518,7 +37518,7 @@ bool AWTLNPCActor::CharacterHaveClanStorage(class AWTLCharacter* Character)
 
 bool AWTLNPCActor::CharacterCustomized(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCustomized");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCustomized"));
 
 	struct
 	{
@@ -37543,7 +37543,7 @@ bool AWTLNPCActor::CharacterCustomized(class AWTLCharacter* Character)
 
 void AWTLNPCActor::CharacterCanTakeQuestList(class AWTLCharacter* Character, TArray<struct FWTLQuestInfo> InQuestArray, TArray<struct FWTLQuestInfo>* OutQuestArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanTakeQuestList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanTakeQuestList"));
 
 	struct
 	{
@@ -37571,7 +37571,7 @@ void AWTLNPCActor::CharacterCanTakeQuestList(class AWTLCharacter* Character, TAr
 
 void AWTLNPCActor::CharacterCanTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanTakeQuest"));
 
 	struct
 	{
@@ -37598,7 +37598,7 @@ void AWTLNPCActor::CharacterCanTakeQuest(class AWTLCharacter* Character, int Que
 
 void AWTLNPCActor::CharacterCanTakeAnyQuestFromQuestArray(class AWTLCharacter* Character, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanTakeAnyQuestFromQuestArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanTakeAnyQuestFromQuestArray"));
 
 	struct
 	{
@@ -37624,7 +37624,7 @@ void AWTLNPCActor::CharacterCanTakeAnyQuestFromQuestArray(class AWTLCharacter* C
 
 void AWTLNPCActor::CharacterCanTakeAnyQuest(class AWTLCharacter* Character, TArray<int> QuestIDs, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanTakeAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanTakeAnyQuest"));
 
 	struct
 	{
@@ -37651,7 +37651,7 @@ void AWTLNPCActor::CharacterCanTakeAnyQuest(class AWTLCharacter* Character, TArr
 
 bool AWTLNPCActor::CharacterCanCreateClanStorage(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCreateClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCreateClanStorage"));
 
 	struct
 	{
@@ -37676,7 +37676,7 @@ bool AWTLNPCActor::CharacterCanCreateClanStorage(class AWTLCharacter* Character)
 
 bool AWTLNPCActor::CharacterCanCreateClan(class AWTLCharacter* Character, bool DoFullCheck)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCreateClan");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCreateClan"));
 
 	struct
 	{
@@ -37703,7 +37703,7 @@ bool AWTLNPCActor::CharacterCanCreateClan(class AWTLCharacter* Character, bool D
 
 void AWTLNPCActor::CharacterCanCompleteQuestList(class AWTLCharacter* Character, TArray<struct FWTLQuestInfo> InQuestArray, TArray<struct FWTLQuestInfo>* OutQuestArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCompleteQuestList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCompleteQuestList"));
 
 	struct
 	{
@@ -37731,7 +37731,7 @@ void AWTLNPCActor::CharacterCanCompleteQuestList(class AWTLCharacter* Character,
 
 void AWTLNPCActor::CharacterCanCompleteQuestFromQuestArray(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCompleteQuestFromQuestArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCompleteQuestFromQuestArray"));
 
 	struct
 	{
@@ -37759,7 +37759,7 @@ void AWTLNPCActor::CharacterCanCompleteQuestFromQuestArray(class AWTLCharacter* 
 
 void AWTLNPCActor::CharacterCanCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -37786,7 +37786,7 @@ void AWTLNPCActor::CharacterCanCompleteQuest(class AWTLCharacter* Character, int
 
 void AWTLNPCActor::CharacterCanCompleteAnyQuestFromQuestArray(class AWTLCharacter* Character, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCompleteAnyQuestFromQuestArray");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCompleteAnyQuestFromQuestArray"));
 
 	struct
 	{
@@ -37812,7 +37812,7 @@ void AWTLNPCActor::CharacterCanCompleteAnyQuestFromQuestArray(class AWTLCharacte
 
 void AWTLNPCActor::CharacterCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int> QuestIDs, EWTLNPCCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CharacterCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CharacterCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -37839,7 +37839,7 @@ void AWTLNPCActor::CharacterCanCompleteAnyQuest(class AWTLCharacter* Character, 
 
 void AWTLNPCActor::ChangeCharacterSex(class AWTLCharacter* Character, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ChangeCharacterSex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ChangeCharacterSex"));
 
 	struct
 	{
@@ -37863,7 +37863,7 @@ void AWTLNPCActor::ChangeCharacterSex(class AWTLCharacter* Character, EWTLNPCAct
 
 bool AWTLNPCActor::CanTrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CanTrade");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CanTrade"));
 
 	struct
 	{
@@ -37888,7 +37888,7 @@ bool AWTLNPCActor::CanTrade()
 
 bool AWTLNPCActor::CanRepairItem(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Condition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CanRepairItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CanRepairItem"));
 
 	struct
 	{
@@ -37918,7 +37918,7 @@ bool AWTLNPCActor::CanRepairItem(class AWTLCharacter* Character, EWTLItemType It
 
 bool AWTLNPCActor::CanDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.CanDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.CanDialog"));
 
 	struct
 	{
@@ -37942,7 +37942,7 @@ bool AWTLNPCActor::CanDialog(class AWTLCharacter* Character)
 
 void AWTLNPCActor::BranchCharacterClass(class AWTLCharacter* Character, EWTLCharacterClass* CharacterClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.BranchCharacterClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.BranchCharacterClass"));
 
 	struct
 	{
@@ -37966,7 +37966,7 @@ void AWTLNPCActor::BranchCharacterClass(class AWTLCharacter* Character, EWTLChar
 
 void AWTLNPCActor::BeginTrade(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.BeginTrade");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.BeginTrade"));
 
 	struct
 	{
@@ -37986,7 +37986,7 @@ void AWTLNPCActor::BeginTrade(class AWTLCharacter* Character)
 
 void AWTLNPCActor::BeginRepair(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.BeginRepair");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.BeginRepair"));
 
 	struct
 	{
@@ -38006,7 +38006,7 @@ void AWTLNPCActor::BeginRepair(class AWTLCharacter* Character)
 
 void AWTLNPCActor::BeginItemsCustomization(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.BeginItemsCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.BeginItemsCustomization"));
 
 	struct
 	{
@@ -38028,7 +38028,7 @@ void AWTLNPCActor::BeginItemsCustomization(class AWTLCharacter* Character)
 
 void AWTLNPCActor::AddTabsToClanStorage(class AWTLCharacter* Character, unsigned char TabCount, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddTabsToClanStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddTabsToClanStorage"));
 
 	struct
 	{
@@ -38056,7 +38056,7 @@ void AWTLNPCActor::AddTabsToClanStorage(class AWTLCharacter* Character, unsigned
 
 void AWTLNPCActor::AddSlotsToPrivateStorage(class AWTLCharacter* Character, unsigned char SlotCount, EWTLNPCActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddSlotsToPrivateStorage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddSlotsToPrivateStorage"));
 
 	struct
 	{
@@ -38087,7 +38087,7 @@ void AWTLNPCActor::AddSlotsToPrivateStorage(class AWTLCharacter* Character, unsi
 
 void AWTLNPCActor::AddReplicaIfQuestNotInState(class AWTLCharacter* Character, TArray<int> InReplicaArray, int QuestID, EWTLQuestState QuestState, int AddReplicaID, TArray<int>* OutReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddReplicaIfQuestNotInState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddReplicaIfQuestNotInState"));
 
 	struct
 	{
@@ -38124,7 +38124,7 @@ void AWTLNPCActor::AddReplicaIfQuestNotInState(class AWTLCharacter* Character, T
 
 void AWTLNPCActor::AddReplicaIfQuestInState(class AWTLCharacter* Character, TArray<int> InReplicaArray, int QuestID, EWTLQuestState QuestState, int AddReplicaID, TArray<int>* OutReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddReplicaIfQuestInState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddReplicaIfQuestInState"));
 
 	struct
 	{
@@ -38160,7 +38160,7 @@ void AWTLNPCActor::AddReplicaIfQuestInState(class AWTLCharacter* Character, TArr
 
 void AWTLNPCActor::AddReplicaIfCharacterCanTakeQuest(class AWTLCharacter* Character, TArray<int> InReplicaArray, int QuestID, int AddReplicaID, TArray<int>* OutReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddReplicaIfCharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddReplicaIfCharacterCanTakeQuest"));
 
 	struct
 	{
@@ -38194,7 +38194,7 @@ void AWTLNPCActor::AddReplicaIfCharacterCanTakeQuest(class AWTLCharacter* Charac
 
 void AWTLNPCActor::AddReplicaIfCharacterCanCompleteQuest(class AWTLCharacter* Character, TArray<int> InReplicaArray, int QuestID, int AddReplicaID, TArray<int>* OutReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.AddReplicaIfCharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.AddReplicaIfCharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -38224,7 +38224,7 @@ void AWTLNPCActor::AddReplicaIfCharacterCanCompleteQuest(class AWTLCharacter* Ch
 
 void AWTLNPCActor::ActivateDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCActor.ActivateDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ActivateDialog"));
 
 	struct
 	{
@@ -38244,7 +38244,7 @@ void AWTLNPCActor::ActivateDialog(class AWTLCharacter* Character)
 
 void UWTLNPCAnimInstance::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCAnimInstance.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCAnimInstance.OnActionTrigger"));
 
 	struct
 	{
@@ -38264,7 +38264,7 @@ void UWTLNPCAnimInstance::OnActionTrigger(const struct FName& ActionName)
 
 void AWTLNPCEnvironmentActor::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCEnvironmentActor.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCEnvironmentActor.OnActionTrigger"));
 
 	struct
 	{
@@ -38285,7 +38285,7 @@ void AWTLNPCEnvironmentActor::OnActionTrigger(const struct FName& ActionName)
 
 bool AWTLNPCPawnAI::Shot(const struct FTransform& Transform)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCPawnAI.Shot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCPawnAI.Shot"));
 
 	struct
 	{
@@ -38308,7 +38308,7 @@ bool AWTLNPCPawnAI::Shot(const struct FTransform& Transform)
 
 void AWTLNPCPawnAI::OnReplicatedMovement(float DeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNPCPawnAI.OnReplicatedMovement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCPawnAI.OnReplicatedMovement"));
 
 	struct
 	{
@@ -38326,7 +38326,7 @@ void AWTLNPCPawnAI::OnReplicatedMovement(float DeltaTime)
 
 void AWTLNut::OnRep_ReplicatedInitialSpeed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNut.OnRep_ReplicatedInitialSpeed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNut.OnRep_ReplicatedInitialSpeed"));
 
 	struct
 	{
@@ -38347,7 +38347,7 @@ void AWTLNut::OnRep_ReplicatedInitialSpeed()
 
 void AWTLNut::OnHit(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNut.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNut.OnHit"));
 
 	struct
 	{
@@ -38374,7 +38374,7 @@ void AWTLNut::OnHit(class AActor* OtherActor, class UPrimitiveComponent* OtherCo
 
 void AWTLNut::ChangeSpeedAndDirection(float Speed, const struct FVector& Direction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNut.ChangeSpeedAndDirection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNut.ChangeSpeedAndDirection"));
 
 	struct
 	{
@@ -38396,7 +38396,7 @@ void AWTLNut::ChangeSpeedAndDirection(float Speed, const struct FVector& Directi
 
 void UWTLNvidiaHighlightsBlueprintFunctionLibrary::OpenSummary(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.OpenSummary");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.OpenSummary"));
 
 	struct
 	{
@@ -38418,7 +38418,7 @@ void UWTLNvidiaHighlightsBlueprintFunctionLibrary::OpenSummary(class UObject* Wo
 
 bool UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetIsHighlightsInitialized(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetIsHighlightsInitialized");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetIsHighlightsInitialized"));
 
 	struct
 	{
@@ -38443,7 +38443,7 @@ bool UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetIsHighlightsInitialized(cl
 
 int UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetHighlightsCount(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetHighlightsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetHighlightsCount"));
 
 	struct
 	{
@@ -38468,7 +38468,7 @@ int UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetHighlightsCount(class UObje
 
 struct FString UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetCurrentGroupName(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetCurrentGroupName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.GetCurrentGroupName"));
 
 	struct
 	{
@@ -38495,7 +38495,7 @@ struct FString UWTLNvidiaHighlightsBlueprintFunctionLibrary::GetCurrentGroupName
 
 void UWTLNvidiaHighlightsBlueprintFunctionLibrary::CaptureVideo(class UObject* WorldContext, EWTLHighlightID HighlightId, float BeginDeltaSeconds, float EndDeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.CaptureVideo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.CaptureVideo"));
 
 	struct
 	{
@@ -38523,7 +38523,7 @@ void UWTLNvidiaHighlightsBlueprintFunctionLibrary::CaptureVideo(class UObject* W
 
 void UWTLNvidiaHighlightsBlueprintFunctionLibrary::CaptureScreenshot(class UObject* WorldContext, EWTLHighlightID HighlightId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.CaptureScreenshot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsBlueprintFunctionLibrary.CaptureScreenshot"));
 
 	struct
 	{
@@ -38544,7 +38544,7 @@ void UWTLNvidiaHighlightsBlueprintFunctionLibrary::CaptureScreenshot(class UObje
 
 void UWTLNvidiaHighlightsLibrary::Dummy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLNvidiaHighlightsLibrary.Dummy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNvidiaHighlightsLibrary.Dummy"));
 
 	struct
 	{
@@ -38560,7 +38560,7 @@ void UWTLNvidiaHighlightsLibrary::Dummy()
 
 void UWTLOptionsActionKeyBinder::OnMainActionKeyBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsActionKeyBinder.OnMainActionKeyBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsActionKeyBinder.OnMainActionKeyBtnClick"));
 
 	struct
 	{
@@ -38576,7 +38576,7 @@ void UWTLOptionsActionKeyBinder::OnMainActionKeyBtnClick()
 
 void UWTLOptionsActionKeyBinder::OnAlternateActionKeyBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsActionKeyBinder.OnAlternateActionKeyBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsActionKeyBinder.OnAlternateActionKeyBtnClick"));
 
 	struct
 	{
@@ -38595,7 +38595,7 @@ void UWTLOptionsActionKeyBinder::OnAlternateActionKeyBtnClick()
 
 void UWTLOptionsAudio::OnAudioDriverSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsAudio.OnAudioDriverSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsAudio.OnAudioDriverSelectionChanged"));
 
 	struct
 	{
@@ -38618,7 +38618,7 @@ void UWTLOptionsAudio::OnAudioDriverSelectionChanged(const struct FString& Selec
 
 void UWTLPDAColorWheel::OnHexCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAColorWheel.OnHexCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAColorWheel.OnHexCommitted"));
 
 	struct
 	{
@@ -38640,7 +38640,7 @@ void UWTLPDAColorWheel::OnHexCommitted(const struct FText& Text, TEnumAsByte<ETe
 
 void UWTLPDAColorWheel::OnHexChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAColorWheel.OnHexChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAColorWheel.OnHexChanged"));
 
 	struct
 	{
@@ -38660,7 +38660,7 @@ void UWTLPDAColorWheel::OnHexChanged(const struct FText& Text)
 
 void UWTLOptionsColorWheel::OnAlphaSpinBoxValueChanged(float InValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsColorWheel.OnAlphaSpinBoxValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsColorWheel.OnAlphaSpinBoxValueChanged"));
 
 	struct
 	{
@@ -38678,7 +38678,7 @@ void UWTLOptionsColorWheel::OnAlphaSpinBoxValueChanged(float InValue)
 
 void UWTLOptionsControl::ResetMainInputs()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.ResetMainInputs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.ResetMainInputs"));
 
 	struct
 	{
@@ -38694,7 +38694,7 @@ void UWTLOptionsControl::ResetMainInputs()
 
 void UWTLOptionsControl::ResetAlternateInputs()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.ResetAlternateInputs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.ResetAlternateInputs"));
 
 	struct
 	{
@@ -38710,7 +38710,7 @@ void UWTLOptionsControl::ResetAlternateInputs()
 
 void UWTLOptionsControl::OnMainInputsResetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.OnMainInputsResetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.OnMainInputsResetBtnClick"));
 
 	struct
 	{
@@ -38728,7 +38728,7 @@ void UWTLOptionsControl::OnMainInputsResetBtnClick()
 
 void UWTLOptionsControl::OnInputStartBind(class UWTLOptionsActionKeyBinder* ActionKeyBinder)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.OnInputStartBind");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.OnInputStartBind"));
 
 	struct
 	{
@@ -38746,7 +38746,7 @@ void UWTLOptionsControl::OnInputStartBind(class UWTLOptionsActionKeyBinder* Acti
 
 void UWTLOptionsControl::OnAlternateInputsResetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.OnAlternateInputsResetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.OnAlternateInputsResetBtnClick"));
 
 	struct
 	{
@@ -38762,7 +38762,7 @@ void UWTLOptionsControl::OnAlternateInputsResetBtnClick()
 
 void UWTLOptionsControl::InputBindConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.InputBindConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.InputBindConfirmed"));
 
 	struct
 	{
@@ -38778,7 +38778,7 @@ void UWTLOptionsControl::InputBindConfirmed()
 
 void UWTLOptionsControl::InputBindCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsControl.InputBindCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsControl.InputBindCanceled"));
 
 	struct
 	{
@@ -38796,7 +38796,7 @@ void UWTLOptionsControl::InputBindCanceled()
 
 void UWTLOptionsGame::OnNVIDIAHighlightsCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGame.OnNVIDIAHighlightsCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGame.OnNVIDIAHighlightsCheckStateChanged"));
 
 	struct
 	{
@@ -38817,7 +38817,7 @@ void UWTLOptionsGame::OnNVIDIAHighlightsCheckStateChanged(bool bIsChecked)
 
 void UWTLOptionsGame::OnLanguageSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGame.OnLanguageSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGame.OnLanguageSelectionChanged"));
 
 	struct
 	{
@@ -38839,7 +38839,7 @@ void UWTLOptionsGame::OnLanguageSelectionChanged(const struct FString& SelectedO
 
 void UWTLOptionsGraphic::OnScreenModeChange(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGraphic.OnScreenModeChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGraphic.OnScreenModeChange"));
 
 	struct
 	{
@@ -38859,7 +38859,7 @@ void UWTLOptionsGraphic::OnScreenModeChange(int CurrentIndex)
 
 void UWTLOptionsGraphic::OnResolutionChange(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGraphic.OnResolutionChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGraphic.OnResolutionChange"));
 
 	struct
 	{
@@ -38879,7 +38879,7 @@ void UWTLOptionsGraphic::OnResolutionChange(int CurrentIndex)
 
 void UWTLOptionsGraphic::OnQualityLevelChange(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGraphic.OnQualityLevelChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGraphic.OnQualityLevelChange"));
 
 	struct
 	{
@@ -38897,7 +38897,7 @@ void UWTLOptionsGraphic::OnQualityLevelChange(int CurrentIndex)
 
 void UWTLOptionsGraphic::OnDisplayOnPrimaryMonitorBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGraphic.OnDisplayOnPrimaryMonitorBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGraphic.OnDisplayOnPrimaryMonitorBtnClicked"));
 
 	struct
 	{
@@ -38915,7 +38915,7 @@ void UWTLOptionsGraphic::OnDisplayOnPrimaryMonitorBtnClicked()
 
 void UWTLOptionsGraphic::OnCommonQualityLevelChange(int CurrentIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsGraphic.OnCommonQualityLevelChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsGraphic.OnCommonQualityLevelChange"));
 
 	struct
 	{
@@ -38936,7 +38936,7 @@ void UWTLOptionsGraphic::OnCommonQualityLevelChange(int CurrentIndex)
 
 void UWTLOptionsInterface::OnCrosshairColorBtnClicked(const struct FGeometry& BtnGeometry, const struct FPointerEvent& InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsInterface.OnCrosshairColorBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsInterface.OnCrosshairColorBtnClicked"));
 
 	struct
 	{
@@ -38958,7 +38958,7 @@ void UWTLOptionsInterface::OnCrosshairColorBtnClicked(const struct FGeometry& Bt
 
 void UWTLOptionsParameterSliderBase::OnSliderValueChanged(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsParameterSliderBase.OnSliderValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsParameterSliderBase.OnSliderValueChanged"));
 
 	struct
 	{
@@ -38976,7 +38976,7 @@ void UWTLOptionsParameterSliderBase::OnSliderValueChanged(float Value)
 
 void UWTLOptionsParameterSwitcher::OnPreviousBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsParameterSwitcher.OnPreviousBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsParameterSwitcher.OnPreviousBtnClick"));
 
 	struct
 	{
@@ -38992,7 +38992,7 @@ void UWTLOptionsParameterSwitcher::OnPreviousBtnClick()
 
 void UWTLOptionsParameterSwitcher::OnNextBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsParameterSwitcher.OnNextBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsParameterSwitcher.OnNextBtnClick"));
 
 	struct
 	{
@@ -39010,7 +39010,7 @@ void UWTLOptionsParameterSwitcher::OnNextBtnClick()
 
 void UWTLOptionsPostProcess::OnRedBalanceValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsPostProcess.OnRedBalanceValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsPostProcess.OnRedBalanceValueChanged"));
 
 	struct
 	{
@@ -39030,7 +39030,7 @@ void UWTLOptionsPostProcess::OnRedBalanceValueChanged(float CurrentValue)
 
 void UWTLOptionsPostProcess::OnGreenBalanceValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsPostProcess.OnGreenBalanceValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsPostProcess.OnGreenBalanceValueChanged"));
 
 	struct
 	{
@@ -39050,7 +39050,7 @@ void UWTLOptionsPostProcess::OnGreenBalanceValueChanged(float CurrentValue)
 
 void UWTLOptionsPostProcess::OnGammaValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsPostProcess.OnGammaValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsPostProcess.OnGammaValueChanged"));
 
 	struct
 	{
@@ -39070,7 +39070,7 @@ void UWTLOptionsPostProcess::OnGammaValueChanged(float CurrentValue)
 
 void UWTLOptionsPostProcess::OnContrastValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsPostProcess.OnContrastValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsPostProcess.OnContrastValueChanged"));
 
 	struct
 	{
@@ -39090,7 +39090,7 @@ void UWTLOptionsPostProcess::OnContrastValueChanged(float CurrentValue)
 
 void UWTLOptionsPostProcess::OnBlueBalanceValueChanged(float CurrentValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLOptionsPostProcess.OnBlueBalanceValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLOptionsPostProcess.OnBlueBalanceValueChanged"));
 
 	struct
 	{
@@ -39110,7 +39110,7 @@ void UWTLOptionsPostProcess::OnBlueBalanceValueChanged(float CurrentValue)
 
 void UWTLPawnMovementComponent::SetSpeed(float Speed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPawnMovementComponent.SetSpeed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPawnMovementComponent.SetSpeed"));
 
 	struct
 	{
@@ -39130,7 +39130,7 @@ void UWTLPawnMovementComponent::SetSpeed(float Speed)
 
 void UWTLPawnMovementComponent::SetEnableGravity(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPawnMovementComponent.SetEnableGravity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPawnMovementComponent.SetEnableGravity"));
 
 	struct
 	{
@@ -39148,7 +39148,7 @@ void UWTLPawnMovementComponent::SetEnableGravity(bool Value)
 
 void UWTLPDACharacterInfo::OnSetPvPModeShowConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterInfo.OnSetPvPModeShowConfirmation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterInfo.OnSetPvPModeShowConfirmation"));
 
 	struct
 	{
@@ -39164,7 +39164,7 @@ void UWTLPDACharacterInfo::OnSetPvPModeShowConfirmation()
 
 void UWTLPDACharacterInfo::OnSetPvPModeConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterInfo.OnSetPvPModeConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterInfo.OnSetPvPModeConfirmed"));
 
 	struct
 	{
@@ -39180,7 +39180,7 @@ void UWTLPDACharacterInfo::OnSetPvPModeConfirmed()
 
 void UWTLPDACharacterInfo::OnSetPvPModeButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterInfo.OnSetPvPModeButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterInfo.OnSetPvPModeButtonClicked"));
 
 	struct
 	{
@@ -39196,7 +39196,7 @@ void UWTLPDACharacterInfo::OnSetPvPModeButtonClicked()
 
 void UWTLPDACharacterInfo::OnClanImageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterInfo.OnClanImageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterInfo.OnClanImageBtnClicked"));
 
 	struct
 	{
@@ -39212,7 +39212,7 @@ void UWTLPDACharacterInfo::OnClanImageBtnClicked()
 
 void UWTLPDACharacterParameters::SetConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterParameters.SetConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.SetConfirmed"));
 
 	struct
 	{
@@ -39228,7 +39228,7 @@ void UWTLPDACharacterParameters::SetConfirmed()
 
 void UWTLPDACharacterParameters::OnSetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterParameters.OnSetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.OnSetBtnClick"));
 
 	struct
 	{
@@ -39244,7 +39244,7 @@ void UWTLPDACharacterParameters::OnSetBtnClick()
 
 void UWTLPDACharacterParameters::OnResetToDefaultBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterParameters.OnResetToDefaultBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.OnResetToDefaultBtnClick"));
 
 	struct
 	{
@@ -39260,7 +39260,7 @@ void UWTLPDACharacterParameters::OnResetToDefaultBtnClick()
 
 void UWTLPDACharacterParameters::OnResetBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterParameters.OnResetBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.OnResetBtnClick"));
 
 	struct
 	{
@@ -39278,7 +39278,7 @@ void UWTLPDACharacterParameters::OnResetBtnClick()
 
 void UWTLPDACharacterSkills::OnTakeSkillConfirm(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnTakeSkillConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnTakeSkillConfirm"));
 
 	struct
 	{
@@ -39296,7 +39296,7 @@ void UWTLPDACharacterSkills::OnTakeSkillConfirm(uint16_t SkillID)
 
 void UWTLPDACharacterSkills::OnTakeSkillCancel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnTakeSkillCancel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnTakeSkillCancel"));
 
 	struct
 	{
@@ -39314,7 +39314,7 @@ void UWTLPDACharacterSkills::OnTakeSkillCancel()
 
 void UWTLPDACharacterSkills::OnTabBtnClicked(unsigned char Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnTabBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnTabBtnClicked"));
 
 	struct
 	{
@@ -39332,7 +39332,7 @@ void UWTLPDACharacterSkills::OnTabBtnClicked(unsigned char Index)
 
 void UWTLPDACharacterSkills::OnSkillItemUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnSkillItemUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnSkillItemUnhovered"));
 
 	struct
 	{
@@ -39350,7 +39350,7 @@ void UWTLPDACharacterSkills::OnSkillItemUnhovered()
 
 void UWTLPDACharacterSkills::OnSkillItemRemoved(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnSkillItemRemoved");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnSkillItemRemoved"));
 
 	struct
 	{
@@ -39370,7 +39370,7 @@ void UWTLPDACharacterSkills::OnSkillItemRemoved(uint16_t SkillID)
 
 void UWTLPDACharacterSkills::OnSkillItemHovered(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnSkillItemHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnSkillItemHovered"));
 
 	struct
 	{
@@ -39390,7 +39390,7 @@ void UWTLPDACharacterSkills::OnSkillItemHovered(uint16_t SkillID)
 
 void UWTLPDACharacterSkills::OnSkillItemClicked(uint16_t SkillID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnSkillItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnSkillItemClicked"));
 
 	struct
 	{
@@ -39408,7 +39408,7 @@ void UWTLPDACharacterSkills::OnSkillItemClicked(uint16_t SkillID)
 
 void UWTLPDACharacterSkills::OnRemoveSkillConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnRemoveSkillConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnRemoveSkillConfirm"));
 
 	struct
 	{
@@ -39424,7 +39424,7 @@ void UWTLPDACharacterSkills::OnRemoveSkillConfirm()
 
 void UWTLPDACharacterSkills::OnMessageDialogHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkills.OnMessageDialogHide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkills.OnMessageDialogHide"));
 
 	struct
 	{
@@ -39440,7 +39440,7 @@ void UWTLPDACharacterSkills::OnMessageDialogHide()
 
 void UWTLPDACharacterSkillsItem::OnSkillRemoved()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsItem.OnSkillRemoved");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsItem.OnSkillRemoved"));
 
 	struct
 	{
@@ -39456,7 +39456,7 @@ void UWTLPDACharacterSkillsItem::OnSkillRemoved()
 
 void UWTLPDACharacterSkillsItem::OnSkillBtnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnUnhovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnUnhovered"));
 
 	struct
 	{
@@ -39472,7 +39472,7 @@ void UWTLPDACharacterSkillsItem::OnSkillBtnUnhovered()
 
 void UWTLPDACharacterSkillsItem::OnSkillBtnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnHovered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnHovered"));
 
 	struct
 	{
@@ -39488,7 +39488,7 @@ void UWTLPDACharacterSkillsItem::OnSkillBtnHovered()
 
 void UWTLPDACharacterSkillsItem::OnSkillBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsItem.OnSkillBtnClick"));
 
 	struct
 	{
@@ -39506,7 +39506,7 @@ void UWTLPDACharacterSkillsItem::OnSkillBtnClick()
 
 class UWidget* UWTLPDACharacterSkillsItem::OnGetPopupMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsItem.OnGetPopupMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsItem.OnGetPopupMenuContent"));
 
 	struct
 	{
@@ -39525,7 +39525,7 @@ class UWidget* UWTLPDACharacterSkillsItem::OnGetPopupMenuContent()
 
 void UWTLPDACharacterSkillsTakeConfirm::OnSkillLearnBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsTakeConfirm.OnSkillLearnBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsTakeConfirm.OnSkillLearnBtnClick"));
 
 	struct
 	{
@@ -39541,7 +39541,7 @@ void UWTLPDACharacterSkillsTakeConfirm::OnSkillLearnBtnClick()
 
 void UWTLPDACharacterSkillsTakeConfirm::OnCancelBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsTakeConfirm.OnCancelBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsTakeConfirm.OnCancelBtnClick"));
 
 	struct
 	{
@@ -39557,7 +39557,7 @@ void UWTLPDACharacterSkillsTakeConfirm::OnCancelBtnClick()
 
 void UWTLPDACharacterSkillsTakeConfirm::Hide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACharacterSkillsTakeConfirm.Hide");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterSkillsTakeConfirm.Hide"));
 
 	struct
 	{
@@ -39573,7 +39573,7 @@ void UWTLPDACharacterSkillsTakeConfirm::Hide()
 
 void UWTLPDAClan::OnSendInviteToClanCancelBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnSendInviteToClanCancelBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnSendInviteToClanCancelBtnClicked"));
 
 	struct
 	{
@@ -39589,7 +39589,7 @@ void UWTLPDAClan::OnSendInviteToClanCancelBtnClicked()
 
 void UWTLPDAClan::OnSendInviteToClanBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnSendInviteToClanBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnSendInviteToClanBtnClicked"));
 
 	struct
 	{
@@ -39605,7 +39605,7 @@ void UWTLPDAClan::OnSendInviteToClanBtnClicked()
 
 void UWTLPDAClan::OnRenamePolicyGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnRenamePolicyGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnRenamePolicyGroupBtnClicked"));
 
 	struct
 	{
@@ -39621,7 +39621,7 @@ void UWTLPDAClan::OnRenamePolicyGroupBtnClicked()
 
 void UWTLPDAClan::OnPolicyGroupsBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnPolicyGroupsBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnPolicyGroupsBtnClicked"));
 
 	struct
 	{
@@ -39640,7 +39640,7 @@ void UWTLPDAClan::OnPolicyGroupsBtnClicked()
 
 void UWTLPDAClan::OnPolicyGroupNameTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnPolicyGroupNameTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnPolicyGroupNameTextCommitted"));
 
 	struct
 	{
@@ -39662,7 +39662,7 @@ void UWTLPDAClan::OnPolicyGroupNameTextCommitted(const struct FText& Text, TEnum
 
 void UWTLPDAClan::OnPolicyGroupNameTextChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnPolicyGroupNameTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnPolicyGroupNameTextChanged"));
 
 	struct
 	{
@@ -39683,7 +39683,7 @@ void UWTLPDAClan::OnPolicyGroupNameTextChanged(const struct FText& InText)
 
 void UWTLPDAClan::OnPolicyGroupItemClicked(uint64_t PolicyGroupItemID, const struct FText& PolicyGroupItemName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnPolicyGroupItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnPolicyGroupItemClicked"));
 
 	struct
 	{
@@ -39703,7 +39703,7 @@ void UWTLPDAClan::OnPolicyGroupItemClicked(uint64_t PolicyGroupItemID, const str
 
 void UWTLPDAClan::OnMembersBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnMembersBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnMembersBtnClicked"));
 
 	struct
 	{
@@ -39719,7 +39719,7 @@ void UWTLPDAClan::OnMembersBtnClicked()
 
 void UWTLPDAClan::OnLeaveClanConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnLeaveClanConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnLeaveClanConfirmed"));
 
 	struct
 	{
@@ -39735,7 +39735,7 @@ void UWTLPDAClan::OnLeaveClanConfirmed()
 
 void UWTLPDAClan::OnLeaveClanBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnLeaveClanBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnLeaveClanBtnClicked"));
 
 	struct
 	{
@@ -39751,7 +39751,7 @@ void UWTLPDAClan::OnLeaveClanBtnClicked()
 
 void UWTLPDAClan::OnInviteToClanBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnInviteToClanBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnInviteToClanBtnClicked"));
 
 	struct
 	{
@@ -39767,7 +39767,7 @@ void UWTLPDAClan::OnInviteToClanBtnClicked()
 
 void UWTLPDAClan::OnExcludeMemberFromClanConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnExcludeMemberFromClanConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnExcludeMemberFromClanConfirmed"));
 
 	struct
 	{
@@ -39785,7 +39785,7 @@ void UWTLPDAClan::OnExcludeMemberFromClanConfirmed()
 
 void UWTLPDAClan::OnExcludeMemberFromClanBtnClicked(const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnExcludeMemberFromClanBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnExcludeMemberFromClanBtnClicked"));
 
 	struct
 	{
@@ -39803,7 +39803,7 @@ void UWTLPDAClan::OnExcludeMemberFromClanBtnClicked(const struct FString& Charac
 
 void UWTLPDAClan::OnDeletePolicyGroupConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnDeletePolicyGroupConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnDeletePolicyGroupConfirmed"));
 
 	struct
 	{
@@ -39819,7 +39819,7 @@ void UWTLPDAClan::OnDeletePolicyGroupConfirmed()
 
 void UWTLPDAClan::OnDeletePolicyGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnDeletePolicyGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnDeletePolicyGroupBtnClicked"));
 
 	struct
 	{
@@ -39835,7 +39835,7 @@ void UWTLPDAClan::OnDeletePolicyGroupBtnClicked()
 
 void UWTLPDAClan::OnCreatePolicyGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnCreatePolicyGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnCreatePolicyGroupBtnClicked"));
 
 	struct
 	{
@@ -39851,7 +39851,7 @@ void UWTLPDAClan::OnCreatePolicyGroupBtnClicked()
 
 void UWTLPDAClan::OnClanPolicyGroupsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnClanPolicyGroupsChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnClanPolicyGroupsChanged"));
 
 	struct
 	{
@@ -39867,7 +39867,7 @@ void UWTLPDAClan::OnClanPolicyGroupsChanged()
 
 void UWTLPDAClan::OnClanMembersChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnClanMembersChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnClanMembersChanged"));
 
 	struct
 	{
@@ -39883,7 +39883,7 @@ void UWTLPDAClan::OnClanMembersChanged()
 
 void UWTLPDAClan::OnClanInfoBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnClanInfoBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnClanInfoBtnClicked"));
 
 	struct
 	{
@@ -39899,7 +39899,7 @@ void UWTLPDAClan::OnClanInfoBtnClicked()
 
 void UWTLPDAClan::OnActionPolicyGroupNameBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnActionPolicyGroupNameBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnActionPolicyGroupNameBtnClicked"));
 
 	struct
 	{
@@ -39915,7 +39915,7 @@ void UWTLPDAClan::OnActionPolicyGroupNameBtnClicked()
 
 void UWTLPDAClan::OnActionCancelPolicyGroupNameBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.OnActionCancelPolicyGroupNameBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.OnActionCancelPolicyGroupNameBtnClicked"));
 
 	struct
 	{
@@ -39934,7 +39934,7 @@ void UWTLPDAClan::OnActionCancelPolicyGroupNameBtnClicked()
 
 void UWTLPDAClan::CharacterNameToInviteTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClan.CharacterNameToInviteTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClan.CharacterNameToInviteTextBoxTextCommitted"));
 
 	struct
 	{
@@ -39954,7 +39954,7 @@ void UWTLPDAClan::CharacterNameToInviteTextBoxTextCommitted(const struct FText& 
 
 void UWTLPDAClanMemberItem::RemoveFromDeputyClanLeaderBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.RemoveFromDeputyClanLeaderBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.RemoveFromDeputyClanLeaderBtnClicked"));
 
 	struct
 	{
@@ -39972,7 +39972,7 @@ void UWTLPDAClanMemberItem::RemoveFromDeputyClanLeaderBtnClicked()
 
 class UWidget* UWTLPDAClanMemberItem::OnGetPopupMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.OnGetPopupMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.OnGetPopupMenuContent"));
 
 	struct
 	{
@@ -39991,7 +39991,7 @@ class UWidget* UWTLPDAClanMemberItem::OnGetPopupMenuContent()
 
 void UWTLPDAClanMemberItem::ExcludeFromClanBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.ExcludeFromClanBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.ExcludeFromClanBtnClicked"));
 
 	struct
 	{
@@ -40009,7 +40009,7 @@ void UWTLPDAClanMemberItem::ExcludeFromClanBtnClicked()
 
 void UWTLPDAClanMemberItem::AssignPolicyGroupToClanMember(uint64_t PolicyGroupID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.AssignPolicyGroupToClanMember");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.AssignPolicyGroupToClanMember"));
 
 	struct
 	{
@@ -40027,7 +40027,7 @@ void UWTLPDAClanMemberItem::AssignPolicyGroupToClanMember(uint64_t PolicyGroupID
 
 void UWTLPDAClanMemberItem::AssignPolicyGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.AssignPolicyGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.AssignPolicyGroupBtnClicked"));
 
 	struct
 	{
@@ -40043,7 +40043,7 @@ void UWTLPDAClanMemberItem::AssignPolicyGroupBtnClicked()
 
 void UWTLPDAClanMemberItem::AppointAsDeputyClanLeaderBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAClanMemberItem.AppointAsDeputyClanLeaderBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAClanMemberItem.AppointAsDeputyClanLeaderBtnClicked"));
 
 	struct
 	{
@@ -40061,7 +40061,7 @@ void UWTLPDAClanMemberItem::AppointAsDeputyClanLeaderBtnClicked()
 
 void UWTLPDACraftRecipes::OnCraftWindowItemClicked(int CraftItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACraftRecipes.OnCraftWindowItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACraftRecipes.OnCraftWindowItemClicked"));
 
 	struct
 	{
@@ -40082,7 +40082,7 @@ void UWTLPDACraftRecipes::OnCraftWindowItemClicked(int CraftItemID)
 
 void UWTLPDACraftRecipes::OnCraftTypeSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDACraftRecipes.OnCraftTypeSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACraftRecipes.OnCraftTypeSelectionChanged"));
 
 	struct
 	{
@@ -40102,7 +40102,7 @@ void UWTLPDACraftRecipes::OnCraftTypeSelectionChanged(const struct FString& Sele
 
 void UWTLPDAFraction::OnTopFractionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnTopFractionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnTopFractionBtnClicked"));
 
 	struct
 	{
@@ -40118,7 +40118,7 @@ void UWTLPDAFraction::OnTopFractionBtnClicked()
 
 void UWTLPDAFraction::OnTopAllBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnTopAllBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnTopAllBtnClicked"));
 
 	struct
 	{
@@ -40134,7 +40134,7 @@ void UWTLPDAFraction::OnTopAllBtnClicked()
 
 void UWTLPDAFraction::OnRanksTableBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnRanksTableBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnRanksTableBtnClicked"));
 
 	struct
 	{
@@ -40150,7 +40150,7 @@ void UWTLPDAFraction::OnRanksTableBtnClicked()
 
 void UWTLPDAFraction::OnLeaveFractionConfirmedFinal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnLeaveFractionConfirmedFinal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnLeaveFractionConfirmedFinal"));
 
 	struct
 	{
@@ -40166,7 +40166,7 @@ void UWTLPDAFraction::OnLeaveFractionConfirmedFinal()
 
 void UWTLPDAFraction::OnLeaveFractionConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnLeaveFractionConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnLeaveFractionConfirmed"));
 
 	struct
 	{
@@ -40182,7 +40182,7 @@ void UWTLPDAFraction::OnLeaveFractionConfirmed()
 
 void UWTLPDAFraction::OnLeaveFractionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnLeaveFractionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnLeaveFractionBtnClicked"));
 
 	struct
 	{
@@ -40200,7 +40200,7 @@ void UWTLPDAFraction::OnLeaveFractionBtnClicked()
 
 void UWTLPDAFraction::OnLeaderboardUpdated(TArray<struct FWTLFactionLeaderRecord> Leaders)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnLeaderboardUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnLeaderboardUpdated"));
 
 	struct
 	{
@@ -40218,7 +40218,7 @@ void UWTLPDAFraction::OnLeaderboardUpdated(TArray<struct FWTLFactionLeaderRecord
 
 void UWTLPDAFraction::OnLeaderboardBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnLeaderboardBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnLeaderboardBtnClicked"));
 
 	struct
 	{
@@ -40234,7 +40234,7 @@ void UWTLPDAFraction::OnLeaderboardBtnClicked()
 
 void UWTLPDAFraction::OnBackToRankInfoBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnBackToRankInfoBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnBackToRankInfoBtnClicked"));
 
 	struct
 	{
@@ -40250,7 +40250,7 @@ void UWTLPDAFraction::OnBackToRankInfoBtnClicked()
 
 void UWTLPDAFraction::OnBackBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFraction.OnBackBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFraction.OnBackBtnClicked"));
 
 	struct
 	{
@@ -40266,7 +40266,7 @@ void UWTLPDAFraction::OnBackBtnClicked()
 
 void UWTLPDAFriendsAndEnemies::RemoveContactConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.RemoveContactConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.RemoveContactConfirmed"));
 
 	struct
 	{
@@ -40282,7 +40282,7 @@ void UWTLPDAFriendsAndEnemies::RemoveContactConfirmed()
 
 void UWTLPDAFriendsAndEnemies::RemoveBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.RemoveBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.RemoveBtnClicked"));
 
 	struct
 	{
@@ -40298,7 +40298,7 @@ void UWTLPDAFriendsAndEnemies::RemoveBtnClicked()
 
 void UWTLPDAFriendsAndEnemies::OnGetCharacterIDByNameResponseWaitingEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnGetCharacterIDByNameResponseWaitingEnd");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnGetCharacterIDByNameResponseWaitingEnd"));
 
 	struct
 	{
@@ -40316,7 +40316,7 @@ void UWTLPDAFriendsAndEnemies::OnGetCharacterIDByNameResponseWaitingEnd()
 
 void UWTLPDAFriendsAndEnemies::OnGetCharacterIDByNameResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnGetCharacterIDByNameResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnGetCharacterIDByNameResponse"));
 
 	struct
 	{
@@ -40336,7 +40336,7 @@ void UWTLPDAFriendsAndEnemies::OnGetCharacterIDByNameResponse(const struct FWTLR
 
 void UWTLPDAFriendsAndEnemies::OnFriendsAndEnemiesListItemClicked(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnFriendsAndEnemiesListItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnFriendsAndEnemiesListItemClicked"));
 
 	struct
 	{
@@ -40356,7 +40356,7 @@ void UWTLPDAFriendsAndEnemies::OnFriendsAndEnemiesListItemClicked(uint64_t Chara
 
 void UWTLPDAFriendsAndEnemies::OnDescriptionTextChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnDescriptionTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnDescriptionTextChanged"));
 
 	struct
 	{
@@ -40377,7 +40377,7 @@ void UWTLPDAFriendsAndEnemies::OnDescriptionTextChanged(const struct FText& InTe
 
 void UWTLPDAFriendsAndEnemies::OnContactTypeFilterSelectionChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnContactTypeFilterSelectionChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnContactTypeFilterSelectionChanged"));
 
 	struct
 	{
@@ -40400,7 +40400,7 @@ void UWTLPDAFriendsAndEnemies::OnContactTypeFilterSelectionChanged(const struct 
 
 void UWTLPDAFriendsAndEnemies::OnCharacterNameTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnCharacterNameTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnCharacterNameTextCommitted"));
 
 	struct
 	{
@@ -40422,7 +40422,7 @@ void UWTLPDAFriendsAndEnemies::OnCharacterNameTextCommitted(const struct FText& 
 
 void UWTLPDAFriendsAndEnemies::OnCharacterNameTextChanged(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.OnCharacterNameTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.OnCharacterNameTextChanged"));
 
 	struct
 	{
@@ -40440,7 +40440,7 @@ void UWTLPDAFriendsAndEnemies::OnCharacterNameTextChanged(const struct FText& In
 
 void UWTLPDAFriendsAndEnemies::EditBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.EditBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.EditBtnClicked"));
 
 	struct
 	{
@@ -40456,7 +40456,7 @@ void UWTLPDAFriendsAndEnemies::EditBtnClicked()
 
 void UWTLPDAFriendsAndEnemies::CancelActionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.CancelActionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.CancelActionBtnClicked"));
 
 	struct
 	{
@@ -40472,7 +40472,7 @@ void UWTLPDAFriendsAndEnemies::CancelActionBtnClicked()
 
 void UWTLPDAFriendsAndEnemies::AddCharacterBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.AddCharacterBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.AddCharacterBtnClicked"));
 
 	struct
 	{
@@ -40488,7 +40488,7 @@ void UWTLPDAFriendsAndEnemies::AddCharacterBtnClicked()
 
 void UWTLPDAFriendsAndEnemies::ActionBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAFriendsAndEnemies.ActionBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAFriendsAndEnemies.ActionBtnClicked"));
 
 	struct
 	{
@@ -40504,7 +40504,7 @@ void UWTLPDAFriendsAndEnemies::ActionBtnClicked()
 
 void UWTLPDAGroup::OnSetGroupNameCancelBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSetGroupNameCancelBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSetGroupNameCancelBtnClicked"));
 
 	struct
 	{
@@ -40520,7 +40520,7 @@ void UWTLPDAGroup::OnSetGroupNameCancelBtnClicked()
 
 void UWTLPDAGroup::OnSetGroupNameBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSetGroupNameBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSetGroupNameBtnClicked"));
 
 	struct
 	{
@@ -40536,7 +40536,7 @@ void UWTLPDAGroup::OnSetGroupNameBtnClicked()
 
 void UWTLPDAGroup::OnSetGroupLeaderConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSetGroupLeaderConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSetGroupLeaderConfirm"));
 
 	struct
 	{
@@ -40555,7 +40555,7 @@ void UWTLPDAGroup::OnSetGroupLeaderConfirm()
 
 void UWTLPDAGroup::OnSetGroupLeader(uint64_t CharacterID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSetGroupLeader");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSetGroupLeader"));
 
 	struct
 	{
@@ -40575,7 +40575,7 @@ void UWTLPDAGroup::OnSetGroupLeader(uint64_t CharacterID, const struct FString& 
 
 void UWTLPDAGroup::OnSendInviteToGroupCancelBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSendInviteToGroupCancelBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSendInviteToGroupCancelBtnClicked"));
 
 	struct
 	{
@@ -40591,7 +40591,7 @@ void UWTLPDAGroup::OnSendInviteToGroupCancelBtnClicked()
 
 void UWTLPDAGroup::OnSendInviteToGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSendInviteToGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSendInviteToGroupBtnClicked"));
 
 	struct
 	{
@@ -40607,7 +40607,7 @@ void UWTLPDAGroup::OnSendInviteToGroupBtnClicked()
 
 void UWTLPDAGroup::OnSendGroupMessageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnSendGroupMessageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnSendGroupMessageBtnClicked"));
 
 	struct
 	{
@@ -40623,7 +40623,7 @@ void UWTLPDAGroup::OnSendGroupMessageBtnClicked()
 
 void UWTLPDAGroup::OnLeaveGroupConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnLeaveGroupConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnLeaveGroupConfirm"));
 
 	struct
 	{
@@ -40639,7 +40639,7 @@ void UWTLPDAGroup::OnLeaveGroupConfirm()
 
 void UWTLPDAGroup::OnLeaveGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnLeaveGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnLeaveGroupBtnClicked"));
 
 	struct
 	{
@@ -40655,7 +40655,7 @@ void UWTLPDAGroup::OnLeaveGroupBtnClicked()
 
 void UWTLPDAGroup::OnInviteToGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnInviteToGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnInviteToGroupBtnClicked"));
 
 	struct
 	{
@@ -40673,7 +40673,7 @@ void UWTLPDAGroup::OnInviteToGroupBtnClicked()
 
 void UWTLPDAGroup::OnGroupMemberShowInfo(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnGroupMemberShowInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnGroupMemberShowInfo"));
 
 	struct
 	{
@@ -40693,7 +40693,7 @@ void UWTLPDAGroup::OnGroupMemberShowInfo(uint64_t CharacterID)
 
 void UWTLPDAGroup::OnGroupMemberSendMessage(const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnGroupMemberSendMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnGroupMemberSendMessage"));
 
 	struct
 	{
@@ -40711,7 +40711,7 @@ void UWTLPDAGroup::OnGroupMemberSendMessage(const struct FString& CharacterName)
 
 void UWTLPDAGroup::OnExcludeGroupMemberConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnExcludeGroupMemberConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnExcludeGroupMemberConfirm"));
 
 	struct
 	{
@@ -40730,7 +40730,7 @@ void UWTLPDAGroup::OnExcludeGroupMemberConfirm()
 
 void UWTLPDAGroup::OnExcludeGroupMember(uint64_t CharacterID, const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnExcludeGroupMember");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnExcludeGroupMember"));
 
 	struct
 	{
@@ -40752,7 +40752,7 @@ void UWTLPDAGroup::OnExcludeGroupMember(uint64_t CharacterID, const struct FStri
 
 void UWTLPDAGroup::OnDeclineGroupInvite(uint64_t InviteID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnDeclineGroupInvite");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnDeclineGroupInvite"));
 
 	struct
 	{
@@ -40770,7 +40770,7 @@ void UWTLPDAGroup::OnDeclineGroupInvite(uint64_t InviteID)
 
 void UWTLPDAGroup::OnCreateGroupBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnCreateGroupBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnCreateGroupBtnClicked"));
 
 	struct
 	{
@@ -40786,7 +40786,7 @@ void UWTLPDAGroup::OnCreateGroupBtnClicked()
 
 void UWTLPDAGroup::OnChangeGroupNameBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnChangeGroupNameBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnChangeGroupNameBtnClicked"));
 
 	struct
 	{
@@ -40804,7 +40804,7 @@ void UWTLPDAGroup::OnChangeGroupNameBtnClicked()
 
 void UWTLPDAGroup::OnAcceptGroupInvite(uint64_t InviteID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.OnAcceptGroupInvite");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.OnAcceptGroupInvite"));
 
 	struct
 	{
@@ -40825,7 +40825,7 @@ void UWTLPDAGroup::OnAcceptGroupInvite(uint64_t InviteID)
 
 void UWTLPDAGroup::GroupNameTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.GroupNameTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.GroupNameTextBoxTextCommitted"));
 
 	struct
 	{
@@ -40847,7 +40847,7 @@ void UWTLPDAGroup::GroupNameTextBoxTextCommitted(const struct FText& Text, TEnum
 
 void UWTLPDAGroup::GroupNameTextBoxTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.GroupNameTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.GroupNameTextBoxTextChanged"));
 
 	struct
 	{
@@ -40868,7 +40868,7 @@ void UWTLPDAGroup::GroupNameTextBoxTextChanged(const struct FText& Text)
 
 void UWTLPDAGroup::CharacterNameToInviteTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroup.CharacterNameToInviteTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroup.CharacterNameToInviteTextBoxTextCommitted"));
 
 	struct
 	{
@@ -40888,7 +40888,7 @@ void UWTLPDAGroup::CharacterNameToInviteTextBoxTextCommitted(const struct FText&
 
 void UWTLPDAGroupInviteItem::OnDeclineBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupInviteItem.OnDeclineBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupInviteItem.OnDeclineBtnClicked"));
 
 	struct
 	{
@@ -40904,7 +40904,7 @@ void UWTLPDAGroupInviteItem::OnDeclineBtnClicked()
 
 void UWTLPDAGroupInviteItem::OnAcceptBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupInviteItem.OnAcceptBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupInviteItem.OnAcceptBtnClicked"));
 
 	struct
 	{
@@ -40920,7 +40920,7 @@ void UWTLPDAGroupInviteItem::OnAcceptBtnClicked()
 
 void UWTLPDAGroupMemberItem::OnSetLeaderBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupMemberItem.OnSetLeaderBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupMemberItem.OnSetLeaderBtnClicked"));
 
 	struct
 	{
@@ -40936,7 +40936,7 @@ void UWTLPDAGroupMemberItem::OnSetLeaderBtnClicked()
 
 void UWTLPDAGroupMemberItem::OnSendMessageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupMemberItem.OnSendMessageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupMemberItem.OnSendMessageBtnClicked"));
 
 	struct
 	{
@@ -40952,7 +40952,7 @@ void UWTLPDAGroupMemberItem::OnSendMessageBtnClicked()
 
 void UWTLPDAGroupMemberItem::OnInfoBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupMemberItem.OnInfoBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupMemberItem.OnInfoBtnClicked"));
 
 	struct
 	{
@@ -40968,7 +40968,7 @@ void UWTLPDAGroupMemberItem::OnInfoBtnClicked()
 
 void UWTLPDAGroupMemberItem::OnExcludeBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAGroupMemberItem.OnExcludeBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAGroupMemberItem.OnExcludeBtnClicked"));
 
 	struct
 	{
@@ -40984,7 +40984,7 @@ void UWTLPDAGroupMemberItem::OnExcludeBtnClicked()
 
 void UWTLPDAItemExperience::OnBtnClickWeapon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAItemExperience.OnBtnClickWeapon");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAItemExperience.OnBtnClickWeapon"));
 
 	struct
 	{
@@ -41000,7 +41000,7 @@ void UWTLPDAItemExperience::OnBtnClickWeapon()
 
 void UWTLPDAMail::OnWriteMessageTipBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnWriteMessageTipBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnWriteMessageTipBtnClicked"));
 
 	struct
 	{
@@ -41016,7 +41016,7 @@ void UWTLPDAMail::OnWriteMessageTipBtnClicked()
 
 void UWTLPDAMail::OnWriteMessageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnWriteMessageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnWriteMessageBtnClicked"));
 
 	struct
 	{
@@ -41034,7 +41034,7 @@ void UWTLPDAMail::OnWriteMessageBtnClicked()
 
 void UWTLPDAMail::OnSendMessageResponse(struct FWTLOperationResult* OperationResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnSendMessageResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnSendMessageResponse"));
 
 	struct
 	{
@@ -41054,7 +41054,7 @@ void UWTLPDAMail::OnSendMessageResponse(struct FWTLOperationResult* OperationRes
 
 void UWTLPDAMail::OnSendMessageBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnSendMessageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnSendMessageBtnClicked"));
 
 	struct
 	{
@@ -41072,7 +41072,7 @@ void UWTLPDAMail::OnSendMessageBtnClicked()
 
 void UWTLPDAMail::OnSelectorCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnSelectorCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnSelectorCheckStateChanged"));
 
 	struct
 	{
@@ -41092,7 +41092,7 @@ void UWTLPDAMail::OnSelectorCheckStateChanged(bool bIsChecked)
 
 void UWTLPDAMail::OnMessageToTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMessageToTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMessageToTextChanged"));
 
 	struct
 	{
@@ -41112,7 +41112,7 @@ void UWTLPDAMail::OnMessageToTextChanged(const struct FText& Text)
 
 void UWTLPDAMail::OnMessageTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMessageTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMessageTextChanged"));
 
 	struct
 	{
@@ -41132,7 +41132,7 @@ void UWTLPDAMail::OnMessageTextChanged(const struct FText& Text)
 
 void UWTLPDAMail::OnMessageSubjectTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMessageSubjectTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMessageSubjectTextChanged"));
 
 	struct
 	{
@@ -41150,7 +41150,7 @@ void UWTLPDAMail::OnMessageSubjectTextChanged(const struct FText& Text)
 
 void UWTLPDAMail::OnMarkAsReadBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMarkAsReadBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMarkAsReadBtnClicked"));
 
 	struct
 	{
@@ -41168,7 +41168,7 @@ void UWTLPDAMail::OnMarkAsReadBtnClicked()
 
 void UWTLPDAMail::OnMailMessageClicked(uint64_t MessageID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMailMessageClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMailMessageClicked"));
 
 	struct
 	{
@@ -41190,7 +41190,7 @@ void UWTLPDAMail::OnMailMessageClicked(uint64_t MessageID)
 
 void UWTLPDAMail::OnMailMessageChecked(uint64_t MessageID, bool IsChecked, bool IsRead)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnMailMessageChecked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnMailMessageChecked"));
 
 	struct
 	{
@@ -41215,7 +41215,7 @@ void UWTLPDAMail::OnMailMessageChecked(uint64_t MessageID, bool IsChecked, bool 
 
 void UWTLPDAMail::OnFilterValueChanged(const struct FString& SelectedOption, TEnumAsByte<ESelectInfo> SelectionType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnFilterValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnFilterValueChanged"));
 
 	struct
 	{
@@ -41235,7 +41235,7 @@ void UWTLPDAMail::OnFilterValueChanged(const struct FString& SelectedOption, TEn
 
 void UWTLPDAMail::OnDeleteOpenConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnDeleteOpenConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnDeleteOpenConfirm"));
 
 	struct
 	{
@@ -41251,7 +41251,7 @@ void UWTLPDAMail::OnDeleteOpenConfirm()
 
 void UWTLPDAMail::OnDeleteOpenBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnDeleteOpenBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnDeleteOpenBtnClicked"));
 
 	struct
 	{
@@ -41267,7 +41267,7 @@ void UWTLPDAMail::OnDeleteOpenBtnClicked()
 
 void UWTLPDAMail::OnDeleteConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnDeleteConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnDeleteConfirm"));
 
 	struct
 	{
@@ -41283,7 +41283,7 @@ void UWTLPDAMail::OnDeleteConfirm()
 
 void UWTLPDAMail::OnDeleteBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMail.OnDeleteBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMail.OnDeleteBtnClicked"));
 
 	struct
 	{
@@ -41301,7 +41301,7 @@ void UWTLPDAMail::OnDeleteBtnClicked()
 
 void UWTLPDAMailMessageItem::OnSelectCheckStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMailMessageItem.OnSelectCheckStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMailMessageItem.OnSelectCheckStateChanged"));
 
 	struct
 	{
@@ -41321,7 +41321,7 @@ void UWTLPDAMailMessageItem::OnSelectCheckStateChanged(bool bIsChecked)
 
 void UWTLPDAMain::SetActivePDAWidget(int PDAWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMain.SetActivePDAWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMain.SetActivePDAWidget"));
 
 	struct
 	{
@@ -41341,7 +41341,7 @@ void UWTLPDAMain::SetActivePDAWidget(int PDAWidgetIndex)
 
 void UWTLPDAMain::OnSocialNetworkClicked(EWTLSocialNetworkType SocialNetworkType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMain.OnSocialNetworkClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMain.OnSocialNetworkClicked"));
 
 	struct
 	{
@@ -41359,7 +41359,7 @@ void UWTLPDAMain::OnSocialNetworkClicked(EWTLSocialNetworkType SocialNetworkType
 
 void UWTLPDAMain::OnHomeButtonClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMain.OnHomeButtonClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMain.OnHomeButtonClick"));
 
 	struct
 	{
@@ -41379,7 +41379,7 @@ void UWTLPDAMain::OnHomeButtonClick()
 
 struct FEventReply UWTLPDAMain::OnBackgroundMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMain.OnBackgroundMouseButtonDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMain.OnBackgroundMouseButtonDown"));
 
 	struct
 	{
@@ -41402,7 +41402,7 @@ struct FEventReply UWTLPDAMain::OnBackgroundMouseButtonDown(const struct FGeomet
 
 void UWTLPDAMap::UpdatePlayerMarkers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.UpdatePlayerMarkers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.UpdatePlayerMarkers"));
 
 	struct
 	{
@@ -41423,7 +41423,7 @@ void UWTLPDAMap::UpdatePlayerMarkers()
 
 void UWTLPDAMap::ShowPlayerMarkerParameters(int MarkerIndex, const struct FString& MarkerName, unsigned char SubTypeNumber, bool IsSticking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.ShowPlayerMarkerParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.ShowPlayerMarkerParameters"));
 
 	struct
 	{
@@ -41447,7 +41447,7 @@ void UWTLPDAMap::ShowPlayerMarkerParameters(int MarkerIndex, const struct FStrin
 
 void UWTLPDAMap::ShowHidePlayerMarkers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.ShowHidePlayerMarkers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.ShowHidePlayerMarkers"));
 
 	struct
 	{
@@ -41463,7 +41463,7 @@ void UWTLPDAMap::ShowHidePlayerMarkers()
 
 void UWTLPDAMap::ShowHideLocationsList()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.ShowHideLocationsList");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.ShowHideLocationsList"));
 
 	struct
 	{
@@ -41479,7 +41479,7 @@ void UWTLPDAMap::ShowHideLocationsList()
 
 void UWTLPDAMap::ShowHideLegend()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.ShowHideLegend");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.ShowHideLegend"));
 
 	struct
 	{
@@ -41497,7 +41497,7 @@ void UWTLPDAMap::ShowHideLegend()
 
 void UWTLPDAMap::ShowAllMarkerItemsCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.ShowAllMarkerItemsCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.ShowAllMarkerItemsCheckBoxStateChanged"));
 
 	struct
 	{
@@ -41515,7 +41515,7 @@ void UWTLPDAMap::ShowAllMarkerItemsCheckBoxStateChanged(bool bIsChecked)
 
 void UWTLPDAMap::SetMarkerCancelBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.SetMarkerCancelBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.SetMarkerCancelBtnClick"));
 
 	struct
 	{
@@ -41531,7 +41531,7 @@ void UWTLPDAMap::SetMarkerCancelBtnClick()
 
 void UWTLPDAMap::SetMarkerBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.SetMarkerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.SetMarkerBtnClick"));
 
 	struct
 	{
@@ -41547,7 +41547,7 @@ void UWTLPDAMap::SetMarkerBtnClick()
 
 void UWTLPDAMap::RemoveAllPlayerMarkersConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.RemoveAllPlayerMarkersConfirmed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.RemoveAllPlayerMarkersConfirmed"));
 
 	struct
 	{
@@ -41563,7 +41563,7 @@ void UWTLPDAMap::RemoveAllPlayerMarkersConfirmed()
 
 void UWTLPDAMap::RemoveAllPlayerMarkersBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.RemoveAllPlayerMarkersBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.RemoveAllPlayerMarkersBtnClick"));
 
 	struct
 	{
@@ -41581,7 +41581,7 @@ void UWTLPDAMap::RemoveAllPlayerMarkersBtnClick()
 
 void UWTLPDAMap::OnZoomSliderValueChanged(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnZoomSliderValueChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnZoomSliderValueChanged"));
 
 	struct
 	{
@@ -41601,7 +41601,7 @@ void UWTLPDAMap::OnZoomSliderValueChanged(float Value)
 
 void UWTLPDAMap::OnMarkerSubTypeItemClick(unsigned char SubTypeNumber)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerSubTypeItemClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerSubTypeItemClick"));
 
 	struct
 	{
@@ -41622,7 +41622,7 @@ void UWTLPDAMap::OnMarkerSubTypeItemClick(unsigned char SubTypeNumber)
 
 void UWTLPDAMap::OnMarkerPopupMenuOpen(const struct FVector2D& AbsoluteMouseClickPos, const struct FWTLMapMarker& Marker)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerPopupMenuOpen");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerPopupMenuOpen"));
 
 	struct
 	{
@@ -41644,7 +41644,7 @@ void UWTLPDAMap::OnMarkerPopupMenuOpen(const struct FVector2D& AbsoluteMouseClic
 
 void UWTLPDAMap::OnMarkerFindBtnClick(const struct FVector& MarkerPosition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerFindBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerFindBtnClick"));
 
 	struct
 	{
@@ -41667,7 +41667,7 @@ void UWTLPDAMap::OnMarkerFindBtnClick(const struct FVector& MarkerPosition)
 
 void UWTLPDAMap::OnMarkerEditBtnClick(int MarkerIndex, const struct FString& MarkerName, unsigned char SubTypeNumber, bool IsSticking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerEditBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerEditBtnClick"));
 
 	struct
 	{
@@ -41691,7 +41691,7 @@ void UWTLPDAMap::OnMarkerEditBtnClick(int MarkerIndex, const struct FString& Mar
 
 void UWTLPDAMap::OnMarkerEdit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerEdit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerEdit"));
 
 	struct
 	{
@@ -41709,7 +41709,7 @@ void UWTLPDAMap::OnMarkerEdit()
 
 void UWTLPDAMap::OnMarkerDeleteBtnClick(int MarkerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerDeleteBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerDeleteBtnClick"));
 
 	struct
 	{
@@ -41727,7 +41727,7 @@ void UWTLPDAMap::OnMarkerDeleteBtnClick(int MarkerIndex)
 
 void UWTLPDAMap::OnMarkerDelete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerDelete");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerDelete"));
 
 	struct
 	{
@@ -41743,7 +41743,7 @@ void UWTLPDAMap::OnMarkerDelete()
 
 void UWTLPDAMap::OnMarkerAdd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMarkerAdd");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMarkerAdd"));
 
 	struct
 	{
@@ -41762,7 +41762,7 @@ void UWTLPDAMap::OnMarkerAdd()
 
 void UWTLPDAMap::OnMapScreenBorderMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMapScreenBorderMouseMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMapScreenBorderMouseMove"));
 
 	struct
 	{
@@ -41785,7 +41785,7 @@ void UWTLPDAMap::OnMapScreenBorderMouseMove(const struct FGeometry& MyGeometry, 
 
 void UWTLPDAMap::OnMapScreenBorderMouseDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMapScreenBorderMouseDown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMapScreenBorderMouseDown"));
 
 	struct
 	{
@@ -41808,7 +41808,7 @@ void UWTLPDAMap::OnMapScreenBorderMouseDown(const struct FGeometry& MyGeometry, 
 
 void UWTLPDAMap::OnMapScreenBorderMouseDoubleClick(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnMapScreenBorderMouseDoubleClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnMapScreenBorderMouseDoubleClick"));
 
 	struct
 	{
@@ -41830,7 +41830,7 @@ void UWTLPDAMap::OnMapScreenBorderMouseDoubleClick(const struct FGeometry& MyGeo
 
 void UWTLPDAMap::OnLocationsListItemClicked(int LocationID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnLocationsListItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnLocationsListItemClicked"));
 
 	struct
 	{
@@ -41850,7 +41850,7 @@ void UWTLPDAMap::OnLocationsListItemClicked(int LocationID)
 
 class UWidget* UWTLPDAMap::OnGetMapMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.OnGetMapMenuContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.OnGetMapMenuContent"));
 
 	struct
 	{
@@ -41871,7 +41871,7 @@ class UWidget* UWTLPDAMap::OnGetMapMenuContent()
 
 void UWTLPDAMap::MarkerStickingCheckBoxChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.MarkerStickingCheckBoxChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.MarkerStickingCheckBoxChanged"));
 
 	struct
 	{
@@ -41892,7 +41892,7 @@ void UWTLPDAMap::MarkerStickingCheckBoxChanged(bool bIsChecked)
 
 void UWTLPDAMap::MarkerNameTextBoxTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.MarkerNameTextBoxTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.MarkerNameTextBoxTextCommitted"));
 
 	struct
 	{
@@ -41914,7 +41914,7 @@ void UWTLPDAMap::MarkerNameTextBoxTextCommitted(const struct FText& Text, TEnumA
 
 void UWTLPDAMap::MarkerNameTextBoxTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.MarkerNameTextBoxTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.MarkerNameTextBoxTextChanged"));
 
 	struct
 	{
@@ -41934,7 +41934,7 @@ void UWTLPDAMap::MarkerNameTextBoxTextChanged(const struct FText& Text)
 
 void UWTLPDAMap::FindPlayerMarkerCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.FindPlayerMarkerCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.FindPlayerMarkerCheckBoxStateChanged"));
 
 	struct
 	{
@@ -41952,7 +41952,7 @@ void UWTLPDAMap::FindPlayerMarkerCheckBoxStateChanged(bool bIsChecked)
 
 void UWTLPDAMap::FindPlayerMarker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.FindPlayerMarker");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.FindPlayerMarker"));
 
 	struct
 	{
@@ -41968,7 +41968,7 @@ void UWTLPDAMap::FindPlayerMarker()
 
 void UWTLPDAMap::AddPlayerMarkerBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMap.AddPlayerMarkerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMap.AddPlayerMarkerBtnClick"));
 
 	struct
 	{
@@ -41984,7 +41984,7 @@ void UWTLPDAMap::AddPlayerMarkerBtnClick()
 
 void UWTLPDAMarkerListItem::OnFindMarkerBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMarkerListItem.OnFindMarkerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMarkerListItem.OnFindMarkerBtnClick"));
 
 	struct
 	{
@@ -42000,7 +42000,7 @@ void UWTLPDAMarkerListItem::OnFindMarkerBtnClick()
 
 void UWTLPDAMarkerListItem::OnEditMarkerBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMarkerListItem.OnEditMarkerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMarkerListItem.OnEditMarkerBtnClick"));
 
 	struct
 	{
@@ -42016,7 +42016,7 @@ void UWTLPDAMarkerListItem::OnEditMarkerBtnClick()
 
 void UWTLPDAMarkerListItem::OnDeleteMarkerBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMarkerListItem.OnDeleteMarkerBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMarkerListItem.OnDeleteMarkerBtnClick"));
 
 	struct
 	{
@@ -42035,7 +42035,7 @@ void UWTLPDAMarkerListItem::OnDeleteMarkerBtnClick()
 
 void UWTLPDAMenu::OnButtonClicked(int AppIndex, EWTLPDAMenuButtonType MenuButtonType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMenu.OnButtonClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMenu.OnButtonClicked"));
 
 	struct
 	{
@@ -42057,7 +42057,7 @@ void UWTLPDAMenu::OnButtonClicked(int AppIndex, EWTLPDAMenuButtonType MenuButton
 
 void UWTLPDAMenuButton::SetNotificationsCount(int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMenuButton.SetNotificationsCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMenuButton.SetNotificationsCount"));
 
 	struct
 	{
@@ -42075,7 +42075,7 @@ void UWTLPDAMenuButton::SetNotificationsCount(int Count)
 
 void UWTLPDAMenuButton::OnAppBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMenuButton.OnAppBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMenuButton.OnAppBtnClick"));
 
 	struct
 	{
@@ -42091,7 +42091,7 @@ void UWTLPDAMenuButton::OnAppBtnClick()
 
 void UWTLPDAMenuButton::K2_Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMenuButton.K2_Update");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMenuButton.K2_Update"));
 
 	struct
 	{
@@ -42107,7 +42107,7 @@ void UWTLPDAMenuButton::K2_Update()
 
 void UWTLPDAMenuButton::K2_OnMenuOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAMenuButton.K2_OnMenuOpened");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAMenuButton.K2_OnMenuOpened"));
 
 	struct
 	{
@@ -42123,7 +42123,7 @@ void UWTLPDAMenuButton::K2_OnMenuOpened()
 
 void UWTLPDAQuestLog::OnSetActiveQuestBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnSetActiveQuestBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnSetActiveQuestBtnClicked"));
 
 	struct
 	{
@@ -42141,7 +42141,7 @@ void UWTLPDAQuestLog::OnSetActiveQuestBtnClicked()
 
 void UWTLPDAQuestLog::OnQuestLogItemClicked(class UWTLPDAQuestLogItem* QuestLogItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnQuestLogItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnQuestLogItemClicked"));
 
 	struct
 	{
@@ -42161,7 +42161,7 @@ void UWTLPDAQuestLog::OnQuestLogItemClicked(class UWTLPDAQuestLogItem* QuestLogI
 
 void UWTLPDAQuestLog::OnListTabBtnClicked(unsigned char Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnListTabBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnListTabBtnClicked"));
 
 	struct
 	{
@@ -42181,7 +42181,7 @@ void UWTLPDAQuestLog::OnListTabBtnClicked(unsigned char Index)
 
 void UWTLPDAQuestLog::OnHideActiveQuestInfoCheckBoxStateChanged(bool bIsChecked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnHideActiveQuestInfoCheckBoxStateChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnHideActiveQuestInfoCheckBoxStateChanged"));
 
 	struct
 	{
@@ -42199,7 +42199,7 @@ void UWTLPDAQuestLog::OnHideActiveQuestInfoCheckBoxStateChanged(bool bIsChecked)
 
 void UWTLPDAQuestLog::OnAbandonQuestConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnAbandonQuestConfirmation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnAbandonQuestConfirmation"));
 
 	struct
 	{
@@ -42215,7 +42215,7 @@ void UWTLPDAQuestLog::OnAbandonQuestConfirmation()
 
 void UWTLPDAQuestLog::OnAbandonQuestBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLog.OnAbandonQuestBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLog.OnAbandonQuestBtnClicked"));
 
 	struct
 	{
@@ -42231,7 +42231,7 @@ void UWTLPDAQuestLog::OnAbandonQuestBtnClicked()
 
 void UWTLPDAQuestLogItem::OnBackgroundButtonStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDAQuestLogItem.OnBackgroundButtonStyle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDAQuestLogItem.OnBackgroundButtonStyle"));
 
 	struct
 	{
@@ -42247,7 +42247,7 @@ void UWTLPDAQuestLogItem::OnBackgroundButtonStyle()
 
 void UWTLPDASettings::OnRemoveModuleBtnError()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnRemoveModuleBtnError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnRemoveModuleBtnError"));
 
 	struct
 	{
@@ -42263,7 +42263,7 @@ void UWTLPDASettings::OnRemoveModuleBtnError()
 
 void UWTLPDASettings::OnRemoveModuleBtnConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnRemoveModuleBtnConfirm");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnRemoveModuleBtnConfirm"));
 
 	struct
 	{
@@ -42279,7 +42279,7 @@ void UWTLPDASettings::OnRemoveModuleBtnConfirm()
 
 void UWTLPDASettings::OnRemoveModuleBtnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnRemoveModuleBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnRemoveModuleBtnClicked"));
 
 	struct
 	{
@@ -42295,7 +42295,7 @@ void UWTLPDASettings::OnRemoveModuleBtnClicked()
 
 void UWTLPDASettings::OnPDAColorSelectClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnPDAColorSelectClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnPDAColorSelectClick"));
 
 	struct
 	{
@@ -42311,7 +42311,7 @@ void UWTLPDASettings::OnPDAColorSelectClick()
 
 void UWTLPDASettings::OnPDAColorResetClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnPDAColorResetClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnPDAColorResetClick"));
 
 	struct
 	{
@@ -42327,7 +42327,7 @@ void UWTLPDASettings::OnPDAColorResetClick()
 
 void UWTLPDASettings::OnPDAColorPickedCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnPDAColorPickedCanceled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnPDAColorPickedCanceled"));
 
 	struct
 	{
@@ -42345,7 +42345,7 @@ void UWTLPDASettings::OnPDAColorPickedCanceled()
 
 void UWTLPDASettings::OnPDAColorPicked(const struct FLinearColor& PickedColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnPDAColorPicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnPDAColorPicked"));
 
 	struct
 	{
@@ -42365,7 +42365,7 @@ void UWTLPDASettings::OnPDAColorPicked(const struct FLinearColor& PickedColor)
 
 void UWTLPDASettings::OnPDAColorChanged(const struct FLinearColor& ChangedColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnPDAColorChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnPDAColorChanged"));
 
 	struct
 	{
@@ -42385,7 +42385,7 @@ void UWTLPDASettings::OnPDAColorChanged(const struct FLinearColor& ChangedColor)
 
 void UWTLPDASettings::OnModulesListItemClicked(uint16_t ModuleID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASettings.OnModulesListItemClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASettings.OnModulesListItemClicked"));
 
 	struct
 	{
@@ -42405,7 +42405,7 @@ void UWTLPDASettings::OnModulesListItemClicked(uint16_t ModuleID)
 
 void UWTLPDASocialNetworkAuthorization::OnURLChanged(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASocialNetworkAuthorization.OnURLChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASocialNetworkAuthorization.OnURLChanged"));
 
 	struct
 	{
@@ -42425,7 +42425,7 @@ void UWTLPDASocialNetworkAuthorization::OnURLChanged(const struct FString& URL)
 
 void UWTLPDASocialNetworkAuthorization::OnLoadURL(const struct FString& URL)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPDASocialNetworkAuthorization.OnLoadURL");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDASocialNetworkAuthorization.OnLoadURL"));
 
 	struct
 	{
@@ -42445,7 +42445,7 @@ void UWTLPDASocialNetworkAuthorization::OnLoadURL(const struct FString& URL)
 
 void AWTLPortal::OnUsePortal(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPortal.OnUsePortal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortal.OnUsePortal"));
 
 	struct
 	{
@@ -42466,7 +42466,7 @@ void AWTLPortal::OnUsePortal(class AWTLCharacter* Character)
 
 void AWTLPortal::MoveToLocation(class AWTLCharacter* Character, EWTLPortalActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLPortal.MoveToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortal.MoveToLocation"));
 
 	struct
 	{
@@ -42488,7 +42488,7 @@ void AWTLPortal::MoveToLocation(class AWTLCharacter* Character, EWTLPortalAction
 
 void AWTLProjectileLauncher::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLProjectileLauncher.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLProjectileLauncher.Server_StopUse"));
 
 	struct
 	{
@@ -42504,7 +42504,7 @@ void AWTLProjectileLauncher::Server_StopUse()
 
 void AWTLProjectileLauncher::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLProjectileLauncher.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLProjectileLauncher.Server_StartUse"));
 
 	struct
 	{
@@ -42520,7 +42520,7 @@ void AWTLProjectileLauncher::Server_StartUse()
 
 void AWTLProjectileLauncher::NetMulticast_OnStopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLProjectileLauncher.NetMulticast_OnStopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLProjectileLauncher.NetMulticast_OnStopUse"));
 
 	struct
 	{
@@ -42536,7 +42536,7 @@ void AWTLProjectileLauncher::NetMulticast_OnStopUse()
 
 void AWTLProjectileLauncher::NetMulticast_OnStartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLProjectileLauncher.NetMulticast_OnStartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLProjectileLauncher.NetMulticast_OnStartUse"));
 
 	struct
 	{
@@ -42557,7 +42557,7 @@ void AWTLProjectileLauncher::NetMulticast_OnStartUse()
 
 void AWTLQuestObject::ShowCharacterActionTimerWidget(class AWTLCharacter* Character, float Timeout, EWTLActionTimerWidgetType Type, EWTLCountdownSliderWidgetFillingType Direction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.ShowCharacterActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.ShowCharacterActionTimerWidget"));
 
 	struct
 	{
@@ -42586,7 +42586,7 @@ void AWTLQuestObject::ShowCharacterActionTimerWidget(class AWTLCharacter* Charac
 
 void AWTLQuestObject::SetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLQuestCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.SetQuestState"));
 
 	struct
 	{
@@ -42612,7 +42612,7 @@ void AWTLQuestObject::SetQuestState(class AWTLCharacter* Character, int QuestID,
 
 void AWTLQuestObject::OnRep_ChangeState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.OnRep_ChangeState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.OnRep_ChangeState"));
 
 	struct
 	{
@@ -42630,7 +42630,7 @@ void AWTLQuestObject::OnRep_ChangeState()
 
 void AWTLQuestObject::OnChangeState(unsigned char Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.OnChangeState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.OnChangeState"));
 
 	struct
 	{
@@ -42651,7 +42651,7 @@ void AWTLQuestObject::OnChangeState(unsigned char Value)
 
 void AWTLQuestObject::HideCharacterActionTimerWidget(class AWTLCharacter* Character, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.HideCharacterActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.HideCharacterActionTimerWidget"));
 
 	struct
 	{
@@ -42675,7 +42675,7 @@ void AWTLQuestObject::HideCharacterActionTimerWidget(class AWTLCharacter* Charac
 
 void AWTLQuestObject::GetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.GetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.GetQuestState"));
 
 	struct
 	{
@@ -42703,7 +42703,7 @@ void AWTLQuestObject::GetQuestState(class AWTLCharacter* Character, int QuestID,
 
 void AWTLQuestObject::CharacterTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLQuestCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.CharacterTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.CharacterTakeQuest"));
 
 	struct
 	{
@@ -42731,7 +42731,7 @@ void AWTLQuestObject::CharacterTakeQuest(class AWTLCharacter* Character, int Que
 
 void AWTLQuestObject::CharacterCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLQuestCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.CharacterCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.CharacterCompleteQuest"));
 
 	struct
 	{
@@ -42759,7 +42759,7 @@ void AWTLQuestObject::CharacterCompleteQuest(class AWTLCharacter* Character, int
 
 void AWTLQuestObject::CharacterCanTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLQuestCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.CharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.CharacterCanTakeQuest"));
 
 	struct
 	{
@@ -42787,7 +42787,7 @@ void AWTLQuestObject::CharacterCanTakeQuest(class AWTLCharacter* Character, int 
 
 void AWTLQuestObject::CharacterCanCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLQuestCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObject.CharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObject.CharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -42811,7 +42811,7 @@ void AWTLQuestObject::CharacterCanCompleteQuest(class AWTLCharacter* Character, 
 
 void AWTLQuestObjectAchievement::UpdateMeshAchievement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectAchievement.UpdateMeshAchievement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectAchievement.UpdateMeshAchievement"));
 
 	struct
 	{
@@ -42827,7 +42827,7 @@ void AWTLQuestObjectAchievement::UpdateMeshAchievement()
 
 void AWTLQuestObjectAchievement::HideAllMeshes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectAchievement.HideAllMeshes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectAchievement.HideAllMeshes"));
 
 	struct
 	{
@@ -42845,7 +42845,7 @@ void AWTLQuestObjectAchievement::HideAllMeshes()
 
 void AWTLQuestObjectAchievement::GetQuestStates(TArray<struct FWTLQuestState>* OutQuestStates)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectAchievement.GetQuestStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectAchievement.GetQuestStates"));
 
 	struct
 	{
@@ -42870,7 +42870,7 @@ void AWTLQuestObjectAchievement::GetQuestStates(TArray<struct FWTLQuestState>* O
 
 void AWTLQuestObjectForAction::SetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLObjFAActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectForAction.SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectForAction.SetQuestState"));
 
 	struct
 	{
@@ -42900,7 +42900,7 @@ void AWTLQuestObjectForAction::SetQuestState(class AWTLCharacter* Character, int
 
 void AWTLQuestObjectForAction::GetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectForAction.GetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectForAction.GetQuestState"));
 
 	struct
 	{
@@ -42928,7 +42928,7 @@ void AWTLQuestObjectForAction::GetQuestState(class AWTLCharacter* Character, int
 
 void AWTLQuestObjectForAction::CharacterCanTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLObjFACheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectForAction.CharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectForAction.CharacterCanTakeQuest"));
 
 	struct
 	{
@@ -42956,7 +42956,7 @@ void AWTLQuestObjectForAction::CharacterCanTakeQuest(class AWTLCharacter* Charac
 
 void AWTLQuestObjectForAction::CharacterCanCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLObjFACheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectForAction.CharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectForAction.CharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -42980,7 +42980,7 @@ void AWTLQuestObjectForAction::CharacterCanCompleteQuest(class AWTLCharacter* Ch
 
 void AWTLQuestObjectSpawner::OnRep_CurrentState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.OnRep_CurrentState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.OnRep_CurrentState"));
 
 	struct
 	{
@@ -42998,7 +42998,7 @@ void AWTLQuestObjectSpawner::OnRep_CurrentState()
 
 void AWTLQuestObjectSpawner::NetMulticast_CharacterUseItem(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.NetMulticast_CharacterUseItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.NetMulticast_CharacterUseItem"));
 
 	struct
 	{
@@ -43018,7 +43018,7 @@ void AWTLQuestObjectSpawner::NetMulticast_CharacterUseItem(uint64_t CharacterID)
 
 void AWTLQuestObjectSpawner::BPOnTakeItem(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.BPOnTakeItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.BPOnTakeItem"));
 
 	struct
 	{
@@ -43038,7 +43038,7 @@ void AWTLQuestObjectSpawner::BPOnTakeItem(class AWTLCharacter* Character)
 
 void AWTLQuestObjectSpawner::BPOnStartInteraction(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.BPOnStartInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.BPOnStartInteraction"));
 
 	struct
 	{
@@ -43059,7 +43059,7 @@ void AWTLQuestObjectSpawner::BPOnStartInteraction(class AWTLCharacter* Character
 
 void AWTLQuestObjectSpawner::BPOnFinishInteraction(class AWTLCharacter* Character, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.BPOnFinishInteraction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.BPOnFinishInteraction"));
 
 	struct
 	{
@@ -43082,7 +43082,7 @@ void AWTLQuestObjectSpawner::BPOnFinishInteraction(class AWTLCharacter* Characte
 
 bool AWTLQuestObjectSpawner::BPIsRelevantForCharacterQuestState(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLQuestObjectSpawner.BPIsRelevantForCharacterQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLQuestObjectSpawner.BPIsRelevantForCharacterQuestState"));
 
 	struct
 	{
@@ -43105,7 +43105,7 @@ bool AWTLQuestObjectSpawner::BPIsRelevantForCharacterQuestState(class AWTLCharac
 
 void UWTLRadialMenuInstigatorInterface::GenerateRadialMenuButtons(TArray<struct FWTLUseMenuButtonInfo>* ButtonsInfoArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRadialMenuInstigatorInterface.GenerateRadialMenuButtons");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRadialMenuInstigatorInterface.GenerateRadialMenuButtons"));
 
 	struct
 	{
@@ -43125,7 +43125,7 @@ void UWTLRadialMenuInstigatorInterface::GenerateRadialMenuButtons(TArray<struct 
 
 void AWTLRangedWeapon::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_StopUse"));
 
 	struct
 	{
@@ -43141,7 +43141,7 @@ void AWTLRangedWeapon::Server_StopUse()
 
 void AWTLRangedWeapon::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_StartUse"));
 
 	struct
 	{
@@ -43159,7 +43159,7 @@ void AWTLRangedWeapon::Server_StartUse()
 
 void AWTLRangedWeapon::Server_SetFireModeIndex(unsigned char FireModeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_SetFireModeIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_SetFireModeIndex"));
 
 	struct
 	{
@@ -43177,7 +43177,7 @@ void AWTLRangedWeapon::Server_SetFireModeIndex(unsigned char FireModeIndex)
 
 void AWTLRangedWeapon::Server_OnUnload()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_OnUnload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_OnUnload"));
 
 	struct
 	{
@@ -43193,7 +43193,7 @@ void AWTLRangedWeapon::Server_OnUnload()
 
 void AWTLRangedWeapon::Server_OnReload()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_OnReload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_OnReload"));
 
 	struct
 	{
@@ -43211,7 +43211,7 @@ void AWTLRangedWeapon::Server_OnReload()
 
 void AWTLRangedWeapon::Server_OnLoad(uint64_t AmmoItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_OnLoad");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_OnLoad"));
 
 	struct
 	{
@@ -43229,7 +43229,7 @@ void AWTLRangedWeapon::Server_OnLoad(uint64_t AmmoItemID)
 
 void AWTLRangedWeapon::Server_InterruptLoading()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_InterruptLoading");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_InterruptLoading"));
 
 	struct
 	{
@@ -43245,7 +43245,7 @@ void AWTLRangedWeapon::Server_InterruptLoading()
 
 void AWTLRangedWeapon::Server_ChangeAmmoItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Server_ChangeAmmoItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Server_ChangeAmmoItem"));
 
 	struct
 	{
@@ -43261,7 +43261,7 @@ void AWTLRangedWeapon::Server_ChangeAmmoItem()
 
 void AWTLRangedWeapon::PostReload()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.PostReload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.PostReload"));
 
 	struct
 	{
@@ -43277,7 +43277,7 @@ void AWTLRangedWeapon::PostReload()
 
 void AWTLRangedWeapon::OnRep_InterruptLoadingReceived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_InterruptLoadingReceived");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_InterruptLoadingReceived"));
 
 	struct
 	{
@@ -43293,7 +43293,7 @@ void AWTLRangedWeapon::OnRep_InterruptLoadingReceived()
 
 void AWTLRangedWeapon::OnRep_FireModeIndex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_FireModeIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_FireModeIndex"));
 
 	struct
 	{
@@ -43309,7 +43309,7 @@ void AWTLRangedWeapon::OnRep_FireModeIndex()
 
 void AWTLRangedWeapon::OnRep_Customization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_Customization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_Customization"));
 
 	struct
 	{
@@ -43327,7 +43327,7 @@ void AWTLRangedWeapon::OnRep_Customization()
 
 void AWTLRangedWeapon::OnRep_CurrentState(EWTLWeaponState Previous)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_CurrentState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_CurrentState"));
 
 	struct
 	{
@@ -43345,7 +43345,7 @@ void AWTLRangedWeapon::OnRep_CurrentState(EWTLWeaponState Previous)
 
 void AWTLRangedWeapon::OnRep_CurrentAmmoID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_CurrentAmmoID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_CurrentAmmoID"));
 
 	struct
 	{
@@ -43361,7 +43361,7 @@ void AWTLRangedWeapon::OnRep_CurrentAmmoID()
 
 void AWTLRangedWeapon::OnRep_AttachmentTypeIDs()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.OnRep_AttachmentTypeIDs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.OnRep_AttachmentTypeIDs"));
 
 	struct
 	{
@@ -43377,7 +43377,7 @@ void AWTLRangedWeapon::OnRep_AttachmentTypeIDs()
 
 void AWTLRangedWeapon::NetMulticast_OnStopFire()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.NetMulticast_OnStopFire");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.NetMulticast_OnStopFire"));
 
 	struct
 	{
@@ -43396,7 +43396,7 @@ void AWTLRangedWeapon::NetMulticast_OnStopFire()
 
 void AWTLRangedWeapon::NetMulticast_OnStartFire(unsigned char FireModeIndex, bool FireLast)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.NetMulticast_OnStartFire");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.NetMulticast_OnStartFire"));
 
 	struct
 	{
@@ -43421,7 +43421,7 @@ void AWTLRangedWeapon::NetMulticast_OnStartFire(unsigned char FireModeIndex, boo
 
 void AWTLRangedWeapon::NetMulticast_OnReload(uint64_t AmmoItemID, bool bIsFullReload, unsigned char CountToReload, int CurrentAmmoCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.NetMulticast_OnReload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.NetMulticast_OnReload"));
 
 	struct
 	{
@@ -43445,7 +43445,7 @@ void AWTLRangedWeapon::NetMulticast_OnReload(uint64_t AmmoItemID, bool bIsFullRe
 
 void AWTLRangedWeapon::NetMulticast_OnApplyWeaponAttachments()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.NetMulticast_OnApplyWeaponAttachments");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.NetMulticast_OnApplyWeaponAttachments"));
 
 	struct
 	{
@@ -43461,7 +43461,7 @@ void AWTLRangedWeapon::NetMulticast_OnApplyWeaponAttachments()
 
 void AWTLRangedWeapon::NetMulticast_OnApplyCustomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.NetMulticast_OnApplyCustomization");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.NetMulticast_OnApplyCustomization"));
 
 	struct
 	{
@@ -43477,7 +43477,7 @@ void AWTLRangedWeapon::NetMulticast_OnApplyCustomization()
 
 void AWTLRangedWeapon::ClientActionFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.ClientActionFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.ClientActionFinished"));
 
 	struct
 	{
@@ -43493,7 +43493,7 @@ void AWTLRangedWeapon::ClientActionFinished()
 
 void AWTLRangedWeapon::Client_UpdateAmmoItemReference()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Client_UpdateAmmoItemReference");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Client_UpdateAmmoItemReference"));
 
 	struct
 	{
@@ -43512,7 +43512,7 @@ void AWTLRangedWeapon::Client_UpdateAmmoItemReference()
 
 void AWTLRangedWeapon::Client_OnStopUse(unsigned char CurrentMagazineAmmoCount, int CurrentAmmoCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Client_OnStopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Client_OnStopUse"));
 
 	struct
 	{
@@ -43534,7 +43534,7 @@ void AWTLRangedWeapon::Client_OnStopUse(unsigned char CurrentMagazineAmmoCount, 
 
 void AWTLRangedWeapon::Client_OnPostReload(unsigned char AmmoCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRangedWeapon.Client_OnPostReload");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRangedWeapon.Client_OnPostReload"));
 
 	struct
 	{
@@ -43552,7 +43552,7 @@ void AWTLRangedWeapon::Client_OnPostReload(unsigned char AmmoCount)
 
 void UWTLRPGHUDGroupInfo::UpdateGroupMembersData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDGroupInfo.UpdateGroupMembersData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDGroupInfo.UpdateGroupMembersData"));
 
 	struct
 	{
@@ -43568,7 +43568,7 @@ void UWTLRPGHUDGroupInfo::UpdateGroupMembersData()
 
 void UWTLRPGHUDPlayersTableItem::OnSendMessageBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDPlayersTableItem.OnSendMessageBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDPlayersTableItem.OnSendMessageBtnClick"));
 
 	struct
 	{
@@ -43584,7 +43584,7 @@ void UWTLRPGHUDPlayersTableItem::OnSendMessageBtnClick()
 
 void UWTLRPGHUDPlayersTableItem::OnSendInviteToGroupBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDPlayersTableItem.OnSendInviteToGroupBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDPlayersTableItem.OnSendInviteToGroupBtnClick"));
 
 	struct
 	{
@@ -43600,7 +43600,7 @@ void UWTLRPGHUDPlayersTableItem::OnSendInviteToGroupBtnClick()
 
 void UWTLRPGHUDPlayersTableItem::OnCharacterInfoBtnClick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDPlayersTableItem.OnCharacterInfoBtnClick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDPlayersTableItem.OnCharacterInfoBtnClick"));
 
 	struct
 	{
@@ -43618,7 +43618,7 @@ void UWTLRPGHUDPlayersTableItem::OnCharacterInfoBtnClick()
 
 void UWTLRPGHUDPlayersTableWindow::OnSendMessageBtnClicked(const struct FString& CharacterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDPlayersTableWindow.OnSendMessageBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDPlayersTableWindow.OnSendMessageBtnClicked"));
 
 	struct
 	{
@@ -43638,7 +43638,7 @@ void UWTLRPGHUDPlayersTableWindow::OnSendMessageBtnClicked(const struct FString&
 
 void UWTLRPGHUDPlayersTableWindow::OnCharacterInfoBtnClicked(uint64_t CharacterID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGHUDPlayersTableWindow.OnCharacterInfoBtnClicked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGHUDPlayersTableWindow.OnCharacterInfoBtnClicked"));
 
 	struct
 	{
@@ -43658,7 +43658,7 @@ void UWTLRPGHUDPlayersTableWindow::OnCharacterInfoBtnClicked(uint64_t CharacterI
 
 void AWTLRPGPlayerController::OnSendGlobalGroupInviteResponse(const struct FWTLResponse& Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerController.OnSendGlobalGroupInviteResponse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerController.OnSendGlobalGroupInviteResponse"));
 
 	struct
 	{
@@ -43678,7 +43678,7 @@ void AWTLRPGPlayerController::OnSendGlobalGroupInviteResponse(const struct FWTLR
 
 void AWTLRPGPlayerController::OnRemovedFromGroup(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerController.OnRemovedFromGroup");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerController.OnRemovedFromGroup"));
 
 	struct
 	{
@@ -43698,7 +43698,7 @@ void AWTLRPGPlayerController::OnRemovedFromGroup(const struct FWTLEvent& Event)
 
 void AWTLRPGPlayerController::OnGetGroupInvite(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerController.OnGetGroupInvite");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerController.OnGetGroupInvite"));
 
 	struct
 	{
@@ -43718,7 +43718,7 @@ void AWTLRPGPlayerController::OnGetGroupInvite(const struct FWTLEvent& Event)
 
 void AWTLRPGPlayerController::OnDeleteGroupInvite(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerController.OnDeleteGroupInvite");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerController.OnDeleteGroupInvite"));
 
 	struct
 	{
@@ -43738,7 +43738,7 @@ void AWTLRPGPlayerController::OnDeleteGroupInvite(const struct FWTLEvent& Event)
 
 void AWTLRPGPlayerController::OnBecameGroupLeader(const struct FWTLEvent& Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerController.OnBecameGroupLeader");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerController.OnBecameGroupLeader"));
 
 	struct
 	{
@@ -43756,7 +43756,7 @@ void AWTLRPGPlayerController::OnBecameGroupLeader(const struct FWTLEvent& Event)
 
 void AWTLRPGPlayerState::OnRep_Group()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLRPGPlayerState.OnRep_Group");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLRPGPlayerState.OnRep_Group"));
 
 	struct
 	{
@@ -43772,7 +43772,7 @@ void AWTLRPGPlayerState::OnRep_Group()
 
 void AWTLSkyLevelScriptActor::OnRep_DesiredWindActiveTime()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSkyLevelScriptActor.OnRep_DesiredWindActiveTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSkyLevelScriptActor.OnRep_DesiredWindActiveTime"));
 
 	struct
 	{
@@ -43790,7 +43790,7 @@ void AWTLSkyLevelScriptActor::OnRep_DesiredWindActiveTime()
 
 bool AWTLSkyLevelScriptActor::GetUndergroundMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSkyLevelScriptActor.GetUndergroundMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSkyLevelScriptActor.GetUndergroundMode"));
 
 	struct
 	{
@@ -43811,7 +43811,7 @@ bool AWTLSkyLevelScriptActor::GetUndergroundMode()
 
 float AWTLSkyLevelScriptActor::GetCloudsValue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSkyLevelScriptActor.GetCloudsValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSkyLevelScriptActor.GetCloudsValue"));
 
 	struct
 	{
@@ -43832,7 +43832,7 @@ float AWTLSkyLevelScriptActor::GetCloudsValue()
 
 void AWTLStash::OnStorageContentChanged(struct FWTLStorageContent* StorageContent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStash.OnStorageContentChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStash.OnStorageContentChanged"));
 
 	struct
 	{
@@ -43852,7 +43852,7 @@ void AWTLStash::OnStorageContentChanged(struct FWTLStorageContent* StorageConten
 
 void AWTLStash::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStash.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStash.OnRep_StorageContent"));
 
 	struct
 	{
@@ -43868,7 +43868,7 @@ void AWTLStash::OnRep_StorageContent()
 
 void AWTLSteamMainMenuLevelScriptActor::ShowInventoryItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSteamMainMenuLevelScriptActor.ShowInventoryItems");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSteamMainMenuLevelScriptActor.ShowInventoryItems"));
 
 	struct
 	{
@@ -43884,7 +43884,7 @@ void AWTLSteamMainMenuLevelScriptActor::ShowInventoryItems()
 
 void AWTLSteamMainMenuLevelScriptActor::Authorize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSteamMainMenuLevelScriptActor.Authorize");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSteamMainMenuLevelScriptActor.Authorize"));
 
 	struct
 	{
@@ -43900,7 +43900,7 @@ void AWTLSteamMainMenuLevelScriptActor::Authorize()
 
 void AWTLSteelTarget::OnRep_RecoveryCooldown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSteelTarget.OnRep_RecoveryCooldown");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSteelTarget.OnRep_RecoveryCooldown"));
 
 	struct
 	{
@@ -43918,7 +43918,7 @@ void AWTLSteelTarget::OnRep_RecoveryCooldown()
 
 void AWTLSteelTarget::NetMulticast_UpdateImpulseValue(float Impulse)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLSteelTarget.NetMulticast_UpdateImpulseValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSteelTarget.NetMulticast_UpdateImpulseValue"));
 
 	struct
 	{
@@ -43936,7 +43936,7 @@ void AWTLSteelTarget::NetMulticast_UpdateImpulseValue(float Impulse)
 
 void AWTLStorageBox::OnRep_StorageContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLStorageBox.OnRep_StorageContent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLStorageBox.OnRep_StorageContent"));
 
 	struct
 	{
@@ -43952,7 +43952,7 @@ void AWTLStorageBox::OnRep_StorageContent()
 
 void AWTLTacticalWeapon::Server_StopUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTacticalWeapon.Server_StopUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTacticalWeapon.Server_StopUse"));
 
 	struct
 	{
@@ -43968,7 +43968,7 @@ void AWTLTacticalWeapon::Server_StopUse()
 
 void AWTLTacticalWeapon::Server_StartUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTacticalWeapon.Server_StartUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTacticalWeapon.Server_StartUse"));
 
 	struct
 	{
@@ -43984,7 +43984,7 @@ void AWTLTacticalWeapon::Server_StartUse()
 
 void AWTLTacticalWeapon::NetMulticast_OnUse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTacticalWeapon.NetMulticast_OnUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTacticalWeapon.NetMulticast_OnUse"));
 
 	struct
 	{
@@ -44000,7 +44000,7 @@ void AWTLTacticalWeapon::NetMulticast_OnUse()
 
 void AWTLTacticalWeapon::NetMulticast_OnPlace()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTacticalWeapon.NetMulticast_OnPlace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTacticalWeapon.NetMulticast_OnPlace"));
 
 	struct
 	{
@@ -44016,7 +44016,7 @@ void AWTLTacticalWeapon::NetMulticast_OnPlace()
 
 void UWTLTiltComponent::OnRep_TiltState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTiltComponent.OnRep_TiltState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTiltComponent.OnRep_TiltState"));
 
 	struct
 	{
@@ -44032,7 +44032,7 @@ void UWTLTiltComponent::OnRep_TiltState()
 
 void AWTLTransitionLevelScriptActor::OnLevelLoaded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTransitionLevelScriptActor.OnLevelLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTransitionLevelScriptActor.OnLevelLoaded"));
 
 	struct
 	{
@@ -44053,7 +44053,7 @@ void AWTLTransitionLevelScriptActor::OnLevelLoaded()
 
 void AWTLTriggerObject::SetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState State, EWTLTriggerCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.SetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.SetQuestState"));
 
 	struct
 	{
@@ -44081,7 +44081,7 @@ void AWTLTriggerObject::SetQuestState(class AWTLCharacter* Character, int QuestI
 
 void AWTLTriggerObject::OnEndUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.OnEndUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.OnEndUse"));
 
 	struct
 	{
@@ -44101,7 +44101,7 @@ void AWTLTriggerObject::OnEndUse(class AWTLCharacter* Character)
 
 void AWTLTriggerObject::OnCharacterUse(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.OnCharacterUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.OnCharacterUse"));
 
 	struct
 	{
@@ -44122,7 +44122,7 @@ void AWTLTriggerObject::OnCharacterUse(class AWTLCharacter* Character)
 
 bool AWTLTriggerObject::OnCharacterCanBeUsed(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.OnCharacterCanBeUsed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.OnCharacterCanBeUsed"));
 
 	struct
 	{
@@ -44148,7 +44148,7 @@ bool AWTLTriggerObject::OnCharacterCanBeUsed(class AWTLCharacter* Character)
 
 bool AWTLTriggerObject::HasQuestWithQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.HasQuestWithQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.HasQuestWithQuestState"));
 
 	struct
 	{
@@ -44176,7 +44176,7 @@ bool AWTLTriggerObject::HasQuestWithQuestState(class AWTLCharacter* Character, i
 
 EWTLTriggerObjectActionType AWTLTriggerObject::GetTriggerActionType(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.GetTriggerActionType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.GetTriggerActionType"));
 
 	struct
 	{
@@ -44201,7 +44201,7 @@ EWTLTriggerObjectActionType AWTLTriggerObject::GetTriggerActionType(class AWTLCh
 
 void AWTLTriggerObject::GetQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.GetQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.GetQuestState"));
 
 	struct
 	{
@@ -44229,7 +44229,7 @@ void AWTLTriggerObject::GetQuestState(class AWTLCharacter* Character, int QuestI
 
 void AWTLTriggerObject::CharacterTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLTriggerCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.CharacterTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.CharacterTakeQuest"));
 
 	struct
 	{
@@ -44257,7 +44257,7 @@ void AWTLTriggerObject::CharacterTakeQuest(class AWTLCharacter* Character, int Q
 
 void AWTLTriggerObject::CharacterCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLTriggerCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.CharacterCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.CharacterCompleteQuest"));
 
 	struct
 	{
@@ -44285,7 +44285,7 @@ void AWTLTriggerObject::CharacterCompleteQuest(class AWTLCharacter* Character, i
 
 void AWTLTriggerObject::CharacterCanTakeQuest(class AWTLCharacter* Character, int QuestID, EWTLTriggerCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.CharacterCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.CharacterCanTakeQuest"));
 
 	struct
 	{
@@ -44313,7 +44313,7 @@ void AWTLTriggerObject::CharacterCanTakeQuest(class AWTLCharacter* Character, in
 
 void AWTLTriggerObject::CharacterCanCompleteQuest(class AWTLCharacter* Character, int QuestID, EWTLTriggerCheckResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.CharacterCanCompleteQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.CharacterCanCompleteQuest"));
 
 	struct
 	{
@@ -44341,7 +44341,7 @@ void AWTLTriggerObject::CharacterCanCompleteQuest(class AWTLCharacter* Character
 
 bool AWTLTriggerObject::CanQuestBeCompleted(class AWTLCharacter* Character, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.CanQuestBeCompleted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.CanQuestBeCompleted"));
 
 	struct
 	{
@@ -44367,7 +44367,7 @@ bool AWTLTriggerObject::CanQuestBeCompleted(class AWTLCharacter* Character, int 
 
 void AWTLTriggerObject::BeginInformationDialog(class AWTLCharacter* Character, int InformationDialogID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerObject.BeginInformationDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerObject.BeginInformationDialog"));
 
 	struct
 	{
@@ -44387,7 +44387,7 @@ void AWTLTriggerObject::BeginInformationDialog(class AWTLCharacter* Character, i
 
 void AWTLTriggerStateObject::OnRep_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerStateObject.OnRep_State");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerStateObject.OnRep_State"));
 
 	struct
 	{
@@ -44406,7 +44406,7 @@ void AWTLTriggerStateObject::OnRep_State()
 
 void AWTLTriggerStateObject::OnCharacterUse(class AWTLCharacter* Character, EWTLTriggerObjectState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerStateObject.OnCharacterUse");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerStateObject.OnCharacterUse"));
 
 	struct
 	{
@@ -44430,7 +44430,7 @@ void AWTLTriggerStateObject::OnCharacterUse(class AWTLCharacter* Character, EWTL
 
 void AWTLTriggerVolume::SwitchCharacterQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState* QuestState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.SwitchCharacterQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.SwitchCharacterQuestState"));
 
 	struct
 	{
@@ -44459,7 +44459,7 @@ void AWTLTriggerVolume::SwitchCharacterQuestState(class AWTLCharacter* Character
 
 void AWTLTriggerVolume::ShowCharacterActionTimerWidget(class AWTLCharacter* Character, float Timeout, EWTLActionTimerWidgetType Type, EWTLCountdownSliderWidgetFillingType Direction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.ShowCharacterActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.ShowCharacterActionTimerWidget"));
 
 	struct
 	{
@@ -44488,7 +44488,7 @@ void AWTLTriggerVolume::ShowCharacterActionTimerWidget(class AWTLCharacter* Char
 
 void AWTLTriggerVolume::SetCharacterQuestState(class AWTLCharacter* Character, int QuestID, EWTLQuestState QuestState, EWTLTriggerActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.SetCharacterQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.SetCharacterQuestState"));
 
 	struct
 	{
@@ -44519,7 +44519,7 @@ void AWTLTriggerVolume::SetCharacterQuestState(class AWTLCharacter* Character, i
 
 void AWTLTriggerVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.OnEndOverlap"));
 
 	struct
 	{
@@ -44545,7 +44545,7 @@ void AWTLTriggerVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedCompon
 
 void AWTLTriggerVolume::OnCharacterLeave(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.OnCharacterLeave");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.OnCharacterLeave"));
 
 	struct
 	{
@@ -44565,7 +44565,7 @@ void AWTLTriggerVolume::OnCharacterLeave(class AWTLCharacter* Character)
 
 void AWTLTriggerVolume::OnCharacterEnter(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.OnCharacterEnter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.OnCharacterEnter"));
 
 	struct
 	{
@@ -44590,7 +44590,7 @@ void AWTLTriggerVolume::OnCharacterEnter(class AWTLCharacter* Character)
 
 void AWTLTriggerVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.OnBeginOverlap"));
 
 	struct
 	{
@@ -44621,7 +44621,7 @@ void AWTLTriggerVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComp
 
 void AWTLTriggerVolume::HideCharacterActionTimerWidget(class AWTLCharacter* Character, bool Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.HideCharacterActionTimerWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.HideCharacterActionTimerWidget"));
 
 	struct
 	{
@@ -44648,7 +44648,7 @@ void AWTLTriggerVolume::HideCharacterActionTimerWidget(class AWTLCharacter* Char
 
 void AWTLTriggerVolume::GiveItemToCharacter(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Count, int Condition, EWTLTriggerActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.GiveItemToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.GiveItemToCharacter"));
 
 	struct
 	{
@@ -44682,7 +44682,7 @@ void AWTLTriggerVolume::GiveItemToCharacter(class AWTLCharacter* Character, EWTL
 
 void AWTLTriggerVolume::GiveItemsToCharacter(class AWTLCharacter* Character, TArray<struct FWTLGiveItemInfo> ItemsToGive, EWTLTriggerActionResult* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.GiveItemsToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.GiveItemsToCharacter"));
 
 	struct
 	{
@@ -44710,7 +44710,7 @@ void AWTLTriggerVolume::GiveItemsToCharacter(class AWTLCharacter* Character, TAr
 
 EWTLQuestState AWTLTriggerVolume::GetCharactersQuestState(class AWTLCharacter* Character, int QuestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.GetCharactersQuestState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.GetCharactersQuestState"));
 
 	struct
 	{
@@ -44735,7 +44735,7 @@ EWTLQuestState AWTLTriggerVolume::GetCharactersQuestState(class AWTLCharacter* C
 
 int AWTLTriggerVolume::GetCharactersCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.GetCharactersCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.GetCharactersCount"));
 
 	struct
 	{
@@ -44761,7 +44761,7 @@ int AWTLTriggerVolume::GetCharactersCount()
 
 bool AWTLTriggerVolume::CheckCharacterHaveItem(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, int Count, bool CheckContainers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.CheckCharacterHaveItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.CheckCharacterHaveItem"));
 
 	struct
 	{
@@ -44793,7 +44793,7 @@ bool AWTLTriggerVolume::CheckCharacterHaveItem(class AWTLCharacter* Character, E
 
 bool AWTLTriggerVolume::CharacterInVolume(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTriggerVolume.CharacterInVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTriggerVolume.CharacterInVolume"));
 
 	struct
 	{
@@ -44821,7 +44821,7 @@ bool AWTLTriggerVolume::CharacterInVolume(class AWTLCharacter* Character)
 
 void AWTLTutorialVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTutorialVolume.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTutorialVolume.OnBeginOverlap"));
 
 	struct
 	{
@@ -44854,7 +44854,7 @@ void AWTLTutorialVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedCom
 
 void AWTLUndergroundVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUndergroundVolume.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUndergroundVolume.OnEndOverlap"));
 
 	struct
 	{
@@ -44885,7 +44885,7 @@ void AWTLUndergroundVolume::OnEndOverlap(class UPrimitiveComponent* OverlappedCo
 
 void AWTLUndergroundVolume::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUndergroundVolume.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUndergroundVolume.OnBeginOverlap"));
 
 	struct
 	{
@@ -44915,7 +44915,7 @@ void AWTLUndergroundVolume::OnBeginOverlap(class UPrimitiveComponent* Overlapped
 
 void UWTLUtilityColorWheel::SetColor(const struct FLinearColor& NewColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUtilityColorWheel.SetColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUtilityColorWheel.SetColor"));
 
 	struct
 	{
@@ -44935,7 +44935,7 @@ void UWTLUtilityColorWheel::SetColor(const struct FLinearColor& NewColor)
 
 struct FLinearColor UWTLUtilityColorWheel::GetColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUtilityColorWheel.GetColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUtilityColorWheel.GetColor"));
 
 	struct
 	{
@@ -44957,7 +44957,7 @@ struct FLinearColor UWTLUtilityColorWheel::GetColor()
 
 void UWTLUtilityNumberTextBox::OnNumberTextCommitted(const struct FText& NumberText, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUtilityNumberTextBox.OnNumberTextCommitted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUtilityNumberTextBox.OnNumberTextCommitted"));
 
 	struct
 	{
@@ -44979,7 +44979,7 @@ void UWTLUtilityNumberTextBox::OnNumberTextCommitted(const struct FText& NumberT
 
 void UWTLUtilityNumberTextBox::OnNumberTextChanged(const struct FText& NumberText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLUtilityNumberTextBox.OnNumberTextChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLUtilityNumberTextBox.OnNumberTextChanged"));
 
 	struct
 	{
@@ -45002,7 +45002,7 @@ void UWTLUtilityNumberTextBox::OnNumberTextChanged(const struct FText& NumberTex
 
 void UMasterServerBlueprintLibrary::TriggerIntStatsChange(class AWTLCharacter* Character, const struct FString& StatName, int Value, bool bIsDeltaValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.MasterServerBlueprintLibrary.TriggerIntStatsChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.MasterServerBlueprintLibrary.TriggerIntStatsChange"));
 
 	struct
 	{
@@ -45032,7 +45032,7 @@ void UMasterServerBlueprintLibrary::TriggerIntStatsChange(class AWTLCharacter* C
 
 void UMasterServerBlueprintLibrary::TriggerFloatStatsChange(class AWTLCharacter* Character, const struct FString& StatName, float Value, bool bIsDeltaValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.MasterServerBlueprintLibrary.TriggerFloatStatsChange");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.MasterServerBlueprintLibrary.TriggerFloatStatsChange"));
 
 	struct
 	{
@@ -45060,7 +45060,7 @@ void UMasterServerBlueprintLibrary::TriggerFloatStatsChange(class AWTLCharacter*
 
 void UMasterServerBlueprintLibrary::TriggerAchievement(class AWTLCharacter* Character, const struct FString& AchievementName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.MasterServerBlueprintLibrary.TriggerAchievement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.MasterServerBlueprintLibrary.TriggerAchievement"));
 
 	struct
 	{
@@ -45084,7 +45084,7 @@ void UMasterServerBlueprintLibrary::TriggerAchievement(class AWTLCharacter* Char
 
 void UWTLTestingBlueprintLibrary::ProcessSteamInventoryItem(class AWTLCharacter* Character, const struct FString& ItemID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLTestingBlueprintLibrary.ProcessSteamInventoryItem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLTestingBlueprintLibrary.ProcessSteamInventoryItem"));
 
 	struct
 	{
@@ -45110,7 +45110,7 @@ void UWTLTestingBlueprintLibrary::ProcessSteamInventoryItem(class AWTLCharacter*
 
 void AWTLVolumePortal::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLVolumePortal.OnEndOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLVolumePortal.OnEndOverlap"));
 
 	struct
 	{
@@ -45141,7 +45141,7 @@ void AWTLVolumePortal::OnEndOverlap(class UPrimitiveComponent* OverlappedCompone
 
 void AWTLVolumePortal::OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLVolumePortal.OnBeginOverlap");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLVolumePortal.OnBeginOverlap"));
 
 	struct
 	{
@@ -45171,7 +45171,7 @@ void AWTLVolumePortal::OnBeginOverlap(class UPrimitiveComponent* OverlappedCompo
 
 void UWTLWeaponAttachment::Client_SetMesh(class UStaticMesh* Mesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WTL.WTLWeaponAttachment.Client_SetMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLWeaponAttachment.Client_SetMesh"));
 
 	struct
 	{

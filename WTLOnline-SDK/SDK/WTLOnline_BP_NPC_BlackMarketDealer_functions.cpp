@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_NPC_BlackMarketDealer_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -53,7 +53,7 @@ void ABP_NPC_BlackMarketDealer_C::GetReplicaArrayMainDialog(class AWTLCharacter*
 
 void ABP_NPC_BlackMarketDealer_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int InNPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ExecutingAction"));
 
 	struct
 	{
@@ -86,7 +86,7 @@ void ABP_NPC_BlackMarketDealer_C::ExecutingAction(class AWTLCharacter* Character
 
 void ABP_NPC_BlackMarketDealer_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -111,7 +111,7 @@ void ABP_NPC_BlackMarketDealer_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray
 
 void ABP_NPC_BlackMarketDealer_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ShowStartDialog"));
 
 	struct
 	{
@@ -129,7 +129,7 @@ void ABP_NPC_BlackMarketDealer_C::ShowStartDialog(class AWTLCharacter* Character
 
 void ABP_NPC_BlackMarketDealer_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.UserConstructionScript"));
 
 	struct
 	{
@@ -145,7 +145,7 @@ void ABP_NPC_BlackMarketDealer_C::UserConstructionScript()
 
 void ABP_NPC_BlackMarketDealer_C::Timeline_0_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0_0__FinishedFunc"));
 
 	struct
 	{
@@ -161,7 +161,7 @@ void ABP_NPC_BlackMarketDealer_C::Timeline_0_0__FinishedFunc()
 
 void ABP_NPC_BlackMarketDealer_C::Timeline_0_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0_0__UpdateFunc"));
 
 	struct
 	{
@@ -177,7 +177,7 @@ void ABP_NPC_BlackMarketDealer_C::Timeline_0_0__UpdateFunc()
 
 void ABP_NPC_BlackMarketDealer_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0__FinishedFunc"));
 
 	struct
 	{
@@ -193,7 +193,7 @@ void ABP_NPC_BlackMarketDealer_C::Timeline_0__FinishedFunc()
 
 void ABP_NPC_BlackMarketDealer_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.Timeline_0__UpdateFunc"));
 
 	struct
 	{
@@ -209,7 +209,7 @@ void ABP_NPC_BlackMarketDealer_C::Timeline_0__UpdateFunc()
 
 void ABP_NPC_BlackMarketDealer_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -227,7 +227,7 @@ void ABP_NPC_BlackMarketDealer_C::ReceiveBeginPlay()
 
 void ABP_NPC_BlackMarketDealer_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -248,7 +248,7 @@ void ABP_NPC_BlackMarketDealer_C::OnNPCDialogActivated(class AWTLCharacter* Char
 
 void ABP_NPC_BlackMarketDealer_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -270,7 +270,7 @@ void ABP_NPC_BlackMarketDealer_C::OnPlayerSelectReplica(class AWTLCharacter* Cha
 
 void ABP_NPC_BlackMarketDealer_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ReceiveTick"));
 
 	struct
 	{
@@ -290,7 +290,7 @@ void ABP_NPC_BlackMarketDealer_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_BlackMarketDealer_C::ExecuteUbergraph_BP_NPC_BlackMarketDealer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ExecuteUbergraph_BP_NPC_BlackMarketDealer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_BlackMarketDealer.BP_NPC_BlackMarketDealer_C.ExecuteUbergraph_BP_NPC_BlackMarketDealer"));
 
 	struct
 	{

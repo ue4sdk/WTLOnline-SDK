@@ -21,7 +21,7 @@ namespace SDK
 
 void UEQSC_GetSpawnLocation_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EQSC_GetSpawnLocation.EQSC_GetSpawnLocation_C.ProvideSingleLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EQSC_GetSpawnLocation.EQSC_GetSpawnLocation_C.ProvideSingleLocation"));
 
 	struct
 	{

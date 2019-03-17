@@ -22,7 +22,7 @@ namespace SDK
 
 void ABP_MonsterBase_C::FarAttackBallLightning(const struct FVector& StartLocation, const struct FVector& EndLocation, float RadiusW, float Scale1D)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.FarAttackBallLightning");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.FarAttackBallLightning"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void ABP_MonsterBase_C::FarAttackBallLightning(const struct FVector& StartLocati
 
 void ABP_MonsterBase_C::GetDirectionRotationFromEnemy_(float AcceptableAngleFromEnemy, float* AngleYaw)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetDirectionRotationFromEnemy ");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetDirectionRotationFromEnemy "));
 
 	struct
 	{
@@ -73,7 +73,7 @@ void ABP_MonsterBase_C::GetDirectionRotationFromEnemy_(float AcceptableAngleFrom
 
 void ABP_MonsterBase_C::GetDownPoint(struct FVector* Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetDownPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetDownPoint"));
 
 	struct
 	{
@@ -93,7 +93,7 @@ void ABP_MonsterBase_C::GetDownPoint(struct FVector* Location)
 
 void ABP_MonsterBase_C::UpdateTimeMove()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.UpdateTimeMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.UpdateTimeMove"));
 
 	struct
 	{
@@ -109,7 +109,7 @@ void ABP_MonsterBase_C::UpdateTimeMove()
 
 void ABP_MonsterBase_C::UpdateMoveFromTargetTrace()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.UpdateMoveFromTargetTrace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.UpdateMoveFromTargetTrace"));
 
 	struct
 	{
@@ -127,7 +127,7 @@ void ABP_MonsterBase_C::UpdateMoveFromTargetTrace()
 
 void ABP_MonsterBase_C::MyAngleDirectionFromEnemy(float* ResultAngle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.MyAngleDirectionFromEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.MyAngleDirectionFromEnemy"));
 
 	struct
 	{
@@ -149,7 +149,7 @@ void ABP_MonsterBase_C::MyAngleDirectionFromEnemy(float* ResultAngle)
 
 void ABP_MonsterBase_C::GetVectorToEnemy(struct FVector* Vector)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetVectorToEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetVectorToEnemy"));
 
 	struct
 	{
@@ -169,7 +169,7 @@ void ABP_MonsterBase_C::GetVectorToEnemy(struct FVector* Vector)
 
 void ABP_MonsterBase_C::DecrementDeltaTimeOffConeEnemy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.DecrementDeltaTimeOffConeEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.DecrementDeltaTimeOffConeEnemy"));
 
 	struct
 	{
@@ -185,7 +185,7 @@ void ABP_MonsterBase_C::DecrementDeltaTimeOffConeEnemy()
 
 void ABP_MonsterBase_C::IncrementDeltaTimeInConeEnemy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.IncrementDeltaTimeInConeEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.IncrementDeltaTimeInConeEnemy"));
 
 	struct
 	{
@@ -204,7 +204,7 @@ void ABP_MonsterBase_C::IncrementDeltaTimeInConeEnemy()
 
 void ABP_MonsterBase_C::CheckInConeEnemy(float HalfAngle, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.CheckInConeEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.CheckInConeEnemy"));
 
 	struct
 	{
@@ -229,7 +229,7 @@ void ABP_MonsterBase_C::CheckInConeEnemy(float HalfAngle, bool* Result)
 
 void ABP_MonsterBase_C::SetBiasMode(class AActor* TargetActor, TEnumAsByte<E_MonsterBiasMode> BiasMode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.SetBiasMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.SetBiasMode"));
 
 	struct
 	{
@@ -252,7 +252,7 @@ void ABP_MonsterBase_C::SetBiasMode(class AActor* TargetActor, TEnumAsByte<E_Mon
 
 void ABP_MonsterBase_C::GetRightTrace(bool* IsHit, float* LengthSquared)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetRightTrace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetRightTrace"));
 
 	struct
 	{
@@ -278,7 +278,7 @@ void ABP_MonsterBase_C::GetRightTrace(bool* IsHit, float* LengthSquared)
 
 void ABP_MonsterBase_C::GetMidleTrace(bool* IsHit, float* LengthSquared)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetMidleTrace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetMidleTrace"));
 
 	struct
 	{
@@ -304,7 +304,7 @@ void ABP_MonsterBase_C::GetMidleTrace(bool* IsHit, float* LengthSquared)
 
 void ABP_MonsterBase_C::GetLeftTrace(bool* IsHit, float* LengthSquared)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetLeftTrace");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetLeftTrace"));
 
 	struct
 	{
@@ -327,7 +327,7 @@ void ABP_MonsterBase_C::GetLeftTrace(bool* IsHit, float* LengthSquared)
 
 void ABP_MonsterBase_C::StopMove()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.StopMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.StopMove"));
 
 	struct
 	{
@@ -343,7 +343,7 @@ void ABP_MonsterBase_C::StopMove()
 
 void ABP_MonsterBase_C::StartMove()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.StartMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.StartMove"));
 
 	struct
 	{
@@ -359,7 +359,7 @@ void ABP_MonsterBase_C::StartMove()
 
 void ABP_MonsterBase_C::UpdateMoveToBase()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.UpdateMoveToBase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.UpdateMoveToBase"));
 
 	struct
 	{
@@ -380,7 +380,7 @@ void ABP_MonsterBase_C::UpdateMoveToBase()
 
 void ABP_MonsterBase_C::FarAttackStone(const struct FVector& StartLocation, const struct FVector& EndLocation, float RadiusW, float Scale1D)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.FarAttackStone");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.FarAttackStone"));
 
 	struct
 	{
@@ -408,7 +408,7 @@ void ABP_MonsterBase_C::FarAttackStone(const struct FVector& StartLocation, cons
 
 void ABP_MonsterBase_C::AddImpulseToCharacter(class AWTLCharacter* Character, const struct FVector& Vector, float Power)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.AddImpulseToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.AddImpulseToCharacter"));
 
 	struct
 	{
@@ -436,7 +436,7 @@ void ABP_MonsterBase_C::AddImpulseToCharacter(class AWTLCharacter* Character, co
 
 void ABP_MonsterBase_C::EffectToCharacter(class AWTLCharacter* Character, float Chance, EWTLCharacterEffectType Effect, float MinAmount, float MaxAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.EffectToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.EffectToCharacter"));
 
 	struct
 	{
@@ -466,7 +466,7 @@ void ABP_MonsterBase_C::EffectToCharacter(class AWTLCharacter* Character, float 
 
 void ABP_MonsterBase_C::DamageToCharacter(class AActor* Object, float DamageMultiplier, class AWTLCharacter** Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.DamageToCharacter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.DamageToCharacter"));
 
 	struct
 	{
@@ -490,7 +490,7 @@ void ABP_MonsterBase_C::DamageToCharacter(class AActor* Object, float DamageMult
 
 void ABP_MonsterBase_C::ClearDamageInstigators()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.ClearDamageInstigators");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.ClearDamageInstigators"));
 
 	struct
 	{
@@ -508,7 +508,7 @@ void ABP_MonsterBase_C::ClearDamageInstigators()
 
 void ABP_MonsterBase_C::GetRandomInstigator(class APawn** Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.GetRandomInstigator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.GetRandomInstigator"));
 
 	struct
 	{
@@ -530,7 +530,7 @@ void ABP_MonsterBase_C::GetRandomInstigator(class APawn** Result)
 
 void ABP_MonsterBase_C::AddDamageInstigator(class APawn* DamageInstigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.AddDamageInstigator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.AddDamageInstigator"));
 
 	struct
 	{
@@ -548,7 +548,7 @@ void ABP_MonsterBase_C::AddDamageInstigator(class APawn* DamageInstigator)
 
 void ABP_MonsterBase_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.UserConstructionScript"));
 
 	struct
 	{
@@ -566,7 +566,7 @@ void ABP_MonsterBase_C::UserConstructionScript()
 
 void ABP_MonsterBase_C::OnNotifyEnd_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyEnd_8ABCD9F545F02F37885D9DBAFD8EF8A3");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyEnd_8ABCD9F545F02F37885D9DBAFD8EF8A3"));
 
 	struct
 	{
@@ -586,7 +586,7 @@ void ABP_MonsterBase_C::OnNotifyEnd_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struc
 
 void ABP_MonsterBase_C::OnNotifyBegin_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyBegin_8ABCD9F545F02F37885D9DBAFD8EF8A3");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyBegin_8ABCD9F545F02F37885D9DBAFD8EF8A3"));
 
 	struct
 	{
@@ -606,7 +606,7 @@ void ABP_MonsterBase_C::OnNotifyBegin_8ABCD9F545F02F37885D9DBAFD8EF8A3(const str
 
 void ABP_MonsterBase_C::OnInterrupted_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnInterrupted_8ABCD9F545F02F37885D9DBAFD8EF8A3");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnInterrupted_8ABCD9F545F02F37885D9DBAFD8EF8A3"));
 
 	struct
 	{
@@ -626,7 +626,7 @@ void ABP_MonsterBase_C::OnInterrupted_8ABCD9F545F02F37885D9DBAFD8EF8A3(const str
 
 void ABP_MonsterBase_C::OnBlendOut_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnBlendOut_8ABCD9F545F02F37885D9DBAFD8EF8A3");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnBlendOut_8ABCD9F545F02F37885D9DBAFD8EF8A3"));
 
 	struct
 	{
@@ -646,7 +646,7 @@ void ABP_MonsterBase_C::OnBlendOut_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct
 
 void ABP_MonsterBase_C::OnCompleted_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnCompleted_8ABCD9F545F02F37885D9DBAFD8EF8A3");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnCompleted_8ABCD9F545F02F37885D9DBAFD8EF8A3"));
 
 	struct
 	{
@@ -666,7 +666,7 @@ void ABP_MonsterBase_C::OnCompleted_8ABCD9F545F02F37885D9DBAFD8EF8A3(const struc
 
 void ABP_MonsterBase_C::OnNotifyEnd_D60F49D045A1DD8A024745BFDC6F4742(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyEnd_D60F49D045A1DD8A024745BFDC6F4742");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyEnd_D60F49D045A1DD8A024745BFDC6F4742"));
 
 	struct
 	{
@@ -686,7 +686,7 @@ void ABP_MonsterBase_C::OnNotifyEnd_D60F49D045A1DD8A024745BFDC6F4742(const struc
 
 void ABP_MonsterBase_C::OnNotifyBegin_D60F49D045A1DD8A024745BFDC6F4742(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyBegin_D60F49D045A1DD8A024745BFDC6F4742");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnNotifyBegin_D60F49D045A1DD8A024745BFDC6F4742"));
 
 	struct
 	{
@@ -706,7 +706,7 @@ void ABP_MonsterBase_C::OnNotifyBegin_D60F49D045A1DD8A024745BFDC6F4742(const str
 
 void ABP_MonsterBase_C::OnInterrupted_D60F49D045A1DD8A024745BFDC6F4742(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnInterrupted_D60F49D045A1DD8A024745BFDC6F4742");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnInterrupted_D60F49D045A1DD8A024745BFDC6F4742"));
 
 	struct
 	{
@@ -726,7 +726,7 @@ void ABP_MonsterBase_C::OnInterrupted_D60F49D045A1DD8A024745BFDC6F4742(const str
 
 void ABP_MonsterBase_C::OnBlendOut_D60F49D045A1DD8A024745BFDC6F4742(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnBlendOut_D60F49D045A1DD8A024745BFDC6F4742");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnBlendOut_D60F49D045A1DD8A024745BFDC6F4742"));
 
 	struct
 	{
@@ -746,7 +746,7 @@ void ABP_MonsterBase_C::OnBlendOut_D60F49D045A1DD8A024745BFDC6F4742(const struct
 
 void ABP_MonsterBase_C::OnCompleted_D60F49D045A1DD8A024745BFDC6F4742(const struct FName& NotifyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnCompleted_D60F49D045A1DD8A024745BFDC6F4742");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnCompleted_D60F49D045A1DD8A024745BFDC6F4742"));
 
 	struct
 	{
@@ -766,7 +766,7 @@ void ABP_MonsterBase_C::OnCompleted_D60F49D045A1DD8A024745BFDC6F4742(const struc
 
 void ABP_MonsterBase_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.ReceiveTick"));
 
 	struct
 	{
@@ -786,7 +786,7 @@ void ABP_MonsterBase_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_MonsterBase_C::OnHeavyDamage(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnHeavyDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnHeavyDamage"));
 
 	struct
 	{
@@ -809,7 +809,7 @@ void ABP_MonsterBase_C::OnHeavyDamage(bool Value)
 
 void ABP_MonsterBase_C::ReceiveAnyDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.ReceiveAnyDamage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.ReceiveAnyDamage"));
 
 	struct
 	{
@@ -835,7 +835,7 @@ void ABP_MonsterBase_C::ReceiveAnyDamage(float Damage, class UDamageType* Damage
 
 void ABP_MonsterBase_C::OnReplicatedMovement(float DeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnReplicatedMovement");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnReplicatedMovement"));
 
 	struct
 	{
@@ -859,7 +859,7 @@ void ABP_MonsterBase_C::OnReplicatedMovement(float DeltaTime)
 
 void ABP_MonsterBase_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"));
 
 	struct
 	{
@@ -887,7 +887,7 @@ void ABP_MonsterBase_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_Co
 
 void ABP_MonsterBase_C::OnRep_RunAttack(EWTLMonsterActionType IDAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.OnRep_RunAttack");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.OnRep_RunAttack"));
 
 	struct
 	{
@@ -907,7 +907,7 @@ void ABP_MonsterBase_C::OnRep_RunAttack(EWTLMonsterActionType IDAction)
 
 void ABP_MonsterBase_C::ExecuteUbergraph_BP_MonsterBase(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterBase.BP_MonsterBase_C.ExecuteUbergraph_BP_MonsterBase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterBase.BP_MonsterBase_C.ExecuteUbergraph_BP_MonsterBase"));
 
 	struct
 	{

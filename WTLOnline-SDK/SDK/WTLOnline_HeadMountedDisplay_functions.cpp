@@ -19,7 +19,7 @@ namespace SDK
 
 void UHeadMountedDisplayFunctionLibrary::UpdateExternalTrackingHMDPosition(const struct FTransform& ExternalTrackingTransform)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.UpdateExternalTrackingHMDPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.UpdateExternalTrackingHMDPosition"));
 
 	struct
 	{
@@ -41,7 +41,7 @@ void UHeadMountedDisplayFunctionLibrary::UpdateExternalTrackingHMDPosition(const
 
 void UHeadMountedDisplayFunctionLibrary::SetWorldToMetersScale(class UObject* WorldContext, float NewScale)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetWorldToMetersScale");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetWorldToMetersScale"));
 
 	struct
 	{
@@ -64,7 +64,7 @@ void UHeadMountedDisplayFunctionLibrary::SetWorldToMetersScale(class UObject* Wo
 
 void UHeadMountedDisplayFunctionLibrary::SetTrackingOrigin(TEnumAsByte<EHMDTrackingOrigin> Origin)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetTrackingOrigin");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetTrackingOrigin"));
 
 	struct
 	{
@@ -85,7 +85,7 @@ void UHeadMountedDisplayFunctionLibrary::SetTrackingOrigin(TEnumAsByte<EHMDTrack
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenTexture(class UTexture* InTexture)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenTexture");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenTexture"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenTexture(class UTextur
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenModeTexturePlusEyeLayout(const struct FVector2D& EyeRectMin, const struct FVector2D& EyeRectMax, const struct FVector2D& TextureRectMin, const struct FVector2D& TextureRectMax, bool bDrawEyeFirst, bool bClearBlack, bool bUseAlpha)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenModeTexturePlusEyeLayout");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenModeTexturePlusEyeLayout"));
 
 	struct
 	{
@@ -145,7 +145,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenModeTexturePlusEyeLay
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenMode(ESpectatorScreenMode Mode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenMode"));
 
 	struct
 	{
@@ -167,7 +167,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenMode(ESpectatorScreen
 
 void UHeadMountedDisplayFunctionLibrary::SetClippingPlanes(float Near, float Far)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetClippingPlanes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetClippingPlanes"));
 
 	struct
 	{
@@ -191,7 +191,7 @@ void UHeadMountedDisplayFunctionLibrary::SetClippingPlanes(float Near, float Far
 
 void UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(float Yaw, TEnumAsByte<EOrientPositionSelector> Options)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ResetOrientationAndPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ResetOrientationAndPosition"));
 
 	struct
 	{
@@ -214,7 +214,7 @@ void UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(float Yaw, 
 
 bool UHeadMountedDisplayFunctionLibrary::IsSpectatorScreenModeControllable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsSpectatorScreenModeControllable");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsSpectatorScreenModeControllable"));
 
 	struct
 	{
@@ -236,7 +236,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsSpectatorScreenModeControllable()
 
 bool UHeadMountedDisplayFunctionLibrary::IsInLowPersistenceMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsInLowPersistenceMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsInLowPersistenceMode"));
 
 	struct
 	{
@@ -258,7 +258,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsInLowPersistenceMode()
 
 bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayEnabled"));
 
 	struct
 	{
@@ -280,7 +280,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled()
 
 bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayConnected"));
 
 	struct
 	{
@@ -303,7 +303,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayConnected()
 
 bool UHeadMountedDisplayFunctionLibrary::IsDeviceTracking(const struct FXRDeviceId& XRDeviceId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsDeviceTracking");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsDeviceTracking"));
 
 	struct
 	{
@@ -327,7 +327,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsDeviceTracking(const struct FXRDevice
 
 bool UHeadMountedDisplayFunctionLibrary::HasValidTrackingPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.HasValidTrackingPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.HasValidTrackingPosition"));
 
 	struct
 	{
@@ -350,7 +350,7 @@ bool UHeadMountedDisplayFunctionLibrary::HasValidTrackingPosition()
 
 float UHeadMountedDisplayFunctionLibrary::GetWorldToMetersScale(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetWorldToMetersScale");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetWorldToMetersScale"));
 
 	struct
 	{
@@ -375,7 +375,7 @@ float UHeadMountedDisplayFunctionLibrary::GetWorldToMetersScale(class UObject* W
 
 void UHeadMountedDisplayFunctionLibrary::GetVRFocusState(bool* bUseFocus, bool* bHasFocus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetVRFocusState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetVRFocusState"));
 
 	struct
 	{
@@ -402,7 +402,7 @@ void UHeadMountedDisplayFunctionLibrary::GetVRFocusState(bool* bUseFocus, bool* 
 
 struct FTransform UHeadMountedDisplayFunctionLibrary::GetTrackingToWorldTransform(class UObject* WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingToWorldTransform");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingToWorldTransform"));
 
 	struct
 	{
@@ -436,7 +436,7 @@ struct FTransform UHeadMountedDisplayFunctionLibrary::GetTrackingToWorldTransfor
 
 void UHeadMountedDisplayFunctionLibrary::GetTrackingSensorParameters(int Index, struct FVector* Origin, struct FRotator* Rotation, float* LeftFOV, float* RightFOV, float* TopFOV, float* BottomFOV, float* Distance, float* NearPlane, float* FarPlane, bool* IsActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingSensorParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingSensorParameters"));
 
 	struct
 	{
@@ -488,7 +488,7 @@ void UHeadMountedDisplayFunctionLibrary::GetTrackingSensorParameters(int Index, 
 
 TEnumAsByte<EHMDTrackingOrigin> UHeadMountedDisplayFunctionLibrary::GetTrackingOrigin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOrigin");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOrigin"));
 
 	struct
 	{
@@ -510,7 +510,7 @@ TEnumAsByte<EHMDTrackingOrigin> UHeadMountedDisplayFunctionLibrary::GetTrackingO
 
 float UHeadMountedDisplayFunctionLibrary::GetScreenPercentage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetScreenPercentage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetScreenPercentage"));
 
 	struct
 	{
@@ -538,7 +538,7 @@ float UHeadMountedDisplayFunctionLibrary::GetScreenPercentage()
 
 void UHeadMountedDisplayFunctionLibrary::GetPositionalTrackingCameraParameters(struct FVector* CameraOrigin, struct FRotator* CameraRotation, float* HFOV, float* VFOV, float* CameraDistance, float* NearPlane, float* FarPlane)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPositionalTrackingCameraParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPositionalTrackingCameraParameters"));
 
 	struct
 	{
@@ -579,7 +579,7 @@ void UHeadMountedDisplayFunctionLibrary::GetPositionalTrackingCameraParameters(s
 
 float UHeadMountedDisplayFunctionLibrary::GetPixelDensity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPixelDensity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPixelDensity"));
 
 	struct
 	{
@@ -602,7 +602,7 @@ float UHeadMountedDisplayFunctionLibrary::GetPixelDensity()
 
 void UHeadMountedDisplayFunctionLibrary::GetOrientationAndPosition(struct FRotator* DeviceRotation, struct FVector* DevicePosition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetOrientationAndPosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetOrientationAndPosition"));
 
 	struct
 	{
@@ -628,7 +628,7 @@ void UHeadMountedDisplayFunctionLibrary::GetOrientationAndPosition(struct FRotat
 
 int UHeadMountedDisplayFunctionLibrary::GetNumOfTrackingSensors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetNumOfTrackingSensors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetNumOfTrackingSensors"));
 
 	struct
 	{
@@ -650,7 +650,7 @@ int UHeadMountedDisplayFunctionLibrary::GetNumOfTrackingSensors()
 
 TEnumAsByte<EHMDWornState> UHeadMountedDisplayFunctionLibrary::GetHMDWornState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDWornState");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDWornState"));
 
 	struct
 	{
@@ -672,7 +672,7 @@ TEnumAsByte<EHMDWornState> UHeadMountedDisplayFunctionLibrary::GetHMDWornState()
 
 struct FName UHeadMountedDisplayFunctionLibrary::GetHMDDeviceName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDDeviceName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDDeviceName"));
 
 	struct
 	{
@@ -699,7 +699,7 @@ struct FName UHeadMountedDisplayFunctionLibrary::GetHMDDeviceName()
 
 void UHeadMountedDisplayFunctionLibrary::GetDeviceWorldPose(class UObject* WorldContext, const struct FXRDeviceId& XRDeviceId, bool* bIsTracked, struct FRotator* Orientation, bool* bHasPositionalTracking, struct FVector* Position)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDeviceWorldPose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDeviceWorldPose"));
 
 	struct
 	{
@@ -739,7 +739,7 @@ void UHeadMountedDisplayFunctionLibrary::GetDeviceWorldPose(class UObject* World
 
 void UHeadMountedDisplayFunctionLibrary::GetDevicePose(const struct FXRDeviceId& XRDeviceId, bool* bIsTracked, struct FRotator* Orientation, bool* bHasPositionalTracking, struct FVector* Position)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDevicePose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDevicePose"));
 
 	struct
 	{
@@ -775,7 +775,7 @@ void UHeadMountedDisplayFunctionLibrary::GetDevicePose(const struct FXRDeviceId&
 
 TArray<struct FXRDeviceId> UHeadMountedDisplayFunctionLibrary::EnumerateTrackedDevices(const struct FName& SystemId, EXRTrackedDeviceType DeviceType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnumerateTrackedDevices");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnumerateTrackedDevices"));
 
 	struct
 	{
@@ -801,7 +801,7 @@ TArray<struct FXRDeviceId> UHeadMountedDisplayFunctionLibrary::EnumerateTrackedD
 
 void UHeadMountedDisplayFunctionLibrary::EnableLowPersistenceMode(bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableLowPersistenceMode");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableLowPersistenceMode"));
 
 	struct
 	{
@@ -823,7 +823,7 @@ void UHeadMountedDisplayFunctionLibrary::EnableLowPersistenceMode(bool bEnable)
 
 bool UHeadMountedDisplayFunctionLibrary::EnableHMD(bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableHMD");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableHMD"));
 
 	struct
 	{
@@ -847,7 +847,7 @@ bool UHeadMountedDisplayFunctionLibrary::EnableHMD(bool bEnable)
 
 void UHeadMountedDisplayFunctionLibrary::CalibrateExternalTrackingToHMD(const struct FTransform& ExternalTrackingTransform)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.CalibrateExternalTrackingToHMD");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.CalibrateExternalTrackingToHMD"));
 
 	struct
 	{
@@ -868,7 +868,7 @@ void UHeadMountedDisplayFunctionLibrary::CalibrateExternalTrackingToHMD(const st
 
 void UMotionControllerComponent::SetTrackingSource(EControllerHand NewSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingSource"));
 
 	struct
 	{
@@ -888,7 +888,7 @@ void UMotionControllerComponent::SetTrackingSource(EControllerHand NewSource)
 
 void UMotionControllerComponent::SetTrackingMotionSource(const struct FName& NewSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource"));
 
 	struct
 	{
@@ -908,7 +908,7 @@ void UMotionControllerComponent::SetTrackingMotionSource(const struct FName& New
 
 void UMotionControllerComponent::SetShowDeviceModel(bool bShowControllerModel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel"));
 
 	struct
 	{
@@ -928,7 +928,7 @@ void UMotionControllerComponent::SetShowDeviceModel(bool bShowControllerModel)
 
 void UMotionControllerComponent::SetDisplayModelSource(const struct FName& NewDisplayModelSource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource"));
 
 	struct
 	{
@@ -948,7 +948,7 @@ void UMotionControllerComponent::SetDisplayModelSource(const struct FName& NewDi
 
 void UMotionControllerComponent::SetCustomDisplayMesh(class UStaticMesh* NewDisplayMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh"));
 
 	struct
 	{
@@ -968,7 +968,7 @@ void UMotionControllerComponent::SetCustomDisplayMesh(class UStaticMesh* NewDisp
 
 void UMotionControllerComponent::SetAssociatedPlayerIndex(int NewPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex"));
 
 	struct
 	{
@@ -986,7 +986,7 @@ void UMotionControllerComponent::SetAssociatedPlayerIndex(int NewPlayer)
 
 void UMotionControllerComponent::OnMotionControllerUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated"));
 
 	struct
 	{
@@ -1004,7 +1004,7 @@ void UMotionControllerComponent::OnMotionControllerUpdated()
 
 bool UMotionControllerComponent::IsTracked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.IsTracked");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.IsTracked"));
 
 	struct
 	{
@@ -1025,7 +1025,7 @@ bool UMotionControllerComponent::IsTracked()
 
 EControllerHand UMotionControllerComponent::GetTrackingSource()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.GetTrackingSource"));
 
 	struct
 	{
@@ -1048,7 +1048,7 @@ EControllerHand UMotionControllerComponent::GetTrackingSource()
 
 float UMotionControllerComponent::GetParameterValue(const struct FName& InName, bool* bValueFound)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionControllerComponent.GetParameterValue"));
 
 	struct
 	{
@@ -1075,7 +1075,7 @@ float UMotionControllerComponent::GetParameterValue(const struct FName& InName, 
 
 void UMotionTrackedDeviceFunctionLibrary::SetIsControllerMotionTrackingEnabledByDefault(bool Enable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.SetIsControllerMotionTrackingEnabledByDefault");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.SetIsControllerMotionTrackingEnabledByDefault"));
 
 	struct
 	{
@@ -1098,7 +1098,7 @@ void UMotionTrackedDeviceFunctionLibrary::SetIsControllerMotionTrackingEnabledBy
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForSource(int PlayerIndex, const struct FName& SourceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForSource"));
 
 	struct
 	{
@@ -1126,7 +1126,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForSource(int P
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForDevice(int PlayerIndex, EControllerHand hand)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForDevice");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForDevice"));
 
 	struct
 	{
@@ -1153,7 +1153,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForDevice(int P
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForComponent"));
 
 	struct
 	{
@@ -1177,7 +1177,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForComponent(cl
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackedDeviceCountManagementNecessary()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackedDeviceCountManagementNecessary");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackedDeviceCountManagementNecessary"));
 
 	struct
 	{
@@ -1201,7 +1201,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackedDeviceCountManagementNe
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionSourceTracking(int PlayerIndex, const struct FName& SourceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionSourceTracking");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionSourceTracking"));
 
 	struct
 	{
@@ -1227,7 +1227,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionSourceTracking(int PlayerIndex
 
 int UMotionTrackedDeviceFunctionLibrary::GetMotionTrackingEnabledControllerCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMotionTrackingEnabledControllerCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMotionTrackingEnabledControllerCount"));
 
 	struct
 	{
@@ -1249,7 +1249,7 @@ int UMotionTrackedDeviceFunctionLibrary::GetMotionTrackingEnabledControllerCount
 
 int UMotionTrackedDeviceFunctionLibrary::GetMaximumMotionTrackedControllerCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMaximumMotionTrackedControllerCount");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMaximumMotionTrackedControllerCount"));
 
 	struct
 	{
@@ -1271,7 +1271,7 @@ int UMotionTrackedDeviceFunctionLibrary::GetMaximumMotionTrackedControllerCount(
 
 struct FName UMotionTrackedDeviceFunctionLibrary::GetActiveTrackingSystemName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetActiveTrackingSystemName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetActiveTrackingSystemName"));
 
 	struct
 	{
@@ -1293,7 +1293,7 @@ struct FName UMotionTrackedDeviceFunctionLibrary::GetActiveTrackingSystemName()
 
 TArray<struct FName> UMotionTrackedDeviceFunctionLibrary::EnumerateMotionSources()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnumerateMotionSources");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnumerateMotionSources"));
 
 	struct
 	{
@@ -1317,7 +1317,7 @@ TArray<struct FName> UMotionTrackedDeviceFunctionLibrary::EnumerateMotionSources
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfSource(int PlayerIndex, const struct FName& SourceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfSource"));
 
 	struct
 	{
@@ -1345,7 +1345,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfSource(int Playe
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfDevice(int PlayerIndex, EControllerHand hand)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfDevice");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfDevice"));
 
 	struct
 	{
@@ -1372,7 +1372,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfDevice(int Playe
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingForComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingForComponent"));
 
 	struct
 	{
@@ -1397,7 +1397,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingForComponent(class
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfSource(int PlayerIndex, const struct FName& SourceName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfSource"));
 
 	struct
 	{
@@ -1421,7 +1421,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfSource(int Play
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfDevice(int PlayerIndex, EControllerHand hand)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfDevice");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfDevice"));
 
 	struct
 	{
@@ -1444,7 +1444,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfDevice(int Play
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfControllersForPlayer(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfControllersForPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfControllersForPlayer"));
 
 	struct
 	{
@@ -1463,7 +1463,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfControllersForP
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfAllControllers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfAllControllers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfAllControllers"));
 
 	struct
 	{
@@ -1482,7 +1482,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfAllControllers(
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingForComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingForComponent"));
 
 	struct
 	{
@@ -1509,7 +1509,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingForComponent(clas
 
 class UPrimitiveComponent* UXRAssetFunctionLibrary::AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, const struct FName& SystemName, const struct FName& DeviceName, bool bManualAttachment, const struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.XRAssetFunctionLibrary.AddNamedDeviceVisualizationComponentBlocking");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.XRAssetFunctionLibrary.AddNamedDeviceVisualizationComponentBlocking"));
 
 	struct
 	{
@@ -1549,7 +1549,7 @@ class UPrimitiveComponent* UXRAssetFunctionLibrary::AddNamedDeviceVisualizationC
 
 class UPrimitiveComponent* UXRAssetFunctionLibrary::AddDeviceVisualizationComponentBlocking(class AActor* Target, const struct FXRDeviceId& XRDeviceId, bool bManualAttachment, const struct FTransform& RelativeTransform)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.XRAssetFunctionLibrary.AddDeviceVisualizationComponentBlocking");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.XRAssetFunctionLibrary.AddDeviceVisualizationComponentBlocking"));
 
 	struct
 	{
@@ -1586,7 +1586,7 @@ class UPrimitiveComponent* UXRAssetFunctionLibrary::AddDeviceVisualizationCompon
 
 class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::AddNamedDeviceVisualizationComponentAsync(class AActor* Target, const struct FName& SystemName, const struct FName& DeviceName, bool bManualAttachment, const struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId, class UPrimitiveComponent** NewComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddNamedDeviceVisualizationComponentAsync");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddNamedDeviceVisualizationComponentAsync"));
 
 	struct
 	{
@@ -1630,7 +1630,7 @@ class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::
 
 class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::AddDeviceVisualizationComponentAsync(class AActor* Target, const struct FXRDeviceId& XRDeviceId, bool bManualAttachment, const struct FTransform& RelativeTransform, class UPrimitiveComponent** NewComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddDeviceVisualizationComponentAsync");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddDeviceVisualizationComponentAsync"));
 
 	struct
 	{

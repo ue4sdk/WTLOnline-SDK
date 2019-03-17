@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Rat_Death_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Rat_Death.BP_Rat_Death_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Rat_Death.BP_Rat_Death_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_Rat_Death_C::UserConstructionScript()
 
 void ABP_Rat_Death_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Rat_Death.BP_Rat_Death_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Rat_Death.BP_Rat_Death_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_Rat_Death_C::ReceiveBeginPlay()
 
 void ABP_Rat_Death_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Rat_Death.BP_Rat_Death_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Rat_Death.BP_Rat_Death_C.ReceiveTick"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_Rat_Death_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Rat_Death_C::ExecuteUbergraph_BP_Rat_Death(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Rat_Death.BP_Rat_Death_C.ExecuteUbergraph_BP_Rat_Death");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Rat_Death.BP_Rat_Death_C.ExecuteUbergraph_BP_Rat_Death"));
 
 	struct
 	{

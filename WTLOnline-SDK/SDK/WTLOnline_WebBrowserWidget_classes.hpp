@@ -27,7 +27,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WebBrowserWidget.WebBrowser");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WebBrowserWidget.WebBrowser"));
 		return ptr;
 	}
 
@@ -52,7 +52,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class WebBrowserWidget.WebBrowserAssetManager");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class WebBrowserWidget.WebBrowserAssetManager"));
 		return ptr;
 	}
 

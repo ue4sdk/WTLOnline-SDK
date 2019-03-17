@@ -17,7 +17,7 @@ namespace SDK
 
 void UAB_NPC_02_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_C521C1A842B78658466A64ABB17C320D()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_02.AB_NPC_02_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_C521C1A842B78658466A64ABB17C320D");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_02.AB_NPC_02_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_C521C1A842B78658466A64ABB17C320D"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void UAB_NPC_02_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGra
 
 void UAB_NPC_02_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_A20B8835496993BE665136842F54B4A6()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_02.AB_NPC_02_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_A20B8835496993BE665136842F54B4A6");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_02.AB_NPC_02_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGraphNode_TransitionResult_A20B8835496993BE665136842F54B4A6"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void UAB_NPC_02_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AB_NPC_02_AnimGra
 
 void UAB_NPC_02_C::ExecuteUbergraph_AB_NPC_02(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_NPC_02.AB_NPC_02_C.ExecuteUbergraph_AB_NPC_02");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_NPC_02.AB_NPC_02_C.ExecuteUbergraph_AB_NPC_02"));
 
 	struct
 	{

@@ -19,7 +19,7 @@ namespace SDK
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraActor.GetCineCameraComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraActor.GetCineCameraComponent"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 
 void UCineCameraComponent::SetLensPresetByName(const struct FString& InPresetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetLensPresetByName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.SetLensPresetByName"));
 
 	struct
 	{
@@ -60,7 +60,7 @@ void UCineCameraComponent::SetLensPresetByName(const struct FString& InPresetNam
 
 void UCineCameraComponent::SetFilmbackPresetByName(const struct FString& InPresetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.SetFilmbackPresetByName"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void UCineCameraComponent::SetFilmbackPresetByName(const struct FString& InPrese
 
 float UCineCameraComponent::GetVerticalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView"));
 
 	struct
 	{
@@ -101,7 +101,7 @@ float UCineCameraComponent::GetVerticalFieldOfView()
 
 struct FString UCineCameraComponent::GetLensPresetName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetLensPresetName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetLensPresetName"));
 
 	struct
 	{
@@ -122,7 +122,7 @@ struct FString UCineCameraComponent::GetLensPresetName()
 
 float UCineCameraComponent::GetHorizontalFieldOfView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView"));
 
 	struct
 	{
@@ -143,7 +143,7 @@ float UCineCameraComponent::GetHorizontalFieldOfView()
 
 struct FString UCineCameraComponent::GetFilmbackPresetName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function CinematicCamera.CineCameraComponent.GetFilmbackPresetName"));
 
 	struct
 	{

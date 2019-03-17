@@ -10,7 +10,7 @@
 #include "WTLOnline_Engine_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_WTL_classes.hpp"
-#include "WTLOnline_StateMonster_enums.hpp"
+#include "WTLOnline_BTT_SetStateMonster_classes.hpp"
 
 namespace SDK
 {

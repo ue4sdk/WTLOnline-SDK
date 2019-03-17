@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass NavArea_NPCMovable.NavArea_NPCMovable_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass NavArea_NPCMovable.NavArea_NPCMovable_C"));
 		return ptr;
 	}
 

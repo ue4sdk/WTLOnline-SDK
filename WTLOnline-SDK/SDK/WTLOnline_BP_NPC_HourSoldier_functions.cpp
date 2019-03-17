@@ -20,7 +20,7 @@ namespace SDK
 
 bool ABP_NPC_HourSoldier_C::CanDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.CanDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.CanDialog"));
 
 	struct
 	{
@@ -43,7 +43,7 @@ bool ABP_NPC_HourSoldier_C::CanDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_HourSoldier_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ShowStartDialog"));
 
 	struct
 	{
@@ -61,7 +61,7 @@ void ABP_NPC_HourSoldier_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_HourSoldier_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.UserConstructionScript"));
 
 	struct
 	{
@@ -77,7 +77,7 @@ void ABP_NPC_HourSoldier_C::UserConstructionScript()
 
 void ABP_NPC_HourSoldier_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.Timeline_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.Timeline_0__FinishedFunc"));
 
 	struct
 	{
@@ -93,7 +93,7 @@ void ABP_NPC_HourSoldier_C::Timeline_0__FinishedFunc()
 
 void ABP_NPC_HourSoldier_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.Timeline_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.Timeline_0__UpdateFunc"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ void ABP_NPC_HourSoldier_C::Timeline_0__UpdateFunc()
 
 void ABP_NPC_HourSoldier_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -134,7 +134,7 @@ void ABP_NPC_HourSoldier_C::OnPlayerSelectReplica(class AWTLCharacter* Character
 
 void ABP_NPC_HourSoldier_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -154,7 +154,7 @@ void ABP_NPC_HourSoldier_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_HourSoldier_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ReceiveTick"));
 
 	struct
 	{
@@ -172,7 +172,7 @@ void ABP_NPC_HourSoldier_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_HourSoldier_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -190,7 +190,7 @@ void ABP_NPC_HourSoldier_C::ReceiveBeginPlay()
 
 void ABP_NPC_HourSoldier_C::ExecuteUbergraph_BP_NPC_HourSoldier(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ExecuteUbergraph_BP_NPC_HourSoldier");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_HourSoldier.BP_NPC_HourSoldier_C.ExecuteUbergraph_BP_NPC_HourSoldier"));
 
 	struct
 	{

@@ -21,7 +21,7 @@ namespace SDK
 
 void UEQSC_KeyEnemy_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EQSC_KeyEnemy.EQSC_KeyEnemy_C.ProvideSingleLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EQSC_KeyEnemy.EQSC_KeyEnemy_C.ProvideSingleLocation"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void UEQSC_KeyEnemy_C::ProvideSingleLocation(class UObject* QuerierObject, class
 
 void UEQSC_KeyEnemy_C::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EQSC_KeyEnemy.EQSC_KeyEnemy_C.ProvideSingleActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EQSC_KeyEnemy.EQSC_KeyEnemy_C.ProvideSingleActor"));
 
 	struct
 	{

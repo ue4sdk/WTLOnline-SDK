@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_HUD_FastAccess_Slot_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_FastAccess_Slot.UI_HUD_FastAccess_Slot_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_FastAccess_Slot.UI_HUD_FastAccess_Slot_C.Construct"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void UUI_HUD_FastAccess_Slot_C::Construct()
 
 void UUI_HUD_FastAccess_Slot_C::ExecuteUbergraph_UI_HUD_FastAccess_Slot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_FastAccess_Slot.UI_HUD_FastAccess_Slot_C.ExecuteUbergraph_UI_HUD_FastAccess_Slot");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_FastAccess_Slot.UI_HUD_FastAccess_Slot_C.ExecuteUbergraph_UI_HUD_FastAccess_Slot"));
 
 	struct
 	{

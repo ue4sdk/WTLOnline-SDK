@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass Location_11_SolarCity.Location_11_SolarCity_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass Location_11_SolarCity.Location_11_SolarCity_C"));
 		return ptr;
 	}
 

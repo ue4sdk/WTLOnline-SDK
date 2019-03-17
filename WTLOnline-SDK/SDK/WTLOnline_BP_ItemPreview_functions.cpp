@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ItemPreview_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ItemPreview.BP_ItemPreview_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_ItemPreview_C::UserConstructionScript()
 
 void ABP_ItemPreview_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_ItemPreview_C::ReceiveBeginPlay()
 
 void ABP_ItemPreview_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveEndPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ItemPreview.BP_ItemPreview_C.ReceiveEndPlay"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_ItemPreview_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason
 
 void ABP_ItemPreview_C::ExecuteUbergraph_BP_ItemPreview(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemPreview.BP_ItemPreview_C.ExecuteUbergraph_BP_ItemPreview");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ItemPreview.BP_ItemPreview_C.ExecuteUbergraph_BP_ItemPreview"));
 
 	struct
 	{

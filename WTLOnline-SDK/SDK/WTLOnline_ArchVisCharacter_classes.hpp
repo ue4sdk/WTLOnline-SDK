@@ -30,7 +30,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ArchVisCharacter.ArchVisCharacter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ArchVisCharacter.ArchVisCharacter"));
 		return ptr;
 	}
 
@@ -54,7 +54,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ArchVisCharacter.ArchVisCharMovementComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ArchVisCharacter.ArchVisCharMovementComponent"));
 		return ptr;
 	}
 

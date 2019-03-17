@@ -25,7 +25,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ImgMedia.ImgMediaSource");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ImgMedia.ImgMediaSource"));
 		return ptr;
 	}
 

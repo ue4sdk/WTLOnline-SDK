@@ -19,7 +19,7 @@ namespace SDK
 
 void ABP_MobileStartPoint_PlacementPointer_C::CanBePlaced(bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.CanBePlaced");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.CanBePlaced"));
 
 	struct
 	{
@@ -37,7 +37,7 @@ void ABP_MobileStartPoint_PlacementPointer_C::CanBePlaced(bool Value)
 
 void ABP_MobileStartPoint_PlacementPointer_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.UserConstructionScript"));
 
 	struct
 	{
@@ -53,7 +53,7 @@ void ABP_MobileStartPoint_PlacementPointer_C::UserConstructionScript()
 
 void ABP_MobileStartPoint_PlacementPointer_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_MobileStartPoint_PlacementPointer_C::ReceiveBeginPlay()
 
 void ABP_MobileStartPoint_PlacementPointer_C::ExecuteUbergraph_BP_MobileStartPoint_PlacementPointer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.ExecuteUbergraph_BP_MobileStartPoint_PlacementPointer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MobileStartPoint_PlacementPointer.BP_MobileStartPoint_PlacementPointer_C.ExecuteUbergraph_BP_MobileStartPoint_PlacementPointer"));
 
 	struct
 	{

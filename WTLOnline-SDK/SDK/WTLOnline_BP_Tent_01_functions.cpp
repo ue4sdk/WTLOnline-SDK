@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Tent_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Tent_01.BP_Tent_01_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Tent_01.BP_Tent_01_C.UserConstructionScript"));
 
 	struct
 	{

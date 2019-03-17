@@ -19,7 +19,7 @@ namespace SDK
 
 void UEyeTrackerFunctionLibrary::SetEyeTrackedPlayer(class APlayerController* PlayerController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EyeTracker.EyeTrackerFunctionLibrary.SetEyeTrackedPlayer");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EyeTracker.EyeTrackerFunctionLibrary.SetEyeTrackedPlayer"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UEyeTrackerFunctionLibrary::SetEyeTrackedPlayer(class APlayerController* Pl
 
 bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EyeTracker.EyeTrackerFunctionLibrary.IsStereoGazeDataAvailable");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EyeTracker.EyeTrackerFunctionLibrary.IsStereoGazeDataAvailable"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 
 bool UEyeTrackerFunctionLibrary::IsEyeTrackerConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EyeTracker.EyeTrackerFunctionLibrary.IsEyeTrackerConnected");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EyeTracker.EyeTrackerFunctionLibrary.IsEyeTrackerConnected"));
 
 	struct
 	{
@@ -85,7 +85,7 @@ bool UEyeTrackerFunctionLibrary::IsEyeTrackerConnected()
 
 bool UEyeTrackerFunctionLibrary::GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EyeTracker.EyeTrackerFunctionLibrary.GetStereoGazeData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EyeTracker.EyeTrackerFunctionLibrary.GetStereoGazeData"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ bool UEyeTrackerFunctionLibrary::GetStereoGazeData(struct FEyeTrackerStereoGazeD
 
 bool UEyeTrackerFunctionLibrary::GetGazeData(struct FEyeTrackerGazeData* OutGazeData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EyeTracker.EyeTrackerFunctionLibrary.GetGazeData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function EyeTracker.EyeTrackerFunctionLibrary.GetGazeData"));
 
 	struct
 	{

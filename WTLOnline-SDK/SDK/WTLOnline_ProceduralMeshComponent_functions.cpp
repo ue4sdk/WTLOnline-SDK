@@ -25,7 +25,7 @@ namespace SDK
 
 void UKismetProceduralMeshLibrary::SliceProceduralMesh(class UProceduralMeshComponent* InProcMesh, const struct FVector& PlanePosition, const struct FVector& PlaneNormal, bool bCreateOtherHalf, EProcMeshSliceCapOption CapOption, class UMaterialInterface* CapMaterial, class UProceduralMeshComponent** OutOtherHalfProcMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.SliceProceduralMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.SliceProceduralMesh"));
 
 	struct
 	{
@@ -67,7 +67,7 @@ void UKismetProceduralMeshLibrary::SliceProceduralMesh(class UProceduralMeshComp
 
 void UKismetProceduralMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* InMesh, int LODIndex, int SectionIndex, TArray<struct FVector>* Vertices, TArray<int>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromStaticMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromStaticMesh"));
 
 	struct
 	{
@@ -114,7 +114,7 @@ void UKismetProceduralMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* I
 
 void UKismetProceduralMeshLibrary::GetSectionFromProceduralMesh(class UProceduralMeshComponent* InProcMesh, int SectionIndex, TArray<struct FVector>* Vertices, TArray<int>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromProceduralMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GetSectionFromProceduralMesh"));
 
 	struct
 	{
@@ -158,7 +158,7 @@ void UKismetProceduralMeshLibrary::GetSectionFromProceduralMesh(class UProcedura
 
 void UKismetProceduralMeshLibrary::GenerateBoxMesh(const struct FVector& BoxRadius, TArray<struct FVector>* Vertices, TArray<int>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GenerateBoxMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GenerateBoxMesh"));
 
 	struct
 	{
@@ -198,7 +198,7 @@ void UKismetProceduralMeshLibrary::GenerateBoxMesh(const struct FVector& BoxRadi
 
 void UKismetProceduralMeshLibrary::CreateGridMeshTriangles(int NumX, int NumY, bool bWinding, TArray<int>* Triangles)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshTriangles");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshTriangles"));
 
 	struct
 	{
@@ -230,7 +230,7 @@ void UKismetProceduralMeshLibrary::CreateGridMeshTriangles(int NumX, int NumY, b
 
 void UKismetProceduralMeshLibrary::CopyProceduralMeshFromStaticMeshComponent(class UStaticMeshComponent* StaticMeshComponent, int LODIndex, class UProceduralMeshComponent* ProcMeshComponent, bool bCreateCollision)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CopyProceduralMeshFromStaticMeshComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CopyProceduralMeshFromStaticMeshComponent"));
 
 	struct
 	{
@@ -261,7 +261,7 @@ void UKismetProceduralMeshLibrary::CopyProceduralMeshFromStaticMeshComponent(cla
 
 void UKismetProceduralMeshLibrary::ConvertQuadToTriangles(int Vert0, int Vert1, int Vert2, int Vert3, TArray<int>* Triangles)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.ConvertQuadToTriangles");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.ConvertQuadToTriangles"));
 
 	struct
 	{
@@ -296,7 +296,7 @@ void UKismetProceduralMeshLibrary::ConvertQuadToTriangles(int Vert0, int Vert1, 
 
 void UKismetProceduralMeshLibrary::CalculateTangentsForMesh(TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector2D> UVs, TArray<struct FVector>* Normals, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CalculateTangentsForMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CalculateTangentsForMesh"));
 
 	struct
 	{
@@ -336,7 +336,7 @@ void UKismetProceduralMeshLibrary::CalculateTangentsForMesh(TArray<struct FVecto
 
 void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int SectionIndex, TArray<struct FVector> Vertices, TArray<struct FVector> Normals, TArray<struct FVector2D> UV0, TArray<struct FVector2D> UV1, TArray<struct FVector2D> UV2, TArray<struct FVector2D> UV3, TArray<struct FLinearColor> VertexColors, TArray<struct FProcMeshTangent> Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection_LinearColor"));
 
 	struct
 	{
@@ -377,7 +377,7 @@ void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int SectionIndex, T
 
 void UProceduralMeshComponent::UpdateMeshSection(int SectionIndex, TArray<struct FVector> Vertices, TArray<struct FVector> Normals, TArray<struct FVector2D> UV0, TArray<struct FColor> VertexColors, TArray<struct FProcMeshTangent> Tangents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.UpdateMeshSection"));
 
 	struct
 	{
@@ -408,7 +408,7 @@ void UProceduralMeshComponent::UpdateMeshSection(int SectionIndex, TArray<struct
 
 void UProceduralMeshComponent::SetMeshSectionVisible(int SectionIndex, bool bNewVisibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.SetMeshSectionVisible"));
 
 	struct
 	{
@@ -431,7 +431,7 @@ void UProceduralMeshComponent::SetMeshSectionVisible(int SectionIndex, bool bNew
 
 bool UProceduralMeshComponent::IsMeshSectionVisible(int SectionIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.IsMeshSectionVisible"));
 
 	struct
 	{
@@ -454,7 +454,7 @@ bool UProceduralMeshComponent::IsMeshSectionVisible(int SectionIndex)
 
 int UProceduralMeshComponent::GetNumSections()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.GetNumSections"));
 
 	struct
 	{
@@ -485,7 +485,7 @@ int UProceduralMeshComponent::GetNumSections()
 
 void UProceduralMeshComponent::CreateMeshSection_LinearColor(int SectionIndex, TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector> Normals, TArray<struct FVector2D> UV0, TArray<struct FVector2D> UV1, TArray<struct FVector2D> UV2, TArray<struct FVector2D> UV3, TArray<struct FLinearColor> VertexColors, TArray<struct FProcMeshTangent> Tangents, bool bCreateCollision)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection_LinearColor"));
 
 	struct
 	{
@@ -532,7 +532,7 @@ void UProceduralMeshComponent::CreateMeshSection_LinearColor(int SectionIndex, T
 
 void UProceduralMeshComponent::CreateMeshSection(int SectionIndex, TArray<struct FVector> Vertices, TArray<int> Triangles, TArray<struct FVector> Normals, TArray<struct FVector2D> UV0, TArray<struct FColor> VertexColors, TArray<struct FProcMeshTangent> Tangents, bool bCreateCollision)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.CreateMeshSection"));
 
 	struct
 	{
@@ -566,7 +566,7 @@ void UProceduralMeshComponent::CreateMeshSection(int SectionIndex, TArray<struct
 
 void UProceduralMeshComponent::ClearMeshSection(int SectionIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearMeshSection"));
 
 	struct
 	{
@@ -584,7 +584,7 @@ void UProceduralMeshComponent::ClearMeshSection(int SectionIndex)
 
 void UProceduralMeshComponent::ClearCollisionConvexMeshes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearCollisionConvexMeshes"));
 
 	struct
 	{
@@ -600,7 +600,7 @@ void UProceduralMeshComponent::ClearCollisionConvexMeshes()
 
 void UProceduralMeshComponent::ClearAllMeshSections()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.ClearAllMeshSections"));
 
 	struct
 	{
@@ -618,7 +618,7 @@ void UProceduralMeshComponent::ClearAllMeshSections()
 
 void UProceduralMeshComponent::AddCollisionConvexMesh(TArray<struct FVector> ConvexVerts)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ProceduralMeshComponent.ProceduralMeshComponent.AddCollisionConvexMesh"));
 
 	struct
 	{

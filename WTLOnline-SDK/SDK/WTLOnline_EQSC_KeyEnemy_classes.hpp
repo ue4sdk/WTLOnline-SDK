@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass EQSC_KeyEnemy.EQSC_KeyEnemy_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass EQSC_KeyEnemy.EQSC_KeyEnemy_C"));
 		return ptr;
 	}
 

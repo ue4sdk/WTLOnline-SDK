@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODAmbientSound");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODAmbientSound"));
 		return ptr;
 	}
 
@@ -42,7 +42,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODAnimNotifyPlay");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODAnimNotifyPlay"));
 		return ptr;
 	}
 
@@ -60,7 +60,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODAsset");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODAsset"));
 		return ptr;
 	}
 
@@ -90,7 +90,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODAudioComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODAudioComponent"));
 		return ptr;
 	}
 
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODBank");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODBank"));
 		return ptr;
 	}
 
@@ -138,7 +138,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODBlueprintStatics");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODBlueprintStatics"));
 		return ptr;
 	}
 
@@ -191,7 +191,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODBus");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODBus"));
 		return ptr;
 	}
 
@@ -206,7 +206,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODEvent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODEvent"));
 		return ptr;
 	}
 
@@ -222,7 +222,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODEventControlSection");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODEventControlSection"));
 		return ptr;
 	}
 
@@ -238,7 +238,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODEventControlTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODEventControlTrack"));
 		return ptr;
 	}
 
@@ -254,7 +254,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODEventParameterTrack");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODEventParameterTrack"));
 		return ptr;
 	}
 
@@ -300,7 +300,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODSettings");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODSettings"));
 		return ptr;
 	}
 
@@ -315,7 +315,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODSnapshot");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODSnapshot"));
 		return ptr;
 	}
 
@@ -333,7 +333,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODSnapshotReverb");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODSnapshotReverb"));
 		return ptr;
 	}
 
@@ -348,7 +348,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class FMODStudio.FMODVCA");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class FMODStudio.FMODVCA"));
 		return ptr;
 	}
 

@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BP_SmallStorage_PowerSupply.BP_SmallStorage_PowerSupply_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BP_SmallStorage_PowerSupply.BP_SmallStorage_PowerSupply_C"));
 		return ptr;
 	}
 

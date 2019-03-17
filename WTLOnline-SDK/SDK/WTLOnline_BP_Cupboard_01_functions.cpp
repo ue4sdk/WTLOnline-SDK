@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Cupboard_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Cupboard_01.BP_Cupboard_01_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Cupboard_01.BP_Cupboard_01_C.UserConstructionScript"));
 
 	struct
 	{

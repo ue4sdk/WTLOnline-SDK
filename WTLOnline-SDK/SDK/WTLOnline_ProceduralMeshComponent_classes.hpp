@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ProceduralMeshComponent.KismetProceduralMeshLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ProceduralMeshComponent.KismetProceduralMeshLibrary"));
 		return ptr;
 	}
 
@@ -57,7 +57,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ProceduralMeshComponent.ProceduralMeshComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ProceduralMeshComponent.ProceduralMeshComponent"));
 		return ptr;
 	}
 

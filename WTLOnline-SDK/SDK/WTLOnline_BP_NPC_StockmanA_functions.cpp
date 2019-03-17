@@ -20,7 +20,7 @@ namespace SDK
 
 void ABP_NPC_StockmanA_C::CharacterCanTakeSlots(class AWTLCharacter* Character, int SlotCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.CharacterCanTakeSlots");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.CharacterCanTakeSlots"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void ABP_NPC_StockmanA_C::CharacterCanTakeSlots(class AWTLCharacter* Character, 
 
 void ABP_NPC_StockmanA_C::ShowBuyAdditionalSlots(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ShowBuyAdditionalSlots");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ShowBuyAdditionalSlots"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void ABP_NPC_StockmanA_C::ShowBuyAdditionalSlots(class AWTLCharacter* Character)
 
 void ABP_NPC_StockmanA_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ShowStartDialog"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void ABP_NPC_StockmanA_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_StockmanA_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.UserConstructionScript"));
 
 	struct
 	{
@@ -96,7 +96,7 @@ void ABP_NPC_StockmanA_C::UserConstructionScript()
 
 void ABP_NPC_StockmanA_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.Timeline_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.Timeline_0__FinishedFunc"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ void ABP_NPC_StockmanA_C::Timeline_0__FinishedFunc()
 
 void ABP_NPC_StockmanA_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.Timeline_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.Timeline_0__UpdateFunc"));
 
 	struct
 	{
@@ -130,7 +130,7 @@ void ABP_NPC_StockmanA_C::Timeline_0__UpdateFunc()
 
 void ABP_NPC_StockmanA_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -151,7 +151,7 @@ void ABP_NPC_StockmanA_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_StockmanA_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -173,7 +173,7 @@ void ABP_NPC_StockmanA_C::OnPlayerSelectReplica(class AWTLCharacter* Character, 
 
 void ABP_NPC_StockmanA_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ReceiveTick"));
 
 	struct
 	{
@@ -191,7 +191,7 @@ void ABP_NPC_StockmanA_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_StockmanA_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -209,7 +209,7 @@ void ABP_NPC_StockmanA_C::ReceiveBeginPlay()
 
 void ABP_NPC_StockmanA_C::ExecuteUbergraph_BP_NPC_StockmanA(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ExecuteUbergraph_BP_NPC_StockmanA");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_StockmanA.BP_NPC_StockmanA_C.ExecuteUbergraph_BP_NPC_StockmanA"));
 
 	struct
 	{

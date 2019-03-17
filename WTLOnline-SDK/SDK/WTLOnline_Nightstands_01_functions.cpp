@@ -17,7 +17,7 @@ namespace SDK
 
 void ANightstands_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Nightstands_01.Nightstands_01_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Nightstands_01.Nightstands_01_C.UserConstructionScript"));
 
 	struct
 	{

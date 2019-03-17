@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Pawn_RatRegular_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_Pawn_RatRegular_C::UserConstructionScript()
 
 void ABP_Pawn_RatRegular_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_Pawn_RatRegular_C::ReceiveBeginPlay()
 
 void ABP_Pawn_RatRegular_C::OnActionTrigger(const struct FName& ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnActionTrigger");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnActionTrigger"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_Pawn_RatRegular_C::OnActionTrigger(const struct FName& ActionName)
 
 void ABP_Pawn_RatRegular_C::ReceivePossessed(class AController* NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceivePossessed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceivePossessed"));
 
 	struct
 	{
@@ -91,7 +91,7 @@ void ABP_Pawn_RatRegular_C::ReceivePossessed(class AController* NewController)
 
 void ABP_Pawn_RatRegular_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveTick"));
 
 	struct
 	{
@@ -111,7 +111,7 @@ void ABP_Pawn_RatRegular_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Pawn_RatRegular_C::OnHealthChanged(float Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnHealthChanged");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnHealthChanged"));
 
 	struct
 	{
@@ -135,7 +135,7 @@ void ABP_Pawn_RatRegular_C::OnHealthChanged(float Delta)
 
 void ABP_Pawn_RatRegular_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"));
 
 	struct
 	{
@@ -168,7 +168,7 @@ void ABP_Pawn_RatRegular_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_
 
 void ABP_Pawn_RatRegular_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"));
 
 	struct
 	{
@@ -198,7 +198,7 @@ void ABP_Pawn_RatRegular_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_
 
 void ABP_Pawn_RatRegular_C::OnDeathBpEvent(const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnDeathBpEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnDeathBpEvent"));
 
 	struct
 	{
@@ -218,7 +218,7 @@ void ABP_Pawn_RatRegular_C::OnDeathBpEvent(const struct FWTLMonsterDeathData& De
 
 void ABP_Pawn_RatRegular_C::OnBurst(const struct FWTLMonsterDeathData& DeathData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnBurst");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnBurst"));
 
 	struct
 	{
@@ -238,7 +238,7 @@ void ABP_Pawn_RatRegular_C::OnBurst(const struct FWTLMonsterDeathData& DeathData
 
 void ABP_Pawn_RatRegular_C::ExecuteUbergraph_BP_Pawn_RatRegular(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ExecuteUbergraph_BP_Pawn_RatRegular");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ExecuteUbergraph_BP_Pawn_RatRegular"));
 
 	struct
 	{

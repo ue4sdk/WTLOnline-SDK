@@ -20,7 +20,7 @@ namespace SDK
 
 bool UAnalyticsBlueprintLibrary::StartSessionWithAttributes(TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSessionWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSessionWithAttributes"));
 
 	struct
 	{
@@ -44,7 +44,7 @@ bool UAnalyticsBlueprintLibrary::StartSessionWithAttributes(TArray<struct FAnaly
 
 bool UAnalyticsBlueprintLibrary::StartSession()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSession");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.StartSession"));
 
 	struct
 	{
@@ -66,7 +66,7 @@ bool UAnalyticsBlueprintLibrary::StartSession()
 
 void UAnalyticsBlueprintLibrary::SetUserId(const struct FString& UserId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId"));
 
 	struct
 	{
@@ -87,7 +87,7 @@ void UAnalyticsBlueprintLibrary::SetUserId(const struct FString& UserId)
 
 void UAnalyticsBlueprintLibrary::SetSessionId(const struct FString& SessionId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetSessionId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetSessionId"));
 
 	struct
 	{
@@ -108,7 +108,7 @@ void UAnalyticsBlueprintLibrary::SetSessionId(const struct FString& SessionId)
 
 void UAnalyticsBlueprintLibrary::SetLocation(const struct FString& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetLocation"));
 
 	struct
 	{
@@ -129,7 +129,7 @@ void UAnalyticsBlueprintLibrary::SetLocation(const struct FString& Location)
 
 void UAnalyticsBlueprintLibrary::SetGender(const struct FString& Gender)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetGender");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetGender"));
 
 	struct
 	{
@@ -150,7 +150,7 @@ void UAnalyticsBlueprintLibrary::SetGender(const struct FString& Gender)
 
 void UAnalyticsBlueprintLibrary::SetBuildInfo(const struct FString& BuildInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetBuildInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetBuildInfo"));
 
 	struct
 	{
@@ -171,7 +171,7 @@ void UAnalyticsBlueprintLibrary::SetBuildInfo(const struct FString& BuildInfo)
 
 void UAnalyticsBlueprintLibrary::SetAge(int Age)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetAge");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetAge"));
 
 	struct
 	{
@@ -194,7 +194,7 @@ void UAnalyticsBlueprintLibrary::SetAge(int Age)
 
 void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchaseWithAttributes(const struct FString& ItemID, int ItemQuantity, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchaseWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchaseWithAttributes"));
 
 	struct
 	{
@@ -220,7 +220,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchaseWithAttributes(const st
 
 void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchase(const struct FString& ItemID, int ItemQuantity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleItemPurchase"));
 
 	struct
 	{
@@ -245,7 +245,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchase(const struct FString& 
 
 void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchaseWithAttributes(const struct FString& GameCurrencyType, int GameCurrencyAmount, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchaseWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchaseWithAttributes"));
 
 	struct
 	{
@@ -271,7 +271,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchaseWithAttributes(cons
 
 void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchase(const struct FString& GameCurrencyType, int GameCurrencyAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordSimpleCurrencyPurchase"));
 
 	struct
 	{
@@ -296,7 +296,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchase(const struct FStri
 
 void UAnalyticsBlueprintLibrary::RecordProgressWithFullHierarchyAndAttributes(const struct FString& ProgressType, TArray<struct FString> ProgressNames, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithFullHierarchyAndAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithFullHierarchyAndAttributes"));
 
 	struct
 	{
@@ -323,7 +323,7 @@ void UAnalyticsBlueprintLibrary::RecordProgressWithFullHierarchyAndAttributes(co
 
 void UAnalyticsBlueprintLibrary::RecordProgressWithAttributes(const struct FString& ProgressType, const struct FString& ProgressName, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgressWithAttributes"));
 
 	struct
 	{
@@ -349,7 +349,7 @@ void UAnalyticsBlueprintLibrary::RecordProgressWithAttributes(const struct FStri
 
 void UAnalyticsBlueprintLibrary::RecordProgress(const struct FString& ProgressType, const struct FString& ProgressName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgress");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordProgress"));
 
 	struct
 	{
@@ -375,7 +375,7 @@ void UAnalyticsBlueprintLibrary::RecordProgress(const struct FString& ProgressTy
 
 void UAnalyticsBlueprintLibrary::RecordItemPurchase(const struct FString& ItemID, const struct FString& Currency, int PerItemCost, int ItemQuantity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordItemPurchase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordItemPurchase"));
 
 	struct
 	{
@@ -403,7 +403,7 @@ void UAnalyticsBlueprintLibrary::RecordItemPurchase(const struct FString& ItemID
 
 void UAnalyticsBlueprintLibrary::RecordEventWithAttributes(const struct FString& EventName, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttributes"));
 
 	struct
 	{
@@ -428,7 +428,7 @@ void UAnalyticsBlueprintLibrary::RecordEventWithAttributes(const struct FString&
 
 void UAnalyticsBlueprintLibrary::RecordEventWithAttribute(const struct FString& EventName, const struct FString& AttributeName, const struct FString& AttributeValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttribute");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEventWithAttribute"));
 
 	struct
 	{
@@ -453,7 +453,7 @@ void UAnalyticsBlueprintLibrary::RecordEventWithAttribute(const struct FString& 
 
 void UAnalyticsBlueprintLibrary::RecordEvent(const struct FString& EventName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordEvent"));
 
 	struct
 	{
@@ -475,7 +475,7 @@ void UAnalyticsBlueprintLibrary::RecordEvent(const struct FString& EventName)
 
 void UAnalyticsBlueprintLibrary::RecordErrorWithAttributes(const struct FString& Error, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordErrorWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordErrorWithAttributes"));
 
 	struct
 	{
@@ -498,7 +498,7 @@ void UAnalyticsBlueprintLibrary::RecordErrorWithAttributes(const struct FString&
 
 void UAnalyticsBlueprintLibrary::RecordError(const struct FString& Error)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordError");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordError"));
 
 	struct
 	{
@@ -523,7 +523,7 @@ void UAnalyticsBlueprintLibrary::RecordError(const struct FString& Error)
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyPurchase(const struct FString& GameCurrencyType, int GameCurrencyAmount, const struct FString& RealCurrencyType, float RealMoneyCost, const struct FString& PaymentProvider)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyPurchase");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyPurchase"));
 
 	struct
 	{
@@ -554,7 +554,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyPurchase(const struct FString& Ga
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyGivenWithAttributes(const struct FString& GameCurrencyType, int GameCurrencyAmount, TArray<struct FAnalyticsEventAttr> Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGivenWithAttributes");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGivenWithAttributes"));
 
 	struct
 	{
@@ -580,7 +580,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyGivenWithAttributes(const struct 
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyGiven(const struct FString& GameCurrencyType, int GameCurrencyAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGiven");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.RecordCurrencyGiven"));
 
 	struct
 	{
@@ -605,7 +605,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyGiven(const struct FString& GameC
 
 struct FAnalyticsEventAttr UAnalyticsBlueprintLibrary::MakeEventAttribute(const struct FString& AttributeName, const struct FString& AttributeValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.MakeEventAttribute");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.MakeEventAttribute"));
 
 	struct
 	{
@@ -631,7 +631,7 @@ struct FAnalyticsEventAttr UAnalyticsBlueprintLibrary::MakeEventAttribute(const 
 
 struct FString UAnalyticsBlueprintLibrary::GetUserId()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetUserId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetUserId"));
 
 	struct
 	{
@@ -653,7 +653,7 @@ struct FString UAnalyticsBlueprintLibrary::GetUserId()
 
 struct FString UAnalyticsBlueprintLibrary::GetSessionId()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetSessionId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.GetSessionId"));
 
 	struct
 	{
@@ -673,7 +673,7 @@ struct FString UAnalyticsBlueprintLibrary::GetSessionId()
 
 void UAnalyticsBlueprintLibrary::FlushEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.FlushEvents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.FlushEvents"));
 
 	struct
 	{
@@ -690,7 +690,7 @@ void UAnalyticsBlueprintLibrary::FlushEvents()
 
 void UAnalyticsBlueprintLibrary::EndSession()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.EndSession");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.EndSession"));
 
 	struct
 	{

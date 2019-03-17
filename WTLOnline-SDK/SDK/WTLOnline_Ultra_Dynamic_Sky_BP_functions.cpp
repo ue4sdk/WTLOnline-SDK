@@ -19,7 +19,7 @@ namespace SDK
 
 void AUltra_Dynamic_Sky_BP_C::GetPostProcessColorTint(struct FLinearColor* PostProcessColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.GetPostProcessColorTint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.GetPostProcessColorTint"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void AUltra_Dynamic_Sky_BP_C::GetPostProcessColorTint(struct FLinearColor* PostP
 
 void AUltra_Dynamic_Sky_BP_C::GetWeatherScheme(EWTLWeatherType WeatherType, struct FST_WeatherScheme* Scheme)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.GetWeatherScheme");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.GetWeatherScheme"));
 
 	struct
 	{
@@ -64,7 +64,7 @@ void AUltra_Dynamic_Sky_BP_C::GetWeatherScheme(EWTLWeatherType WeatherType, stru
 
 void AUltra_Dynamic_Sky_BP_C::Set_Material_Variables()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.Set Material Variables");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.Set Material Variables"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void AUltra_Dynamic_Sky_BP_C::Set_Material_Variables()
 
 void AUltra_Dynamic_Sky_BP_C::Set_Solar_Angle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.Set Solar Angle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.Set Solar Angle"));
 
 	struct
 	{
@@ -96,7 +96,7 @@ void AUltra_Dynamic_Sky_BP_C::Set_Solar_Angle()
 
 void AUltra_Dynamic_Sky_BP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.UserConstructionScript"));
 
 	struct
 	{
@@ -112,7 +112,7 @@ void AUltra_Dynamic_Sky_BP_C::UserConstructionScript()
 
 void AUltra_Dynamic_Sky_BP_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -130,7 +130,7 @@ void AUltra_Dynamic_Sky_BP_C::ReceiveBeginPlay()
 
 void AUltra_Dynamic_Sky_BP_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ReceiveTick"));
 
 	struct
 	{
@@ -150,7 +150,7 @@ void AUltra_Dynamic_Sky_BP_C::ReceiveTick(float DeltaSeconds)
 
 void AUltra_Dynamic_Sky_BP_C::ExecuteUbergraph_Ultra_Dynamic_Sky_BP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ExecuteUbergraph_Ultra_Dynamic_Sky_BP");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Ultra_Dynamic_Sky_BP.Ultra_Dynamic_Sky_BP_C.ExecuteUbergraph_Ultra_Dynamic_Sky_BP"));
 
 	struct
 	{

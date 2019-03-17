@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ElectricLight_DayOff_C::TestLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.TestLevel");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.TestLevel"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_ElectricLight_DayOff_C::TestLevel()
 
 void ABP_ElectricLight_DayOff_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.UserConstructionScript"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void ABP_ElectricLight_DayOff_C::UserConstructionScript()
 
 void ABP_ElectricLight_DayOff_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -67,7 +67,7 @@ void ABP_ElectricLight_DayOff_C::ReceiveBeginPlay()
 
 void ABP_ElectricLight_DayOff_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ReceiveTick"));
 
 	struct
 	{
@@ -87,7 +87,7 @@ void ABP_ElectricLight_DayOff_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_ElectricLight_DayOff_C::ExecuteUbergraph_BP_ElectricLight_DayOff(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ExecuteUbergraph_BP_ElectricLight_DayOff");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.ExecuteUbergraph_BP_ElectricLight_DayOff"));
 
 	struct
 	{
@@ -105,7 +105,7 @@ void ABP_ElectricLight_DayOff_C::ExecuteUbergraph_BP_ElectricLight_DayOff(int En
 
 void ABP_ElectricLight_DayOff_C::NewEventDispatcher_0__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.NewEventDispatcher_0__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C.NewEventDispatcher_0__DelegateSignature"));
 
 	struct
 	{

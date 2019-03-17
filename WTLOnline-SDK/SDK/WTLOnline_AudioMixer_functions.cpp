@@ -17,7 +17,7 @@ namespace SDK
 
 void USynthComponent::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Stop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SynthComponent.Stop"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void USynthComponent::Stop()
 
 void USynthComponent::Start()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Start");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SynthComponent.Start"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void USynthComponent::Start()
 
 void USynthComponent::SetVolumeMultiplier(float VolumeMultiplier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.SetVolumeMultiplier");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SynthComponent.SetVolumeMultiplier"));
 
 	struct
 	{
@@ -72,7 +72,7 @@ void USynthComponent::SetVolumeMultiplier(float VolumeMultiplier)
 
 void USynthComponent::SetSubmixSend(class USoundSubmix* Submix, float SendLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.SetSubmixSend");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SynthComponent.SetSubmixSend"));
 
 	struct
 	{
@@ -94,7 +94,7 @@ void USynthComponent::SetSubmixSend(class USoundSubmix* Submix, float SendLevel)
 
 bool USynthComponent::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.IsPlaying");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SynthComponent.IsPlaying"));
 
 	struct
 	{
@@ -121,7 +121,7 @@ bool USynthComponent::IsPlaying()
 
 class USoundWave* UAudioMixerBlueprintLibrary::StopRecordingOutput(class UObject* WorldContextObject, EAudioRecordingExportType ExportType, const struct FString& Name, const struct FString& Path, class USoundSubmix* SubmixToRecord, class USoundWave* ExistingSoundWaveToOverwrite)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.StopRecordingOutput");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.StopRecordingOutput"));
 
 	struct
 	{
@@ -157,7 +157,7 @@ class USoundWave* UAudioMixerBlueprintLibrary::StopRecordingOutput(class UObject
 
 void UAudioMixerBlueprintLibrary::StartRecordingOutput(class UObject* WorldContextObject, float ExpectedDuration, class USoundSubmix* SubmixToRecord)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.StartRecordingOutput");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.StartRecordingOutput"));
 
 	struct
 	{
@@ -185,7 +185,7 @@ void UAudioMixerBlueprintLibrary::StartRecordingOutput(class UObject* WorldConte
 
 void UAudioMixerBlueprintLibrary::SetBypassSourceEffectChainEntry(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex, bool bBypassed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry"));
 
 	struct
 	{
@@ -213,7 +213,7 @@ void UAudioMixerBlueprintLibrary::SetBypassSourceEffectChainEntry(class UObject*
 
 void UAudioMixerBlueprintLibrary::ResumeRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.ResumeRecordingOutput");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.ResumeRecordingOutput"));
 
 	struct
 	{
@@ -238,7 +238,7 @@ void UAudioMixerBlueprintLibrary::ResumeRecordingOutput(class UObject* WorldCont
 
 void UAudioMixerBlueprintLibrary::RemoveSourceEffectFromPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain"));
 
 	struct
 	{
@@ -264,7 +264,7 @@ void UAudioMixerBlueprintLibrary::RemoveSourceEffectFromPresetChain(class UObjec
 
 void UAudioMixerBlueprintLibrary::RemoveMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect"));
 
 	struct
 	{
@@ -288,7 +288,7 @@ void UAudioMixerBlueprintLibrary::RemoveMasterSubmixEffect(class UObject* WorldC
 
 void UAudioMixerBlueprintLibrary::PauseRecordingOutput(class UObject* WorldContextObject, class USoundSubmix* SubmixToPause)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.PauseRecordingOutput");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.PauseRecordingOutput"));
 
 	struct
 	{
@@ -313,7 +313,7 @@ void UAudioMixerBlueprintLibrary::PauseRecordingOutput(class UObject* WorldConte
 
 int UAudioMixerBlueprintLibrary::GetNumberOfEntriesInSourceEffectChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain"));
 
 	struct
 	{
@@ -339,7 +339,7 @@ int UAudioMixerBlueprintLibrary::GetNumberOfEntriesInSourceEffectChain(class UOb
 
 void UAudioMixerBlueprintLibrary::ClearMasterSubmixEffects(class UObject* WorldContextObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects"));
 
 	struct
 	{
@@ -362,7 +362,7 @@ void UAudioMixerBlueprintLibrary::ClearMasterSubmixEffects(class UObject* WorldC
 
 void UAudioMixerBlueprintLibrary::AddSourceEffectToPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, const struct FSourceEffectChainEntry& Entry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain"));
 
 	struct
 	{
@@ -388,7 +388,7 @@ void UAudioMixerBlueprintLibrary::AddSourceEffectToPresetChain(class UObject* Wo
 
 void UAudioMixerBlueprintLibrary::AddMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect"));
 
 	struct
 	{
@@ -411,7 +411,7 @@ void UAudioMixerBlueprintLibrary::AddMasterSubmixEffect(class UObject* WorldCont
 
 void USubmixEffectDynamicsProcessorPreset::SetSettings(const struct FSubmixEffectDynamicsProcessorSettings& InSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings"));
 
 	struct
 	{
@@ -431,7 +431,7 @@ void USubmixEffectDynamicsProcessorPreset::SetSettings(const struct FSubmixEffec
 
 void USubmixEffectSubmixEQPreset::SetSettings(const struct FSubmixEffectSubmixEQSettings& InSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings"));
 
 	struct
 	{
@@ -453,7 +453,7 @@ void USubmixEffectSubmixEQPreset::SetSettings(const struct FSubmixEffectSubmixEQ
 
 void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(class UReverbEffect* InReverbEffect, float WetLevel, float DryLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect"));
 
 	struct
 	{
@@ -477,7 +477,7 @@ void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(class UReverbEffect*
 
 void USubmixEffectReverbPreset::SetSettings(const struct FSubmixEffectReverbSettings& InSettings)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SubmixEffectReverbPreset.SetSettings");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.SubmixEffectReverbPreset.SetSettings"));
 
 	struct
 	{

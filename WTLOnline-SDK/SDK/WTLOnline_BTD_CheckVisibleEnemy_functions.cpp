@@ -21,7 +21,7 @@ namespace SDK
 
 bool UBTD_CheckVisibleEnemy_C::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTD_CheckVisibleEnemy.BTD_CheckVisibleEnemy_C.PerformConditionCheckAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTD_CheckVisibleEnemy.BTD_CheckVisibleEnemy_C.PerformConditionCheckAI"));
 
 	struct
 	{

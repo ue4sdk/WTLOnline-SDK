@@ -32,7 +32,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass Nightstands_01.Nightstands_01_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass Nightstands_01.Nightstands_01_C"));
 		return ptr;
 	}
 

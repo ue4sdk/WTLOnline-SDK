@@ -19,7 +19,7 @@ namespace SDK
 
 void UW_PieMeuDescription_01_C::SetParametrs(const struct FSButonInformation& Information)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function W_PieMeuDescription_01.W_PieMeuDescription_01_C.SetParametrs");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function W_PieMeuDescription_01.W_PieMeuDescription_01_C.SetParametrs"));
 
 	struct
 	{

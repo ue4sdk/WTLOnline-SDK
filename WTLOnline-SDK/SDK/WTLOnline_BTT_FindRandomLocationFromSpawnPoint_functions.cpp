@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_FindRandomLocationFromSpawnPoint_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -43,7 +43,7 @@ void UBTT_FindRandomLocationFromSpawnPoint_C::ReceiveExecuteAI(class AAIControll
 
 void UBTT_FindRandomLocationFromSpawnPoint_C::OnQueryFinished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus> QueryStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.OnQueryFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.OnQueryFinished"));
 
 	struct
 	{
@@ -65,7 +65,7 @@ void UBTT_FindRandomLocationFromSpawnPoint_C::OnQueryFinished(class UEnvQueryIns
 
 void UBTT_FindRandomLocationFromSpawnPoint_C::ExecuteUbergraph_BTT_FindRandomLocationFromSpawnPoint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.ExecuteUbergraph_BTT_FindRandomLocationFromSpawnPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_FindRandomLocationFromSpawnPoint.BTT_FindRandomLocationFromSpawnPoint_C.ExecuteUbergraph_BTT_FindRandomLocationFromSpawnPoint"));
 
 	struct
 	{

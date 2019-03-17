@@ -20,7 +20,7 @@ namespace SDK
 
 void UUI_HUD_EventNotificator_C::BndEvt__tbChatMessage_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_EventNotificator.UI_HUD_EventNotificator_C.BndEvt__tbChatMessage_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_EventNotificator.UI_HUD_EventNotificator_C.BndEvt__tbChatMessage_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UUI_HUD_EventNotificator_C::BndEvt__tbChatMessage_K2Node_ComponentBoundEven
 
 void UUI_HUD_EventNotificator_C::ExecuteUbergraph_UI_HUD_EventNotificator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_EventNotificator.UI_HUD_EventNotificator_C.ExecuteUbergraph_UI_HUD_EventNotificator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_EventNotificator.UI_HUD_EventNotificator_C.ExecuteUbergraph_UI_HUD_EventNotificator"));
 
 	struct
 	{

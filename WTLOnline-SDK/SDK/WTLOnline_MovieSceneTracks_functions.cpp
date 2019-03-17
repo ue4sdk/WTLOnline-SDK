@@ -19,7 +19,7 @@ namespace SDK
 
 struct FTransform UMovieSceneTransformOrigin::BP_GetTransformOrigin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin"));
 
 	struct
 	{

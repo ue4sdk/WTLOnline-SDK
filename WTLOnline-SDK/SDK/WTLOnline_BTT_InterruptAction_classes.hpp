@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_InterruptAction.BTT_InterruptAction_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_InterruptAction.BTT_InterruptAction_C"));
 		return ptr;
 	}
 

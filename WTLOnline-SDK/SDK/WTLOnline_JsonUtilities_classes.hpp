@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class JsonUtilities.JsonUtilitiesDummyObject");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class JsonUtilities.JsonUtilitiesDummyObject"));
 		return ptr;
 	}
 

@@ -17,7 +17,7 @@ namespace SDK
 
 void UFMODAudioComponent::TriggerCue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.TriggerCue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.TriggerCue"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void UFMODAudioComponent::TriggerCue()
 
 void UFMODAudioComponent::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.Stop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.Stop"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void UFMODAudioComponent::Stop()
 
 void UFMODAudioComponent::SetVolume(float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetVolume"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void UFMODAudioComponent::SetVolume(float Volume)
 
 void UFMODAudioComponent::SetTimelinePosition(int Time)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetTimelinePosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetTimelinePosition"));
 
 	struct
 	{
@@ -92,7 +92,7 @@ void UFMODAudioComponent::SetTimelinePosition(int Time)
 
 void UFMODAudioComponent::SetProperty(TEnumAsByte<EFMODEventProperty> Property, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetProperty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetProperty"));
 
 	struct
 	{
@@ -114,7 +114,7 @@ void UFMODAudioComponent::SetProperty(TEnumAsByte<EFMODEventProperty> Property, 
 
 void UFMODAudioComponent::SetProgrammerSoundName(const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetProgrammerSoundName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetProgrammerSoundName"));
 
 	struct
 	{
@@ -134,7 +134,7 @@ void UFMODAudioComponent::SetProgrammerSoundName(const struct FString& Value)
 
 void UFMODAudioComponent::SetPitch(float Pitch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetPitch");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetPitch"));
 
 	struct
 	{
@@ -154,7 +154,7 @@ void UFMODAudioComponent::SetPitch(float Pitch)
 
 void UFMODAudioComponent::SetPaused(bool paused)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetPaused");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetPaused"));
 
 	struct
 	{
@@ -175,7 +175,7 @@ void UFMODAudioComponent::SetPaused(bool paused)
 
 void UFMODAudioComponent::SetParameter(const struct FName& Name, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetParameter"));
 
 	struct
 	{
@@ -197,7 +197,7 @@ void UFMODAudioComponent::SetParameter(const struct FName& Name, float Value)
 
 void UFMODAudioComponent::SetEvent(class UFMODEvent* NewEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.SetEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.SetEvent"));
 
 	struct
 	{
@@ -215,7 +215,7 @@ void UFMODAudioComponent::SetEvent(class UFMODEvent* NewEvent)
 
 void UFMODAudioComponent::Release()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.Release");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.Release"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ void UFMODAudioComponent::Release()
 
 void UFMODAudioComponent::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.Play");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.Play"));
 
 	struct
 	{
@@ -249,7 +249,7 @@ void UFMODAudioComponent::Play()
 
 bool UFMODAudioComponent::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.IsPlaying");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.IsPlaying"));
 
 	struct
 	{
@@ -270,7 +270,7 @@ bool UFMODAudioComponent::IsPlaying()
 
 int UFMODAudioComponent::GetTimelinePosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.GetTimelinePosition");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.GetTimelinePosition"));
 
 	struct
 	{
@@ -292,7 +292,7 @@ int UFMODAudioComponent::GetTimelinePosition()
 
 float UFMODAudioComponent::GetProperty(TEnumAsByte<EFMODEventProperty> Property)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.GetProperty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.GetProperty"));
 
 	struct
 	{
@@ -316,7 +316,7 @@ float UFMODAudioComponent::GetProperty(TEnumAsByte<EFMODEventProperty> Property)
 
 float UFMODAudioComponent::GetParameter(const struct FName& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.GetParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.GetParameter"));
 
 	struct
 	{
@@ -339,7 +339,7 @@ float UFMODAudioComponent::GetParameter(const struct FName& Name)
 
 int UFMODAudioComponent::GetLength()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODAudioComponent.GetLength");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODAudioComponent.GetLength"));
 
 	struct
 	{
@@ -361,7 +361,7 @@ int UFMODAudioComponent::GetLength()
 
 void UFMODBlueprintStatics::VCASetVolume(class UFMODVCA* Vca, float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.VCASetVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.VCASetVolume"));
 
 	struct
 	{
@@ -385,7 +385,7 @@ void UFMODBlueprintStatics::VCASetVolume(class UFMODVCA* Vca, float Volume)
 
 void UFMODBlueprintStatics::UnloadEventSampleData(class UObject* WorldContextObject, class UFMODEvent* Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.UnloadEventSampleData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.UnloadEventSampleData"));
 
 	struct
 	{
@@ -408,7 +408,7 @@ void UFMODBlueprintStatics::UnloadEventSampleData(class UObject* WorldContextObj
 
 void UFMODBlueprintStatics::UnloadBankSampleData(class UFMODBank* Bank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.UnloadBankSampleData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.UnloadBankSampleData"));
 
 	struct
 	{
@@ -429,7 +429,7 @@ void UFMODBlueprintStatics::UnloadBankSampleData(class UFMODBank* Bank)
 
 void UFMODBlueprintStatics::UnloadBank(class UFMODBank* Bank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.UnloadBank");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.UnloadBank"));
 
 	struct
 	{
@@ -450,7 +450,7 @@ void UFMODBlueprintStatics::UnloadBank(class UFMODBank* Bank)
 
 void UFMODBlueprintStatics::SetOutputDriverByName(const struct FString& NewDriverName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.SetOutputDriverByName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.SetOutputDriverByName"));
 
 	struct
 	{
@@ -471,7 +471,7 @@ void UFMODBlueprintStatics::SetOutputDriverByName(const struct FString& NewDrive
 
 void UFMODBlueprintStatics::SetOutputDriverByIndex(int NewDriverIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.SetOutputDriverByIndex");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.SetOutputDriverByIndex"));
 
 	struct
 	{
@@ -502,7 +502,7 @@ void UFMODBlueprintStatics::SetOutputDriverByIndex(int NewDriverIndex)
 
 class UFMODAudioComponent* UFMODBlueprintStatics::PlayEventAttachedWithParams(class UFMODEvent* Event, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType, bool bStopWhenAttachedToDestroyed, bool bAutoPlay, TMap<struct FName, float> Params, bool bApplyOcclusion, bool bApplyOcclusionDirect)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEventAttachedWithParams");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEventAttachedWithParams"));
 
 	struct
 	{
@@ -551,7 +551,7 @@ class UFMODAudioComponent* UFMODBlueprintStatics::PlayEventAttachedWithParams(cl
 
 class UFMODAudioComponent* UFMODBlueprintStatics::PlayEventAttached(class UFMODEvent* Event, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType, bool bStopWhenAttachedToDestroyed, bool bAutoPlay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEventAttached");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEventAttached"));
 
 	struct
 	{
@@ -594,7 +594,7 @@ class UFMODAudioComponent* UFMODBlueprintStatics::PlayEventAttached(class UFMODE
 
 struct FFMODEventInstance UFMODBlueprintStatics::PlayEventAtLocationWithParams(class UObject* WorldContextObject, class UFMODEvent* Event, const struct FTransform& Location, bool bAutoPlay, TMap<struct FName, float> Params, bool bApplyOcclusion, bool bApplyOcclusionDirect)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEventAtLocationWithParams");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEventAtLocationWithParams"));
 
 	struct
 	{
@@ -634,7 +634,7 @@ struct FFMODEventInstance UFMODBlueprintStatics::PlayEventAtLocationWithParams(c
 
 struct FFMODEventInstance UFMODBlueprintStatics::PlayEventAtLocation(class UObject* WorldContextObject, class UFMODEvent* Event, const struct FTransform& Location, bool bAutoPlay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEventAtLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEventAtLocation"));
 
 	struct
 	{
@@ -668,7 +668,7 @@ struct FFMODEventInstance UFMODBlueprintStatics::PlayEventAtLocation(class UObje
 
 struct FFMODEventInstance UFMODBlueprintStatics::PlayEvent2DWithParams(class UObject* WorldContextObject, class UFMODEvent* Event, bool bAutoPlay, TMap<struct FName, float> Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEvent2DWithParams");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEvent2DWithParams"));
 
 	struct
 	{
@@ -701,7 +701,7 @@ struct FFMODEventInstance UFMODBlueprintStatics::PlayEvent2DWithParams(class UOb
 
 struct FFMODEventInstance UFMODBlueprintStatics::PlayEvent2D(class UObject* WorldContextObject, class UFMODEvent* Event, bool bAutoPlay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.PlayEvent2D");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.PlayEvent2D"));
 
 	struct
 	{
@@ -727,7 +727,7 @@ struct FFMODEventInstance UFMODBlueprintStatics::PlayEvent2D(class UObject* Worl
 
 void UFMODBlueprintStatics::MixerSuspend()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.MixerSuspend");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.MixerSuspend"));
 
 	struct
 	{
@@ -744,7 +744,7 @@ void UFMODBlueprintStatics::MixerSuspend()
 
 void UFMODBlueprintStatics::MixerResume()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.MixerResume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.MixerResume"));
 
 	struct
 	{
@@ -764,7 +764,7 @@ void UFMODBlueprintStatics::MixerResume()
 
 void UFMODBlueprintStatics::LoadEventSampleData(class UObject* WorldContextObject, class UFMODEvent* Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.LoadEventSampleData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.LoadEventSampleData"));
 
 	struct
 	{
@@ -787,7 +787,7 @@ void UFMODBlueprintStatics::LoadEventSampleData(class UObject* WorldContextObjec
 
 void UFMODBlueprintStatics::LoadBankSampleData(class UFMODBank* Bank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.LoadBankSampleData");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.LoadBankSampleData"));
 
 	struct
 	{
@@ -810,7 +810,7 @@ void UFMODBlueprintStatics::LoadBankSampleData(class UFMODBank* Bank)
 
 void UFMODBlueprintStatics::LoadBank(class UFMODBank* Bank, bool bBlocking, bool bLoadSampleData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.LoadBank");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.LoadBank"));
 
 	struct
 	{
@@ -836,7 +836,7 @@ void UFMODBlueprintStatics::LoadBank(class UFMODBank* Bank, bool bBlocking, bool
 
 bool UFMODBlueprintStatics::IsBankLoaded(class UFMODBank* Bank)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.IsBankLoaded");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.IsBankLoaded"));
 
 	struct
 	{
@@ -860,7 +860,7 @@ bool UFMODBlueprintStatics::IsBankLoaded(class UFMODBank* Bank)
 
 TArray<struct FString> UFMODBlueprintStatics::GetOutputDrivers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.GetOutputDrivers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.GetOutputDrivers"));
 
 	struct
 	{
@@ -884,7 +884,7 @@ TArray<struct FString> UFMODBlueprintStatics::GetOutputDrivers()
 
 TArray<struct FFMODEventInstance> UFMODBlueprintStatics::FindEventInstances(class UObject* WorldContextObject, class UFMODEvent* Event)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.FindEventInstances");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.FindEventInstances"));
 
 	struct
 	{
@@ -911,7 +911,7 @@ TArray<struct FFMODEventInstance> UFMODBlueprintStatics::FindEventInstances(clas
 
 class UFMODEvent* UFMODBlueprintStatics::FindEventByName(const struct FString& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.FindEventByName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.FindEventByName"));
 
 	struct
 	{
@@ -936,7 +936,7 @@ class UFMODEvent* UFMODBlueprintStatics::FindEventByName(const struct FString& N
 
 class UFMODAsset* UFMODBlueprintStatics::FindAssetByName(const struct FString& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.FindAssetByName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.FindAssetByName"));
 
 	struct
 	{
@@ -960,7 +960,7 @@ class UFMODAsset* UFMODBlueprintStatics::FindAssetByName(const struct FString& N
 
 void UFMODBlueprintStatics::EventInstanceTriggerCue(const struct FFMODEventInstance& EventInstance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceTriggerCue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceTriggerCue"));
 
 	struct
 	{
@@ -981,7 +981,7 @@ void UFMODBlueprintStatics::EventInstanceTriggerCue(const struct FFMODEventInsta
 
 void UFMODBlueprintStatics::EventInstanceStop(const struct FFMODEventInstance& EventInstance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceStop");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceStop"));
 
 	struct
 	{
@@ -1003,7 +1003,7 @@ void UFMODBlueprintStatics::EventInstanceStop(const struct FFMODEventInstance& E
 
 void UFMODBlueprintStatics::EventInstanceSetVolume(const struct FFMODEventInstance& EventInstance, float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetVolume"));
 
 	struct
 	{
@@ -1027,7 +1027,7 @@ void UFMODBlueprintStatics::EventInstanceSetVolume(const struct FFMODEventInstan
 
 void UFMODBlueprintStatics::EventInstanceSetTransform(const struct FFMODEventInstance& EventInstance, const struct FTransform& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetTransform");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetTransform"));
 
 	struct
 	{
@@ -1052,7 +1052,7 @@ void UFMODBlueprintStatics::EventInstanceSetTransform(const struct FFMODEventIns
 
 void UFMODBlueprintStatics::EventInstanceSetProperty(const struct FFMODEventInstance& EventInstance, TEnumAsByte<EFMODEventProperty> Property, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetProperty");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetProperty"));
 
 	struct
 	{
@@ -1078,7 +1078,7 @@ void UFMODBlueprintStatics::EventInstanceSetProperty(const struct FFMODEventInst
 
 void UFMODBlueprintStatics::EventInstanceSetPitch(const struct FFMODEventInstance& EventInstance, float Pitch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetPitch");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetPitch"));
 
 	struct
 	{
@@ -1102,7 +1102,7 @@ void UFMODBlueprintStatics::EventInstanceSetPitch(const struct FFMODEventInstanc
 
 void UFMODBlueprintStatics::EventInstanceSetPaused(const struct FFMODEventInstance& EventInstance, bool paused)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetPaused");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetPaused"));
 
 	struct
 	{
@@ -1127,7 +1127,7 @@ void UFMODBlueprintStatics::EventInstanceSetPaused(const struct FFMODEventInstan
 
 void UFMODBlueprintStatics::EventInstanceSetParameter(const struct FFMODEventInstance& EventInstance, const struct FName& Name, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceSetParameter"));
 
 	struct
 	{
@@ -1152,7 +1152,7 @@ void UFMODBlueprintStatics::EventInstanceSetParameter(const struct FFMODEventIns
 
 void UFMODBlueprintStatics::EventInstancePlay(const struct FFMODEventInstance& EventInstance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstancePlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstancePlay"));
 
 	struct
 	{
@@ -1174,7 +1174,7 @@ void UFMODBlueprintStatics::EventInstancePlay(const struct FFMODEventInstance& E
 
 bool UFMODBlueprintStatics::EventInstanceIsValid(const struct FFMODEventInstance& EventInstance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceIsValid");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceIsValid"));
 
 	struct
 	{
@@ -1200,7 +1200,7 @@ bool UFMODBlueprintStatics::EventInstanceIsValid(const struct FFMODEventInstance
 
 float UFMODBlueprintStatics::EventInstanceGetParameter(const struct FFMODEventInstance& EventInstance, const struct FName& Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.EventInstanceGetParameter");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.EventInstanceGetParameter"));
 
 	struct
 	{
@@ -1227,7 +1227,7 @@ float UFMODBlueprintStatics::EventInstanceGetParameter(const struct FFMODEventIn
 
 void UFMODBlueprintStatics::BusStopAllEvents(class UFMODBus* Bus, TEnumAsByte<EFMOD_STUDIO_STOP_MODE> stopMode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.BusStopAllEvents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.BusStopAllEvents"));
 
 	struct
 	{
@@ -1251,7 +1251,7 @@ void UFMODBlueprintStatics::BusStopAllEvents(class UFMODBus* Bus, TEnumAsByte<EF
 
 void UFMODBlueprintStatics::BusSetVolume(class UFMODBus* Bus, float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.BusSetVolume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.BusSetVolume"));
 
 	struct
 	{
@@ -1275,7 +1275,7 @@ void UFMODBlueprintStatics::BusSetVolume(class UFMODBus* Bus, float Volume)
 
 void UFMODBlueprintStatics::BusSetPaused(class UFMODBus* Bus, bool bPaused)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.BusSetPaused");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.BusSetPaused"));
 
 	struct
 	{
@@ -1299,7 +1299,7 @@ void UFMODBlueprintStatics::BusSetPaused(class UFMODBus* Bus, bool bPaused)
 
 void UFMODBlueprintStatics::BusSetMute(class UFMODBus* Bus, bool bMute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FMODStudio.FMODBlueprintStatics.BusSetMute");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function FMODStudio.FMODBlueprintStatics.BusSetMute"));
 
 	struct
 	{

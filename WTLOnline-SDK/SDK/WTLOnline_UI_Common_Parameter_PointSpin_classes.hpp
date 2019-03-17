@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_Common_Parameter_PointSpin.UI_Common_Parameter_PointSpin_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_Common_Parameter_PointSpin.UI_Common_Parameter_PointSpin_C"));
 		return ptr;
 	}
 

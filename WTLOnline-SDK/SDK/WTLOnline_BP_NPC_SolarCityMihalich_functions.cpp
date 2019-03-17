@@ -20,7 +20,7 @@ namespace SDK
 
 void ABP_NPC_SolarCityMihalich_C::CheckReplicaTellMe(class AWTLCharacter* Character, int InReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.CheckReplicaTellMe");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.CheckReplicaTellMe"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void ABP_NPC_SolarCityMihalich_C::CheckReplicaTellMe(class AWTLCharacter* Charac
 
 void ABP_NPC_SolarCityMihalich_C::ShowDialogTellMe(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowDialogTellMe");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowDialogTellMe"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void ABP_NPC_SolarCityMihalich_C::ShowDialogTellMe(class AWTLCharacter* Characte
 
 void ABP_NPC_SolarCityMihalich_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -84,7 +84,7 @@ void ABP_NPC_SolarCityMihalich_C::ShowAvailableQuestsDialog(class AWTLCharacter*
 
 void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -113,7 +113,7 @@ void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayMainDialog(class AWTLCharacter*
 
 void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -142,7 +142,7 @@ void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayCanTakeQuest(class AWTLCharacte
 
 void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -174,7 +174,7 @@ void ABP_NPC_SolarCityMihalich_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLC
 
 void ABP_NPC_SolarCityMihalich_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int InNPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ExecutingAction"));
 
 	struct
 	{
@@ -207,7 +207,7 @@ void ABP_NPC_SolarCityMihalich_C::ExecutingAction(class AWTLCharacter* Character
 
 void ABP_NPC_SolarCityMihalich_C::ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowDialogQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowDialogQuest"));
 
 	struct
 	{
@@ -230,7 +230,7 @@ void ABP_NPC_SolarCityMihalich_C::ShowDialogQuest(class AWTLCharacter* Character
 
 void ABP_NPC_SolarCityMihalich_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -255,7 +255,7 @@ void ABP_NPC_SolarCityMihalich_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray
 
 void ABP_NPC_SolarCityMihalich_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ShowStartDialog"));
 
 	struct
 	{
@@ -273,7 +273,7 @@ void ABP_NPC_SolarCityMihalich_C::ShowStartDialog(class AWTLCharacter* Character
 
 void ABP_NPC_SolarCityMihalich_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.UserConstructionScript"));
 
 	struct
 	{
@@ -289,7 +289,7 @@ void ABP_NPC_SolarCityMihalich_C::UserConstructionScript()
 
 void ABP_NPC_SolarCityMihalich_C::Timeline_01__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_01__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_01__FinishedFunc"));
 
 	struct
 	{
@@ -305,7 +305,7 @@ void ABP_NPC_SolarCityMihalich_C::Timeline_01__FinishedFunc()
 
 void ABP_NPC_SolarCityMihalich_C::Timeline_01__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_01__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_01__UpdateFunc"));
 
 	struct
 	{
@@ -321,7 +321,7 @@ void ABP_NPC_SolarCityMihalich_C::Timeline_01__UpdateFunc()
 
 void ABP_NPC_SolarCityMihalich_C::Timeline_0_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_0_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_0_0__FinishedFunc"));
 
 	struct
 	{
@@ -337,7 +337,7 @@ void ABP_NPC_SolarCityMihalich_C::Timeline_0_0__FinishedFunc()
 
 void ABP_NPC_SolarCityMihalich_C::Timeline_0_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_0_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.Timeline_0_0__UpdateFunc"));
 
 	struct
 	{
@@ -356,7 +356,7 @@ void ABP_NPC_SolarCityMihalich_C::Timeline_0_0__UpdateFunc()
 
 void ABP_NPC_SolarCityMihalich_C::OnPlayerSelectClanName(class AWTLCharacter* Character, const struct FString& ClanName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnPlayerSelectClanName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnPlayerSelectClanName"));
 
 	struct
 	{
@@ -378,7 +378,7 @@ void ABP_NPC_SolarCityMihalich_C::OnPlayerSelectClanName(class AWTLCharacter* Ch
 
 void ABP_NPC_SolarCityMihalich_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ReceiveTick"));
 
 	struct
 	{
@@ -399,7 +399,7 @@ void ABP_NPC_SolarCityMihalich_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_SolarCityMihalich_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -421,7 +421,7 @@ void ABP_NPC_SolarCityMihalich_C::OnPlayerSelectReplica(class AWTLCharacter* Cha
 
 void ABP_NPC_SolarCityMihalich_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -439,7 +439,7 @@ void ABP_NPC_SolarCityMihalich_C::OnNPCDialogActivated(class AWTLCharacter* Char
 
 void ABP_NPC_SolarCityMihalich_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -457,7 +457,7 @@ void ABP_NPC_SolarCityMihalich_C::ReceiveBeginPlay()
 
 void ABP_NPC_SolarCityMihalich_C::ExecuteUbergraph_BP_NPC_SolarCityMihalich(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ExecuteUbergraph_BP_NPC_SolarCityMihalich");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityMihalich.BP_NPC_SolarCityMihalich_C.ExecuteUbergraph_BP_NPC_SolarCityMihalich"));
 
 	struct
 	{

@@ -21,7 +21,7 @@ namespace SDK
 
 void UBTS_CheckEnemy_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemy.BTS_CheckEnemy_C.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemy.BTS_CheckEnemy_C.ReceiveTickAI"));
 
 	struct
 	{
@@ -45,7 +45,7 @@ void UBTS_CheckEnemy_C::ReceiveTickAI(class AAIController* OwnerController, clas
 
 void UBTS_CheckEnemy_C::ExecuteUbergraph_BTS_CheckEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTS_CheckEnemy.BTS_CheckEnemy_C.ExecuteUbergraph_BTS_CheckEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckEnemy.BTS_CheckEnemy_C.ExecuteUbergraph_BTS_CheckEnemy"));
 
 	struct
 	{

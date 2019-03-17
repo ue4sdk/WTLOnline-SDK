@@ -17,7 +17,7 @@ namespace SDK
 
 void UClothingSimulationInteractor::PhysicsAssetUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.PhysicsAssetUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.PhysicsAssetUpdated"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void UClothingSimulationInteractor::PhysicsAssetUpdated()
 
 void UClothingSimulationInteractor::ClothConfigUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.ClothConfigUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.ClothConfigUpdated"));
 
 	struct
 	{

@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Gaz3302_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Gaz3302_01.BP_Gaz3302_01_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Gaz3302_01.BP_Gaz3302_01_C.UserConstructionScript"));
 
 	struct
 	{

@@ -17,7 +17,7 @@ namespace SDK
 
 void ASMI_Barrel_4_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SMI_Barrel_5.SMI_Barrel_4_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function SMI_Barrel_5.SMI_Barrel_4_C.UserConstructionScript"));
 
 	struct
 	{

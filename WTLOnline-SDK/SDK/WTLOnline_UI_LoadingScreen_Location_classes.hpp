@@ -26,7 +26,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("WidgetBlueprintGeneratedClass UI_LoadingScreen_Location.UI_LoadingScreen_Location_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("WidgetBlueprintGeneratedClass UI_LoadingScreen_Location.UI_LoadingScreen_Location_C"));
 		return ptr;
 	}
 

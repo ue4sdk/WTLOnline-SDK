@@ -12,9 +12,9 @@
 #include "WTLOnline_InputCore_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_SlateCore_classes.hpp"
-#include "WTLOnline_PropertyPath_classes.hpp"
 #include "WTLOnline_Slate_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
+#include "WTLOnline_PropertyPath_classes.hpp"
 #include "WTLOnline_MovieSceneTracks_classes.hpp"
 
 namespace SDK

@@ -17,7 +17,7 @@ namespace SDK
 
 void ALocation_11_SolarCity_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Location_11_SolarCity.Location_11_SolarCity_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Location_11_SolarCity.Location_11_SolarCity_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ALocation_11_SolarCity_C::ReceiveBeginPlay()
 
 void ALocation_11_SolarCity_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Location_11_SolarCity.Location_11_SolarCity_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Location_11_SolarCity.Location_11_SolarCity_C.ReceiveTick"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ALocation_11_SolarCity_C::ReceiveTick(float DeltaSeconds)
 
 void ALocation_11_SolarCity_C::ExecuteUbergraph_Location_11_SolarCity(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Location_11_SolarCity.Location_11_SolarCity_C.ExecuteUbergraph_Location_11_SolarCity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function Location_11_SolarCity.Location_11_SolarCity_C.ExecuteUbergraph_Location_11_SolarCity"));
 
 	struct
 	{

@@ -24,7 +24,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntimeInterface.ClothingAssetBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntimeInterface.ClothingAssetBase"));
 		return ptr;
 	}
 
@@ -39,7 +39,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntimeInterface.ClothingSimulationFactory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntimeInterface.ClothingSimulationFactory"));
 		return ptr;
 	}
 
@@ -55,7 +55,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class ClothingSystemRuntimeInterface.ClothingSimulationInteractor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class ClothingSystemRuntimeInterface.ClothingSimulationInteractor"));
 		return ptr;
 	}
 

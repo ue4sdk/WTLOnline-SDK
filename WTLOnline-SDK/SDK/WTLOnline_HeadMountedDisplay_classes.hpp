@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.HeadMountedDisplayFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.HeadMountedDisplayFunctionLibrary"));
 		return ptr;
 	}
 
@@ -82,7 +82,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.MotionControllerComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.MotionControllerComponent"));
 		return ptr;
 	}
 
@@ -108,7 +108,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary"));
 		return ptr;
 	}
 
@@ -151,7 +151,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.VRNotificationsComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.VRNotificationsComponent"));
 		return ptr;
 	}
 
@@ -166,7 +166,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.XRAssetFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.XRAssetFunctionLibrary"));
 		return ptr;
 	}
 
@@ -188,7 +188,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent"));
 		return ptr;
 	}
 

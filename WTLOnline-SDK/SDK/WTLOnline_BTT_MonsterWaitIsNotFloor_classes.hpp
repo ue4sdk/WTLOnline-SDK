@@ -23,7 +23,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BTT_MonsterWaitIsNotFloor.BTT_MonsterWaitIsNotFloor_C"));
 		return ptr;
 	}
 

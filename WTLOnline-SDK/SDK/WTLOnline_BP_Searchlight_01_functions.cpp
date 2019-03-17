@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Searchlight_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Searchlight_01.BP_Searchlight_01_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Searchlight_01.BP_Searchlight_01_C.UserConstructionScript"));
 
 	struct
 	{
@@ -35,7 +35,7 @@ void ABP_Searchlight_01_C::UserConstructionScript()
 
 void ABP_Searchlight_01_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Searchlight_01.BP_Searchlight_01_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Searchlight_01.BP_Searchlight_01_C.ReceiveTick"));
 
 	struct
 	{
@@ -55,7 +55,7 @@ void ABP_Searchlight_01_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Searchlight_01_C::ExecuteUbergraph_BP_Searchlight_01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Searchlight_01.BP_Searchlight_01_C.ExecuteUbergraph_BP_Searchlight_01");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Searchlight_01.BP_Searchlight_01_C.ExecuteUbergraph_BP_Searchlight_01"));
 
 	struct
 	{

@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_CloseInteractiveObject_Door_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_CloseInteractiveObject_Door.BP_CloseInteractiveObject_Door_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_CloseInteractiveObject_Door.BP_CloseInteractiveObject_Door_C.UserConstructionScript"));
 
 	struct
 	{

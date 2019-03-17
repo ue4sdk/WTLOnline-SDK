@@ -20,7 +20,7 @@ namespace SDK
 
 void UAIPerceptionComponent::SetSenseEnabled(class UClass* SenseClass, bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.SetSenseEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.SetSenseEnabled"));
 
 	struct
 	{
@@ -40,7 +40,7 @@ void UAIPerceptionComponent::SetSenseEnabled(class UClass* SenseClass, bool bEna
 
 void UAIPerceptionComponent::RequestStimuliListenerUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate"));
 
 	struct
 	{
@@ -59,7 +59,7 @@ void UAIPerceptionComponent::RequestStimuliListenerUpdate()
 
 void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.OnOwnerEndPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.OnOwnerEndPlay"));
 
 	struct
 	{
@@ -81,7 +81,7 @@ void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, TEnumAsByte<EEn
 
 void UAIPerceptionComponent::GetPerceivedHostileActors(TArray<class AActor*>* OutActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors"));
 
 	struct
 	{
@@ -104,7 +104,7 @@ void UAIPerceptionComponent::GetPerceivedHostileActors(TArray<class AActor*>* Ou
 
 void UAIPerceptionComponent::GetPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetPerceivedActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.GetPerceivedActors"));
 
 	struct
 	{
@@ -129,7 +129,7 @@ void UAIPerceptionComponent::GetPerceivedActors(class UClass* SenseToUse, TArray
 
 void UAIPerceptionComponent::GetKnownPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors"));
 
 	struct
 	{
@@ -154,7 +154,7 @@ void UAIPerceptionComponent::GetKnownPerceivedActors(class UClass* SenseToUse, T
 
 void UAIPerceptionComponent::GetCurrentlyPerceivedActors(class UClass* SenseToUse, TArray<class AActor*>* OutActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors"));
 
 	struct
 	{
@@ -180,7 +180,7 @@ void UAIPerceptionComponent::GetCurrentlyPerceivedActors(class UClass* SenseToUs
 
 bool UAIPerceptionComponent::GetActorsPerception(class AActor* Actor, struct FActorPerceptionBlueprintInfo* Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionComponent.GetActorsPerception");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionComponent.GetActorsPerception"));
 
 	struct
 	{
@@ -208,7 +208,7 @@ bool UAIPerceptionComponent::GetActorsPerception(class AActor* Actor, struct FAc
 
 void UAIPerceptionSystem::ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportPerceptionEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionSystem.ReportPerceptionEvent"));
 
 	struct
 	{
@@ -231,7 +231,7 @@ void UAIPerceptionSystem::ReportPerceptionEvent(class UObject* WorldContextObjec
 
 void UAIPerceptionSystem::ReportEvent(class UAISenseEvent* PerceptionEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.ReportEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionSystem.ReportEvent"));
 
 	struct
 	{
@@ -254,7 +254,7 @@ void UAIPerceptionSystem::ReportEvent(class UAISenseEvent* PerceptionEvent)
 
 bool UAIPerceptionSystem::RegisterPerceptionStimuliSource(class UObject* WorldContextObject, class UClass* Sense, class AActor* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource"));
 
 	struct
 	{
@@ -283,7 +283,7 @@ bool UAIPerceptionSystem::RegisterPerceptionStimuliSource(class UObject* WorldCo
 
 void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay"));
 
 	struct
 	{
@@ -307,7 +307,7 @@ void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, 
 
 class UClass* UAIPerceptionSystem::GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus"));
 
 	struct
 	{
@@ -335,7 +335,7 @@ class UClass* UAIPerceptionSystem::GetSenseClassForStimulus(class UObject* World
 
 bool AAIController::UseBlackboard(class UBlackboardData* BlackboardAsset, class UBlackboardComponent** BlackboardComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UseBlackboard");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.UseBlackboard"));
 
 	struct
 	{
@@ -362,7 +362,7 @@ bool AAIController::UseBlackboard(class UBlackboardData* BlackboardAsset, class 
 
 void AAIController::UnclaimTaskResource(class UClass* ResourceClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.UnclaimTaskResource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.UnclaimTaskResource"));
 
 	struct
 	{
@@ -382,7 +382,7 @@ void AAIController::UnclaimTaskResource(class UClass* ResourceClass)
 
 void AAIController::SetPathFollowingComponent(class UPathFollowingComponent* NewPFComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.SetPathFollowingComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.SetPathFollowingComponent"));
 
 	struct
 	{
@@ -402,7 +402,7 @@ void AAIController::SetPathFollowingComponent(class UPathFollowingComponent* New
 
 void AAIController::SetMoveBlockDetection(bool bEnable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.SetMoveBlockDetection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.SetMoveBlockDetection"));
 
 	struct
 	{
@@ -423,7 +423,7 @@ void AAIController::SetMoveBlockDetection(bool bEnable)
 
 bool AAIController::RunBehaviorTree(class UBehaviorTree* BTAsset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.RunBehaviorTree");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.RunBehaviorTree"));
 
 	struct
 	{
@@ -447,7 +447,7 @@ bool AAIController::RunBehaviorTree(class UBehaviorTree* BTAsset)
 
 void AAIController::OnUsingBlackBoard(class UBlackboardComponent* BlackboardComp, class UBlackboardData* BlackboardAsset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnUsingBlackBoard");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.OnUsingBlackBoard"));
 
 	struct
 	{
@@ -469,7 +469,7 @@ void AAIController::OnUsingBlackBoard(class UBlackboardComponent* BlackboardComp
 
 void AAIController::OnUnpossess(class APawn* UnpossessedPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnUnpossess");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.OnUnpossess"));
 
 	struct
 	{
@@ -489,7 +489,7 @@ void AAIController::OnUnpossess(class APawn* UnpossessedPawn)
 
 void AAIController::OnPossess(class APawn* PossessedPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnPossess");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.OnPossess"));
 
 	struct
 	{
@@ -510,7 +510,7 @@ void AAIController::OnPossess(class APawn* PossessedPawn)
 
 void AAIController::OnGameplayTaskResourcesClaimed(const struct FGameplayResourceSet& NewlyClaimed, const struct FGameplayResourceSet& FreshlyReleased)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.OnGameplayTaskResourcesClaimed");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.OnGameplayTaskResourcesClaimed"));
 
 	struct
 	{
@@ -540,7 +540,7 @@ void AAIController::OnGameplayTaskResourcesClaimed(const struct FGameplayResourc
 
 TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.MoveToLocation"));
 
 	struct
 	{
@@ -584,7 +584,7 @@ TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToLocation(const str
 
 TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, class UClass* FilterClass, bool bAllowPartialPath)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.MoveToActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.MoveToActor"));
 
 	struct
 	{
@@ -619,7 +619,7 @@ TEnumAsByte<EPathFollowingRequestResult> AAIController::MoveToActor(class AActor
 
 void AAIController::K2_SetFocus(class AActor* NewFocus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.K2_SetFocus"));
 
 	struct
 	{
@@ -639,7 +639,7 @@ void AAIController::K2_SetFocus(class AActor* NewFocus)
 
 void AAIController::K2_SetFocalPoint(const struct FVector& FP)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_SetFocalPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.K2_SetFocalPoint"));
 
 	struct
 	{
@@ -657,7 +657,7 @@ void AAIController::K2_SetFocalPoint(const struct FVector& FP)
 
 void AAIController::K2_ClearFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.K2_ClearFocus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.K2_ClearFocus"));
 
 	struct
 	{
@@ -675,7 +675,7 @@ void AAIController::K2_ClearFocus()
 
 bool AAIController::HasPartialPath()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.HasPartialPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.HasPartialPath"));
 
 	struct
 	{
@@ -696,7 +696,7 @@ bool AAIController::HasPartialPath()
 
 class UPathFollowingComponent* AAIController::GetPathFollowingComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetPathFollowingComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetPathFollowingComponent"));
 
 	struct
 	{
@@ -717,7 +717,7 @@ class UPathFollowingComponent* AAIController::GetPathFollowingComponent()
 
 TEnumAsByte<EPathFollowingStatus> AAIController::GetMoveStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetMoveStatus");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetMoveStatus"));
 
 	struct
 	{
@@ -738,7 +738,7 @@ TEnumAsByte<EPathFollowingStatus> AAIController::GetMoveStatus()
 
 struct FVector AAIController::GetImmediateMoveDestination()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetImmediateMoveDestination");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetImmediateMoveDestination"));
 
 	struct
 	{
@@ -759,7 +759,7 @@ struct FVector AAIController::GetImmediateMoveDestination()
 
 class AActor* AAIController::GetFocusActor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocusActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetFocusActor"));
 
 	struct
 	{
@@ -781,7 +781,7 @@ class AActor* AAIController::GetFocusActor()
 
 struct FVector AAIController::GetFocalPointOnActor(class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPointOnActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetFocalPointOnActor"));
 
 	struct
 	{
@@ -804,7 +804,7 @@ struct FVector AAIController::GetFocalPointOnActor(class AActor* Actor)
 
 struct FVector AAIController::GetFocalPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetFocalPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetFocalPoint"));
 
 	struct
 	{
@@ -825,7 +825,7 @@ struct FVector AAIController::GetFocalPoint()
 
 class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.GetAIPerceptionComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.GetAIPerceptionComponent"));
 
 	struct
 	{
@@ -846,7 +846,7 @@ class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 
 void AAIController::ClaimTaskResource(class UClass* ResourceClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIController.ClaimTaskResource");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIController.ClaimTaskResource"));
 
 	struct
 	{
@@ -867,7 +867,7 @@ void AAIController::ClaimTaskResource(class UClass* ResourceClass)
 
 void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, TEnumAsByte<EPathFollowingResult> MovementResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted"));
 
 	struct
 	{
@@ -891,7 +891,7 @@ void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& Requ
 
 void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation"));
 
 	struct
 	{
@@ -922,7 +922,7 @@ void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstan
 
 class APawn* UAIBlueprintHelperLibrary::SpawnAIFromClass(class UObject* WorldContextObject, class UClass* PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass"));
 
 	struct
 	{
@@ -957,7 +957,7 @@ class APawn* UAIBlueprintHelperLibrary::SpawnAIFromClass(class UObject* WorldCon
 
 void UAIBlueprintHelperLibrary::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToLocation"));
 
 	struct
 	{
@@ -981,7 +981,7 @@ void UAIBlueprintHelperLibrary::SimpleMoveToLocation(class AController* Controll
 
 void UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController* Controller, class AActor* Goal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToActor"));
 
 	struct
 	{
@@ -1007,7 +1007,7 @@ void UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController* Controller,
 
 void UAIBlueprintHelperLibrary::SendAIMessage(class APawn* Target, const struct FName& Message, class UObject* MessageSource, bool bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.SendAIMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.SendAIMessage"));
 
 	struct
 	{
@@ -1036,7 +1036,7 @@ void UAIBlueprintHelperLibrary::SendAIMessage(class APawn* Target, const struct 
 
 void UAIBlueprintHelperLibrary::LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation"));
 
 	struct
 	{
@@ -1062,7 +1062,7 @@ void UAIBlueprintHelperLibrary::LockAIResourcesWithAnimation(class UAnimInstance
 
 bool UAIBlueprintHelperLibrary::IsValidAIRotation(const struct FRotator& Rotation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation"));
 
 	struct
 	{
@@ -1087,7 +1087,7 @@ bool UAIBlueprintHelperLibrary::IsValidAIRotation(const struct FRotator& Rotatio
 
 bool UAIBlueprintHelperLibrary::IsValidAILocation(const struct FVector& Location)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation"));
 
 	struct
 	{
@@ -1112,7 +1112,7 @@ bool UAIBlueprintHelperLibrary::IsValidAILocation(const struct FVector& Location
 
 bool UAIBlueprintHelperLibrary::IsValidAIDirection(const struct FVector& DirectionVector)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection"));
 
 	struct
 	{
@@ -1137,7 +1137,7 @@ bool UAIBlueprintHelperLibrary::IsValidAIDirection(const struct FVector& Directi
 
 class UNavigationPath* UAIBlueprintHelperLibrary::GetCurrentPath(class AController* Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath"));
 
 	struct
 	{
@@ -1162,7 +1162,7 @@ class UNavigationPath* UAIBlueprintHelperLibrary::GetCurrentPath(class AControll
 
 class UBlackboardComponent* UAIBlueprintHelperLibrary::GetBlackboard(class AActor* Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetBlackboard");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.GetBlackboard"));
 
 	struct
 	{
@@ -1187,7 +1187,7 @@ class UBlackboardComponent* UAIBlueprintHelperLibrary::GetBlackboard(class AActo
 
 class AAIController* UAIBlueprintHelperLibrary::GetAIController(class AActor* ControlledActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.GetAIController");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.GetAIController"));
 
 	struct
 	{
@@ -1217,7 +1217,7 @@ class AAIController* UAIBlueprintHelperLibrary::GetAIController(class AActor* Co
 
 class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject"));
 
 	struct
 	{
@@ -1251,7 +1251,7 @@ class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::CreateMoveToProxyOb
 
 void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(class UClass* SenseClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense"));
 
 	struct
 	{
@@ -1269,7 +1269,7 @@ void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(class UClass* Sens
 
 void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem"));
 
 	struct
 	{
@@ -1285,7 +1285,7 @@ void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem()
 
 void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem"));
 
 	struct
 	{
@@ -1303,7 +1303,7 @@ void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem()
 
 void UAIPerceptionStimuliSourceComponent::RegisterForSense(class UClass* SenseClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense"));
 
 	struct
 	{
@@ -1324,7 +1324,7 @@ void UAIPerceptionStimuliSourceComponent::RegisterForSense(class UClass* SenseCl
 
 float UAISense_Blueprint::OnUpdate(TArray<class UAISenseEvent*> EventsToProcess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnUpdate");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.OnUpdate"));
 
 	struct
 	{
@@ -1348,7 +1348,7 @@ float UAISense_Blueprint::OnUpdate(TArray<class UAISenseEvent*> EventsToProcess)
 
 void UAISense_Blueprint::OnListenerUpdated(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUpdated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.OnListenerUpdated"));
 
 	struct
 	{
@@ -1371,7 +1371,7 @@ void UAISense_Blueprint::OnListenerUpdated(class AActor* ActorListener, class UA
 
 void UAISense_Blueprint::OnListenerUnregistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerUnregistered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.OnListenerUnregistered"));
 
 	struct
 	{
@@ -1394,7 +1394,7 @@ void UAISense_Blueprint::OnListenerUnregistered(class AActor* ActorListener, cla
 
 void UAISense_Blueprint::OnListenerRegistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.OnListenerRegistered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.OnListenerRegistered"));
 
 	struct
 	{
@@ -1416,7 +1416,7 @@ void UAISense_Blueprint::OnListenerRegistered(class AActor* ActorListener, class
 
 void UAISense_Blueprint::K2_OnNewPawn(class APawn* NewPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.K2_OnNewPawn");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.K2_OnNewPawn"));
 
 	struct
 	{
@@ -1436,7 +1436,7 @@ void UAISense_Blueprint::K2_OnNewPawn(class APawn* NewPawn)
 
 void UAISense_Blueprint::GetAllListenerComponents(TArray<class UAIPerceptionComponent*>* ListenerComponents)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerComponents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.GetAllListenerComponents"));
 
 	struct
 	{
@@ -1458,7 +1458,7 @@ void UAISense_Blueprint::GetAllListenerComponents(TArray<class UAIPerceptionComp
 
 void UAISense_Blueprint::GetAllListenerActors(TArray<class AActor*>* ListenerActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Blueprint.GetAllListenerActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Blueprint.GetAllListenerActors"));
 
 	struct
 	{
@@ -1485,7 +1485,7 @@ void UAISense_Blueprint::GetAllListenerActors(TArray<class AActor*>* ListenerAct
 
 void UAISense_Damage::ReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Damage.ReportDamageEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Damage.ReportDamageEvent"));
 
 	struct
 	{
@@ -1521,7 +1521,7 @@ void UAISense_Damage::ReportDamageEvent(class UObject* WorldContextObject, class
 
 void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const struct FVector& NoiseLocation, float Loudness, class AActor* Instigator, float MaxRange, const struct FName& Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Hearing.ReportNoiseEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Hearing.ReportNoiseEvent"));
 
 	struct
 	{
@@ -1554,7 +1554,7 @@ void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const
 
 void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestPawnPredictionEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Prediction.RequestPawnPredictionEvent"));
 
 	struct
 	{
@@ -1581,7 +1581,7 @@ void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, cla
 
 void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISense_Prediction.RequestControllerPredictionEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISense_Prediction.RequestControllerPredictionEvent"));
 
 	struct
 	{
@@ -1604,7 +1604,7 @@ void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* 
 
 void UAISystem::AILoggingVerbose()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISystem.AILoggingVerbose");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISystem.AILoggingVerbose"));
 
 	struct
 	{
@@ -1620,7 +1620,7 @@ void UAISystem::AILoggingVerbose()
 
 void UAISystem::AIIgnorePlayers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AISystem.AIIgnorePlayers");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AISystem.AIIgnorePlayers"));
 
 	struct
 	{
@@ -1647,7 +1647,7 @@ void UAISystem::AIIgnorePlayers()
 
 class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, TEnumAsByte<EAIOptionFlag> StopOnOverlap, TEnumAsByte<EAIOptionFlag> AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AITask_MoveTo.AIMoveTo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AITask_MoveTo.AIMoveTo"));
 
 	struct
 	{
@@ -1689,7 +1689,7 @@ class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, 
 
 class UAITask_RunEQS* UAITask_RunEQS::RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.AITask_RunEQS.RunEQS");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.AITask_RunEQS.RunEQS"));
 
 	struct
 	{
@@ -1715,7 +1715,7 @@ class UAITask_RunEQS* UAITask_RunEQS::RunEQS(class AAIController* Controller, cl
 
 void UBrainComponent::StopLogic(const struct FString& Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.StopLogic");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BrainComponent.StopLogic"));
 
 	struct
 	{
@@ -1733,7 +1733,7 @@ void UBrainComponent::StopLogic(const struct FString& Reason)
 
 void UBrainComponent::RestartLogic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.RestartLogic");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BrainComponent.RestartLogic"));
 
 	struct
 	{
@@ -1751,7 +1751,7 @@ void UBrainComponent::RestartLogic()
 
 bool UBrainComponent::IsRunning()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.IsRunning");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BrainComponent.IsRunning"));
 
 	struct
 	{
@@ -1772,7 +1772,7 @@ bool UBrainComponent::IsRunning()
 
 bool UBrainComponent::IsPaused()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BrainComponent.IsPaused");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BrainComponent.IsPaused"));
 
 	struct
 	{
@@ -1794,7 +1794,7 @@ bool UBrainComponent::IsPaused()
 
 void UBehaviorTreeComponent::SetDynamicSubtree(const struct FGameplayTag& InjectTag, class UBehaviorTree* BehaviorAsset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.SetDynamicSubtree");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BehaviorTreeComponent.SetDynamicSubtree"));
 
 	struct
 	{
@@ -1817,7 +1817,7 @@ void UBehaviorTreeComponent::SetDynamicSubtree(const struct FGameplayTag& Inject
 
 float UBehaviorTreeComponent::GetTagCooldownEndTime(const struct FGameplayTag& CooldownTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime"));
 
 	struct
 	{
@@ -1842,7 +1842,7 @@ float UBehaviorTreeComponent::GetTagCooldownEndTime(const struct FGameplayTag& C
 
 void UBehaviorTreeComponent::AddCooldownTagDuration(const struct FGameplayTag& CooldownTag, float CooldownDuration, bool bAddToExistingDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration"));
 
 	struct
 	{
@@ -1867,7 +1867,7 @@ void UBehaviorTreeComponent::AddCooldownTagDuration(const struct FGameplayTag& C
 
 void UBlackboardComponent::SetValueAsVector(const struct FName& KeyName, const struct FVector& VectorValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsVector"));
 
 	struct
 	{
@@ -1890,7 +1890,7 @@ void UBlackboardComponent::SetValueAsVector(const struct FName& KeyName, const s
 
 void UBlackboardComponent::SetValueAsString(const struct FName& KeyName, const struct FString& StringValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsString"));
 
 	struct
 	{
@@ -1913,7 +1913,7 @@ void UBlackboardComponent::SetValueAsString(const struct FName& KeyName, const s
 
 void UBlackboardComponent::SetValueAsRotator(const struct FName& KeyName, const struct FRotator& VectorValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsRotator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsRotator"));
 
 	struct
 	{
@@ -1936,7 +1936,7 @@ void UBlackboardComponent::SetValueAsRotator(const struct FName& KeyName, const 
 
 void UBlackboardComponent::SetValueAsObject(const struct FName& KeyName, class UObject* ObjectValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsObject"));
 
 	struct
 	{
@@ -1959,7 +1959,7 @@ void UBlackboardComponent::SetValueAsObject(const struct FName& KeyName, class U
 
 void UBlackboardComponent::SetValueAsName(const struct FName& KeyName, const struct FName& NameValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsName"));
 
 	struct
 	{
@@ -1982,7 +1982,7 @@ void UBlackboardComponent::SetValueAsName(const struct FName& KeyName, const str
 
 void UBlackboardComponent::SetValueAsInt(const struct FName& KeyName, int IntValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsInt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsInt"));
 
 	struct
 	{
@@ -2005,7 +2005,7 @@ void UBlackboardComponent::SetValueAsInt(const struct FName& KeyName, int IntVal
 
 void UBlackboardComponent::SetValueAsFloat(const struct FName& KeyName, float FloatValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsFloat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsFloat"));
 
 	struct
 	{
@@ -2028,7 +2028,7 @@ void UBlackboardComponent::SetValueAsFloat(const struct FName& KeyName, float Fl
 
 void UBlackboardComponent::SetValueAsEnum(const struct FName& KeyName, unsigned char EnumValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsEnum");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsEnum"));
 
 	struct
 	{
@@ -2051,7 +2051,7 @@ void UBlackboardComponent::SetValueAsEnum(const struct FName& KeyName, unsigned 
 
 void UBlackboardComponent::SetValueAsClass(const struct FName& KeyName, class UClass* ClassValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsClass"));
 
 	struct
 	{
@@ -2074,7 +2074,7 @@ void UBlackboardComponent::SetValueAsClass(const struct FName& KeyName, class UC
 
 void UBlackboardComponent::SetValueAsBool(const struct FName& KeyName, bool BoolValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.SetValueAsBool");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.SetValueAsBool"));
 
 	struct
 	{
@@ -2097,7 +2097,7 @@ void UBlackboardComponent::SetValueAsBool(const struct FName& KeyName, bool Bool
 
 bool UBlackboardComponent::IsVectorValueSet(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.IsVectorValueSet");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.IsVectorValueSet"));
 
 	struct
 	{
@@ -2121,7 +2121,7 @@ bool UBlackboardComponent::IsVectorValueSet(const struct FName& KeyName)
 
 struct FVector UBlackboardComponent::GetValueAsVector(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsVector"));
 
 	struct
 	{
@@ -2145,7 +2145,7 @@ struct FVector UBlackboardComponent::GetValueAsVector(const struct FName& KeyNam
 
 struct FString UBlackboardComponent::GetValueAsString(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsString"));
 
 	struct
 	{
@@ -2169,7 +2169,7 @@ struct FString UBlackboardComponent::GetValueAsString(const struct FName& KeyNam
 
 struct FRotator UBlackboardComponent::GetValueAsRotator(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsRotator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsRotator"));
 
 	struct
 	{
@@ -2193,7 +2193,7 @@ struct FRotator UBlackboardComponent::GetValueAsRotator(const struct FName& KeyN
 
 class UObject* UBlackboardComponent::GetValueAsObject(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsObject"));
 
 	struct
 	{
@@ -2217,7 +2217,7 @@ class UObject* UBlackboardComponent::GetValueAsObject(const struct FName& KeyNam
 
 struct FName UBlackboardComponent::GetValueAsName(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsName"));
 
 	struct
 	{
@@ -2241,7 +2241,7 @@ struct FName UBlackboardComponent::GetValueAsName(const struct FName& KeyName)
 
 int UBlackboardComponent::GetValueAsInt(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsInt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsInt"));
 
 	struct
 	{
@@ -2265,7 +2265,7 @@ int UBlackboardComponent::GetValueAsInt(const struct FName& KeyName)
 
 float UBlackboardComponent::GetValueAsFloat(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsFloat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsFloat"));
 
 	struct
 	{
@@ -2289,7 +2289,7 @@ float UBlackboardComponent::GetValueAsFloat(const struct FName& KeyName)
 
 unsigned char UBlackboardComponent::GetValueAsEnum(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsEnum");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsEnum"));
 
 	struct
 	{
@@ -2313,7 +2313,7 @@ unsigned char UBlackboardComponent::GetValueAsEnum(const struct FName& KeyName)
 
 class UClass* UBlackboardComponent::GetValueAsClass(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsClass"));
 
 	struct
 	{
@@ -2337,7 +2337,7 @@ class UClass* UBlackboardComponent::GetValueAsClass(const struct FName& KeyName)
 
 bool UBlackboardComponent::GetValueAsBool(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetValueAsBool");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetValueAsBool"));
 
 	struct
 	{
@@ -2362,7 +2362,7 @@ bool UBlackboardComponent::GetValueAsBool(const struct FName& KeyName)
 
 bool UBlackboardComponent::GetRotationFromEntry(const struct FName& KeyName, struct FRotator* ResultRotation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetRotationFromEntry");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetRotationFromEntry"));
 
 	struct
 	{
@@ -2391,7 +2391,7 @@ bool UBlackboardComponent::GetRotationFromEntry(const struct FName& KeyName, str
 
 bool UBlackboardComponent::GetLocationFromEntry(const struct FName& KeyName, struct FVector* ResultLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.GetLocationFromEntry");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.GetLocationFromEntry"));
 
 	struct
 	{
@@ -2418,7 +2418,7 @@ bool UBlackboardComponent::GetLocationFromEntry(const struct FName& KeyName, str
 
 void UBlackboardComponent::ClearValue(const struct FName& KeyName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BlackboardComponent.ClearValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BlackboardComponent.ClearValue"));
 
 	struct
 	{
@@ -2440,7 +2440,7 @@ void UBlackboardComponent::ClearValue(const struct FName& KeyName)
 
 void UBTDecorator_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI"));
 
 	struct
 	{
@@ -2465,7 +2465,7 @@ void UBTDecorator_BlueprintBase::ReceiveTickAI(class AAIController* OwnerControl
 
 void UBTDecorator_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveTick"));
 
 	struct
 	{
@@ -2488,7 +2488,7 @@ void UBTDecorator_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float Del
 
 void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI"));
 
 	struct
 	{
@@ -2510,7 +2510,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(class AAIControlle
 
 void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated"));
 
 	struct
 	{
@@ -2531,7 +2531,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(class AActor* OwnerA
 
 void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI"));
 
 	struct
 	{
@@ -2553,7 +2553,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(class AAIController*
 
 void UBTDecorator_BlueprintBase::ReceiveObserverActivated(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated"));
 
 	struct
 	{
@@ -2574,7 +2574,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverActivated(class AActor* OwnerAct
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI"));
 
 	struct
 	{
@@ -2596,7 +2596,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(class AAIController* Ow
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionStart(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart"));
 
 	struct
 	{
@@ -2618,7 +2618,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionStart(class AActor* OwnerActor)
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, TEnumAsByte<EBTNodeResult> NodeResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI"));
 
 	struct
 	{
@@ -2643,7 +2643,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* O
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor, TEnumAsByte<EBTNodeResult> NodeResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish"));
 
 	struct
 	{
@@ -2667,7 +2667,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor
 
 bool UBTDecorator_BlueprintBase::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI"));
 
 	struct
 	{
@@ -2693,7 +2693,7 @@ bool UBTDecorator_BlueprintBase::PerformConditionCheckAI(class AAIController* Ow
 
 bool UBTDecorator_BlueprintBase::PerformConditionCheck(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck"));
 
 	struct
 	{
@@ -2716,7 +2716,7 @@ bool UBTDecorator_BlueprintBase::PerformConditionCheck(class AActor* OwnerActor)
 
 bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive"));
 
 	struct
 	{
@@ -2737,7 +2737,7 @@ bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive()
 
 bool UBTDecorator_BlueprintBase::IsDecoratorExecutionActive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive"));
 
 	struct
 	{
@@ -2758,7 +2758,7 @@ bool UBTDecorator_BlueprintBase::IsDecoratorExecutionActive()
 
 void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.StopUsingExternalEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.StopUsingExternalEvent"));
 
 	struct
 	{
@@ -2780,7 +2780,7 @@ void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
 
 void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.StartUsingExternalEvent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.StartUsingExternalEvent"));
 
 	struct
 	{
@@ -2805,7 +2805,7 @@ void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class
 
 void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector"));
 
 	struct
 	{
@@ -2832,7 +2832,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FString& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString"));
 
 	struct
 	{
@@ -2859,7 +2859,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator"));
 
 	struct
 	{
@@ -2886,7 +2886,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, c
 
 void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject"));
 
 	struct
 	{
@@ -2913,7 +2913,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FName& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName"));
 
 	struct
 	{
@@ -2940,7 +2940,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, cons
 
 void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt"));
 
 	struct
 	{
@@ -2967,7 +2967,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const
 
 void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat"));
 
 	struct
 	{
@@ -2994,7 +2994,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, con
 
 void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, unsigned char Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum"));
 
 	struct
 	{
@@ -3021,7 +3021,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, cons
 
 void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass"));
 
 	struct
 	{
@@ -3048,7 +3048,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, con
 
 void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool"));
 
 	struct
 	{
@@ -3074,7 +3074,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, cons
 
 class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNode* NodeOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetOwnersBlackboard");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetOwnersBlackboard"));
 
 	struct
 	{
@@ -3099,7 +3099,7 @@ class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNod
 
 class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNode* NodeOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetOwnerComponent");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetOwnerComponent"));
 
 	struct
 	{
@@ -3125,7 +3125,7 @@ class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNod
 
 struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector"));
 
 	struct
 	{
@@ -3153,7 +3153,7 @@ struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* Nod
 
 struct FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString"));
 
 	struct
 	{
@@ -3181,7 +3181,7 @@ struct FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* Nod
 
 struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator"));
 
 	struct
 	{
@@ -3209,7 +3209,7 @@ struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* N
 
 class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject"));
 
 	struct
 	{
@@ -3237,7 +3237,7 @@ class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* Nod
 
 struct FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName"));
 
 	struct
 	{
@@ -3265,7 +3265,7 @@ struct FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwn
 
 int UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt"));
 
 	struct
 	{
@@ -3293,7 +3293,7 @@ int UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const 
 
 float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat"));
 
 	struct
 	{
@@ -3321,7 +3321,7 @@ float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, co
 
 unsigned char UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum"));
 
 	struct
 	{
@@ -3349,7 +3349,7 @@ unsigned char UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOw
 
 class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass"));
 
 	struct
 	{
@@ -3377,7 +3377,7 @@ class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeO
 
 bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool"));
 
 	struct
 	{
@@ -3405,7 +3405,7 @@ bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, cons
 
 class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor"));
 
 	struct
 	{
@@ -3432,7 +3432,7 @@ class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeO
 
 void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector"));
 
 	struct
 	{
@@ -3456,7 +3456,7 @@ void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, 
 
 void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTFunctionLibrary.ClearBlackboardValue");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTFunctionLibrary.ClearBlackboardValue"));
 
 	struct
 	{
@@ -3481,7 +3481,7 @@ void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const st
 
 void UBTService_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveTickAI"));
 
 	struct
 	{
@@ -3506,7 +3506,7 @@ void UBTService_BlueprintBase::ReceiveTickAI(class AAIController* OwnerControlle
 
 void UBTService_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveTick"));
 
 	struct
 	{
@@ -3529,7 +3529,7 @@ void UBTService_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float Delta
 
 void UBTService_BlueprintBase::ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI"));
 
 	struct
 	{
@@ -3551,7 +3551,7 @@ void UBTService_BlueprintBase::ReceiveSearchStartAI(class AAIController* OwnerCo
 
 void UBTService_BlueprintBase::ReceiveSearchStart(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveSearchStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveSearchStart"));
 
 	struct
 	{
@@ -3572,7 +3572,7 @@ void UBTService_BlueprintBase::ReceiveSearchStart(class AActor* OwnerActor)
 
 void UBTService_BlueprintBase::ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI"));
 
 	struct
 	{
@@ -3594,7 +3594,7 @@ void UBTService_BlueprintBase::ReceiveDeactivationAI(class AAIController* OwnerC
 
 void UBTService_BlueprintBase::ReceiveDeactivation(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveDeactivation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveDeactivation"));
 
 	struct
 	{
@@ -3615,7 +3615,7 @@ void UBTService_BlueprintBase::ReceiveDeactivation(class AActor* OwnerActor)
 
 void UBTService_BlueprintBase::ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivationAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveActivationAI"));
 
 	struct
 	{
@@ -3637,7 +3637,7 @@ void UBTService_BlueprintBase::ReceiveActivationAI(class AAIController* OwnerCon
 
 void UBTService_BlueprintBase::ReceiveActivation(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.ReceiveActivation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.ReceiveActivation"));
 
 	struct
 	{
@@ -3657,7 +3657,7 @@ void UBTService_BlueprintBase::ReceiveActivation(class AActor* OwnerActor)
 
 bool UBTService_BlueprintBase::IsServiceActive()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTService_BlueprintBase.IsServiceActive");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTService_BlueprintBase.IsServiceActive"));
 
 	struct
 	{
@@ -3679,7 +3679,7 @@ bool UBTService_BlueprintBase::IsServiceActive()
 
 void UBTTask_BlueprintBase::SetFinishOnMessageWithId(const struct FName& MessageName, int RequestID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId"));
 
 	struct
 	{
@@ -3701,7 +3701,7 @@ void UBTTask_BlueprintBase::SetFinishOnMessageWithId(const struct FName& Message
 
 void UBTTask_BlueprintBase::SetFinishOnMessage(const struct FName& MessageName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage"));
 
 	struct
 	{
@@ -3723,7 +3723,7 @@ void UBTTask_BlueprintBase::SetFinishOnMessage(const struct FName& MessageName)
 
 void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTickAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveTickAI"));
 
 	struct
 	{
@@ -3748,7 +3748,7 @@ void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, 
 
 void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveTick"));
 
 	struct
 	{
@@ -3771,7 +3771,7 @@ void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSec
 
 void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -3793,7 +3793,7 @@ void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerControlle
 
 void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveExecute");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveExecute"));
 
 	struct
 	{
@@ -3814,7 +3814,7 @@ void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
 
 void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI"));
 
 	struct
 	{
@@ -3836,7 +3836,7 @@ void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController,
 
 void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.ReceiveAbort");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.ReceiveAbort"));
 
 	struct
 	{
@@ -3856,7 +3856,7 @@ void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
 
 bool UBTTask_BlueprintBase::IsTaskExecuting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.IsTaskExecuting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.IsTaskExecuting"));
 
 	struct
 	{
@@ -3877,7 +3877,7 @@ bool UBTTask_BlueprintBase::IsTaskExecuting()
 
 bool UBTTask_BlueprintBase::IsTaskAborting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.IsTaskAborting");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.IsTaskAborting"));
 
 	struct
 	{
@@ -3898,7 +3898,7 @@ bool UBTTask_BlueprintBase::IsTaskAborting()
 
 void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.FinishExecute");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.FinishExecute"));
 
 	struct
 	{
@@ -3916,7 +3916,7 @@ void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
 
 void UBTTask_BlueprintBase::FinishAbort()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.BTTask_BlueprintBase.FinishAbort");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.BTTask_BlueprintBase.FinishAbort"));
 
 	struct
 	{
@@ -3934,7 +3934,7 @@ void UBTTask_BlueprintBase::FinishAbort()
 
 void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnNavDataRegistered");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PathFollowingComponent.OnNavDataRegistered"));
 
 	struct
 	{
@@ -3957,7 +3957,7 @@ void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData
 
 void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.OnActorBump");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PathFollowingComponent.OnActorBump"));
 
 	struct
 	{
@@ -3983,7 +3983,7 @@ void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor*
 
 struct FVector UPathFollowingComponent::GetPathDestination()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.GetPathDestination");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PathFollowingComponent.GetPathDestination"));
 
 	struct
 	{
@@ -4004,7 +4004,7 @@ struct FVector UPathFollowingComponent::GetPathDestination()
 
 TEnumAsByte<EPathFollowingAction> UPathFollowingComponent::GetPathActionType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PathFollowingComponent.GetPathActionType");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PathFollowingComponent.GetPathActionType"));
 
 	struct
 	{
@@ -4025,7 +4025,7 @@ TEnumAsByte<EPathFollowingAction> UPathFollowingComponent::GetPathActionType()
 
 void UCrowdFollowingComponent::SuspendCrowdSteering(bool bSuspend)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering"));
 
 	struct
 	{
@@ -4047,7 +4047,7 @@ void UCrowdFollowingComponent::SuspendCrowdSteering(bool bSuspend)
 
 void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation"));
 
 	struct
 	{
@@ -4075,7 +4075,7 @@ void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* Querie
 
 void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor"));
 
 	struct
 	{
@@ -4103,7 +4103,7 @@ void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierOb
 
 void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet"));
 
 	struct
 	{
@@ -4131,7 +4131,7 @@ void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierO
 
 void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet"));
 
 	struct
 	{
@@ -4157,7 +4157,7 @@ void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObje
 
 class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier"));
 
 	struct
 	{
@@ -4178,7 +4178,7 @@ class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier()
 
 void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(TArray<struct FVector> ContextLocations)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration"));
 
 	struct
 	{
@@ -4198,7 +4198,7 @@ void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(TArray<struct FVector> C
 
 void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& GeneratedVector)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector"));
 
 	struct
 	{
@@ -4218,7 +4218,7 @@ void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& 
 
 void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* GeneratedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor"));
 
 	struct
 	{
@@ -4239,7 +4239,7 @@ void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* Generated
 
 void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(const struct FName& ParamName, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam"));
 
 	struct
 	{
@@ -4261,7 +4261,7 @@ void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(const struct FName& ParamN
 
 TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations"));
 
 	struct
 	{
@@ -4282,7 +4282,7 @@ TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations(
 
 TArray<class AActor*> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors"));
 
 	struct
 	{
@@ -4304,7 +4304,7 @@ TArray<class AActor*> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors()
 
 float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int ItemIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore"));
 
 	struct
 	{
@@ -4328,7 +4328,7 @@ float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int ItemIndex)
 
 void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus> QueryStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature"));
 
 	struct
 	{
@@ -4355,7 +4355,7 @@ void UEnvQueryInstanceBlueprintWrapper::EQSQueryDoneSignature__DelegateSignature
 
 class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, TEnumAsByte<EEnvQueryRunMode> RunMode, class UClass* WrapperClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.EnvQueryManager.RunEQSQuery");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.EnvQueryManager.RunEQSQuery"));
 
 	struct
 	{
@@ -4387,7 +4387,7 @@ class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UOb
 
 void ANavLinkProxy::SetSmartLinkEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.SetSmartLinkEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLinkProxy.SetSmartLinkEnabled"));
 
 	struct
 	{
@@ -4407,7 +4407,7 @@ void ANavLinkProxy::SetSmartLinkEnabled(bool bEnabled)
 
 void ANavLinkProxy::ResumePathFollowing(class AActor* Agent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ResumePathFollowing");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLinkProxy.ResumePathFollowing"));
 
 	struct
 	{
@@ -4428,7 +4428,7 @@ void ANavLinkProxy::ResumePathFollowing(class AActor* Agent)
 
 void ANavLinkProxy::ReceiveSmartLinkReached(class AActor* Agent, const struct FVector& Destination)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.ReceiveSmartLinkReached");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLinkProxy.ReceiveSmartLinkReached"));
 
 	struct
 	{
@@ -4450,7 +4450,7 @@ void ANavLinkProxy::ReceiveSmartLinkReached(class AActor* Agent, const struct FV
 
 bool ANavLinkProxy::IsSmartLinkEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.IsSmartLinkEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLinkProxy.IsSmartLinkEnabled"));
 
 	struct
 	{
@@ -4471,7 +4471,7 @@ bool ANavLinkProxy::IsSmartLinkEnabled()
 
 bool ANavLinkProxy::HasMovingAgents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLinkProxy.HasMovingAgents");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLinkProxy.HasMovingAgents"));
 
 	struct
 	{
@@ -4494,7 +4494,7 @@ bool ANavLinkProxy::HasMovingAgents()
 
 bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity"));
 
 	struct
 	{
@@ -4522,7 +4522,7 @@ bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldCon
 
 void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContextObject, int GridId, bool bRebuildGrids)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid"));
 
 	struct
 	{
@@ -4551,7 +4551,7 @@ void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContext
 
 bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath"));
 
 	struct
 	{
@@ -4588,7 +4588,7 @@ bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldConte
 
 int UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldContextObject, TArray<struct FVector> Locations, int Radius2D, float Height, bool bRebuildGrids)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints"));
 
 	struct
 	{
@@ -4625,7 +4625,7 @@ int UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldCo
 
 int UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, int Radius2D, float Height, bool bRebuildGrids)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint"));
 
 	struct
 	{
@@ -4664,7 +4664,7 @@ int UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldCon
 
 int UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, int Radius2D, float Height, bool bRebuildGrids)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule"));
 
 	struct
 	{
@@ -4707,7 +4707,7 @@ int UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldC
 
 int UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, int Radius2D, float Height, bool bRebuildGrids)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox"));
 
 	struct
 	{
@@ -4743,7 +4743,7 @@ int UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldConte
 
 TEnumAsByte<EAIRequestPriority> UPawnAction::GetActionPriority()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.GetActionPriority");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction.GetActionPriority"));
 
 	struct
 	{
@@ -4764,7 +4764,7 @@ TEnumAsByte<EAIRequestPriority> UPawnAction::GetActionPriority()
 
 void UPawnAction::Finish(TEnumAsByte<EPawnActionResult> WithResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.Finish");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction.Finish"));
 
 	struct
 	{
@@ -4786,7 +4786,7 @@ void UPawnAction::Finish(TEnumAsByte<EPawnActionResult> WithResult)
 
 class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContextObject, class UClass* ActionClass)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction.CreateActionInstance");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction.CreateActionInstance"));
 
 	struct
 	{
@@ -4813,7 +4813,7 @@ class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContext
 
 void UPawnAction_BlueprintBase::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction_BlueprintBase.ActionTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction_BlueprintBase.ActionTick"));
 
 	struct
 	{
@@ -4835,7 +4835,7 @@ void UPawnAction_BlueprintBase::ActionTick(class APawn* ControlledPawn, float De
 
 void UPawnAction_BlueprintBase::ActionStart(class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction_BlueprintBase.ActionStart");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction_BlueprintBase.ActionStart"));
 
 	struct
 	{
@@ -4855,7 +4855,7 @@ void UPawnAction_BlueprintBase::ActionStart(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionResume(class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction_BlueprintBase.ActionResume");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction_BlueprintBase.ActionResume"));
 
 	struct
 	{
@@ -4875,7 +4875,7 @@ void UPawnAction_BlueprintBase::ActionResume(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionPause(class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction_BlueprintBase.ActionPause");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction_BlueprintBase.ActionPause"));
 
 	struct
 	{
@@ -4896,7 +4896,7 @@ void UPawnAction_BlueprintBase::ActionPause(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, TEnumAsByte<EPawnActionResult> WithResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnAction_BlueprintBase.ActionFinished");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnAction_BlueprintBase.ActionFinished"));
 
 	struct
 	{
@@ -4921,7 +4921,7 @@ void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, TEnu
 
 bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, TEnumAsByte<EAIRequestPriority> Priority, class UObject* Instigator)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PushAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnActionsComponent.K2_PushAction"));
 
 	struct
 	{
@@ -4951,7 +4951,7 @@ bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, TEnumAsB
 
 bool UPawnActionsComponent::K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, TEnumAsByte<EAIRequestPriority> Priority)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_PerformAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnActionsComponent.K2_PerformAction"));
 
 	struct
 	{
@@ -4980,7 +4980,7 @@ bool UPawnActionsComponent::K2_PerformAction(class APawn* Pawn, class UPawnActio
 
 TEnumAsByte<EPawnActionAbortState> UPawnActionsComponent::K2_ForceAbortAction(class UPawnAction* ActionToAbort)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_ForceAbortAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnActionsComponent.K2_ForceAbortAction"));
 
 	struct
 	{
@@ -5004,7 +5004,7 @@ TEnumAsByte<EPawnActionAbortState> UPawnActionsComponent::K2_ForceAbortAction(cl
 
 TEnumAsByte<EPawnActionAbortState> UPawnActionsComponent::K2_AbortAction(class UPawnAction* ActionToAbort)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnActionsComponent.K2_AbortAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnActionsComponent.K2_AbortAction"));
 
 	struct
 	{
@@ -5027,7 +5027,7 @@ TEnumAsByte<EPawnActionAbortState> UPawnActionsComponent::K2_AbortAction(class U
 
 void UPawnSensingComponent::SetSensingUpdatesEnabled(bool bEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled"));
 
 	struct
 	{
@@ -5047,7 +5047,7 @@ void UPawnSensingComponent::SetSensingUpdatesEnabled(bool bEnabled)
 
 void UPawnSensingComponent::SetSensingInterval(float NewSensingInterval)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetSensingInterval");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnSensingComponent.SetSensingInterval"));
 
 	struct
 	{
@@ -5067,7 +5067,7 @@ void UPawnSensingComponent::SetSensingInterval(float NewSensingInterval)
 
 void UPawnSensingComponent::SetPeripheralVisionAngle(float NewPeripheralVisionAngle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle"));
 
 	struct
 	{
@@ -5087,7 +5087,7 @@ void UPawnSensingComponent::SetPeripheralVisionAngle(float NewPeripheralVisionAn
 
 void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature"));
 
 	struct
 	{
@@ -5109,7 +5109,7 @@ void UPawnSensingComponent::SeePawnDelegate__DelegateSignature(class APawn* Pawn
 
 void UPawnSensingComponent::HearNoiseDelegate__DelegateSignature(class APawn* Instigator, const struct FVector& Location, float Volume)
 {
-	static auto fn = UObject::FindObject<UFunction>("DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature"));
 
 	struct
 	{
@@ -5133,7 +5133,7 @@ void UPawnSensingComponent::HearNoiseDelegate__DelegateSignature(class APawn* In
 
 float UPawnSensingComponent::GetPeripheralVisionCosine()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine"));
 
 	struct
 	{
@@ -5154,7 +5154,7 @@ float UPawnSensingComponent::GetPeripheralVisionCosine()
 
 float UPawnSensingComponent::GetPeripheralVisionAngle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle"));
 
 	struct
 	{

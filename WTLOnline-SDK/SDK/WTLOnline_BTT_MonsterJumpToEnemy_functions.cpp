@@ -20,7 +20,7 @@ namespace SDK
 
 void UBTT_MonsterJumpToEnemy_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_MonsterJumpToEnemy.BTT_MonsterJumpToEnemy_C.ReceiveExecuteAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_MonsterJumpToEnemy.BTT_MonsterJumpToEnemy_C.ReceiveExecuteAI"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ void UBTT_MonsterJumpToEnemy_C::ReceiveExecuteAI(class AAIController* OwnerContr
 
 void UBTT_MonsterJumpToEnemy_C::ExecuteUbergraph_BTT_MonsterJumpToEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTT_MonsterJumpToEnemy.BTT_MonsterJumpToEnemy_C.ExecuteUbergraph_BTT_MonsterJumpToEnemy");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTT_MonsterJumpToEnemy.BTT_MonsterJumpToEnemy_C.ExecuteUbergraph_BTT_MonsterJumpToEnemy"));
 
 	struct
 	{

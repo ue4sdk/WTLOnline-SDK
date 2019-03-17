@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_ElectricLight_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_ElectricLight_C::UserConstructionScript()
 
 void ABP_ElectricLight_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -51,7 +51,7 @@ void ABP_ElectricLight_C::ReceiveBeginPlay()
 
 void ABP_ElectricLight_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.ReceiveTick"));
 
 	struct
 	{
@@ -71,7 +71,7 @@ void ABP_ElectricLight_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_ElectricLight_C::OnSwitch(bool Enable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.OnSwitch");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.OnSwitch"));
 
 	struct
 	{
@@ -91,7 +91,7 @@ void ABP_ElectricLight_C::OnSwitch(bool Enable)
 
 void ABP_ElectricLight_C::SetEnableLight(bool Enable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.SetEnableLight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.SetEnableLight"));
 
 	struct
 	{
@@ -111,7 +111,7 @@ void ABP_ElectricLight_C::SetEnableLight(bool Enable)
 
 void ABP_ElectricLight_C::ExecuteUbergraph_BP_ElectricLight(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ElectricLight.BP_ElectricLight_C.ExecuteUbergraph_BP_ElectricLight");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_ElectricLight.BP_ElectricLight_C.ExecuteUbergraph_BP_ElectricLight"));
 
 	struct
 	{

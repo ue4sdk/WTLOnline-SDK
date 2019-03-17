@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class PacketHandler.HandlerComponentFactory");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class PacketHandler.HandlerComponentFactory"));
 		return ptr;
 	}
 
@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class PacketHandler.NetAnalyticsAggregatorConfig");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class PacketHandler.NetAnalyticsAggregatorConfig"));
 		return ptr;
 	}
 

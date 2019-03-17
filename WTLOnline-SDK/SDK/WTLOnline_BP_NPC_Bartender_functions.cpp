@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_NPC_Bartender_C::CheckReplicaForShowMainDialog(class AWTLCharacter* Character, int InReplicaID, TArray<int>* InReplicaArrayForShowMainDialog)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.CheckReplicaForShowMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.CheckReplicaForShowMainDialog"));
 
 	struct
 	{
@@ -48,7 +48,7 @@ void ABP_NPC_Bartender_C::CheckReplicaForShowMainDialog(class AWTLCharacter* Cha
 
 void ABP_NPC_Bartender_C::ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowDialogQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowDialogQuest"));
 
 	struct
 	{
@@ -72,7 +72,7 @@ void ABP_NPC_Bartender_C::ShowDialogQuest(class AWTLCharacter* Character, const 
 
 void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -101,7 +101,7 @@ void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Charact
 
 void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -130,7 +130,7 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Chara
 
 void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -162,7 +162,7 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter
 
 void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplica, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ExecutingAction"));
 
 	struct
 	{
@@ -194,7 +194,7 @@ void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNP
 
 void ABP_NPC_Bartender_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -215,7 +215,7 @@ void ABP_NPC_Bartender_C::ShowAvailableQuestsDialog(class AWTLCharacter* Charact
 
 void ABP_NPC_Bartender_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -241,7 +241,7 @@ void ABP_NPC_Bartender_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* R
 
 void ABP_NPC_Bartender_C::ShowMainDialog(class AWTLCharacter* Character, const struct FString& Arg)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowMainDialog"));
 
 	struct
 	{
@@ -263,7 +263,7 @@ void ABP_NPC_Bartender_C::ShowMainDialog(class AWTLCharacter* Character, const s
 
 void ABP_NPC_Bartender_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ShowStartDialog"));
 
 	struct
 	{
@@ -281,7 +281,7 @@ void ABP_NPC_Bartender_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Bartender_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.UserConstructionScript"));
 
 	struct
 	{
@@ -297,7 +297,7 @@ void ABP_NPC_Bartender_C::UserConstructionScript()
 
 void ABP_NPC_Bartender_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.Timeline_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.Timeline_0__FinishedFunc"));
 
 	struct
 	{
@@ -313,7 +313,7 @@ void ABP_NPC_Bartender_C::Timeline_0__FinishedFunc()
 
 void ABP_NPC_Bartender_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.Timeline_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.Timeline_0__UpdateFunc"));
 
 	struct
 	{
@@ -329,7 +329,7 @@ void ABP_NPC_Bartender_C::Timeline_0__UpdateFunc()
 
 void ABP_NPC_Bartender_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -348,7 +348,7 @@ void ABP_NPC_Bartender_C::ReceiveBeginPlay()
 
 void ABP_NPC_Bartender_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -370,7 +370,7 @@ void ABP_NPC_Bartender_C::OnPlayerSelectReplica(class AWTLCharacter* Character, 
 
 void ABP_NPC_Bartender_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -390,7 +390,7 @@ void ABP_NPC_Bartender_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_Bartender_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ReceiveTick"));
 
 	struct
 	{
@@ -410,7 +410,7 @@ void ABP_NPC_Bartender_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_Bartender_C::ExecuteUbergraph_BP_NPC_Bartender(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ExecuteUbergraph_BP_NPC_Bartender");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ExecuteUbergraph_BP_NPC_Bartender"));
 
 	struct
 	{

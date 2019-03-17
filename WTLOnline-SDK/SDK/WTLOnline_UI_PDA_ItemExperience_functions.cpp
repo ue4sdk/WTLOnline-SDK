@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_PDA_ItemExperience_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.Construct"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void UUI_PDA_ItemExperience_C::Construct()
 
 void UUI_PDA_ItemExperience_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.Tick"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void UUI_PDA_ItemExperience_C::Tick(const struct FGeometry& MyGeometry, float In
 
 void UUI_PDA_ItemExperience_C::ExecuteUbergraph_UI_PDA_ItemExperience(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.ExecuteUbergraph_UI_PDA_ItemExperience");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_ItemExperience.UI_PDA_ItemExperience_C.ExecuteUbergraph_UI_PDA_ItemExperience"));
 
 	struct
 	{

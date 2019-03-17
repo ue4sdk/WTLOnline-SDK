@@ -27,7 +27,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BP_Monster_StonePhys.BP_Monster_StonePhys_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BP_Monster_StonePhys.BP_Monster_StonePhys_C"));
 		return ptr;
 	}
 

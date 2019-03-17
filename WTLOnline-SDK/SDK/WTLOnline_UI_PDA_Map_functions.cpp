@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_PDA_Map_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Map.UI_PDA_Map_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Map.UI_PDA_Map_C.Construct"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void UUI_PDA_Map_C::Construct()
 
 void UUI_PDA_Map_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Map.UI_PDA_Map_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Map.UI_PDA_Map_C.Tick"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void UUI_PDA_Map_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 
 void UUI_PDA_Map_C::ExecuteUbergraph_UI_PDA_Map(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_PDA_Map.UI_PDA_Map_C.ExecuteUbergraph_UI_PDA_Map");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_PDA_Map.UI_PDA_Map_C.ExecuteUbergraph_UI_PDA_Map"));
 
 	struct
 	{

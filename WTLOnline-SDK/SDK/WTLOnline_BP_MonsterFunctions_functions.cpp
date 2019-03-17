@@ -23,7 +23,7 @@ namespace SDK
 
 void UBP_MonsterFunctions_C::WhoIsCloser(class AActor* ActorStart, class AActor* ActorA, class AActor* ActorB, class UObject* __WorldContext, bool* ActorA_IsCloser)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.WhoIsCloser");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.WhoIsCloser"));
 
 	struct
 	{
@@ -59,7 +59,7 @@ void UBP_MonsterFunctions_C::WhoIsCloser(class AActor* ActorStart, class AActor*
 
 bool UBP_MonsterFunctions_C::CheckIsVisibleActor(class AActor* StartActor, class AActor* EndActor, const struct FVector& StartLocation, const struct FVector& EndLocation, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckIsVisibleActor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckIsVisibleActor"));
 
 	struct
 	{
@@ -93,7 +93,7 @@ bool UBP_MonsterFunctions_C::CheckIsVisibleActor(class AActor* StartActor, class
 
 void UBP_MonsterFunctions_C::AttackAIInterface(class AActor* MonsterSelf, class UObject* __WorldContext, class AActor** Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackAIInterface");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackAIInterface"));
 
 	struct
 	{
@@ -124,7 +124,7 @@ void UBP_MonsterFunctions_C::AttackAIInterface(class AActor* MonsterSelf, class 
 
 void UBP_MonsterFunctions_C::AttackPointElectronicBait(class AActor* MonsterSelf, float AttackRadius, float ApplyAngle, class UObject* __WorldContext, TArray<class AActor*>* ActorHit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackPointElectronicBait");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackPointElectronicBait"));
 
 	struct
 	{
@@ -157,7 +157,7 @@ void UBP_MonsterFunctions_C::AttackPointElectronicBait(class AActor* MonsterSelf
 
 void UBP_MonsterFunctions_C::SetRandomColor(class AWTLMonsterPawn* Monster, class UObject* __WorldContext, TArray<struct FLinearColor>* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.SetRandomColor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.SetRandomColor"));
 
 	struct
 	{
@@ -186,7 +186,7 @@ void UBP_MonsterFunctions_C::SetRandomColor(class AWTLMonsterPawn* Monster, clas
 
 void UBP_MonsterFunctions_C::UpdateMove(class AWTLMonsterPawn* MonsterPawn, class UCharacterMovementComponent* CharacterMovement, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.UpdateMove");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.UpdateMove"));
 
 	struct
 	{
@@ -214,7 +214,7 @@ void UBP_MonsterFunctions_C::UpdateMove(class AWTLMonsterPawn* MonsterPawn, clas
 
 void UBP_MonsterFunctions_C::CheckIsVisibleTarget(class AWTLMonsterPawn* Monster, class AActor* Character, class UObject* __WorldContext, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckIsVisibleTarget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckIsVisibleTarget"));
 
 	struct
 	{
@@ -246,7 +246,7 @@ void UBP_MonsterFunctions_C::CheckIsVisibleTarget(class AWTLMonsterPawn* Monster
 
 void UBP_MonsterFunctions_C::IsStates(class APawn* ControllerPawn, class UObject* __WorldContext, TArray<TEnumAsByte<EStateMonster>>* MonsterStates, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.IsStates");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.IsStates"));
 
 	struct
 	{
@@ -279,7 +279,7 @@ void UBP_MonsterFunctions_C::IsStates(class APawn* ControllerPawn, class UObject
 
 void UBP_MonsterFunctions_C::GetAngle(const struct FVector2D& A, const struct FVector2D& B, class UObject* __WorldContext, float* Angle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.GetAngle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.GetAngle"));
 
 	struct
 	{
@@ -312,7 +312,7 @@ void UBP_MonsterFunctions_C::GetAngle(const struct FVector2D& A, const struct FV
 
 void UBP_MonsterFunctions_C::IsValidAngle(const struct FVector& Vec1, const struct FVector& Vec2, float ValidAngle, class UObject* __WorldContext, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.IsValidAngle");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.IsValidAngle"));
 
 	struct
 	{
@@ -347,7 +347,7 @@ void UBP_MonsterFunctions_C::IsValidAngle(const struct FVector& Vec1, const stru
 
 void UBP_MonsterFunctions_C::AttackPoint(class AActor* MonsterSelf, float AttackRadius, float ApplyAngle, class UObject* __WorldContext, class AActor** ActorHit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackPoint");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackPoint"));
 
 	struct
 	{
@@ -382,7 +382,7 @@ void UBP_MonsterFunctions_C::AttackPoint(class AActor* MonsterSelf, float Attack
 
 void UBP_MonsterFunctions_C::AttackSphere(class AActor* MonsterSelf, const struct FVector& Offset, float SphereRadius, class UObject* __WorldContext, TArray<class AActor*>* ActorsHit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackSphere");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.AttackSphere"));
 
 	struct
 	{

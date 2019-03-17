@@ -17,7 +17,7 @@ namespace SDK
 
 void UUI_HUD_ObjectInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.Construct"));
 
 	struct
 	{
@@ -36,7 +36,7 @@ void UUI_HUD_ObjectInfo_C::Construct()
 
 void UUI_HUD_ObjectInfo_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.Tick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.Tick"));
 
 	struct
 	{
@@ -58,7 +58,7 @@ void UUI_HUD_ObjectInfo_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 
 void UUI_HUD_ObjectInfo_C::ExecuteUbergraph_UI_HUD_ObjectInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.ExecuteUbergraph_UI_HUD_ObjectInfo");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_ObjectInfo.UI_HUD_ObjectInfo_C.ExecuteUbergraph_UI_HUD_ObjectInfo"));
 
 	struct
 	{

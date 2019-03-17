@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Monster_StonePhys_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_StonePhys.BP_Monster_StonePhys_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_StonePhys.BP_Monster_StonePhys_C.UserConstructionScript"));
 
 	struct
 	{

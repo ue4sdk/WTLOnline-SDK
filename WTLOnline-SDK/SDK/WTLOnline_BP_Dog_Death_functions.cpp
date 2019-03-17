@@ -22,7 +22,7 @@ namespace SDK
 
 void ABP_Dog_Death_C::SetParameters(int DirectionIn, const struct FVector& DamageVectorIn, float AmmoPhysImpulseIn, class UMaterialInterface* MaterialIn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Dog_Death.BP_Dog_Death_C.SetParameters");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Dog_Death.BP_Dog_Death_C.SetParameters"));
 
 	struct
 	{
@@ -46,7 +46,7 @@ void ABP_Dog_Death_C::SetParameters(int DirectionIn, const struct FVector& Damag
 
 void ABP_Dog_Death_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Dog_Death.BP_Dog_Death_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Dog_Death.BP_Dog_Death_C.UserConstructionScript"));
 
 	struct
 	{
@@ -62,7 +62,7 @@ void ABP_Dog_Death_C::UserConstructionScript()
 
 void ABP_Dog_Death_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Dog_Death.BP_Dog_Death_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Dog_Death.BP_Dog_Death_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void ABP_Dog_Death_C::ReceiveBeginPlay()
 
 void ABP_Dog_Death_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Dog_Death.BP_Dog_Death_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Dog_Death.BP_Dog_Death_C.ReceiveTick"));
 
 	struct
 	{
@@ -100,7 +100,7 @@ void ABP_Dog_Death_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Dog_Death_C::ExecuteUbergraph_BP_Dog_Death(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Dog_Death.BP_Dog_Death_C.ExecuteUbergraph_BP_Dog_Death");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Dog_Death.BP_Dog_Death_C.ExecuteUbergraph_BP_Dog_Death"));
 
 	struct
 	{

@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("BlueprintGeneratedClass BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("BlueprintGeneratedClass BP_ElectricLight_DayOff.BP_ElectricLight_DayOff_C"));
 		return ptr;
 	}
 

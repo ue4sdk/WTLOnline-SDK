@@ -38,7 +38,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationData"));
 		return ptr;
 	}
 
@@ -116,7 +116,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.RecastNavMesh");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.RecastNavMesh"));
 		return ptr;
 	}
 
@@ -131,7 +131,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.AbstractNavData");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.AbstractNavData"));
 		return ptr;
 	}
 
@@ -146,7 +146,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.CrowdManagerBase");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.CrowdManagerBase"));
 		return ptr;
 	}
 
@@ -182,7 +182,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavArea");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavArea"));
 		return ptr;
 	}
 
@@ -197,7 +197,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavArea_Default");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavArea_Default"));
 		return ptr;
 	}
 
@@ -212,7 +212,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavArea_LowHeight");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavArea_LowHeight"));
 		return ptr;
 	}
 
@@ -227,7 +227,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavArea_Null");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavArea_Null"));
 		return ptr;
 	}
 
@@ -242,7 +242,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavArea_Obstacle");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavArea_Obstacle"));
 		return ptr;
 	}
 
@@ -257,7 +257,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavAreaMeta");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavAreaMeta"));
 		return ptr;
 	}
 
@@ -288,7 +288,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavAreaMeta_SwitchByAgent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavAreaMeta_SwitchByAgent"));
 		return ptr;
 	}
 
@@ -309,7 +309,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavCollision");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavCollision"));
 		return ptr;
 	}
 
@@ -324,7 +324,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationGraph");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationGraph"));
 		return ptr;
 	}
 
@@ -339,7 +339,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationGraphNode");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationGraphNode"));
 		return ptr;
 	}
 
@@ -357,7 +357,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationGraphNodeComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationGraphNodeComponent"));
 		return ptr;
 	}
 
@@ -374,7 +374,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationInvokerComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationInvokerComponent"));
 		return ptr;
 	}
 
@@ -393,7 +393,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationPath");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationPath"));
 		return ptr;
 	}
 
@@ -417,7 +417,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationPathGenerator");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationPathGenerator"));
 		return ptr;
 	}
 
@@ -436,7 +436,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationQueryFilter");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationQueryFilter"));
 		return ptr;
 	}
 
@@ -480,7 +480,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationSystemV1");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationSystemV1"));
 		return ptr;
 	}
 
@@ -523,7 +523,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationSystemModuleConfig");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationSystemModuleConfig"));
 		return ptr;
 	}
 
@@ -574,7 +574,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavigationTestingActor");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavigationTestingActor"));
 		return ptr;
 	}
 
@@ -590,7 +590,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkComponent"));
 		return ptr;
 	}
 
@@ -609,7 +609,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavRelevantComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavRelevantComponent"));
 		return ptr;
 	}
 
@@ -647,7 +647,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkCustomComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkCustomComponent"));
 		return ptr;
 	}
 
@@ -662,7 +662,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkCustomInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkCustomInterface"));
 		return ptr;
 	}
 
@@ -677,7 +677,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkHostInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkHostInterface"));
 		return ptr;
 	}
 
@@ -692,7 +692,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkRenderingComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkRenderingComponent"));
 		return ptr;
 	}
 
@@ -707,7 +707,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavLinkTrivial");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavLinkTrivial"));
 		return ptr;
 	}
 
@@ -724,7 +724,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavMeshBoundsVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavMeshBoundsVolume"));
 		return ptr;
 	}
 
@@ -740,7 +740,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavMeshRenderingComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavMeshRenderingComponent"));
 		return ptr;
 	}
 
@@ -759,7 +759,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavModifierComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavModifierComponent"));
 		return ptr;
 	}
 
@@ -778,7 +778,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavModifierVolume");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavModifierVolume"));
 		return ptr;
 	}
 
@@ -795,7 +795,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavNodeInterface");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavNodeInterface"));
 		return ptr;
 	}
 
@@ -813,7 +813,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavSystemConfigOverride");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavSystemConfigOverride"));
 		return ptr;
 	}
 
@@ -828,7 +828,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.NavTestRenderingComponent");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.NavTestRenderingComponent"));
 		return ptr;
 	}
 
@@ -843,7 +843,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.RecastFilter_UseDefaultArea");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.RecastFilter_UseDefaultArea"));
 		return ptr;
 	}
 
@@ -859,7 +859,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NavigationSystem.RecastNavMeshDataChunk");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NavigationSystem.RecastNavMeshDataChunk"));
 		return ptr;
 	}
 

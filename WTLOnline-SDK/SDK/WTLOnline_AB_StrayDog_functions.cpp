@@ -19,7 +19,7 @@ namespace SDK
 
 void UAB_StrayDog_C::ExecuteUbergraph_AB_StrayDog(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AB_StrayDog.AB_StrayDog_C.ExecuteUbergraph_AB_StrayDog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AB_StrayDog.AB_StrayDog_C.ExecuteUbergraph_AB_StrayDog"));
 
 	struct
 	{

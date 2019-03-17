@@ -21,7 +21,7 @@ namespace SDK
 
 void ABP_NPC_Doctor_C::CheckReplicaForShowMainDialog(class AWTLCharacter* Character, int InReplicaID, TArray<int>* InReplicaArrayForShowMainDialog)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.CheckReplicaForShowMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.CheckReplicaForShowMainDialog"));
 
 	struct
 	{
@@ -49,7 +49,7 @@ void ABP_NPC_Doctor_C::CheckReplicaForShowMainDialog(class AWTLCharacter* Charac
 
 void ABP_NPC_Doctor_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayMainDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
@@ -78,7 +78,7 @@ void ABP_NPC_Doctor_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character,
 
 void ABP_NPC_Doctor_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayCanTakeQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
@@ -107,7 +107,7 @@ void ABP_NPC_Doctor_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Characte
 
 void ABP_NPC_Doctor_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayCanCompleteAnyQuest");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
@@ -139,7 +139,7 @@ void ABP_NPC_Doctor_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* C
 
 void ABP_NPC_Doctor_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ExecutingAction");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ExecutingAction"));
 
 	struct
 	{
@@ -171,7 +171,7 @@ void ABP_NPC_Doctor_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCRe
 
 void ABP_NPC_Doctor_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowAvailableQuestsDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowAvailableQuestsDialog"));
 
 	struct
 	{
@@ -192,7 +192,7 @@ void ABP_NPC_Doctor_C::ShowAvailableQuestsDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Doctor_C::CheckDialogHeal(class AWTLCharacter* Character, int CharacterReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.CheckDialogHeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.CheckDialogHeal"));
 
 	struct
 	{
@@ -214,7 +214,7 @@ void ABP_NPC_Doctor_C::CheckDialogHeal(class AWTLCharacter* Character, int Chara
 
 void ABP_NPC_Doctor_C::ShowDialogHeal(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowDialogHeal");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowDialogHeal"));
 
 	struct
 	{
@@ -235,7 +235,7 @@ void ABP_NPC_Doctor_C::ShowDialogHeal(class AWTLCharacter* Character)
 
 void ABP_NPC_Doctor_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetRandomReplicaID");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.GetRandomReplicaID"));
 
 	struct
 	{
@@ -260,7 +260,7 @@ void ABP_NPC_Doctor_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* Repl
 
 void ABP_NPC_Doctor_C::ShowStartDialog(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowStartDialog");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ShowStartDialog"));
 
 	struct
 	{
@@ -278,7 +278,7 @@ void ABP_NPC_Doctor_C::ShowStartDialog(class AWTLCharacter* Character)
 
 void ABP_NPC_Doctor_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.UserConstructionScript"));
 
 	struct
 	{
@@ -294,7 +294,7 @@ void ABP_NPC_Doctor_C::UserConstructionScript()
 
 void ABP_NPC_Doctor_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.Timeline_0__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.Timeline_0__FinishedFunc"));
 
 	struct
 	{
@@ -310,7 +310,7 @@ void ABP_NPC_Doctor_C::Timeline_0__FinishedFunc()
 
 void ABP_NPC_Doctor_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.Timeline_0__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.Timeline_0__UpdateFunc"));
 
 	struct
 	{
@@ -328,7 +328,7 @@ void ABP_NPC_Doctor_C::Timeline_0__UpdateFunc()
 
 void ABP_NPC_Doctor_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ReceiveTick"));
 
 	struct
 	{
@@ -346,7 +346,7 @@ void ABP_NPC_Doctor_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_NPC_Doctor_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -365,7 +365,7 @@ void ABP_NPC_Doctor_C::ReceiveBeginPlay()
 
 void ABP_NPC_Doctor_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int ReplicaID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.OnPlayerSelectReplica");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.OnPlayerSelectReplica"));
 
 	struct
 	{
@@ -387,7 +387,7 @@ void ABP_NPC_Doctor_C::OnPlayerSelectReplica(class AWTLCharacter* Character, int
 
 void ABP_NPC_Doctor_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.OnNPCDialogActivated");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.OnNPCDialogActivated"));
 
 	struct
 	{
@@ -407,7 +407,7 @@ void ABP_NPC_Doctor_C::OnNPCDialogActivated(class AWTLCharacter* Character)
 
 void ABP_NPC_Doctor_C::ExecuteUbergraph_BP_NPC_Doctor(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ExecuteUbergraph_BP_NPC_Doctor");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Doctor.BP_NPC_Doctor_C.ExecuteUbergraph_BP_NPC_Doctor"));
 
 	struct
 	{

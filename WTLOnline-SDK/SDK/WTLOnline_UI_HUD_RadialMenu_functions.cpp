@@ -19,7 +19,7 @@ namespace SDK
 
 int UUI_HUD_RadialMenu_C::GetHoveredButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.GetHoveredButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.GetHoveredButton"));
 
 	struct
 	{
@@ -42,7 +42,7 @@ int UUI_HUD_RadialMenu_C::GetHoveredButton()
 
 void UUI_HUD_RadialMenu_C::AddRadialButton(class UTexture2D* Icon, const struct FText& Description, const struct FString& DebugPreviewText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.AddRadialButton");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.AddRadialButton"));
 
 	struct
 	{
@@ -64,7 +64,7 @@ void UUI_HUD_RadialMenu_C::AddRadialButton(class UTexture2D* Icon, const struct 
 
 void UUI_HUD_RadialMenu_C::CreateRadialMenuWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.CreateRadialMenuWidget");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.CreateRadialMenuWidget"));
 
 	struct
 	{
@@ -80,7 +80,7 @@ void UUI_HUD_RadialMenu_C::CreateRadialMenuWidget()
 
 void UUI_HUD_RadialMenu_C::AddRadialMenuWidgetAsChild()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.AddRadialMenuWidgetAsChild");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.AddRadialMenuWidgetAsChild"));
 
 	struct
 	{
@@ -96,7 +96,7 @@ void UUI_HUD_RadialMenu_C::AddRadialMenuWidgetAsChild()
 
 void UUI_HUD_RadialMenu_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.Construct");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.Construct"));
 
 	struct
 	{
@@ -114,7 +114,7 @@ void UUI_HUD_RadialMenu_C::Construct()
 
 void UUI_HUD_RadialMenu_C::ExecuteUbergraph_UI_HUD_RadialMenu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.ExecuteUbergraph_UI_HUD_RadialMenu");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function UI_HUD_RadialMenu.UI_HUD_RadialMenu_C.ExecuteUbergraph_UI_HUD_RadialMenu"));
 
 	struct
 	{

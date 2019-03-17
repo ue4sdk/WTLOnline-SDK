@@ -22,7 +22,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsFunctionLibrary");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsFunctionLibrary"));
 		return ptr;
 	}
 
@@ -43,7 +43,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.InitHighlights");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.InitHighlights"));
 		return ptr;
 	}
 
@@ -63,7 +63,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsConfigureAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsConfigureAsync"));
 		return ptr;
 	}
 
@@ -83,7 +83,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsOpenGroupAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsOpenGroupAsync"));
 		return ptr;
 	}
 
@@ -103,7 +103,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsCloseGroupAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsCloseGroupAsync"));
 		return ptr;
 	}
 
@@ -123,7 +123,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsSetScreenshotAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsSetScreenshotAsync"));
 		return ptr;
 	}
 
@@ -143,7 +143,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsSetVideoAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsSetVideoAsync"));
 		return ptr;
 	}
 
@@ -163,7 +163,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsSummaryAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsSummaryAsync"));
 		return ptr;
 	}
 
@@ -183,7 +183,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.HighlightsGetNumberAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.HighlightsGetNumberAsync"));
 		return ptr;
 	}
 
@@ -203,7 +203,7 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindObject<UClass>("Class NVIDIAGfeSDK.RequestPermissionsAsync");
+		static auto ptr = UObject::FindObject<UClass>(_xor_("Class NVIDIAGfeSDK.RequestPermissionsAsync"));
 		return ptr;
 	}
 

@@ -21,7 +21,7 @@ namespace SDK
 
 bool UBTD_CheckDistanceToEnemy_C::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BTD_CheckDistanceToEnemy.BTD_CheckDistanceToEnemy_C.PerformConditionCheckAI");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTD_CheckDistanceToEnemy.BTD_CheckDistanceToEnemy_C.PerformConditionCheckAI"));
 
 	struct
 	{

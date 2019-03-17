@@ -17,7 +17,7 @@ namespace SDK
 
 void ABP_Monster_LightningProjectile_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.UserConstructionScript");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.UserConstructionScript"));
 
 	struct
 	{
@@ -33,7 +33,7 @@ void ABP_Monster_LightningProjectile_C::UserConstructionScript()
 
 void ABP_Monster_LightningProjectile_C::OnHit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.OnHit");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.OnHit"));
 
 	struct
 	{
@@ -52,7 +52,7 @@ void ABP_Monster_LightningProjectile_C::OnHit()
 
 void ABP_Monster_LightningProjectile_C::SetVector(const struct FVector& InVector, float Scale1D)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.SetVector");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.SetVector"));
 
 	struct
 	{
@@ -78,7 +78,7 @@ void ABP_Monster_LightningProjectile_C::SetVector(const struct FVector& InVector
 
 void ABP_Monster_LightningProjectile_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature"));
 
 	struct
 	{
@@ -106,7 +106,7 @@ void ABP_Monster_LightningProjectile_C::BndEvt__Sphere_K2Node_ComponentBoundEven
 
 void ABP_Monster_LightningProjectile_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ReceiveTick");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ReceiveTick"));
 
 	struct
 	{
@@ -124,7 +124,7 @@ void ABP_Monster_LightningProjectile_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Monster_LightningProjectile_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ReceiveBeginPlay");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ReceiveBeginPlay"));
 
 	struct
 	{
@@ -142,7 +142,7 @@ void ABP_Monster_LightningProjectile_C::ReceiveBeginPlay()
 
 void ABP_Monster_LightningProjectile_C::ExecuteUbergraph_BP_Monster_LightningProjectile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ExecuteUbergraph_BP_Monster_LightningProjectile");
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Monster_LightningProjectile.BP_Monster_LightningProjectile_C.ExecuteUbergraph_BP_Monster_LightningProjectile"));
 
 	struct
 	{
