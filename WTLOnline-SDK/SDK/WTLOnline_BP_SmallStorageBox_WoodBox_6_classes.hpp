@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_SmallStorageBox_WoodBox_6.BP_SmallStorageBox_WoodBox_5_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0660 - 0x0660)
 class ABP_SmallStorageBox_WoodBox_5_C : public AWTLStorageBox
 {
 public:

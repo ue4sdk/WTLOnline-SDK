@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_EnemyNPCDrop.BP_EnemyNPCDrop_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x04A0 - 0x04A0)
 class ABP_EnemyNPCDrop_C : public AWTLEnemyNPCDrop
 {
 public:

@@ -12,6 +12,22 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function BP_MonsterSpawnerBase.BP_MonsterSpawnerBase_C.ReplaceMonsters
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void ABP_MonsterSpawnerBase_C::ReplaceMonsters()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterSpawnerBase.BP_MonsterSpawnerBase_C.ReplaceMonsters"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function BP_MonsterSpawnerBase.BP_MonsterSpawnerBase_C.SpawnMonster
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -121,6 +137,26 @@ void ABP_MonsterSpawnerBase_C::ExecuteUbergraph_BP_MonsterSpawnerBase(int EntryP
 	} params;
 
 	params.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function BP_MonsterSpawnerBase.BP_MonsterSpawnerBase_C.EventOnMonsterDead__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLMonsterPawn*         MonsterPawn                    (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void ABP_MonsterSpawnerBase_C::EventOnMonsterDead__DelegateSignature(class AWTLMonsterPawn* MonsterPawn)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterSpawnerBase.BP_MonsterSpawnerBase_C.EventOnMonsterDead__DelegateSignature"));
+
+	struct
+	{
+		class AWTLMonsterPawn*         MonsterPawn;
+	} params;
+
+	params.MonsterPawn = MonsterPawn;
 
 	UObject::ProcessEvent(fn, &params);
 }

@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BTT_SetMonsterState.BTT_SetMonsterState_C
-// 0x000C (0x00AC - 0x00A0)
+// 0x000D (0x00AD - 0x00A0)
 class UBTT_SetMonsterState_C : public UBTTask_BlueprintBase
 {
 public:
@@ -24,6 +24,7 @@ public:
 	bool                                               SetOldState;                                              // 0x00A9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 	unsigned char                                      TempState;                                                // 0x00AA(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 	bool                                               RestartLogic;                                             // 0x00AB(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TEnumAsByte<E_MonsterFollowTarget>                 SetStateFollowTarget;                                     // 0x00AC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

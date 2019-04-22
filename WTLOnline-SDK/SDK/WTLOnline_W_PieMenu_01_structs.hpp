@@ -7,13 +7,13 @@
 #endif
 
 #include "WTLOnline_Basic.hpp"
-#include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_W_ParentPieMenu_01_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
-#include "WTLOnline_EControlInput_classes.hpp"
 #include "WTLOnline_UMG_classes.hpp"
 #include "WTLOnline_SButonInformation_classes.hpp"
 #include "WTLOnline_SlateCore_classes.hpp"
+#include "WTLOnline_EControlInput_classes.hpp"
+#include "WTLOnline_CoreUObject_classes.hpp"
 
 namespace SDK
 {

@@ -36,12 +36,12 @@ public:
 
 	void CheckReplicaForShowMainDialog(class AWTLCharacter* Character, int InReplicaID, TArray<int>* InReplicaArrayForShowMainDialog);
 	void ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica);
-	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplica, int NPCReplicaID, TArray<int>* InCharacterReplicaArray);
+	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplica, int NPCReplicaID, TArray<int>* IncharacterReplicaArray);
 	void ShowAvailableQuestsDialog(class AWTLCharacter* Character);
-	void GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID);
+	void GetRandomReplicaID(TArray<int>* ReplicaIDArray, int* ReplicaID);
 	void ShowMainDialog(class AWTLCharacter* Character, const struct FString& Arg);
 	void ShowStartDialog(class AWTLCharacter* Character);
 	void UserConstructionScript();

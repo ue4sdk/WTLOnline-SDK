@@ -12,6 +12,69 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function BP_MonsterFunctions.BP_MonsterFunctions_C.SetStateFollowTarget
+// (FUNC_Static, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class AActor*                  MonsterSelf                    (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TEnumAsByte<E_MonsterFollowTarget> State                          (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UObject*                 __WorldContext                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UBP_MonsterFunctions_C::SetStateFollowTarget(class AActor* MonsterSelf, TEnumAsByte<E_MonsterFollowTarget> State, class UObject* __WorldContext)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.SetStateFollowTarget"));
+
+	struct
+	{
+		class AActor*                  MonsterSelf;
+		TEnumAsByte<E_MonsterFollowTarget> State;
+		class UObject*                 __WorldContext;
+	} params;
+
+	params.MonsterSelf = MonsterSelf;
+	params.State = State;
+	params.__WorldContext = __WorldContext;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+}
+
+
+// Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckDistancToVisibleEnemy
+// (FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLMonsterPawn*         Monster                        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          Distance                       (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UObject*                 __WorldContext                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           Result                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UBP_MonsterFunctions_C::CheckDistancToVisibleEnemy(class AWTLMonsterPawn* Monster, float Distance, class UObject* __WorldContext, bool* Result, class AWTLCharacter** Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterFunctions.BP_MonsterFunctions_C.CheckDistancToVisibleEnemy"));
+
+	struct
+	{
+		class AWTLMonsterPawn*         Monster;
+		float                          Distance;
+		class UObject*                 __WorldContext;
+		bool                           Result;
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Monster = Monster;
+	params.Distance = Distance;
+	params.__WorldContext = __WorldContext;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+
+	if (Result != nullptr)
+		*Result = params.Result;
+	if (Character != nullptr)
+		*Character = params.Character;
+}
+
+
 // Function BP_MonsterFunctions.BP_MonsterFunctions_C.WhoIsCloser
 // (FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:

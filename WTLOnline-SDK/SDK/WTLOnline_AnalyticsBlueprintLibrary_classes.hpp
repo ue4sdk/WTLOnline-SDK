@@ -29,7 +29,7 @@ public:
 
 	static bool StartSessionWithAttributes(TArray<struct FAnalyticsEventAttr> Attributes);
 	static bool StartSession();
-	static void SetUserId(const struct FString& UserId);
+	static void SetUserId(const struct FString& UserID);
 	static void SetSessionId(const struct FString& SessionId);
 	static void SetLocation(const struct FString& Location);
 	static void SetGender(const struct FString& Gender);

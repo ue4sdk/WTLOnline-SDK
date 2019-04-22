@@ -27,6 +27,8 @@ public:
 	}
 
 
+	static void SetStateFollowTarget(class AActor* MonsterSelf, TEnumAsByte<E_MonsterFollowTarget> State, class UObject* __WorldContext);
+	static void CheckDistancToVisibleEnemy(class AWTLMonsterPawn* Monster, float Distance, class UObject* __WorldContext, bool* Result, class AWTLCharacter** Character);
 	static void WhoIsCloser(class AActor* ActorStart, class AActor* ActorA, class AActor* ActorB, class UObject* __WorldContext, bool* ActorA_IsCloser);
 	static bool CheckIsVisibleActor(class AActor* StartActor, class AActor* EndActor, const struct FVector& StartLocation, const struct FVector& EndLocation, class UObject* __WorldContext);
 	static void AttackAIInterface(class AActor* MonsterSelf, class UObject* __WorldContext, class AActor** Actor);

@@ -12,6 +12,32 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function BP_MonsterPawnAiControllerBase.BP_MonsterPawnAiControllerBase_C.GetSpawnLocation
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
+// Parameters:
+// bool                           Valid                          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector                 Location                       (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void ABP_MonsterPawnAiControllerBase_C::GetSpawnLocation(bool* Valid, struct FVector* Location)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_MonsterPawnAiControllerBase.BP_MonsterPawnAiControllerBase_C.GetSpawnLocation"));
+
+	struct
+	{
+		bool                           Valid;
+		struct FVector                 Location;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	if (Valid != nullptr)
+		*Valid = params.Valid;
+	if (Location != nullptr)
+		*Location = params.Location;
+}
+
+
 // Function BP_MonsterPawnAiControllerBase.BP_MonsterPawnAiControllerBase_C.OnTargetHearingUpdated
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:

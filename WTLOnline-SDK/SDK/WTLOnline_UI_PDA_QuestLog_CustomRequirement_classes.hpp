@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass UI_PDA_QuestLog_CustomRequirement.UI_PDA_QuestLog_CustomRequirement_C
-// 0x0000 (0x0240 - 0x0240)
+// 0x0000 (0x0248 - 0x0248)
 class UUI_PDA_QuestLog_CustomRequirement_C : public UWTLPDAQuestLogRequirementBase
 {
 public:

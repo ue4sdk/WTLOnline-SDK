@@ -28,22 +28,6 @@ void ABP_Pawn_RatRegular_C::UserConstructionScript()
 }
 
 
-// Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void ABP_Pawn_RatRegular_C::ReceiveBeginPlay()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
 // Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.OnActionTrigger
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 // Parameters:
@@ -79,6 +63,22 @@ void ABP_Pawn_RatRegular_C::ReceivePossessed(class AController* NewController)
 	} params;
 
 	params.NewController = NewController;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void ABP_Pawn_RatRegular_C::ReceiveBeginPlay()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_Pawn_RatRegular.BP_Pawn_RatRegular_C.ReceiveBeginPlay"));
+
+	struct
+	{
+	} params;
+
 
 	UObject::ProcessEvent(fn, &params);
 }

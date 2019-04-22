@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Fork.BP_Fork_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x03F8 - 0x03F8)
 class ABP_Fork_C : public AWTLQuestObjectSpawner
 {
 public:

@@ -10,8 +10,8 @@
 #include "WTLOnline_WTL_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
-#include "WTLOnline_FMODStudio_classes.hpp"
 #include "WTLOnline_DS_ArtefactObjectID_classes.hpp"
+#include "WTLOnline_FMODStudio_classes.hpp"
 
 namespace SDK
 {

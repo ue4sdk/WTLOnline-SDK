@@ -15,17 +15,18 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C
-// 0x0030 (0x0B28 - 0x0AF8)
+// 0x0038 (0x0B30 - 0x0AF8)
 class ABP_NPC_SolarCityRafik_C : public AWTLNPCActor
 {
 public:
 	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0AF8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
-	class UBoxComponent*                               InteractiveBox;                                           // 0x0B00(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	float                                              Timeline_0_0_NewTrack_0_1BB655F84CD977410235F2ACEE7BE38D; // 0x0B08(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<ETimelineDirection>                    Timeline_0_0__Direction_1BB655F84CD977410235F2ACEE7BE38D; // 0x0B0C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0B0D(0x0003) MISSED OFFSET
-	class UTimelineComponent*                          Timeline_0_1;                                             // 0x0B10(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	TArray<int>                                        CharacterReplicaForShowMainDilalog;                       // 0x0B18(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	class UArrowComponent*                             Arrow;                                                    // 0x0B00(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UBoxComponent*                               InteractiveBox;                                           // 0x0B08(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	float                                              Timeline_0_0_NewTrack_0_1BB655F84CD977410235F2ACEE7BE38D; // 0x0B10(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<ETimelineDirection>                    Timeline_0_0__Direction_1BB655F84CD977410235F2ACEE7BE38D; // 0x0B14(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0B15(0x0003) MISSED OFFSET
+	class UTimelineComponent*                          Timeline_0_1;                                             // 0x0B18(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	TArray<int>                                        CharacterReplicaForShowMainDilalog;                       // 0x0B20(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
@@ -36,11 +37,11 @@ public:
 
 	void CheckReplicaForShowMainDialog(class AWTLCharacter* Character, int InReplicaID, TArray<int>* InReplicaArrayForShowMainDialog);
 	void ShowDialogQuest(class AWTLCharacter* Character, const struct FWTLQuestReplicas& InQuestReplica);
-	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* InCharacterReplicaArray);
-	void GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID);
+	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* IncharacterReplicaArray);
+	void GetRandomReplicaID(TArray<int>* ReplicaIDArray, int* ReplicaID);
 	void ShowAvailableQuestsDialog(class AWTLCharacter* Character);
 	void ShowStartDialog(class AWTLCharacter* Character);
 	void UserConstructionScript();

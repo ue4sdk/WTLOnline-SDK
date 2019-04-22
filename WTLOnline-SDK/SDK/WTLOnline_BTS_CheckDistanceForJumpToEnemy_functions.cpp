@@ -56,6 +56,29 @@ void UBTS_CheckDistanceForJumpToEnemy_C::GetEnemyLocation(struct FVector* Locati
 }
 
 
+// Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ReceiveActivationAI
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// class AAIController*           OwnerController                (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APawn*                   ControlledPawn                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UBTS_CheckDistanceForJumpToEnemy_C::ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ReceiveActivationAI"));
+
+	struct
+	{
+		class AAIController*           OwnerController;
+		class APawn*                   ControlledPawn;
+	} params;
+
+	params.OwnerController = OwnerController;
+	params.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function BTS_CheckDistanceForJumpToEnemy.BTS_CheckDistanceForJumpToEnemy_C.ReceiveTickAI
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 // Parameters:

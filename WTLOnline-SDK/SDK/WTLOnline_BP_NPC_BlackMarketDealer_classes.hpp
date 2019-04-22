@@ -36,9 +36,9 @@ public:
 	}
 
 
-	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray);
-	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int InNPCReplicaID, TArray<int>* InCharacterReplicaArray);
-	void GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID);
+	void GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray);
+	void ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int InNPCReplicaID, TArray<int>* IncharacterReplicaArray);
+	void GetRandomReplicaID(TArray<int>* ReplicaIDArray, int* ReplicaID);
 	void ShowStartDialog(class AWTLCharacter* Character);
 	void UserConstructionScript();
 	void Timeline_0_0__FinishedFunc();

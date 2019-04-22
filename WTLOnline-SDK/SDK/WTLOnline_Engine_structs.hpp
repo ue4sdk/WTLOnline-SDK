@@ -8,11 +8,11 @@
 
 #include "WTLOnline_Basic.hpp"
 #include "WTLOnline_Engine_enums.hpp"
-#include "WTLOnline_InputCore_classes.hpp"
-#include "WTLOnline_CoreUObject_classes.hpp"
-#include "WTLOnline_AudioPlatformConfiguration_classes.hpp"
 #include "WTLOnline_PacketHandler_classes.hpp"
 #include "WTLOnline_SlateCore_classes.hpp"
+#include "WTLOnline_CoreUObject_classes.hpp"
+#include "WTLOnline_InputCore_classes.hpp"
+#include "WTLOnline_AudioPlatformConfiguration_classes.hpp"
 #include "WTLOnline_Slate_classes.hpp"
 
 namespace SDK

@@ -9,8 +9,8 @@
 #include "WTLOnline_Basic.hpp"
 #include "WTLOnline_HeadMountedDisplay_enums.hpp"
 #include "WTLOnline_Engine_classes.hpp"
-#include "WTLOnline_InputCore_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
+#include "WTLOnline_InputCore_classes.hpp"
 
 namespace SDK
 {

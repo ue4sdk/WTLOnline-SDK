@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass UI_PDA_Map_Marker.UI_PDA_Map_Marker_C
-// 0x0008 (0x0290 - 0x0288)
+// 0x0008 (0x0298 - 0x0290)
 class UUI_PDA_Map_Marker_C : public UWTLPDAMapMarker
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0288(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0290(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
 
 	static UClass* StaticClass()
 	{

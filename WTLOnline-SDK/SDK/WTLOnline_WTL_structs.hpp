@@ -10,10 +10,10 @@
 #include "WTLOnline_WTL_enums.hpp"
 #include "WTLOnline_AIModule_classes.hpp"
 #include "WTLOnline_UMG_classes.hpp"
-#include "WTLOnline_InputCore_classes.hpp"
+#include "WTLOnline_SlateCore_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
-#include "WTLOnline_SlateCore_classes.hpp"
+#include "WTLOnline_InputCore_classes.hpp"
 #include "WTLOnline_FMODStudio_classes.hpp"
 #include "WTLOnline_NavigationSystem_classes.hpp"
 
@@ -272,16 +272,6 @@ struct FWTLCameraLimits
 	float                                              PitchMaxLimit;                                            // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// ScriptStruct WTL.WTLMonsterPrivateDropItemInfo
-// 0x0018
-struct FWTLMonsterPrivateDropItemInfo
-{
-	uint64_t                                           CharacterID;                                              // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLItemType                                       ItemType;                                                 // 0x0008(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
-	uint64_t                                           ItemID;                                                   // 0x0010(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // ScriptStruct WTL.WTLMonsterActionBase
 // 0x0018
 struct FWTLMonsterActionBase
@@ -466,16 +456,18 @@ struct FWTLServerEventInfo : public FWTLPacket
 };
 
 // ScriptStruct WTL.BulletDamageEvent
-// 0x0010 (0x00B8 - 0x00A8)
+// 0x0018 (0x00C0 - 0x00A8)
 struct FBulletDamageEvent : public FPointDamageEvent
 {
-	uint16_t                                           WeaponTypeID;                                             // 0x00A8(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	uint16_t                                           AmmoID;                                                   // 0x00AA(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              Velocity;                                                 // 0x00AC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ImpulseMultiplier;                                        // 0x00B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               Critical;                                                 // 0x00B4(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLColliderType                                   ColliderType;                                             // 0x00B5(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x00B6(0x0002) MISSED OFFSET
+	EWTLWeaponType                                     WeaponType;                                               // 0x00A8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLAmmoProjectileType                             ProjectileType;                                           // 0x00A9(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x00AA(0x0002) MISSED OFFSET
+	float                                              ArmorPiercingValue;                                       // 0x00AC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Velocity;                                                 // 0x00B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ImpulseMultiplier;                                        // 0x00B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               Critical;                                                 // 0x00B8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLColliderType                                   ColliderType;                                             // 0x00B9(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x00BA(0x0006) MISSED OFFSET
 };
 
 // ScriptStruct WTL.ShrapnelDamageEvent
@@ -499,7 +491,7 @@ struct FFallDamageEvent : public FDamageEvent
 };
 
 // ScriptStruct WTL.TakeHitInfo
-// 0x0208
+// 0x0210
 struct FTakeHitInfo
 {
 	float                                              ActualDamage;                                             // 0x0000(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -514,19 +506,19 @@ struct FTakeHitInfo
 	unsigned char                                      EnsureReplicationByte;                                    // 0x0028(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData02[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
 	struct FDamageEvent                                GeneralDamageEvent;                                       // 0x0030(0x0010)
-	struct FBulletDamageEvent                          BulletDamageEvent;                                        // 0x0040(0x00B8)
-	struct FShrapnelDamageEvent                        ShrapnelDamageEvent;                                      // 0x00F8(0x00B8)
-	struct FRadialDamageEvent                          RadialDamageEvent;                                        // 0x01B0(0x0040)
-	struct FFallDamageEvent                            FallDamageEvent;                                          // 0x01F0(0x0018)
+	struct FBulletDamageEvent                          BulletDamageEvent;                                        // 0x0040(0x00C0)
+	struct FShrapnelDamageEvent                        ShrapnelDamageEvent;                                      // 0x0100(0x00B8)
+	struct FRadialDamageEvent                          RadialDamageEvent;                                        // 0x01B8(0x0040)
+	struct FFallDamageEvent                            FallDamageEvent;                                          // 0x01F8(0x0018)
 };
 
 // ScriptStruct WTL.WTLKillStats
-// 0x0228
+// 0x0230
 struct FWTLKillStats
 {
 	struct FString                                     KillerName;                                               // 0x0000(0x0010) (CPF_ZeroConstructor)
-	struct FTakeHitInfo                                HitInfo;                                                  // 0x0010(0x0208)
-	struct FString                                     VictimName;                                               // 0x0218(0x0010) (CPF_ZeroConstructor)
+	struct FTakeHitInfo                                HitInfo;                                                  // 0x0010(0x0210)
+	struct FString                                     VictimName;                                               // 0x0220(0x0010) (CPF_ZeroConstructor)
 };
 
 // ScriptStruct WTL.WTLMonsterHuntObjective
@@ -564,6 +556,55 @@ struct FWTLArenaLeaderboardRecord
 	unsigned char                                      CharacterLevel;                                           // 0x0028(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
 	int                                                Score;                                                    // 0x002C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// ScriptStruct WTL.WTLMapCacheData
+// 0x0098
+struct FWTLMapCacheData
+{
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
+	TArray<class AWTLPortal*>                          m_Portals;                                                // 0x0008(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_PortalsTime;                                            // 0x0018(0x0008) (CPF_ZeroConstructor)
+	TArray<class AWTLWaterSource*>                     m_WaterSources;                                           // 0x0020(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_WaterSourcesTime;                                       // 0x0030(0x0008) (CPF_ZeroConstructor)
+	TArray<class AWTLNPCActor*>                        m_NPCs;                                                   // 0x0038(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_NPCsTime;                                               // 0x0048(0x0008) (CPF_ZeroConstructor)
+	TArray<class AWTLFortificationCommandCore*>        m_FortificationCommandCores;                              // 0x0050(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_FortificationCommandCoresTime;                          // 0x0060(0x0008) (CPF_ZeroConstructor)
+	TArray<class AWTLBulletinBoard*>                   m_BulletinBoards;                                         // 0x0068(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_BulletinBoardsTime;                                     // 0x0078(0x0008) (CPF_ZeroConstructor)
+	TArray<class AWTLEventPoint*>                      m_EventPoints;                                            // 0x0080(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   m_EventPointsTime;                                        // 0x0090(0x0008) (CPF_ZeroConstructor)
+};
+
+// ScriptStruct WTL.WTLDamageActorInfo
+// 0x0010
+struct FWTLDamageActorInfo
+{
+	class AActor*                                      Actor;                                                    // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Value;                                                    // 0x0008(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               Critical;                                                 // 0x000C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x000D(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLMapMarker
+// 0x0060
+struct FWTLMapMarker
+{
+	struct FString                                     MarkerName;                                               // 0x0000(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FText                                       ToolTipText;                                              // 0x0010(0x0018) (CPF_Edit)
+	class AActor*                                      MarkerActor;                                              // 0x0028(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     MarkerLocation;                                           // 0x0030(0x000C) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLMapMarkerType                                  MarkerType;                                               // 0x003C(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MarkerSubTypeNumber;                                      // 0x003D(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x003E(0x0002) MISSED OFFSET
+	struct FLinearColor                                MarkerColor;                                              // 0x0040(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MarkerZOrder;                                             // 0x0050(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsSticking;                                              // 0x0051(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0052(0x0002) MISSED OFFSET
+	int                                                MarkerIndex;                                              // 0x0054(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Radius;                                                   // 0x0058(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x005C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLResponse
@@ -713,16 +754,6 @@ struct FWTLClanStorageItemLogRecord
 	unsigned char                                      UnknownData02[0x2];                                       // 0x003A(0x0002) MISSED OFFSET
 	int                                                Count;                                                    // 0x003C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FString                                     Description;                                              // 0x0040(0x0010) (CPF_ZeroConstructor)
-};
-
-// ScriptStruct WTL.WTLDamageToActorInfo
-// 0x0010
-struct FWTLDamageToActorInfo
-{
-	class AActor*                                      Actor;                                                    // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              Value;                                                    // 0x0008(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               Critical;                                                 // 0x000C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x000D(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLBarterDealRequest
@@ -1374,13 +1405,15 @@ struct FWTLEnemyNPCKillRequirementState
 };
 
 // ScriptStruct WTL.WTLCustomQuestRequirementState
-// 0x0040
+// 0x0048
 struct FWTLCustomQuestRequirementState
 {
 	struct FString                                     Name;                                                     // 0x0000(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 	TSoftObjectPtr<class UTexture2D>                   Icon;                                                     // 0x0010(0x0028) (CPF_Edit, CPF_BlueprintVisible)
 	int                                                NeedCount;                                                // 0x0038(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                CurrentCount;                                             // 0x003C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               UseBitMaskForProgress;                                    // 0x0040(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0041(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct WTL.SpeedModifiers
@@ -1626,6 +1659,36 @@ struct FWTLEnemyNPCSpawnerRecord
 	unsigned char                                      MinLevel;                                                 // 0x0030(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      MaxLevel;                                                 // 0x0031(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x0032(0x0006) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLEventTask
+// 0x0020
+struct FWTLEventTask
+{
+	struct FText                                       Name;                                                     // 0x0000(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                NeedValue;                                                // 0x0018(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                CurrentValue;                                             // 0x001C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// ScriptStruct WTL.WTLEventItemReward
+// 0x0048
+struct FWTLEventItemReward
+{
+	EWTLItemType                                       ItemType;                                                 // 0x0000(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	int                                                ItemTypeID;                                               // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinCount;                                                 // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxCount;                                                 // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinCondition;                                             // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxCondition;                                             // 0x0014(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Chance;                                                   // 0x0018(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinInteractiveObjectID;                                   // 0x001C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxInteractiveObjectID;                                   // 0x0020(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      CustomizationScalar;                                      // 0x0024(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      CustomizationColor;                                       // 0x0025(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0026(0x0002) MISSED OFFSET
+	struct FString                                     CustomizationName;                                        // 0x0028(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	struct FString                                     ModificationData;                                         // 0x0038(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 };
 
 // ScriptStruct WTL.WTLBulletImpactEffect
@@ -2019,16 +2082,17 @@ struct FWTLGraphicsSettings
 };
 
 // ScriptStruct WTL.WTLAudioSettings
-// 0x001C
+// 0x0020
 struct FWTLAudioSettings
 {
 	int                                                AudioDriver;                                              // 0x0000(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                AudioQualityLevel;                                        // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MasterVolume;                                             // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MusicVolume;                                              // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              EffectsVolume;                                            // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              CharacterVoiceVolume;                                     // 0x0014(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              SpeechVolume;                                             // 0x0018(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                SpeakerMode;                                              // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                AudioQualityLevel;                                        // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MasterVolume;                                             // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MusicVolume;                                              // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              EffectsVolume;                                            // 0x0014(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              CharacterVoiceVolume;                                     // 0x0018(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              SpeechVolume;                                             // 0x001C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLControlsSettings
@@ -2159,19 +2223,18 @@ struct FWTLSettings
 	struct FWTLGameMode_MonsterHuntSettings            GameMode_MonsterHunt;                                     // 0x01D8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLGameSettings                            Game;                                                     // 0x0200(0x00A8) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLGraphicsSettings                        Graphics;                                                 // 0x02A8(0x0050) (CPF_Edit, CPF_BlueprintVisible)
-	struct FWTLAudioSettings                           Audio;                                                    // 0x02F8(0x001C) (CPF_Edit, CPF_BlueprintVisible)
-	struct FWTLControlsSettings                        Controls;                                                 // 0x0314(0x0008) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x031C(0x0004) MISSED OFFSET
+	struct FWTLAudioSettings                           Audio;                                                    // 0x02F8(0x0020) (CPF_Edit, CPF_BlueprintVisible)
+	struct FWTLControlsSettings                        Controls;                                                 // 0x0318(0x0008) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLInterfaceSettings                       Interface;                                                // 0x0320(0x0028) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLPostProcessSettings                     PostProcess;                                              // 0x0348(0x0014) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x035C(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x4];                                       // 0x035C(0x0004) MISSED OFFSET
 	struct FWTLLocalCharacterSettings                  LocalCharacter;                                           // 0x0360(0x0010) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLSecuritySettings                        Security;                                                 // 0x0370(0x0020) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLIdentificationSettings                  Identification;                                           // 0x0390(0x0010) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLVOIPSettings                            VOIP;                                                     // 0x03A0(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLFortificationCaptureSettings            FortificationCaptureSettings;                             // 0x03B8(0x0024) (CPF_Edit, CPF_BlueprintVisible)
 	struct FWTLGameplaySettings                        Gameplay;                                                 // 0x03DC(0x0008) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x03E4(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x4];                                       // 0x03E4(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLActionTimerWidgetType
@@ -2258,6 +2321,14 @@ struct FWTLMedicineEffectImageInfo
 	struct FLinearColor                                Color;                                                    // 0x0030(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// ScriptStruct WTL.WTLMapCanvasMarker
+// 0x0068
+struct FWTLMapCanvasMarker
+{
+	struct FWTLMapMarker                               Marker;                                                   // 0x0000(0x0060)
+	class UWTLCommonMapMarker*                         MarkerWidget;                                             // 0x0060(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+};
+
 // ScriptStruct WTL.WTLMapItemData
 // 0x0108 (0x0110 - 0x0008)
 struct FWTLMapItemData : public FTableRowBase
@@ -2318,6 +2389,24 @@ struct FWTLServerEventTypeColor
 	EWTLServerEventType                                Type;                                                     // 0x0000(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	struct FLinearColor                                Color;                                                    // 0x0004(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// ScriptStruct WTL.WTLItemTypeStoreButtonStyle
+// 0x0280
+struct FWTLItemTypeStoreButtonStyle
+{
+	EWTLItemType                                       ItemType;                                                 // 0x0000(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	struct FButtonStyle                                ButtonStyle;                                              // 0x0008(0x0278) (CPF_Edit)
+};
+
+// ScriptStruct WTL.WTLEquipmentTypeTexture
+// 0x0030
+struct FWTLEquipmentTypeTexture
+{
+	EWTLEquipmentType                                  Type;                                                     // 0x0000(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   Texture;                                                  // 0x0008(0x0028) (CPF_Edit)
 };
 
 // ScriptStruct WTL.WTLInteractivePlanSpawnFieldPoint
@@ -2382,6 +2471,14 @@ struct FWTLPickupSpawnPointScalabilitySettings
 	float                                              CountLimitDeltaPerPlayer;                                 // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// ScriptStruct WTL.WTLLocalizationCacheRecord
+// 0x0020
+struct FWTLLocalizationCacheRecord
+{
+	struct FString                                     Name;                                                     // 0x0000(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     Description;                                              // 0x0010(0x0010) (CPF_ZeroConstructor)
+};
+
 // ScriptStruct WTL.WTLLanguageInfo
 // 0x0098
 struct FWTLLanguageInfo
@@ -2443,6 +2540,27 @@ struct FWTLMiningZoneItem
 	bool                                               CanBeDetectedWithNDPDetector;                             // 0x0028(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               CanBeDetectedWithMetalDetector;                           // 0x0029(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData01[0x6];                                       // 0x002A(0x0006) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLMonstersDataForSpawnBase
+// 0x0038
+struct FWTLMonstersDataForSpawnBase
+{
+	TArray<class UClass*>                              SpawnClass;                                               // 0x0000(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              LifeTimeMonster;                                          // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               IsRandomSelectionClass;                                   // 0x0014(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
+	int                                                CountOfActiveMonsters;                                    // 0x0018(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              IntervalSpawn;                                            // 0x001C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MinLevel;                                                 // 0x0020(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MaxLevel;                                                 // 0x0021(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0022(0x0002) MISSED OFFSET
+	float                                              SpawnRadius;                                              // 0x0024(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               IsLimitMonsterSpawning;                                   // 0x0028(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0029(0x0003) MISSED OFFSET
+	int                                                MonstersLimit;                                            // 0x002C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LifeTimeSpawn;                                            // 0x0030(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLQuestInfo
@@ -2602,22 +2720,18 @@ struct FWTLTakeItemInfo
 	int                                                Count;                                                    // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// ScriptStruct WTL.WTLMapMarker
-// 0x0058
-struct FWTLMapMarker
+// ScriptStruct WTL.WTLPortalStationWay
+// 0x0028
+struct FWTLPortalStationWay
 {
-	struct FString                                     MarkerName;                                               // 0x0000(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FText                                       ToolTipText;                                              // 0x0010(0x0018) (CPF_Edit)
-	class AActor*                                      MarkerActor;                                              // 0x0028(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector                                     MarkerLocation;                                           // 0x0030(0x000C) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLMapMarkerType                                  MarkerType;                                               // 0x003C(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MarkerSubTypeNumber;                                      // 0x003D(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x003E(0x0002) MISSED OFFSET
-	struct FLinearColor                                MarkerColor;                                              // 0x0040(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MarkerZOrder;                                             // 0x0050(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsSticking;                                              // 0x0051(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0052(0x0002) MISSED OFFSET
-	int                                                MarkerIndex;                                              // 0x0054(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                LocationID;                                               // 0x0000(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                PortalID;                                                 // 0x0004(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       Name;                                                     // 0x0008(0x0018) (CPF_Edit)
+	unsigned char                                      MinCharacterLevel;                                        // 0x0020(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MaxCharacterLevel;                                        // 0x0021(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x0022(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1];                                       // 0x0023(0x0001) MISSED OFFSET
+	float                                              EnergyConsumptionMultiplier;                              // 0x0024(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLQuestAchievementStaticMesh
@@ -3128,12 +3242,13 @@ struct FWTLCustomQuestRequirement
 {
 	struct FText                                       Name;                                                     // 0x0000(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	TSoftObjectPtr<class UTexture2D>                   Icon;                                                     // 0x0018(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                Count;                                                    // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
+	bool                                               UseBitMaskForProgress;                                    // 0x0040(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
+	int                                                Count;                                                    // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLQuestItemReward
-// 0x0014
+// 0x0040
 struct FWTLQuestItemReward
 {
 	EWTLItemType                                       ItemType;                                                 // 0x0000(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -3141,8 +3256,13 @@ struct FWTLQuestItemReward
 	int                                                ItemTypeID;                                               // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                Count;                                                    // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                Condition;                                                // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               LockedInInventory;                                        // 0x0010(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
+	unsigned char                                      CustomizationScalar;                                      // 0x0010(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      CustomizationColor;                                       // 0x0011(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x0012(0x0006) MISSED OFFSET
+	struct FString                                     CustomizationName;                                        // 0x0018(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	struct FString                                     ModificationData;                                         // 0x0028(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               LockedInInventory;                                        // 0x0038(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0039(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLIdentityItemType
@@ -3174,21 +3294,22 @@ struct FWTLQuestStateAction
 };
 
 // ScriptStruct WTL.WTLQuestItemData
-// 0x0158 (0x0160 - 0x0008)
+// 0x0170 (0x0178 - 0x0008)
 struct FWTLQuestItemData : public FTableRowBase
 {
 	struct FText                                       Name;                                                     // 0x0008(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	EWTLQuestType                                      Type;                                                     // 0x0020(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               CanBeCanceled;                                            // 0x0021(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MinCharacterLevel;                                        // 0x0022(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MaxCharacterLevel;                                        // 0x0023(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      RecommendedCharacterLevel;                                // 0x0024(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MinCharacterReputation;                                   // 0x0025(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      MaxCharacterReputation;                                   // 0x0026(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLCharacterClass                                 CharacterClass;                                           // 0x0027(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CheckCharacterFaction;                                    // 0x0028(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        CharacterFaction;                                         // 0x0029(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x002A(0x0006) MISSED OFFSET
+	bool                                               CanBePerformedInGroup;                                    // 0x0022(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MinCharacterLevel;                                        // 0x0023(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MaxCharacterLevel;                                        // 0x0024(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      RecommendedCharacterLevel;                                // 0x0025(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MinCharacterReputation;                                   // 0x0026(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      MaxCharacterReputation;                                   // 0x0027(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLCharacterClass                                 CharacterClass;                                           // 0x0028(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CheckCharacterFaction;                                    // 0x0029(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        CharacterFaction;                                         // 0x002A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x5];                                       // 0x002B(0x0005) MISSED OFFSET
 	struct FTimespan                                   CompleteTimeLimit;                                        // 0x0030(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 	struct FTimespan                                   TakeTimeLimit;                                            // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 	bool                                               AutoCompleteQuest;                                        // 0x0040(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -3206,14 +3327,17 @@ struct FWTLQuestItemData : public FTableRowBase
 	int                                                ExperienceReward;                                         // 0x00E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                MoneyReward;                                              // 0x00E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TArray<struct FWTLQuestItemReward>                 ItemRewards;                                              // 0x00E8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLQuestItemReward>                 ItemRewardsAtStart;                                       // 0x00F8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	int                                                ReputationReward;                                         // 0x0108(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x010C(0x0004) MISSED OFFSET
-	TArray<struct FWTLIdentityItemType>                WithdrawItemsAfterQuestCompleted;                         // 0x0110(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLMapQuestPoint>                   MapQuestPoints;                                           // 0x0120(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	struct FWTLMapQuestPoint                           MapQuestCompletePoint;                                    // 0x0130(0x0010) (CPF_Edit, CPF_BlueprintVisible)
-	TArray<int>                                        MonsterList;                                              // 0x0140(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLQuestStateAction>                QuestStateActionsOnComplete;                              // 0x0150(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               UseRandomItemReward;                                      // 0x00F8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x00F9(0x0007) MISSED OFFSET
+	TArray<struct FWTLQuestItemReward>                 ItemRewardsAtStart;                                       // 0x0100(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	int                                                ReputationReward;                                         // 0x0110(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                AchievementReward;                                        // 0x0114(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FWTLIdentityItemType>                WithdrawItemsAfterQuestCompleted;                         // 0x0118(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLMapQuestPoint>                   MapQuestPoints;                                           // 0x0128(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	struct FWTLMapQuestPoint                           MapQuestCompletePoint;                                    // 0x0138(0x0010) (CPF_Edit, CPF_BlueprintVisible)
+	TArray<int>                                        MonsterList;                                              // 0x0148(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLQuestStateAction>                QuestStateActionsOnComplete;                              // 0x0158(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<int>                                        DeleteQuestOnCancel;                                      // 0x0168(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 };
 
 // ScriptStruct WTL.WTLDialogReplicaItemData
@@ -3228,14 +3352,26 @@ struct FWTLDialogReplicaItemData : public FTableRowBase
 };
 
 // ScriptStruct WTL.WTLAchievementItemData
-// 0x0060 (0x0068 - 0x0008)
+// 0x0090 (0x0098 - 0x0008)
 struct FWTLAchievementItemData : public FTableRowBase
 {
 	struct FText                                       Name;                                                     // 0x0008(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0020(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   Icon;                                                     // 0x0038(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                Value;                                                    // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   InProgressIcon;                                           // 0x0038(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   EarnedIcon;                                               // 0x0060(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               Hidden;                                                   // 0x0088(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0089(0x0003) MISSED OFFSET
+	int                                                StatisticsParameterID;                                    // 0x008C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Value;                                                    // 0x0090(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLStatisticsParameterItemData
+// 0x0018 (0x0020 - 0x0008)
+struct FWTLStatisticsParameterItemData : public FTableRowBase
+{
+	struct FString                                     Name;                                                     // 0x0008(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	uint64_t                                           MaxValue;                                                 // 0x0018(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLMonsterAttackEffect
@@ -3313,7 +3449,7 @@ struct FWTLCharacterLevelItemData : public FTableRowBase
 	int                                                Experience;                                               // 0x0008(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                ExperienceToNextLevel;                                    // 0x000C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                SkillPoints;                                              // 0x0010(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
+	int                                                ParametersPoints;                                         // 0x0014(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLLoadingAdviceItemData
@@ -3422,123 +3558,129 @@ struct FWTLUseItemResult
 };
 
 // ScriptStruct WTL.WTLArtefactItemData
-// 0x0180 (0x0188 - 0x0008)
+// 0x01C0 (0x01C8 - 0x0008)
 struct FWTLArtefactItemData : public FTableRowBase
 {
 	EWTLArtefactType                                   Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0028(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                Validity;                                                 // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x0048(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        Faction;                                                  // 0x004C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x004D(0x0003) MISSED OFFSET
-	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0050(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0060(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              BasePrice;                                                // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0078(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00A0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UStaticMesh>                  CharacterArtefactPreviewMesh;                             // 0x00C8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBeUnited;                                              // 0x00F0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x00F1(0x0007) MISSED OFFSET
-	TArray<struct FWTLCharacterEffectInfluence>        Influences;                                               // 0x00F8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	int                                                HungerValue;                                              // 0x0108(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ThirstValue;                                              // 0x010C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                HealthValue;                                              // 0x0110(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                StaminaValue;                                             // 0x0114(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                AlcoholValue;                                             // 0x0118(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PoisonValue;                                              // 0x011C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              RadiationValue;                                           // 0x0120(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              BleedingValue;                                            // 0x0124(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              WoundedValue;                                             // 0x0128(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x012C(0x0004) MISSED OFFSET
-	TArray<struct FWTLUseItemResult>                   ResultItems;                                              // 0x0130(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               CanBePlacedOnCommission;                                  // 0x0140(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x7];                                       // 0x0141(0x0007) MISSED OFFSET
-	TArray<TSoftObjectPtr<class UTexture2D>>           Images;                                                   // 0x0148(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               CanTransferToSteam;                                       // 0x0158(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x3];                                       // 0x0159(0x0003) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x015C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TSoftObjectPtr<class UFMODEvent>                   UseSoundEvent;                                            // 0x0160(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	struct FText                                       ShopDescription;                                          // 0x0040(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                Validity;                                                 // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x0064(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0065(0x0003) MISSED OFFSET
+	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0068(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0078(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              BasePrice;                                                // 0x0088(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x008C(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0090(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x00B8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00E0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UStaticMesh>                  CharacterArtefactPreviewMesh;                             // 0x0108(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBeUnited;                                              // 0x0130(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x0131(0x0007) MISSED OFFSET
+	TArray<struct FWTLCharacterEffectInfluence>        Influences;                                               // 0x0138(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	int                                                HungerValue;                                              // 0x0148(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ThirstValue;                                              // 0x014C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                HealthValue;                                              // 0x0150(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                StaminaValue;                                             // 0x0154(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                AlcoholValue;                                             // 0x0158(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PoisonValue;                                              // 0x015C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              RadiationValue;                                           // 0x0160(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              BleedingValue;                                            // 0x0164(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              WoundedValue;                                             // 0x0168(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x016C(0x0004) MISSED OFFSET
+	TArray<struct FWTLUseItemResult>                   ResultItems;                                              // 0x0170(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               CanBePlacedOnCommission;                                  // 0x0180(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x7];                                       // 0x0181(0x0007) MISSED OFFSET
+	TArray<TSoftObjectPtr<class UTexture2D>>           Images;                                                   // 0x0188(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               CanTransferToSteam;                                       // 0x0198(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x3];                                       // 0x0199(0x0003) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x019C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TSoftObjectPtr<class UFMODEvent>                   UseSoundEvent;                                            // 0x01A0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
 };
 
 // ScriptStruct WTL.WTLResourceItemData
-// 0x00B8 (0x00C0 - 0x0008)
+// 0x00F8 (0x0100 - 0x0008)
 struct FWTLResourceItemData : public FTableRowBase
 {
 	EWTLResourceType                                   Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0028(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	float                                              BasePrice;                                                // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x0048(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x004C(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0050(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0078(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBeUnited;                                              // 0x00A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x00A1(0x0007) MISSED OFFSET
-	TArray<struct FWTLCharacterEffectInfluence>        Influences;                                               // 0x00A8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               CanBePlacedOnCommission;                                  // 0x00B8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x00B9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x2];                                       // 0x00BA(0x0002) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x00BC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       ShopDescription;                                          // 0x0040(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	float                                              BasePrice;                                                // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x0064(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0068(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x0090(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00B8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBeUnited;                                              // 0x00E0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x00E1(0x0007) MISSED OFFSET
+	TArray<struct FWTLCharacterEffectInfluence>        Influences;                                               // 0x00E8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               CanBePlacedOnCommission;                                  // 0x00F8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x00F9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x00FA(0x0002) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x00FC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLClothesItemData
-// 0x01E8 (0x01F0 - 0x0008)
+// 0x0228 (0x0230 - 0x0008)
 struct FWTLClothesItemData : public FTableRowBase
 {
 	EWTLClothesType                                    Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0028(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                MasterClothesID;                                          // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CopyParametersFromMasterClothes;                          // 0x0044(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLArmorClass                                     ArmorClass;                                               // 0x0045(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0046(0x0002) MISSED OFFSET
-	int                                                ArmorMin;                                                 // 0x0048(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorMax;                                                 // 0x004C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               HaveFrontPlate;                                           // 0x0050(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
-	TArray<int>                                        AcceptableFrontPlates;                                    // 0x0058(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               HaveBackPlate;                                            // 0x0068(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x0069(0x0007) MISSED OFFSET
-	TArray<int>                                        AcceptableBackPlates;                                     // 0x0070(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              MonsterArmorMultiplier;                                   // 0x0080(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Condition;                                                // 0x0084(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ConditionDelta;                                           // 0x0088(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x008C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CoverArms;                                                // 0x0090(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               HidesBackpackStraps;                                      // 0x0091(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReplaceBodyPart;                                          // 0x0092(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               NeedLongPants;                                            // 0x0093(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLClothesTorsoMeshVariant                        TorsoMeshVariant;                                         // 0x0094(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        Faction;                                                  // 0x0095(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x0096(0x0002) MISSED OFFSET
-	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0098(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x00A8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              DropChance;                                               // 0x00B8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MinRepairExperience;                                      // 0x00BC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              BasePrice;                                                // 0x00C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x00C4(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00C8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00F0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                MaleCharacterBodyMesh;                                    // 0x0118(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                FemaleCharacterBodyMesh;                                  // 0x0140(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                MaleCharacterBodyMeshVariant1;                            // 0x0168(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                FemaleCharacterBodyMeshVariant1;                          // 0x0190(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UStaticMesh>                  CharacterClothesPreviewMesh;                              // 0x01B8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBeCustomized;                                          // 0x01E0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBeCamouflaged;                                         // 0x01E1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBePlacedOnCommission;                                  // 0x01E2(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBeViewedThroughPreviewMeshesList;                      // 0x01E3(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x01E4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x3];                                       // 0x01E5(0x0003) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x01E8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x01EC(0x0004) MISSED OFFSET
+	struct FText                                       ShopDescription;                                          // 0x0040(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                MasterClothesID;                                          // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CopyParametersFromMasterClothes;                          // 0x005C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLArmorClass                                     ArmorClass;                                               // 0x005D(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x005E(0x0002) MISSED OFFSET
+	int                                                ArmorMin;                                                 // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorMax;                                                 // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               HaveFrontPlate;                                           // 0x0068(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0069(0x0007) MISSED OFFSET
+	TArray<int>                                        AcceptableFrontPlates;                                    // 0x0070(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               HaveBackPlate;                                            // 0x0080(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x0081(0x0007) MISSED OFFSET
+	TArray<int>                                        AcceptableBackPlates;                                     // 0x0088(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              MonsterArmorMultiplier;                                   // 0x0098(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Condition;                                                // 0x009C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ConditionDelta;                                           // 0x00A0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x00A4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CoverArms;                                                // 0x00A8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               HidesBackpackStraps;                                      // 0x00A9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReplaceBodyPart;                                          // 0x00AA(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               NeedLongPants;                                            // 0x00AB(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLClothesTorsoMeshVariant                        TorsoMeshVariant;                                         // 0x00AC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x00AD(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x00AE(0x0002) MISSED OFFSET
+	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x00B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x00C0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              DropChance;                                               // 0x00D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinRepairExperience;                                      // 0x00D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              BasePrice;                                                // 0x00D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x00DC(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00E0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x0108(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0130(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                MaleCharacterBodyMesh;                                    // 0x0158(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                FemaleCharacterBodyMesh;                                  // 0x0180(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                MaleCharacterBodyMeshVariant1;                            // 0x01A8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                FemaleCharacterBodyMeshVariant1;                          // 0x01D0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UStaticMesh>                  CharacterClothesPreviewMesh;                              // 0x01F8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBeCustomized;                                          // 0x0220(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBeCamouflaged;                                         // 0x0221(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBePlacedOnCommission;                                  // 0x0222(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBeViewedThroughPreviewMeshesList;                      // 0x0223(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x0224(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x3];                                       // 0x0225(0x0003) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x0228(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x022C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLWeaponAttachmentInstallInfo
@@ -3556,84 +3698,86 @@ struct FWTLWeaponAttachmentInstallInfo
 };
 
 // ScriptStruct WTL.WTLStuffItemData
-// 0x03A0 (0x03A8 - 0x0008)
+// 0x03E0 (0x03E8 - 0x0008)
 struct FWTLStuffItemData : public FTableRowBase
 {
 	EWTLStuffType                                      Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0028(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                Condition;                                                // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ConditionDelta;                                           // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x0048(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x004C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MinRepairExperience;                                      // 0x0050(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        Faction;                                                  // 0x0054(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0055(0x0003) MISSED OFFSET
-	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0058(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0068(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              BasePrice;                                                // 0x0078(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UClass>                       BlueprintClass;                                           // 0x0080(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00A8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00D0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   ScopeFrameTexture;                                        // 0x00F8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   ScopeReticleTexture;                                      // 0x0120(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   ScopeOpticalTrashTexture;                                 // 0x0148(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   ScopeReticleColorMaskTexture;                             // 0x0170(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	float                                              ScopeOverlayScale;                                        // 0x0198(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               HasReticleIllumination;                                   // 0x019C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReticleIsAlwaysIlluminated;                               // 0x019D(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x2];                                       // 0x019E(0x0002) MISSED OFFSET
-	struct FLinearColor                                ReticleIlluminationColor;                                 // 0x01A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TSoftObjectPtr<class UStaticMesh>                  WeaponAttachmentMesh;                                     // 0x01B0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	EWTLWeaponAttachmentType                           WeaponAttachmentType;                                     // 0x01D8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x01D9(0x0003) MISSED OFFSET
-	float                                              WeaponAttachmentZoom;                                     // 0x01DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector                                     FlareRelativeOffset;                                      // 0x01E0(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              WeaponAttachmentRecoilMultiplier;                         // 0x01EC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TMap<uint16_t, struct FWTLWeaponAttachmentInstallInfo> WeaponInstallInfo;                                        // 0x01F0(0x0050) (CPF_Edit, CPF_ZeroConstructor)
-	int                                                MaxEnergy;                                                // 0x0240(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                InitialEnergy;                                            // 0x0244(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                EnergyConsumptionPerSecond;                               // 0x0248(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x024C(0x0004) MISSED OFFSET
-	TArray<int>                                        CanBeChargedWithItems;                                    // 0x0250(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	int                                                DamageMin;                                                // 0x0260(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                DamageMax;                                                // 0x0264(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMin;                                         // 0x0268(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMax;                                         // 0x026C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              StaminaPerUse;                                            // 0x0270(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MiningMultiplier;                                         // 0x0274(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TSoftObjectPtr<class UStaticMesh>                  PreviewPointerMesh;                                       // 0x0278(0x0028) (CPF_Edit)
-	float                                              PlacementAngleLimit;                                      // 0x02A0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PlacementRange;                                           // 0x02A4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBePlacedOnlyOnLandscape;                               // 0x02A8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBePlacedInSafeZone;                                    // 0x02A9(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x2];                                       // 0x02AA(0x0002) MISSED OFFSET
-	float                                              PlacementTime;                                            // 0x02AC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TSoftObjectPtr<class UClass>                       PlacementActorClass;                                      // 0x02B0(0x0028) (CPF_Edit)
-	bool                                               bIsSpecialPlacementStuff;                                 // 0x02D8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x3];                                       // 0x02D9(0x0003) MISSED OFFSET
-	float                                              PlacementShapeExtendMultiplier;                           // 0x02DC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bCanBePlacedOnlyInStuffPlacementZone;                     // 0x02E0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLWeaponType                                     ModificationWeaponType;                                   // 0x02E1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x6];                                       // 0x02E2(0x0006) MISSED OFFSET
-	struct FString                                     ModificationData;                                         // 0x02E8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               CanBePlacedOnCommission;                                  // 0x02F8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLEquipmentType                                  EquipmentType;                                            // 0x02F9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x6];                                       // 0x02FA(0x0006) MISSED OFFSET
-	TSoftObjectPtr<class UFMODEvent>                   ActivationSoundEvent;                                     // 0x0300(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UFMODEvent>                   DeactivationSoundEvent;                                   // 0x0328(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                EquipmentMeshMale;                                        // 0x0350(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class USkeletalMesh>                EquipmentMeshFemale;                                      // 0x0378(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               NeedHideGlasses;                                          // 0x03A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x03A1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData10[0x2];                                       // 0x03A2(0x0002) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x03A4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       ShopDescription;                                          // 0x0040(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                Condition;                                                // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ConditionDelta;                                           // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinRepairExperience;                                      // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x006C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x006D(0x0003) MISSED OFFSET
+	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0070(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0080(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              BasePrice;                                                // 0x0090(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0094(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UClass>                       BlueprintClass;                                           // 0x0098(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00C0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x00E8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0110(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   ScopeFrameTexture;                                        // 0x0138(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   ScopeReticleTexture;                                      // 0x0160(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   ScopeOpticalTrashTexture;                                 // 0x0188(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   ScopeReticleColorMaskTexture;                             // 0x01B0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	float                                              ScopeOverlayScale;                                        // 0x01D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               HasReticleIllumination;                                   // 0x01DC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReticleIsAlwaysIlluminated;                               // 0x01DD(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x01DE(0x0002) MISSED OFFSET
+	struct FLinearColor                                ReticleIlluminationColor;                                 // 0x01E0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TSoftObjectPtr<class UStaticMesh>                  WeaponAttachmentMesh;                                     // 0x01F0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	EWTLWeaponAttachmentType                           WeaponAttachmentType;                                     // 0x0218(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0219(0x0003) MISSED OFFSET
+	float                                              WeaponAttachmentZoom;                                     // 0x021C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     FlareRelativeOffset;                                      // 0x0220(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              WeaponAttachmentRecoilMultiplier;                         // 0x022C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TMap<uint16_t, struct FWTLWeaponAttachmentInstallInfo> WeaponInstallInfo;                                        // 0x0230(0x0050) (CPF_Edit, CPF_ZeroConstructor)
+	int                                                MaxEnergy;                                                // 0x0280(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                InitialEnergy;                                            // 0x0284(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                EnergyConsumptionPerSecond;                               // 0x0288(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x028C(0x0004) MISSED OFFSET
+	TArray<int>                                        CanBeChargedWithItems;                                    // 0x0290(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	int                                                DamageMin;                                                // 0x02A0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                DamageMax;                                                // 0x02A4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMin;                                         // 0x02A8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMax;                                         // 0x02AC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              StaminaPerUse;                                            // 0x02B0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MiningMultiplier;                                         // 0x02B4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TSoftObjectPtr<class UStaticMesh>                  PreviewPointerMesh;                                       // 0x02B8(0x0028) (CPF_Edit)
+	float                                              PlacementAngleLimit;                                      // 0x02E0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PlacementRange;                                           // 0x02E4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBePlacedOnlyOnLandscape;                               // 0x02E8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBePlacedInSafeZone;                                    // 0x02E9(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x2];                                       // 0x02EA(0x0002) MISSED OFFSET
+	float                                              PlacementTime;                                            // 0x02EC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TSoftObjectPtr<class UClass>                       PlacementActorClass;                                      // 0x02F0(0x0028) (CPF_Edit)
+	bool                                               bIsSpecialPlacementStuff;                                 // 0x0318(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x3];                                       // 0x0319(0x0003) MISSED OFFSET
+	float                                              PlacementShapeExtendMultiplier;                           // 0x031C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bCanBePlacedOnlyInStuffPlacementZone;                     // 0x0320(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLWeaponType                                     ModificationWeaponType;                                   // 0x0321(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x6];                                       // 0x0322(0x0006) MISSED OFFSET
+	struct FString                                     ModificationData;                                         // 0x0328(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               CanBePlacedOnCommission;                                  // 0x0338(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLEquipmentType                                  EquipmentType;                                            // 0x0339(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData09[0x6];                                       // 0x033A(0x0006) MISSED OFFSET
+	TSoftObjectPtr<class UFMODEvent>                   ActivationSoundEvent;                                     // 0x0340(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UFMODEvent>                   DeactivationSoundEvent;                                   // 0x0368(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                EquipmentMeshMale;                                        // 0x0390(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class USkeletalMesh>                EquipmentMeshFemale;                                      // 0x03B8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               NeedHideGlasses;                                          // 0x03E0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x03E1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x2];                                       // 0x03E2(0x0002) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x03E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLMedicineItemData
-// 0x0120 (0x0128 - 0x0008)
+// 0x0160 (0x0168 - 0x0008)
 struct FWTLMedicineItemData : public FTableRowBase
 {
 	EWTLMedicineType                                   Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -3642,25 +3786,27 @@ struct FWTLMedicineItemData : public FTableRowBase
 	TArray<struct FWTLCharacterEffectInfluence>        CharacterEffectsInfluence;                                // 0x0020(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 	struct FText                                       Name;                                                     // 0x0030(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0048(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                Validity;                                                 // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ExperienceDeltaPerUse;                                    // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        Faction;                                                  // 0x0070(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
-	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0078(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0088(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              BasePrice;                                                // 0x0098(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x009C(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00A0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x00C8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBeUnited;                                              // 0x00F0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x00F1(0x0007) MISSED OFFSET
-	TSoftObjectPtr<class UFMODEvent>                   UseSoundEvent;                                            // 0x00F8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBePlacedOnCommission;                                  // 0x0120(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x0121(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x0122(0x0002) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x0124(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       ShopDescription;                                          // 0x0060(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                Validity;                                                 // 0x0078(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x007C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ExperienceDeltaPerUse;                                    // 0x0080(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x0084(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x0088(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0089(0x0007) MISSED OFFSET
+	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0090(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x00A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              BasePrice;                                                // 0x00B0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x00B4(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00B8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x00E0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0108(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBeUnited;                                              // 0x0130(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x0131(0x0007) MISSED OFFSET
+	TSoftObjectPtr<class UFMODEvent>                   UseSoundEvent;                                            // 0x0138(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBePlacedOnCommission;                                  // 0x0160(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x0161(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x0162(0x0002) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x0164(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLPenetrationCapability
@@ -3675,7 +3821,7 @@ struct FWTLPenetrationCapability
 };
 
 // ScriptStruct WTL.WTLAmmoItemData
-// 0x0160 (0x0168 - 0x0008)
+// 0x01A0 (0x01A8 - 0x0008)
 struct FWTLAmmoItemData : public FTableRowBase
 {
 	EWTLAmmoType                                       Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -3684,45 +3830,48 @@ struct FWTLAmmoItemData : public FTableRowBase
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FString                                     TypeName;                                                 // 0x0028(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
 	struct FText                                       Description;                                              // 0x0038(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	int                                                DamageMin;                                                // 0x0050(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                DamageMax;                                                // 0x0054(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMin;                                         // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMax;                                         // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Accuracy;                                                 // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              InitialVelocity;                                          // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DestroyVelocity;                                          // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PhysicsImpulse;                                           // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              RagdollImpulse;                                           // 0x0074(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<struct FWTLPenetrationCapability>           PenetrationCapabilities;                                  // 0x0078(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	unsigned char                                      ProjectileCount;                                          // 0x0088(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0089(0x0007) MISSED OFFSET
-	TSoftObjectPtr<class UClass>                       ProjectileClass;                                          // 0x0090(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	class UCurveFloat*                                 VelocityCurve;                                            // 0x00B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UCurveFloat*                                 GravityCurve;                                             // 0x00C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               UseReliableHitEvent;                                      // 0x00C8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               UseReliableRicochetEvent;                                 // 0x00C9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x00CA(0x0002) MISSED OFFSET
-	float                                              ConditionDeltaMultiplier;                                 // 0x00CC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               SpawnTracer;                                              // 0x00D0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x00D1(0x0003) MISSED OFFSET
-	float                                              SpawnTracerChance;                                        // 0x00D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              SpawnTracerOffset;                                        // 0x00D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x00DC(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UClass>                       TracerClass;                                              // 0x00E0(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
-	float                                              BasePrice;                                                // 0x0108(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x010C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0110(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0138(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	bool                                               CanBeUnited;                                              // 0x0160(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBePlacedOnCommission;                                  // 0x0161(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x0162(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x1];                                       // 0x0163(0x0001) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x0164(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       ShopDescription;                                          // 0x0050(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	int                                                DamageMin;                                                // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                DamageMax;                                                // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMin;                                         // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMax;                                         // 0x0074(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Accuracy;                                                 // 0x0078(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x007C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              InitialVelocity;                                          // 0x0080(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DestroyVelocity;                                          // 0x0084(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PhysicsImpulse;                                           // 0x0088(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              RagdollImpulse;                                           // 0x008C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FWTLPenetrationCapability>           PenetrationCapabilities;                                  // 0x0090(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	EWTLAmmoProjectileType                             ProjectileType;                                           // 0x00A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ProjectileCount;                                          // 0x00A1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x00A2(0x0006) MISSED OFFSET
+	TSoftObjectPtr<class UClass>                       ProjectileClass;                                          // 0x00A8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	class UCurveFloat*                                 VelocityCurve;                                            // 0x00D0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UCurveFloat*                                 GravityCurve;                                             // 0x00D8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               UseReliableHitEvent;                                      // 0x00E0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               UseReliableRicochetEvent;                                 // 0x00E1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x2];                                       // 0x00E2(0x0002) MISSED OFFSET
+	float                                              ConditionDeltaMultiplier;                                 // 0x00E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               SpawnTracer;                                              // 0x00E8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x00E9(0x0003) MISSED OFFSET
+	float                                              SpawnTracerChance;                                        // 0x00EC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              SpawnTracerOffset;                                        // 0x00F0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x00F4(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UClass>                       TracerClass;                                              // 0x00F8(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
+	float                                              BasePrice;                                                // 0x0120(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x0124(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x0128(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x0150(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0178(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	bool                                               CanBeUnited;                                              // 0x01A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBePlacedOnCommission;                                  // 0x01A1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x01A2(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x1];                                       // 0x01A3(0x0001) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x01A4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLWeaponItemData
-// 0x0190 (0x0198 - 0x0008)
+// 0x01D0 (0x01D8 - 0x0008)
 struct FWTLWeaponItemData : public FTableRowBase
 {
 	EWTLWeaponType                                     Type;                                                     // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -3730,45 +3879,48 @@ struct FWTLWeaponItemData : public FTableRowBase
 	unsigned char                                      UnknownData00[0x6];                                       // 0x000A(0x0006) MISSED OFFSET
 	struct FText                                       Name;                                                     // 0x0010(0x0018) (CPF_Edit, CPF_BlueprintVisible)
 	struct FText                                       Description;                                              // 0x0028(0x0018) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      MagazineCapacity;                                         // 0x0040(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0041(0x0003) MISSED OFFSET
-	int                                                DamageMin;                                                // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                DamageMax;                                                // 0x0048(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMin;                                         // 0x004C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmorPiercingMax;                                         // 0x0050(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              CriticalHitChanceMultiplier;                              // 0x0054(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Accuracy;                                                 // 0x0058(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                EffectiveRange;                                           // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Condition;                                                // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ConditionDelta;                                           // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              OpticsConditionDeltaMultiplier;                           // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Weight;                                                   // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DropChance;                                               // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MinRepairExperience;                                      // 0x0074(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EWTLFaction                                        Faction;                                                  // 0x0078(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0079(0x0007) MISSED OFFSET
-	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0080(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x0090(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	float                                              BasePrice;                                                // 0x00A0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x00A4(0x0004) MISSED OFFSET
-	TSoftObjectPtr<class UClass>                       BlueprintClass;                                           // 0x00A8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00D0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UTexture2D>                   KillsStatsIcon;                                           // 0x00F8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0120(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TSoftObjectPtr<class UStaticMesh>                  CharacterWeaponPreviewMesh;                               // 0x0148(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	TArray<struct FTransform>                          CharacterWeaponPreviewOffsets;                            // 0x0170(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               CanBeCustomized;                                          // 0x0180(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBePlacedOnCommission;                                  // 0x0181(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanBeViewedThroughPreviewMeshesList;                      // 0x0182(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x1];                                       // 0x0183(0x0001) MISSED OFFSET
-	int                                                MasterWeaponID;                                           // 0x0184(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CopyParametersFromMasterWeapon;                           // 0x0188(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x3];                                       // 0x0189(0x0003) MISSED OFFSET
-	float                                              ExperienceMultiplier;                                     // 0x018C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               IsSteamMarketable;                                        // 0x0190(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               CanTransferToSteam;                                       // 0x0191(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x2];                                       // 0x0192(0x0002) MISSED OFFSET
-	int                                                SteamMarketID;                                            // 0x0194(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       ShopDescription;                                          // 0x0040(0x0018) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      MagazineCapacity;                                         // 0x0058(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0059(0x0003) MISSED OFFSET
+	int                                                DamageMin;                                                // 0x005C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                DamageMax;                                                // 0x0060(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMin;                                         // 0x0064(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmorPiercingMax;                                         // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              CriticalHitChanceMultiplier;                              // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                BaseAmmoID;                                               // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Accuracy;                                                 // 0x0074(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                EffectiveRange;                                           // 0x0078(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Condition;                                                // 0x007C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ConditionDelta;                                           // 0x0080(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              OpticsConditionDeltaMultiplier;                           // 0x0084(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Weight;                                                   // 0x0088(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DropChance;                                               // 0x008C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MinRepairExperience;                                      // 0x0090(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLFaction                                        Faction;                                                  // 0x0094(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0095(0x0003) MISSED OFFSET
+	TArray<struct FWTLItemClassRequirement>            ArenaClassRequirements;                                   // 0x0098(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FWTLItemClassRequirement>            RPGClassRequirements;                                     // 0x00A8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	float                                              BasePrice;                                                // 0x00B8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x00BC(0x0004) MISSED OFFSET
+	TSoftObjectPtr<class UClass>                       BlueprintClass;                                           // 0x00C0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   InventoryIcon;                                            // 0x00E8(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   StoreIcon;                                                // 0x0110(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UTexture2D>                   KillsStatsIcon;                                           // 0x0138(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UClass>                       ItemPickupClass;                                          // 0x0160(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TSoftObjectPtr<class UStaticMesh>                  CharacterWeaponPreviewMesh;                               // 0x0188(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	TArray<struct FTransform>                          CharacterWeaponPreviewOffsets;                            // 0x01B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               CanBeCustomized;                                          // 0x01C0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBePlacedOnCommission;                                  // 0x01C1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanBeViewedThroughPreviewMeshesList;                      // 0x01C2(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x1];                                       // 0x01C3(0x0001) MISSED OFFSET
+	int                                                MasterWeaponID;                                           // 0x01C4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CopyParametersFromMasterWeapon;                           // 0x01C8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x3];                                       // 0x01C9(0x0003) MISSED OFFSET
+	float                                              ExperienceMultiplier;                                     // 0x01CC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               IsSteamMarketable;                                        // 0x01D0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CanTransferToSteam;                                       // 0x01D1(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x2];                                       // 0x01D2(0x0002) MISSED OFFSET
+	int                                                SteamMarketID;                                            // 0x01D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLVoiceDataPacket
@@ -3896,6 +4048,51 @@ struct FWTLReplicatedStorageContent
 	struct FWTLArtefactItemArray                       ArtefactItems;                                            // 0x0490(0x00C0)
 };
 
+// ScriptStruct WTL.WTLStatisticsValue
+// 0x0010 (0x0048 - 0x0038)
+struct FWTLStatisticsValue : public FWTLPacket
+{
+	uint16_t                                           ParameterID;                                              // 0x0038(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x003A(0x0006) MISSED OFFSET
+	uint64_t                                           Value;                                                    // 0x0040(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// ScriptStruct WTL.WTLAccountAchievementsAndStats
+// 0x0028 (0x0060 - 0x0038)
+struct FWTLAccountAchievementsAndStats : public FWTLPacket
+{
+	uint64_t                                           AccountID;                                                // 0x0038(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FWTLIdentity16>                      Achievements;                                             // 0x0040(0x0010) (CPF_ZeroConstructor)
+	TArray<struct FWTLStatisticsValue>                 StatisticsValues;                                         // 0x0050(0x0010) (CPF_ZeroConstructor)
+};
+
+// ScriptStruct WTL.WTLAccountAchievementsList
+// 0x0018 (0x0050 - 0x0038)
+struct FWTLAccountAchievementsList : public FWTLPacket
+{
+	uint64_t                                           AccountID;                                                // 0x0038(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FWTLIdentity16>                      Items;                                                    // 0x0040(0x0010) (CPF_ZeroConstructor)
+};
+
+// ScriptStruct WTL.WTLTriggerAccountAchievementInfo
+// 0x0010 (0x0048 - 0x0038)
+struct FWTLTriggerAccountAchievementInfo : public FWTLPacket
+{
+	uint64_t                                           AccountID;                                                // 0x0038(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	uint16_t                                           AchievementID;                                            // 0x0040(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x0042(0x0006) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLAccountStatisticsValueDelta
+// 0x0010 (0x0048 - 0x0038)
+struct FWTLAccountStatisticsValueDelta : public FWTLPacket
+{
+	uint64_t                                           AccountID;                                                // 0x0038(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	uint16_t                                           ParameterID;                                              // 0x0040(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	uint16_t                                           Delta;                                                    // 0x0042(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0044(0x0004) MISSED OFFSET
+};
+
 // ScriptStruct WTL.WTLCharacterClanInfo
 // 0x0028 (0x0060 - 0x0038)
 struct FWTLCharacterClanInfo : public FWTLPacket
@@ -3970,16 +4167,18 @@ struct FWTLVersionInfo
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
 };
 
-// ScriptStruct WTL.WTLSteamAuthorization
-// 0x0040 (0x0078 - 0x0038)
-struct FWTLSteamAuthorization : public FWTLPacket
+// ScriptStruct WTL.WTLAuthorization
+// 0x0048 (0x0080 - 0x0038)
+struct FWTLAuthorization : public FWTLPacket
 {
-	uint64_t                                           SteamID;                                                  // 0x0038(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     Login;                                                    // 0x0040(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FString                                     Password;                                                 // 0x0050(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FWTLVersionInfo                             Version;                                                  // 0x0060(0x0008) (CPF_Edit)
-	uint16_t                                           TicketSize;                                               // 0x0068(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xE];                                       // 0x006A(0x000E) MISSED OFFSET
+	uint64_t                                           UserID;                                                   // 0x0038(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLPlatform                                       Platform;                                                 // 0x0040(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0041(0x0007) MISSED OFFSET
+	struct FString                                     Login;                                                    // 0x0048(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FString                                     Password;                                                 // 0x0058(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FWTLVersionInfo                             Version;                                                  // 0x0068(0x0008) (CPF_Edit)
+	uint16_t                                           TicketSize;                                               // 0x0070(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0xE];                                       // 0x0072(0x000E) MISSED OFFSET
 };
 
 // ScriptStruct WTL.WTLSteamAchievementTrigger
@@ -5246,6 +5445,43 @@ struct FWTLServerStatistics
 	struct FWTLServerStatisticsMoney                   Money;                                                    // 0x0118(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// ScriptStruct WTL.WTLStoreItem
+// 0x0080
+struct FWTLStoreItem
+{
+	int                                                ID;                                                       // 0x0000(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MoneyAmount;                                              // 0x0004(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLItemType                                       ItemType;                                                 // 0x0008(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1];                                       // 0x0009(0x0001) MISSED OFFSET
+	uint16_t                                           ItemTypeID;                                               // 0x000A(0x0002) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Count;                                                    // 0x000C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Condition;                                                // 0x0010(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      CustomizationScalar;                                      // 0x0014(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      CustomizationColor;                                       // 0x0015(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0016(0x0002) MISSED OFFSET
+	struct FString                                     CustomizationName;                                        // 0x0018(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     ModificationData;                                         // 0x0028(0x0010) (CPF_ZeroConstructor)
+	struct FColor                                      BackgroundColor;                                          // 0x0038(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FColor                                      NameColor;                                                // 0x003C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ItemQuality;                                              // 0x0040(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0041(0x0007) MISSED OFFSET
+	struct FString                                     IconURL;                                                  // 0x0048(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     LargerIconURL;                                            // 0x0058(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     Tags;                                                     // 0x0068(0x0010) (CPF_ZeroConstructor)
+	int                                                Price;                                                    // 0x0078(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x007C(0x0004) MISSED OFFSET
+};
+
+// ScriptStruct WTL.WTLPrivateLootItemInfo
+// 0x0018
+struct FWTLPrivateLootItemInfo
+{
+	uint64_t                                           CharacterID;                                              // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EWTLItemType                                       ItemType;                                                 // 0x0008(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
+	uint64_t                                           ItemID;                                                   // 0x0010(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // ScriptStruct WTL.WTLEmotionAnimation
 // 0x0020
 struct FWTLEmotionAnimation
@@ -5688,14 +5924,6 @@ struct FWTLInputSetting
 	float                                              AxisScale;                                                // 0x0090(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bIsMouseKeysCanBind;                                      // 0x0094(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x0095(0x0003) MISSED OFFSET
-};
-
-// ScriptStruct WTL.WTLMapCanvasMarker
-// 0x0060
-struct FWTLMapCanvasMarker
-{
-	struct FWTLMapMarker                               Marker;                                                   // 0x0000(0x0058)
-	class UWTLCommonMapMarker*                         MarkerWidget;                                             // 0x0058(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
 // ScriptStruct WTL.WTLTakenDamageRecord

@@ -67,17 +67,17 @@ void ABP_NPC_Bartender_C::ShowDialogQuest(class AWTLCharacter* Character, const 
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -85,8 +85,8 @@ void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Charact
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -96,17 +96,17 @@ void ABP_NPC_Bartender_C::GetReplicaArrayMainDialog(class AWTLCharacter* Charact
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -114,8 +114,8 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Chara
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -125,17 +125,17 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Chara
 // (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -143,8 +143,8 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -158,9 +158,9 @@ void ABP_NPC_Bartender_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter
 // int                            QuestID                        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // int                            CurrentReplica                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // int                            NPCReplicaID                   (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 
-void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplica, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
+void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplica, int NPCReplicaID, TArray<int>* IncharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.ExecutingAction"));
 
@@ -171,7 +171,7 @@ void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNP
 		int                            QuestID;
 		int                            CurrentReplica;
 		int                            NPCReplicaID;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 	} params;
 
 	params.Character = Character;
@@ -182,8 +182,8 @@ void ABP_NPC_Bartender_C::ExecutingAction(class AWTLCharacter* Character, EWTLNP
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 }
 
 
@@ -210,24 +210,24 @@ void ABP_NPC_Bartender_C::ShowAvailableQuestsDialog(class AWTLCharacter* Charact
 // Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetRandomReplicaID
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// TArray<int>                    ReplicaIdArray                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    ReplicaIDArray                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // int                            ReplicaID                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void ABP_NPC_Bartender_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
+void ABP_NPC_Bartender_C::GetRandomReplicaID(TArray<int>* ReplicaIDArray, int* ReplicaID)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_Bartender.BP_NPC_Bartender_C.GetRandomReplicaID"));
 
 	struct
 	{
-		TArray<int>                    ReplicaIdArray;
+		TArray<int>                    ReplicaIDArray;
 		int                            ReplicaID;
 	} params;
 
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (ReplicaIdArray != nullptr)
-		*ReplicaIdArray = params.ReplicaIdArray;
+	if (ReplicaIDArray != nullptr)
+		*ReplicaIDArray = params.ReplicaIDArray;
 	if (ReplicaID != nullptr)
 		*ReplicaID = params.ReplicaID;
 }

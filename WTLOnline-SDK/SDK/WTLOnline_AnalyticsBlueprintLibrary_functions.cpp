@@ -62,18 +62,18 @@ bool UAnalyticsBlueprintLibrary::StartSession()
 // Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId
 // (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
-// struct FString                 UserId                         (CPF_Parm, CPF_ZeroConstructor)
+// struct FString                 UserID                         (CPF_Parm, CPF_ZeroConstructor)
 
-void UAnalyticsBlueprintLibrary::SetUserId(const struct FString& UserId)
+void UAnalyticsBlueprintLibrary::SetUserId(const struct FString& UserID)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.SetUserId"));
 
 	struct
 	{
-		struct FString                 UserId;
+		struct FString                 UserID;
 	} params;
 
-	params.UserId = UserId;
+	params.UserID = UserID;
 
 	static auto defaultObj = StaticClass()->CreateDefaultObject();
 	defaultObj->ProcessEvent(fn, &params);

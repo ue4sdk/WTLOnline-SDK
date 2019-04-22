@@ -15,14 +15,14 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Pawn_StrayDogChild.BP_Pawn_StrayDogChild_C
-// 0x0017 (0x1061 - 0x104A)
+// 0x0017 (0x1261 - 0x124A)
 class ABP_Pawn_StrayDogChild_C : public ABP_MonsterBase_C
 {
 public:
-	unsigned char                                      UnknownData00[0x6];                                       // 0x104A(0x0006) MISSED OFFSET
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x1050(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
-	class UFMODAudioComponent*                         TakeDamage;                                               // 0x1058(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	bool                                               IsPlayTakeDamage;                                         // 0x1060(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x124A(0x0006) MISSED OFFSET
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x1250(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
+	class UFMODAudioComponent*                         TakeDamage;                                               // 0x1258(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	bool                                               IsPlayTakeDamage;                                         // 0x1260(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

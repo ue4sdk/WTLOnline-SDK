@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultMedicinePickup.BP_DefaultMedicinePickup_C
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0440 - 0x0440)
 class ABP_DefaultMedicinePickup_C : public AWTLMedicinePickup
 {
 public:

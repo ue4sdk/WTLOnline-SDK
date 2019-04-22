@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_StorageBox_suitcase_3.BP_StorageBox_suitcase_2_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0660 - 0x0660)
 class ABP_StorageBox_suitcase_2_C : public AWTLStorageBox
 {
 public:

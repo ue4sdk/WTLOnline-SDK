@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_CharacterDrop.BP_CharacterDrop_C
-// 0x0000 (0x0458 - 0x0458)
+// 0x0000 (0x0470 - 0x0470)
 class ABP_CharacterDrop_C : public AWTLCharacterDrop
 {
 public:

@@ -204,7 +204,8 @@ enum class EWTLCaliber : uint8_t
 	EWTLCaliber__Caliber_338LM     = 17,
 	EWTLCaliber__Caliber_357Magnum = 18,
 	EWTLCaliber__Caliber_5_7x28    = 19,
-	EWTLCaliber__EWTLCaliber_MAX   = 20
+	EWTLCaliber__Caliber_43mm      = 20,
+	EWTLCaliber__EWTLCaliber_MAX   = 21
 };
 
 
@@ -282,6 +283,16 @@ enum class EWTLColliderType : uint8_t
 	EWTLColliderType__Leg          = 4,
 	EWTLColliderType__Foot         = 5,
 	EWTLColliderType__EWTLColliderType_MAX = 6
+};
+
+
+// Enum WTL.EWTLAmmoProjectileType
+enum class EWTLAmmoProjectileType : uint8_t
+{
+	EWTLAmmoProjectileType__FMJ    = 0,
+	EWTLAmmoProjectileType__HP     = 1,
+	EWTLAmmoProjectileType__AP     = 2,
+	EWTLAmmoProjectileType__EWTLAmmoProjectileType_MAX = 3
 };
 
 
@@ -513,6 +524,15 @@ enum class EWTLTurretState : uint8_t
 };
 
 
+// Enum WTL.EWTLStoreButtonType
+enum class EWTLStoreButtonType : uint8_t
+{
+	STEAM                          = 0,
+	Own                            = 1,
+	EWTLStoreButtonType_MAX        = 2
+};
+
+
 // Enum WTL.EWTLEnemyNPCExclamationType
 enum class EWTLEnemyNPCExclamationType : uint8_t
 {
@@ -599,9 +619,12 @@ enum class EWTLTutorialMessage : uint8_t
 	EWTLTutorialMessage__ShowPDA   = 0,
 	EWTLTutorialMessage__ShowMap   = 1,
 	EWTLTutorialMessage__ShowMapLegend = 2,
-	EWTLTutorialMessage__EmotionsMenuTutorial = 3,
+	EWTLTutorialMessage__EmotionsMenu = 3,
 	EWTLTutorialMessage__FirstSkillPoint = 4,
-	EWTLTutorialMessage__EWTLTutorialMessage_MAX = 5
+	EWTLTutorialMessage__GasMaskStuffSlot = 5,
+	EWTLTutorialMessage__HasSteamInventoryItems = 6,
+	EWTLTutorialMessage__PlaceStash = 7,
+	EWTLTutorialMessage__EWTLTutorialMessage_MAX = 8
 };
 
 
@@ -874,7 +897,11 @@ enum class EWTLWarningTitleWidgetType : uint8_t
 	EWTLWarningTitleWidgetType__GunOverheated = 14,
 	EWTLWarningTitleWidgetType__NoAmmoForShooting = 15,
 	EWTLWarningTitleWidgetType__NoNutsInInventoryToThrow = 16,
-	EWTLWarningTitleWidgetType__EWTLWarningTitleWidgetType_MAX = 17
+	EWTLWarningTitleWidgetType__EventJoined = 17,
+	EWTLWarningTitleWidgetType__EventLeaved = 18,
+	EWTLWarningTitleWidgetType__EventCompleted = 19,
+	EWTLWarningTitleWidgetType__EventFailed = 20,
+	EWTLWarningTitleWidgetType__EWTLWarningTitleWidgetType_MAX = 21
 };
 
 
@@ -914,38 +941,40 @@ enum class EWTLItemSlotActionPermission : uint8_t
 	EWTLItemSlotActionPermission__RemoveAttachmentFromWeapon = 30,
 	EWTLItemSlotActionPermission__RemoveAttachmentFromWeaponBySlot = 31,
 	EWTLItemSlotActionPermission__RemoveAllAttachmentsFromWeapon = 32,
-	EWTLItemSlotActionPermission__ChargerEnergySourceItemToStuff = 33,
+	EWTLItemSlotActionPermission__ChargeEnergySourceItemToStuff = 33,
 	EWTLItemSlotActionPermission__ChargeStuffItemByEnergySource = 34,
-	EWTLItemSlotActionPermission__PlaceArtefactItemInContainer = 35,
-	EWTLItemSlotActionPermission__RemoveArtefactItemFromContainer = 36,
-	EWTLItemSlotActionPermission__InstallPDAModule = 37,
-	EWTLItemSlotActionPermission__RepairWeaponByKit = 38,
-	EWTLItemSlotActionPermission__RepairClothesByKit = 39,
-	EWTLItemSlotActionPermission__ModifyWeaponByKit = 40,
-	EWTLItemSlotActionPermission__ModifyClothesByKit = 41,
-	EWTLItemSlotActionPermission__PaintWeaponBySprayCan = 42,
-	EWTLItemSlotActionPermission__PaintClothesBySprayCan = 43,
-	EWTLItemSlotActionPermission__LoadAmmoToWeapon = 44,
-	EWTLItemSlotActionPermission__LoadWeapon = 45,
-	EWTLItemSlotActionPermission__UnloadWeapon = 46,
-	EWTLItemSlotActionPermission__BreakWeapon = 47,
-	EWTLItemSlotActionPermission__InstallArmoredPlate = 48,
-	EWTLItemSlotActionPermission__RemoveArmoredPlate = 49,
-	EWTLItemSlotActionPermission__UseNewPassport = 50,
-	EWTLItemSlotActionPermission__UseItem = 51,
-	EWTLItemSlotActionPermission__ViewItem = 52,
-	EWTLItemSlotActionPermission__EquipClothesItem = 53,
-	EWTLItemSlotActionPermission__UnequipClothesItem = 54,
-	EWTLItemSlotActionPermission__OpenArmoredPlatesWindow = 55,
-	EWTLItemSlotActionPermission__RemoveAllArmoredPlates = 56,
-	EWTLItemSlotActionPermission__EquipStuffItem = 57,
-	EWTLItemSlotActionPermission__UnequipStuffItem = 58,
-	EWTLItemSlotActionPermission__CombineItem = 59,
-	EWTLItemSlotActionPermission__SplitItem = 60,
-	EWTLItemSlotActionPermission__DropItem = 61,
-	EWTLItemSlotActionPermission__DestroyItem = 62,
-	EWTLItemSlotActionPermission__ShowItemInformation = 63,
-	EWTLItemSlotActionPermission__EWTLItemSlotActionPermission_MAX = 64
+	EWTLItemSlotActionPermission__ChangeGasMaskFilterFromFilter = 35,
+	EWTLItemSlotActionPermission__ChangeGasMaskFilterFromGasMask = 36,
+	EWTLItemSlotActionPermission__PlaceArtefactItemInContainer = 37,
+	EWTLItemSlotActionPermission__RemoveArtefactItemFromContainer = 38,
+	EWTLItemSlotActionPermission__InstallPDAModule = 39,
+	EWTLItemSlotActionPermission__RepairWeaponByKit = 40,
+	EWTLItemSlotActionPermission__RepairClothesByKit = 41,
+	EWTLItemSlotActionPermission__ModifyWeaponByKit = 42,
+	EWTLItemSlotActionPermission__ModifyClothesByKit = 43,
+	EWTLItemSlotActionPermission__PaintWeaponBySprayCan = 44,
+	EWTLItemSlotActionPermission__PaintClothesBySprayCan = 45,
+	EWTLItemSlotActionPermission__LoadAmmoToWeapon = 46,
+	EWTLItemSlotActionPermission__LoadWeapon = 47,
+	EWTLItemSlotActionPermission__UnloadWeapon = 48,
+	EWTLItemSlotActionPermission__BreakWeapon = 49,
+	EWTLItemSlotActionPermission__InstallArmoredPlate = 50,
+	EWTLItemSlotActionPermission__RemoveArmoredPlate = 51,
+	EWTLItemSlotActionPermission__UseNewPassport = 52,
+	EWTLItemSlotActionPermission__UseItem = 53,
+	EWTLItemSlotActionPermission__ViewItem = 54,
+	EWTLItemSlotActionPermission__EquipClothesItem = 55,
+	EWTLItemSlotActionPermission__UnequipClothesItem = 56,
+	EWTLItemSlotActionPermission__OpenArmoredPlatesWindow = 57,
+	EWTLItemSlotActionPermission__RemoveAllArmoredPlates = 58,
+	EWTLItemSlotActionPermission__EquipStuffItem = 59,
+	EWTLItemSlotActionPermission__UnequipStuffItem = 60,
+	EWTLItemSlotActionPermission__CombineItem = 61,
+	EWTLItemSlotActionPermission__SplitItem = 62,
+	EWTLItemSlotActionPermission__DropItem = 63,
+	EWTLItemSlotActionPermission__DestroyItem = 64,
+	EWTLItemSlotActionPermission__ShowItemInformation = 65,
+	EWTLItemSlotActionPermission__EWTLItemSlotActionPermission_MAX = 66
 };
 
 
@@ -988,6 +1017,20 @@ enum class EWTLMonsterActionBase : uint8_t
 };
 
 
+// Enum WTL.EWTLMonsterAttachState
+enum class EWTLMonsterAttachState : uint8_t
+{
+	EWTLMonsterAttachState__None   = 0,
+	EWTLMonsterAttachState__AttachTo = 1,
+	EWTLMonsterAttachState__Attached = 2,
+	EWTLMonsterAttachState__DetachTo = 3,
+	EWTLMonsterAttachState__Detached = 4,
+	EWTLMonsterAttachState__AttachedForward = 5,
+	EWTLMonsterAttachState__AttachedBack = 6,
+	EWTLMonsterAttachState__EWTLMonsterAttachState_MAX = 7
+};
+
+
 // Enum WTL.EWTLMonsterAttackModificator
 enum class EWTLMonsterAttackModificator : uint8_t
 {
@@ -1025,7 +1068,8 @@ enum class EWTLMonsterState : uint8_t
 	EWTLMonsterState__CustomAction4 = 21,
 	EWTLMonsterState__CustomAction5 = 22,
 	EWTLMonsterState__GetRandomTarget = 23,
-	EWTLMonsterState__EWTLMonsterState_MAX = 24
+	EWTLMonsterState__PlayMontage  = 24,
+	EWTLMonsterState__EWTLMonsterState_MAX = 25
 };
 
 
@@ -1448,7 +1492,8 @@ enum class EWTLHUDNotificationType : uint8_t
 	EWTLHUDNotificationType__FortificationPointLost = 48,
 	EWTLHUDNotificationType__FortificationPointCaptureFailed = 49,
 	EWTLHUDNotificationType__QuestCanBeCompleted = 50,
-	EWTLHUDNotificationType__EWTLHUDNotificationType_MAX = 51
+	EWTLHUDNotificationType__AccountAchievementTrigger = 51,
+	EWTLHUDNotificationType__EWTLHUDNotificationType_MAX = 52
 };
 
 
@@ -1745,7 +1790,8 @@ enum class EProjectileType : uint8_t
 {
 	EProjectileType__None          = 0,
 	EProjectileType__Bullet        = 1,
-	EProjectileType__EProjectileType_MAX = 2
+	EProjectileType__Grenade       = 2,
+	EProjectileType__EProjectileType_MAX = 3
 };
 
 
@@ -1868,7 +1914,20 @@ enum class EWTLMapMarkerType : uint8_t
 	EWTLMapMarkerType__FortificationNeutralCannotBeCaptured = 34,
 	EWTLMapMarkerType__FortificationConfederationCannotBeCaptured = 35,
 	EWTLMapMarkerType__FortificationBlackSunsetCannotBeCaptured = 36,
-	EWTLMapMarkerType__EWTLMapMarkerType_MAX = 37
+	EWTLMapMarkerType__EventPointMonsterSpawn = 37,
+	EWTLMapMarkerType__EventPointEnvironment = 38,
+	EWTLMapMarkerType__EventPointFindItem = 39,
+	EWTLMapMarkerType__EWTLMapMarkerType_MAX = 40
+};
+
+
+// Enum WTL.EWTLEventPointType
+enum class EWTLEventPointType : uint8_t
+{
+	EWTLEventPointType__MonsterSpawn = 0,
+	EWTLEventPointType__Environment = 1,
+	EWTLEventPointType__FindItem   = 2,
+	EWTLEventPointType__EWTLEventPointType_MAX = 3
 };
 
 
@@ -2045,6 +2104,16 @@ enum class EWTLPortalActionResult : uint8_t
 	EWTLPortalActionResult__Success = 0,
 	EWTLPortalActionResult__Failed = 1,
 	EWTLPortalActionResult__EWTLPortalActionResult_MAX = 2
+};
+
+
+// Enum WTL.EWTLPlatform
+enum class EWTLPlatform : uint8_t
+{
+	EWTLPlatform__None             = 0,
+	EWTLPlatform__Steam            = 1,
+	EWTLPlatform__Abyss            = 2,
+	EWTLPlatform__EWTLPlatform_MAX = 3
 };
 
 
@@ -2421,6 +2490,16 @@ enum class EWTLObjFACheckResult : uint8_t
 	EWTLObjFACheckResult__Result_False = 0,
 	EWTLObjFACheckResult__Result_True = 1,
 	EWTLObjFACheckResult__Result_MAX = 2
+};
+
+
+// Enum WTL.EWTLRainAudioRemoveMethod
+enum class EWTLRainAudioRemoveMethod : uint8_t
+{
+	EWTLRainAudioRemoveMethod__None = 0,
+	EWTLRainAudioRemoveMethod__AlwaysCovered = 1,
+	EWTLRainAudioRemoveMethod__RemoveCompletely = 2,
+	EWTLRainAudioRemoveMethod__EWTLRainAudioRemoveMethod_MAX = 3
 };
 
 

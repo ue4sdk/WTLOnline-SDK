@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_SmallStorageBoxTrash_11.BP_SmallStorageBoxTrash_10_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0660 - 0x0660)
 class ABP_SmallStorageBoxTrash_10_C : public AWTLStorageBox
 {
 public:

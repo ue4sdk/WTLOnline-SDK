@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_WaterSource_Well.BP_WaterSource_Well_C
-// 0x0010 (0x0378 - 0x0368)
+// 0x0010 (0x0390 - 0x0380)
 class ABP_WaterSource_Well_C : public AWTLWaterSource
 {
 public:
-	class UStaticMeshComponent*                        SM_Garage02Medium_SmallDoorL;                             // 0x0368(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UStaticMeshComponent*                        Cylinder;                                                 // 0x0370(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UStaticMeshComponent*                        SM_Garage02Medium_SmallDoorL;                             // 0x0380(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UStaticMeshComponent*                        Cylinder;                                                 // 0x0388(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

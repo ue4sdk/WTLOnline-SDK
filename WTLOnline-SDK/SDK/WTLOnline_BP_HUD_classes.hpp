@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_HUD.BP_HUD_C
-// 0x0008 (0x1108 - 0x1100)
+// 0x0008 (0x1110 - 0x1108)
 class ABP_HUD_C : public AWTLHUD
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x1100(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x1108(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass UI_HUD_Minimap_Marker.UI_HUD_Minimap_Marker_C
-// 0x0008 (0x0278 - 0x0270)
+// 0x0008 (0x0280 - 0x0278)
 class UUI_HUD_Minimap_Marker_C : public UWTLCommonMapMarker
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0270(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0278(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
 
 	static UClass* StaticClass()
 	{

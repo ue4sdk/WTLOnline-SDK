@@ -8,10 +8,10 @@
 
 #include "WTLOnline_Basic.hpp"
 #include "WTLOnline_AIModule_enums.hpp"
-#include "WTLOnline_GameplayTasks_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
 #include "WTLOnline_GameplayTags_classes.hpp"
+#include "WTLOnline_GameplayTasks_classes.hpp"
 #include "WTLOnline_NavigationSystem_classes.hpp"
 
 namespace SDK

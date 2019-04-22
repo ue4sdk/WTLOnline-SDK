@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Location_11_SolarCity.Location_11_SolarCity_C
-// 0x0010 (0x06A8 - 0x0698)
+// 0x0010 (0x0780 - 0x0770)
 class ALocation_11_SolarCity_C : public AWTLDynamicSkyLevelScriptActor
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0698(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
-	class AUltra_Dynamic_Sky_BP_C*                     Ultra_Dynamic_Sky_ExecuteUbergraph_Location_11_SolarCity_RefProperty;// 0x06A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0770(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
+	class AUltra_Dynamic_Sky_BP_C*                     Ultra_Dynamic_Sky_ExecuteUbergraph_Location_11_SolarCity_RefProperty;// 0x0778(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

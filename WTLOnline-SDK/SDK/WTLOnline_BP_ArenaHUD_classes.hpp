@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ArenaHUD.BP_ArenaHUD_C
-// 0x0008 (0x11C8 - 0x11C0)
+// 0x0008 (0x11D0 - 0x11C8)
 class ABP_ArenaHUD_C : public AWTLArenaHUD
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x11C0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x11C8(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

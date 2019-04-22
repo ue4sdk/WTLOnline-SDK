@@ -67,17 +67,17 @@ void ABP_NPC_SolarCityRafik_C::ShowDialogQuest(class AWTLCharacter* Character, c
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayMainDialog"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -85,8 +85,8 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Ch
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -96,17 +96,17 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayMainDialog(class AWTLCharacter* Ch
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanTakeQuest"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -114,8 +114,8 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* 
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -125,17 +125,17 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanTakeQuest(class AWTLCharacter* 
 // (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // class AWTLCharacter*           Character                      (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // TArray<int>                    CharacterReplicaArray          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* InCharacterReplicaArray, TArray<int>* CharacterReplicaArray)
+void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLCharacter* Character, TArray<int>* IncharacterReplicaArray, TArray<int>* CharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetReplicaArrayCanCompleteAnyQuest"));
 
 	struct
 	{
 		class AWTLCharacter*           Character;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 		TArray<int>                    CharacterReplicaArray;
 	} params;
 
@@ -143,8 +143,8 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLChar
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 	if (CharacterReplicaArray != nullptr)
 		*CharacterReplicaArray = params.CharacterReplicaArray;
 }
@@ -158,9 +158,9 @@ void ABP_NPC_SolarCityRafik_C::GetReplicaArrayCanCompleteAnyQuest(class AWTLChar
 // int                            QuestID                        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // int                            CurrentReplicaID               (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // int                            NPCReplicaID                   (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<int>                    InCharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    IncharacterReplicaArray        (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 
-void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* InCharacterReplicaArray)
+void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, EWTLNPCReplicaAction Action, int QuestID, int CurrentReplicaID, int NPCReplicaID, TArray<int>* IncharacterReplicaArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.ExecutingAction"));
 
@@ -171,7 +171,7 @@ void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, E
 		int                            QuestID;
 		int                            CurrentReplicaID;
 		int                            NPCReplicaID;
-		TArray<int>                    InCharacterReplicaArray;
+		TArray<int>                    IncharacterReplicaArray;
 	} params;
 
 	params.Character = Character;
@@ -182,32 +182,32 @@ void ABP_NPC_SolarCityRafik_C::ExecutingAction(class AWTLCharacter* Character, E
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (InCharacterReplicaArray != nullptr)
-		*InCharacterReplicaArray = params.InCharacterReplicaArray;
+	if (IncharacterReplicaArray != nullptr)
+		*IncharacterReplicaArray = params.IncharacterReplicaArray;
 }
 
 
 // Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetRandomReplicaID
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// TArray<int>                    ReplicaIdArray                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<int>                    ReplicaIDArray                 (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 // int                            ReplicaID                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void ABP_NPC_SolarCityRafik_C::GetRandomReplicaID(TArray<int>* ReplicaIdArray, int* ReplicaID)
+void ABP_NPC_SolarCityRafik_C::GetRandomReplicaID(TArray<int>* ReplicaIDArray, int* ReplicaID)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function BP_NPC_SolarCityRafik.BP_NPC_SolarCityRafik_C.GetRandomReplicaID"));
 
 	struct
 	{
-		TArray<int>                    ReplicaIdArray;
+		TArray<int>                    ReplicaIDArray;
 		int                            ReplicaID;
 	} params;
 
 
 	UObject::ProcessEvent(fn, &params);
 
-	if (ReplicaIdArray != nullptr)
-		*ReplicaIdArray = params.ReplicaIdArray;
+	if (ReplicaIDArray != nullptr)
+		*ReplicaIDArray = params.ReplicaIDArray;
 	if (ReplicaID != nullptr)
 		*ReplicaID = params.ReplicaID;
 }

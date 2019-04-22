@@ -178,6 +178,26 @@ bool AWTLActionGameplayActor::CanBeInteractedRightNow()
 }
 
 
+// Function WTL.WTLActionGameplayMachinegun.SetEnabled
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// bool                           Value                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLActionGameplayMachinegun::SetEnabled(bool Value)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.SetEnabled"));
+
+	struct
+	{
+		bool                           Value;
+	} params;
+
+	params.Value = Value;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLActionGameplayMachinegun.OnUse
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -445,6 +465,29 @@ bool AWTLActionGameplayMachinegun::GetIsCoolingDown()
 	UObject::ProcessEvent(fn, &params);
 
 	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLActionGameplayMachinegun.FillAmmo
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            AmmoID                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            Count                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLActionGameplayMachinegun::FillAmmo(int AmmoID, int Count)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLActionGameplayMachinegun.FillAmmo"));
+
+	struct
+	{
+		int                            AmmoID;
+		int                            Count;
+	} params;
+
+	params.AmmoID = AmmoID;
+	params.Count = Count;
+
+	UObject::ProcessEvent(fn, &params);
 }
 
 
@@ -2439,6 +2482,27 @@ void AWTLMonsterPawn::KillMonster()
 bool AWTLMonsterPawn::IsVisible()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsVisible"));
+
+	struct
+	{
+		bool                           ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterPawn.IsInAdditiveAction
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLMonsterPawn::IsInAdditiveAction()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawn.IsInAdditiveAction"));
 
 	struct
 	{
@@ -5476,22 +5540,6 @@ void AWTLPlayerController::Client_ShowClanNameRequest(class AWTLNPCActor* NPC)
 }
 
 
-// Function WTL.WTLPlayerController.Client_ShowChangeParametersWidget
-// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
-
-void AWTLPlayerController::Client_ShowChangeParametersWidget()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_ShowChangeParametersWidget"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
 // Function WTL.WTLPlayerController.Client_ShowBulletinBoard
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
@@ -5824,22 +5872,22 @@ void AWTLPlayerController::Client_OnPlayerKilledByMonster(int MonsterID)
 // Function WTL.WTLPlayerController.Client_OnPlayerKilledByEnemyNPC
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
-// uint16_t                       EnemyNPCType                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// uint16_t                       EnemyNPCGroupID                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // uint16_t                       FirstNameIndex                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // uint16_t                       LastNameIndex                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AWTLPlayerController::Client_OnPlayerKilledByEnemyNPC(uint16_t EnemyNPCType, uint16_t FirstNameIndex, uint16_t LastNameIndex)
+void AWTLPlayerController::Client_OnPlayerKilledByEnemyNPC(uint16_t EnemyNPCGroupID, uint16_t FirstNameIndex, uint16_t LastNameIndex)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnPlayerKilledByEnemyNPC"));
 
 	struct
 	{
-		uint16_t                       EnemyNPCType;
+		uint16_t                       EnemyNPCGroupID;
 		uint16_t                       FirstNameIndex;
 		uint16_t                       LastNameIndex;
 	} params;
 
-	params.EnemyNPCType = EnemyNPCType;
+	params.EnemyNPCGroupID = EnemyNPCGroupID;
 	params.FirstNameIndex = FirstNameIndex;
 	params.LastNameIndex = LastNameIndex;
 
@@ -6442,15 +6490,35 @@ void AWTLPlayerController::Client_OnEarnExperience(uint32_t ExperienceValue)
 // Function WTL.WTLPlayerController.Client_OnDamageToActor
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
-// TArray<struct FWTLDamageToActorInfo> DamageInfoArray                (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// TArray<struct FWTLDamageActorInfo> DamageInfoArray                (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
 
-void AWTLPlayerController::Client_OnDamageToActor(TArray<struct FWTLDamageToActorInfo> DamageInfoArray)
+void AWTLPlayerController::Client_OnDamageToActor(TArray<struct FWTLDamageActorInfo> DamageInfoArray)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnDamageToActor"));
 
 	struct
 	{
-		TArray<struct FWTLDamageToActorInfo> DamageInfoArray;
+		TArray<struct FWTLDamageActorInfo> DamageInfoArray;
+	} params;
+
+	params.DamageInfoArray = DamageInfoArray;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerController.Client_OnDamageFromActor
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
+// Parameters:
+// TArray<struct FWTLDamageActorInfo> DamageInfoArray                (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void AWTLPlayerController::Client_OnDamageFromActor(TArray<struct FWTLDamageActorInfo> DamageInfoArray)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnDamageFromActor"));
+
+	struct
+	{
+		TArray<struct FWTLDamageActorInfo> DamageInfoArray;
 	} params;
 
 	params.DamageInfoArray = DamageInfoArray;
@@ -6803,6 +6871,26 @@ void AWTLPlayerController::Client_OnAddInventoryItem(EWTLItemType ItemType, uint
 	params.ItemType = ItemType;
 	params.ItemTypeID = ItemTypeID;
 	params.Count = Count;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerController.Client_OnAccountAchievement
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
+// Parameters:
+// uint16_t                       AchievementID                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLPlayerController::Client_OnAccountAchievement(uint16_t AchievementID)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerController.Client_OnAccountAchievement"));
+
+	struct
+	{
+		uint16_t                       AchievementID;
+	} params;
+
+	params.AchievementID = AchievementID;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -8331,6 +8419,42 @@ void AWTLPlayerState::Server_SellItems(class AActor* TradingActor, TArray<struct
 
 	params.TradingActor = TradingActor;
 	params.SellingItems = SellingItems;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerState.Server_ResetCharacterParameters
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+
+void AWTLPlayerState::Server_ResetCharacterParameters()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_ResetCharacterParameters"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerState.Server_RequestPrivateLootFromStorageContentActor
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+// Parameters:
+// class AActor*                  StorageContentActor            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLPlayerState::Server_RequestPrivateLootFromStorageContentActor(class AActor* StorageContentActor)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Server_RequestPrivateLootFromStorageContentActor"));
+
+	struct
+	{
+		class AActor*                  StorageContentActor;
+	} params;
+
+	params.StorageContentActor = StorageContentActor;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -10551,6 +10675,29 @@ void AWTLPlayerState::Client_UpdatePrivateStorage(uint32_t NPCID, uint64_t Stora
 }
 
 
+// Function WTL.WTLPlayerState.Client_UpdatePrivateLootForStorageContentActor
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
+// Parameters:
+// class AActor*                  StorageContentActor            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FWTLStorageContent      PrivateContent                 (CPF_ConstParm, CPF_Parm, CPF_ReferenceParm)
+
+void AWTLPlayerState::Client_UpdatePrivateLootForStorageContentActor(class AActor* StorageContentActor, const struct FWTLStorageContent& PrivateContent)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_UpdatePrivateLootForStorageContentActor"));
+
+	struct
+	{
+		class AActor*                  StorageContentActor;
+		struct FWTLStorageContent      PrivateContent;
+	} params;
+
+	params.StorageContentActor = StorageContentActor;
+	params.PrivateContent = PrivateContent;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLPlayerState.Client_UpdateInventory
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 
@@ -10852,21 +10999,61 @@ void AWTLPlayerState::Client_SetQuestState(const struct FWTLCharacterQuestState&
 // Function WTL.WTLPlayerState.Client_SetQuestActive
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
-// int                            QuestID                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// uint32_t                       QuestID                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // bool                           Active                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AWTLPlayerState::Client_SetQuestActive(int QuestID, bool Active)
+void AWTLPlayerState::Client_SetQuestActive(uint32_t QuestID, bool Active)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_SetQuestActive"));
 
 	struct
 	{
-		int                            QuestID;
+		uint32_t                       QuestID;
 		bool                           Active;
 	} params;
 
 	params.QuestID = QuestID;
 	params.Active = Active;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerState.Client_RemoveQuestStates
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
+// Parameters:
+// TArray<uint32_t>               QuestIDs                       (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void AWTLPlayerState::Client_RemoveQuestStates(TArray<uint32_t> QuestIDs)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemoveQuestStates"));
+
+	struct
+	{
+		TArray<uint32_t>               QuestIDs;
+	} params;
+
+	params.QuestIDs = QuestIDs;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPlayerState.Client_RemoveQuestState
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
+// Parameters:
+// uint32_t                       QuestID                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLPlayerState::Client_RemoveQuestState(uint32_t QuestID)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPlayerState.Client_RemoveQuestState"));
+
+	struct
+	{
+		uint32_t                       QuestID;
+	} params;
+
+	params.QuestID = QuestID;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -11656,6 +11843,41 @@ void UWTLBPLibraryCharacter::TakeItemInContainerFromCharacter(class AWTLCharacte
 }
 
 
+// Function WTL.WTLBPLibraryCharacter.TakeItemInArms
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EWTLItemType                   ItemType                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            ItemTypeID                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// unsigned char                  SlotNumber                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EWTLBPActionResult             Result                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLBPLibraryCharacter::TakeItemInArms(class AWTLCharacter* Character, EWTLItemType ItemType, int ItemTypeID, unsigned char SlotNumber, EWTLBPActionResult* Result)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TakeItemInArms"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		EWTLItemType                   ItemType;
+		int                            ItemTypeID;
+		unsigned char                  SlotNumber;
+		EWTLBPActionResult             Result;
+	} params;
+
+	params.Character = Character;
+	params.ItemType = ItemType;
+	params.ItemTypeID = ItemTypeID;
+	params.SlotNumber = SlotNumber;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+
+	if (Result != nullptr)
+		*Result = params.Result;
+}
+
+
 // Function WTL.WTLBPLibraryCharacter.TakeItemFromCharacter
 // (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -11720,6 +11942,33 @@ void UWTLBPLibraryCharacter::TakeArtefactWithInteactiveObjectIDFromCharacter(cla
 }
 
 
+// Function WTL.WTLBPLibraryCharacter.TakeAllItemsFromCharacter
+// (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<struct FWTLBPIdentityItemType> Items                          (CPF_Parm, CPF_ZeroConstructor)
+// bool                           CheckInContainers              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLBPLibraryCharacter::TakeAllItemsFromCharacter(class AWTLCharacter* Character, TArray<struct FWTLBPIdentityItemType> Items, bool CheckInContainers)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.TakeAllItemsFromCharacter"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		TArray<struct FWTLBPIdentityItemType> Items;
+		bool                           CheckInContainers;
+	} params;
+
+	params.Character = Character;
+	params.Items = Items;
+	params.CheckInContainers = CheckInContainers;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLBPLibraryCharacter.SwitchCharacterSex
 // (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -11743,6 +11992,32 @@ void UWTLBPLibraryCharacter::SwitchCharacterSex(class AWTLCharacter* Character, 
 	params.Character = Character;
 	params.ArtefactID = ArtefactID;
 	params.InteractiveObjectID = InteractiveObjectID;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+
+	if (Result != nullptr)
+		*Result = params.Result;
+}
+
+
+// Function WTL.WTLBPLibraryCharacter.SwitchCharacterFaction
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EWTLFaction                    Result                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLBPLibraryCharacter::SwitchCharacterFaction(class AWTLCharacter* Character, EWTLFaction* Result)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryCharacter.SwitchCharacterFaction"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		EWTLFaction                    Result;
+	} params;
+
+	params.Character = Character;
 
 	static auto defaultObj = StaticClass()->CreateDefaultObject();
 	defaultObj->ProcessEvent(fn, &params);
@@ -13381,6 +13656,38 @@ void UWTLBPLibraryQuestSystem::SetCharacterQuestState(class AWTLCharacter* Chara
 }
 
 
+// Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestProgressBits
+// (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            QuestID                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            BitMask                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EWTLBPActionResult             Result                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLBPLibraryQuestSystem::SetCharacterQuestProgressBits(class AWTLCharacter* Character, int QuestID, int BitMask, EWTLBPActionResult* Result)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestProgressBits"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		int                            QuestID;
+		int                            BitMask;
+		EWTLBPActionResult             Result;
+	} params;
+
+	params.Character = Character;
+	params.QuestID = QuestID;
+	params.BitMask = BitMask;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+
+	if (Result != nullptr)
+		*Result = params.Result;
+}
+
+
 // Function WTL.WTLBPLibraryQuestSystem.SetCharacterQuestProgress
 // (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -14925,6 +15232,22 @@ void AWTLCharacter::OnRep_LastTakeHitInfo()
 }
 
 
+// Function WTL.WTLCharacter.OnRep_LastEventPoint
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void AWTLCharacter::OnRep_LastEventPoint()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.OnRep_LastEventPoint"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLCharacter.OnRep_IsTraveling
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -15808,6 +16131,27 @@ bool AWTLCharacter::IsInExactSafeZone(class AWTLSafeZone* SafeZone)
 }
 
 
+// Function WTL.WTLCharacter.GetLastEventPoint
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLEventPoint*          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AWTLEventPoint* AWTLCharacter::GetLastEventPoint()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.GetLastEventPoint"));
+
+	struct
+	{
+		class AWTLEventPoint*          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
 // Function WTL.WTLCharacter.GetIsInQTE
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -16265,6 +16609,74 @@ void AWTLCharacter::Client_OnItemEquipped()
 }
 
 
+// Function WTL.WTLCharacter.Client_OnHideItem
+// (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
+
+void AWTLCharacter::Client_OnHideItem()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnHideItem"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLCharacter.Client_OnEventZoneLeave
+// (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
+
+void AWTLCharacter::Client_OnEventZoneLeave()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnEventZoneLeave"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLCharacter.Client_OnEventZoneFinished
+// (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
+// Parameters:
+// bool                           Successful                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLCharacter::Client_OnEventZoneFinished(bool Successful)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnEventZoneFinished"));
+
+	struct
+	{
+		bool                           Successful;
+	} params;
+
+	params.Successful = Successful;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLCharacter.Client_OnEventZoneEnter
+// (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
+
+void AWTLCharacter::Client_OnEventZoneEnter()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCharacter.Client_OnEventZoneEnter"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLCharacter.Client_OnEffectRemoved
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
@@ -16322,7 +16734,7 @@ void AWTLCharacter::Client_OnCharacterUsed()
 
 
 // Function WTL.WTLCharacter.Client_OnBulletFlyNear
-// (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
+// (FUNC_Final, FUNC_Net, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetClient)
 // Parameters:
 // struct FVector_NetQuantize     Position                       (CPF_Parm)
 // EWTLCaliber                    Caliber                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -19977,6 +20389,53 @@ bool UWTLCommandSystem::CC_Exec(class AWTLPlayerController* Player, TArray<struc
 }
 
 
+// Function WTL.WTLCommandSystem.CC_Events_Help
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+// Parameters:
+// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLCommandSystem::CC_Events_Help(class AWTLPlayerController* Player)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Events_Help"));
+
+	struct
+	{
+		class AWTLPlayerController*    Player;
+	} params;
+
+	params.Player = Player;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLCommandSystem.CC_Events
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms)
+// Parameters:
+// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<struct FString>         Params                         (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UWTLCommandSystem::CC_Events(class AWTLPlayerController* Player, TArray<struct FString> Params)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_Events"));
+
+	struct
+	{
+		class AWTLPlayerController*    Player;
+		TArray<struct FString>         Params;
+		bool                           ReturnValue;
+	} params;
+
+	params.Player = Player;
+	params.Params = Params;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
 // Function WTL.WTLCommandSystem.CC_EnemyNPC_Help
 // (FUNC_Final, FUNC_Native, FUNC_Public)
 // Parameters:
@@ -20016,6 +20475,56 @@ bool UWTLCommandSystem::CC_EnemyNPC(class AWTLPlayerController* Player, TArray<s
 	} params;
 
 	params.Player = Player;
+	params.Params = Params;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLCommandSystem.CC_DropMode_Help
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+// Parameters:
+// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLCommandSystem::CC_DropMode_Help(class AWTLPlayerController* Player)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_DropMode_Help"));
+
+	struct
+	{
+		class AWTLPlayerController*    Player;
+	} params;
+
+	params.Player = Player;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLCommandSystem.CC_DropMode
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms)
+// Parameters:
+// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<struct FString>         Params                         (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UWTLCommandSystem::CC_DropMode(class AWTLPlayerController* Player, class AWTLCharacter* Character, TArray<struct FString> Params)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_DropMode"));
+
+	struct
+	{
+		class AWTLPlayerController*    Player;
+		class AWTLCharacter*           Character;
+		TArray<struct FString>         Params;
+		bool                           ReturnValue;
+	} params;
+
+	params.Player = Player;
+	params.Character = Character;
 	params.Params = Params;
 
 	UObject::ProcessEvent(fn, &params);
@@ -20262,53 +20771,6 @@ bool UWTLCommandSystem::CC_ChangeSex(class AWTLPlayerController* Player, class A
 }
 
 
-// Function WTL.WTLCommandSystem.CC_ChangeParameters_Help
-// (FUNC_Final, FUNC_Native, FUNC_Public)
-// Parameters:
-// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UWTLCommandSystem::CC_ChangeParameters_Help(class AWTLPlayerController* Player)
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeParameters_Help"));
-
-	struct
-	{
-		class AWTLPlayerController*    Player;
-	} params;
-
-	params.Player = Player;
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLCommandSystem.CC_ChangeParameters
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms)
-// Parameters:
-// class AWTLPlayerController*    Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// TArray<struct FString>         Params                         (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UWTLCommandSystem::CC_ChangeParameters(class AWTLPlayerController* Player, TArray<struct FString> Params)
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommandSystem.CC_ChangeParameters"));
-
-	struct
-	{
-		class AWTLPlayerController*    Player;
-		TArray<struct FString>         Params;
-		bool                           ReturnValue;
-	} params;
-
-	params.Player = Player;
-	params.Params = Params;
-
-	UObject::ProcessEvent(fn, &params);
-
-	return params.ReturnValue;
-}
-
-
 // Function WTL.WTLCommandSystem.CC_ChangeClass_Help
 // (FUNC_Final, FUNC_Native, FUNC_Public)
 // Parameters:
@@ -20506,6 +20968,22 @@ bool UWTLCommandSystem::CC_AddEffect(class AWTLPlayerController* Player, class A
 	UObject::ProcessEvent(fn, &params);
 
 	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLCommonClickedItem.OnBackgroundBorderMouseButtonDown
+// (FUNC_Native, FUNC_Protected)
+
+void UWTLCommonClickedItem::OnBackgroundBorderMouseButtonDown()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonClickedItem.OnBackgroundBorderMouseButtonDown"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
 }
 
 
@@ -21034,22 +21512,6 @@ void UWTLCommonPopupMenuButton::OnButtonClick()
 }
 
 
-// Function WTL.WTLCommonSelectedItem.OnBackgroundBorderMouseButtonDown
-// (FUNC_Native, FUNC_Protected)
-
-void UWTLCommonSelectedItem::OnBackgroundBorderMouseButtonDown()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLCommonSelectedItem.OnBackgroundBorderMouseButtonDown"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
 // Function WTL.WTLCommonStoreButton.OnStoreButtonClicked
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -21165,6 +21627,30 @@ bool AWTLLevelScriptActor::IsDay()
 		bool                           ReturnValue;
 	} params;
 
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLLevelScriptActor.FindSafeZone
+// (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            SafeZoneID                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AWTLSafeZone*            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AWTLSafeZone* AWTLLevelScriptActor::FindSafeZone(int SafeZoneID)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLLevelScriptActor.FindSafeZone"));
+
+	struct
+	{
+		int                            SafeZoneID;
+		class AWTLSafeZone*            ReturnValue;
+	} params;
+
+	params.SafeZoneID = SafeZoneID;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -22761,6 +23247,319 @@ void AWTLEnemyNPCSpawner::K2_OnEnemyNPCSpawned(class AWTLEnemyNPC* EnemyNPC)
 }
 
 
+// Function WTL.WTLEventPoint.OnRep_InProgress
+// (FUNC_Final, FUNC_Native, FUNC_Protected)
+
+void AWTLEventPoint::OnRep_InProgress()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.OnRep_InProgress"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.OnRep_EventTasks
+// (FUNC_Final, FUNC_Native, FUNC_Protected)
+
+void AWTLEventPoint::OnRep_EventTasks()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.OnRep_EventTasks"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_OnStart
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AWTLEventPoint::K2_OnStart()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_OnStart"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_OnFinish
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           Successful                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::K2_OnFinish(bool Successful)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_OnFinish"));
+
+	struct
+	{
+		bool                           Successful;
+	} params;
+
+	params.Successful = Successful;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_OnEventTaskCompleted
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// int                            TaskIndex                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::K2_OnEventTaskCompleted(int TaskIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_OnEventTaskCompleted"));
+
+	struct
+	{
+		int                            TaskIndex;
+	} params;
+
+	params.TaskIndex = TaskIndex;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_OnCharacterLeave
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::K2_OnCharacterLeave(class AWTLCharacter* Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_OnCharacterLeave"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Character = Character;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_OnCharacterEnter
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::K2_OnCharacterEnter(class AWTLCharacter* Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_OnCharacterEnter"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Character = Character;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.K2_IsReadyToStart
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLEventPoint::K2_IsReadyToStart()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.K2_IsReadyToStart"));
+
+	struct
+	{
+		bool                           ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.IsReadyToStart
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLEventPoint::IsReadyToStart()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.IsReadyToStart"));
+
+	struct
+	{
+		bool                           ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.IncrementTaskValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            TaskIndex                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            Delta                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::IncrementTaskValue(int TaskIndex, int Delta)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.IncrementTaskValue"));
+
+	struct
+	{
+		int                            TaskIndex;
+		int                            Delta;
+	} params;
+
+	params.TaskIndex = TaskIndex;
+	params.Delta = Delta;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.GetTotalProgressPercent
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLEventPoint::GetTotalProgressPercent()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.GetTotalProgressPercent"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.GetTimeLeftSeconds
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLEventPoint::GetTimeLeftSeconds()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.GetTimeLeftSeconds"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.GetTimeLeft
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FTimespan               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FTimespan AWTLEventPoint::GetTimeLeft()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.GetTimeLeft"));
+
+	struct
+	{
+		struct FTimespan               ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.GetStartChance
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLEventPoint::GetStartChance()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.GetStartChance"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLEventPoint.GenerateNewAvailableTime
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AWTLEventPoint::GenerateNewAvailableTime()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.GenerateNewAvailableTime"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLEventPoint.ForceFinish
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// bool                           Succeessful                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLEventPoint::ForceFinish(bool Succeessful)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLEventPoint.ForceFinish"));
+
+	struct
+	{
+		bool                           Succeessful;
+	} params;
+
+	params.Succeessful = Succeessful;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLFlashlightMountComponent.Server_Toggle
 // (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetServer, FUNC_NetValidate)
 
@@ -23505,6 +24304,66 @@ void UWTLGameInstance::OnCharacterMoveToLocationEvent(const struct FWTLEvent& Ev
 }
 
 
+// Function WTL.WTLGameInstance.OnAccountStatisticsParameterUpdate
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
+// Parameters:
+// struct FWTLEvent               Event                          (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UWTLGameInstance::OnAccountStatisticsParameterUpdate(const struct FWTLEvent& Event)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnAccountStatisticsParameterUpdate"));
+
+	struct
+	{
+		struct FWTLEvent               Event;
+	} params;
+
+	params.Event = Event;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLGameInstance.OnAccountAchievementsTrigger
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
+// Parameters:
+// struct FWTLEvent               Event                          (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UWTLGameInstance::OnAccountAchievementsTrigger(const struct FWTLEvent& Event)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnAccountAchievementsTrigger"));
+
+	struct
+	{
+		struct FWTLEvent               Event;
+	} params;
+
+	params.Event = Event;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLGameInstance.OnAccountAchievementsAndStatsReceived
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
+// Parameters:
+// struct FWTLEvent               Event                          (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UWTLGameInstance::OnAccountAchievementsAndStatsReceived(const struct FWTLEvent& Event)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGameInstance.OnAccountAchievementsAndStatsReceived"));
+
+	struct
+	{
+		struct FWTLEvent               Event;
+	} params;
+
+	params.Event = Event;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLGameModeZone.OnVolumeEndOverlap
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 // Parameters:
@@ -23569,42 +24428,29 @@ void AWTLGameModeZone::OnVolumeBeginOverlap(class UPrimitiveComponent* Overlappe
 }
 
 
-// Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void AWTLMissileWeaponProjectile::OnRep_ReplicatedInitialSpeed()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLMissileWeaponProjectile.OnHit
-// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
+// Function WTL.WTLGrenadeLauncherProjectile.OnHit
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms, FUNC_HasDefaults)
 // Parameters:
+// class UPrimitiveComponent*     HitComponent                   (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 // class AActor*                  OtherActor                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // class UPrimitiveComponent*     OtherComp                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 // struct FVector                 NormalImpulse                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // struct FHitResult              Hit                            (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
 
-void AWTLMissileWeaponProjectile::OnHit(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+void AWTLGrenadeLauncherProjectile::OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnHit"));
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.OnHit"));
 
 	struct
 	{
+		class UPrimitiveComponent*     HitComponent;
 		class AActor*                  OtherActor;
 		class UPrimitiveComponent*     OtherComp;
 		struct FVector                 NormalImpulse;
 		struct FHitResult              Hit;
 	} params;
 
+	params.HitComponent = HitComponent;
 	params.OtherActor = OtherActor;
 	params.OtherComp = OtherComp;
 	params.NormalImpulse = NormalImpulse;
@@ -23618,20 +24464,108 @@ void AWTLMissileWeaponProjectile::OnHit(class AActor* OtherActor, class UPrimiti
 // (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_NetMulticast, FUNC_Private)
 // Parameters:
 // struct FVector_NetQuantize     ExplosionPosition              (CPF_Parm)
-// float                          ExplosionDamage                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AWTLGrenadeLauncherProjectile::NetMulticast_OnExplosion(const struct FVector_NetQuantize& ExplosionPosition, float ExplosionDamage)
+void AWTLGrenadeLauncherProjectile::NetMulticast_OnExplosion(const struct FVector_NetQuantize& ExplosionPosition)
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.NetMulticast_OnExplosion"));
 
 	struct
 	{
 		struct FVector_NetQuantize     ExplosionPosition;
-		float                          ExplosionDamage;
 	} params;
 
 	params.ExplosionPosition = ExplosionPosition;
-	params.ExplosionDamage = ExplosionDamage;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.GetWeaponDamage
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// float                          MinDamage                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          MaxDamage                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLGrenadeLauncherProjectile::GetWeaponDamage(float* MinDamage, float* MaxDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.GetWeaponDamage"));
+
+	struct
+	{
+		float                          MinDamage;
+		float                          MaxDamage;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	if (MinDamage != nullptr)
+		*MinDamage = params.MinDamage;
+	if (MaxDamage != nullptr)
+		*MaxDamage = params.MaxDamage;
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.GetProjectileDamage
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// float                          MinDamage                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          MaxDamage                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLGrenadeLauncherProjectile::GetProjectileDamage(float* MinDamage, float* MaxDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.GetProjectileDamage"));
+
+	struct
+	{
+		float                          MinDamage;
+		float                          MaxDamage;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	if (MinDamage != nullptr)
+		*MinDamage = params.MinDamage;
+	if (MaxDamage != nullptr)
+		*MaxDamage = params.MaxDamage;
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.Explode
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void AWTLGrenadeLauncherProjectile::Explode()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.Explode"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.BPOnPawnHit
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class APawn*                   Pawn                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   NearestBone                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLGrenadeLauncherProjectile::BPOnPawnHit(class APawn* Pawn, const struct FName& NearestBone)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.BPOnPawnHit"));
+
+	struct
+	{
+		class APawn*                   Pawn;
+		struct FName                   NearestBone;
+	} params;
+
+	params.Pawn = Pawn;
+	params.NearestBone = NearestBone;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -23717,6 +24651,123 @@ void AWTLGrenadeLauncherProjectile::BPOnApplyShrapnelDamageToCharacter(class AWT
 
 	params.Character = Character;
 	params.ActualDamage = ActualDamage;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.ApplyShrapnel
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            ShrapnelCountMin               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            ShrapnelCountMax               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          ShrapnelDamageMin              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          ShrapnelDamageMax              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          ShrapnelRadius                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          ShrapnelRagdollImpulseMultiplier (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ShrapnelUseReliableHitEvent    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLGrenadeLauncherProjectile::ApplyShrapnel(int ShrapnelCountMin, int ShrapnelCountMax, float ShrapnelDamageMin, float ShrapnelDamageMax, float ShrapnelRadius, float ShrapnelRagdollImpulseMultiplier, bool ShrapnelUseReliableHitEvent)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.ApplyShrapnel"));
+
+	struct
+	{
+		int                            ShrapnelCountMin;
+		int                            ShrapnelCountMax;
+		float                          ShrapnelDamageMin;
+		float                          ShrapnelDamageMax;
+		float                          ShrapnelRadius;
+		float                          ShrapnelRagdollImpulseMultiplier;
+		bool                           ShrapnelUseReliableHitEvent;
+		bool                           ReturnValue;
+	} params;
+
+	params.ShrapnelCountMin = ShrapnelCountMin;
+	params.ShrapnelCountMax = ShrapnelCountMax;
+	params.ShrapnelDamageMin = ShrapnelDamageMin;
+	params.ShrapnelDamageMax = ShrapnelDamageMax;
+	params.ShrapnelRadius = ShrapnelRadius;
+	params.ShrapnelRagdollImpulseMultiplier = ShrapnelRagdollImpulseMultiplier;
+	params.ShrapnelUseReliableHitEvent = ShrapnelUseReliableHitEvent;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLGrenadeLauncherProjectile.ApplyExplosionDamage
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// float                          ExplosionRadius                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          MinDamage                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          MaxDamage                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLGrenadeLauncherProjectile::ApplyExplosionDamage(float ExplosionRadius, float MinDamage, float MaxDamage)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLGrenadeLauncherProjectile.ApplyExplosionDamage"));
+
+	struct
+	{
+		float                          ExplosionRadius;
+		float                          MinDamage;
+		float                          MaxDamage;
+		bool                           ReturnValue;
+	} params;
+
+	params.ExplosionRadius = ExplosionRadius;
+	params.MinDamage = MinDamage;
+	params.MaxDamage = MaxDamage;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void AWTLMissileWeaponProjectile::OnRep_ReplicatedInitialSpeed()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnRep_ReplicatedInitialSpeed"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMissileWeaponProjectile.OnHit
+// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
+// Parameters:
+// class AActor*                  OtherActor                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// struct FVector                 NormalImpulse                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FHitResult              Hit                            (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+
+void AWTLMissileWeaponProjectile::OnHit(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMissileWeaponProjectile.OnHit"));
+
+	struct
+	{
+		class AActor*                  OtherActor;
+		class UPrimitiveComponent*     OtherComp;
+		struct FVector                 NormalImpulse;
+		struct FHitResult              Hit;
+	} params;
+
+	params.OtherActor = OtherActor;
+	params.OtherComp = OtherComp;
+	params.NormalImpulse = NormalImpulse;
+	params.Hit = Hit;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -25692,70 +26743,6 @@ void UWTLHUDBulletinBoardWindow::OnBackBtnClicked()
 }
 
 
-// Function WTL.WTLHUDChangeParametersWindow.SetConfirmed
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void UWTLHUDChangeParametersWindow::SetConfirmed()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.SetConfirmed"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLHUDChangeParametersWindow.OnSetBtnClick
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void UWTLHUDChangeParametersWindow::OnSetBtnClick()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnSetBtnClick"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLHUDChangeParametersWindow.OnResetToDefaultBtnClick
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void UWTLHUDChangeParametersWindow::OnResetToDefaultBtnClick()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnResetToDefaultBtnClick"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLHUDChangeParametersWindow.OnResetBtnClick
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void UWTLHUDChangeParametersWindow::OnResetBtnClick()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDChangeParametersWindow.OnResetBtnClick"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
 // Function WTL.WTLHUDCharacterEquipment.OnCharacterRotatorRotateStop
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -27192,6 +28179,26 @@ void UWTLHUDContentInventoryStorage::OnTakeAllBtnClick()
 }
 
 
+// Function WTL.WTLHUDContentInventoryStorage.OnStorageScrolled
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// float                          CurrentOffset                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLHUDContentInventoryStorage::OnStorageScrolled(float CurrentOffset)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDContentInventoryStorage.OnStorageScrolled"));
+
+	struct
+	{
+		float                          CurrentOffset;
+	} params;
+
+	params.CurrentOffset = CurrentOffset;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLHUDContentInventoryStorage.OnRemoveStashBtnClick
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -27346,6 +28353,22 @@ void UWTLHUDCraftWindow::OnBtnCreateClicked()
 void UWTLHUDDamagePointer::OnDissapearAnimationFinished()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDDamagePointer.OnDissapearAnimationFinished"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDEventPointInfo.UpdateEventTasks
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDEventPointInfo::UpdateEventTasks()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDEventPointInfo.UpdateEventTasks"));
 
 	struct
 	{
@@ -27710,6 +28733,22 @@ void UWTLHUDInGameMenu::OnSuicideConfirmation()
 void UWTLHUDInGameMenu::OnSuicideBtnClick()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnSuicideBtnClick"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDInGameMenu.OnStoreButtonClicked
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDInGameMenu::OnStoreButtonClicked()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDInGameMenu.OnStoreButtonClicked"));
 
 	struct
 	{
@@ -29324,6 +30363,49 @@ void UWTLHUDNPCDialogWindow::OnReplicaSelected(const struct FWTLReplica& Selecte
 }
 
 
+// Function WTL.WTLHUDPlayerInventoryStorage.UpdateMaxInventoryWeight
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// uint32_t                       MaxInventoryWeight             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLHUDPlayerInventoryStorage::UpdateMaxInventoryWeight(uint32_t MaxInventoryWeight)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.UpdateMaxInventoryWeight"));
+
+	struct
+	{
+		uint32_t                       MaxInventoryWeight;
+	} params;
+
+	params.MaxInventoryWeight = MaxInventoryWeight;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDPlayerInventoryStorage.UpdateInventoryWeight
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// float                          InventoryLoad                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// uint32_t                       InventoryWeight                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLHUDPlayerInventoryStorage::UpdateInventoryWeight(float InventoryLoad, uint32_t InventoryWeight)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDPlayerInventoryStorage.UpdateInventoryWeight"));
+
+	struct
+	{
+		float                          InventoryLoad;
+		uint32_t                       InventoryWeight;
+	} params;
+
+	params.InventoryLoad = InventoryLoad;
+	params.InventoryWeight = InventoryWeight;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLHUDPlayerInventoryStorage.UniteAllItemsBtnClick
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -29677,6 +30759,97 @@ void UWTLHUDSteamInventoryWindow::OnConsumeItemTimeout()
 }
 
 
+// Function WTL.WTLHUDStore.OnSortingComboBoxStringSelectionChanged
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// struct FString                 SelectedItem                   (CPF_Parm, CPF_ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLHUDStore::OnSortingComboBoxStringSelectionChanged(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDStore.OnSortingComboBoxStringSelectionChanged"));
+
+	struct
+	{
+		struct FString                 SelectedItem;
+		TEnumAsByte<ESelectInfo>       SelectionType;
+	} params;
+
+	params.SelectedItem = SelectedItem;
+	params.SelectionType = SelectionType;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDStore.OnItemTypeButtonClicked
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// EWTLItemType                   ItemType                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLHUDStore::OnItemTypeButtonClicked(EWTLItemType ItemType)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDStore.OnItemTypeButtonClicked"));
+
+	struct
+	{
+		EWTLItemType                   ItemType;
+	} params;
+
+	params.ItemType = ItemType;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDStore.OnCloseButtonClicked
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDStore::OnCloseButtonClicked()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDStore.OnCloseButtonClicked"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDStore.OnAllItemTypesButtonClicked
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDStore::OnAllItemTypesButtonClicked()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDStore.OnAllItemTypesButtonClicked"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDStoreItemTypeButton.OnItemTypeButtonClicked
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDStoreItemTypeButton::OnItemTypeButtonClicked()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDStoreItemTypeButton.OnItemTypeButtonClicked"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLHUDTextChatArea.OnUnMuteCharacter
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -29751,6 +30924,22 @@ void UWTLHUDTextChatArea::OnRemoveCharacterFromContactList()
 void UWTLHUDTextChatArea::OnMuteCharacter()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnMuteCharacter"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLHUDTextChatArea.OnInviteToGroup
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLHUDTextChatArea::OnInviteToGroup()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLHUDTextChatArea.OnInviteToGroup"));
 
 	struct
 	{
@@ -31173,22 +32362,6 @@ void UWTLMainMenuArenaLocationList::OnArenaLocationItemClick(class UWTLMainMenuA
 void UWTLMainMenuCharacterCreate::OnYesBackBtnClick()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnYesBackBtnClick"));
-
-	struct
-	{
-	} params;
-
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
-// Function WTL.WTLMainMenuCharacterCreate.OnResetPointsBtnClick
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-
-void UWTLMainMenuCharacterCreate::OnResetPointsBtnClick()
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMainMenuCharacterCreate.OnResetPointsBtnClick"));
 
 	struct
 	{
@@ -34133,6 +35306,22 @@ void AWTLMiningSpot::OnRep_Capacity(float PreviousCapacity)
 }
 
 
+// Function WTL.WTLMiningSpot.OnBecameEmpty
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AWTLMiningSpot::OnBecameEmpty()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMiningSpot.OnBecameEmpty"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLMiningSpot.NetMulticast_OnHit
 // (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_NetMulticast, FUNC_Private)
 // Parameters:
@@ -34871,6 +36060,32 @@ void UWTLMonsterPawnAnimInstance::OnActionTrigger(const struct FName& ActionName
 }
 
 
+// Function WTL.WTLMonsterPawnAnimInstance.K2_OnAnimationTrigger
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   TriggerName                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           Value                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            ID                             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UWTLMonsterPawnAnimInstance::K2_OnAnimationTrigger(const struct FName& TriggerName, bool Value, int ID)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterPawnAnimInstance.K2_OnAnimationTrigger"));
+
+	struct
+	{
+		struct FName                   TriggerName;
+		bool                           Value;
+		int                            ID;
+	} params;
+
+	params.TriggerName = TriggerName;
+	params.Value = Value;
+	params.ID = ID;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLMonsterProjectile.OnHit
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
 // Parameters:
@@ -35077,6 +36292,73 @@ void AWTLMonsterSpawner::OnDeadMonster(class AWTLMonsterPawn* Pawn)
 	} params;
 
 	params.Pawn = Pawn;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawner.K2_SetParameters
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            LimitMonsters                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          SpawnRadius                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            MinLevel                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            MaxLevel                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          MultiParametersForMonster      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          DistanceFollowTarget           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLMonsterSpawner::K2_SetParameters(int LimitMonsters, float SpawnRadius, int MinLevel, int MaxLevel, float MultiParametersForMonster, float DistanceFollowTarget)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.K2_SetParameters"));
+
+	struct
+	{
+		int                            LimitMonsters;
+		float                          SpawnRadius;
+		int                            MinLevel;
+		int                            MaxLevel;
+		float                          MultiParametersForMonster;
+		float                          DistanceFollowTarget;
+	} params;
+
+	params.LimitMonsters = LimitMonsters;
+	params.SpawnRadius = SpawnRadius;
+	params.MinLevel = MinLevel;
+	params.MaxLevel = MaxLevel;
+	params.MultiParametersForMonster = MultiParametersForMonster;
+	params.DistanceFollowTarget = DistanceFollowTarget;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawner.K2_OnAllMonstersDead
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AWTLMonsterSpawner::K2_OnAllMonstersDead()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.K2_OnAllMonstersDead"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawner.K2_KillAllMonsters
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AWTLMonsterSpawner::K2_KillAllMonsters()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawner.K2_KillAllMonsters"));
+
+	struct
+	{
+	} params;
+
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -35326,6 +36608,208 @@ void AWTLMonsterSpawnerAIController::OnStreamingLevelsLoaded()
 
 
 	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnMonster
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLMonsterPawn*         Monster                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLMonsterSpawnerEvent::K2_OnSpawnMonster(class AWTLMonsterPawn* Monster)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnMonster"));
+
+	struct
+	{
+		class AWTLMonsterPawn*         Monster;
+	} params;
+
+	params.Monster = Monster;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnDeactivate
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AWTLMonsterSpawnerEvent::K2_OnSpawnDeactivate()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnDeactivate"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnActivated
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// struct FWTLMonstersDataForSpawnBase SpawnData                      (CPF_Parm)
+
+void AWTLMonsterSpawnerEvent::K2_OnSpawnActivated(const struct FWTLMonstersDataForSpawnBase& SpawnData)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.K2_OnSpawnActivated"));
+
+	struct
+	{
+		struct FWTLMonstersDataForSpawnBase SpawnData;
+	} params;
+
+	params.SpawnData = SpawnData;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.K2_OnMonsterDead
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLMonsterPawn*         Monster                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLMonsterSpawnerEvent::K2_OnMonsterDead(class AWTLMonsterPawn* Monster)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.K2_OnMonsterDead"));
+
+	struct
+	{
+		class AWTLMonsterPawn*         Monster;
+	} params;
+
+	params.Monster = Monster;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.K2_CanBeActivated
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLMonsterSpawnerEvent::K2_CanBeActivated()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.K2_CanBeActivated"));
+
+	struct
+	{
+		bool                           ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.IsActivated
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLMonsterSpawnerEvent::IsActivated()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.IsActivated"));
+
+	struct
+	{
+		bool                           ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.GetLifeTime
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLMonsterSpawnerEvent::GetLifeTime()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.GetLifeTime"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.GetDurationActiveState
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLMonsterSpawnerEvent::GetDurationActiveState()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.GetDurationActiveState"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.GetDelayForActiovation
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float AWTLMonsterSpawnerEvent::GetDelayForActiovation()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.GetDelayForActiovation"));
+
+	struct
+	{
+		float                          ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLMonsterSpawnerEvent.GetDataID
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int AWTLMonsterSpawnerEvent::GetDataID()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLMonsterSpawnerEvent.GetDataID"));
+
+	struct
+	{
+		int                            ReturnValue;
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
 }
 
 
@@ -35874,26 +37358,6 @@ void AWTLNPCActor::ShowClanNameRequestWidget(class AWTLCharacter* Character)
 }
 
 
-// Function WTL.WTLNPCActor.ShowChangeParametersWidget
-// (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AWTLNPCActor::ShowChangeParametersWidget(class AWTLCharacter* Character)
-{
-	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.ShowChangeParametersWidget"));
-
-	struct
-	{
-		class AWTLCharacter*           Character;
-	} params;
-
-	params.Character = Character;
-
-	UObject::ProcessEvent(fn, &params);
-}
-
-
 // Function WTL.WTLNPCActor.SetQuestState
 // (FUNC_Final, FUNC_BlueprintAuthorityOnly, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -36069,6 +37533,35 @@ void AWTLNPCActor::OnNPCDialogActivated(class AWTLCharacter* Character)
 }
 
 
+// Function WTL.WTLNPCActor.OnFrightEndOverlap
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+// Parameters:
+// class UPrimitiveComponent*     OverlappedComponent            (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// class AActor*                  OtherActor                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// int                            OtherBodyIndex                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLNPCActor::OnFrightEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnFrightEndOverlap"));
+
+	struct
+	{
+		class UPrimitiveComponent*     OverlappedComponent;
+		class AActor*                  OtherActor;
+		class UPrimitiveComponent*     OtherComp;
+		int                            OtherBodyIndex;
+	} params;
+
+	params.OverlappedComponent = OverlappedComponent;
+	params.OtherActor = OtherActor;
+	params.OtherComp = OtherComp;
+	params.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLNPCActor.OnFrightBeginOverlap
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms)
 // Parameters:
@@ -36122,6 +37615,46 @@ void AWTLNPCActor::OnCharacterTakeQuest(class AWTLCharacter* Character, int Ques
 
 	params.Character = Character;
 	params.QuestID = QuestID;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLNPCActor.OnCharacterExitFrightSphere
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLNPCActor::OnCharacterExitFrightSphere(class AWTLCharacter* Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnCharacterExitFrightSphere"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Character = Character;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLNPCActor.OnCharacterEntersFrightSphere
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLNPCActor::OnCharacterEntersFrightSphere(class AWTLCharacter* Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLNPCActor.OnCharacterEntersFrightSphere"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Character = Character;
 
 	UObject::ProcessEvent(fn, &params);
 }
@@ -39229,6 +40762,22 @@ void UWTLPDACharacterParameters::SetConfirmed()
 void UWTLPDACharacterParameters::OnSetBtnClick()
 {
 	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.OnSetBtnClick"));
+
+	struct
+	{
+	} params;
+
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPDACharacterParameters.OnResetToDefaultConfirmed
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void UWTLPDACharacterParameters::OnResetToDefaultConfirmed()
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPDACharacterParameters.OnResetToDefaultConfirmed"));
 
 	struct
 	{
@@ -42483,6 +44032,103 @@ void AWTLPortal::MoveToLocation(class AWTLCharacter* Character, EWTLPortalAction
 }
 
 
+// Function WTL.WTLPortalStation.TravelCharacterByWay
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            WayIndex                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLPortalStation::TravelCharacterByWay(class AWTLCharacter* Character, int WayIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortalStation.TravelCharacterByWay"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		int                            WayIndex;
+	} params;
+
+	params.Character = Character;
+	params.WayIndex = WayIndex;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.WTLPortalStation.GetEnergyConsumptionForWay
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            WayIndex                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int AWTLPortalStation::GetEnergyConsumptionForWay(class AWTLCharacter* Character, int WayIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortalStation.GetEnergyConsumptionForWay"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		int                            WayIndex;
+		int                            ReturnValue;
+	} params;
+
+	params.Character = Character;
+	params.WayIndex = WayIndex;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLPortalStation.CharacterCanTravelByWay
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            WayIndex                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AWTLPortalStation::CharacterCanTravelByWay(class AWTLCharacter* Character, int WayIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortalStation.CharacterCanTravelByWay"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		int                            WayIndex;
+		bool                           ReturnValue;
+	} params;
+
+	params.Character = Character;
+	params.WayIndex = WayIndex;
+
+	UObject::ProcessEvent(fn, &params);
+
+	return params.ReturnValue;
+}
+
+
+// Function WTL.WTLPortalStation.BPOnUse
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLPortalStation::BPOnUse(class AWTLCharacter* Character)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLPortalStation.BPOnUse"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+	} params;
+
+	params.Character = Character;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLProjectileLauncher.Server_StopUse
 // (FUNC_Final, FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Private, FUNC_NetServer, FUNC_NetValidate)
 
@@ -43931,6 +45577,29 @@ void AWTLSteelTarget::NetMulticast_UpdateImpulseValue(float Impulse)
 }
 
 
+// Function WTL.WTLSteelTarget.BPOnTargetHit
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          ImpulseValue                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AWTLSteelTarget::BPOnTargetHit(class AWTLCharacter* Character, float ImpulseValue)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.WTLSteelTarget.BPOnTargetHit"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		float                          ImpulseValue;
+	} params;
+
+	params.Character = Character;
+	params.ImpulseValue = ImpulseValue;
+
+	UObject::ProcessEvent(fn, &params);
+}
+
+
 // Function WTL.WTLStorageBox.OnRep_StorageContent
 // (FUNC_Final, FUNC_Native, FUNC_Private)
 
@@ -45070,6 +46739,30 @@ void UMasterServerBlueprintLibrary::TriggerAchievement(class AWTLCharacter* Char
 
 	params.Character = Character;
 	params.AchievementName = AchievementName;
+
+	static auto defaultObj = StaticClass()->CreateDefaultObject();
+	defaultObj->ProcessEvent(fn, &params);
+}
+
+
+// Function WTL.MasterServerBlueprintLibrary.TriggerAccountAchievement
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AWTLCharacter*           Character                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            AchievementID                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UMasterServerBlueprintLibrary::TriggerAccountAchievement(class AWTLCharacter* Character, int AchievementID)
+{
+	static auto fn = UObject::FindObject<UFunction>(_xor_("Function WTL.MasterServerBlueprintLibrary.TriggerAccountAchievement"));
+
+	struct
+	{
+		class AWTLCharacter*           Character;
+		int                            AchievementID;
+	} params;
+
+	params.Character = Character;
+	params.AchievementID = AchievementID;
 
 	static auto defaultObj = StaticClass()->CreateDefaultObject();
 	defaultObj->ProcessEvent(fn, &params);

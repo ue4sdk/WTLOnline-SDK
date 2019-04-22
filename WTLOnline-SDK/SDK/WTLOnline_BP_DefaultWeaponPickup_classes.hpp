@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultWeaponPickup.BP_DefaultWeaponPickup_C
-// 0x0000 (0x0450 - 0x0450)
+// 0x0000 (0x0470 - 0x0470)
 class ABP_DefaultWeaponPickup_C : public AWTLWeaponPickup
 {
 public:

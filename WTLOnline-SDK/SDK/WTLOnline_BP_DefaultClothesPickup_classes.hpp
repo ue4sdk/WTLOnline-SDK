@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultClothesPickup.BP_DefaultClothesPickup_C
-// 0x0000 (0x0428 - 0x0428)
+// 0x0000 (0x0448 - 0x0448)
 class ABP_DefaultClothesPickup_C : public AWTLClothesPickup
 {
 public:

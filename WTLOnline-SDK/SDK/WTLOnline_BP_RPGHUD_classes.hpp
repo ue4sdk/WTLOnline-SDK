@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_RPGHUD.BP_RPGHUD_C
-// 0x0008 (0x1168 - 0x1160)
+// 0x0008 (0x1170 - 0x1168)
 class ABP_RPGHUD_C : public AWTLRPGHUD
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x1160(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x1168(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

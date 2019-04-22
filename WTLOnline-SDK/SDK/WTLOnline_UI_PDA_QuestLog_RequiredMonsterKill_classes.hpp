@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass UI_PDA_QuestLog_RequiredMonsterKill.UI_PDA_QuestLog_RequiredMonsterKill_C
-// 0x0000 (0x0248 - 0x0248)
+// 0x0000 (0x0250 - 0x0250)
 class UUI_PDA_QuestLog_RequiredMonsterKill_C : public UWTLPDAQuestLogRequiredMonsterKill
 {
 public:

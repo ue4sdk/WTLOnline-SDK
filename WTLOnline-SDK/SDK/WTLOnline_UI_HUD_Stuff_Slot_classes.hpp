@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass UI_HUD_Stuff_Slot.UI_HUD_Stuff_Slot_C
-// 0x0000 (0x0630 - 0x0630)
+// 0x0000 (0x0658 - 0x0658)
 class UUI_HUD_Stuff_Slot_C : public UWTLHUDStuffSlot
 {
 public:

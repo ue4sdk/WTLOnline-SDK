@@ -8,9 +8,9 @@
 
 #include "WTLOnline_Basic.hpp"
 #include "WTLOnline_AnimGraphRuntime_enums.hpp"
-#include "WTLOnline_AnimationCore_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
+#include "WTLOnline_AnimationCore_classes.hpp"
 
 namespace SDK
 {

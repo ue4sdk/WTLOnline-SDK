@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultStuffPickup.BP_DefaultStuffPickup_C
-// 0x0000 (0x0410 - 0x0410)
+// 0x0000 (0x0430 - 0x0430)
 class ABP_DefaultStuffPickup_C : public AWTLStuffPickup
 {
 public:

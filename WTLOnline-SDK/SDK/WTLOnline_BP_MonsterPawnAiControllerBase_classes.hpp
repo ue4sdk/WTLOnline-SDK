@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MonsterPawnAiControllerBase.BP_MonsterPawnAiControllerBase_C
-// 0x0009 (0x04D9 - 0x04D0)
+// 0x0009 (0x04E1 - 0x04D8)
 class ABP_MonsterPawnAiControllerBase_C : public AWTLMonsterPawnAIController
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x04D0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
-	bool                                               IsIgnoreElectronicBait;                                   // 0x04D8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x04D8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_DuplicateTransient)
+	bool                                               IsIgnoreElectronicBait;                                   // 0x04E0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -29,6 +29,7 @@ public:
 	}
 
 
+	void GetSpawnLocation(bool* Valid, struct FVector* Location);
 	void OnTargetHearingUpdated(class AActor* Actor, const struct FAIStimulus& Stimulus);
 	void ProcessingEventOnHear(class AActor* Instigator, const struct FName& Tag, float CheckRadius);
 	void ReactionOnDamageAIInterface(class AAIController* SelfController, class AController* DamageInstigator, const struct FName& MakeNoiseTag, float MakeNoiseRadius, EWTLMonsterState SetStateMonster, EWTLMonsterState SetStateIfCanotAction, TArray<EWTLMonsterState>* InStateForReaction);

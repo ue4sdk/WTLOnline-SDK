@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_CloseInteractiveObject_Door.BP_CloseInteractiveObject_Door_C
-// 0x000F (0x04D8 - 0x04C9)
+// 0x000F (0x04F0 - 0x04E1)
 class ABP_CloseInteractiveObject_Door_C : public ABP_CloseInteractiveObject_Base_C
 {
 public:
-	unsigned char                                      UnknownData00[0x7];                                       // 0x04C9(0x0007) MISSED OFFSET
-	class UBoxComponent*                               Box;                                                      // 0x04D0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x04E1(0x0007) MISSED OFFSET
+	class UBoxComponent*                               Box;                                                      // 0x04E8(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

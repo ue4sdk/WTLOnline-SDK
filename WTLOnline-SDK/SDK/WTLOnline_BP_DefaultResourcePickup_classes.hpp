@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultResourcePickup.BP_DefaultResourcePickup_C
-// 0x0000 (0x03E8 - 0x03E8)
+// 0x0000 (0x0408 - 0x0408)
 class ABP_DefaultResourcePickup_C : public AWTLResourcePickup
 {
 public:

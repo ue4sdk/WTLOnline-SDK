@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_SmallStorage_ComputerCase.BP_SmallStorage_ComputerCase_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0660 - 0x0660)
 class ABP_SmallStorage_ComputerCase_C : public AWTLStorageBox
 {
 public:

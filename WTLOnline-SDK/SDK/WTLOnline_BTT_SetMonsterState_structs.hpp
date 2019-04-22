@@ -7,9 +7,10 @@
 #endif
 
 #include "WTLOnline_Basic.hpp"
+#include "WTLOnline_WTL_classes.hpp"
 #include "WTLOnline_AIModule_classes.hpp"
 #include "WTLOnline_Engine_classes.hpp"
-#include "WTLOnline_WTL_classes.hpp"
+#include "WTLOnline_E_MonsterFollowTarget_classes.hpp"
 
 namespace SDK
 {

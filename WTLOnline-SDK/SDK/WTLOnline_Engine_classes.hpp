@@ -12443,7 +12443,7 @@ class UMaterialExpressionCollectionParameter : public UMaterialExpression
 public:
 	class UMaterialParameterCollection*                Collection;                                               // 0x0040(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FName                                       ParameterName;                                            // 0x0048(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FGuid                                       ParameterId;                                              // 0x0050(0x0010) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FGuid                                       ParameterID;                                              // 0x0050(0x0010) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

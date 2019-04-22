@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultArtefactPickup.BP_DefaultArtefactPickup_C
-// 0x0000 (0x0418 - 0x0418)
+// 0x0000 (0x0438 - 0x0438)
 class ABP_DefaultArtefactPickup_C : public AWTLArtefactPickup
 {
 public:

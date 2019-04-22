@@ -115,6 +115,49 @@ struct FVector2D
 		  Y(y)
 	{ }
 
+    inline FVector2D operator + (const FVector2D& other) const 
+	{ 
+		return FVector2D(X + other.X, Y + other.Y); 
+	}
+
+    inline FVector2D operator - (const FVector2D& other) const 
+	{ 
+		return FVector2D(X - other.X, Y - other.Y);
+	 }
+
+    inline FVector2D operator * (float scalar) const 
+	{ 
+		return FVector2D(X * scalar, Y * scalar); 
+	}
+
+    inline FVector2D& operator=  (const FVector2D& other) 
+	{	
+		X  = other.X;
+		Y  = other.Y;
+		return *this;
+	}
+
+    inline FVector2D& operator+= (const FVector2D& other) 
+	{ 
+		X += other.X;
+		Y += other.Y;
+		return *this;
+	}
+
+    inline FVector2D& operator-= (const FVector2D& other)
+	{
+		X -= other.X;
+		Y -= other.Y;
+		return *this;
+	}
+
+    inline FVector2D& operator*= (const float other)
+	{
+		X *= other;
+		Y *= other;
+		return *this;
+	}
+
 };
 
 // ScriptStruct CoreUObject.TwoVectors
@@ -234,6 +277,23 @@ struct FLinearColor
 		  B(b),
 		  A(a)
 	{ }
+
+	inline FLinearColor(float r, float g, float b)
+		: R(r),
+		  G(g),
+		  B(b),
+		  A(1.f)
+		{ }
+
+	bool operator!=(const FLinearColor& other)
+	{
+	    return R != other.R || G != other.G || B != other.B || A != other.A;
+	}
+
+	bool operator==(const FLinearColor& other)
+	{
+	    return R == other.R && G == other.G && B == other.B && A == other.A;
+	}
 
 };
 

@@ -8,6 +8,7 @@
 
 #include "WTLOnline_Basic.hpp"
 #include "WTLOnline_Engine_classes.hpp"
+#include "WTLOnline_E_MonsterFollowTarget_classes.hpp"
 #include "WTLOnline_CoreUObject_classes.hpp"
 #include "WTLOnline_WTL_classes.hpp"
 #include "WTLOnline_BTT_SetStateMonster_classes.hpp"

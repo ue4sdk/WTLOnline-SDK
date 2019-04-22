@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_Spanner.BP_Spanner_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x03F8 - 0x03F8)
 class ABP_Spanner_C : public AWTLQuestObjectSpawner
 {
 public:
